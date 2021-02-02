@@ -1,0 +1,2 @@
+/scripts/changeでは、レシピ改変を行っています。
+/change/_gregtech.zsだけは、削除も行っています。

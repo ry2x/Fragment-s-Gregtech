@@ -1,0 +1,22 @@
+{
+    "dimensions": [
+        {
+            "dim": 100,
+            "dimensiontype": {
+                "name": "Void",
+                "worldprovider": "WorldProviderSurfaceJED",
+                "keeploaded": true
+              },
+            "worldinfo_onetime": {
+                "DayTime": 6000,
+                "generatorName": "flat",
+                "generatorOptions": "3;minecraft:air;127;",
+                "GameRules": {
+                    "doDaylightCycle": "false",
+                    "doWeatherCycle": "false"
+                },
+            "jed": {}
+            }
+        }
+    ]
+}

@@ -1,0 +1,55 @@
+各フォルダに説明があります。
+/scriptsではOreDiction.zsで鉱石辞書oredictionaryの変更,chisel.zsでチセルへのブロック追加を行っています。
+
+いらんこと書くわ。結衣さんにいろいろ言われて腹立ち申した。
+たくさんの似たようなアイテムを指定するのに
+// thermalfoundation:material(28~60)を削除する
+import crafttweaker.item.IItemDefinition;
+
+import mods.jei.JEI;
+
+val materialsDef = <thermalfoundation:material>.definition;
+
+for i in 28 to 60{
+    JEI.removeAndHide(materialsDef.makeStack(i));
+}
+
+//
+というように本来(なんせ、サンプルコードほぼそのままだからね)記述できるのですが、自分の書き方が悪いのか
+debug上での記述が意味不明で良くわからないことになってしまいました。（つまり、えらってできない）
+追加で
+//
+val num = [28,29,60]int;
+
+for i in num
+//
+でもできるはずなのにｗ
+
+そのため、少し幅を取りますが
+IItemStackを使い
+//
+val materials = [
+    item1,
+    item2,
+    ・
+    ・
+    ・
+] as IItemStack[];
+
+for item in materials = {
+    JEI.removeAndHide(item);
+}
+//
+としています。
+
+不思議だね。
+
+swiftもパラメータをまとめるときによくわからんエラー吐くし、似たようなものだね。
+
+あと
+materials.item で指定する方法は自分にそんなライブラリを作る勇気がなかったので
+没になりました。
+
+oreDiction.zsは必要のない限り変更しないことをお勧めします。
+もし、/scriptsフォルダ内をいじる場合はしっかりと、documantationを少しでも読むことを勧めます。
+意味不明なエラー文が多く、その原因については推測するしかない場合が多いので。

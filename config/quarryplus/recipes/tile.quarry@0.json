@@ -1,0 +1,54 @@
+{
+  "id": "quarryplus:builtin_newquarry",
+  "type": "quarryplus:workbench_recipe",
+  "ingredients": [
+    {
+      "item": "gregtech:machine",
+      "data":  2548,
+      "count": 1
+    },
+    {
+      "item": "gregtech:meta_item_1",
+      "data":  32723,
+      "count": 4
+    },
+    {
+      "item": "railcraft:glass",
+      "data":  1,
+      "count": 6
+    },
+    {
+      "item": "cyclicmagic:beacon_redstone",
+      "data":  0,
+      "count": 60
+    },
+    {
+      "item": "gregtech:machine",
+      "data":  2056,
+      "count": 8
+    },
+    {
+      "item": "gregtech:meta_item_2",
+      "data":  2235,
+      "count": 8
+    },
+    {
+      "item": "gregtech:meta_item_2",
+      "data":  1235,
+      "count": 8
+    }
+  ],
+  "energy": 640000.0,
+  "showInJEI": true,
+  "result": {
+    "item": "quarryplus:quarry",
+    "data": 0,
+    "count": 1
+  },
+  "conditions": [
+    {
+      "type": "quarryplus:machine_enabled",
+      "value": "NewQuarry"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "id": "quarryplus:builtin_pumpplus",
+  "type": "quarryplus:workbench_recipe",
+  "ingredients": [
+    {
+      "item": "industrialforegoing:fluid_pump",
+      "data": 0,
+      "count": 1
+    },
+    {
+      "item": "industrialforegoing:fluid_pump",
+      "data": 0,
+      "count": 1
+    },
+    {
+      "item": "industrialforegoing:fluid_pump",
+      "data": 0,
+      "count": 1
+    },
+    {
+      "item": "industrialforegoing:fluid_pump",
+      "data": 0,
+      "count": 1
+    },
+    {
+      "item": "gregtech:machine",
+      "data": 2201,
+      "count": 4
+    },
+    {
+      "item": "gregtech:meta_item_1",
+      "data": 32614,
+      "count": 2
+    },
+    {
+      "item": "gregtech:meta_item_1",
+      "data": 32694,
+      "count": 2
+    }
+  ],
+  "energy": 320000.0,
+  "showInJEI": true,
+  "result": {
+    "item": "quarryplus:pumpplus",
+    "data": 0,
+    "count": 1
+  },
+  "conditions": [
+    {
+      "type": "quarryplus:machine_enabled",
+      "value": "PumpPlus"
+    }
+  ]
+}

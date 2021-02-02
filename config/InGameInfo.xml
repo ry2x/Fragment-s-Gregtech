@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<config>
+    <lines at = "topleft">
+     <line>
+        <add>
+            <var>day</var>
+            <num>1</num>
+        </add>
+        <str>日目 {mctime}$f(</str>
+        <if>
+            <var>daytime</var>
+            <str>$b$l昼</str>
+            <str>$c$l夜</str>
+        </if>
+        <str>$f)</str>
+     </line>
+        
+     <line>
+        <str>{rltime}</str>
+     </line>
+
+     <line>
+            <str>FPS:</str>
+        <operation>
+            <str>ge</str>
+            <var>fps</var>
+            <num>45</num>
+            <num>25</num>
+            <num>15</num>
+            <str>$b</str>
+            <str>$6</str>
+            <str>$c</str>
+        </operation>
+            <str>{fps}</str>
+        </line>
+
+     <line>
+        <str>$fLightLevel:$b</str>
+        <operation>
+            <str>lt</str>
+            <var>light</var>
+            <num>7.5</num>
+            <str>$c$l</str>
+        </operation>
+      <str>{light} </str>
+     </line>
+
+     <line>
+        <str>Dimension: $c{dimension} </str>
+     </line>
+
+     <line>
+        <str>Biome: $3{biome} </str>
+        <if>
+            <var>slimes</var>
+            <str>$a(slime)</str>
+        </if>
+     </line>
+    </lines>    
+        <lines at="bottomleft">
+        <line>
+            <var>mainhandicon</var>
+            <str> </str>
+            <op>
+                <str>ge</str>
+                <pct>
+                    <var>mainhanddamageleft</var>
+                    <var>mainhandmaxdamage</var>
+                </pct>
+                <num>50</num>
+                <num>20</num>
+                <num>10</num>
+                <num>0</num>
+                <str>$e</str>
+                <str>$6</str>
+                <str>$c</str>
+                <str>$4</str>
+                <str/>
+            </op>
+            <max>
+                <var>mainhanddamageleft</var>
+                <num>0.5</num>
+                <str>{mainhanddamageleft}$f / $e{mainhandmaxdamage}</str>
+                <var>mainhandname</var>
+            </max>
+        </line>
+        <line>
+            <str>  </str>
+            <var>offhandicon</var>
+            <str> </str>
+            <op>
+                <str>ge</str>
+                <pct>
+                    <var>offhanddamageleft</var>
+                    <var>offhandmaxdamage</var>
+                </pct>
+                <num>50</num>
+                <num>20</num>
+                <num>10</num>
+                <num>0</num>
+                <str>$e</str>
+                <str>$6</str>
+                <str>$c</str>
+                <str>$4</str>
+                <str/>
+            </op>
+            <max>
+                <var>offhanddamageleft</var>
+                <num>0.5</num>
+                <str>{offhanddamageleft}$f / $e{offhandmaxdamage}</str>
+                <var>offhandname</var>
+            </max>
+        </line>
+        <line>
+            <str> </str>
+        </line>
+        <line>
+            <str> </str>
+        </line>
+    </lines>
+
+    <lines at="bottomright">
+           <line>
+            <op>
+                <str>ge</str>
+                <pct>
+                    <var>helmetdamageleft</var>
+                    <var>helmetmaxdamage</var>
+                </pct>
+                <num>50</num>
+                <num>20</num>
+                <num>10</num>
+                <str>$e</str>
+                <str>$6</str>
+                <str>$c</str>
+                <str>$4</str>
+            </op>
+            <max>
+                <var>helmetdamageleft</var>
+                <num>0.5</num>
+                <str>{helmetdamageleft}$f / $e{helmetmaxdamage}</str>
+                <str/>
+            </max>
+            <str> </str>
+            <var>helmeticon</var>
+        </line>
+        <line>
+            <op>
+                <str>ge</str>
+                <pct>
+                    <var>chestplatedamageleft</var>
+                    <var>chestplatemaxdamage</var>
+                </pct>
+                <num>50</num>
+                <num>20</num>
+                <num>10</num>
+                <str>$e</str>
+                <str>$6</str>
+                <str>$c</str>
+                <str>$4</str>
+            </op>
+            <max>
+                <var>chestplatedamageleft</var>
+                <num>0.5</num>
+                <str>{chestplatedamageleft}$f / $e{chestplatemaxdamage}</str>
+                <str/>
+            </max>
+            <str> </str>
+            <var>chestplateicon</var>
+        </line>
+        <line>
+            <op>
+                <str>ge</str>
+                <pct>
+                    <var>leggingsdamageleft</var>
+                    <var>leggingsmaxdamage</var>
+                </pct>
+                <num>50</num>
+                <num>20</num>
+                <num>10</num>
+                <str>$e</str>
+                <str>$6</str>
+                <str>$c</str>
+                <str>$4</str>
+            </op>
+            <max>
+                <var>leggingsdamageleft</var>
+                <num>0.5</num>
+                <str>{leggingsdamageleft}$f / $e{leggingsmaxdamage}</str>
+                <str/>
+            </max>
+            <str> </str>
+            <var>leggingsicon</var>
+        </line>
+        <line>
+            <op>
+                <str>ge</str>
+                <pct>
+                    <var>bootsdamageleft</var>
+                    <var>bootsmaxdamage</var>
+                </pct>
+                <num>50</num>
+                <num>20</num>
+                <num>10</num>
+                <str>$e</str>
+                <str>$6</str>
+                <str>$c</str>
+                <str>$4</str>
+            </op>
+            <max>
+                <var>bootsdamageleft</var>
+                <num>0.5</num>
+                <str>{bootsdamageleft}$f / $e{bootsmaxdamage}</str>
+                <str/>
+            </max>
+            <str> </str>
+            <var>bootsicon</var>
+        </line>
+    </lines>
+</config>

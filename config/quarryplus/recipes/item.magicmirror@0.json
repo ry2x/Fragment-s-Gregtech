@@ -1,0 +1,48 @@
+{
+  "id": "quarryplus:builtin_item.dimensionmirror",
+  "type": "quarryplus:workbench_recipe",
+  "ingredients": [
+    {
+      "item": "lteleporters:endercrystal",
+      "data": 0,
+      "count": 16
+    },
+    {
+      "item": "quarryplus:magicmirror",
+      "data": 0,
+      "count": 2
+    },
+    {
+      "item": "lteleporters:teleporter",
+      "data": 0,
+      "count": 1
+    },
+    {
+      "item": "overloaded:player_interface",
+      "data": 0,
+      "count": 1
+    },
+    {
+      "item": "cyclicmagic:robot_spawner",
+      "data": 0,
+      "count": 1
+    },
+    {
+      "item": "appliedenergistics2:material",
+      "data": 48,
+      "count": 64
+    },
+    {
+      "item": "gtadditions:ga_meta_item",
+      "data": 32449,
+      "count": 10
+    }
+  ],
+  "energy": 1280000.0,
+  "showInJEI": false,
+  "result": {
+    "item": "quarryplus:magicmirror",
+    "data": 0,
+    "count": 1
+  }
+}
