@@ -1,9 +1,0 @@
-{
-  "name": "Fragment's GregTech",
-  "landing_text": "This provide some guides for you! Enjoy!",
-  "model": "minecraft:nether_star",
-  "version": "0.1",
-  "subtitle": "For The More Industrial!",
-  "creative_tab": "tools",
-  "pause_game": false 
-}

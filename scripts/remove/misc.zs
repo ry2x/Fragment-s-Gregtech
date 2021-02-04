@@ -235,3 +235,17 @@ val quarkless as IItemStack[]= [
 for i in quarkless {
     mods.jei.JEI.removeAndHide(i);
 }
+
+//power suite
+    #hide and remove useless items
+val powersuite as IItemStack[] = [
+    <powersuits:powerarmorcomponent>,
+    <powersuits:powerarmorcomponent:1>,
+    <ore:componentMyofiberGel>.firstItem,
+    <powersuits:powerarmorcomponent:14>,
+    <powersuits:powerarmorcomponent:17>,
+];
+
+for i in powersuite {
+    JEI.removeAndHide(i);
+}

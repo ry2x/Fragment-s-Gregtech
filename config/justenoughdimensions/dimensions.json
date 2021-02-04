@@ -3,9 +3,12 @@
         {
             "dim": 100,
             "dimensiontype": {
-                "name": "Void",
+                "id":8,
+                "name": "Terra",
                 "worldprovider": "WorldProviderSurfaceJED",
-                "keeploaded": true
+                "suffix": "_dim100",
+                "keeploaded": true,
+                "require_exact_match": true
               },
             "worldinfo_onetime": {
                 "DayTime": 6000,
@@ -13,9 +16,13 @@
                 "generatorOptions": "3;minecraft:air;127;",
                 "GameRules": {
                     "doDaylightCycle": "false",
-                    "doWeatherCycle": "false"
+                    "doWeatherCycle": "false",
+                    "doMobSpawning": "false"
                 },
-            "jed": {}
+            "jed": {
+                "CanSpawnHostiles": false,
+                "CanSpawnPeacefulMobs": false
+            }
             }
         }
     ]

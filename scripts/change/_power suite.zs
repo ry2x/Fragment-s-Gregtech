@@ -11,26 +11,21 @@ import crafttweaker.liquid.ILiquidStack;
 import crafttweaker.block.IBlockDefinition;
 import crafttweaker.block.IBlockProperties;
 import crafttweaker.block.IBlock;
-//import JEI function
-import mods.jei.JEI;
+
 
 val mill = RecipeMap.getByName("wiremill");
 val packer = RecipeMap.getByName("packer");
 val assembler = RecipeMap.getByName("assembler");
+val freezer = RecipeMap.getByName("vacuum_freezer");
 
-//hide and remove useless liquid
-JEI.removeAndHide(<forge:bucketfilled>.withTag({FluidName: "liquid_nitrogen", Amount: 1000}));
-JEI.hide(<liquid:liquid_nitrogen>);
-
-//hide and remove useless items
-val useless as IItemStack[] = [
-    <powersuits:powerarmorcomponent>,
-    <powersuits:powerarmorcomponent:1>
-];
-
-for i in useless {
-    JEI.removeAndHide(i);
-}
+//make liquid nitorgen from nitrogen
+freezer.recipeBuilder()
+    .fluidInputs([<liquid:nitrogen>*696])
+    .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:3}))
+    .fluidOutputs([<liquid:liquid_nitrogen>*1])
+    .duration(240)
+    .EUt(64)
+    .buildAndRegister();
 
 //change recipes of armer
 recipes.remove(<powersuits:powerarmor_feet>);
@@ -106,11 +101,6 @@ for i in capacitor {
 }
 
 <powersuits:powerarmorcomponent:8>.displayName = "Ultimate Capacitor";
-
-JEI.removeAndHide(<powersuits:powerarmorcomponent:14>);
-JEI.removeAndHide(<powersuits:powerarmorcomponent:17>);
-
-JEI.removeAndHide(<ore:componentMyofiberGel>);
 
 recipes.remove(<powersuits:powerarmorcomponent:18>);
 recipes.remove(<powersuits:powerarmorcomponent:21>);

@@ -1,8 +1,0 @@
-このフォルダ /scripts/remove　では使ってほしくない、もしくはシステム的に使えないアイテムやブロックを削除またはJEIから消しています。
-多くの機械やアイテムはコンフィグでdisabledにしています。
-すまん、gregtechだけは/changeで全部やってる。debugで心折れたから。
-また、JEIを見る際に邪魔となる、AE2のfacadeやforestryのcanなどは、JEIのfunctionで隠しています。
-クラフトできないわけではないので、ゲーム内では普通にクラフトできます。
-もし、必要ない場合は必要に応じてその.zsファイルを削除または無効可(.zsdなどに変更)してください。
-/scripts/remove/hide facade.zs はfacadeを隠しています。
-/scripts/remove/hide forestry cans.zs　はforestryのcan等を隠しています。
