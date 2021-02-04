@@ -17,7 +17,8 @@
                 "GameRules": {
                     "doDaylightCycle": "false",
                     "doWeatherCycle": "false",
-                    "doMobSpawning": "false"
+                    "doMobSpawning": "false",
+                    "disableNetherPortalCreation": "true"
                 },
             "jed": {
                 "CanSpawnHostiles": false,
