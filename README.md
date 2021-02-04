@@ -1,3 +1,3 @@
-# fragment's Gregtech
+# Fragment's Gregtech
 Mod pack of gregtech.
 
