@@ -12,7 +12,6 @@ import crafttweaker.block.IBlockDefinition;
 import crafttweaker.block.IBlockProperties;
 import crafttweaker.block.IBlock;
 
-
 val mill = RecipeMap.getByName("wiremill");
 val packer = RecipeMap.getByName("packer");
 val assembler = RecipeMap.getByName("assembler");
@@ -27,69 +26,85 @@ freezer.recipeBuilder()
     .EUt(64)
     .buildAndRegister();
 
-//change recipes of armer
-recipes.remove(<powersuits:powerarmor_feet>);
-recipes.remove(<powersuits:powerarmor_legs>);
-recipes.remove(<powersuits:powerarmor_torso>);
+//change recipes of armor
 recipes.remove(<powersuits:powerarmor_head>);
-recipes.addShaped(<powersuits:powerarmor_feet>, [
-    [<ore:wireFineAnnealedCopper>, <ore:wireFineAnnealedCopper>, <ore:wireFineAnnealedCopper>],
-    [<ore:plateAluminium>, <ore:ingotIronMagnetic>, <ore:plateAluminium>], 
-    [<ore:plateAluminium>, <gregtech:meta_item_1:32500>, <ore:plateAluminium>]
-]);
-recipes.addShaped(<powersuits:powerarmor_legs>, [
-    [<ore:plateAluminium>, <gregtech:meta_item_1:32500>, <ore:plateAluminium>],
-    [<ore:plateAluminium>, <ore:ingotIronMagnetic>, <ore:plateAluminium>], 
-    [<ore:plateAluminium>, <ore:wireFineAnnealedCopper>, <ore:plateAluminium>]
-]);
-recipes.addShaped(<powersuits:powerarmor_torso>, [
-    [<ore:plateAluminium>, <gregtech:meta_item_1:32500>, <ore:plateAluminium>],
-    [<ore:wireFineAnnealedCopper>, <ore:plateAluminium>, <ore:wireFineAnnealedCopper>], 
-    [<ore:plateAluminium>, <ore:ingotIronMagnetic>, <ore:plateAluminium>]
-]);
 recipes.addShaped(<powersuits:powerarmor_head>, [
     [<ore:plateAluminium>, <ore:plateAluminium>, <ore:plateAluminium>],
     [<ore:plateAluminium>, <gregtech:meta_item_1:32500>, <ore:plateAluminium>], 
     [<ore:wireFineAnnealedCopper>, <ore:ingotIronMagnetic>, <ore:wireFineAnnealedCopper>]
 ]);
+recipes.remove(<powersuits:powerarmor_torso>);
+recipes.addShaped(<powersuits:powerarmor_torso>, [
+    [<ore:plateAluminium>, <gregtech:meta_item_1:32500>, <ore:plateAluminium>],
+    [<ore:wireFineAnnealedCopper>, <ore:plateAluminium>, <ore:wireFineAnnealedCopper>], 
+    [<ore:plateAluminium>, <ore:ingotIronMagnetic>, <ore:plateAluminium>]
+]);
+recipes.remove(<powersuits:powerarmor_legs>);
+recipes.addShaped(<powersuits:powerarmor_legs>, [
+    [<ore:plateAluminium>, <gregtech:meta_item_1:32500>, <ore:plateAluminium>],
+    [<ore:plateAluminium>, <ore:ingotIronMagnetic>, <ore:plateAluminium>], 
+    [<ore:plateAluminium>, <ore:wireFineAnnealedCopper>, <ore:plateAluminium>]
+]);
+recipes.remove(<powersuits:powerarmor_feet>);
+recipes.addShaped(<powersuits:powerarmor_feet>, [
+    [<ore:wireFineAnnealedCopper>, <ore:wireFineAnnealedCopper>, <ore:wireFineAnnealedCopper>],
+    [<ore:plateAluminium>, <ore:ingotIronMagnetic>, <ore:plateAluminium>], 
+    [<ore:plateAluminium>, <gregtech:meta_item_1:32500>, <ore:plateAluminium>]
+]);
 
-//change meterial recipes sorry its so difficult to read 
+/*
+* change material recipes; sorry its so difficult to read
+*/
+
+//Servo Motor
 recipes.remove(<powersuits:powerarmorcomponent:2>);
 recipes.addShaped(<powersuits:powerarmorcomponent:2>, [
     [null, <ore:wireGtSingleAnnealedCopper>, null],
     [null, <gregtech:meta_item_1:32641>, null], 
     [<ore:gearAluminium>, <ore:wireGtSingleAnnealedCopper>, <ore:gearAluminium>]
 ]);
-recipes.remove(<powersuits:powerarmorcomponent:12>);
-recipes.remove(<powersuits:powerarmorcomponent:4>);
+
+//Glider Wing
 recipes.remove(<powersuits:powerarmorcomponent:3>);
-recipes.addShaped(<powersuits:powerarmorcomponent:4>, [
-    [<ore:wireGtSingleAnnealedCopper>, <gtadditions:ga_meta_item:32304>, <ore:ingotIronMagnetic>],
-    [<ore:wireGtSingleAnnealedCopper>, <ore:dustSodium>, <ore:ingotIronMagnetic>], 
-    [<ore:wireGtSingleAnnealedCopper>, <gtadditions:ga_meta_item:32304>, <ore:ingotIronMagnetic>]
-]);
-recipes.addShaped(<powersuits:powerarmorcomponent:12>, [
-    [<ore:wireGtSingleAnnealedCopper>, <gregtech:meta_item_1:32685>, <ore:wireGtSingleAnnealedCopper>],
-    [<ore:plateRhodiumPlatedPalladium>, <ore:dustDiamond>, <ore:plateRhodiumPlatedPalladium>], 
-    [<ore:plateRhodiumPlatedPalladium>, <ore:dustDiamond>, <ore:plateRhodiumPlatedPalladium>]
-]);
 recipes.addShaped(<powersuits:powerarmorcomponent:3>, [
     [<ore:plateSilver>, <ore:plateSilver>, <ore:wireGtSingleAnnealedCopper>],
     [<ore:plateSilver>, <ore:plateSteel>, null], 
     [<ore:plateSilver>, <ore:plateSteel>, null]
 ]);
+
+//Ion Thruster
+recipes.remove(<powersuits:powerarmorcomponent:4>);
+recipes.addShaped(<powersuits:powerarmorcomponent:4>, [
+    [<ore:wireGtSingleAnnealedCopper>, <gtadditions:ga_meta_item:32304>, <ore:ingotIronMagnetic>],
+    [<ore:wireGtSingleAnnealedCopper>, <ore:dustSodium>, <ore:ingotIronMagnetic>], 
+    [<ore:wireGtSingleAnnealedCopper>, <gtadditions:ga_meta_item:32304>, <ore:ingotIronMagnetic>]
+]);
+
+//Iron Plating
 recipes.remove(<powersuits:powerarmorcomponent:10>);
-recipes.remove(<powersuits:powerarmorcomponent:11>);
 recipes.addShaped(<powersuits:powerarmorcomponent:10>, [
     [<ore:plateIron>, <ore:plateIron>, <ore:plateIron>],
     [<ore:plateIron>, craftingToolHardHammer, <ore:plateIron>], 
     [<ore:plateIron>, <ore:plateIron>, <ore:plateIron>]
 ]);
+
+//Diamond Plating
+recipes.remove(<powersuits:powerarmorcomponent:11>);
 recipes.addShaped(<powersuits:powerarmorcomponent:11>, [
     [<ore:plateDiamond>, <ore:plateDiamond>, <ore:plateDiamond>],
     [<ore:plateDiamond>, craftingToolHardHammer, <ore:plateDiamond>], 
     [<ore:plateDiamond>, <ore:plateDiamond>, <ore:plateDiamond>]
 ]);
+
+//Force Field Emitter
+recipes.remove(<powersuits:powerarmorcomponent:12>);
+recipes.addShaped(<powersuits:powerarmorcomponent:12>, [
+    [<ore:wireGtSingleAnnealedCopper>, <gregtech:meta_item_1:32685>, <ore:wireGtSingleAnnealedCopper>],
+    [<ore:plateRhodiumPlatedPalladium>, <ore:dustDiamond>, <ore:plateRhodiumPlatedPalladium>], 
+    [<ore:plateRhodiumPlatedPalladium>, <ore:dustDiamond>, <ore:plateRhodiumPlatedPalladium>]
+]);
+
+//Remove capacitor for powersuits
 val capacitor as IItemStack[] = [ 
     <powersuits:powerarmorcomponent:5>,
     <powersuits:powerarmorcomponent:6>,
@@ -102,57 +117,71 @@ for i in capacitor {
 
 <powersuits:powerarmorcomponent:8>.displayName = "Ultimate Capacitor";
 
-recipes.remove(<powersuits:powerarmorcomponent:18>);
-recipes.remove(<powersuits:powerarmorcomponent:21>);
-recipes.remove(<powersuits:powerarmorcomponent:19>);
-recipes.remove(<powersuits:powerarmorcomponent:20>);
-recipes.remove(<powersuits:powerarmorcomponent:15>);
+//Parachute
 recipes.remove(<powersuits:powerarmorcomponent:9>);
-recipes.remove(<powersuits:powerarmorcomponent:13>);
-
-recipes.addShaped(<powersuits:powerarmorcomponent:18>, [
-    [<gregtech:meta_item_1:32752>, <gregtech:meta_item_1:32752>, <gregtech:meta_item_1:32752>],
-    [<gregtech:meta_item_1:32752>, <gtadditions:ga_meta_item:32030>, <gregtech:meta_item_1:32752>], 
-    [<gregtech:meta_item_1:32752>, <gregtech:meta_item_1:32752>, <gregtech:meta_item_1:32752>]
-]);
-recipes.addShaped(<powersuits:powerarmorcomponent:21>, [
-    [<gregtech:meta_item_1:12152>, <gregtech:meta_item_1:12152>, <gregtech:meta_item_1:12152>],
-    [<ore:blockGlassHardened>, null, <ore:blockGlassHardened>], 
-    [<gregtech:meta_item_1:12152>, <gregtech:meta_item_1:12152>, <gregtech:meta_item_1:12152>]
-]);
-recipes.addShaped(<powersuits:powerarmorcomponent:19>, [
-    [<gregtech:cable:87>, <gregtech:meta_item_1:10297>, <gregtech:cable:87>],
-    [<gregtech:cable:87>, <gregtech:meta_item_1:32671>, <gregtech:cable:87>], 
-    [<gregtech:cable:87>, <gregtech:meta_item_1:10297>, <gregtech:cable:87>]
-]);
-recipes.addShaped(<powersuits:powerarmorcomponent:20>, [
-    [<ore:circuitGood>, <minecraft:dye:2>, <ore:circuitGood>],
-    [<minecraft:dye:2>, <gtadditions:ga_meta_item:32030>, <minecraft:dye:2>], 
-    [<gregtech:cable:87>, <gregtech:cable:87>, <gregtech:cable:87>]
-]);
-recipes.addShaped(<powersuits:powerarmorcomponent:15>, [
-    [<gregtech:cable:87>, <gregtech:meta_item_1:12033>, <gregtech:cable:87>],
-    [<minecraft:dye:2>, <ore:circuitGood>, <minecraft:dye:2>], 
-    [<minecraft:dye:2>, <gregtech:cable:87>, <minecraft:dye:2>]
-]);
 recipes.addShaped(<powersuits:powerarmorcomponent:9>, [
     [<minecraft:carpet>, <minecraft:carpet>, <minecraft:carpet>],
     [<minecraft:string>, null, <minecraft:string>], 
     [<minecraft:wool>, <minecraft:string>, <minecraft:wool>]
 ]);
+
+//Hologram Emitter
+recipes.remove(<powersuits:powerarmorcomponent:13>);
 recipes.addShaped(<powersuits:powerarmorcomponent:13>, [
     [<ore:blockGlassHardened>, <ore:blockGlassHardened>, <ore:blockGlassHardened>],
     [<ore:dyeGreen>, <gregtech:meta_item_1:32682>, <ore:dyeGreen>], 
     [<ore:blockGlassHardened>, <gregtech:meta_item_1:32682>, <ore:blockGlassHardened>]
 ]);
-recipes.remove(<powersuits:tinkertable>);
 
+//Control Circuit
+recipes.remove(<powersuits:powerarmorcomponent:15>);
+recipes.addShaped(<powersuits:powerarmorcomponent:15>, [
+    [<gregtech:cable:87>, <gregtech:meta_item_1:12033>, <gregtech:cable:87>],
+    [<minecraft:dye:2>, <ore:circuitGood>, <minecraft:dye:2>], 
+    [<minecraft:dye:2>, <gregtech:cable:87>, <minecraft:dye:2>]
+]);
+
+//Solar Panel
+recipes.remove(<powersuits:powerarmorcomponent:18>);
+recipes.addShaped(<powersuits:powerarmorcomponent:18>, [
+    [<gregtech:meta_item_1:32752>, <gregtech:meta_item_1:32752>, <gregtech:meta_item_1:32752>],
+    [<gregtech:meta_item_1:32752>, <gtadditions:ga_meta_item:32030>, <gregtech:meta_item_1:32752>], 
+    [<gregtech:meta_item_1:32752>, <gregtech:meta_item_1:32752>, <gregtech:meta_item_1:32752>]
+]);
+
+//Magnet
+recipes.remove(<powersuits:powerarmorcomponent:19>);
+recipes.addShaped(<powersuits:powerarmorcomponent:19>, [
+    [<gregtech:cable:87>, <gregtech:meta_item_1:10297>, <gregtech:cable:87>],
+    [<gregtech:cable:87>, <gregtech:meta_item_1:32671>, <gregtech:cable:87>], 
+    [<gregtech:cable:87>, <gregtech:meta_item_1:10297>, <gregtech:cable:87>]
+]);
+
+//Computer Chip
+recipes.remove(<powersuits:powerarmorcomponent:20>);
+recipes.addShaped(<powersuits:powerarmorcomponent:20>, [
+    [<ore:circuitGood>, <minecraft:dye:2>, <ore:circuitGood>],
+    [<minecraft:dye:2>, <gtadditions:ga_meta_item:32030>, <minecraft:dye:2>], 
+    [<gregtech:cable:87>, <gregtech:cable:87>, <gregtech:cable:87>]
+]);
+
+//Insulated Rubber Hose
+recipes.remove(<powersuits:powerarmorcomponent:21>);
+recipes.addShaped(<powersuits:powerarmorcomponent:21>, [
+    [<gregtech:meta_item_1:12152>, <gregtech:meta_item_1:12152>, <gregtech:meta_item_1:12152>],
+    [<ore:blockGlassHardened>, null, <ore:blockGlassHardened>], 
+    [<gregtech:meta_item_1:12152>, <gregtech:meta_item_1:12152>, <gregtech:meta_item_1:12152>]
+]);
+
+// Power Armor Tinker Table
+recipes.remove(<powersuits:tinkertable>);
 recipes.addShaped(<powersuits:tinkertable>, [
     [<minecraft:wool:15>, <minecraft:wool:15>, <minecraft:wool:15>],
     [<gregtech:meta_item_1:10184>, <tconstruct:toolforge>, <gregtech:meta_item_1:10184>],
-     [<gregtech:meta_item_1:10184>, <minecraft:emerald>, <gregtech:meta_item_1:10184>]
+    [<gregtech:meta_item_1:10184>, <minecraft:emerald>, <gregtech:meta_item_1:10184>]
 ]);
 
+//Power Fist
 recipes.remove(<powersuits:power_fist>);
 assembler.recipeBuilder()
 	.inputs(<ore:plateAluminium>*2,<ore:wireFineAnnealedCopper>,<gregtech:meta_item_1:32500>,<ore:ingotIronMagnetic>*2)
@@ -160,6 +189,7 @@ assembler.recipeBuilder()
 	.duration(200)
 	.EUt(512)
 	.buildAndRegister();
+
 assembler.recipeBuilder()
 	.inputs(<ore:blockWoolGreen>*2,<ore:wireGtSingleAnnealedCopper>*4,<ore:plateIron>*2,<ore:LVbattery>)
 	.outputs(<ore:componentLVCapacitor>.firstItem*1)
@@ -185,6 +215,6 @@ assembler.recipeBuilder()
 	.EUt(524288)
 	.buildAndRegister();
 
+//Schematic (3x3)
 packer.findRecipe(4,[<minecraft:coal_block>*9,<gtadditions:ga_meta_item:32133>],[]).remove();
 packer.findRecipe(4,[<powersuits:powerarmorcomponent:14>*9,<gtadditions:ga_meta_item:32133>],[]).remove();
-

@@ -150,14 +150,14 @@ val circuitbase as IItemStack[] = [
 for i in circuitbase {
     Inscriber.removeRecipe(i);
 }
-//17
+//Printed Engineering Circuit
 Inscriber.addRecipe(<appliedenergistics2:material:17>,<ore:plateAluminium>,true,<appliedenergistics2:material:14>);
-//18
+//Printed Logic Circuit
 Inscriber.addRecipe(<appliedenergistics2:material:18>,<ore:plateRoseGold>,true,<appliedenergistics2:material:15>);
-//20
+//Printed Silicon
 Inscriber.addRecipe(<appliedenergistics2:material:20>,<ore:plateSilicon>,true,<appliedenergistics2:material:19>);
 
-//etching circuit with  circuit_assembler//
+//etching circuit with circuit_assembler//
 val circuit as IItemStack[] = [
     <appliedenergistics2:material:22>,
     <appliedenergistics2:material:24>,
@@ -166,7 +166,7 @@ val circuit as IItemStack[] = [
 for i in circuit {
     Inscriber.removeRecipe(i);
 }
-//22,23,24
+//Logic Processor
 circuit_assembler.recipeBuilder()   
     .inputs(<appliedenergistics2:material:18>,<appliedenergistics2:material:20>)
     .fluidInputs([<liquid:redstone>*288])
@@ -175,6 +175,7 @@ circuit_assembler.recipeBuilder()
     .duration(400)
     .EUt(128)
     .buildAndRegister();
+//Calculation Processor
 circuit_assembler.recipeBuilder()   
     .inputs(<appliedenergistics2:material:16>,<appliedenergistics2:material:20>)
     .fluidInputs([<liquid:redstone>*288])
@@ -183,6 +184,7 @@ circuit_assembler.recipeBuilder()
     .duration(400)
     .EUt(128)
     .buildAndRegister();
+//Engineering Processor
 circuit_assembler.recipeBuilder()
     .inputs(<appliedenergistics2:material:17>,<appliedenergistics2:material:20>)
     .fluidInputs([<liquid:redstone>*288])

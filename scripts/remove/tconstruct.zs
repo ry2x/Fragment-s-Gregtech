@@ -11,7 +11,6 @@ import crafttweaker.liquid.ILiquidStack;
 //import JEI function
 import mods.jei.JEI;
 
-
 //remove plate cast
 removeTableRecipe(<tconstruct:cast_custom:3>);
 JEI.hide(<tconstruct:cast_custom:3>);

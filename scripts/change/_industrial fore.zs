@@ -4,7 +4,7 @@ import crafttweaker.item.IItemStack;
 //change recipe of machines//
 print("start indus");
 
-//<industrialforegoing:enchantment_refiner>
+//Enchantment Sorter
 recipes.remove(<industrialforegoing:enchantment_refiner>);
 recipes.addShaped(<industrialforegoing:enchantment_refiner>,[
     [<ore:plateSterlingSilver>,<minecraft:ender_pearl>,<ore:plateSterlingSilver>],
@@ -12,7 +12,7 @@ recipes.addShaped(<industrialforegoing:enchantment_refiner>,[
     [<ore:plateSterlingSilver>,<ore:gearDiamond>,<ore:plateSterlingSilver>]
 ]);
 
-//<industrialforegoing:enchantment_extractor>
+//Enchantment Extractor
 recipes.remove(<industrialforegoing:enchantment_extractor>);
 recipes.addShaped(<industrialforegoing:enchantment_extractor>,[
     [<ore:plateSterlingSilver>,<minecraft:nether_brick>,<ore:plateSterlingSilver>],
@@ -20,7 +20,7 @@ recipes.addShaped(<industrialforegoing:enchantment_extractor>,[
     [<minecraft:diamond>,<ore:gearGold>,<minecraft:diamond>]
 ]);
 
-//<industrialforegoing:enchantment_aplicator>
+//Enchantment Applicator
 recipes.remove(<industrialforegoing:enchantment_aplicator>);
 recipes.addShaped(<industrialforegoing:enchantment_aplicator>,[
     [<ore:plateSterlingSilver>,<ore:plateSterlingSilver>,<ore:plateSterlingSilver>],
@@ -28,7 +28,7 @@ recipes.addShaped(<industrialforegoing:enchantment_aplicator>,[
     [<ore:gearBronze>,<minecraft:anvil>,<ore:gearBronze>]
 ]);
 
-//<industrialforegoing:mob_relocator>
+//Mob Crusher
 recipes.remove(<industrialforegoing:mob_relocator>);
 recipes.addShaped(<industrialforegoing:mob_relocator>,[
     [<ore:plateSterlingSilver>,<minecraft:iron_sword>,<ore:plateSterlingSilver>],
@@ -36,7 +36,7 @@ recipes.addShaped(<industrialforegoing:mob_relocator>,[
     [<ore:gearGold>,<ore:blockRedstone>,<ore:gearGold>]
 ]);
 
-//<industrialforegoing:potion_enervator>
+//Potion Brewer
 recipes.remove(<industrialforegoing:potion_enervator>);
 recipes.addShaped(<industrialforegoing:potion_enervator>,[
     [<ore:plateSterlingSilver>,<minecraft:brewing_stand>,<ore:plateSterlingSilver>],
@@ -44,7 +44,7 @@ recipes.addShaped(<industrialforegoing:potion_enervator>,[
     [<projectred-integration:gate:10>,<ore:gearGold>,<projectred-integration:gate:10>]
 ]);
 
-//<industrialforegoing:animal_independence_selector>
+//Animal Baby Separator
 recipes.remove(<industrialforegoing:animal_independence_selector>);
 recipes.addShaped(<industrialforegoing:animal_independence_selector>,[
     [<ore:plateSterlingSilver>,<ore:plateEmerald>,<ore:plateSterlingSilver>],
@@ -52,7 +52,7 @@ recipes.addShaped(<industrialforegoing:animal_independence_selector>,[
     [<ore:dyePurple>,<ore:gearGold>,<ore:dyePurple>]
 ]);
 
-//<industrialforegoing:animal_stock_increaser>
+//Animal Feeder
 recipes.remove(<industrialforegoing:animal_stock_increaser>);
 recipes.addShaped(<industrialforegoing:animal_stock_increaser>,[
     [<ore:plateSterlingSilver>,<minecraft:golden_apple>,<ore:plateSterlingSilver>],
@@ -60,7 +60,7 @@ recipes.addShaped(<industrialforegoing:animal_stock_increaser>,[
     [<ore:dyePurple>,<ore:gearIron>,<ore:dyePurple>]
 ]);
 
-//<industrialforegoing:crop_sower>
+//Plant Sower
 recipes.remove(<industrialforegoing:crop_sower>);
 recipes.addShaped(<industrialforegoing:crop_sower>,[
     [<ore:plateSterlingSilver>,<minecraft:flower_pot>,<ore:plateSterlingSilver>],
@@ -68,7 +68,7 @@ recipes.addShaped(<industrialforegoing:crop_sower>,[
     [<ore:gearIron>,<ore:blockRedstone>,<ore:gearIron>]
 ]);
 
-//<industrialforegoing:crop_enrich_material_injector>
+//Plant Fertilizer
 recipes.remove(<industrialforegoing:crop_enrich_material_injector>);
 recipes.addShaped(<industrialforegoing:crop_enrich_material_injector>,[
     [<ore:plateSterlingSilver>,<minecraft:glass_bottle>,<ore:plateSterlingSilver>],
@@ -76,7 +76,7 @@ recipes.addShaped(<industrialforegoing:crop_enrich_material_injector>,[
     [<ore:gearIron>,<ore:blockRedstone>,<ore:gearIron>]
 ]);
 
-//<industrialforegoing:crop_recolector>
+//Plant Gatherer
 recipes.remove(<industrialforegoing:crop_recolector>);
 recipes.addShaped(<industrialforegoing:crop_recolector>,[
     [<ore:plateSterlingSilver>,<minecraft:diamond_hoe>,<ore:plateSterlingSilver>],
@@ -84,7 +84,7 @@ recipes.addShaped(<industrialforegoing:crop_recolector>,[
     [<ore:gearGold>,<ore:blockRedstone>,<ore:gearGold>]
 ]);
 
-//<industrialforegoing:animal_resource_harvester>
+//Animal Rancher
 recipes.remove(<industrialforegoing:animal_resource_harvester>);
 recipes.addShaped(<industrialforegoing:animal_resource_harvester>,[
     [<ore:plateSterlingSilver>,<ore:plateSterlingSilver>,<ore:plateSterlingSilver>],
@@ -92,102 +92,100 @@ recipes.addShaped(<industrialforegoing:animal_resource_harvester>,[
     [<ore:gearGold>,<ore:MVcasing>,<ore:gearGold>]
 ]);
 
-//<industrialforegoing:mob_slaughter_factory>
+//Mob Slaughter Factory
 recipes.addShaped(<industrialforegoing:mob_slaughter_factory>,[
     [<ore:plateSterlingSilver>,<ore:gearGold>,<ore:plateSterlingSilver>],
     [<minecraft:diamond_sword>,<ore:MVcasing>,<minecraft:diamond_sword>],
     [<minecraft:diamond_axe>,<ore:gearGold>,<minecraft:diamond_axe>]
 ]);
 
-//<industrialforegoing:sewage_composter_solidifier>
+//Sewage Composter
 recipes.addShaped(<industrialforegoing:sewage_composter_solidifier>,[
     [<ore:plateSterlingSilver>,<gregtech:machine:50>,<ore:plateSterlingSilver>],
     [<minecraft:piston>,<ore:MVcasing>,<minecraft:piston>],
     [<minecraft:brick>,<ore:blockRedstone>,<minecraft:brick>]
 ]);
 
-//<industrialforegoing:animal_byproduct_recolector>
+//Animal Sewer
 recipes.addShaped(<industrialforegoing:animal_byproduct_recolector>,[
     [<ore:plateSterlingSilver>,<minecraft:bucket>,<ore:plateSterlingSilver>],
     [<minecraft:bucket>,<ore:MVcasing>,<minecraft:bucket>],
     [<ore:gearGold>,<ore:blockRedstone>,<ore:gearGold>]
 ]);
 
-//<industrialforegoing:mob_detector>
+//Mob Detector
 recipes.addShaped(<industrialforegoing:mob_detector>,[
     [<ore:plateSterlingSilver>,<ore:plateSterlingSilver>,<ore:plateSterlingSilver>],
     [<projectred-integration:gate:26>,<minecraft:comparator>,<projectred-integration:gate:26>],
     [<minecraft:observer>,<ore:MVcasing>,<minecraft:observer>]
 ]);
 
-//<industrialforegoing:ore_processor>
+//Ore Processor
 recipes.addShaped(<industrialforegoing:ore_processor>,[
     [<ore:plateSterlingSilver>,<minecraft:piston>,<ore:plateSterlingSilver>],
     [<minecraft:diamond_pickaxe>,<ore:MVcasing>,<minecraft:diamond_pickaxe>],
     [<minecraft:book>,<ore:blockRedstone>,<minecraft:book>]
 ]);
 
-//<industrialforegoing:enchantment_invoker>
+//Enchantment Factory
 recipes.addShaped(<industrialforegoing:enchantment_invoker>,[
     [<ore:plateSterlingSilver>,<ore:bookEnchanted>,<ore:plateSterlingSilver>],
     [<ore:blockDiamond>,<ore:MVcasing>,<ore:blockDiamond>],
     [<ore:obsidian>,<ore:obsidian>,<ore:obsidian>]
 ]);
 
-//<industrialforegoing:spores_recreator>
+//Spores Recreator
 recipes.addShaped(<industrialforegoing:spores_recreator>,[
     [<ore:plateSterlingSilver>,<minecraft:red_mushroom>,<ore:plateSterlingSilver>],
     [<minecraft:mycelium>,<ore:MVcasing>,<minecraft:mycelium>],
     [<ore:plateSterlingSilver>,<ore:gearGold>,<ore:plateSterlingSilver>]
 ]);
 
-//<industrialforegoing:animal_growth_increaser>
+//Animal Grower
 recipes.addShaped(<industrialforegoing:animal_growth_increaser>,[
     [<ore:plateSterlingSilver>,<minecraft:hay_block>,<ore:plateSterlingSilver>],
     [<minecraft:hay_block>,<ore:MVcasing>,<minecraft:hay_block>],
     [<ore:dyePurple>,<ore:gearGold>,<ore:dyePurple>]
 ]);
 
-//<industrialforegoing:fluid_pump>
+//Fluid Pump
 recipes.addShaped(<industrialforegoing:fluid_pump>,[
     [<ore:plateSterlingSilver>,<gregtech:meta_item_1:32611>,<ore:plateSterlingSilver>],
     [<gregtech:meta_item_1:32611>,<ore:MVcasing>,<gregtech:meta_item_1:32611>],
     [<gregtech:meta_item_1:32610>,<gregtech:meta_item_1:32610>,<gregtech:meta_item_1:32610>]
 ]);
 
-//<industrialforegoing:fluid_crafter>
+//Fluid Crafter
 recipes.addShaped(<industrialforegoing:fluid_crafter>,[
     [<ore:plateSterlingSilver>,<appliedenergistics2:molecular_assembler>,<ore:plateSterlingSilver>],
     [<ore:ringRubber>,<ore:MVcasing>,<ore:ringRubber>],
     [<ore:plateSterlingSilver>,<gregtech:meta_item_1:32610>,<ore:plateSterlingSilver>]
 ]);
 
-//<industrialforegoing:plant_interactor>
+//Plant Interactor
 recipes.addShaped(<industrialforegoing:plant_interactor>,[
     [<ore:plateSterlingSilver>,<minecraft:diamond_hoe>,<ore:plateSterlingSilver>],
     [<minecraft:diamond_hoe>,<ore:MVcasing>,<minecraft:diamond_hoe>],
     [<ore:gearGold>,<ore:blockRedstone>,<ore:gearGold>]
 ]);
 
-//<industrialforegoing:item_splitter>
+//Item Splitter
 recipes.addShaped(<industrialforegoing:item_splitter>,[
     [<ore:plateSterlingSilver>,<minecraft:hopper>,<ore:plateSterlingSilver>],
     [<minecraft:hopper>,<ore:MVcasing>,<minecraft:hopper>],
     [<ore:plateSterlingSilver>,<minecraft:chest>,<ore:plateSterlingSilver>]
 ]);
 
-//<industrialforegoing:froster>
+//Froster
 recipes.addShaped(<industrialforegoing:froster>,[
     [<ore:plateSterlingSilver>,<minecraft:packed_ice>,<ore:plateSterlingSilver>],
     [<minecraft:snow>,<ore:MVcasing>,<minecraft:snow>],
     [<ore:plateSterlingSilver>,<ore:gearGold>,<ore:plateSterlingSilver>]
 ]);
 
-//
-
 //change misc//
 
-//<industrialforegoing:mob_imprisonment_tool>
+//Mob Imprisonment Tool
 recipes.remove(<industrialforegoing:mob_imprisonment_tool>);
 recipes.addShaped(<industrialforegoing:mob_imprisonment_tool>,[
     [null,<ore:plateSterlingSilver>,null],
@@ -195,7 +193,7 @@ recipes.addShaped(<industrialforegoing:mob_imprisonment_tool>,[
     [null,<ore:plateSterlingSilver>,null]
 ]);
 
-//<industrialforegoing:conveyor_upgrade>
+//Extraction Conveyor Upgrade
 recipes.remove(<industrialforegoing:conveyor_upgrade>);
 recipes.addShaped(<industrialforegoing:conveyor_upgrade>,[
     [<ore:ingotIron>,<ore:plateSterlingSilver>,<ore:ingotIron>],
@@ -203,7 +201,7 @@ recipes.addShaped(<industrialforegoing:conveyor_upgrade>,[
     [<ore:ingotIron>,<industrialforegoing:conveyor:*>,<ore:ingotIron>],
 ]);
 
-//<industrialforegoing:conveyor_upgrade:1>
+//Insertion Conveyor Upgrade
 recipes.remove(<industrialforegoing:conveyor_upgrade:1>);
 recipes.addShaped(<industrialforegoing:conveyor_upgrade:1>,[
     [<ore:ingotIron>,<ore:plateSterlingSilver>,<ore:ingotIron>],
@@ -211,7 +209,7 @@ recipes.addShaped(<industrialforegoing:conveyor_upgrade:1>,[
     [<ore:ingotIron>,<industrialforegoing:conveyor:*>,<ore:ingotIron>],
 ]);
 
-//<industrialforegoing:conveyor>
+//White Conveyor Belt
 recipes.remove(<industrialforegoing:conveyor>);
 recipes.addShaped(<industrialforegoing:conveyor>,[
     [<ore:plateSterlingSilver>,<ore:plateSterlingSilver>,<ore:plateSterlingSilver>],
@@ -226,7 +224,7 @@ recipes.addShaped(<industrialforegoing:conveyor>,[
 
 //change upgrades
 recipes.remove(<industrialforegoing:range_addon:*>);
-
+    #Range Addon
 recipes.addShaped(<industrialforegoing:range_addon:11>, [
     [<gregtech:meta_item_1:12993>, <ore:plateSterlingSilver>, <gregtech:meta_item_1:12993>],
     [<gregtech:meta_item_1:12993>, <ore:paneGlass>, <gregtech:meta_item_1:12993>], 
@@ -287,7 +285,7 @@ recipes.addShaped(<industrialforegoing:range_addon>, [
     [<ore:plateAnnealedCopper>, <ore:paneGlass>, <ore:plateAnnealedCopper>], 
     [<ore:plateAnnealedCopper>, <ore:plateSterlingSilver>, <ore:plateAnnealedCopper>]
 ]);
-//
+
 //other filters
 for i in loadedMods["industrialforegoing"].items {
     recipes.replaceAllOccurences(<industrialforegoing:plastic>,<ore:plateSterlingSilver>,i);

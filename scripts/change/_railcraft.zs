@@ -28,48 +28,61 @@ for i in circuit {
     recipes.remove(i);
 }
 
+//Controller Circuit
 circuit_assembler.recipeBuilder()
     .inputs(<ore:circuitBasic>,<gregtech:meta_item_2:32447>,<ore:dustRedstone>*4,<ore:woolRed>*2,<projectred-core:resource_item:11>)
     .outputs(<railcraft:circuit>)
     .duration(100)
     .EUt(48)
     .buildAndRegister();
+
+//Receiver Circuit
 circuit_assembler.recipeBuilder()
     .inputs(<ore:circuitBasic>,<gregtech:meta_item_2:32447>,<ore:dustRedstone>*4,<ore:woolGreen>*2,<projectred-core:resource_item:11>)
     .outputs(<railcraft:circuit:1>)
     .duration(100)
     .EUt(48)
     .buildAndRegister();
+
+//Signal Circuit
 circuit_assembler.recipeBuilder()
     .inputs(<ore:circuitBasic>,<gregtech:meta_item_2:32447>,<ore:dustRedstone>*4,<ore:woolYellow>*2,<projectred-core:resource_item:11>)
     .outputs(<railcraft:circuit:2>)
     .duration(100)
     .EUt(48)
     .buildAndRegister();
+
+//Radio Circuit
 circuit_assembler.recipeBuilder()
     .inputs(<ore:circuitBasic>,<gregtech:meta_item_2:32447>,<ore:dustRedstone>*4,<ore:woolBlue>*2,<projectred-core:resource_item:11>)
     .outputs(<railcraft:circuit:3>)
     .duration(100)
     .EUt(48)
     .buildAndRegister();
+
+//Signal Lamp
 assembler.recipeBuilder()
     .inputs(<ore:paneGlassYellow>,<ore:paneGlassRed>,<ore:paneGlassGreen>,<projectred-integration:gate:13>,<projectred-illumination:lamp:*>)
     .outputs(<railcraft:signal_lamp>)
     .duration(50)
     .EUt(48)
     .buildAndRegister();
+
+//Signal Surveyor
 recipes.addShaped(<railcraft:tool_signal_surveyor>,[
     [<ore:stone>,<ore:paneGlass>,<ore:stone>],
     [<ore:stone>,<ore:circuitBasic:1>,<ore:stone>],
     [<ore:stone>,<ore:dustRedstone>,<ore:stone>],
 ]);
+
+//Signal Tuner
 recipes.addShaped(<railcraft:tool_signal_tuner>,[
     [<ore:stone>,<gregtech:meta_item_1:32680>,<ore:stone>],
     [<ore:stone>,<ore:circuitBasic:1>,<ore:stone>],
     [<ore:stone>,null,<ore:stone>],
 ]);
 
-//change recipe of armer 
+//change recipe of steel armor 
 val arm = [
     <railcraft:armor_helmet_steel>,
     <railcraft:armor_chestplate_steel>,

@@ -98,4 +98,3 @@ val useless = [
 for item in useless {
     JEI.removeAndHide(item);
 }
-

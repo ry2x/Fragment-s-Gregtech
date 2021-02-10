@@ -121,7 +121,7 @@ fluid_extractor.recipeBuilder()
     .buildAndRegister();
 
 
-//fixing <ore:dustTungsten>  recipes due to no recipes exsting
+//fixing <ore:dustTungsten> recipes due to no exsting recipes
 electrolyzer.recipeBuilder()
     .inputs(<ore:dustTungstate>*7)
     .outputs(<ore:dustTungsten>.firstItem,<ore:dustLithium>.firstItem*2)
@@ -583,32 +583,43 @@ assembler.recipeBuilder()
 	.EUt(640000)
 	.buildAndRegister();
 //drum recipes fix
+	#Tungstensteel Drum
 recipes.addShaped(<gregtech:machine:2200>, [
 	[<ore:boltTungstenSteel>, <ore:plateTungstenSteel>, <ore:boltTungstenSteel>],
     [<ore:plateTungstenSteel>, <ore:stickLongTungstenSteel>, <ore:plateTungstenSteel>], 
     [<ore:boltTungstenSteel>, <ore:plateTungstenSteel>, <ore:boltTungstenSteel>]
 ]);
+	#Titanium Drum
 recipes.addShaped(<gregtech:machine:2199>, [
 	[<ore:boltTriniumTitanium>, <ore:plateTitanium>, <ore:boltTriniumTitanium>],
     [<ore:plateTitanium>, <ore:stickLongTitanium>, <ore:plateTitanium>], 
     [<ore:boltTriniumTitanium>, <ore:plateTitanium>, <ore:boltTriniumTitanium>]
 ]);
+	#Stainless Steel Drum
 recipes.addShaped(<gregtech:machine:2198>, [
 	[<ore:boltStainlessSteel>, <ore:plateStainlessSteel>, <ore:boltStainlessSteel>],
     [<ore:plateStainlessSteel>, <ore:stickLongStainlessSteel>, <ore:plateStainlessSteel>], 
     [<ore:boltStainlessSteel>, <ore:plateStainlessSteel>, <ore:boltStainlessSteel>]
 ]);
+	#Steel Drum
 recipes.addShaped(<gregtech:machine:2197>, [
 	[<ore:boltSteel>, <ore:plateSteel>, <ore:boltSteel>],
     [<ore:plateSteel>, <ore:stickLongSteel>, <ore:plateSteel>], 
     [<ore:boltSteel>, <ore:plateSteel>, <ore:boltSteel>]
 ]);
+	#Bronze Drum
 recipes.addShaped(<gregtech:machine:2196>, [
 	[<ore:boltBronze>, <ore:plateBronze>, <ore:boltBronze>],
     [<ore:plateBronze>, <ore:stickLongBronze>, <ore:plateBronze>], 
     [<ore:boltBronze>, <ore:plateBronze>, <ore:boltBronze>]
 ]);
 	#in assembler
+assembler.recipeBuilder()
+	.inputs(<ore:stickLongTungstenSteel>*2, <ore:plateTungstenSteel>*4)
+	.outputs(<gregtech:machine:2200>)
+	.duration(80)
+	.EUt(18)
+	.buildAndRegister();
 assembler.recipeBuilder()
 	.inputs(<ore:stickLongTitanium>*2, <ore:plateTitanium>*4)
 	.outputs(<gregtech:machine:2199>)
@@ -618,12 +629,6 @@ assembler.recipeBuilder()
 assembler.recipeBuilder()
 	.inputs(<ore:stickLongStainlessSteel>*2, <ore:plateStainlessSteel>*4)
 	.outputs(<gregtech:machine:2198>)
-	.duration(80)
-	.EUt(18)
-	.buildAndRegister();
-assembler.recipeBuilder()
-	.inputs(<ore:stickLongTungstenSteel>*2, <ore:plateTungstenSteel>*4)
-	.outputs(<gregtech:machine:2200>)
 	.duration(80)
 	.EUt(18)
 	.buildAndRegister();
@@ -662,8 +667,7 @@ large_forge_hammer.recipeBuilder()
 	.duration(200)
 	.EUt(24)
 	.buildAndRegister();
-
-	#sppahire
+	#sapphire
 compressor.findRecipe(2,[<projectred-core:resource_item:201>*9],null).remove();
 compressor.recipeBuilder()
 	.inputs(<ore:gemSapphire>*9)
@@ -763,7 +767,7 @@ compressor.recipeBuilder()
 	.EUt(2)
 	.buildAndRegister();
 
-//fix polyethely recipes
+//fix polyethylene recipes
 	#ammonia by haber-bosch process
 reactor.recipeBuilder()
 	.inputs(<ore:dustVanadiumMagnetite>*32)
@@ -784,7 +788,7 @@ reactor.recipeBuilder()
 	.duration(2500)
 	.EUt(16)
 	.buildAndRegister();
-	#polymer pulpe in mixer
+	#polymer Polyethylene Pulp in mixer
 mixer.recipeBuilder()
 	.inputs(<ore:dustCarbon>)
 	.fluidInputs([<liquid:hydrogen>*1000])

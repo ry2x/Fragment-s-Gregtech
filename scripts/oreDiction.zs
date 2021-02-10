@@ -12,7 +12,7 @@ import crafttweaker.oredict.IOreDictEntry;
 import mods.gregtech.recipe.RecipeMaps;
 import mods.gregtech.recipe.RecipeMap;
 
-//removed from oredic
+//remove from oredic
 
 //for block
 

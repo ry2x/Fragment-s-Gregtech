@@ -40,7 +40,7 @@ JEI.addDescription(<kythsopmoss:overpowered_moss>,"This Moss Is Very OP.","It Co
 //scanable
 <scannable:module_ore_rare>.addShiftTooltip(format.aqua("Detect GregTech's Ores!"));
 JEI.addDescription(<scannable:module_ore_rare>,"This module detects Most Gregtech's Ores.","It's So Helpful!");
-JEI.addDescription(<scannable:scanner>,"It Is Very Useful Item.","Right Click And Hold While Holding This Item.");
+JEI.addDescription(<scannable:scanner>,"It Is Very Useful Item.","Right Click And Hold To Use This Item.");
     #re-add name
 <scannable:module_ore_rare>.displayName = "GregTech Ore Module";
 

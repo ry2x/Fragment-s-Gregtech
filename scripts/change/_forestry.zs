@@ -48,7 +48,6 @@ removeRecipe(<forestry:chipsets:1>);
 removeRecipe(<forestry:chipsets:2>);
 removeRecipe(<forestry:chipsets:3>);
 
-
 //add recipe basic chipset and upgrade recipes
 assembler.recipeBuilder()
     .inputs(<ore:ingotTin>,<ore:dustRedstone>*6,<gregtech:meta_item_2:32447>)
@@ -82,7 +81,6 @@ assembler.recipeBuilder()
     .duration(80)
     .EUt(512)
     .buildAndRegister();
-//
 
 //remove recipes chipset in crafting table
 recipes.remove(<forestry:thermionic_tubes:*>);
@@ -138,7 +136,7 @@ addRecipe(<forestry:crafting_material:3>,[
     [<ore:wool>,<ore:wool>,<ore:wool>],
     [<ore:wool>,<ore:wool>,<ore:wool>]
 ], 60, <liquid:water> * 500);
-//
+
 //buff fertilizer
 recipes.addShaped(<forestry:fertilizer_compound>*9, [
     [<forestry:fertilizer_bio>, <forestry:fertilizer_bio>, <forestry:fertilizer_bio>],
@@ -155,21 +153,21 @@ distillery.recipeBuilder()
     .EUt(8)
     .buildAndRegister();
 
- extractor.recipeBuilder()
+extractor.recipeBuilder()
     .inputs(<minecraft:pumpkin_seeds>)
     .fluidOutputs([<liquid:seed.oil>*10])
     .duration(32)
     .EUt(2)
     .buildAndRegister();
 
- extractor.recipeBuilder()
+extractor.recipeBuilder()
     .inputs(<minecraft:melon_seeds>)
     .fluidOutputs([<liquid:seed.oil>*10])
     .duration(32)
     .EUt(2)
     .buildAndRegister();
 
- extractor.recipeBuilder()
+extractor.recipeBuilder()
     .inputs(<minecraft:wheat_seeds>)
     .fluidOutputs([<liquid:seed.oil>*10])
     .duration(32)
