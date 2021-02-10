@@ -1019,7 +1019,7 @@ mods.jei.JEI.removeAndHide(<enderio:item_material:5>);
 <ore:fluixCrystal>.add(<appliedenergistics2:material:7>);
 <ore:fluixCrystal>.add(<appliedenergistics2:material:12>);
 
-//aluminum add aluminum
+//add aluminium to aluminum
 <ore:blockAluminum>.add(<gregtech:compressed_0>);
 
 //tconstruct cobalt adds to cobalt
@@ -1029,7 +1029,7 @@ mods.jei.JEI.removeAndHide(<enderio:item_material:5>);
 <ore:VoidWorldPortal>.add(<chisel:factory1:1>);
 
 #future log removed from ore
-val ftmclog as IItemStack[] = [
+val ftmcLog as IItemStack[] = [
     <futuremc:oak_wood>,
     <futuremc:acacia_wood>,
     <futuremc:dark_oak_wood>,
@@ -1038,7 +1038,7 @@ val ftmclog as IItemStack[] = [
     <futuremc:spruce_wood>
 ];
 
-<ore:logWood>.removeItems(ftmclog);
+<ore:logWood>.removeItems(ftmcLog);
 
 #quark bark
 val quarkB as IItemStack[] = [
