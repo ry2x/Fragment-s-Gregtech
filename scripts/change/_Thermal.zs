@@ -116,14 +116,14 @@ alloy.recipeBuilder()
     .EUt(16)
     .buildAndRegister();
 
-//add fluidduct recipe in assembler//
-val fluidduct = [
+//add fluid duct recipe in assembler//
+val fluidDuct = [
     <thermaldynamics:duct_16:*>,
     <thermaldynamics:duct_32:*>,
     <thermaldynamics:duct_48:*>,
 ] as IItemStack[];
 
-for i in fluidduct {
+for i in fluidDuct {
     recipes.remove(i);
 }
 
@@ -174,11 +174,11 @@ assembler.recipeBuilder()
     .buildAndRegister();
 
 //add item duct recipe in assembler//
-val itemduct = [
+val itemDuct = [
     <thermaldynamics:duct_32>
 ] as IItemStack[];
 
-for i in itemduct {
+for i in itemDuct {
     recipes.remove(i);
 }
 
@@ -225,11 +225,11 @@ recipes.addShaped(<thermaldynamics:duct_48>,[
 ]);
 
 //add player duct recipe in assembler//
-val playerduct = [
+val playerDuct = [
     <thermaldynamics:duct_64:*>
 ] as IItemStack[];
 
-for i in playerduct {
+for i in playerDuct {
     recipes.remove(i);
 }
 

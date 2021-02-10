@@ -17,7 +17,7 @@ val packer = RecipeMap.getByName("packer");
 val assembler = RecipeMap.getByName("assembler");
 val freezer = RecipeMap.getByName("vacuum_freezer");
 
-//make liquid nitorgen from nitrogen
+//make liquid nitrogen from nitrogen
 freezer.recipeBuilder()
     .fluidInputs([<liquid:nitrogen>*696])
     .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:3}))

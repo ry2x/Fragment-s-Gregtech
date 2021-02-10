@@ -4,7 +4,6 @@ import crafttweaker.item.IIngredient;
 //import greg
 import mods.gregtech.recipe.RecipeMap;
 
-
 val forming = RecipeMap.getByName("forming_press");
 val assembler = RecipeMap.getByName("assembler");
 
@@ -69,7 +68,7 @@ assembler.recipeBuilder()
     .buildAndRegister();
 
 //hyper sender
-    //reciver
+    //receiver
     #energy
 assembler.recipeBuilder()
     .inputs(<overloaded:energy_core>,<danknull:dank_null_panel_2>*2)
@@ -137,7 +136,7 @@ assembler.recipeBuilder()
     .EUt(512)
     .buildAndRegister();
 
-//infinity capacitar blocks
+//infinity capacitor blocks
     #tank
 assembler.recipeBuilder()
     .inputs(<gregtech:machine:1020>,<overloaded:fluid_core>,<ore:plateStainlessSteel>*4,<ore:circuitElite>*4)

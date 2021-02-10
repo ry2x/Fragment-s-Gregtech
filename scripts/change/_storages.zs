@@ -2,7 +2,7 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 
-//@ironchest
+//@iron chest
     #Titanium Chest
 recipes.remove(<ironchest:iron_chest:6>);
 <ironchest:iron_chest:6>.displayName = "Titanium Chest";

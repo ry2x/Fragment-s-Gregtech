@@ -23,7 +23,7 @@ JEI.addDescription(<appliedenergistics2:creative_energy_cell>,"Removed All Capac
 //railcraft chunkloader
 JEI.addDescription(<railcraft:worldspike>,"All Of RailCraft's ChunkLoaders are removed.","Use Other ChunkLoaders.");
 
-//code chiken lib
+//code chicken lib
 <chickenchunks:chunk_loader>.addShiftTooltip("you are clever!");
 
 //lightning lod 
@@ -37,7 +37,7 @@ JEI.addDescription(<tesseract:tesseract>,"Tesseract Comes From Old Thermal Expan
 <kythsopmoss:overpowered_moss>.addTooltip("You Need More Power?");
 JEI.addDescription(<kythsopmoss:overpowered_moss>,"This Moss Is Very OP.","It Comes From Old Version TinkersCon!","Funtastic!!");
 
-//scanable
+//scannable
 <scannable:module_ore_rare>.addShiftTooltip(format.aqua("Detect GregTech's Ores!"));
 JEI.addDescription(<scannable:module_ore_rare>,"This module detects Most Gregtech's Ores.","It's So Helpful!");
 JEI.addDescription(<scannable:scanner>,"It Is Very Useful Item.","Right Click And Hold To Use This Item.");

@@ -214,7 +214,7 @@ recipes.addShaped(<danknull:danknull_dock>, [
     [<ore:plateEmerald>, <ore:plateRedAlloy>, <ore:plateEmerald>]
 ]);
 
-//translocater recipes
+//translocator recipes
     #Item Translocator
 recipes.remove(<translocators:translocator_part>);
 assembler.recipeBuilder()
@@ -290,7 +290,7 @@ recipes.addShaped(<mob_grinding_utils:absorption_hopper>, [
     [<minecraft:hopper>, <gregtech:meta_item_1:32632>, <minecraft:hopper>]
 ]);
 
-//lightingwand
+//lighting wand
 recipes.remove(<lightingwand:wand>);
 recipes.addShaped(<lightingwand:wand>, [
     [null, <appliedenergistics2:quartz_fixture>, <appliedenergistics2:quartz_fixture>],
@@ -309,13 +309,13 @@ autoclave.recipeBuilder()
     .EUt(122880)
 	.buildAndRegister();
 
-//chest transportor
-val transportor as IItemStack[] = [
+//chest transporter
+val transporter as IItemStack[] = [
     <chesttransporter:chesttransporter_iron>,
     <chesttransporter:chesttransporter_tin>,
     <chesttransporter:chesttransporter_silver>,
 ];
-for i in transportor {
+for i in transporter {
     recipes.replaceAllOccurences(<minecraft:stick>,<forestry:oak_stick>,i);
 }
 
@@ -457,7 +457,7 @@ autoclave.recipeBuilder()
     .duration(200)
     .EUt(240)
     .buildAndRegister();
-//qarry plus
+//quarry plus
     #work bench
 recipes.remove(<quarryplus:workbenchplus>);
 recipes.addShaped(<quarryplus:workbenchplus>,[

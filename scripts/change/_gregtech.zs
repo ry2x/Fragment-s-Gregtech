@@ -110,7 +110,7 @@ mods.jei.JEI.removeAndHide(<gregtech:machine:460>);
 //remove basic laser engraver
 mods.jei.JEI.removeAndHide(<gregtech:machine:430>);
 
-//add recipe to enderperl liquid
+//add recipe to ender pearl liquid
 recipes.remove(<minecraft:ender_pearl>);
 
 fluid_extractor.recipeBuilder()
@@ -121,7 +121,7 @@ fluid_extractor.recipeBuilder()
     .buildAndRegister();
 
 
-//fixing <ore:dustTungsten> recipes due to no exsting recipes
+//fixing <ore:dustTungsten> recipes due to no existing recipes
 electrolyzer.recipeBuilder()
     .inputs(<ore:dustTungstate>*7)
     .outputs(<ore:dustTungsten>.firstItem,<ore:dustLithium>.firstItem*2)
@@ -298,7 +298,7 @@ alloy.recipeBuilder()
     .EUt(16)
     .buildAndRegister();
 
-//concrete to vallila concreate 
+//concrete to vanilla concrete 
 solidifier.findRecipe(8, [<gregtech:meta_item_1:32308>], [<liquid:concrete>*1296]).remove();
 compressor.findRecipe(2, [<gregtech:meta_item_1:2296>*9],[]).remove();
 solidifier.recipeBuilder()
@@ -316,7 +316,7 @@ compressor.recipeBuilder()
     .buildAndRegister();
 //concrete to cement
 recipes.addShapeless(<railcraft:concrete>,[<gregtech:meta_item_1:16196>,<gregtech:meta_item_1:2296>,<gregtech:meta_item_1:16196>]);
-//concrete to sheard
+//concrete to sherd
 recipes.addShapeless(<tconstruct:soil>*4,[<gregtech:meta_item_1:2296>,<gregtech:meta_item_1:2296>,<gregtech:meta_item_1:2296>,<gregtech:meta_item_1:2296>]);
 //resin to rubber
 reactor.recipeBuilder()
@@ -326,7 +326,7 @@ reactor.recipeBuilder()
     .duration(400)
     .EUt(20)
     .buildAndRegister();
-#supercooled_cryotheum helps cooldowning hot ingots
+#supercooled_cryotheum helps cool-downing hot ingots
 freezer.recipeBuilder()
 	.inputs(<ore:ingotHotErbium>)
 	.fluidInputs([<liquid:cryotheum>*10])
@@ -583,7 +583,7 @@ assembler.recipeBuilder()
 	.EUt(640000)
 	.buildAndRegister();
 //drum recipes fix
-	#Tungstensteel Drum
+	#TungstenSteel Drum
 recipes.addShaped(<gregtech:machine:2200>, [
 	[<ore:boltTungstenSteel>, <ore:plateTungstenSteel>, <ore:boltTungstenSteel>],
     [<ore:plateTungstenSteel>, <ore:stickLongTungstenSteel>, <ore:plateTungstenSteel>], 

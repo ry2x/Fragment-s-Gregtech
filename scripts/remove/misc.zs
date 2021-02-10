@@ -6,7 +6,7 @@ import crafttweaker.item.IItemStack;
 //import JEI function
 import mods.jei.JEI;
 
-val miscitems = [
+val miscItems = [
     <extrautils2:drum:4>,
     <extrautils2:drum:3>,
     <theoneprobe:probe>,
@@ -93,7 +93,7 @@ val miscitems = [
     <ironchest:iron_chest:7>
 ] as IItemStack[];
 
-for i in miscitems {
+for i in miscItems {
     JEI.removeAndHide(i);
 }
 
@@ -131,7 +131,7 @@ for item in loadedMods["microblockcbe"].items {
     JEI.removeAndHide(item);
 }
 
-//remove chest transportor
+//remove chest transporter
 val trans = [
     <chesttransporter:chesttransporter>,
     <chesttransporter:chesttransporter_gold>,
@@ -147,8 +147,8 @@ for i in trans {
 //remove recipe of compass
 recipes.remove(<minecraft:compass>);
 
-//remove and hide iron chest's shelker
-val shelker as IItemStack[] = [
+//remove and hide iron chest's shulker
+val shulker as IItemStack[] = [
     <ironchest:iron_shulker_box_white:*>,
     <ironchest:iron_shulker_box_orange:*>,
     <ironchest:iron_shulker_box_magenta:*>,
@@ -180,7 +180,7 @@ val shelker as IItemStack[] = [
     <ironchest:diamond_obsidian_shulker_upgrade>,
 ];
 
-for i in shelker {
+for i in shulker {
     JEI.removeAndHide(i);
 }
 
@@ -188,7 +188,7 @@ for i in shelker {
 JEI.removeAndHide(<extrautils2:spike_stone>);
 
 //fix duplicate recipes between forestry and FTMC
-val ftmclog as IItemStack[] = [
+val ftmcLog as IItemStack[] = [
     <futuremc:oak_wood>,
     <futuremc:acacia_wood>,
     <futuremc:dark_oak_wood>,
@@ -196,12 +196,13 @@ val ftmclog as IItemStack[] = [
     <futuremc:jungle_wood>,
     <futuremc:spruce_wood>
 ];
-for i in ftmclog {
+
+for i in ftmcLog {
     mods.jei.JEI.removeAndHide(i);
 }
 
 //remove quark useless items
-val quarkless as IItemStack[]= [
+val quarkLess as IItemStack[]= [
     <quark:biome_cobblestone:1>,
     <quark:biome_brick:1>,
     <quark:icy_stone_slab>,
@@ -232,13 +233,13 @@ val quarkless as IItemStack[]= [
     <quark:fire_stone_wall>,
 ];
 
-for i in quarkless {
+for i in quarkLess {
     mods.jei.JEI.removeAndHide(i);
 }
 
 //power suite
     #hide and remove useless items
-val powersuite as IItemStack[] = [
+val powerSuite as IItemStack[] = [
     <powersuits:powerarmorcomponent>,
     <powersuits:powerarmorcomponent:1>,
     <ore:componentMyofiberGel>.firstItem,
@@ -246,6 +247,6 @@ val powersuite as IItemStack[] = [
     <powersuits:powerarmorcomponent:17>,
 ];
 
-for i in powersuite {
+for i in powerSuite {
     JEI.removeAndHide(i);
 }
