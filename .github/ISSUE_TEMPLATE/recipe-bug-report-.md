@@ -17,7 +17,7 @@ Provide what type of recipe.
 *e.g.* GregTech‘s autoclave.
 :Crafting table recipe.
 
-**Screen shot of the recipe**
+**Screenshots of the recipe**
 If applicable, provide some screenshots.
 
 **Additional context**
