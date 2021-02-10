@@ -8,7 +8,7 @@ assignees: ry2x
 ---
 
 **Describe the issue**
-Explain what is issue.
+A clear and concise description of what the issue is.
 *e.g.*:the stick recipes are duplicated.
 :tungsten dust isn’t provided in gregtech machine.
 
@@ -17,8 +17,8 @@ Provide what type of recipe.
 *e.g.* GregTech‘s autoclave.
 :Crafting table recipe.
 
-**Screen shot of the recipe**
-Provide your screen shot.
+**Screenshots of the recipe**
+If applicable, provide some screenshots.
 
-**Comment**
-If you would like to write comments, write it.
+**Additional context**
+Add any other context about the problem here.

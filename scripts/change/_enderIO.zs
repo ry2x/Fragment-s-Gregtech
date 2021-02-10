@@ -12,7 +12,7 @@ val alloy = RecipeMap.getByName("alloy_smelter");
 //change name of <enderio:block_holy_fused_glass>
 <enderio:block_holy_fused_glass>.displayName = "Fuzed Glass";
 
-//fix all redstone alloy to redalloy
+//fix all redstone alloy to red alloy
 recipes.replaceAllOccurences(<enderio:item_alloy_ingot:3>,<ore:ingotRedAlloy>,<*>);
 
 //change redstone base filter
@@ -23,7 +23,7 @@ recipes.addShaped(<enderio:item_material:60>,[
     [<ore:ingotRedAlloy>,<ore:paperBlack>,<ore:ingotIron>]
 ]);
 
-//change Yota wrench
+//change Yeta wrench
 recipes.remove(<enderio:item_yeta_wrench>);
 recipes.addShaped(<enderio:item_yeta_wrench>,[
     [<ore:plateIron>,null,<ore:plateIron>],
@@ -31,7 +31,7 @@ recipes.addShaped(<enderio:item_yeta_wrench>,[
     [null,<ore:plateIron>,null]
 ]);
 
-//change capacita
+//change capacitor
 recipes.remove(<enderio:item_basic_capacitor>);
 recipes.addShaped(<enderio:item_basic_capacitor>,[
     [null,<ore:stone>,null],
@@ -99,13 +99,13 @@ recipes.replaceAllOccurences(<enderio:item_material:15>,<overloaded:energy_core>
 <enderio:block_cap_bank:2>.displayName = "Advanced Capacitor Block";
 <enderio:block_cap_bank:3>.displayName = "Great Capacitor Block";
 
-//fix montor recipes
+//fix monitor recipes
 recipes.replaceAllOccurences(<enderio:item_alloy_ingot>,<ore:ingotIronMagnetic>,<enderio:block_power_monitor>);
 
 //fix gauge recipes
 recipes.replaceAllOccurences(<enderio:item_alloy_ingot>,<ore:ingotIronMagnetic>,<enderio:block_gauge>);
 
-//fix flux conduit steller
+//fix flux conduit stellar
 recipes.replaceAllOccurences(<enderio:item_alloy_endergy_ingot:4>,<ore:ingotStainlessSteel>,<enderio:item_endergy_conduit:9>);
 recipes.replaceAllOccurences(<enderio:item_alloy_endergy_ingot:2>,<ore:ingotRhodium>,<enderio:item_endergy_conduit:10>);
 recipes.replaceAllOccurences(<enderio:item_alloy_endergy_ingot:3>,<ore:ingotNeutronium>,<enderio:item_endergy_conduit:11>);
@@ -160,7 +160,7 @@ recipes.addShaped(<enderio:item_fluid_filter>,[
     [<ore:ingotIron>,<ore:paperBlack>,<ore:ingotIron>]
 ]);
 
-//fix steller fluid conduits
+//fix stellar fluid conduits
 recipes.replaceAllOccurences(<enderio:item_alloy_endergy_ingot:3>,<gregtech:meta_item_1:10074>,<enderio:item_fluid_conduit>);
 recipes.replaceAllOccurences(<ore:blockGlassHardened>,<enderio:block_holy_fused_glass:*>,<enderio:item_fluid_conduit>);
 <enderio:item_fluid_conduit>.displayName = "Super Fluid Conduit";
@@ -182,10 +182,10 @@ recipes.addShaped(<enderio:block_holy_fused_glass>,[
 ]);
 
 //replace useless ingots
-val itemex as IItemStack[] = [
+val itemEx as IItemStack[] = [
     <enderio:item_extract_speed_upgrade>,
     <enderio:item_extract_speed_downgrade>
 ];
-for i in itemex {
+for i in itemEx {
     recipes.replaceAllOccurences(<enderio:item_alloy_ingot>,<ore:ingotIridium>,i);
 }

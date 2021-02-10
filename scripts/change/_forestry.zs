@@ -42,14 +42,13 @@ assembler.recipeBuilder()
     .EUt(16)
     .buildAndRegister();
     
-//change recipe of chipset//
+//change recipe of chip set//
 removeRecipe(<forestry:chipsets>);
 removeRecipe(<forestry:chipsets:1>);
 removeRecipe(<forestry:chipsets:2>);
 removeRecipe(<forestry:chipsets:3>);
 
-
-//add recipe basic chipset and upgrade recipes
+//add recipe basic chip set and upgrade recipes
 assembler.recipeBuilder()
     .inputs(<ore:ingotTin>,<ore:dustRedstone>*6,<gregtech:meta_item_2:32447>)
     .fluidInputs(<liquid:water>*1000)
@@ -82,9 +81,8 @@ assembler.recipeBuilder()
     .duration(80)
     .EUt(512)
     .buildAndRegister();
-//
 
-//remove recipes chipset in crafting table
+//remove recipes chip set in crafting table
 recipes.remove(<forestry:thermionic_tubes:*>);
 
 //change recipe of sturdy casing
@@ -107,7 +105,7 @@ assembler.recipeBuilder()
     .EUt(128)
     .buildAndRegister();
 
-//change recipe of workbentch
+//change recipe of workbench
 recipes.remove(<forestry:worktable>);
 recipes.addShaped(<forestry:worktable>,[
     [<ore:ingotBronze>,<ore:craftingBook>,<ore:ingotBronze>],
@@ -123,7 +121,7 @@ recipes.addShaped(<forestry:habitat_screen>,[
     [<ore:gearBronze>,<ore:circuitBasic>,<ore:gearBronze>],
 ]);
 
-//change sordring 
+//change soldering 
 removeRecipe(<forestry:soldering_iron>);
 assembler.recipeBuilder()
     .inputs(<forestry:oak_stick>*2,<ore:ingotIron>*4)
@@ -138,7 +136,7 @@ addRecipe(<forestry:crafting_material:3>,[
     [<ore:wool>,<ore:wool>,<ore:wool>],
     [<ore:wool>,<ore:wool>,<ore:wool>]
 ], 60, <liquid:water> * 500);
-//
+
 //buff fertilizer
 recipes.addShaped(<forestry:fertilizer_compound>*9, [
     [<forestry:fertilizer_bio>, <forestry:fertilizer_bio>, <forestry:fertilizer_bio>],
@@ -155,21 +153,21 @@ distillery.recipeBuilder()
     .EUt(8)
     .buildAndRegister();
 
- extractor.recipeBuilder()
+extractor.recipeBuilder()
     .inputs(<minecraft:pumpkin_seeds>)
     .fluidOutputs([<liquid:seed.oil>*10])
     .duration(32)
     .EUt(2)
     .buildAndRegister();
 
- extractor.recipeBuilder()
+extractor.recipeBuilder()
     .inputs(<minecraft:melon_seeds>)
     .fluidOutputs([<liquid:seed.oil>*10])
     .duration(32)
     .EUt(2)
     .buildAndRegister();
 
- extractor.recipeBuilder()
+extractor.recipeBuilder()
     .inputs(<minecraft:wheat_seeds>)
     .fluidOutputs([<liquid:seed.oil>*10])
     .duration(32)

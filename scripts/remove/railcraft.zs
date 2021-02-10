@@ -7,7 +7,7 @@ import mods.jei.JEI;
 //import Forestry Carpenter function 
 import mods.forestry.Carpenter.removeRecipe;
 
-val noneed = [
+val noNeed = [
     <railcraft:cart_spawner:*>,
     <railcraft:bore:*>,
     <railcraft:cart_trade_station:*>,
@@ -67,12 +67,12 @@ val noneed = [
     <railcraft:track_outfitted>.withTag({railcraft: {rail: "railcraft_electric", kit: "railcraft_coupler"}})
 ] as IItemStack[];
 
-for item in noneed {
+for item in noNeed {
     recipes.remove(item);
     JEI.hide(item);
 }
 
-val noneed2 = [
+val noNeed2 = [
     <railcraft:backpack_apothecary_t2>,
     <railcraft:backpack_iceman_t2>,
     <railcraft:backpack_trackman_t2>,
@@ -81,7 +81,7 @@ val noneed2 = [
     <railcraft:cart_chest_void>,
 ]  as IItemStack[];
 
-for item in noneed2 {
+for item in noNeed2 {
     removeRecipe(item);
     JEI.hide(item);
 }

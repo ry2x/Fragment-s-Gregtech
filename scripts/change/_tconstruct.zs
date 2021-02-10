@@ -24,8 +24,8 @@ arc.recipeBuilder()
 	.duration(60)
 	.EUt(24)
 	.buildAndRegister();
-    
-//manyuline in blast furnace 	
+
+//manyullyn in blast furnace 	
 blast_furnace.recipeBuilder()
     .inputs(<ore:ingotArdite>,<ore:ingotCobalt>)
     .fluidInputs([<liquid:oxygen>*576])

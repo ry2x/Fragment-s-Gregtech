@@ -32,7 +32,7 @@ val implosion = RecipeMap.getByName("implosion_compressor");
 val mixer = RecipeMap.getByName("mixer");
 val blast_furnace = RecipeMap.getByName("blast_furnace");
 
-//wireless terminal and color chnanger
+//wireless terminal and color changer
 recipes.replaceAllOccurences(<appliedenergistics2:energy_cell>,<ore:MVcap>,<appliedenergistics2:color_applicator>);
 recipes.replaceAllOccurences(<appliedenergistics2:dense_energy_cell>,<ore:HVcap>,<appliedenergistics2:wireless_terminal>);
 recipes.replaceAllOccurences(<appliedenergistics2:dense_energy_cell>,<ore:HVcap>,<extracells:terminal.fluid.wireless>);
@@ -142,22 +142,22 @@ autoclave.recipeBuilder()
 	.EUt(128)
 	.buildAndRegister();
 //circuit//
-val circuitbase as IItemStack[] = [
+val circuitBase as IItemStack[] = [
     <appliedenergistics2:material:17>,
     <appliedenergistics2:material:18>,
     <appliedenergistics2:material:20>,
 ];
-for i in circuitbase {
+for i in circuitBase {
     Inscriber.removeRecipe(i);
 }
-//17
+//Printed Engineering Circuit
 Inscriber.addRecipe(<appliedenergistics2:material:17>,<ore:plateAluminium>,true,<appliedenergistics2:material:14>);
-//18
+//Printed Logic Circuit
 Inscriber.addRecipe(<appliedenergistics2:material:18>,<ore:plateRoseGold>,true,<appliedenergistics2:material:15>);
-//20
+//Printed Silicon
 Inscriber.addRecipe(<appliedenergistics2:material:20>,<ore:plateSilicon>,true,<appliedenergistics2:material:19>);
 
-//etching circuit with  circuit_assembler//
+//etching circuit with circuit_assembler//
 val circuit as IItemStack[] = [
     <appliedenergistics2:material:22>,
     <appliedenergistics2:material:24>,
@@ -166,7 +166,7 @@ val circuit as IItemStack[] = [
 for i in circuit {
     Inscriber.removeRecipe(i);
 }
-//22,23,24
+//Logic Processor
 circuit_assembler.recipeBuilder()   
     .inputs(<appliedenergistics2:material:18>,<appliedenergistics2:material:20>)
     .fluidInputs([<liquid:redstone>*288])
@@ -175,6 +175,7 @@ circuit_assembler.recipeBuilder()
     .duration(400)
     .EUt(128)
     .buildAndRegister();
+//Calculation Processor
 circuit_assembler.recipeBuilder()   
     .inputs(<appliedenergistics2:material:16>,<appliedenergistics2:material:20>)
     .fluidInputs([<liquid:redstone>*288])
@@ -183,6 +184,7 @@ circuit_assembler.recipeBuilder()
     .duration(400)
     .EUt(128)
     .buildAndRegister();
+//Engineering Processor
 circuit_assembler.recipeBuilder()
     .inputs(<appliedenergistics2:material:17>,<appliedenergistics2:material:20>)
     .fluidInputs([<liquid:redstone>*288])
@@ -199,27 +201,27 @@ assembler.recipeBuilder()
     .duration(400)
     .EUt(128)
     .buildAndRegister();
-val Scasing = <appliedenergistics2:material:39>;
+val SHousing = <appliedenergistics2:material:39>;
 recipes.remove(<appliedenergistics2:view_cell>);
 canner.recipeBuilder()
-    .inputs(Scasing,<appliedenergistics2:material:16>)
+    .inputs(SHousing,<appliedenergistics2:material:16>)
     .outputs(<appliedenergistics2:view_cell>)
     .duration(40)
     .EUt(16)
     .buildAndRegister();
     #item storage and fix recipes
-val itemstorage as IItemStack[] = [
+val itemStorage as IItemStack[] = [
     <appliedenergistics2:storage_cell_1k>,
     <appliedenergistics2:storage_cell_4k>,
     <appliedenergistics2:storage_cell_16k>,
     <appliedenergistics2:storage_cell_64k>,
 ];
-for i in itemstorage {
+for i in itemStorage {
     recipes.remove(i);
 }
 
 canner.recipeBuilder()
-    .inputs(Scasing,<appliedenergistics2:material:35>)
+    .inputs(SHousing,<appliedenergistics2:material:35>)
     .outputs(<appliedenergistics2:storage_cell_1k>)
     .duration(40)
     .EUt(16)
@@ -227,12 +229,12 @@ canner.recipeBuilder()
 unpacker.recipeBuilder()
     .inputs(<appliedenergistics2:storage_cell_1k>.withTag({}))
     .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:2}))
-    .outputs(<appliedenergistics2:material:35>,Scasing)
+    .outputs(<appliedenergistics2:material:35>,SHousing)
     .duration(40)
     .EUt(32)
     .buildAndRegister();
 canner.recipeBuilder()
-    .inputs(Scasing,<appliedenergistics2:material:36>)
+    .inputs(SHousing,<appliedenergistics2:material:36>)
     .outputs(<appliedenergistics2:storage_cell_4k>)
     .duration(40)
     .EUt(16)
@@ -240,12 +242,12 @@ canner.recipeBuilder()
 unpacker.recipeBuilder()
     .inputs(<appliedenergistics2:storage_cell_4k>.withTag({}))
     .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:2}))
-    .outputs(<appliedenergistics2:material:36>,Scasing)
+    .outputs(<appliedenergistics2:material:36>,SHousing)
     .duration(40)
     .EUt(32)
     .buildAndRegister();
 canner.recipeBuilder()
-    .inputs(Scasing,<appliedenergistics2:material:37>)
+    .inputs(SHousing,<appliedenergistics2:material:37>)
     .outputs(<appliedenergistics2:storage_cell_16k>)
     .duration(40)
     .EUt(16)
@@ -253,12 +255,12 @@ canner.recipeBuilder()
 unpacker.recipeBuilder()
     .inputs(<appliedenergistics2:storage_cell_16k>.withTag({}))
     .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:2}))
-    .outputs(<appliedenergistics2:material:37>,Scasing)
+    .outputs(<appliedenergistics2:material:37>,SHousing)
     .duration(40)
     .EUt(32)
     .buildAndRegister();
 canner.recipeBuilder()
-    .inputs(Scasing,<appliedenergistics2:material:38>)
+    .inputs(SHousing,<appliedenergistics2:material:38>)
     .outputs(<appliedenergistics2:storage_cell_64k>)
     .duration(40)
     .EUt(16)
@@ -266,7 +268,7 @@ canner.recipeBuilder()
 unpacker.recipeBuilder()
     .inputs(<appliedenergistics2:storage_cell_64k>.withTag({}))
     .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:2}))
-    .outputs(<appliedenergistics2:material:38>,Scasing)
+    .outputs(<appliedenergistics2:material:38>,SHousing)
     .duration(40)
     .EUt(32)
     .buildAndRegister();
@@ -282,7 +284,7 @@ for i in fluidStorage {
 }
 
 canner.recipeBuilder()
-    .inputs(Scasing,<appliedenergistics2:material:54>)
+    .inputs(SHousing,<appliedenergistics2:material:54>)
     .outputs(<appliedenergistics2:fluid_storage_cell_1k>)
     .duration(40)
     .EUt(16)
@@ -290,12 +292,12 @@ canner.recipeBuilder()
 unpacker.recipeBuilder()
     .inputs(<appliedenergistics2:fluid_storage_cell_1k>.withTag({}))
     .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:2}))
-    .outputs(<appliedenergistics2:material:54>,Scasing)
+    .outputs(<appliedenergistics2:material:54>,SHousing)
     .duration(40)
     .EUt(32)
     .buildAndRegister();
 canner.recipeBuilder()
-    .inputs(Scasing,<appliedenergistics2:material:55>)
+    .inputs(SHousing,<appliedenergistics2:material:55>)
     .outputs(<appliedenergistics2:fluid_storage_cell_4k>)
     .duration(40)
     .EUt(16)
@@ -303,12 +305,12 @@ canner.recipeBuilder()
 unpacker.recipeBuilder()
     .inputs(<appliedenergistics2:fluid_storage_cell_4k>.withTag({}))
     .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:2}))
-    .outputs(<appliedenergistics2:material:55>,Scasing)
+    .outputs(<appliedenergistics2:material:55>,SHousing)
     .duration(40)
     .EUt(32)
     .buildAndRegister();
 canner.recipeBuilder()
-    .inputs(Scasing,<appliedenergistics2:material:56>)
+    .inputs(SHousing,<appliedenergistics2:material:56>)
     .outputs(<appliedenergistics2:fluid_storage_cell_16k>)
     .duration(40)
     .EUt(16)
@@ -316,12 +318,12 @@ canner.recipeBuilder()
 unpacker.recipeBuilder()
     .inputs(<appliedenergistics2:fluid_storage_cell_16k>.withTag({}))
     .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:2}))
-    .outputs(<appliedenergistics2:material:56>,Scasing)
+    .outputs(<appliedenergistics2:material:56>,SHousing)
     .duration(40)
     .EUt(32)
     .buildAndRegister();
 canner.recipeBuilder()
-    .inputs(Scasing,<appliedenergistics2:material:57>)
+    .inputs(SHousing,<appliedenergistics2:material:57>)
     .outputs(<appliedenergistics2:fluid_storage_cell_64k>)
     .duration(40)
     .EUt(16)
@@ -329,11 +331,11 @@ canner.recipeBuilder()
 unpacker.recipeBuilder()
     .inputs(<appliedenergistics2:fluid_storage_cell_64k>)
 	.notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:2}))
-    .outputs(<appliedenergistics2:material:57>,Scasing)
+    .outputs(<appliedenergistics2:material:57>,SHousing)
     .duration(40)
     .EUt(32)
     .buildAndRegister();
-    #spacia
+    #spatial
 val spatial as IItemStack[] = [
     <appliedenergistics2:spatial_storage_cell_2_cubed>,
     <appliedenergistics2:spatial_storage_cell_16_cubed>,
@@ -343,7 +345,7 @@ for i in spatial {
     recipes.remove(i);
 }
 canner.recipeBuilder()
-    .inputs(Scasing,<appliedenergistics2:material:32>)
+    .inputs(SHousing,<appliedenergistics2:material:32>)
     .outputs(<appliedenergistics2:spatial_storage_cell_2_cubed>)
     .duration(40)
     .EUt(16)
@@ -351,12 +353,12 @@ canner.recipeBuilder()
 unpacker.recipeBuilder()
     .inputs(<appliedenergistics2:spatial_storage_cell_2_cubed>.withTag({}))
     .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:2}))
-    .outputs(<appliedenergistics2:material:32>,Scasing)
+    .outputs(<appliedenergistics2:material:32>,SHousing)
     .duration(40)
     .EUt(32)
     .buildAndRegister();
 canner.recipeBuilder()
-    .inputs(Scasing,<appliedenergistics2:material:33>)
+    .inputs(SHousing,<appliedenergistics2:material:33>)
     .outputs(<appliedenergistics2:spatial_storage_cell_16_cubed>)
     .duration(40)
     .EUt(16)
@@ -364,12 +366,12 @@ canner.recipeBuilder()
 unpacker.recipeBuilder()
     .inputs(<appliedenergistics2:spatial_storage_cell_16_cubed>.withTag({}))
     .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:2}))
-    .outputs(<appliedenergistics2:material:33>,Scasing)
+    .outputs(<appliedenergistics2:material:33>,SHousing)
     .duration(40)
     .EUt(32)
     .buildAndRegister();
 canner.recipeBuilder()
-    .inputs(Scasing,<appliedenergistics2:material:34>)
+    .inputs(SHousing,<appliedenergistics2:material:34>)
     .outputs(<appliedenergistics2:spatial_storage_cell_128_cubed>)
     .duration(40)
     .EUt(16)
@@ -377,12 +379,12 @@ canner.recipeBuilder()
 unpacker.recipeBuilder()
     .inputs(<appliedenergistics2:spatial_storage_cell_128_cubed>.withTag({}))
     .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:2}))
-    .outputs(<appliedenergistics2:material:34>,Scasing)
+    .outputs(<appliedenergistics2:material:34>,SHousing)
     .duration(40)
     .EUt(32)
     .buildAndRegister();
 //storage core
-val storagecore as IItemStack[] = [
+val storageCore as IItemStack[] = [
     <appliedenergistics2:material:35>,
     <appliedenergistics2:material:36>,
     <appliedenergistics2:material:37>,
@@ -395,7 +397,7 @@ val storagecore as IItemStack[] = [
     <appliedenergistics2:material:33>,
     <appliedenergistics2:material:34>,
 ];
-for i in storagecore {
+for i in storageCore {
     recipes.remove(i);
 }
     #item storage core
@@ -448,7 +450,7 @@ forming.recipeBuilder()
     .duration(2400)
     .EUt(2048)
     .buildAndRegister();
-    #spacia storage core
+    #Spatial storage core
 forming.recipeBuilder()
     .inputs(<ore:plateSteel>*2,<ore:pearlFluix>*4,<appliedenergistics2:material:24>,<ore:dustDiamond>*4)
     .outputs(<appliedenergistics2:material:32>)
@@ -555,7 +557,7 @@ assembler.recipeBuilder()
 //blank pattern from storage cell
 recipes.remove(<appliedenergistics2:material:52>);
 canner.recipeBuilder()
-    .inputs(Scasing,<appliedenergistics2:material>)
+    .inputs(SHousing,<appliedenergistics2:material>)
     .outputs(<appliedenergistics2:material:52>)
     .duration(40)
     .EUt(16)
@@ -563,13 +565,13 @@ canner.recipeBuilder()
 unpacker.recipeBuilder()
     .inputs(<appliedenergistics2:material:52>.withTag({}))
     .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:2}))
-    .outputs(<appliedenergistics2:material>,Scasing)
+    .outputs(<appliedenergistics2:material>,SHousing)
     .duration(40)
     .EUt(32)
     .buildAndRegister();
 //val
-val basiccard = <appliedenergistics2:material:25>;
-val goodcard = <appliedenergistics2:material:28>;
+val basicCard = <appliedenergistics2:material:25>;
+val goodCard = <appliedenergistics2:material:28>;
 val calculate = <appliedenergistics2:material:23>;
 val engineer = <appliedenergistics2:material:24>;
 val logic = <appliedenergistics2:material:22>;
@@ -585,28 +587,28 @@ assembler.recipeBuilder()
     .duration(40)
     .EUt(16)
     .buildAndRegister();
-    #bacic card
-recipes.remove(basiccard);
+    #basic card
+recipes.remove(basicCard);
 assembler.recipeBuilder()
     .inputs(<ore:plateSteel>*4,<ore:plateRoseGold>*2,logic)
     .fluidInputs([<liquid:redstone>*432])
-    .outputs(basiccard)
+    .outputs(basicCard)
     .duration(40)
     .EUt(128)
     .buildAndRegister();
     #advanced card
-recipes.remove(goodcard);
+recipes.remove(goodCard);
 assembler.recipeBuilder()
     .inputs(<ore:plateTungstenSteel>*4,<ore:plateRoseGold>*2,engineer)
     .fluidInputs([<liquid:redstone>*432])
-    .outputs(goodcard)
+    .outputs(goodCard)
     .duration(40)
     .EUt(512)
     .buildAndRegister();
     #capacity card b
 recipes.remove(<appliedenergistics2:material:27>);
 forming.recipeBuilder()
-    .inputs(basiccard,<ore:certusGem>*2)
+    .inputs(basicCard,<ore:certusGem>*2)
     .outputs(<appliedenergistics2:material:27>)
     .duration(40)
     .EUt(16)
@@ -614,7 +616,7 @@ forming.recipeBuilder()
     #redstone card b
 recipes.remove(<appliedenergistics2:material:53>);
 forming.recipeBuilder()
-    .inputs(basiccard,<ore:dustRedstone>*2)
+    .inputs(basicCard,<ore:dustRedstone>*2)
     .outputs(<appliedenergistics2:material:53>)
     .duration(40)
     .EUt(16)
@@ -622,15 +624,15 @@ forming.recipeBuilder()
     #crafting card b
 recipes.remove(<appliedenergistics2:material:26>);
 forming.recipeBuilder()
-    .inputs(basiccard,<ore:workbench>*2)
+    .inputs(basicCard,<ore:workbench>*2)
     .outputs(<appliedenergistics2:material:26>)
     .duration(40)
     .EUt(16)
     .buildAndRegister();
-    #acceralation card a
+    #acceleration card a
 recipes.remove(<appliedenergistics2:material:30>);
 forming.recipeBuilder()
-    .inputs(goodcard,<gregtech:machine:2214>)
+    .inputs(goodCard,<gregtech:machine:2214>)
     .outputs(<appliedenergistics2:material:30>)
     .duration(80)
     .EUt(16)
@@ -638,7 +640,7 @@ forming.recipeBuilder()
     #fuzzy card a
 recipes.remove(<appliedenergistics2:material:29>);
 forming.recipeBuilder()
-    .inputs(goodcard,<chisel:laboratory:10>*2)
+    .inputs(goodCard,<chisel:laboratory:10>*2)
     .outputs(<appliedenergistics2:material:29>)
     .duration(80)
     .EUt(16)
@@ -646,7 +648,7 @@ forming.recipeBuilder()
     #invert card a
 recipes.remove(<appliedenergistics2:material:31>);
 forming.recipeBuilder()
-    .inputs(goodcard,<projectred-illumination:lamp:16>*2)
+    .inputs(goodCard,<projectred-illumination:lamp:16>*2)
     .outputs(<appliedenergistics2:material:31>)
     .duration(80)
     .EUt(16)
@@ -676,7 +678,7 @@ assembler.recipeBuilder()
     .duration(600)
     .EUt(2048)
     .buildAndRegister();
-//singu
+//Singularity
 implosion.recipeBuilder()
     .inputs(<minecraft:tnt>,<appliedenergistics2:material:47>*2)
     .outputs(<appliedenergistics2:material:48>*2)
@@ -695,7 +697,7 @@ assembler.recipeBuilder()
 //ME drive
 recipes.remove(<appliedenergistics2:drive>);
 assembler.recipeBuilder()
-    .inputs(<ore:MVcasing>,<ore:wireGtSingleAnnealedCopper>*10,Scasing,<appliedenergistics2:smooth_sky_stone_block>*4)
+    .inputs(<ore:MVcasing>,<ore:wireGtSingleAnnealedCopper>*10,SHousing,<appliedenergistics2:smooth_sky_stone_block>*4)
     .outputs(<appliedenergistics2:drive>)
     .duration(80)
     .EUt(64)
@@ -727,14 +729,14 @@ recipes.addShaped(<appliedenergistics2:fluid_interface>,[
 ]);
 recipes.addShapeless(<appliedenergistics2:part:441>, [<appliedenergistics2:fluid_interface>]);
 recipes.addShapeless(<appliedenergistics2:fluid_interface>, [<appliedenergistics2:part:441>]);
-//ME IOport
+//ME IO port
 recipes.remove(<appliedenergistics2:io_port>);
 recipes.addShaped(<appliedenergistics2:io_port>,[
     [<ore:blockGlass>,<gregtech:meta_item_1:32631>,<ore:blockGlass>],
     [<appliedenergistics2:drive>,<appliedenergistics2:part:16>,<appliedenergistics2:drive>],
     [<ore:ingotSteel>,logic,<ore:ingotSteel>]
 ]);
-//ME matter condensator
+//ME matter condenser
 recipes.replaceAllOccurences(<appliedenergistics2:material:8>,<overloaded:item_core>,<appliedenergistics2:condenser>);
 //growth accelerator
 recipes.replaceAllOccurences(<appliedenergistics2:fluix_block>,<gregtech:machine:2214>,<appliedenergistics2:quartz_growth_accelerator>);
@@ -884,20 +886,20 @@ assembler.recipeBuilder()
 }
 //end volumetric
 //start lazy AE2
-//remove pluse cent to ender dust, flour and sky dust
-val removedust as IItemStack[] = [
+//remove pulse cent to ender dust, flour and sky dust
+val removeDust as IItemStack[] = [
     <appliedenergistics2:material:45>,
     <appliedenergistics2:material:4>,
     <appliedenergistics2:material:46>
 ];
-for i in removedust {
+for i in removeDust {
     Centrifuge.removeRecipe(i);
 }
 
 //fix ingot to dust 
 recipes.replaceAllOccurences(<gregtech:meta_item_1:10061>,<gregtech:meta_item_1:2061>,<threng:material:1>);
 
-//chnage recipe of carbonic fluix dust and fluix ingot
+//change recipe of carbonic fluix dust and fluix ingot
 Aggregator.removeRecipe(<threng:material>);
 Aggregator.removeRecipe(<threng:material:1>);
 furnace.remove(<threng:material>);
@@ -952,7 +954,7 @@ alloy.recipeBuilder()
     .duration(120)
     .EUt(36)
     .buildAndRegister();
-//chnage recipes of some machine
+//change recipes of some machine
     #aggregator
 recipes.remove(<threng:machine>);
 recipes.addShaped(<threng:machine>,[
@@ -965,7 +967,7 @@ recipes.replaceAllOccurences(<appliedenergistics2:molecular_assembler>,<gregtech
     #energy crystal 
 recipes.replaceAllOccurences(<appliedenergistics2:dense_energy_cell>,<ore:HVcap>,<threng:machine:5>);
 //end lazy
-//extracell
+//extra cell
 //fluid panel
     #panel
 recipes.remove(<extracells:part.base:10>);
@@ -1116,9 +1118,10 @@ unpacker.recipeBuilder()
     .duration(40)
     .EUt(32)
     .buildAndRegister();
+    
 //storage core
 
-val extracore as IItemStack[] = [
+val extraCore as IItemStack[] = [
     <extracells:storage.component:8>,
     <extracells:storage.component:9>,
     <extracells:storage.component:10>,
@@ -1127,7 +1130,7 @@ val extracore as IItemStack[] = [
     <extracells:storage.component:2>,
     <extracells:storage.component:3>,
 ];
-for i in extracore {
+for i in extraCore {
     recipes.remove(i);
 }
     #fluid core
@@ -1182,13 +1185,13 @@ forming.recipeBuilder()
     .buildAndRegister();
 //end extra cell
 //start extra cpu
-val excpu as IItemStack[] = [
+val extraCpu as IItemStack[] = [
     <extracpus:crafting_storage_256k>,
     <extracpus:crafting_storage_1024k>,
     <extracpus:crafting_storage_4096k>,
     <extracpus:crafting_storage_16384k>,
 ];
-for i in excpu {
+for i in extraCpu {
     recipes.remove(i);
 }
     #256k
@@ -1247,7 +1250,7 @@ unpacker.recipeBuilder()
     .duration(40)
     .EUt(32)
     .buildAndRegister();
-//end excpu
+//end extraCpu
 //start visual
 recipes.replaceAllOccurences(<appliedenergistics2:entropy_manipulator>,<ore:pearlFluix>,<aenetvistool:net_visualizer>);
 //end visual

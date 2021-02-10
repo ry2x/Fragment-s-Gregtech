@@ -4,7 +4,7 @@ import crafttweaker.item.IItemStack;
 //import JEI function
 import mods.jei.JEI;
 
-//remove the metals and slicons
+//remove the metals and silicons
 val metals = [
     <projectred-core:resource_item:250>,
     <projectred-core:resource_item:251>,
@@ -19,8 +19,8 @@ for item in metals {
     JEI.removeAndHide(item);
 }
 
-//remove furnace slicons 
-val slicons = [
+//remove furnace silicons 
+val silicons = [
     <projectred-core:resource_item:103>,
     <projectred-core:resource_item:104>,
     <projectred-core:resource_item:105>,
@@ -30,7 +30,7 @@ val slicons = [
     <projectred-core:resource_item:342>,
 ] as IItemStack[];
 
-for item in slicons {
+for item in silicons {
     furnace.remove(item);
     JEI.removeAndHide(item);
 }
@@ -46,8 +46,8 @@ for item in coils {
     JEI.removeAndHide(item);
 }
 
-//remove tools and backpaacks
-val nonuse = [
+//remove tools and backpacks
+val noUse = [
     <projectred-exploration:backpack:*>,
     //ruby tools
     <projectred-exploration:ruby_axe>,
@@ -81,7 +81,7 @@ val nonuse = [
     <projectred-exploration:diamond_sickle>,
 ] as IItemStack[];
 
-for item in nonuse {
+for item in noUse {
     JEI.removeAndHide(item);
 }
 
@@ -98,4 +98,3 @@ val useless = [
 for item in useless {
     JEI.removeAndHide(item);
 }
-

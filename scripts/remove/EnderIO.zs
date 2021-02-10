@@ -4,7 +4,7 @@ import crafttweaker.item.IItemStack;
 //import JEI function
 import mods.jei.JEI;
 
-val noneed = [
+val noNeed = [
     <enderio:item_dark_steel_upgrade:*>,
     <enderio:item_broken_spawner:*>,
     <enderio:block_infinity:*>,
@@ -27,7 +27,7 @@ val noneed = [
     <enderio:item_soul_filter_big>
 ] as IItemStack[];
 
-for item in noneed {
+for item in noNeed {
     JEI.removeAndHide(item);
 }
 
@@ -82,7 +82,7 @@ for i in glassDisabled {
 
 recipes.remove(<enderio:item_material>);
 
-//steller
+//stellar
 val disabled = [
     <enderio:block_alloy_endergy:*>,
     <enderio:item_alloy_endergy_ingot:*>,

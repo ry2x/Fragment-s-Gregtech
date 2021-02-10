@@ -35,7 +35,7 @@ assembler.recipeBuilder()
     .EUt(48)
     .buildAndRegister();
     //use lazy ae2 flux dust instead of flux
-    #flux core
+    #Flux Core
 recipes.remove(<fluxnetworks:fluxcore>);
 recipes.addShaped(<fluxnetworks:fluxcore>, [
     [<threng:material:1>, <ore:wireGtSingleTitanium>, <threng:material:1>],
@@ -48,16 +48,16 @@ assembler.recipeBuilder()
     .duration(600)
     .EUt(8192)
     .buildAndRegister();
-    #config
+    #Flux Configurator
 recipes.remove(<fluxnetworks:fluxconfigurator>);
 recipes.addShaped(<fluxnetworks:fluxconfigurator>, [
     [null, <threng:material:1>, <fluxnetworks:fluxcore>],
     [null, <tconstruct:tool_rod>.withTag({Material: "obsidian"}).onlyWithTag({Material: "obsidian"}), <threng:material:1>], 
     [<tconstruct:tool_rod>.withTag({Material: "obsidian"}).onlyWithTag({Material: "obsidian"}), null, null]
 ]);
-    #flux block
+    #Flux Block
 recipes.replaceAllOccurences(<fluxnetworks:flux>,<threng:material:1>,<fluxnetworks:fluxblock>);
-    #contloller
+    #Flux Controller
 recipes.remove(<fluxnetworks:fluxcontroller>);
 assembler.recipeBuilder()
     .inputs(<appliedenergistics2:controller>,<fluxnetworks:fluxplug>*2,<fluxnetworks:fluxpoint>*2,<threng:material:1>*4,<fluxnetworks:fluxcore>*3)

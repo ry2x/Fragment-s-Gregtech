@@ -11,7 +11,6 @@ import crafttweaker.liquid.ILiquidStack;
 //import JEI function
 import mods.jei.JEI;
 
-
 //remove plate cast
 removeTableRecipe(<tconstruct:cast_custom:3>);
 JEI.hide(<tconstruct:cast_custom:3>);
@@ -21,7 +20,7 @@ removeTableRecipe(<tconstruct:cast_custom:4>);
 JEI.hide(<tconstruct:cast_custom:4>);
 
 //remove block recipes by basin
-val metalblocks = [
+val metalBlocks = [
     <minecraft:gold_block>,
     <minecraft:iron_block>,
     <minecraft:redstone_block>,
@@ -58,16 +57,16 @@ val metalblocks = [
     <gregtech:compressed_31:*>,
 ] as IItemStack[];
 
-for i in metalblocks {
+for i in metalBlocks {
     removeBasinRecipe(i);
 }
 
 //remove plate recipes in casting table
-val metalplates = [
+val metalPlates = [
     <gregtech:meta_item_1:*>
 ] as IItemStack[];
 
-for i in metalplates {
+for i in metalPlates {
     removeTableRecipe(i);
 }
 

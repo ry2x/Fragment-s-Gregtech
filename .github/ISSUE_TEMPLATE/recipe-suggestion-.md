@@ -8,7 +8,8 @@ assignees: ry2x
 ---
 
 **Describe**
-Explain your suggestion.
+A clear and concise description of your suggestion.
 Yes, you can use images.
 
-**Comment**
+**Additional context**
+Add any other context about the suggestion here.

@@ -5,7 +5,7 @@ import crafttweaker.item.IItemStack;
 import mods.jei.JEI;
 
 //remove deprecated cells and buses
-val dpcitemsDisabled = [
+val dpcItemsDisabled = [
     <extracells:part.base>,
     <extracells:part.base:1>,
     <extracells:part.base:2>,
@@ -25,7 +25,7 @@ val dpcitemsDisabled = [
     <extracells:ecbaseblock>,
 ] as IItemStack[];
 
-for i in dpcitemsDisabled {
+for i in dpcItemsDisabled {
     JEI.removeAndHide(i);
 }
 

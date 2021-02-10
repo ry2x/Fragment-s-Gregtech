@@ -5,7 +5,7 @@ import crafttweaker.liquid.ILiquidStack;
 //import JEI function
 import mods.jei.JEI;
 
-val noneed = [
+val noNeed = [
     //remove machine and tools
     <industrialforegoing:meat_feeder>,
     <industrialforegoing:laser_lens:*>,
@@ -28,7 +28,7 @@ val noneed = [
     <minecraft:spawn_egg>.withTag({EntityTag: {id: "industrialforegoing:pink_slime"}})
 ] as IItemStack[];
 
-for item in noneed {
+for item in noNeed {
     recipes.remove(item);
     JEI.hide(item);
 }

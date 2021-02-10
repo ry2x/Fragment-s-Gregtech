@@ -4,7 +4,7 @@ import crafttweaker.item.IItemDefinition;
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 
-//import oredit
+//import oredict
 import crafttweaker.oredict.IOreDict;
 import crafttweaker.oredict.IOreDictEntry;
 
@@ -12,7 +12,7 @@ import crafttweaker.oredict.IOreDictEntry;
 import mods.gregtech.recipe.RecipeMaps;
 import mods.gregtech.recipe.RecipeMap;
 
-//removed from oredic
+//remove from oredict
 
 //for block
 
@@ -296,7 +296,7 @@ var nuggetsDisabled as IItemStack[][IOreDictEntry] = {
         <thermalfoundation:material:192>
     ],
 
-    #nugetBronze
+    #nuggetBronze
     <ore:nuggetBronze>:[
         <thermalfoundation:material:227>
     ],
@@ -792,12 +792,12 @@ for oreDictEntry, items in gearsDisabled {
 
 //remove stone/iron infinity gear added by enderIO in outside of ore dic due to avoid fatal error 
 #remove enderIO stone and iron infinity gears
-val enderiogears =[
+val enderIoGears =[
     <enderio:item_material:10>,
     <enderio:item_material:11>
 ] as IItemStack[];
 
-for item in enderiogears {
+for item in enderIoGears {
     mods.jei.JEI.removeAndHide(item);
 }
 
@@ -986,7 +986,7 @@ for oreDictEntry, items in gemsDisabled {
 //add greg MV machine casing 
 <ore:MVcasing>.add(<gregtech:machine:502>);
 
-//battery oredic
+//battery oredict
 <ore:LVbattery>.add(<gregtech:meta_item_1:32519>,<gregtech:meta_item_1:32518>,<gregtech:meta_item_1:32517>);
 <ore:MVbattery>.add(<gregtech:meta_item_1:32527>,<gregtech:meta_item_1:32528>,<gregtech:meta_item_1:32529>);
 <ore:HVbattery>.add(<gregtech:meta_item_1:32539>,<gregtech:meta_item_1:32538>,<gregtech:meta_item_1:32537>);
@@ -1002,7 +1002,7 @@ mods.jei.JEI.removeAndHide(<enderio:item_material:5>);
 <ore:fuzedQuartz>.add(<enderio:block_holy_fused_glass:*>);
 <ore:fuzedQuartz>.remove(<enderio:block_fused_quartz:*>);
 
-//add enderIo capa 
+//add enderIo capacitor
 <ore:LVcap>.add(<enderio:item_basic_capacitor>);
 <ore:MVcap>.add(<enderio:item_basic_capacitor:1>);
 <ore:HVcap>.add(<enderio:item_basic_capacitor:2>);
@@ -1010,19 +1010,19 @@ mods.jei.JEI.removeAndHide(<enderio:item_material:5>);
 //add vanilla conc to conc
 <ore:blockConcrete>.add(<minecraft:concrete:*>);
 
-//create unique oredic for certus
+//create unique oredict for certus
 <ore:certusGem>.add(<appliedenergistics2:material>);
 <ore:certusGem>.add(<appliedenergistics2:material:1>);
 <ore:certusGem>.add(<appliedenergistics2:material:10>);
 
-//fluix crystal oredic
+//fluix crystal oredict
 <ore:fluixCrystal>.add(<appliedenergistics2:material:7>);
 <ore:fluixCrystal>.add(<appliedenergistics2:material:12>);
 
-//aluminum add aluminium
+//aluminum add aluminum
 <ore:blockAluminum>.add(<gregtech:compressed_0>);
 
-//tinkercon's cobalt adds to cobalt
+//tconstruct cobalt adds to cobalt
 <ore:oreCobalt>.add(<tconstruct:ore>);
 
 #set VoidWorldPortal
