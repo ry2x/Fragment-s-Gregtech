@@ -19,6 +19,9 @@ for item in Flux {
     JEI.removeAndHide(item);
 }
 
+//remove cover
+JEI.removeAndHide(<thermaldynamics:cover:*>);
+
 //remove rockwools
 JEI.removeAndHide(<thermalfoundation:rockwool:*>);
 

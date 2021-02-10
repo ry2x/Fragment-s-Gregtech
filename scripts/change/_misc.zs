@@ -624,14 +624,3 @@ forming.recipeBuilder()
     .EUt(8192)
     .buildAndRegister();
     
-//sonar
-recipes.remove(<sonarcore:stablestone_plain>);
-recipes.addShaped(<sonarcore:stablestone_plain>,[
-    [<sonarcore:reinforcedstonebrick>,<sonarcore:reinforcedstonebrick>,<sonarcore:reinforcedstonebrick>],
-    [<sonarcore:reinforcedstonebrick>,null,<sonarcore:reinforcedstonebrick>],
-    [<sonarcore:reinforcedstonebrick>,<sonarcore:reinforcedstonebrick>,<sonarcore:reinforcedstonebrick>]
-]);
-
-    #name of portal frame
-<sonarcore:stablestoneblackrimmed_lightblue>.displayName = "VoidWorld Portal Frame";
-<sonarcore:stablestoneblackrimmed_plain>.displayName = "Nether From Void Portal Frame";
