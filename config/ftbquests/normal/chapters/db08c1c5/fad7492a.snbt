@@ -1,0 +1,24 @@
+{
+	x: 2.5d,
+	y: 26.0d,
+	text: [
+		"ZPM means Zero Point Module.",
+		"Do you know it? ",
+		"You know? nice:)"
+	],
+	dependencies: [
+		"776a5735"
+	],
+	tasks: [{
+		uid: "e9ac1bce",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 507"
+		}]
+	}],
+	rewards: [{
+		uid: "b8c0f978",
+		type: "item",
+		item: "gregtech:machine 1 507"
+	}]
+}

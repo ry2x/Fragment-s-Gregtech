@@ -1,0 +1,24 @@
+{
+	x: -6.0d,
+	y: -8.0d,
+	tasks: [{
+		uid: "32df18f9",
+		type: "item",
+		items: [{
+			id: "forestry:chipsets",
+			tag: {
+				T: 0s
+			}
+		}]
+	}],
+	rewards: [{
+		uid: "4ad26cca",
+		type: "item",
+		item: {
+			id: "forestry:chipsets",
+			tag: {
+				T: 0s
+			}
+		}
+	}]
+}

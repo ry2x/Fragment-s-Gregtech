@@ -1,0 +1,17 @@
+{
+	x: 2.5d,
+	y: 11.0d,
+	text: [
+		"Gregtech 5U is Gregtech 5 UnOfficial that contains over EV ~ ZPM."
+	],
+	dependencies: [
+		"6aed8294"
+	],
+	size: 3.0d,
+	tasks: [{
+		uid: "8e542720",
+		type: "checkmark",
+		title: "Gregtech5U",
+		icon: "gregtech:machine 1 505"
+	}]
+}

@@ -1,0 +1,18 @@
+{
+	icon: "gregtech:machine 1 508",
+	x: 11.5d,
+	y: 26.0d,
+	text: [
+		"Gregicality is a fork of GregicAddition adds over ZPM technologies.",
+		"Over UMV is still developing by Mod developers."
+	],
+	dependencies: [
+		"fad7492a"
+	],
+	size: 3.0d,
+	tasks: [{
+		uid: "abbb782f",
+		type: "checkmark",
+		title: "Gregicality"
+	}]
+}

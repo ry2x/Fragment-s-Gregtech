@@ -1,0 +1,26 @@
+{
+	x: -2.0d,
+	y: -8.0d,
+	tasks: [{
+		uid: "8ad7eddb",
+		type: "item",
+		items: [{
+			id: "forestry:chipsets",
+			tag: {
+				T: 2s
+			},
+			Damage: 2s
+		}]
+	}],
+	rewards: [{
+		uid: "24c1a1c3",
+		type: "item",
+		item: {
+			id: "forestry:chipsets",
+			tag: {
+				T: 2s
+			},
+			Damage: 2s
+		}
+	}]
+}

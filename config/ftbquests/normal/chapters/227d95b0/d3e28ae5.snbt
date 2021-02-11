@@ -1,0 +1,16 @@
+{
+	x: -6.0d,
+	y: -1.5d,
+	tasks: [{
+		uid: "aace2017",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_2 1 32488"
+		}]
+	}],
+	rewards: [{
+		uid: "520eab54",
+		type: "item",
+		item: "gregtech:meta_item_2 1 32488"
+	}]
+}

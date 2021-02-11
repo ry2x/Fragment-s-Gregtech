@@ -1,0 +1,16 @@
+{
+	x: -4.0d,
+	y: -13.0d,
+	tasks: [{
+		uid: "76233ca3",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:material 1 17"
+		}]
+	}],
+	rewards: [{
+		uid: "49d1e398",
+		type: "item",
+		item: "appliedenergistics2:material 1 17"
+	}]
+}

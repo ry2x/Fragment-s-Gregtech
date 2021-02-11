@@ -1,0 +1,16 @@
+{
+	x: 12.0d,
+	y: 14.5d,
+	tasks: [{
+		uid: "1a0bfde6",
+		type: "item",
+		items: [{
+			item: "gtadditions:ga_meta_item 1 32503"
+		}]
+	}],
+	rewards: [{
+		uid: "106be259",
+		type: "item",
+		item: "gtadditions:ga_meta_item 1 32503"
+	}]
+}

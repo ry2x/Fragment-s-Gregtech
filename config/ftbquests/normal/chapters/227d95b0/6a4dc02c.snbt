@@ -1,0 +1,16 @@
+{
+	x: -4.0d,
+	y: -10.5d,
+	tasks: [{
+		uid: "3d434e29",
+		type: "item",
+		items: [{
+			item: "powersuits:powerarmorcomponent 1 15"
+		}]
+	}],
+	rewards: [{
+		uid: "dc7b0f26",
+		type: "item",
+		item: "powersuits:powerarmorcomponent 1 15"
+	}]
+}

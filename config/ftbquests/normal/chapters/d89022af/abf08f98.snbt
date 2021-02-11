@@ -1,0 +1,34 @@
+{
+	title: "Get \"Time in a Bottle\"",
+	icon: {
+		id: "randomthings:timeinabottle",
+		tag: {
+			timeData: {}
+		}
+	},
+	x: -8.0d,
+	y: -3.5d,
+	description: "It is a OP item...",
+	text: [
+		"Some players request useful tick acceleration item, so I added it.",
+		"I want you to start using this op item from LV+(end of LV).",
+		"\"motto sakihe *kasoku* shitakuhanaika, shonen\""
+	],
+	tasks: [{
+		uid: "d1750a77",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 100"
+		}]
+	}],
+	rewards: [{
+		uid: "5d10a27c",
+		type: "item",
+		item: {
+			id: "randomthings:timeinabottle",
+			tag: {
+				timeData: {}
+			}
+		}
+	}]
+}

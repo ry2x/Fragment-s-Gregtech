@@ -1,0 +1,14 @@
+{
+	x: -6.5d,
+	y: -8.5d,
+	text: [
+		"Gregtech 5 contains ~EV contents"
+	],
+	size: 3.0d,
+	tasks: [{
+		uid: "c8fb922b",
+		type: "checkmark",
+		title: "Gregtech 5",
+		icon: "gregtech:machine 1 501"
+	}]
+}
