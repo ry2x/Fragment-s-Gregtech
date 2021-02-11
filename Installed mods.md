@@ -1,277 +1,287 @@
 # Installed Mods
 
-AmbientSounds_v3.0.18_mc1.12.2.jar
-
-AnvilFix1.12.21.0.5.jar
-
-AppleSkinmc1.121.0.14.jar
-
-appliedenergistics2rv6stable7.jar
-
-Aroma1997Core1.12.22.0.0.2.b167.jar
-
-AromaBackup1.12.23.0.0.0.b135.jar
-
-AutoRegLib1.332.jar
-
-BetterBuildersWands1.12.20.13.2.271+5997513.jar
-
-BetterFps1.4.8.jar
-
 BiblioCraft[v2.4.5][MC1.12.2].jar
 
-BNBGamingLib1.12.22.17.6.jar
+BNBGamingLib-1.12.2-2.17.6.jar
 
-bonsaitrees1.1.4b170.jar
+bonsaitrees-1.1.4-b170.jar
 
-BrandonsCore1.12.22.4.19.214universal.jar
+BrandonsCore-1.12.2-2.4.19.214-universal.jar
 
-Chameleon1.124.1.3.jar
+Chameleon-1.12-4.1.3.jar
 
-Chargers1.12.21.2.0.5.jar
+Chargers-1.12.2-1.2.0.5.jar
 
-ChestTransporter1.12.22.8.8.jar
+ChestTransporter-1.12.2-2.8.8.jar
 
-ChickenChunks1.12.22.4.2.74universal.jar
+ChickenChunks-1.12.2-2.4.2.74-universal.jar
 
-ChiselMC1.12.21.0.2.45.jar
+Chisel-MC1.12.2-1.0.2.45.jar
 
-CodeChickenLib1.12.23.2.3.358universal.jar
+CodeChickenLib-1.12.2-3.2.3.358-universal.jar
 
-CoFHCore1.12.24.6.6.1universal.jar
+CoFHCore-1.12.2-4.6.6.1-universal.jar
 
-CoFHWorld1.12.21.4.0.1universal.jar
+CoFHWorld-1.12.2-1.4.0.1-universal.jar
 
-Controlling3.0.10.jar
+Controlling-3.0.10.jar
 
-CosmeticArmorReworked1.12.2v5a.jar
+CosmeticArmorReworked-1.12.2-v5a.jar
 
-CraftTweaker21.124.1.20.614.jar
+CraftTweaker2-1.12-4.1.20.614.jar
 
-CreativeCore_v1.10.44_mc1.12.2.jar
+CreativeCore_v1.10.45_mc1.12.2.jar
 
-CryingObsidian1.12.21.2.1.jar
+CryingObsidian-1.12.2-1.2.1.jar
 
-CTMMC1.12.21.0.2.31.jar
+CTM-MC1.12.2-1.0.2.31.jar
 
-CustomMainMenuMC1.12.22.0.9.1.jar
+CustomMainMenu-MC1.12.2-2.0.9.1.jar
 
-Cyclic1.12.21.20.8.jar
+Cyclic-1.12.2-1.20.8.jar
 
-DankNull1.12.21.7.101.jar
+DankNull-1.12.2-1.7.101.jar
 
-diethopper1.1.jar
+diethopper-1.1.jar
 
-DimensionalControl1.12.22.13.0.jar
+DimensionalControl-1.12.2-2.13.0.jar
 
-Discord1.12.21.0.12.jar
+Discord-1.12.2-1.0.12.jar
 
-ElevatorMod1.12.21.3.14.jar
+ElevatorMod-1.12.2-1.3.14.jar
 
-EnchantingTable1.121.1.3.jar
+EnchantingTable-1.12-1.1.3.jar
 
-EnderCore1.12.20.5.76.jar
+EnderCore-1.12.2-0.5.76.jar
 
-EnderIObase1.12.25.2.66.jar
+EnderIO-base-1.12.2-5.2.66.jar
 
-EnderIOconduits1.12.25.2.66.jar
+EnderIO-conduits-1.12.2-5.2.66.jar
 
-EnderIOconduitsappliedenergistics1.12.25.2.66.jar
+EnderIO-conduits-appliedenergistics-1.12.2-5.2.66.jar
 
-EnderIOendergy1.12.25.2.66.jar
+EnderIO-endergy-1.12.2-5.2.66.jar
 
-enderiofluxified1.12.21.0.2.jar
+enderiofluxified-1.12.2-1.0.2.jar
 
-EnderIOintegrationforestry1.12.25.2.66.jar
+EnderIO-integration-forestry-1.12.2-5.2.66.jar
 
-EnderStorage1.12.22.4.6.137universal.jar
+EnderStorage-1.12.2-2.4.6.137-universal.jar
 
-ExtraCells1.12.22.6.5.jar
+ExtraCells-1.12.2-2.6.5.jar
 
-extracpus1.12.21.1.0.jar
+extracpus-1.12.2-1.1.0.jar
 
-extrautils21.121.9.9.jar
+extrautils2-1.12-1.9.9.jar
 
-FastFurnace1.12.21.3.1.jar
+FastFurnace-1.12.2-1.3.1.jar
 
-FastLeafDecayv14.jar
+FastLeafDecay-v14.jar
 
-FastWorkbench1.12.21.7.3.jar
+FastWorkbench-1.12.2-1.7.3.jar
 
-fluiddrawers1.12.21.0.5.jar
+fluiddrawers-1.12.2-1.0.5.jar
 
-FluxNetworks1.12.24.1.1.34.jar
+FluxNetworks-1.12.2-4.1.1.34.jar
 
-foamfix0.10.111.12.2.jar
+foamfix-0.10.11-1.12.2.jar
 
-forestry_1.12.25.8.2.422.jar
+forestry_1.12.2-5.8.2.422.jar
 
-Forgelin1.8.4.jar
+Forgelin-1.8.4.jar
 
-ForgeMultipart1.12.22.6.2.83universal.jar
+ForgeMultipart-1.12.2-2.6.2.83-universal.jar
 
-ForgivingVoid_1.12.21.1.0.jar
+ForgivingVoid_1.12.2-1.1.0.jar
 
-FpsReducermc1.12.21.18.jar
+FpsReducer-mc1.12.2-1.18.jar
 
-FullscreenWindowed1.121.6.0.jar
+FTBLib-5.4.7.2.jar
 
-futuremc1.12.20.2.5.jar
+FTBQuests-1202.9.0.15.jar
 
-gravestone1.10.3.jar
+FullscreenWindowed-1.12-1.6.0.jar
 
-Gregicality1.12.20.21.3.jar
+future-mc-1.12.2-0.2.6.1.jar
 
-gregtech1.12.21.11.1.632.jar
+gravestone-1.10.3.jar
 
-iChunUtil1.12.27.2.2.jar
+Gregicality-1.12.2-0.21.3.jar
 
-industrialforegoing1.12.21.12.13237.jar
+gregtech-1.12.2-1.11.3.640.jar
 
-InGameInfoXML1.12.22.8.2.94universal.jar
+iChunUtil-1.12.2-7.2.2.jar
 
-InventoryTweaks1.64+dev.151.jar
+industrialforegoing-1.12.2-1.12.13-237.jar
 
-ironchest1.12.27.0.72.847.jar
+InGameInfoXML-1.12.2-2.8.2.94-universal.jar
 
-itlt1.12.21.0.3.jar
+InventoryTweaks-1.64+dev.151.jar
 
-jei_1.12.24.16.1.302.jar
+ironchest-1.12.2-7.0.72.847.jar
 
-jeibees0.9.0.5mc1.12.2.jar
+ItemFilters-1.0.4.2.jar
 
-jeiintegration_1.12.21.6.0.jar
+itlt-1.12.2-1.0.3.jar
 
-jepb1.121.2.1.jar
+jei_1.12.2-4.16.1.302.jar
 
-justenoughdimensions1.12.21.6.0dev.20200416.184714.jar
+jeibees-0.9.0.5-mc1.12.2.jar
 
-JustEnoughEnergistics1.12.21.0.8.jar
+jeiintegration_1.12.2-1.6.0.jar
 
-kythsopmoss0.2.jar
+jepb-1.12-1.2.1.jar
 
-lazyae21.12.21.1.25.jar
+justenoughdimensions-1.12.2-1.6.0-dev.20200416.184714.jar
 
-libnine1.12.21.2.0.jar
+JustEnoughEnergistics-1.12.2-1.0.8.jar
 
-LightingWand1.12.21.0.5.jar
+kythsopmoss-0.2.jar
 
-LightningRods1.12.21.0.1.jar
+lazy-ae2-1.12.2-1.1.25.jar
 
-LunatriusCore1.12.21.2.0.42universal.jar
+libnine-1.12.2-1.2.0.jar
 
-Mantle1.121.3.3.55.jar
+LightingWand-1.12.2-1.0.5.jar
 
-MobGrindingUtils0.3.13.jar
+LightningRods-1.12.2-1.0.1.jar
 
-modtweaker4.0.18.jar
+LunatriusCore-1.12.2-1.2.0.42-universal.jar
 
-ModularPowersuits1.12.21.0.46.jar
+Mantle-1.12-1.3.3.55.jar
 
-moreoverlays1.15.1mc1.12.2.jar
+MobGrindingUtils-0.3.13.jar
 
-MorphoTool1.221.jar
+modtweaker-4.0.18.jar
 
-MouseTweaks2.10mc1.12.2.jar
+ModularPowersuits-1.12.2-1.0.46.jar
 
-MrTJPCore1.12.22.1.4.43universal.jar
+moreoverlays-1.15.1-mc1.12.2.jar
 
-MTLib3.0.6.jar
+Morph-o-Tool-1.2-21.jar
 
-NameWakander1.121.3.6.jar
+MouseTweaks-2.10-mc1.12.2.jar
 
-Neat 1.417.jar
+MrTJPCore-1.12.2-2.1.4.43-universal.jar
+
+MTLib-3.0.6.jar
+
+Neat 1.4-17.jar
 
 noRecipeBook_v1.2.2formc1.12.2.jar
 
-Numina1.12.21.0.38.jar
+Numina-1.12.2-1.0.38.jar
 
-oeintegration2.3.4.jar
+oeintegration-2.3.4.jar
 
-OreExcavation1.4.150.jar
+OreExcavation-1.4.150.jar
 
-Overloaded1.12.20.0.59.jar
+Overloaded-1.12.2-0.0.59.jar
 
-p455w0rdslib1.12.22.3.161.jar
+p455w0rdslib-1.12.2-2.3.161.jar
 
-phosphorforgemc1.12.20.2.7universal.jar
+phosphor-forge-mc1.12.2-0.2.7-universal.jar
 
-Placebo1.12.21.6.0.jar
+Placebo-1.12.2-1.6.0.jar
 
-PortalGun1.12.27.1.0.jar
+PortalGun-1.12.2-7.1.0.jar
 
-powerchisels1.0.0beta3.jar
+powerchisels-1.0.0-beta-3.jar
 
-ProjectRed1.12.24.9.4.120Base.jar
+ProjectRed-1.12.2-4.9.4.120-Base.jar
 
-ProjectRed1.12.24.9.4.120integration.jar
+ProjectRed-1.12.2-4.9.4.120-integration.jar
 
-ProjectRed1.12.24.9.4.120lighting.jar
+ProjectRed-1.12.2-4.9.4.120-lighting.jar
 
-ProjectRed1.12.24.9.4.120world.jar
+ProjectRed-1.12.2-4.9.4.120-world.jar
 
-Quarkr1.6179.jar
+Quark-r1.6-179.jar
 
-railcraft12.0.0.jar
+railcraft-12.0.0.jar
 
-RedstoneFlux1.122.1.1.1universal.jar
+RandomThings-MC1.12.2-4.2.7.4.jar
 
-ResourceLoaderMC1.12.11.5.3.jar
+RedstoneFlux-1.12-2.1.1.1-universal.jar
 
-ScannableMC1.12.21.6.3.26.jar
+ResourceLoader-MC1.12.1-1.5.3.jar
 
-simplemagnets1.0.13mc1.12.jar
+Scannable-MC1.12.2-1.6.3.26.jar
 
-SimpleSmelteryAccelerator1.0.1.jar
+simplemagnets-1.0.13-mc1.12.jar
 
-simpleteleporters1.12.23.0.2.jar
+SimpleSmelteryAccelerator-1.0.1.jar
 
-SpartanShields1.12.21.5.4.jar
+simpleteleporters-1.12.2-3.0.2.jar
 
-stellarfluidconduit1.12.21.0.3.jar
+sonarcore-1.12.2-5.0.19-20.jar
 
-stg1.12.21.2.3.jar
+SpartanShields-1.12.2-1.5.4.jar
 
-StorageDrawers1.12.25.4.2.jar
+stellarfluidconduit-1.12.2-1.0.3.jar
 
-StorageDrawersExtras1.123.1.0.jar
+stg-1.12.2-1.2.3.jar
 
-supermartijn642configlib1.0.4mc1.12.jar
+StorageDrawers-1.12.2-5.4.2.jar
 
-TConstruct1.12.22.13.0.183.jar
+StorageDrawersExtras-1.12-3.1.0.jar
 
-teslacorelib1.12.21.0.17.jar
+supermartijn642configlib-1.0.4-mc1.12.jar
 
-tesseract1.0.17mc1.12.jar
+TConstruct-1.12.2-2.13.0.183.jar
 
-theoneprobe1.121.4.28.jar
+tesla-core-lib-1.12.2-1.0.17.jar
 
-ThermalDynamics1.12.22.5.6.1universal.jar
+tesseract-1.0.17-mc1.12.jar
 
-ThermalFoundation1.12.22.6.7.1universal.jar
+theoneprobe-1.12-1.4.28.jar
 
-TinkerToolLeveling1.12.21.1.0.jar
+ThermalDynamics-1.12.2-2.5.6.1-universal.jar
 
-Toast Control1.12.21.8.1.jar
+ThermalFoundation-1.12.2-2.6.7.1-universal.jar
 
-topaddons1.12.21.13.0.jar
+TinkerToolLeveling-1.12.2-1.1.0.jar
 
-Translocators1.12.22.5.2.81universal.jar
+Toast Control-1.12.2-1.8.1.jar
 
-u_team_core1.12.22.2.5.147.jar
+topaddons-1.12.2-1.13.0.jar
 
-useful_backpacks1.12.21.5.4.85.jar
+Translocators-1.12.2-2.5.2.81-universal.jar
 
-volumetricflask0.18.jar
+u_team_core-1.12.2-2.2.5.147.jar
 
-WaterMechanicsBackport1.0.31.12.2NETHERFIX.jar
+useful_backpacks-1.12.2-1.5.4.85.jar
 
-Xaeros_Minimap_21.2.0_Forge_1.12.jar
+volumetricflask-0.18.jar
 
-XaerosWorldMap_1.11.11_Forge_1.12.jar
+WaterMechanicsBackport-1.0.3-1.12.2-NETHERFIX.jar
 
-AdditionalEnchantedMiner1.12.212.4.5universal.jar
+Xaeros_Minimap_21.3.0.2_Forge_1.12.jar
 
-AENetVisTool1.12.21.0.3.0universal.jar
+XaerosWorldMap_1.12.0.2_Forge_1.12.jar
 
-AkashicTome1.212.jar
+AdditionalEnchantedMiner-1.12.2-12.4.5-universal.jar
+
+AE-Net-Vis-Tool-1.12.2-1.0.3.0-universal.jar
+
+AkashicTome-1.2-12.jar
+
+AmbientSounds_v3.0.18_mc1.12.2.jar
+
+AnvilFix-1.12.2-1.0.5.jar
+
+AppleSkin-mc1.12-1.0.14.jar
+
+appliedenergistics2-rv6-stable-7.jar
+
+Aroma1997Core-1.12.2-2.0.0.2.b167.jar
+
+AromaBackup-1.12.2-3.0.0.0.b135.jar
+
+AutoRegLib-1.3-32.jar
+
+BetterBuildersWands-1.12.2-0.13.2.271+5997513.jar
+
+BetterFps-1.4.8.jar
+
+
