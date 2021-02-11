@@ -1029,7 +1029,7 @@ val CableHex16Fix as IOreDictEntry[IOreDictEntry] = {
 	<ore:wireGtSingleSilver> : <ore:cableGtHexSilver>,
 };
 
-for input, output in CableHexFix {
+for input, output in CableHex16Fix {
 	assembler.recipeBuilder()
 		.inputs(input.firstItem*16,rubber*16)
 		.property("circuit", 25)
