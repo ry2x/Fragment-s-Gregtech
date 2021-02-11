@@ -1032,7 +1032,7 @@ val CableHex16Fix as IOreDictEntry[IOreDictEntry] = {
 for input, output in CableHexFix {
 	assembler.recipeBuilder()
 		.inputs(input.firstItem*16,rubber*16)
-		.property("circuit", 24)
+		.property("circuit", 25)
 		.outputs(output.firstItem)
 		.duration(150)
 		.EUt(8)
