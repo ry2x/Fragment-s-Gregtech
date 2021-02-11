@@ -623,7 +623,7 @@ assembler.recipeBuilder()
     .EUt(4)
     .buildAndRegister();
 assembler.recipeBuilder()
-    .inputs(<chisel:planks-bookshelf_jungle:*> * 8)
+    .inputs(<chisel:planks-jungle:*> * 8)
     .notConsumable(<metaitem:circuit.integrated>.withTag({ Configuration: 8 }))
     .outputs(<quark:custom_chest:4>)
     .duration(800)
