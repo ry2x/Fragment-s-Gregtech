@@ -26,4 +26,16 @@
             <output name="minecraft:chest, chestWood" amount="4" />
         </crafting>
     </recipe>
+
+    <recipe name="Tweak: Wood Hopper" required="false" disabled="true">
+        <crafting>
+            <grid>
+                <item name="IRON"/><item name="logWood"/><item name="IRON"/>
+                <item name="IRON"/><item name="logWood"/><item name="IRON"/>
+                <item/><item name="IRON"/><item/>
+            </grid>
+            <output name="minecraft:hopper, blockHopper" />
+        </crafting>
+    </recipe>
+
 </enderio:recipes>
