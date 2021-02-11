@@ -767,37 +767,6 @@ compressor.recipeBuilder()
 	.EUt(2)
 	.buildAndRegister();
 
-//fix polyethylene recipes
-	#ammonia by haber-bosch process
-reactor.recipeBuilder()
-	.inputs(<ore:dustVanadiumMagnetite>*32)
-	.fluidInputs([<liquid:hydrogen>*100,<liquid:nitrogen>*300])
-	.notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:0}))
-	.outputs(<ore:dustVanadiumMagnetite>.firstItem*31)
-	.fluidOutputs([<liquid:ammonia>*200])
-	.duration(1200)
-	.EUt(16)
-	.buildAndRegister();
-	#ethylene by ethanol dehydration with zeolite-ammonium 
-reactor.recipeBuilder()
-	.inputs(<gregtech:meta_item_1:2291>*16)
-	.fluidInputs([<liquid:bio.ethanol>*100,<liquid:ammonia>*50])
-	.notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:0}))
-	.outputs(<gregtech:meta_item_1:2291>*15)
-	.fluidOutputs([<liquid:ethylene>*100,<liquid:water>*100])
-	.duration(2500)
-	.EUt(16)
-	.buildAndRegister();
-	#polymer Polyethylene Pulp in mixer
-mixer.recipeBuilder()
-	.inputs(<ore:dustCarbon>)
-	.fluidInputs([<liquid:hydrogen>*1000])
-	.notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:0}))
-	.outputs(<gregtech:meta_item_1:2141>)
-	.duration(128)
-	.EUt(16)
-	.buildAndRegister();
-
 //cable from rubber foil and wire
 	#rubber foil IItemStack
 val rubber as IItemStack = <ore:foilRubber>.firstItem;
