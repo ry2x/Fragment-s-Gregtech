@@ -531,33 +531,20 @@ recipes.addShaped(<scannable:scanner>, [
     [<ore:plateIron>, <ore:plateIron>, <ore:plateIron>]
 ]);
 
-//fix chest recipes
-val chestsfix as IItemStack[] = [
-    <quark:custom_chest:4>,
-    <quark:custom_chest:3>,
-    <quark:custom_chest:2>,
-    <quark:custom_chest:1>,
-    <quark:custom_chest>,
-    <minecraft:chest>,
-];
-for i in chestsfix {
-    recipes.remove(i);
-    recipes.removeShaped(i, [
-        [<*>,<*>,<*>],
-        [<*>,null,<*>],
-        [<*>,<*>,<*>]
-    ]);
-}
+/** About easy recipes from EnderIO
+* EnderIO register its recipes in their own way using xml extension (see config/enderio/).
+* However, as we tweaks some recipes from crafttweaker, JEI refused to remove/change its recipes,
+* which will make user to be confused (Crafttweaker does succesfully remove/change recipes).
+* So, as we try to fix some easy recipes, we've just disabled the original one from enderio and instead,
+* ported to here.
+*/
+
+//Add easy chest recipes (ported from enderio)
     #Dark Oak Chest
 recipes.addShaped(<quark:custom_chest:4> * 2, [
     [<minecraft:log2:1>, <minecraft:log2:1>, <minecraft:log2:1>],
     [<minecraft:log2:1>, null, <minecraft:log2:1>],
     [<minecraft:log2:1>, <minecraft:log2:1>, <minecraft:log2:1>]
-]);
-recipes.addShaped(<quark:custom_chest:4>, [
-    [<minecraft:planks:5>, <minecraft:planks:5>, <minecraft:planks:5>],
-    [<minecraft:planks:5>, null, <minecraft:planks:5>],
-    [<minecraft:planks:5>, <minecraft:planks:5>, <minecraft:planks:5>]
 ]);
     #Acacia Chest
 recipes.addShaped(<quark:custom_chest:3> * 2, [
@@ -565,21 +552,11 @@ recipes.addShaped(<quark:custom_chest:3> * 2, [
     [<minecraft:log2>, null, <minecraft:log2>],
     [<minecraft:log2>, <minecraft:log2>, <minecraft:log2>]
 ]);
-recipes.addShaped(<quark:custom_chest:3>, [
-    [<minecraft:planks:4>, <minecraft:planks:4>, <minecraft:planks:4>],
-    [<minecraft:planks:4>, null, <minecraft:planks:4>],
-    [<minecraft:planks:4>, <minecraft:planks:4>, <minecraft:planks:4>]
-]);
     #Jungle Chest
 recipes.addShaped(<quark:custom_chest:2> * 2, [
     [<minecraft:log:3>, <minecraft:log:3>, <minecraft:log:3>],
     [<minecraft:log:3>, null, <minecraft:log:3>],
     [<minecraft:log:3>, <minecraft:log:3>, <minecraft:log:3>]
-]);
-recipes.addShaped(<quark:custom_chest:2>, [
-    [<minecraft:planks:3>, <minecraft:planks:3>, <minecraft:planks:3>],
-    [<minecraft:planks:3>, null, <minecraft:planks:3>],
-    [<minecraft:planks:3>, <minecraft:planks:3>, <minecraft:planks:3>]
 ]);
     #Birch Chest
 recipes.addShaped(<quark:custom_chest:1> * 2, [
@@ -587,33 +564,126 @@ recipes.addShaped(<quark:custom_chest:1> * 2, [
     [<minecraft:log:2>, null, <minecraft:log:2>],
     [<minecraft:log:2>, <minecraft:log:2>, <minecraft:log:2>]
 ]);
-recipes.addShaped(<quark:custom_chest:1>, [
-    [<minecraft:planks:2>, <minecraft:planks:2>, <minecraft:planks:2>],
-    [<minecraft:planks:2>, null, <minecraft:planks:2>],
-    [<minecraft:planks:2>, <minecraft:planks:2>, <minecraft:planks:2>]
-]);
     #Spruce Chest
-recipes.addShaped(<quark:custom_chest>, [
-    [<minecraft:planks:1>, <minecraft:planks:1>, <minecraft:planks:1>],
-    [<minecraft:planks:1>, null, <minecraft:planks:1>],
-    [<minecraft:planks:1>, <minecraft:planks:1>, <minecraft:planks:1>]
-]);
 recipes.addShaped(<quark:custom_chest> * 2, [
     [<minecraft:log:1>, <minecraft:log:1>, <minecraft:log:1>],
     [<minecraft:log:1>, null, <minecraft:log:1>],
     [<minecraft:log:1>, <minecraft:log:1>, <minecraft:log:1>]
 ]);
     #Oak Chest
-recipes.addShapeless(<minecraft:chest>, [<minecraft:chest_minecart>]);
 recipes.addShaped(<minecraft:chest> * 2, [
     [<minecraft:log>, <minecraft:log>, <minecraft:log>],
     [<minecraft:log>, null, <minecraft:log>],
     [<minecraft:log>, <minecraft:log>, <minecraft:log>]
 ]);
-recipes.addShaped(<minecraft:chest>, [
-    [<minecraft:planks>, <minecraft:planks>, <minecraft:planks>],
-    [<minecraft:planks>, null, <minecraft:planks>],
-    [<minecraft:planks>, <minecraft:planks>, <minecraft:planks>]
+
+/*
+* As there are various kinds of chests from quark, we suppose we'd support with gregtech's machine too.
+*/
+//Remove the original recipes that require *any* wood plank
+assembler.findRecipe(4, [<ore:plankWood>.firstItem * 8, <metaitem:circuit.integrated>.withTag({ Configuration: 8 })], null).remove();
+
+//Add each chest (also supports chisels)
+    #Dark Oak Chest
+assembler.recipeBuilder()
+    .inputs(<minecraft:planks:5> * 8)
+    .notConsumable(<metaitem:circuit.integrated>.withTag({ Configuration: 8 }))
+    .outputs(<quark:custom_chest:4>)
+    .duration(800)
+    .EUt(4)
+    .buildAndRegister();
+assembler.recipeBuilder()
+    .inputs(<chisel:planks-dark-oak:*> * 8)
+    .notConsumable(<metaitem:circuit.integrated>.withTag({ Configuration: 8 }))
+    .outputs(<quark:custom_chest:4>)
+    .duration(800)
+    .EUt(4)
+    .buildAndRegister();
+    #Acacia Chest
+assembler.recipeBuilder()
+    .inputs(<minecraft:planks:4> * 8)
+    .notConsumable(<metaitem:circuit.integrated>.withTag({ Configuration: 8 }))
+    .outputs(<quark:custom_chest:3>)
+    .duration(800)
+    .EUt(4)
+    .buildAndRegister();
+assembler.recipeBuilder()
+    .inputs(<chisel:planks-acacia:*> * 8)
+    .notConsumable(<metaitem:circuit.integrated>.withTag({ Configuration: 8 }))
+    .outputs(<quark:custom_chest:3>)
+    .duration(800)
+    .EUt(4)
+    .buildAndRegister();
+    #Jungle Chest
+assembler.recipeBuilder()
+    .inputs(<minecraft:planks:3> * 8)
+    .notConsumable(<metaitem:circuit.integrated>.withTag({ Configuration: 8 }))
+    .outputs(<quark:custom_chest:2>)
+    .duration(800)
+    .EUt(4)
+    .buildAndRegister();
+assembler.recipeBuilder()
+    .inputs(<chisel:planks-jungle:*> * 8)
+    .notConsumable(<metaitem:circuit.integrated>.withTag({ Configuration: 8 }))
+    .outputs(<quark:custom_chest:2>)
+    .duration(800)
+    .EUt(4)
+    .buildAndRegister();
+    #Birch Chest
+assembler.recipeBuilder()
+    .inputs(<minecraft:planks:2> * 8)
+    .notConsumable(<metaitem:circuit.integrated>.withTag({ Configuration: 8 }))
+    .outputs(<quark:custom_chest:1>)
+    .duration(800)
+    .EUt(4)
+    .buildAndRegister();
+assembler.recipeBuilder()
+    .inputs(<chisel:planks-birch:*> * 8)
+    .notConsumable(<metaitem:circuit.integrated>.withTag({ Configuration: 8 }))
+    .outputs(<quark:custom_chest:1>)
+    .duration(800)
+    .EUt(4)
+    .buildAndRegister();
+    #Spruce Chest
+assembler.recipeBuilder()
+    .inputs(<minecraft:planks:1> * 8)
+    .notConsumable(<metaitem:circuit.integrated>.withTag({ Configuration: 8 }))
+    .outputs(<quark:custom_chest>)
+    .duration(800)
+    .EUt(4)
+    .buildAndRegister();
+assembler.recipeBuilder()
+    .inputs(<chisel:planks-spruce:*> * 8)
+    .notConsumable(<metaitem:circuit.integrated>.withTag({ Configuration: 8 }))
+    .outputs(<quark:custom_chest>)
+    .duration(800)
+    .EUt(4)
+    .buildAndRegister();
+    #Oak Chest
+assembler.recipeBuilder()
+    .inputs(<minecraft:planks> * 8)
+    .notConsumable(<metaitem:circuit.integrated>.withTag({ Configuration: 8 }))
+    .outputs(<minecraft:chest>)
+    .duration(800)
+    .EUt(4)
+    .buildAndRegister();
+assembler.recipeBuilder()
+    .inputs(<chisel:planks-oak:*> * 8)
+    .notConsumable(<metaitem:circuit.integrated>.withTag({ Configuration: 8 }))
+    .outputs(<minecraft:chest>)
+    .duration(800)
+    .EUt(4)
+    .buildAndRegister();
+
+//Add easy stick recipes (ported from enderio)
+recipes.addShaped(<minecraft:stick> * 4, [
+    [<ore:logWood>], 
+    [<ore:logWood>]
+]);
+recipes.addShaped(<minecraft:stick> * 8, [
+    [craftingToolSaw],
+    [<ore:logWood>], 
+    [<ore:logWood>]
 ]);
 
 //fix hopper recipes
@@ -628,28 +698,6 @@ recipes.addShaped(<minecraft:hopper>, [
     [<ore:plateIron>, craftingToolWrench, <ore:plateIron>],
     [<ore:plateIron>, <ore:chest>, <ore:plateIron>], 
     [null, <ore:plateIron>, null]
-]);
-
-//fix stick recipes
-recipes.remove(<minecraft:stick>);
-recipes.removeShaped(<minecraft:stick>,[
-  [<*>,<*>,<*>],
-  [<*>,<*>,<*>],
-  [<*>,<*>,<*>]
-]);
-recipes.removeShapeless(<minecraft:stick>,[<ore:logWood>,<ore:logWood>],true);
-
-recipes.addShapeless(<minecraft:stick> * 4, [<ore:logWood>,<ore:logWood>]);
-recipes.addShapeless(<minecraft:stick> * 2, [<ore:plankWood>,<ore:plankWood>]);
-recipes.addShaped(<minecraft:stick> * 4, [
-    [null, craftingToolSaw, null],
-    [null, <ore:plankWood>, null], 
-    [null, <ore:plankWood>, null]
-]);
-recipes.addShaped(<minecraft:stick> * 8, [
-    [null, craftingToolSaw, null],
-    [null, <ore:logWood>, null], 
-    [null, <ore:logWood>, null]
 ]);
 
 //fix marble
