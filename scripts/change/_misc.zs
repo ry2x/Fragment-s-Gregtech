@@ -577,6 +577,104 @@ recipes.addShaped(<minecraft:chest> * 2, [
     [<minecraft:log>, <minecraft:log>, <minecraft:log>]
 ]);
 
+/*
+* As there are various kinds of chests from quark, we suppose we'd support with gregtech's machine too.
+*/
+//Remove the original recipes that require *any* wood plank
+assembler.findRecipe(4, [<ore:plankWood>.firstItem * 8, <metaitem:circuit.integrated>.withTag({ Configuration: 8 })], null).remove();
+
+//Add each chest (also supports chisels)
+    #Dark Oak Chest
+assembler.recipeBuilder()
+    .inputs(<minecraft:planks:5> * 8)
+    .notConsumable(<metaitem:circuit.integrated>.withTag({ Configuration: 8 }))
+    .outputs(<quark:custom_chest:4>)
+    .duration(800)
+    .EUt(4)
+    .buildAndRegister();
+assembler.recipeBuilder()
+    .inputs(<chisel:planks-dark-oak:*> * 8)
+    .notConsumable(<metaitem:circuit.integrated>.withTag({ Configuration: 8 }))
+    .outputs(<quark:custom_chest:4>)
+    .duration(800)
+    .EUt(4)
+    .buildAndRegister();
+    #Acacia Chest
+assembler.recipeBuilder()
+    .inputs(<minecraft:planks:4> * 8)
+    .notConsumable(<metaitem:circuit.integrated>.withTag({ Configuration: 8 }))
+    .outputs(<quark:custom_chest:3>)
+    .duration(800)
+    .EUt(4)
+    .buildAndRegister();
+assembler.recipeBuilder()
+    .inputs(<chisel:planks-acacia:*> * 8)
+    .notConsumable(<metaitem:circuit.integrated>.withTag({ Configuration: 8 }))
+    .outputs(<quark:custom_chest:4>)
+    .duration(800)
+    .EUt(4)
+    .buildAndRegister();
+    #Jungle Chest
+assembler.recipeBuilder()
+    .inputs(<minecraft:planks:3> * 8)
+    .notConsumable(<metaitem:circuit.integrated>.withTag({ Configuration: 8 }))
+    .outputs(<quark:custom_chest:2>)
+    .duration(800)
+    .EUt(4)
+    .buildAndRegister();
+assembler.recipeBuilder()
+    .inputs(<chisel:planks-bookshelf_jungle:*> * 8)
+    .notConsumable(<metaitem:circuit.integrated>.withTag({ Configuration: 8 }))
+    .outputs(<quark:custom_chest:4>)
+    .duration(800)
+    .EUt(4)
+    .buildAndRegister();
+    #Birch Chest
+assembler.recipeBuilder()
+    .inputs(<minecraft:planks:2> * 8)
+    .notConsumable(<metaitem:circuit.integrated>.withTag({ Configuration: 8 }))
+    .outputs(<quark:custom_chest:1>)
+    .duration(800)
+    .EUt(4)
+    .buildAndRegister();
+assembler.recipeBuilder()
+    .inputs(<chisel:planks-birch:*> * 8)
+    .notConsumable(<metaitem:circuit.integrated>.withTag({ Configuration: 8 }))
+    .outputs(<quark:custom_chest:4>)
+    .duration(800)
+    .EUt(4)
+    .buildAndRegister();
+    #Spruce Chest
+assembler.recipeBuilder()
+    .inputs(<minecraft:planks:1> * 8)
+    .notConsumable(<metaitem:circuit.integrated>.withTag({ Configuration: 8 }))
+    .outputs(<quark:custom_chest>)
+    .duration(800)
+    .EUt(4)
+    .buildAndRegister();
+assembler.recipeBuilder()
+    .inputs(<chisel:planks-spruce:*> * 8)
+    .notConsumable(<metaitem:circuit.integrated>.withTag({ Configuration: 8 }))
+    .outputs(<quark:custom_chest:4>)
+    .duration(800)
+    .EUt(4)
+    .buildAndRegister();
+    #Oak Chest
+assembler.recipeBuilder()
+    .inputs(<minecraft:planks> * 8)
+    .notConsumable(<metaitem:circuit.integrated>.withTag({ Configuration: 8 }))
+    .outputs(<minecraft:chest>)
+    .duration(800)
+    .EUt(4)
+    .buildAndRegister();
+assembler.recipeBuilder()
+    .inputs(<chisel:planks-oak:*> * 8)
+    .notConsumable(<metaitem:circuit.integrated>.withTag({ Configuration: 8 }))
+    .outputs(<quark:custom_chest:4>)
+    .duration(800)
+    .EUt(4)
+    .buildAndRegister();
+
 //Add easy stick recipes (ported from enderio)
 recipes.addShaped(<minecraft:stick> * 4, [
     [<ore:logWood>], 
