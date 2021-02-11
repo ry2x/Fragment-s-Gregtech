@@ -895,7 +895,7 @@ val CableQuadruple4Fix as IOreDictEntry[IOreDictEntry] = {
 
 for input, output in CableQuadruple4Fix {
 	assembler.recipeBuilder()
-		.inputs(input.firstItem*2,rubber*4)
+		.inputs(input.firstItem*4,rubber*4)
 		.property("circuit", 25)
 		.outputs(output.firstItem)
 		.duration(150)
