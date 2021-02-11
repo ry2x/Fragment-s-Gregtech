@@ -43,33 +43,13 @@ val miscItems = [
     <mob_grinding_utils:gm_chicken_feed>,
     <mob_grinding_utils:dragon_muffler>,
     <mob_grinding_utils:entity_conveyor>,
-    <quark:monster_box>,
-    <quark:diamond_heart>,
-    <quark:pickarang>,
-    <quark:arrow_explosive>,
-    <quark:arrow_ender>,
     <minecraft:spawn_egg>.withTag({EntityTag: {id: "quark:stoneling"}}),
     <minecraft:spawn_egg>.withTag({EntityTag: {id: "quark:pirate"}}),
-    <quark:soul_bead>,
     <minecraft:spawn_egg>.withTag({EntityTag: {id: "quark:wraith"}}),
     <enderstorage:ender_storage:1>,
     <scannable:module_ore_common>,
-    <quark:stonebrick_wall>,
-    <quark:red_sandstone_wall>,
-    <quark:sandstone_wall>,
-    <quark:stone_andesite_wall>,
-    <quark:stone_diorite_wall>,
-    <quark:stone_wall>,
-    <quark:stone_granite_wall>,
-    <quark:stonebrick_mossy_wall>,
-    <quark:end_bricks_wall>,
     <futuremc:prismarine_wall>,
-    <quark:brick_wall>,
-    <quark:spruce_trapdoor>,
-    <quark:birch_trapdoor>,
-    <quark:jungle_trapdoor>,
     <futuremc:dark_oak_trapdoor>,
-    <quark:acacia_trapdoor>,
     <fluxnetworks:flux>,
     <fluxnetworks:adminconfigurator>,
     <cryingobsidian:crying_obsidian_item>,
@@ -129,6 +109,11 @@ for item in loadedMods["teslacorelib"].items {
 //remove micro
 for item in loadedMods["microblockcbe"].items {
     JEI.removeAndHide(item);
+}
+
+//remove item filter
+for i in loadedMods["itemfilters"].items {
+    JEI.removeAndHide(i);
 }
 
 //remove chest transporter
@@ -231,14 +216,40 @@ val quarkLess as IItemStack[]= [
     <quark:stone_slate_bricks_slab>,
     <quark:world_stone_pavement:7>,
     <quark:fire_stone_wall>,
+    <quark:soul_bead>,
+    <quark:monster_box>,
+    <quark:diamond_heart>,
+    <quark:pickarang>,
+    <quark:arrow_explosive>,
+    <quark:arrow_ender>,
+    <quark:stonebrick_wall>,
+    <quark:red_sandstone_wall>,
+    <quark:sandstone_wall>,
+    <quark:stone_andesite_wall>,
+    <quark:stone_diorite_wall>,
+    <quark:stone_wall>,
+    <quark:stone_granite_wall>,
+    <quark:stonebrick_mossy_wall>,
+    <quark:end_bricks_wall>,
+    <quark:brick_wall>,
+    <quark:spruce_trapdoor>,
+    <quark:birch_trapdoor>,
+    <quark:acacia_trapdoor>,
+    <quark:jungle_trapdoor>,
+
 ];
 
 for i in quarkLess {
     mods.jei.JEI.removeAndHide(i);
 }
 
-//power suite
-    #hide and remove useless items
+//remove quark chest recipe (ore:plankwood*8 to oak chest)
+recipes.removeByRecipeName("quark:chest");
+
+//remove quark hopper recipe (same as Vanilla)
+recipes.removeByRecipeName("quark:hopper");
+
+//remove power suite's useless items
 val powerSuite as IItemStack[] = [
     <powersuits:powerarmorcomponent>,
     <powersuits:powerarmorcomponent:1>,
@@ -250,3 +261,57 @@ val powerSuite as IItemStack[] = [
 for i in powerSuite {
     JEI.removeAndHide(i);
 }
+
+//sonar core
+val sonarcore as IItemStack[] = [
+    <sonarcore:stablestone_normal>,
+    <sonarcore:stablestonerimmed_normal>,
+    <sonarcore:stablestoneblackrimmed_normal>,
+    <sonarcore:stablestone_black>,
+    <sonarcore:stablestonerimmed_black>,
+    <sonarcore:stablestoneblackrimmed_black>,
+    <sonarcore:stablestone_blue>,
+    <sonarcore:stablestonerimmed_blue>,
+    <sonarcore:stablestoneblackrimmed_blue>,
+    <sonarcore:stablestone_brown>,
+    <sonarcore:stablestonerimmed_brown>,
+    <sonarcore:stablestoneblackrimmed_brown>,
+    <sonarcore:stablestone_cyan>,
+    <sonarcore:stablestonerimmed_cyan>,
+    <sonarcore:stablestone_green>,
+    <sonarcore:stablestoneblackrimmed_green>,
+    <sonarcore:stablestonerimmed_green>,
+    <sonarcore:stablestone_lightblue>,
+    <sonarcore:stablestonerimmed_lightblue>,
+    <sonarcore:stablestoneblackrimmed_cyan>,
+    <sonarcore:stablestone_lightgrey>,
+    <sonarcore:stablestonerimmed_lightgrey>,
+    <sonarcore:stablestone_lime>,
+    <sonarcore:stablestonerimmed_lime>,
+    <sonarcore:stablestoneblackrimmed_lime>,
+    <sonarcore:stablestonerimmed_lime>,
+    <sonarcore:stablestoneblackrimmed_lime>,
+    <sonarcore:stablestone_magenta>,
+    <sonarcore:stablestonerimmed_magenta>,
+    <sonarcore:stablestoneblackrimmed_magenta>,
+    <sonarcore:stablestone_orange>,
+    <sonarcore:stablestonerimmed_orange>,
+    <sonarcore:stablestoneblackrimmed_orange>,
+    <sonarcore:stablestone_pink>,
+    <sonarcore:stablestonerimmed_pink>,
+    <sonarcore:stablestoneblackrimmed_pink>,
+    <sonarcore:stablestonerimmed_plain>,
+    <sonarcore:stablestone_purple>,
+    <sonarcore:stablestonerimmed_purple>,
+    <sonarcore:stablestone_red>,
+    <sonarcore:stablestoneblackrimmed_purple>,
+    <sonarcore:stablestonerimmed_red>,
+    <sonarcore:stablestoneblackrimmed_red>,
+    <sonarcore:stablestone_yellow>,
+    <sonarcore:stablestonerimmed_yellow>,
+    <sonarcore:stablestoneblackrimmed_yellow>,
+];
+
+for i in sonarcore {
+    JEI.removeAndHide(i);
+} 

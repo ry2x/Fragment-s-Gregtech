@@ -326,7 +326,7 @@ reactor.recipeBuilder()
     .duration(400)
     .EUt(20)
     .buildAndRegister();
-#supercooled_cryotheum helps cool-downing hot ingots
+#cryotheum helps cool-downing hot ingots
 freezer.recipeBuilder()
 	.inputs(<ore:ingotHotErbium>)
 	.fluidInputs([<liquid:cryotheum>*10])
@@ -657,14 +657,14 @@ hammer.findRecipe(24,[<projectred-exploration:stone:5>],null).remove();
 hammer.recipeBuilder()
 	.inputs(<ore:blockRuby>)
 	.outputs(<ore:gemRuby>.firstItem*9)
-	.duration(200)
+	.duration(100)
 	.EUt(24)
 	.buildAndRegister();
 large_forge_hammer.recipeBuilder()
 	.inputs(<ore:blockRuby>)
 	.fluidInputs([<liquid:lubricant>*2])
 	.outputs(<ore:gemRuby>.firstItem*9)
-	.duration(200)
+	.duration(100)
 	.EUt(24)
 	.buildAndRegister();
 	#sapphire
@@ -679,14 +679,14 @@ hammer.findRecipe(24,[<projectred-exploration:stone:6>],null).remove();
 hammer.recipeBuilder()
 	.inputs(<ore:blockSapphire>)
 	.outputs(<ore:gemSapphire>.firstItem*9)
-	.duration(200)
+	.duration(100)
 	.EUt(24)
 	.buildAndRegister();
 large_forge_hammer.recipeBuilder()
 	.inputs(<ore:blockSapphire>)
 	.fluidInputs([<liquid:lubricant>*2])
 	.outputs(<ore:gemSapphire>.firstItem*9)
-	.duration(200)
+	.duration(100)
 	.EUt(24)
 	.buildAndRegister();
 	#cobalt
@@ -698,7 +698,7 @@ compressor.recipeBuilder()
 	.EUt(2)
 	.buildAndRegister();
 	#copper
-compressor.findRecipe(2,[<thermalfoundation:material:128>*9],[]).remove();
+compressor.findRecipe(2,[<thermalfoundation:material:128>*9],null).remove();
 compressor.recipeBuilder()
 	.inputs(<ore:ingotCopper>*9)
 	.outputs(<gregtech:compressed_0:15>)
@@ -797,3 +797,244 @@ mixer.recipeBuilder()
 	.duration(128)
 	.EUt(16)
 	.buildAndRegister();
+
+//cable from rubber foil and wire
+	#rubber foil IItemStack
+val rubber as IItemStack = <ore:foilRubber>.firstItem;
+	#1x cable
+val CableSingleFix as IOreDictEntry[IOreDictEntry] = {
+    <ore:wireGtSingleAnnealedCopper> : <ore:cableGtSingleAnnealedCopper>,
+    <ore:wireGtSingleCopper> : <ore:cableGtSingleCopper>,
+    <ore:wireGtSingleCupronickel> : <ore:cableGtSingleCupronickel>,
+    <ore:wireGtSingleIron> : <ore:cableGtSingleIron>,
+    <ore:wireGtSingleMvSuperconductor> : <ore:cableGtSingleMvSuperconductor>,
+    <ore:wireGtSingleMvSuperconductorBase> : <ore:cableGtSingleMvSuperconductorBase>,
+    <ore:wireGtSingleNickel> : <ore:cableGtSingleNickel>,
+    <ore:wireGtSingleElectrum> : <ore:cableGtSingleElectrum>,
+    <ore:wireGtSingleGold> : <ore:cableGtSingleGold>,
+    <ore:wireGtSingleHvSuperconductor> : <ore:cableGtSingleHvSuperconductor>,
+    <ore:wireGtSingleHvSuperconductorBase> : <ore:cableGtSingleHvSuperconductorBase>,
+    <ore:wireGtSingleKanthal> : <ore:cableGtSingleKanthal>,
+    <ore:wireGtSingleSilver> : <ore:cableGtSingleSilver>,
+};
+
+for input, output in CableSingleFix {
+	assembler.recipeBuilder()
+		.inputs(input.firstItem,rubber)
+		.property("circuit", 24)
+		.outputs(output.firstItem)
+		.duration(150)
+		.EUt(8)
+		.buildAndRegister();
+}
+
+	#2x cable
+val CableDoubleFix as IOreDictEntry[IOreDictEntry] = {
+    <ore:wireGtDoubleAnnealedCopper> : <ore:cableGtDoubleAnnealedCopper>,
+    <ore:wireGtDoubleCopper> : <ore:cableGtDoubleCopper>,
+    <ore:wireGtDoubleCupronickel> : <ore:cableGtDoubleCupronickel>,
+    <ore:wireGtDoubleIron> : <ore:cableGtDoubleIron>,
+    <ore:wireGtDoubleMvSuperconductor> : <ore:cableGtDoubleMvSuperconductor>,
+    <ore:wireGtDoubleMvSuperconductorBase> : <ore:cableGtDoubleMvSuperconductorBase>,
+    <ore:wireGtDoubleNickel> : <ore:cableGtDoubleNickel>,
+    <ore:wireGtDoubleElectrum> : <ore:cableGtDoubleElectrum>,
+    <ore:wireGtDoubleGold> : <ore:cableGtDoubleGold>,
+    <ore:wireGtDoubleHvSuperconductor> : <ore:cableGtDoubleHvSuperconductor>,
+    <ore:wireGtDoubleHvSuperconductorBase> : <ore:cableGtDoubleHvSuperconductorBase>,
+    <ore:wireGtDoubleKanthal> : <ore:cableGtDoubleKanthal>,
+    <ore:wireGtDoubleSilver> : <ore:cableGtDoubleSilver>,
+};
+
+for input, output in CableDoubleFix {
+	assembler.recipeBuilder()
+		.inputs(input.firstItem,rubber*2)
+		.property("circuit", 24)
+		.outputs(output.firstItem)
+		.duration(150)
+		.EUt(8)
+		.buildAndRegister();
+}
+
+val CableDouble2Fix as IOreDictEntry[IOreDictEntry] = {
+    <ore:wireGtSingleAnnealedCopper> : <ore:cableGtDoubleAnnealedCopper>,
+    <ore:wireGtSingleCopper> : <ore:cableGtDoubleCopper>,
+    <ore:wireGtSingleCupronickel> : <ore:cableGtDoubleCupronickel>,
+    <ore:wireGtSingleIron> : <ore:cableGtDoubleIron>,
+    <ore:wireGtSingleMvSuperconductor> : <ore:cableGtDoubleMvSuperconductor>,
+    <ore:wireGtSingleMvSuperconductorBase> : <ore:cableGtDoubleMvSuperconductorBase>,
+    <ore:wireGtSingleNickel> : <ore:cableGtDoubleNickel>,
+    <ore:wireGtSingleElectrum> : <ore:cableGtDoubleElectrum>,
+    <ore:wireGtSingleGold> : <ore:cableGtDoubleGold>,
+    <ore:wireGtSingleHvSuperconductor> : <ore:cableGtDoubleHvSuperconductor>,
+    <ore:wireGtSingleHvSuperconductorBase> : <ore:cableGtDoubleHvSuperconductorBase>,
+    <ore:wireGtSingleKanthal> : <ore:cableGtDoubleKanthal>,
+    <ore:wireGtSingleSilver> : <ore:cableGtDoubleSilver>,
+};
+
+for input, output in CableDouble2Fix {
+	assembler.recipeBuilder()
+		.inputs(input.firstItem*2,rubber*2)
+		.property("circuit", 25)
+		.outputs(output.firstItem)
+		.duration(150)
+		.EUt(8)
+		.buildAndRegister();
+}
+
+	#4x cable
+val CableQuadrupleFix as IOreDictEntry[IOreDictEntry] = {
+    <ore:wireGtQuadrupleAnnealedCopper> : <ore:cableGtQuadrupleAnnealedCopper>,
+    <ore:wireGtQuadrupleCopper> : <ore:cableGtQuadrupleCopper>,
+    <ore:wireGtQuadrupleCupronickel> : <ore:cableGtQuadrupleCupronickel>,
+    <ore:wireGtQuadrupleIron> : <ore:cableGtQuadrupleIron>,
+    <ore:wireGtQuadrupleMvSuperconductor> : <ore:cableGtQuadrupleMvSuperconductor>,
+    <ore:wireGtQuadrupleMvSuperconductorBase> : <ore:cableGtQuadrupleMvSuperconductorBase>,
+    <ore:wireGtQuadrupleNickel> : <ore:cableGtQuadrupleNickel>,
+    <ore:wireGtQuadrupleElectrum> : <ore:cableGtQuadrupleElectrum>,
+    <ore:wireGtQuadrupleGold> : <ore:cableGtQuadrupleGold>,
+    <ore:wireGtQuadrupleHvSuperconductor> : <ore:cableGtQuadrupleHvSuperconductor>,
+    <ore:wireGtQuadrupleHvSuperconductorBase> : <ore:cableGtQuadrupleHvSuperconductorBase>,
+    <ore:wireGtQuadrupleKanthal> : <ore:cableGtQuadrupleKanthal>,
+    <ore:wireGtQuadrupleSilver> : <ore:cableGtQuadrupleSilver>,
+};
+
+for input, output in CableQuadrupleFix {
+	assembler.recipeBuilder()
+		.inputs(input.firstItem,rubber*4)
+		.property("circuit", 24)
+		.outputs(output.firstItem)
+		.duration(150)
+		.EUt(8)
+		.buildAndRegister();
+}
+
+val CableQuadruple4Fix as IOreDictEntry[IOreDictEntry] = {
+	<ore:wireGtSingleAnnealedCopper> : <ore:cableGtQuadrupleAnnealedCopper>,
+	<ore:wireGtSingleCopper> : <ore:cableGtQuadrupleCopper>,
+	<ore:wireGtSingleCupronickel> : <ore:cableGtQuadrupleCupronickel>,
+	<ore:wireGtSingleIron> : <ore:cableGtQuadrupleIron>,
+	<ore:wireGtSingleMvSuperconductor> : <ore:cableGtQuadrupleMvSuperconductor>,
+	<ore:wireGtSingleMvSuperconductorBase> : <ore:cableGtQuadrupleMvSuperconductorBase>,
+	<ore:wireGtSingleNickel> : <ore:cableGtQuadrupleNickel>,
+	<ore:wireGtSingleElectrum> : <ore:cableGtQuadrupleElectrum>,
+	<ore:wireGtSingleGold> : <ore:cableGtQuadrupleGold>,
+	<ore:wireGtSingleHvSuperconductor> : <ore:cableGtQuadrupleHvSuperconductor>,
+	<ore:wireGtSingleHvSuperconductorBase> : <ore:cableGtQuadrupleHvSuperconductorBase>,
+	<ore:wireGtSingleKanthal> : <ore:cableGtQuadrupleKanthal>,
+	<ore:wireGtSingleSilver> : <ore:cableGtQuadrupleSilver>,
+};
+
+for input, output in CableQuadruple4Fix {
+	assembler.recipeBuilder()
+		.inputs(input.firstItem*2,rubber*4)
+		.property("circuit", 25)
+		.outputs(output.firstItem)
+		.duration(150)
+		.EUt(8)
+		.buildAndRegister();
+}
+
+	#8x cable
+val CableOctalFix as IOreDictEntry[IOreDictEntry] = {
+    <ore:wireGtOctalAnnealedCopper> : <ore:cableGtOctalAnnealedCopper>,
+    <ore:wireGtOctalCopper> : <ore:cableGtOctalCopper>,
+    <ore:wireGtOctalCupronickel> : <ore:cableGtOctalCupronickel>,
+    <ore:wireGtOctalIron> : <ore:cableGtOctalIron>,
+    <ore:wireGtOctalMvSuperconductor> : <ore:cableGtOctalMvSuperconductor>,
+    <ore:wireGtOctalMvSuperconductorBase> : <ore:cableGtOctalMvSuperconductorBase>,
+    <ore:wireGtOctalNickel> : <ore:cableGtOctalNickel>,
+    <ore:wireGtOctalElectrum> : <ore:cableGtOctalElectrum>,
+    <ore:wireGtOctalGold> : <ore:cableGtOctalGold>,
+    <ore:wireGtOctalHvSuperconductor> : <ore:cableGtOctalHvSuperconductor>,
+    <ore:wireGtOctalHvSuperconductorBase> : <ore:cableGtOctalHvSuperconductorBase>,
+    <ore:wireGtOctalKanthal> : <ore:cableGtOctalKanthal>,
+    <ore:wireGtOctalSilver> : <ore:cableGtOctalSilver>,
+};
+
+for input, output in CableOctalFix {
+	assembler.recipeBuilder()
+		.inputs(input.firstItem,rubber*8)
+		.property("circuit", 24)
+		.outputs(output.firstItem)
+		.duration(150)
+		.EUt(8)
+		.buildAndRegister();
+}
+val CableOctal8Fix as IOreDictEntry[IOreDictEntry] ={
+	<ore:wireGtSingleAnnealedCopper> : <ore:cableGtOctalAnnealedCopper>,
+	<ore:wireGtSingleCopper> : <ore:cableGtOctalCopper>,
+	<ore:wireGtSingleCupronickel> : <ore:cableGtOctalCupronickel>,
+	<ore:wireGtSingleIron> : <ore:cableGtOctalIron>,
+	<ore:wireGtSingleMvSuperconductor> : <ore:cableGtOctalMvSuperconductor>,
+	<ore:wireGtSingleMvSuperconductorBase> : <ore:cableGtOctalMvSuperconductorBase>,
+	<ore:wireGtSingleNickel> : <ore:cableGtOctalNickel>,
+	<ore:wireGtSingleElectrum> : <ore:cableGtOctalElectrum>,
+	<ore:wireGtSingleGold> : <ore:cableGtOctalGold>,
+	<ore:wireGtSingleHvSuperconductor> : <ore:cableGtOctalHvSuperconductor>,
+	<ore:wireGtSingleHvSuperconductorBase> : <ore:cableGtOctalHvSuperconductorBase>,
+	<ore:wireGtSingleKanthal> : <ore:cableGtOctalKanthal>,
+	<ore:wireGtSingleSilver> : <ore:cableGtOctalSilver>,
+};
+
+for input, output in CableOctal8Fix {
+	assembler.recipeBuilder()
+		.inputs(input.firstItem*8,rubber*8)
+		.property("circuit", 25)
+		.outputs(output.firstItem)
+		.duration(150)
+		.EUt(8)
+		.buildAndRegister();
+}
+
+	#x16 cable
+val CableHexFix as IOreDictEntry[IOreDictEntry] = {
+    <ore:wireGtHexAnnealedCopper> : <ore:cableGtHexAnnealedCopper>,
+    <ore:wireGtHexCopper> : <ore:cableGtHexCopper>,
+    <ore:wireGtHexCupronickel> : <ore:cableGtHexCupronickel>,
+    <ore:wireGtHexIron> : <ore:cableGtHexIron>,
+    <ore:wireGtHexMvSuperconductor> : <ore:cableGtHexMvSuperconductor>,
+    <ore:wireGtHexMvSuperconductorBase> : <ore:cableGtHexMvSuperconductorBase>,
+    <ore:wireGtHexNickel> : <ore:cableGtHexNickel>,
+    <ore:wireGtHexElectrum> : <ore:cableGtHexElectrum>,
+    <ore:wireGtHexGold> : <ore:cableGtHexGold>,
+    <ore:wireGtHexHvSuperconductor> : <ore:cableGtHexHvSuperconductor>,
+    <ore:wireGtHexHvSuperconductorBase> : <ore:cableGtHexHvSuperconductorBase>,
+    <ore:wireGtHexKanthal> : <ore:cableGtHexKanthal>,
+    <ore:wireGtHexSilver> : <ore:cableGtHexSilver>,
+};
+
+for input, output in CableHexFix {
+	assembler.recipeBuilder()
+		.inputs(input.firstItem,rubber*16)
+		.property("circuit", 24)
+		.outputs(output.firstItem)
+		.duration(150)
+		.EUt(8)
+		.buildAndRegister();
+}
+
+val CableHex16Fix as IOreDictEntry[IOreDictEntry] = {
+	<ore:wireGtSingleAnnealedCopper> : <ore:cableGtHexAnnealedCopper>,
+	<ore:wireGtSingleCopper> : <ore:cableGtHexCopper>,
+	<ore:wireGtSingleCupronickel> : <ore:cableGtHexCupronickel>,
+	<ore:wireGtSingleIron> : <ore:cableGtHexIron>,
+	<ore:wireGtSingleMvSuperconductor> : <ore:cableGtHexMvSuperconductor>,
+	<ore:wireGtSingleMvSuperconductorBase> : <ore:cableGtHexMvSuperconductorBase>,
+	<ore:wireGtSingleNickel> : <ore:cableGtHexNickel>,
+	<ore:wireGtSingleElectrum> : <ore:cableGtHexElectrum>,
+	<ore:wireGtSingleGold> : <ore:cableGtHexGold>,
+	<ore:wireGtSingleHvSuperconductor> : <ore:cableGtHexHvSuperconductor>,
+	<ore:wireGtSingleHvSuperconductorBase> : <ore:cableGtHexHvSuperconductorBase>,
+	<ore:wireGtSingleKanthal> : <ore:cableGtHexKanthal>,
+	<ore:wireGtSingleSilver> : <ore:cableGtHexSilver>,
+};
+
+for input, output in CableHexFix {
+	assembler.recipeBuilder()
+		.inputs(input.firstItem*16,rubber*16)
+		.property("circuit", 24)
+		.outputs(output.firstItem)
+		.duration(150)
+		.EUt(8)
+		.buildAndRegister();
+}

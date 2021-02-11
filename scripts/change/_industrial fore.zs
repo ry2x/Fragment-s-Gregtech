@@ -256,9 +256,9 @@ recipes.addShaped(<industrialforegoing:range_addon:6>, [
     [<gregtech:meta_item_1:12133>, <ore:plateSterlingSilver>, <gregtech:meta_item_1:12133>]
 ]);
 recipes.addShaped(<industrialforegoing:range_addon:5>, [
-    [<gregtech:meta_item_1:12300>, <ore:plateSterlingSilver>, <gregtech:meta_item_1:12300>],
-    [<gregtech:meta_item_1:12300>, <ore:paneGlass>, <gregtech:meta_item_1:12300>], 
-    [<gregtech:meta_item_1:12300>, <ore:plateSterlingSilver>, <gregtech:meta_item_1:12300>]
+    [<ore:plateStainlessSteel>, <ore:plateSterlingSilver>, <ore:plateStainlessSteel>],
+    [<ore:plateStainlessSteel>, <ore:paneGlass>, <ore:plateStainlessSteel>], 
+    [<ore:plateStainlessSteel>, <ore:plateSterlingSilver>, <ore:plateStainlessSteel>]
 ]);
 recipes.addShaped(<industrialforegoing:range_addon:4>, [
     [<gregtech:meta_item_1:13183>, <ore:plateSterlingSilver>, <gregtech:meta_item_1:13183>],
@@ -266,9 +266,9 @@ recipes.addShaped(<industrialforegoing:range_addon:4>, [
     [<gregtech:meta_item_1:13183>, <ore:plateSterlingSilver>, <gregtech:meta_item_1:13183>]
 ]);
 recipes.addShaped(<industrialforegoing:range_addon:3>, [
-    [<gregtech:meta_item_1:13001>, <ore:plateSterlingSilver>, <gregtech:meta_item_1:13001>],
-    [<gregtech:meta_item_1:13001>, <ore:paneGlass>, <gregtech:meta_item_1:13001>], 
-    [<gregtech:meta_item_1:13001>, <ore:plateSterlingSilver>, <ore:plateAluminium>]
+    [<ore:plateAluminium>, <ore:plateSterlingSilver>, <ore:plateAluminium>],
+    [<ore:plateAluminium>, <ore:paneGlass>, <ore:plateAluminium>], 
+    [<ore:plateAluminium>, <ore:plateSterlingSilver>, <ore:plateAluminium>]
 ]);
 recipes.addShaped(<industrialforegoing:range_addon:2>, [
     [<ore:plateVanadiumSteel>, <ore:plateSterlingSilver>, <ore:plateVanadiumSteel>],

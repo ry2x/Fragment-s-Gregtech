@@ -1026,7 +1026,8 @@ mods.jei.JEI.removeAndHide(<enderio:item_material:5>);
 <ore:oreCobalt>.add(<tconstruct:ore>);
 
 #set VoidWorldPortal
-<ore:VoidWorldPortal>.add(<chisel:factory1:1>);
+<ore:VoidWorldPortal>.add(<sonarcore:stablestoneblackrimmed_lightblue>);
+<ore:NetherWorldPortal>.add(<sonarcore:stablestoneblackrimmed_plain>);
 
 #future log removed from ore
 val ftmcLog as IItemStack[] = [
@@ -1051,6 +1052,58 @@ val quarkB as IItemStack[] = [
 ];
 
 <ore:logWood>.addItems(quarkB);
+
+//sonar core
+val sonarcore as IItemStack[] = [
+    <sonarcore:stablestone_normal>,
+    <sonarcore:stablestonerimmed_normal>,
+    <sonarcore:stablestoneblackrimmed_normal>,
+    <sonarcore:stablestone_black>,
+    <sonarcore:stablestonerimmed_black>,
+    <sonarcore:stablestoneblackrimmed_black>,
+    <sonarcore:stablestone_blue>,
+    <sonarcore:stablestonerimmed_blue>,
+    <sonarcore:stablestoneblackrimmed_blue>,
+    <sonarcore:stablestone_brown>,
+    <sonarcore:stablestonerimmed_brown>,
+    <sonarcore:stablestoneblackrimmed_brown>,
+    <sonarcore:stablestone_cyan>,
+    <sonarcore:stablestonerimmed_cyan>,
+    <sonarcore:stablestone_green>,
+    <sonarcore:stablestoneblackrimmed_green>,
+    <sonarcore:stablestonerimmed_green>,
+    <sonarcore:stablestone_lightblue>,
+    <sonarcore:stablestonerimmed_lightblue>,
+    <sonarcore:stablestoneblackrimmed_cyan>,
+    <sonarcore:stablestone_lightgrey>,
+    <sonarcore:stablestonerimmed_lightgrey>,
+    <sonarcore:stablestone_lime>,
+    <sonarcore:stablestonerimmed_lime>,
+    <sonarcore:stablestoneblackrimmed_lime>,
+    <sonarcore:stablestonerimmed_lime>,
+    <sonarcore:stablestoneblackrimmed_lime>,
+    <sonarcore:stablestone_magenta>,
+    <sonarcore:stablestonerimmed_magenta>,
+    <sonarcore:stablestoneblackrimmed_magenta>,
+    <sonarcore:stablestone_orange>,
+    <sonarcore:stablestonerimmed_orange>,
+    <sonarcore:stablestoneblackrimmed_orange>,
+    <sonarcore:stablestone_pink>,
+    <sonarcore:stablestonerimmed_pink>,
+    <sonarcore:stablestoneblackrimmed_pink>,
+    <sonarcore:stablestonerimmed_plain>,
+    <sonarcore:stablestone_purple>,
+    <sonarcore:stablestonerimmed_purple>,
+    <sonarcore:stablestone_red>,
+    <sonarcore:stablestoneblackrimmed_purple>,
+    <sonarcore:stablestonerimmed_red>,
+    <sonarcore:stablestoneblackrimmed_red>,
+    <sonarcore:stablestone_yellow>,
+    <sonarcore:stablestonerimmed_yellow>,
+    <sonarcore:stablestoneblackrimmed_yellow>,
+];
+
+<ore:sonarStableStone>.removeItems(sonarcore);
 
 //global tools
 global craftingToolHardHammer as IItemStack = <gregtech:meta_tool:6>;

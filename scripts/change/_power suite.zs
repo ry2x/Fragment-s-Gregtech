@@ -26,6 +26,9 @@ freezer.recipeBuilder()
     .EUt(64)
     .buildAndRegister();
 
+//remove bucket of  nitrogen 
+recipes.remove(<forge:bucketfilled>.withTag({FluidName: "liquid_nitrogen", Amount: 1000}));
+
 //change recipes of armor
 recipes.remove(<powersuits:powerarmor_head>);
 recipes.addShaped(<powersuits:powerarmor_head>, [

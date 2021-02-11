@@ -686,20 +686,6 @@ recipes.addShaped(<minecraft:stick> * 8, [
     [<ore:logWood>]
 ]);
 
-//fix hopper recipes
-recipes.remove(<minecraft:hopper>);
-recipes.removeShaped(<minecraft:hopper>,[
-    [<*>,<*>,<*>],
-    [<*>,<*>,<*>],
-    [null,<*>,null]
-]);
-recipes.addShapeless(<minecraft:hopper>, [<minecraft:hopper_minecart>]);
-recipes.addShaped(<minecraft:hopper>, [
-    [<ore:plateIron>, craftingToolWrench, <ore:plateIron>],
-    [<ore:plateIron>, <ore:chest>, <ore:plateIron>], 
-    [null, <ore:plateIron>, null]
-]);
-
 //fix marble
 recipes.remove(<quark:marble:1>);
 recipes.addShaped(<quark:marble:1> * 9, [
@@ -743,3 +729,17 @@ forming.recipeBuilder()
     .duration(60)
     .EUt(8192)
     .buildAndRegister();
+
+//sonarcore
+recipes.remove(<sonarcore:stablestone_plain>);
+recipes.addShaped(<sonarcore:stablestone_plain>,[
+    [<sonarcore:reinforcedstonebrick>,<sonarcore:reinforcedstonebrick>,<sonarcore:reinforcedstonebrick>],
+    [<sonarcore:reinforcedstonebrick>,null,<sonarcore:reinforcedstonebrick>],
+    [<sonarcore:reinforcedstonebrick>,<sonarcore:reinforcedstonebrick>,<sonarcore:reinforcedstonebrick>]
+]);
+
+    #name of portal frame
+<sonarcore:stablestoneblackrimmed_lightblue>.displayName = "VoidWorld Portal Frame";
+<sonarcore:stablestoneblackrimmed_plain>.displayName = "Nether From Void Portal Frame"; 
+<sonarcore:stablestone_plain>.displayName = "Portal Frame Base Block";
+<sonarcore:stablestoneblackrimmed_lightgrey>.displayName = "Portal Frame Block";
