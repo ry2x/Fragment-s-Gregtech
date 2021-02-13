@@ -1,6 +1,7 @@
 //import crafttweaker II
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
+import crafttweaker.oredict.IOreDictEntry;
 
 //import greg
 import mods.gregtech.recipe.RecipeMap;
@@ -685,6 +686,28 @@ recipes.addShaped(<minecraft:stick> * 8, [
     [<ore:logWood>], 
     [<ore:logWood>]
 ]);
+
+/**
+* Patch hopper
+* Support quark's chest to be assemble to hopper using assembler from gtce.
+*/
+val ironPlate = [<ore:plateIron>, <ore:plateWroughtIron>] as IOreDictEntry[];
+for i in ironPlate {
+    assembler.findRecipe(2, [<minecraft:chest>, i.firstItem * 5], null).remove();
+    assembler.findRecipe(2, [<minecraft:trapped_chest>, i.firstItem * 5], null).remove();
+    assembler.recipeBuilder()
+        .inputs(i * 5, <ore:chestWood>)
+        .outputs(<minecraft:hopper>)
+        .duration(800)
+        .EUt(2)
+        .buildAndRegister();
+    assembler.recipeBuilder()
+        .inputs(i * 5, <ore:chestTrapped>)
+        .outputs(<minecraft:hopper>)
+        .duration(800)
+        .EUt(2)
+        .buildAndRegister();
+}
 
 //fix marble
 recipes.remove(<quark:marble:1>);
