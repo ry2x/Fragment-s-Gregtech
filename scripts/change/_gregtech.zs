@@ -1007,3 +1007,72 @@ for input, output in CableHex16Fix {
 		.EUt(8)
 		.buildAndRegister();
 }
+
+//glass fix(Glass block>liquid 1000mb, stain>375mb)
+	#remove fluid glass recipes in fluid extractor
+for extract in fluid_extractor.recipes {
+	if ((extract.fluidOutputs[0] * 0).matches(<liquid:glass> * 0))
+        { 
+		//	print("Removing extractor recipes: " + extract.inputs[0].matchingItems[0].displayName + " to " + extract.fluidOutputs[0].displayName + ":" + extract.fluidOutputs[0].amount);
+			extract.remove();
+		} 
+}
+
+	#add fluid glass recipes in fluid extractor
+val glassfix as int[IIngredient]= {
+	<ore:sand> : 8,
+	<ore:gemGlass> : 8,
+	<ore:plateGlass> :8,
+	<minecraft:glass_bottle> : 8,
+	<ore:gemChippedGlass> : 2,
+	<ore:gemFlawedGlass> : 4,
+	<ore:lensGlass> : 3
+};
+
+for input,x in glassfix {
+	fluid_extractor.recipeBuilder()
+		.inputs(input)
+		.fluidOutputs([<liquid:glass>*((125*x)as int)])
+		.duration((10*x) as int)
+		.EUt(32)
+		.buildAndRegister();
+}
+
+	#fix clear tinker glass in solidifier 
+solidifier.findRecipe(4, [<metaitem:shape.mold.block>], [<liquid:glass> * 1000]).remove();
+solidifier.recipeBuilder()
+    .fluidInputs([<liquid:glass> * 1000])
+	.notConsumable(<metaitem:shape.mold.block>)
+	.outputs(<minecraft:glass>)
+	.duration(12)
+	.EUt(4)
+	.buildAndRegister();
+
+//change recipes use plutonium244 to uranium
+bath.findRecipe(384, [<minecraft:nether_star>], [<liquid:plutonium> * 1152]).remove();
+bath.findRecipe(384, [<minecraft:ender_eye>], [<liquid:plutonium> * 288]).remove();	
+	
+bath.recipeBuilder()
+	.inputs(<minecraft:nether_star>)
+	.fluidInputs([<liquid:uranium> * 1152])
+	.outputs(<metaitem:quantumstar>)
+    .duration(1920)
+    .EUt(384)
+    .buildAndRegister();
+
+bath.recipeBuilder()
+	.inputs(<minecraft:ender_eye>)
+	.fluidInputs([<liquid:uranium> * 288])
+	.outputs(<metaitem:quantumeye>)
+    .duration(480)
+    .EUt(384)
+    .buildAndRegister();
+
+//add recipe Yttrium barium cuprate dust
+mixer.recipeBuilder()
+	.inputs(<ore:dustCopper>*3,<ore:dustBarium>*2,<ore:dustYttrium>)
+	.outputs(<ore:dustYttriumBariumCuprate>.firstItem*6)
+	.duration(240)
+	.EUt(8)
+	.buildAndRegister();
+
