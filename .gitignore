@@ -1,0 +1,10 @@
+#Client-Side Cache Files
+src/config/AppliedEnergistics2/items.csv
+config/InvTweaks.cfg
+config/ichunutil_keybinds.cfg
+config/jei/bookmarks.ini
+config/jei/worldSettings.*
+
+#For development
+.vscode
+.zsrc
