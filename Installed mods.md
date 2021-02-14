@@ -112,7 +112,7 @@ gregtech-1.12.2-1.11.3.640.jar
 
 iChunUtil-1.12.2-7.2.2.jar
 
-industrialforegoing-1.12.2-1.12.13-237.jar
+industrialforegoing-1.12.2-1.12.14.jar
 
 InGameInfoXML-1.12.2-2.8.2.94-universal.jar
 
@@ -283,5 +283,3 @@ AutoRegLib-1.3-32.jar
 BetterBuildersWands-1.12.2-0.13.2.271+5997513.jar
 
 BetterFps-1.4.8.jar
-
-
