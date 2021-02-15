@@ -4,6 +4,15 @@ config/InvTweaks.cfg
 config/ichunutil_keybinds.cfg
 config/jei/bookmarks.ini
 config/jei/worldSettings.*
+config/machinemuse/powersuits-keybinds.cfg
+config/ichunutil.cfg
+
+#not sync plz
+scripts/recipes.zs
+scripts/read me.txt
+scripts/remove/read me.txt
+scripts/change/read me.txt
+scripts/change/temp
 
 #For development
 .vscode
