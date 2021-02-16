@@ -1,5 +1,6 @@
 //import greg
 import mods.gregtech.recipe.RecipeMap;
+import crafttweaker.oredict.IOreDictEntry;
 
 //import crafttweaker II
 import crafttweaker.item.IItemStack;
@@ -12,109 +13,29 @@ val reactor = RecipeMap.getByName("chemical_reactor");
 print("start thermal");
 
 //add alloy glass recipe in alloy smelter//
-    #Hardened Copper Glass
-alloy.recipeBuilder()
-    .inputs([<ore:dustCopper>*4,<minecraft:glass>])
-    .outputs([<thermalfoundation:glass>])
-    .duration(60)
-    .EUt(16)
-    .buildAndRegister();
-
-    #Hardened Tin Glass
-alloy.recipeBuilder()
-    .inputs([<ore:dustTin>*4,<minecraft:glass>])
-    .outputs([<thermalfoundation:glass:1>])
-    .duration(60)
-    .EUt(16)
-    .buildAndRegister();
-
-    #Hardened Silver Glass
-alloy.recipeBuilder()
-    .inputs([<ore:dustSilver>*4,<minecraft:glass>])
-    .outputs([<thermalfoundation:glass:2>])
-    .duration(60)
-    .EUt(16)
-    .buildAndRegister();
-
-    #Hardened Glass
-alloy.recipeBuilder()
-    .inputs([<ore:dustLead>*4,<minecraft:glass>])
-    .outputs([<thermalfoundation:glass:3>])
-    .duration(60)
-    .EUt(16)
-    .buildAndRegister();
-
-    #Hardened Aluminum Glass
-alloy.recipeBuilder()
-    .inputs([<ore:dustAluminium>*4,<minecraft:glass>])
-    .outputs([<thermalfoundation:glass:4>])
-    .duration(60)
-    .EUt(16)
-    .buildAndRegister();
-
-    #Hardened Nickel Glass
-alloy.recipeBuilder()
-    .inputs([<ore:dustNickel>*4,<minecraft:glass>])
-    .outputs([<thermalfoundation:glass:5>])
-    .duration(60)
-    .EUt(16)
-    .buildAndRegister();
-
-    #Hardened Platinum Glass
-alloy.recipeBuilder()
-    .inputs([<ore:dustPlatinum>*4,<minecraft:glass>])
-    .outputs([<thermalfoundation:glass:6>])
-    .duration(60)
-    .EUt(16)
-    .buildAndRegister();
-
-    #Hardened Iridium Glass
-alloy.recipeBuilder()
-    .inputs([<ore:dustIridium>*4,<minecraft:glass>])
-    .outputs([<thermalfoundation:glass:7>])
-    .duration(60)
-    .EUt(16)
-    .buildAndRegister();
-
-    #Hardened Steel Glass
-alloy.recipeBuilder()
-    .inputs([<ore:dustSteel>*4,<minecraft:glass>])
-    .outputs([<thermalfoundation:glass_alloy>])
-    .duration(60)
-    .EUt(16)
-    .buildAndRegister();
-
-    #Hardened Electrum Glass
-alloy.recipeBuilder()
-    .inputs([<ore:dustElectrum>*4,<minecraft:glass>])
-    .outputs([<thermalfoundation:glass_alloy:1>])
-    .duration(60)
-    .EUt(16)
-    .buildAndRegister();
-
-    #Hardened Invar Glass
-alloy.recipeBuilder()
-    .inputs([<ore:dustInvar>*4,<minecraft:glass>]).
-    outputs([<thermalfoundation:glass_alloy:2>])
-    .duration(60)
-    .EUt(16)
-    .buildAndRegister();
-
-    #Hardened Bronze Glass
-alloy.recipeBuilder()
-    .inputs([<ore:dustBronze>*4,<minecraft:glass>])
-    .outputs([<thermalfoundation:glass_alloy:3>])
-    .duration(60)
-    .EUt(16)
-    .buildAndRegister();
-
-    #Hardened Enderium Glass
-alloy.recipeBuilder()
-    .inputs([<ore:dustEnderium>*4,<minecraft:glass>])
-    .outputs([<thermalfoundation:glass_alloy:7>])
-    .duration(60)
-    .EUt(16)
-    .buildAndRegister();
+val HardenedGlass as IItemStack[IOreDictEntry] = {
+    <ore:dustCopper> : <thermalfoundation:glass>,
+    <ore:dustTin> : <thermalfoundation:glass:1>,
+    <ore:dustSilver> : <thermalfoundation:glass:2>,
+    <ore:dustLead> : <thermalfoundation:glass:3>,
+    <ore:dustAluminium> : <thermalfoundation:glass:4>,
+    <ore:dustNickel> : <thermalfoundation:glass:5>,
+    <ore:dustPlatinum> : <thermalfoundation:glass:6>,
+    <ore:dustIridium> : <thermalfoundation:glass:7>,
+    <ore:dustSteel> : <thermalfoundation:glass_alloy>,
+    <ore:dustElectrum> : <thermalfoundation:glass_alloy:1>,
+    <ore:dustInvar> : <thermalfoundation:glass_alloy:2>,
+    <ore:dustBronze> : <thermalfoundation:glass_alloy:3>,
+    <ore:dustEnderium> :<thermalfoundation:glass_alloy:7>
+};
+for input,output in HardenedGlass{ 
+    alloy.recipeBuilder()
+        .inputs([input*4,<minecraft:glass>])
+        .outputs([output])
+        .duration(60)
+        .EUt(16)
+        .buildAndRegister();
+}
 
 //add fluid duct recipe in assembler//
 val fluidDuct = [

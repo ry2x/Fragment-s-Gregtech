@@ -116,3 +116,7 @@ for i in alloying {
     mods.tconstruct.Alloy.removeRecipe(i);
 }
 //end
+
+//remove pink sllime 
+recipes.removeByRecipeName("tconstruct:common/slime/pink/congealed");
+recipes.removeByRecipeName("tconstruct:gadgets/slimeboots/fallback");

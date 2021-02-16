@@ -541,42 +541,28 @@ recipes.addShaped(<scannable:scanner>, [
 */
 
 //Add easy chest recipes (ported from enderio)
-    #Dark Oak Chest
-recipes.addShaped(<quark:custom_chest:4> * 2, [
-    [<minecraft:log2:1>, <minecraft:log2:1>, <minecraft:log2:1>],
-    [<minecraft:log2:1>, null, <minecraft:log2:1>],
-    [<minecraft:log2:1>, <minecraft:log2:1>, <minecraft:log2:1>]
-]);
-    #Acacia Chest
-recipes.addShaped(<quark:custom_chest:3> * 2, [
-    [<minecraft:log2>, <minecraft:log2>, <minecraft:log2>],
-    [<minecraft:log2>, null, <minecraft:log2>],
-    [<minecraft:log2>, <minecraft:log2>, <minecraft:log2>]
-]);
-    #Jungle Chest
-recipes.addShaped(<quark:custom_chest:2> * 2, [
-    [<minecraft:log:3>, <minecraft:log:3>, <minecraft:log:3>],
-    [<minecraft:log:3>, null, <minecraft:log:3>],
-    [<minecraft:log:3>, <minecraft:log:3>, <minecraft:log:3>]
-]);
-    #Birch Chest
-recipes.addShaped(<quark:custom_chest:1> * 2, [
-    [<minecraft:log:2>, <minecraft:log:2>, <minecraft:log:2>],
-    [<minecraft:log:2>, null, <minecraft:log:2>],
-    [<minecraft:log:2>, <minecraft:log:2>, <minecraft:log:2>]
-]);
-    #Spruce Chest
-recipes.addShaped(<quark:custom_chest> * 2, [
-    [<minecraft:log:1>, <minecraft:log:1>, <minecraft:log:1>],
-    [<minecraft:log:1>, null, <minecraft:log:1>],
-    [<minecraft:log:1>, <minecraft:log:1>, <minecraft:log:1>]
-]);
-    #Oak Chest
-recipes.addShaped(<minecraft:chest> * 2, [
-    [<minecraft:log>, <minecraft:log>, <minecraft:log>],
-    [<minecraft:log>, null, <minecraft:log>],
-    [<minecraft:log>, <minecraft:log>, <minecraft:log>]
-]);
+val chestFix as IItemStack[IItemStack] = {
+    #Dark Oak 
+    <minecraft:log2:1> : <quark:custom_chest:4>,
+    #Acacia
+    <minecraft:log2> : <quark:custom_chest:3>,
+    #Jungle
+    <minecraft:log:3> : <quark:custom_chest:2>,
+    #Birch
+    <minecraft:log:2> : <quark:custom_chest:1>,
+    #Spruce
+    <minecraft:log:1> : <quark:custom_chest>,
+    #Oak
+    <minecraft:log> : <minecraft:chest>
+};
+
+for i,o in chestFix {
+    recipes.addShaped(o * 2, [
+    [i,i, i],
+    [i, null, i],
+    [i, i, i]
+    ]);
+}
 
 /*
 * As there are various kinds of chests from quark, we suppose we'd support with gregtech's machine too.
@@ -585,96 +571,36 @@ recipes.addShaped(<minecraft:chest> * 2, [
 assembler.findRecipe(4, [<ore:plankWood>.firstItem * 8, <metaitem:circuit.integrated>.withTag({ Configuration: 8 })], null).remove();
 
 //Add each chest (also supports chisels)
-    #Dark Oak Chest
-assembler.recipeBuilder()
-    .inputs(<minecraft:planks:5> * 8)
-    .notConsumable(<metaitem:circuit.integrated>.withTag({ Configuration: 8 }))
-    .outputs(<quark:custom_chest:4>)
-    .duration(800)
-    .EUt(4)
-    .buildAndRegister();
-assembler.recipeBuilder()
-    .inputs(<chisel:planks-dark-oak:*> * 8)
-    .notConsumable(<metaitem:circuit.integrated>.withTag({ Configuration: 8 }))
-    .outputs(<quark:custom_chest:4>)
-    .duration(800)
-    .EUt(4)
-    .buildAndRegister();
-    #Acacia Chest
-assembler.recipeBuilder()
-    .inputs(<minecraft:planks:4> * 8)
-    .notConsumable(<metaitem:circuit.integrated>.withTag({ Configuration: 8 }))
-    .outputs(<quark:custom_chest:3>)
-    .duration(800)
-    .EUt(4)
-    .buildAndRegister();
-assembler.recipeBuilder()
-    .inputs(<chisel:planks-acacia:*> * 8)
-    .notConsumable(<metaitem:circuit.integrated>.withTag({ Configuration: 8 }))
-    .outputs(<quark:custom_chest:3>)
-    .duration(800)
-    .EUt(4)
-    .buildAndRegister();
-    #Jungle Chest
-assembler.recipeBuilder()
-    .inputs(<minecraft:planks:3> * 8)
-    .notConsumable(<metaitem:circuit.integrated>.withTag({ Configuration: 8 }))
-    .outputs(<quark:custom_chest:2>)
-    .duration(800)
-    .EUt(4)
-    .buildAndRegister();
-assembler.recipeBuilder()
-    .inputs(<chisel:planks-jungle:*> * 8)
-    .notConsumable(<metaitem:circuit.integrated>.withTag({ Configuration: 8 }))
-    .outputs(<quark:custom_chest:2>)
-    .duration(800)
-    .EUt(4)
-    .buildAndRegister();
-    #Birch Chest
-assembler.recipeBuilder()
-    .inputs(<minecraft:planks:2> * 8)
-    .notConsumable(<metaitem:circuit.integrated>.withTag({ Configuration: 8 }))
-    .outputs(<quark:custom_chest:1>)
-    .duration(800)
-    .EUt(4)
-    .buildAndRegister();
-assembler.recipeBuilder()
-    .inputs(<chisel:planks-birch:*> * 8)
-    .notConsumable(<metaitem:circuit.integrated>.withTag({ Configuration: 8 }))
-    .outputs(<quark:custom_chest:1>)
-    .duration(800)
-    .EUt(4)
-    .buildAndRegister();
-    #Spruce Chest
-assembler.recipeBuilder()
-    .inputs(<minecraft:planks:1> * 8)
-    .notConsumable(<metaitem:circuit.integrated>.withTag({ Configuration: 8 }))
-    .outputs(<quark:custom_chest>)
-    .duration(800)
-    .EUt(4)
-    .buildAndRegister();
-assembler.recipeBuilder()
-    .inputs(<chisel:planks-spruce:*> * 8)
-    .notConsumable(<metaitem:circuit.integrated>.withTag({ Configuration: 8 }))
-    .outputs(<quark:custom_chest>)
-    .duration(800)
-    .EUt(4)
-    .buildAndRegister();
-    #Oak Chest
-assembler.recipeBuilder()
-    .inputs(<minecraft:planks> * 8)
-    .notConsumable(<metaitem:circuit.integrated>.withTag({ Configuration: 8 }))
-    .outputs(<minecraft:chest>)
-    .duration(800)
-    .EUt(4)
-    .buildAndRegister();
-assembler.recipeBuilder()
-    .inputs(<chisel:planks-oak:*> * 8)
-    .notConsumable(<metaitem:circuit.integrated>.withTag({ Configuration: 8 }))
-    .outputs(<minecraft:chest>)
-    .duration(800)
-    .EUt(4)
-    .buildAndRegister();
+val chestFixAssembler as IItemStack[IItemStack] = {
+    #Dark Oak
+    <minecraft:planks:5> : <quark:custom_chest:4>,
+    <chisel:planks-dark-oak:*> : <quark:custom_chest:4>,
+    #Acacia
+    <minecraft:planks:4> : <quark:custom_chest:3>,
+    <chisel:planks-acacia:*> : <quark:custom_chest:3>,    
+    #Jungle
+    <minecraft:planks:3> : <quark:custom_chest:2>,
+    <chisel:planks-jungle:*> : <quark:custom_chest:2>,
+    #Birch
+    <minecraft:planks:2> : <quark:custom_chest:1>,
+    <chisel:planks-birch:*> : <quark:custom_chest:1>,
+    #Spruce
+    <minecraft:planks:1> : <quark:custom_chest>,
+    <chisel:planks-spruce:*> : <quark:custom_chest>,
+    #Oak
+    <minecraft:planks> : <minecraft:chest>,
+    <chisel:planks-oak:*> : <minecraft:chest>
+};
+
+for input,output in chestFixAssembler{
+    assembler.recipeBuilder()
+        .inputs(input * 8)
+        .notConsumable(<metaitem:circuit.integrated>.withTag({ Configuration: 8 }))
+        .outputs(output)
+        .duration(800)
+        .EUt(4)
+        .buildAndRegister();
+}
 
 //Add easy stick recipes (ported from enderio)
 recipes.addShaped(<minecraft:stick> * 4, [
@@ -717,6 +643,43 @@ recipes.addShaped(<quark:marble:1> * 9, [
     [<ore:stoneMarble>, <ore:stoneMarble>, <ore:stoneMarble>]
 ]);
 
+//fix marble brick conflict
+recipes.removeByRecipeName("projectred-exploration:blocks/marble_brick");
+recipes.addShaped(<projectred-exploration:stone:1>*4,[
+    [<ore:stoneMarblePolished>,<ore:stoneMarblePolished>],
+    [<ore:stoneMarblePolished>,<ore:stoneMarblePolished>]
+]);
+
+//fix marble wall conflict
+recipes.removeByRecipeName("projectred-exploration:blocks/wall/marble_wall");
+recipes.addShaped(<projectred-exploration:stone_wall:0>*16,[
+    [null,null,null],
+    [<ore:stoneMarblePolished>,<ore:stoneMarblePolished>,<ore:stoneMarblePolished>],
+    [<ore:stoneMarblePolished>,<ore:stoneMarblePolished>,<ore:stoneMarblePolished>]
+]);
+
+//fix granite, Diorite and Andesite bricks conflict
+val fixBrick as string[] = [
+    "minecraft:polished_granite",
+    "minecraft:polished_diorite",
+    "minecraft:polished_andesite"
+];
+for name in fixBrick {
+    recipes.removeByRecipeName(name);
+}
+val fixPolishedMinecraft as IItemStack[IItemStack] ={
+    <minecraft:stone:2> : <minecraft:stone:1>,
+    <minecraft:stone:4> : <minecraft:stone:3>,
+    <minecraft:stone:6> : <minecraft:stone:5>,
+};
+
+for o,i in fixPolishedMinecraft {
+    recipes.addShaped(i*4,[
+        [o,o],
+        [o,o]
+    ]);
+}
+
 //shield 
 recipes.remove(<spartanshields:shield_riot_enderio>);
 recipes.addShaped(<spartanshields:shield_riot_enderio>, [
@@ -754,7 +717,17 @@ forming.recipeBuilder()
     .buildAndRegister();
 
 //sonarcore
-recipes.remove(<sonarcore:stablestone_plain>);
+val portalFrame as IItemStack[] = [
+    <sonarcore:stablestone_plain>,
+    <sonarcore:stablestoneblackrimmed_plain>,
+    <sonarcore:stablestoneblackrimmed_lightblue>,
+    <sonarcore:stablestoneblackrimmed_lightgrey>
+];
+
+for i in portalFrame{
+    recipes.remove(i);
+}
+
 recipes.addShaped(<sonarcore:stablestone_plain>,[
     [<sonarcore:reinforcedstonebrick>,<sonarcore:reinforcedstonebrick>,<sonarcore:reinforcedstonebrick>],
     [<sonarcore:reinforcedstonebrick>,null,<sonarcore:reinforcedstonebrick>],

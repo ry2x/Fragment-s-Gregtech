@@ -114,3 +114,10 @@ recipes.addShaped(<railcraft:armor_boots_steel>,[
     [<ore:plateSteel>,null,<ore:plateSteel>],
     [<ore:plateSteel>,null,<ore:plateSteel>]
 ]);
+
+//fix mine cargo recipe that conflicts with "minecraft"'s minecart recipe
+recipes.remove(<railcraft:cart_cargo>);
+recipes.addShaped(<railcraft:cart_cargo>,[
+    [<minecraft:minecart>],
+    [<ore:chestWood>]
+]);

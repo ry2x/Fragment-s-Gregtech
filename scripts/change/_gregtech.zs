@@ -110,6 +110,10 @@ mods.jei.JEI.removeAndHide(<gregtech:machine:460>);
 //remove basic laser engraver
 mods.jei.JEI.removeAndHide(<gregtech:machine:430>);
 
+//remove Primitive Blast Furnace RTA recipe
+recipes.removeByRecipeName("gtadditions:block_decompress_clay");
+recipes.removeByRecipeName("gtadditions:basic_to_configurable_circuit");
+
 //add recipe to ender pearl liquid
 recipes.remove(<minecraft:ender_pearl>);
 
