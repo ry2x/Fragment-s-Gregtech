@@ -1095,9 +1095,6 @@ val sonarcore as IItemStack[] = [
 
 <ore:sonarStableStone>.removeItems(sonarcore);
 
-//remove mossy stone brick from stone brick
-<ore:stoneBricks>.remove(<minecraft:stonebrick:1>);
-
 //global tools
 global craftingToolHardHammer as IItemStack = <gregtech:meta_tool:6>;
 global craftingToolSoftHammer as IItemStack = <gregtech:meta_tool:7>;

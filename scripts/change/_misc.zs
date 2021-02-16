@@ -646,16 +646,16 @@ recipes.addShaped(<quark:marble:1> * 9, [
 //fix marble brick conflict
 recipes.removeByRecipeName("projectred-exploration:blocks/marble_brick");
 recipes.addShaped(<projectred-exploration:stone:1>*4,[
-    [<ore:stoneMarblePolished>,<ore:stoneMarblePolished>],
-    [<ore:stoneMarblePolished>,<ore:stoneMarblePolished>]
+    [<projectred-exploration:stone>,<projectred-exploration:stone>],
+    [<projectred-exploration:stone>,<projectred-exploration:stone>]
 ]);
 
 //fix marble wall conflict
 recipes.removeByRecipeName("projectred-exploration:blocks/wall/marble_wall");
 recipes.addShaped(<projectred-exploration:stone_wall:0>*16,[
     [null,null,null],
-    [<ore:stoneMarblePolished>,<ore:stoneMarblePolished>,<ore:stoneMarblePolished>],
-    [<ore:stoneMarblePolished>,<ore:stoneMarblePolished>,<ore:stoneMarblePolished>]
+    [<projectred-exploration:stone>,<projectred-exploration:stone>,<projectred-exploration:stone>],
+    [<projectred-exploration:stone>,<projectred-exploration:stone>,<projectred-exploration:stone>]
 ]);
 
 //fix granite, Diorite and Andesite bricks conflict
@@ -673,12 +673,18 @@ val fixPolishedMinecraft as IItemStack[IItemStack] ={
     <minecraft:stone:6> : <minecraft:stone:5>,
 };
 
-for o,i in fixPolishedMinecraft {
-    recipes.addShaped(i*4,[
-        [o,o],
-        [o,o]
+for polished,raw in fixPolishedMinecraft {
+    recipes.addShaped(polished*4,[
+        [raw,raw],
+        [raw,raw]
     ]);
 }
+
+//fix stone brick
+recipes.removeByRecipeName("minecraft:stone_brick_slab");
+recipes.addShaped(<minecraft:stone_slab:5>*6,[
+    [<minecraft:stonebrick>,<minecraft:stonebrick>,<minecraft:stonebrick>]
+]);
 
 //shield 
 recipes.remove(<spartanshields:shield_riot_enderio>);
