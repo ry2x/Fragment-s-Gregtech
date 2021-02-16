@@ -112,7 +112,10 @@ val disabled = [
     <enderio:item_capacitor_stellar>,
     <enderio:item_capacitor_totemic>,
     <enderio:item_capacitor_grainy>,
-    <enderio:item_material:75>
+    <enderio:item_material:75>,
+    #gears
+    <enderio:item_material:10>,
+    <enderio:item_material:11>,
 ] as IItemStack[];
 
 for i in disabled {
@@ -120,4 +123,6 @@ for i in disabled {
     JEI.hide(i);
 }
 
+//fix conflict with minecraft white pane glass
+recipes.removeByRecipeName("enderio:compatibility_glass_pane");
 //end

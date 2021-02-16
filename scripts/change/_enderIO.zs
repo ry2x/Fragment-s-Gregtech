@@ -14,6 +14,11 @@ val alloy = RecipeMap.getByName("alloy_smelter");
 
 //fix all redstone alloy to red alloy
 recipes.replaceAllOccurences(<enderio:item_alloy_ingot:3>,<ore:ingotRedAlloy>,<*>);
+/*
+*This is not good for crafttweaker. It shows us yellow warning message.
+*So, I don't remove this. (this is invisible for player bc redstone alloy is gone).
+*/
+//recipes.removeByRecipeName("crafttweaker:enderio-auto_redstone_alloy_1_ingot_to_9_nuggets-modified");
 
 //change redstone base filter
 recipes.remove(<enderio:item_material:60>);

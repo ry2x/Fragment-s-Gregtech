@@ -790,17 +790,6 @@ for oreDictEntry, items in gearsDisabled {
 	oreDictEntry.removeItems(items);
 }
 
-//remove stone/iron infinity gear added by enderIO in outside of ore dic due to avoid fatal error 
-#remove enderIO stone and iron infinity gears
-val enderIoGears =[
-    <enderio:item_material:10>,
-    <enderio:item_material:11>
-] as IItemStack[];
-
-for item in enderIoGears {
-    mods.jei.JEI.removeAndHide(item);
-}
-
 //for dust
 
 var dustsDisabled as IItemStack[][IOreDictEntry] = {
@@ -982,6 +971,7 @@ for oreDictEntry, items in gemsDisabled {
 	}
 	oreDictEntry.removeItems(items);
 }
+
 
 //add greg MV machine casing 
 <ore:MVcasing>.add(<gregtech:machine:502>);

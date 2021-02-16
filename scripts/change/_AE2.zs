@@ -32,6 +32,15 @@ val implosion = RecipeMap.getByName("implosion_compressor");
 val mixer = RecipeMap.getByName("mixer");
 val blast_furnace = RecipeMap.getByName("blast_furnace");
 
+//val
+val basicCard as IItemStack = <appliedenergistics2:material:25>;
+val goodCard as IItemStack = <appliedenergistics2:material:28>;
+val calculate as IItemStack = <appliedenergistics2:material:23>;
+val engineer as IItemStack = <appliedenergistics2:material:24>;
+val logic as IItemStack = <appliedenergistics2:material:22>;
+val formation as IItemStack = <appliedenergistics2:material:43>;
+val conjugation as IItemStack = <appliedenergistics2:material:44>;
+
 //wireless terminal and color changer
 recipes.replaceAllOccurences(<appliedenergistics2:energy_cell>,<ore:MVcap>,<appliedenergistics2:color_applicator>);
 recipes.replaceAllOccurences(<appliedenergistics2:dense_energy_cell>,<ore:HVcap>,<appliedenergistics2:wireless_terminal>);
@@ -103,7 +112,7 @@ recipes.addShaped(<appliedenergistics2:inscriber>,[
 //recipes of wireless point 
 recipes.remove(<appliedenergistics2:wireless_access_point>);
 assembler.recipeBuilder()
-    .inputs(<appliedenergistics2:material:24>,<appliedenergistics2:part:16>,<appliedenergistics2:material:41>)
+    .inputs(engineer,<appliedenergistics2:part:16>,<appliedenergistics2:material:41>)
     .outputs(<appliedenergistics2:wireless_access_point>)
     .duration(50)
     .EUt(512)
@@ -121,7 +130,7 @@ recipes.remove(<appliedenergistics2:security_station>);
 recipes.addShaped(<appliedenergistics2:security_station>,[
     [<ore:ingotGold>,<appliedenergistics2:material:37>,<ore:ingotGold>],
     [<appliedenergistics2:part:16>,<ore:MVcasing>,<appliedenergistics2:part:16>],
-    [<ore:ingotIron>,<appliedenergistics2:material:24>,<appliedenergistics2:chest>]
+    [<ore:ingotIron>,engineer,<appliedenergistics2:chest>]
 ]);
 
 //certus quartz to ae2 certus crystal 
@@ -158,231 +167,72 @@ Inscriber.addRecipe(<appliedenergistics2:material:18>,<ore:plateRoseGold>,true,<
 Inscriber.addRecipe(<appliedenergistics2:material:20>,<ore:plateSilicon>,true,<appliedenergistics2:material:19>);
 
 //etching circuit with circuit_assembler//
-val circuit as IItemStack[] = [
-    <appliedenergistics2:material:22>,
-    <appliedenergistics2:material:24>,
-    <appliedenergistics2:material:23>,
-];
-for i in circuit {
-    Inscriber.removeRecipe(i);
+val circuit as IItemStack[IItemStack] = {
+    logic as IItemStack : <appliedenergistics2:material:18>,
+    engineer as IItemStack : <appliedenergistics2:material:17>,
+    calculate as IItemStack : <appliedenergistics2:material:16>,
+};
+
+for etched,printed  in circuit {
+    Inscriber.removeRecipe(etched);
+    circuit_assembler.recipeBuilder()   
+        .inputs(printed,<appliedenergistics2:material:20>)
+        .fluidInputs([<liquid:redstone>*288])
+        .notConsumable(<appliedenergistics2:material:15>)
+        .outputs(etched)
+        .duration(400)
+        .EUt(128)
+        .buildAndRegister();
 }
-//Logic Processor
-circuit_assembler.recipeBuilder()   
-    .inputs(<appliedenergistics2:material:18>,<appliedenergistics2:material:20>)
-    .fluidInputs([<liquid:redstone>*288])
-    .notConsumable(<appliedenergistics2:material:15>)
-    .outputs(<appliedenergistics2:material:22>)
-    .duration(400)
-    .EUt(128)
-    .buildAndRegister();
-//Calculation Processor
-circuit_assembler.recipeBuilder()   
-    .inputs(<appliedenergistics2:material:16>,<appliedenergistics2:material:20>)
-    .fluidInputs([<liquid:redstone>*288])
-    .notConsumable(<appliedenergistics2:material:13>)
-    .outputs(<appliedenergistics2:material:23>)
-    .duration(400)
-    .EUt(128)
-    .buildAndRegister();
-//Engineering Processor
-circuit_assembler.recipeBuilder()
-    .inputs(<appliedenergistics2:material:17>,<appliedenergistics2:material:20>)
-    .fluidInputs([<liquid:redstone>*288])
-    .notConsumable(<appliedenergistics2:material:14>)
-    .outputs(<appliedenergistics2:material:24>)
-    .duration(400)
-    .EUt(128)
-    .buildAndRegister();
+
 //storages
-recipes.remove(<appliedenergistics2:material:39>);
+val SHousing = <appliedenergistics2:material:39>;
+recipes.remove(SHousing);
 assembler.recipeBuilder()
     .inputs(<ore:ingotSteel>*6,<ore:wireGtSingleAnnealedCopper>*2,<appliedenergistics2:quartz_glass>*2)
-    .outputs(<appliedenergistics2:material:39>)
+    .outputs(SHousing)
     .duration(400)
     .EUt(128)
     .buildAndRegister();
-val SHousing = <appliedenergistics2:material:39>;
-recipes.remove(<appliedenergistics2:view_cell>);
-canner.recipeBuilder()
-    .inputs(SHousing,<appliedenergistics2:material:16>)
-    .outputs(<appliedenergistics2:view_cell>)
-    .duration(40)
-    .EUt(16)
-    .buildAndRegister();
-    #item storage and fix recipes
-val itemStorage as IItemStack[] = [
-    <appliedenergistics2:storage_cell_1k>,
-    <appliedenergistics2:storage_cell_4k>,
-    <appliedenergistics2:storage_cell_16k>,
-    <appliedenergistics2:storage_cell_64k>,
-];
-for i in itemStorage {
-    recipes.remove(i);
+
+val AE2Storages as IItemStack[IItemStack] = {
+    #view cell
+    <appliedenergistics2:view_cell> : <appliedenergistics2:material:16>,
+    #item storage
+    <appliedenergistics2:storage_cell_1k> : <appliedenergistics2:material:35>,
+    <appliedenergistics2:storage_cell_4k> : <appliedenergistics2:material:36>,
+    <appliedenergistics2:storage_cell_16k> : <appliedenergistics2:material:37>,
+    <appliedenergistics2:storage_cell_64k> : <appliedenergistics2:material:38>,
+    #fluid storage
+    <appliedenergistics2:fluid_storage_cell_1k> : <appliedenergistics2:material:54>,
+    <appliedenergistics2:fluid_storage_cell_4k> : <appliedenergistics2:material:55>,
+    <appliedenergistics2:fluid_storage_cell_16k> : <appliedenergistics2:material:56>,
+    <appliedenergistics2:fluid_storage_cell_64k> : <appliedenergistics2:material:57>,
+    #spatial storage
+    <appliedenergistics2:spatial_storage_cell_2_cubed> : <appliedenergistics2:material:32>,
+    <appliedenergistics2:spatial_storage_cell_16_cubed> : <appliedenergistics2:material:33>,
+    <appliedenergistics2:spatial_storage_cell_128_cubed> : <appliedenergistics2:material:34>,
+    #blank pattern from cells
+    <appliedenergistics2:material:52> : <appliedenergistics2:material>,
+};
+
+for storage, storageCores in AE2Storages {
+    recipes.remove(storage);
+    canner.recipeBuilder()
+        .inputs(SHousing,storageCores)
+        .outputs(storage)
+        .duration(40)
+        .EUt(16)
+        .buildAndRegister();
+    unpacker.recipeBuilder()
+        .inputs(storage.withTag({}))
+        .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:2}))
+        .outputs(storageCores,SHousing)
+        .duration(40)
+        .EUt(32)
+        .buildAndRegister();
 }
 
-canner.recipeBuilder()
-    .inputs(SHousing,<appliedenergistics2:material:35>)
-    .outputs(<appliedenergistics2:storage_cell_1k>)
-    .duration(40)
-    .EUt(16)
-    .buildAndRegister();
-unpacker.recipeBuilder()
-    .inputs(<appliedenergistics2:storage_cell_1k>.withTag({}))
-    .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:2}))
-    .outputs(<appliedenergistics2:material:35>,SHousing)
-    .duration(40)
-    .EUt(32)
-    .buildAndRegister();
-canner.recipeBuilder()
-    .inputs(SHousing,<appliedenergistics2:material:36>)
-    .outputs(<appliedenergistics2:storage_cell_4k>)
-    .duration(40)
-    .EUt(16)
-    .buildAndRegister();
-unpacker.recipeBuilder()
-    .inputs(<appliedenergistics2:storage_cell_4k>.withTag({}))
-    .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:2}))
-    .outputs(<appliedenergistics2:material:36>,SHousing)
-    .duration(40)
-    .EUt(32)
-    .buildAndRegister();
-canner.recipeBuilder()
-    .inputs(SHousing,<appliedenergistics2:material:37>)
-    .outputs(<appliedenergistics2:storage_cell_16k>)
-    .duration(40)
-    .EUt(16)
-    .buildAndRegister();
-unpacker.recipeBuilder()
-    .inputs(<appliedenergistics2:storage_cell_16k>.withTag({}))
-    .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:2}))
-    .outputs(<appliedenergistics2:material:37>,SHousing)
-    .duration(40)
-    .EUt(32)
-    .buildAndRegister();
-canner.recipeBuilder()
-    .inputs(SHousing,<appliedenergistics2:material:38>)
-    .outputs(<appliedenergistics2:storage_cell_64k>)
-    .duration(40)
-    .EUt(16)
-    .buildAndRegister();
-unpacker.recipeBuilder()
-    .inputs(<appliedenergistics2:storage_cell_64k>.withTag({}))
-    .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:2}))
-    .outputs(<appliedenergistics2:material:38>,SHousing)
-    .duration(40)
-    .EUt(32)
-    .buildAndRegister();
-    #fluid storage same as item
-val fluidStorage as IItemStack[] = [
-    <appliedenergistics2:fluid_storage_cell_1k>,
-    <appliedenergistics2:fluid_storage_cell_4k>,
-    <appliedenergistics2:fluid_storage_cell_16k>,
-    <appliedenergistics2:fluid_storage_cell_64k>,
-];
-for i in fluidStorage {
-    recipes.remove(i);
-}
-
-canner.recipeBuilder()
-    .inputs(SHousing,<appliedenergistics2:material:54>)
-    .outputs(<appliedenergistics2:fluid_storage_cell_1k>)
-    .duration(40)
-    .EUt(16)
-    .buildAndRegister();
-unpacker.recipeBuilder()
-    .inputs(<appliedenergistics2:fluid_storage_cell_1k>.withTag({}))
-    .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:2}))
-    .outputs(<appliedenergistics2:material:54>,SHousing)
-    .duration(40)
-    .EUt(32)
-    .buildAndRegister();
-canner.recipeBuilder()
-    .inputs(SHousing,<appliedenergistics2:material:55>)
-    .outputs(<appliedenergistics2:fluid_storage_cell_4k>)
-    .duration(40)
-    .EUt(16)
-    .buildAndRegister();
-unpacker.recipeBuilder()
-    .inputs(<appliedenergistics2:fluid_storage_cell_4k>.withTag({}))
-    .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:2}))
-    .outputs(<appliedenergistics2:material:55>,SHousing)
-    .duration(40)
-    .EUt(32)
-    .buildAndRegister();
-canner.recipeBuilder()
-    .inputs(SHousing,<appliedenergistics2:material:56>)
-    .outputs(<appliedenergistics2:fluid_storage_cell_16k>)
-    .duration(40)
-    .EUt(16)
-    .buildAndRegister();
-unpacker.recipeBuilder()
-    .inputs(<appliedenergistics2:fluid_storage_cell_16k>.withTag({}))
-    .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:2}))
-    .outputs(<appliedenergistics2:material:56>,SHousing)
-    .duration(40)
-    .EUt(32)
-    .buildAndRegister();
-canner.recipeBuilder()
-    .inputs(SHousing,<appliedenergistics2:material:57>)
-    .outputs(<appliedenergistics2:fluid_storage_cell_64k>)
-    .duration(40)
-    .EUt(16)
-    .buildAndRegister();
-unpacker.recipeBuilder()
-    .inputs(<appliedenergistics2:fluid_storage_cell_64k>)
-	.notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:2}))
-    .outputs(<appliedenergistics2:material:57>,SHousing)
-    .duration(40)
-    .EUt(32)
-    .buildAndRegister();
-    #spatial
-val spatial as IItemStack[] = [
-    <appliedenergistics2:spatial_storage_cell_2_cubed>,
-    <appliedenergistics2:spatial_storage_cell_16_cubed>,
-    <appliedenergistics2:spatial_storage_cell_128_cubed>,
-];
-for i in spatial {
-    recipes.remove(i);
-}
-canner.recipeBuilder()
-    .inputs(SHousing,<appliedenergistics2:material:32>)
-    .outputs(<appliedenergistics2:spatial_storage_cell_2_cubed>)
-    .duration(40)
-    .EUt(16)
-    .buildAndRegister();
-unpacker.recipeBuilder()
-    .inputs(<appliedenergistics2:spatial_storage_cell_2_cubed>.withTag({}))
-    .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:2}))
-    .outputs(<appliedenergistics2:material:32>,SHousing)
-    .duration(40)
-    .EUt(32)
-    .buildAndRegister();
-canner.recipeBuilder()
-    .inputs(SHousing,<appliedenergistics2:material:33>)
-    .outputs(<appliedenergistics2:spatial_storage_cell_16_cubed>)
-    .duration(40)
-    .EUt(16)
-    .buildAndRegister();
-unpacker.recipeBuilder()
-    .inputs(<appliedenergistics2:spatial_storage_cell_16_cubed>.withTag({}))
-    .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:2}))
-    .outputs(<appliedenergistics2:material:33>,SHousing)
-    .duration(40)
-    .EUt(32)
-    .buildAndRegister();
-canner.recipeBuilder()
-    .inputs(SHousing,<appliedenergistics2:material:34>)
-    .outputs(<appliedenergistics2:spatial_storage_cell_128_cubed>)
-    .duration(40)
-    .EUt(16)
-    .buildAndRegister();
-unpacker.recipeBuilder()
-    .inputs(<appliedenergistics2:spatial_storage_cell_128_cubed>.withTag({}))
-    .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:2}))
-    .outputs(<appliedenergistics2:material:34>,SHousing)
-    .duration(40)
-    .EUt(32)
-    .buildAndRegister();
 //storage core
 val storageCore as IItemStack[] = [
     <appliedenergistics2:material:35>,
@@ -402,87 +252,87 @@ for i in storageCore {
 }
     #item storage core
 forming.recipeBuilder()
-    .inputs(<ore:plateIron>,<appliedenergistics2:material:22>,<ore:certusGem>*4,<ore:dustRedstone>*4)
+    .inputs(<ore:plateIron>,logic,<ore:certusGem>*4,<ore:dustRedstone>*4)
     .outputs(<appliedenergistics2:material:35>)
     .duration(300)
     .EUt(128)
     .buildAndRegister();
 forming.recipeBuilder()
-    .inputs(<ore:plateAluminium>,<appliedenergistics2:material:35>*4,<appliedenergistics2:material:24>,<ore:dustRedstone>*4)
+    .inputs(<ore:plateAluminium>,<appliedenergistics2:material:35>*4,engineer,<ore:dustRedstone>*4)
     .outputs(<appliedenergistics2:material:36>)
     .duration(600)
     .EUt(128)
     .buildAndRegister();
 forming.recipeBuilder()
-    .inputs(<ore:plateStainlessSteel>,<appliedenergistics2:material:36>*4,<appliedenergistics2:material:24>,<ore:dustDiamond>*4)
+    .inputs(<ore:plateStainlessSteel>,<appliedenergistics2:material:36>*4,engineer,<ore:dustDiamond>*4)
     .outputs(<appliedenergistics2:material:37>)
     .duration(600)
     .EUt(512)
     .buildAndRegister();
 forming.recipeBuilder()
-    .inputs(<ore:plateTungstenSteel>,<appliedenergistics2:material:37>*4,<appliedenergistics2:material:24>,<ore:dustChromite>*4)
+    .inputs(<ore:plateTungstenSteel>,<appliedenergistics2:material:37>*4,engineer,<ore:dustChromite>*4)
     .outputs(<appliedenergistics2:material:38>)
     .duration(2400)
     .EUt(2048)
     .buildAndRegister();
     #fluid storage core
 forming.recipeBuilder()
-    .inputs(<ore:plateIron>,<appliedenergistics2:material:22>,<ore:certusGem>*4,<ore:dustLapis>*4)
+    .inputs(<ore:plateIron>,logic,<ore:certusGem>*4,<ore:dustLapis>*4)
     .outputs(<appliedenergistics2:material:54>)
     .duration(300)
     .EUt(128)
     .buildAndRegister();
 forming.recipeBuilder()
-    .inputs(<ore:plateAluminium>,<appliedenergistics2:material:54>*4,<appliedenergistics2:material:24>,<ore:dustLapis>*4)
+    .inputs(<ore:plateAluminium>,<appliedenergistics2:material:54>*4,engineer,<ore:dustLapis>*4)
     .outputs(<appliedenergistics2:material:55>)
     .duration(600)
     .EUt(128)
     .buildAndRegister();
 forming.recipeBuilder()
-    .inputs(<ore:plateStainlessSteel>,<appliedenergistics2:material:55>*4,<appliedenergistics2:material:24>,<ore:dustDiamond>*4)
+    .inputs(<ore:plateStainlessSteel>,<appliedenergistics2:material:55>*4,engineer,<ore:dustDiamond>*4)
     .outputs(<appliedenergistics2:material:56>)
     .duration(600)
     .EUt(512)
     .buildAndRegister();
 forming.recipeBuilder()
-    .inputs(<ore:plateTungstenSteel>,<appliedenergistics2:material:56>*4,<appliedenergistics2:material:24>,<ore:dustChromite>*4)
+    .inputs(<ore:plateTungstenSteel>,<appliedenergistics2:material:56>*4,engineer,<ore:dustChromite>*4)
     .outputs(<appliedenergistics2:material:57>)
     .duration(2400)
     .EUt(2048)
     .buildAndRegister();
     #Spatial storage core
 forming.recipeBuilder()
-    .inputs(<ore:plateSteel>*2,<ore:pearlFluix>*4,<appliedenergistics2:material:24>,<ore:dustDiamond>*4)
+    .inputs(<ore:plateSteel>*2,<ore:pearlFluix>*4,engineer,<ore:dustDiamond>*4)
     .outputs(<appliedenergistics2:material:32>)
     .duration(600)
     .EUt(128)
     .buildAndRegister();
 forming.recipeBuilder()
-    .inputs(<ore:plateStainlessSteel>,<ore:pearlFluix>*2,<appliedenergistics2:material:24>,<appliedenergistics2:material:32>*4)
+    .inputs(<ore:plateStainlessSteel>,<ore:pearlFluix>*2,engineer,<appliedenergistics2:material:32>*4)
     .outputs(<appliedenergistics2:material:33>)
     .duration(600)
     .EUt(512)
     .buildAndRegister();
 forming.recipeBuilder()
-    .inputs(<ore:plateRhodium>,<ore:pearlFluix>*2,<appliedenergistics2:material:24>,<appliedenergistics2:material:33>*4)
+    .inputs(<ore:plateRhodium>,<ore:pearlFluix>*2,engineer,<appliedenergistics2:material:33>*4)
     .outputs(<appliedenergistics2:material:34>)
     .duration(600)
     .EUt(2048)
     .buildAndRegister();
 
 //core
-<appliedenergistics2:material:44>.displayName = "Conjugation Core";
-recipes.remove(<appliedenergistics2:material:44>);
-recipes.remove(<appliedenergistics2:material:43>);
+conjugation.displayName = "Conjugation Core";
+recipes.remove(conjugation);
+recipes.remove(formation);
 forming.recipeBuilder()
-    .inputs(<ore:certusGem>,<ore:dustFluix>,<appliedenergistics2:material:24>)
-    .outputs(<appliedenergistics2:material:44>)
+    .inputs(<ore:certusGem>,<ore:dustFluix>,engineer)
+    .outputs(conjugation)
     .duration(600)
     .EUt(128)
     .buildAndRegister();
 forming.recipeBuilder()
-    .inputs(<ore:fluixCrystal>,<ore:dustFluix>,<appliedenergistics2:material:22>)
-    .outputs(<appliedenergistics2:material:43>)
+    .inputs(<ore:fluixCrystal>,<ore:dustFluix>,logic)
+    .outputs(formation)
     .duration(600)
     .EUt(128)
     .buildAndRegister();
@@ -499,7 +349,7 @@ assembler.recipeBuilder()
     #ME terminal
 recipes.remove(<appliedenergistics2:part:380>);
 assembler.recipeBuilder()
-    .inputs(<appliedenergistics2:material:44>,<appliedenergistics2:material:22>,<ore:itemIlluminatedPanel>,<appliedenergistics2:material:43>)
+    .inputs(conjugation,logic,<ore:itemIlluminatedPanel>,formation)
     .outputs(<appliedenergistics2:part:380>)
     .duration(80)
     .EUt(24)
@@ -507,7 +357,7 @@ assembler.recipeBuilder()
     #ME fluid terminal
 recipes.remove(<appliedenergistics2:part:520>);
 assembler.recipeBuilder()
-    .inputs(<ore:dustLapis>*4,<appliedenergistics2:part:380>,<appliedenergistics2:material:22>,<appliedenergistics2:material:44>)
+    .inputs(<ore:dustLapis>*4,<appliedenergistics2:part:380>,logic,conjugation)
     .outputs(<appliedenergistics2:part:520>)
     .duration(80)
     .EUt(24)
@@ -515,7 +365,7 @@ assembler.recipeBuilder()
     #Me crafting terminal
 recipes.remove(<appliedenergistics2:part:360>);
 assembler.recipeBuilder()
-    .inputs(<appliedenergistics2:material:44>,<appliedenergistics2:material:24>,<ore:workbench>)
+    .inputs(conjugation,engineer,<ore:workbench>)
     .outputs(<appliedenergistics2:part:360>)
     .duration(80)
     .EUt(24)
@@ -523,7 +373,7 @@ assembler.recipeBuilder()
     #storage monitor
 recipes.remove(<appliedenergistics2:part:400>);
 assembler.recipeBuilder()
-    .inputs(<ore:itemIlluminatedPanel>,<appliedenergistics2:material:44>,<appliedenergistics2:material:22>)
+    .inputs(<ore:itemIlluminatedPanel>,conjugation,logic)
     .outputs(<appliedenergistics2:part:400>)
     .duration(80)
     .EUt(24)
@@ -531,7 +381,7 @@ assembler.recipeBuilder()
     #ME pattern terminal
 recipes.remove(<appliedenergistics2:part:340>);
 assembler.recipeBuilder()
-    .inputs(<appliedenergistics2:part:360>,<appliedenergistics2:material:44>,<appliedenergistics2:material:24>,<appliedenergistics2:material:52>)
+    .inputs(<appliedenergistics2:part:360>,conjugation,engineer,<appliedenergistics2:material:52>)
     .outputs(<appliedenergistics2:part:340>)
     .duration(80)
     .EUt(128)
@@ -539,7 +389,7 @@ assembler.recipeBuilder()
     #ME Interface terminal 
 recipes.remove(<appliedenergistics2:part:480>);
 assembler.recipeBuilder()
-    .inputs(<appliedenergistics2:material:22>,<appliedenergistics2:part:440>,<appliedenergistics2:material:44>,<ore:itemIlluminatedPanel>)
+    .inputs(logic,<appliedenergistics2:part:440>,conjugation,<ore:itemIlluminatedPanel>)
     .outputs(<appliedenergistics2:part:480>)
     .duration(80)
     .EUt(128)
@@ -547,36 +397,14 @@ assembler.recipeBuilder()
     #ME conversion terminal
 recipes.remove(<appliedenergistics2:part:420>);
 assembler.recipeBuilder()
-    .inputs(<ore:itemIlluminatedPanel>,<appliedenergistics2:material:43>,<appliedenergistics2:material:44>)
+    .inputs(<ore:itemIlluminatedPanel>,formation,conjugation)
     .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:3}))
     .outputs(<appliedenergistics2:part:420>)
     .duration(80)
     .EUt(24)
     .buildAndRegister();
 
-//blank pattern from storage cell
-recipes.remove(<appliedenergistics2:material:52>);
-canner.recipeBuilder()
-    .inputs(SHousing,<appliedenergistics2:material>)
-    .outputs(<appliedenergistics2:material:52>)
-    .duration(40)
-    .EUt(16)
-    .buildAndRegister();
-unpacker.recipeBuilder()
-    .inputs(<appliedenergistics2:material:52>.withTag({}))
-    .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:2}))
-    .outputs(<appliedenergistics2:material>,SHousing)
-    .duration(40)
-    .EUt(32)
-    .buildAndRegister();
-//val
-val basicCard = <appliedenergistics2:material:25>;
-val goodCard = <appliedenergistics2:material:28>;
-val calculate = <appliedenergistics2:material:23>;
-val engineer = <appliedenergistics2:material:24>;
-val logic = <appliedenergistics2:material:22>;
-val formation = <appliedenergistics2:material:43>;
-val conjugation = <appliedenergistics2:material:44>;
+
 //cards
     #memory card
 recipes.remove(<appliedenergistics2:memory_card>);
@@ -741,87 +569,31 @@ recipes.replaceAllOccurences(<appliedenergistics2:material:8>,<overloaded:item_c
 //growth accelerator
 recipes.replaceAllOccurences(<appliedenergistics2:fluix_block>,<gregtech:machine:2214>,<appliedenergistics2:quartz_growth_accelerator>);
 //CPU bock 
-val cpu as IItemStack[] = [
-    <appliedenergistics2:crafting_accelerator>,
-    <appliedenergistics2:crafting_storage_1k>,
-    <appliedenergistics2:crafting_storage_4k>,
-    <appliedenergistics2:crafting_storage_16k>,
-    <appliedenergistics2:crafting_storage_64k>,
-];
-for i in cpu {
-    recipes.remove(i);
-}
 val unit = <appliedenergistics2:crafting_unit>;
-    #co
-canner.recipeBuilder()
-    .inputs(unit,logic)
-    .outputs(<appliedenergistics2:crafting_accelerator>)
-    .duration(40)
-    .EUt(16)
-    .buildAndRegister();
-unpacker.recipeBuilder()
-    .inputs(<appliedenergistics2:crafting_accelerator>)
-    .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:2}))
-    .outputs(logic,unit)
-    .duration(40)
-    .EUt(32)
-    .buildAndRegister();
-    #1k
-canner.recipeBuilder()
-    .inputs(unit,<appliedenergistics2:material:35>)
-    .outputs(<appliedenergistics2:crafting_storage_1k>)
-    .duration(40)
-    .EUt(16)
-    .buildAndRegister();
-unpacker.recipeBuilder()
-    .inputs(<appliedenergistics2:crafting_storage_1k>)
-    .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:2}))
-    .outputs(<appliedenergistics2:material:35>,unit)
-    .duration(40)
-    .EUt(32)
-    .buildAndRegister();
-    #4k
-canner.recipeBuilder()
-    .inputs(unit,<appliedenergistics2:material:36>)
-    .outputs(<appliedenergistics2:crafting_storage_4k>)
-    .duration(40)
-    .EUt(16)
-    .buildAndRegister();
-unpacker.recipeBuilder()
-    .inputs(<appliedenergistics2:crafting_storage_4k>)
-    .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:2}))
-    .outputs(<appliedenergistics2:material:36>,unit)
-    .duration(40)
-    .EUt(32)
-    .buildAndRegister();
-    #16k
-canner.recipeBuilder()
-    .inputs(unit,<appliedenergistics2:material:37>)
-    .outputs(<appliedenergistics2:crafting_storage_16k>)
-    .duration(40)
-    .EUt(16)
-    .buildAndRegister();
-unpacker.recipeBuilder()
-    .inputs(<appliedenergistics2:crafting_storage_16k>)
-    .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:2}))
-    .outputs(<appliedenergistics2:material:37>,unit)
-    .duration(40)
-    .EUt(32)
-    .buildAndRegister();
-    #64k
-canner.recipeBuilder()
-    .inputs(unit,<appliedenergistics2:material:38>)
-    .outputs(<appliedenergistics2:crafting_storage_64k>)
-    .duration(40)
-    .EUt(16)
-    .buildAndRegister();
-unpacker.recipeBuilder()
-    .inputs(<appliedenergistics2:crafting_storage_64k>)
-    .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:2}))
-    .outputs(<appliedenergistics2:material:38>,unit)
-    .duration(40)
-    .EUt(32)
-    .buildAndRegister();
+val cpu as IItemStack[IItemStack] = {
+    <appliedenergistics2:crafting_accelerator> : logic, #this is co
+    <appliedenergistics2:crafting_storage_1k> : <appliedenergistics2:material:35>,
+    <appliedenergistics2:crafting_storage_4k> : <appliedenergistics2:material:36>,
+    <appliedenergistics2:crafting_storage_16k> : <appliedenergistics2:material:37>,
+    <appliedenergistics2:crafting_storage_64k> : <appliedenergistics2:material:38>,
+};
+
+for craftingCPU,CPUCore in cpu {
+    recipes.remove(craftingCPU);
+    canner.recipeBuilder()
+        .inputs(unit,CPUCore)
+        .outputs(craftingCPU)
+        .duration(40)
+        .EUt(16)
+        .buildAndRegister();
+    unpacker.recipeBuilder()
+        .inputs(craftingCPU)
+        .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:2}))
+        .outputs(CPUCore,unit)
+        .duration(40)
+        .EUt(32)
+        .buildAndRegister();
+}
 //toggle
 recipes.replaceAllOccurences(<minecraft:lever>,<projectred-integration:gate:13>,<appliedenergistics2:part:80>);
 // storage buses
@@ -986,141 +758,76 @@ assembler.recipeBuilder()
     .EUt(24)
     .buildAndRegister();
 //storage housing
-    #Item extra housing
-recipes.remove(<extracells:storage.casing>);
-assembler.recipeBuilder()
-    .inputs(<ore:ingotTungsten>*6,<ore:wireGtSingleAnnealedCopper>*2,<appliedenergistics2:quartz_glass>*2)
-    .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:3}))
-    .outputs(<extracells:storage.casing>)
-    .duration(400)
-    .EUt(512)
-    .buildAndRegister();
-    #fluid extra housing
-recipes.remove(<extracells:storage.casing:1>);
-assembler.recipeBuilder()
-    .inputs(<ore:ingotTungsten>*6,<ore:wireGtSingleAnnealedCopper>*2,<appliedenergistics2:quartz_glass>*2)
-    .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:4}))
-    .outputs(<extracells:storage.casing:1>)
-    .duration(400)
-    .EUt(512)
-    .buildAndRegister();
-    #val
-val Icasing = <extracells:storage.casing>;
-val Fcasing = <extracells:storage.casing:1>;
-    #switching each other
-recipes.addShapeless(Icasing, [Fcasing]);
-recipes.addShapeless(Fcasing, [Icasing]);
-//Extra storage
-    #Item storage 
-    #256k
-recipes.remove(<extracells:storage.physical>);
-canner.recipeBuilder()
-    .inputs(<extracells:storage.component>,Icasing)
-    .outputs(<extracells:storage.physical>)
-    .duration(40)
-    .EUt(16)
-    .buildAndRegister();
-unpacker.recipeBuilder()
-    .inputs(<extracells:storage.physical>)
-    .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:2}))
-    .outputs(<extracells:storage.component>,Icasing)
-    .duration(40)
-    .EUt(32)
-    .buildAndRegister();
-    #1024k
-recipes.remove(<extracells:storage.physical:1>);
-canner.recipeBuilder()
-    .inputs(<extracells:storage.component:1>,Icasing)
-    .outputs(<extracells:storage.physical:1>)
-    .duration(40)
-    .EUt(16)
-    .buildAndRegister();
-unpacker.recipeBuilder()
-    .inputs(<extracells:storage.physical:1>)
-    .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:2}))
-    .outputs(<extracells:storage.component:1>,Icasing)
-    .duration(40)
-    .EUt(32)
-    .buildAndRegister();
-    #4069k
-recipes.remove(<extracells:storage.physical:2>);
-canner.recipeBuilder()
-    .inputs(<extracells:storage.component:2>,Icasing)
-    .outputs(<extracells:storage.physical:2>)
-    .duration(40)
-    .EUt(16)
-    .buildAndRegister();
-unpacker.recipeBuilder()
-    .inputs(<extracells:storage.physical:2>)
-    .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:2}))
-    .outputs(<extracells:storage.component:2>,Icasing)
-    .duration(40)
-    .EUt(32)
-    .buildAndRegister();
-    #16384k
-recipes.remove(<extracells:storage.physical:3>);
-canner.recipeBuilder()
-    .inputs(<extracells:storage.component:3>,Icasing)
-    .outputs(<extracells:storage.physical:3>)
-    .duration(40)
-    .EUt(16)
-    .buildAndRegister();
-unpacker.recipeBuilder()
-    .inputs(<extracells:storage.physical:3>)
-    .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:2}))
-    .outputs(<extracells:storage.component:3>,Icasing)
-    .duration(40)
-    .EUt(32)
-    .buildAndRegister();
-    #fluid storage
-    #256k
-recipes.remove(<extracells:storage.fluid:4>);
-canner.recipeBuilder()
-    .inputs(<extracells:storage.component:8>,Fcasing)
-    .outputs(<extracells:storage.fluid:4>)
-    .duration(40)
-    .EUt(16)
-    .buildAndRegister();
-unpacker.recipeBuilder()
-    .inputs(<extracells:storage.fluid:4>)
-    .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:2}))
-    .outputs(<extracells:storage.component:8>,Fcasing)
-    .duration(40)
-    .EUt(32)
-    .buildAndRegister();
-    #1024K
-recipes.remove(<extracells:storage.fluid:5>);
-canner.recipeBuilder()
-    .inputs(<extracells:storage.component:9>,Fcasing)
-    .outputs(<extracells:storage.fluid:5>)
-    .duration(40)
-    .EUt(16)
-    .buildAndRegister();
-unpacker.recipeBuilder()
-    .inputs(<extracells:storage.fluid:5>)
-    .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:2}))
-    .outputs(<extracells:storage.component:9>,Fcasing)
-    .duration(40)
-    .EUt(32)
-    .buildAndRegister();
-    #4096k
-recipes.remove(<extracells:storage.fluid:6>);
-canner.recipeBuilder()
-    .inputs(<extracells:storage.component:10>,Fcasing)
-    .outputs(<extracells:storage.fluid:6>)
-    .duration(40)
-    .EUt(16)
-    .buildAndRegister();
-unpacker.recipeBuilder()
-    .inputs(<extracells:storage.fluid:6>)
-    .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:2}))
-    .outputs(<extracells:storage.component:10>,Fcasing)
-    .duration(40)
-    .EUt(32)
-    .buildAndRegister();
-    
-//storage core
+val IHousing as IItemStack = <extracells:storage.casing>;
+val FHousing as IItemStack= <extracells:storage.casing:1>;
+val ExtraHousing as IItemStack[int] = {
+    3 : IHousing,
+    4 : FHousing,
+};
 
+for Number,Housing in ExtraHousing {
+    recipes.remove(Housing);
+    assembler.recipeBuilder()
+        .inputs(<ore:ingotTungsten>*6,<ore:wireGtSingleAnnealedCopper>*2,<appliedenergistics2:quartz_glass>*2)
+        .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:Number as int}))
+        .outputs(Housing)
+        .duration(400)
+        .EUt(512)
+        .buildAndRegister();
+}
+    #switching each other
+recipes.addShapeless(IHousing, [FHousing]);
+recipes.addShapeless(FHousing, [IHousing]);
+
+//Extra storage
+    #item storage
+val ItemExtraStorage as IItemStack[IItemStack] = {
+    <extracells:storage.physical> : <extracells:storage.component>,
+    <extracells:storage.physical:1> : <extracells:storage.component:1>,
+    <extracells:storage.physical:2> : <extracells:storage.component:2>,
+    <extracells:storage.physical:3> : <extracells:storage.component:3>,
+};
+
+for extraItemStorage,extraItemCore in ItemExtraStorage {
+    recipes.remove(extraItemStorage);
+    canner.recipeBuilder()
+        .inputs(extraItemCore,IHousing)
+        .outputs(extraItemStorage)
+        .duration(40)
+        .EUt(16)
+        .buildAndRegister();
+    unpacker.recipeBuilder()
+        .inputs(extraItemStorage)
+        .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:2}))
+        .outputs(extraItemCore,IHousing)
+        .duration(40)
+        .EUt(32)
+        .buildAndRegister();
+}
+    #fluid storage
+val FluidExtraStorage as IItemStack[IItemStack] = {
+    <extracells:storage.fluid:4> : <extracells:storage.component:8>,
+    <extracells:storage.fluid:5> : <extracells:storage.component:9>,
+    <extracells:storage.fluid:6> : <extracells:storage.component:10>,
+};
+
+for extraFluidStorage,extraFluidCore in FluidExtraStorage {
+    recipes.remove(extraFluidStorage);
+    canner.recipeBuilder()
+        .inputs(extraFluidCore,FHousing)
+        .outputs(extraFluidStorage)
+        .duration(40)
+        .EUt(16)
+        .buildAndRegister();
+    unpacker.recipeBuilder()
+        .inputs(extraFluidStorage)
+        .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:2}))
+        .outputs(extraFluidCore,FHousing)
+        .duration(40)
+        .EUt(32)
+        .buildAndRegister();
+}
+//storage core
 val extraCore as IItemStack[] = [
     <extracells:storage.component:8>,
     <extracells:storage.component:9>,
@@ -1133,7 +840,7 @@ val extraCore as IItemStack[] = [
 for i in extraCore {
     recipes.remove(i);
 }
-    #fluid core
+    //fluid core
     #256k
 forming.recipeBuilder()
     .inputs(<appliedenergistics2:material:57>*4,<ore:plateHssg>,logic,engineer,<ore:dustFluix>*2)
@@ -1155,7 +862,7 @@ forming.recipeBuilder()
     .duration(2048)
     .EUt(8192)
     .buildAndRegister();
-    #item core
+    //item core
     #256k
 forming.recipeBuilder()
     .inputs(<appliedenergistics2:material:38>*4,<ore:plateHssg>,logic,engineer,<ore:dustFluix>*2)
@@ -1185,71 +892,29 @@ forming.recipeBuilder()
     .buildAndRegister();
 //end extra cell
 //start extra cpu
-val extraCpu as IItemStack[] = [
-    <extracpus:crafting_storage_256k>,
-    <extracpus:crafting_storage_1024k>,
-    <extracpus:crafting_storage_4096k>,
-    <extracpus:crafting_storage_16384k>,
-];
-for i in extraCpu {
-    recipes.remove(i);
+val extraCpu as IItemStack[IItemStack] = {
+    <extracpus:crafting_storage_256k> : <extracells:storage.component>,
+    <extracpus:crafting_storage_1024k> : <extracells:storage.component:1>,
+    <extracpus:crafting_storage_4096k> : <extracells:storage.component:2>,
+    <extracpus:crafting_storage_16384k> : <extracells:storage.component:3>,
+};
+
+for extraCPUBlock,extraCPUCore in extraCpu {
+    recipes.remove(extraCPUBlock);
+    canner.recipeBuilder()
+        .inputs(unit,extraCPUCore)
+        .outputs(extraCPUBlock)
+        .duration(40)
+        .EUt(16)
+        .buildAndRegister();
+    unpacker.recipeBuilder()
+        .inputs(extraCPUBlock)
+        .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:2}))
+        .outputs(extraCPUCore,unit)
+        .duration(40)
+        .EUt(32)
+        .buildAndRegister();
 }
-    #256k
-canner.recipeBuilder()
-    .inputs(unit,<extracells:storage.component>)
-    .outputs(<extracpus:crafting_storage_256k>)
-    .duration(40)
-    .EUt(16)
-    .buildAndRegister();
-unpacker.recipeBuilder()
-    .inputs(<extracpus:crafting_storage_256k>)
-    .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:2}))
-    .outputs(<extracells:storage.component>,unit)
-    .duration(40)
-    .EUt(32)
-    .buildAndRegister();
-    #1024k
-canner.recipeBuilder()
-    .inputs(unit,<extracells:storage.component:1>)
-    .outputs(<extracpus:crafting_storage_1024k>)
-    .duration(40)
-    .EUt(16)
-    .buildAndRegister();
-unpacker.recipeBuilder()
-    .inputs(<extracpus:crafting_storage_1024k>)
-    .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:2}))
-    .outputs(<extracells:storage.component:1>,unit)
-    .duration(40)
-    .EUt(32)
-    .buildAndRegister();
-    #4096k
-canner.recipeBuilder()
-    .inputs(unit,<extracells:storage.component:2>)
-    .outputs(<extracpus:crafting_storage_4096k>)
-    .duration(40)
-    .EUt(16)
-    .buildAndRegister();
-unpacker.recipeBuilder()
-    .inputs(<extracpus:crafting_storage_4096k>)
-    .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:2}))
-    .outputs(<extracells:storage.component:2>,unit)
-    .duration(40)
-    .EUt(32)
-    .buildAndRegister();
-    #16384k
-canner.recipeBuilder()
-    .inputs(unit,<extracells:storage.component:3>)
-    .outputs(<extracpus:crafting_storage_16384k>)
-    .duration(40)
-    .EUt(16)
-    .buildAndRegister();
-unpacker.recipeBuilder()
-    .inputs(<extracpus:crafting_storage_16384k>)
-    .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:2}))
-    .outputs(<extracells:storage.component:3>,unit)
-    .duration(40)
-    .EUt(32)
-    .buildAndRegister();
 //end extraCpu
 //start visual
 recipes.replaceAllOccurences(<appliedenergistics2:entropy_manipulator>,<ore:pearlFluix>,<aenetvistool:net_visualizer>);

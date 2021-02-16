@@ -1,6 +1,7 @@
 //import crafttweaker II
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
+import crafttweaker.oredict.IOreDictEntry;
 
 //@iron chest
     #Titanium Chest
@@ -131,48 +132,18 @@ recipes.addShaped(<storagedrawers:upgrade_void>,[
 ]);
 
     #upgrades
-val upgrades as IItemStack[] = [
-    <storagedrawers:upgrade_storage>,
-    <storagedrawers:upgrade_storage:1>,
-    <storagedrawers:upgrade_storage:2>,
-    <storagedrawers:upgrade_storage:3>,
-    <storagedrawers:upgrade_storage:4>,
-];
-for i in upgrades {
-    recipes.remove(i);
+val upgrades as IOreDictEntry[IItemStack] = {
+    <storagedrawers:upgrade_storage> : <ore:ingotBronze>,
+    <storagedrawers:upgrade_storage:1> : <ore:ingotBlueSteel>,
+    <storagedrawers:upgrade_storage:2> : <ore:ingotAluminium>,
+    <storagedrawers:upgrade_storage:3> : <ore:ingotTungsten>,
+    <storagedrawers:upgrade_storage:4> : <ore:ingotTitanium>,
+};
+for drawerUpdate,metalIngot in upgrades {
+    recipes.remove(drawerUpdate);
+    recipes.addShaped(drawerUpdate,[
+    [stick,stick,stick],
+    [metalIngot,temp,metalIngot],
+    [stick,metalIngot,stick]
+    ]);
 }
-
-    #Storage Upgrade (I)
-recipes.addShaped(<storagedrawers:upgrade_storage>,[
-    [stick,stick,stick],
-    [<ore:ingotBronze>,temp,<ore:ingotBronze>],
-    [stick,<ore:ingotBronze>,stick]
-]);
-
-    #Storage Upgrade (II)
-recipes.addShaped(<storagedrawers:upgrade_storage:1>,[
-    [stick,stick,stick],
-    [<ore:ingotBlueSteel>,temp,<ore:ingotBlueSteel>],
-    [stick,<ore:ingotBlueSteel>,stick]
-]);
-
-    #Storage Upgrade  (III)
-recipes.addShaped(<storagedrawers:upgrade_storage:2>,[
-    [stick,stick,stick],
-    [<ore:ingotAluminium>,temp,<ore:ingotAluminium>],
-    [stick,<ore:ingotAluminium>,stick]
-]);
-
-    #Storage Upgrade (IV)
-recipes.addShaped(<storagedrawers:upgrade_storage:3>,[
-    [stick,stick,stick],
-    [<ore:ingotTungsten>,temp,<ore:ingotTungsten>],
-    [stick,<ore:ingotTungsten>,stick]
-]);
-
-    #Storage Upgrade (V)
-recipes.addShaped(<storagedrawers:upgrade_storage:4>,[
-    [stick,stick,stick],
-    [<ore:ingotTitanium>,temp,<ore:ingotTitanium>],
-    [stick,<ore:ingotTitanium>,stick]
-]);
