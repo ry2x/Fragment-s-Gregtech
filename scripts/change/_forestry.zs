@@ -152,26 +152,19 @@ distillery.recipeBuilder()
     .duration(50)
     .EUt(8)
     .buildAndRegister();
+    
+val seeds as IItemStack[] = [
+    <minecraft:pumpkin_seeds>,
+    <minecraft:melon_seeds>,
+    <minecraft:wheat_seeds>
+];
 
-extractor.recipeBuilder()
-    .inputs(<minecraft:pumpkin_seeds>)
-    .fluidOutputs([<liquid:seed.oil>*10])
-    .duration(32)
-    .EUt(2)
-    .buildAndRegister();
-
-extractor.recipeBuilder()
-    .inputs(<minecraft:melon_seeds>)
-    .fluidOutputs([<liquid:seed.oil>*10])
-    .duration(32)
-    .EUt(2)
-    .buildAndRegister();
-
-extractor.recipeBuilder()
-    .inputs(<minecraft:wheat_seeds>)
-    .fluidOutputs([<liquid:seed.oil>*10])
-    .duration(32)
-    .EUt(2)
-    .buildAndRegister();
-
+for i in seeds {
+    extractor.recipeBuilder()
+        .inputs(i)
+        .fluidOutputs([<liquid:seed.oil>*10])
+        .duration(32)
+        .EUt(2)
+        .buildAndRegister();
+}
 print("forestry end");
