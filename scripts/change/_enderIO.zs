@@ -180,8 +180,8 @@ alloy.recipeBuilder()
     .duration(400)
     .EUt(48)
     .buildAndRegister();
-recipes.addShaped(<enderio:block_holy_fused_glass>,[
-    [<enderio:block_holy_fused_glass:*>,<enderio:block_holy_fused_glass>,<enderio:block_holy_fused_glass:*>],
+recipes.addShaped(<enderio:block_holy_fused_glass>*8,[
+    [<enderio:block_holy_fused_glass:*>,<enderio:block_holy_fused_glass:*>,<enderio:block_holy_fused_glass:*>],
     [<ore:dyeWhite>,<enderio:block_holy_fused_glass:*>,<enderio:block_holy_fused_glass:*>],
     [<enderio:block_holy_fused_glass:*>,<enderio:block_holy_fused_glass:*>,<enderio:block_holy_fused_glass:*>]
 ]);

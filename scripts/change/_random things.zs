@@ -228,5 +228,6 @@ assembler.recipeBuilder()
 //chunk analyzer
 recipes.replaceAllOccurences(<ore:blockGlass>,<gtadditions:ga_meta_item2:100>,<randomthings:chunkanalyzer>);
 
-
+//gold compass
+recipes.replaceAllOccurences(<minecraft:gold_ingot>,<ore:plateGold>,<randomthings:goldencompass>);
 

@@ -13,15 +13,9 @@
     <recipe name="Tweak: Chest from Wood" required="false" disabled="true">
         <crafting>
             <grid>
-                <item name="logWood" />
-                <item name="logWood" />
-                <item name="logWood" />
-                <item name="logWood" />
-                <item />
-                <item name="logWood" />
-                <item name="logWood" />
-                <item name="logWood" />
-                <item name="logWood" />
+                <item name="logWood" /><item name="logWood" /><item name="logWood" />
+                <item name="logWood" /><item /><item name="logWood" />
+                <item name="logWood" /><item name="logWood" /><item name="logWood" />
             </grid>
             <output name="minecraft:chest, chestWood" amount="4" />
         </crafting>
@@ -38,4 +32,23 @@
         </crafting>
     </recipe>
 
+    <recipe name="Self-Resetting Lever, 300 seconds, inverted" required="true" disabled="true">
+        <crafting>
+            <shapeless>
+                <item name="minecraft:lever"/><item name="dustRedstone" /><item name="dustRedstone" />
+                <item name="dustRedstone" /><item name="dustRedstone" /><item name="dustRedstone" />
+            </shapeless>
+            <output name="enderio:block_self_resetting_lever300i" />
+        </crafting>
+    </recipe>
+
+    <recipe name="Custom recipe of Self-Resetting Lever, 300 seconds, inverted" required="true">
+        <crafting>
+            <shapeless>
+                <item name="minecraft:lever"/><item name="dustRedstone" /><item name="dustRedstone" />
+                <item name="dustRedstone" /><item name="dustRedstone" /><item name="minecraft:redstone_torch" />
+            </shapeless>
+            <output name="enderio:block_self_resetting_lever300i" />
+        </crafting>
+    </recipe>
 </enderio:recipes>

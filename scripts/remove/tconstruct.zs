@@ -120,3 +120,4 @@ for i in alloying {
 //remove pink sllime 
 recipes.removeByRecipeName("tconstruct:common/slime/pink/congealed");
 recipes.removeByRecipeName("tconstruct:gadgets/slimeboots/fallback");
+recipes.removeByRecipeName("tconstruct:gadgets/slimesling/fallback");

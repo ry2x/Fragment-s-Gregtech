@@ -562,16 +562,45 @@ for i,o in chestFix {
     [i, null, i],
     [i, i, i]
     ]);
+    assembler.recipeBuilder()
+        .inputs(i * 8)
+        .notConsumable(<metaitem:circuit.integrated>.withTag({ Configuration: 9 }))
+        .outputs(o*2)
+        .duration(1600)
+        .EUt(5)
+        .buildAndRegister();
 }
 
 /*
-* As there are various kinds of chests from quark, we suppose we'd support with gregtech's machine too.
+* As there are various kinds of chests and trap door from quark (and Future MC), we suppose we'd support with gregtech's machine too.
 */
 //Remove the original recipes that require *any* wood plank
 assembler.findRecipe(4, [<ore:plankWood>.firstItem * 8, <metaitem:circuit.integrated>.withTag({ Configuration: 8 })], null).remove();
+assembler.findRecipe(4, [<ore:plankWood>.firstItem * 3, <metaitem:circuit.integrated>.withTag({ Configuration: 3 })], null).remove();
 
-//Add each chest (also supports chisels)
-val chestFixAssembler as IItemStack[IItemStack] = {
+//Add each chest and trap door (also supports chisels)
+val ChestTrapFixRemove as string[] = [
+    "minecraft:chest",
+    "quark:custom_chest",
+    "quark:custom_chest:1",
+    "quark:custom_chest:2",
+    "quark:custom_chest:3",
+    "quark:custom_chest:4",
+    "quark:trapdoor",
+    "futuremc:oak_wooden_trapdoor",
+    "quark:dark_oak_trapdoor",
+    "futuremc:acacia_trapdoor",
+    "futuremc:jungle_trapdoor",
+    "futuremc:birch_trapdoor",
+    "futuremc:spruce_trapdoor",
+];
+
+for name in ChestTrapFixRemove {
+    recipes.removeByRecipeName(name);
+}
+
+    #chest
+val chestFixCrafting as IItemStack[IItemStack] = {
     #Dark Oak
     <minecraft:planks:5> : <quark:custom_chest:4>,
     <chisel:planks-dark-oak:*> : <quark:custom_chest:4>,
@@ -592,7 +621,12 @@ val chestFixAssembler as IItemStack[IItemStack] = {
     <chisel:planks-oak:*> : <minecraft:chest>
 };
 
-for input,output in chestFixAssembler{
+for input,output in chestFixCrafting{
+    recipes.addShaped(output,[
+        [input,input,input],
+        [input,null,input],
+        [input,input,input]
+    ]);
     assembler.recipeBuilder()
         .inputs(input * 8)
         .notConsumable(<metaitem:circuit.integrated>.withTag({ Configuration: 8 }))
@@ -601,6 +635,52 @@ for input,output in chestFixAssembler{
         .EUt(4)
         .buildAndRegister();
 }
+
+    #trap door
+val trapFixCrafting as IItemStack[IItemStack] = {
+    #Dark Oak
+    <minecraft:planks:5> : <quark:dark_oak_trapdoor>,
+    <chisel:planks-dark-oak:*> : <quark:dark_oak_trapdoor>,
+    #Acacia
+    <minecraft:planks:4> : <futuremc:acacia_trapdoor>,
+    <chisel:planks-acacia:*> : <futuremc:acacia_trapdoor>,    
+    #Jungle
+    <minecraft:planks:3> : <futuremc:jungle_trapdoor>,
+    <chisel:planks-jungle:*> : <futuremc:jungle_trapdoor>,
+    #Birch
+    <minecraft:planks:2> : <futuremc:birch_trapdoor>,
+    <chisel:planks-birch:*> : <futuremc:birch_trapdoor>,
+    #Spruce
+    <minecraft:planks:1> : <futuremc:spruce_trapdoor>,
+    <chisel:planks-spruce:*> : <futuremc:spruce_trapdoor>,
+    #Oak
+    <minecraft:planks> : <minecraft:trapdoor>,
+    <chisel:planks-oak:*> : <minecraft:trapdoor>
+};
+
+for input,output in trapFixCrafting {
+    recipes.addShaped(output*2,[
+        [null,null,null],
+        [input,input,input],
+        [input,input,input]
+    ]);
+    assembler.recipeBuilder()
+        .inputs(input * 3)
+        .notConsumable(<metaitem:circuit.integrated>.withTag({ Configuration: 3 }))
+        .outputs(output*2)
+        .duration(300)
+        .EUt(4)
+        .buildAndRegister();
+}
+
+    #iron trapdoor bounus adding
+assembler.recipeBuilder()
+    .inputs(<ore:plateIron>*4)
+    .notConsumable(<metaitem:circuit.integrated>.withTag({ Configuration: 4 }))
+    .outputs(<minecraft:iron_trapdoor>)
+    .duration(300)
+    .EUt(32)
+    .buildAndRegister();
 
 //Add easy stick recipes (ported from enderio)
 recipes.addShaped(<minecraft:stick> * 4, [
@@ -681,8 +761,16 @@ for polished,raw in fixPolishedMinecraft {
 }
 
 //fix stone brick
+    #slab
 recipes.removeByRecipeName("minecraft:stone_brick_slab");
 recipes.addShaped(<minecraft:stone_slab:5>*6,[
+    [<minecraft:stonebrick>,<minecraft:stonebrick>,<minecraft:stonebrick>]
+]);
+    #stair
+recipes.removeByRecipeName("minecraft:stone_brick_stairs");
+recipes.addShaped(<minecraft:stone_brick_stairs>*8,[
+    [<minecraft:stonebrick>,null,null],
+    [<minecraft:stonebrick>,<minecraft:stonebrick>,null],
     [<minecraft:stonebrick>,<minecraft:stonebrick>,<minecraft:stonebrick>]
 ]);
 
