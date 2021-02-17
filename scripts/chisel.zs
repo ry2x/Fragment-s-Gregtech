@@ -28,8 +28,7 @@ val portal as IItemStack[]=[
     <sonarcore:stablestoneblackrimmed_lightblue>,
     <sonarcore:stablestoneblackrimmed_lightgrey>,
     <sonarcore:stablestoneblackrimmed_plain>,
-
 ];
 for i in portal {
     mods.chisel.Carving.addVariation("portal_frame", i);
-} 
+}
