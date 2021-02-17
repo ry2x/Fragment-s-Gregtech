@@ -1,52 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <enderio:recipes xmlns:enderio="http://enderio.com/recipes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://enderio.com/recipes recipes.xsd ">
-    <recipe name="Tweak: Stick from Wood" required="false" disabled="true">
-        <crafting>
-            <grid size="1x2">
-                <item name="logWood" />
-                <item name="logWood" />
-            </grid>
-            <output name="minecraft:stick, stickWood" amount="16" />
-        </crafting>
+    <recipe name="Tweak: Stick from Wood">
+        <disabled></disabled>
     </recipe>
 
-    <recipe name="Tweak: Chest from Wood" required="false" disabled="true">
-        <crafting>
-            <grid>
-                <item name="logWood" /><item name="logWood" /><item name="logWood" />
-                <item name="logWood" /><item /><item name="logWood" />
-                <item name="logWood" /><item name="logWood" /><item name="logWood" />
-            </grid>
-            <output name="minecraft:chest, chestWood" amount="4" />
-        </crafting>
+    <recipe name="Tweak: Chest from Wood">
+        <disabled></disabled>
     </recipe>
 
-    <recipe name="Tweak: Wood Hopper" required="false" disabled="true">
-        <crafting>
-            <grid>
-                <item name="IRON"/><item name="logWood"/><item name="IRON"/>
-                <item name="IRON"/><item name="logWood"/><item name="IRON"/>
-                <item/><item name="IRON"/><item/>
-            </grid>
-            <output name="minecraft:hopper, blockHopper" />
-        </crafting>
+    <recipe name="Tweak: Wood Hopper">
+        <disabled></disabled>
     </recipe>
 
-    <recipe name="Self-Resetting Lever, 300 seconds, inverted" required="true" disabled="true">
+    <recipe name="Self-Resetting Lever, 300 seconds, inverted" required="true">
         <crafting>
             <shapeless>
-                <item name="minecraft:lever"/><item name="dustRedstone" /><item name="dustRedstone" />
-                <item name="dustRedstone" /><item name="dustRedstone" /><item name="dustRedstone" />
-            </shapeless>
-            <output name="enderio:block_self_resetting_lever300i" />
-        </crafting>
-    </recipe>
-
-    <recipe name="Custom recipe of Self-Resetting Lever, 300 seconds, inverted" required="true">
-        <crafting>
-            <shapeless>
-                <item name="minecraft:lever"/><item name="dustRedstone" /><item name="dustRedstone" />
-                <item name="dustRedstone" /><item name="dustRedstone" /><item name="minecraft:redstone_torch" />
+                <item name="minecraft:lever" />
+                <item name="dustRedstone" />
+                <item name="dustRedstone" />
+                <item name="dustRedstone" />
+                <item name="dustRedstone" />
+                <item name="dustRedstone" />
+                <item name="minecraft:redstone_torch" />
             </shapeless>
             <output name="enderio:block_self_resetting_lever300i" />
         </crafting>
