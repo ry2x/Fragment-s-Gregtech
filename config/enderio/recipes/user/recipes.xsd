@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<schema targetNamespace="http://enderio.com/recipes" elementFormDefault="unqualified" attributeFormDefault="unqualified"
-  xmlns="http://www.w3.org/2001/XMLSchema"
-  xmlns:enderio="http://enderio.com/recipes">
+<schema targetNamespace="http://enderio.com/recipes" elementFormDefault="unqualified" attributeFormDefault="unqualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:enderio="http://enderio.com/recipes">
   <element name="recipes">
     <complexType>
       <sequence maxOccurs="unbounded" minOccurs="0">
@@ -231,8 +229,7 @@
                                 </restriction>
                               </simpleType>
                             </attribute>
-                            <attribute name="nbt" type="string" use="optional">
-                            </attribute>
+                            <attribute name="nbt" type="string" use="optional"></attribute>
                           </complexType>
                         </element>
                       </sequence>
@@ -1025,10 +1022,8 @@
                               </annotation>
                               <simpleType>
                                 <restriction base="float">
-                                  <minExclusive value="0">
-                                  </minExclusive>
-                                  <maxInclusive value="1">
-                                  </maxInclusive>
+                                  <minExclusive value="0"></minExclusive>
+                                  <maxInclusive value="1"></maxInclusive>
                                 </restriction>
                               </simpleType>
                             </attribute>
@@ -1081,10 +1076,8 @@
                         </annotation>
                         <simpleType>
                           <restriction base="string">
-                            <enumeration value="multiply_output">
-                            </enumeration>
-                            <enumeration value="chance_only">
-                            </enumeration>
+                            <enumeration value="multiply_output"></enumeration>
+                            <enumeration value="chance_only"></enumeration>
                             <enumeration value="none"></enumeration>
                           </restriction>
                         </simpleType>
@@ -1143,12 +1136,9 @@
                       </documentation>
                     </annotation>
                   </element>
-                  <element name="fuel" type="enderio:fuelType" minOccurs="1" maxOccurs="1">
-                  </element>
-                  <element name="coolant" type="enderio:coolantType" minOccurs="1" maxOccurs="1">
-                  </element>
-                  <element name="disabled" type="enderio:disabledType" minOccurs="1" maxOccurs="1">
-                  </element>
+                  <element name="fuel" type="enderio:fuelType" minOccurs="1" maxOccurs="1"></element>
+                  <element name="coolant" type="enderio:coolantType" minOccurs="1" maxOccurs="1"></element>
+                  <element name="disabled" type="enderio:disabledType" minOccurs="1" maxOccurs="1"></element>
                 </choice>
               </sequence>
               <attribute use="optional" name="required" type="boolean">
@@ -1200,11 +1190,13 @@
       </sequence>
     </complexType>
   </element>
+
   <complexType name="configComplexType">
     <attribute use="required" name="section" type="string"></attribute>
     <attribute use="required" name="name" type="string"></attribute>
     <attribute use="optional" name="value" type="boolean"></attribute>
   </complexType>
+
   <complexType name="dependencyComplexType">
     <annotation>
       <documentation>Either item or mod or upgrade must be given. A dependency is met (or not met if reverse is set) if the item (if given) exists and the upgrade (if given) exists and the mod (if given) is loaded.</documentation>
@@ -1230,6 +1222,7 @@
       </annotation>
     </attribute>
   </complexType>
+
   <complexType name="slicingType">
     <sequence>
       <element name="config" type="enderio:configComplexType" maxOccurs="unbounded" minOccurs="0"></element>
@@ -1435,6 +1428,7 @@
     <attribute name="base" type="int" use="required"></attribute>
     <attribute name="scaler" type="enderio:ScalerString" use="optional"></attribute>
   </complexType>
+
   <simpleType name="ScalerString">
     <restriction base="string">
       <pattern value="IDENTITY"></pattern>
@@ -1730,6 +1724,7 @@
       </annotation>
     </attribute>
   </complexType>
+
   <complexType name="itemHidingType">
     <attribute use="required" name="name" type="enderio:ThingsString" />
     <attribute name="show" type="boolean" use="optional" default="false">
@@ -1761,6 +1756,7 @@
       </annotation>
     </attribute>
   </complexType>
+
   <complexType name="fluidType">
     <attribute name="name" type="string" use="required">
       <annotation>
@@ -1783,6 +1779,7 @@
       </simpleType>
     </attribute>
   </complexType>
+
   <complexType name="itemType">
     <attribute use="optional" name="name" type="enderio:ThingsString" />
     <attribute name="nbt" type="string" use="optional" />
@@ -1792,6 +1789,7 @@
       </annotation>
     </attribute>
   </complexType>
+
   <simpleType name="ThingsString">
     <annotation>
       <documentation>
