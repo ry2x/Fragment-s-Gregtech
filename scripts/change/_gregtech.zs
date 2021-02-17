@@ -1079,3 +1079,20 @@ mixer.recipeBuilder()
 	.duration(240)
 	.EUt(8)
 	.buildAndRegister();
+
+//add diamond gem in implosion
+implosion.recipeBuilder()
+    .inputs(<ore:dustDiamond>*4)
+    .outputs(<ore:gemDiamond>.firstItem*3,<ore:dustTinyDarkAsh>.firstItem*2)
+    .property("explosives",48)
+    .duration(20)
+    .EUt(30)
+    .buildAndRegister();
+
+//add molten obsidian in greg
+fluid_extractor.recipeBuilder()
+	.inputs(<ore:obsidian>)
+	.fluidOutputs([<liquid:obsidian>*288])
+	.duration(80)
+	.EUt(32)
+	.buildAndRegister();
