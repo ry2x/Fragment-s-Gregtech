@@ -114,7 +114,7 @@ assembler.recipeBuilder()
 assembler.recipeBuilder()
     .inputs([<thermaldynamics:duct_32>*6])
     .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:2}))
-    .fluidInputs([<liquid:glowstone>*250])
+    .fluidInputs([<liquid:glowstone>*288])
     .outputs([<thermaldynamics:duct_32:2>*6])
     .duration(50)
     .EUt(16)
@@ -131,12 +131,67 @@ assembler.recipeBuilder()
 assembler.recipeBuilder()
     .inputs([<thermaldynamics:duct_32:1>*6])
     .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:2}))
-    .fluidInputs([<liquid:glowstone>*250])
+    .fluidInputs([<liquid:glowstone>*288])
     .outputs([<thermaldynamics:duct_32:3>*6])
     .duration(50)
     .EUt(16)
     .buildAndRegister();
 
+//add Vacuum/ dense item duct
+	#make
+val DuctMaking as IItemStack[] = [
+	<thermaldynamics:duct_32>,
+	<thermaldynamics:duct_32:1>,
+	<thermaldynamics:duct_32:2>,
+	<thermaldynamics:duct_32:3>
+];
+
+for i in DuctMaking {
+		#Vacuum
+	assembler.recipeBuilder()
+		.inputs([i*4])
+		.notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:3}))
+		.fluidInputs([<liquid:soldering_alloy>*288])
+		.outputs([i.withTag({DenseType: 2 as byte})*4])
+		.duration(50)
+		.EUt(16)
+		.buildAndRegister();
+		#dense
+	assembler.recipeBuilder()
+		.inputs([i*4])
+		.notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:3}))
+		.fluidInputs([<liquid:redstone>*288])
+		.outputs([i.withTag({DenseType: 1 as byte})*4])
+		.duration(50)
+		.EUt(16)
+		.buildAndRegister();
+}
+	#upgrade
+val DuctUpdating as IItemStack[IItemStack] = {
+	<thermaldynamics:duct_32> : <thermaldynamics:duct_32:2>,
+	<thermaldynamics:duct_32:1> : <thermaldynamics:duct_32:3>,
+};
+
+for input,output in DuctUpdating {
+		#Vacuum
+	assembler.recipeBuilder()
+		.inputs([input.withTag({DenseType: 2 as byte})*6])
+		.notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:2}))
+		.fluidInputs([<liquid:glowstone>*288])
+		.outputs([output.withTag({DenseType: 2 as byte})*6])
+		.duration(50)
+		.EUt(16)
+		.buildAndRegister();
+		#dense
+	assembler.recipeBuilder()
+		.inputs([input.withTag({DenseType: 1 as byte})*6])
+		.notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:2}))
+		.fluidInputs([<liquid:glowstone>*288])
+		.outputs([output.withTag({DenseType: 1 as byte})*6])
+		.duration(50)
+		.EUt(16)
+		.buildAndRegister();
+}
 //structure duct
 recipes.remove(<thermaldynamics:duct_48>);
 recipes.addShaped(<thermaldynamics:duct_48>,[
@@ -167,7 +222,7 @@ assembler.recipeBuilder()
 assembler.recipeBuilder()
     .inputs([<thermaldynamics:duct_64:3>*9])
     .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:2}))
-    .fluidInputs([<liquid:cryotheum>*250])
+    .fluidInputs([<liquid:cryotheum>*288])
     .outputs([<thermaldynamics:duct_64>*9])
     .duration(50)
     .EUt(16)
