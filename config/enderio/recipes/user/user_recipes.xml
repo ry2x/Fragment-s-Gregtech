@@ -46,7 +46,8 @@
         <crafting>
             <shapeless>
                 <item name="minecraft:lever"/><item name="dustRedstone" /><item name="dustRedstone" />
-                <item name="dustRedstone" /><item name="dustRedstone" /><item name="minecraft:redstone_torch" />
+                <item name="dustRedstone" /><item name="dustRedstone" /><item name="dustRedstone" />
+                <item name="minecraft:redstone_torch" />
             </shapeless>
             <output name="enderio:block_self_resetting_lever300i" />
         </crafting>
