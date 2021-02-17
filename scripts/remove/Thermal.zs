@@ -4,12 +4,12 @@ import crafttweaker.item.IItemStack;
 //import JEI function
 import mods.jei.JEI;
 
-//remove flux cable 
+//remove flux cable
 val Flux = [
     <thermaldynamics:duct_0:*>,
     <thermaldynamics:duct_16:4>,
     <thermaldynamics:duct_16:5>,
-    <thermaldynamics:duct_32:4>,    
+    <thermaldynamics:duct_32:4>,
     <thermaldynamics:duct_32:5>,
     <thermaldynamics:duct_32:6>,
     <thermaldynamics:duct_32:7>,
@@ -97,7 +97,7 @@ for item in part {
     JEI.removeAndHide(item);
 }
 
-//remove egg 
+//remove egg
 val eggDisabled = [
     <minecraft:spawn_egg>.withTag({EntityTag: {id: "thermalfoundation:blizz"}}),
     <minecraft:spawn_egg>.withTag({EntityTag: {id: "thermalfoundation:blitz"}}),

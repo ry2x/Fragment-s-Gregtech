@@ -4,7 +4,7 @@ import crafttweaker.item.IItemStack;
 //import JEI function
 import mods.jei.JEI;
 
-//import Forestry Carpenter function 
+//import Forestry Carpenter function
 import mods.forestry.Carpenter.removeRecipe;
 import mods.forestry.Carpenter.addRecipe;
 
@@ -41,7 +41,7 @@ assembler.recipeBuilder()
     .duration(180)
     .EUt(16)
     .buildAndRegister();
-    
+
 //change recipe of chip set//
 removeRecipe(<forestry:chipsets>);
 removeRecipe(<forestry:chipsets:1>);
@@ -121,7 +121,7 @@ recipes.addShaped(<forestry:habitat_screen>,[
     [<ore:gearBronze>,<ore:circuitBasic>,<ore:gearBronze>],
 ]);
 
-//change soldering 
+//change soldering
 removeRecipe(<forestry:soldering_iron>);
 assembler.recipeBuilder()
     .inputs(<forestry:oak_stick>*2,<ore:ingotIron>*4)
@@ -140,7 +140,7 @@ addRecipe(<forestry:crafting_material:3>,[
 //buff fertilizer
 recipes.addShaped(<forestry:fertilizer_compound>*9, [
     [<forestry:fertilizer_bio>, <forestry:fertilizer_bio>, <forestry:fertilizer_bio>],
-    [<forestry:fertilizer_bio>, <minecraft:dye:15>, <forestry:fertilizer_bio>], 
+    [<forestry:fertilizer_bio>, <minecraft:dye:15>, <forestry:fertilizer_bio>],
     [<forestry:fertilizer_bio>, <forestry:fertilizer_bio>, <forestry:fertilizer_bio>]
 ]);
 
@@ -152,7 +152,7 @@ distillery.recipeBuilder()
     .duration(50)
     .EUt(8)
     .buildAndRegister();
-    
+
 val seeds as IItemStack[] = [
     <minecraft:pumpkin_seeds>,
     <minecraft:melon_seeds>,

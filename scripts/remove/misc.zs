@@ -314,4 +314,4 @@ val sonarcore as IItemStack[] = [
 
 for i in sonarcore {
     JEI.removeAndHide(i);
-} 
+}

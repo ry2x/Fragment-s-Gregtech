@@ -59,7 +59,7 @@ recipes.addShaped(<enderio:item_basic_capacitor:2>,[
 ]);
 <enderio:item_basic_capacitor:2>.displayName = "HV Capacitor";
 
-//change name 
+//change name
 <enderio:item_material:22>.displayName = "Conduit Binder Dust";
 
 //add furnace recipe for conduit binder

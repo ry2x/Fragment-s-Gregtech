@@ -28,7 +28,7 @@ val HardenedGlass as IItemStack[IOreDictEntry] = {
     <ore:dustBronze> : <thermalfoundation:glass_alloy:3>,
     <ore:dustEnderium> :<thermalfoundation:glass_alloy:7>
 };
-for input,output in HardenedGlass{ 
+for input,output in HardenedGlass{
     alloy.recipeBuilder()
         .inputs([input*4,<minecraft:glass>])
         .outputs([output])
@@ -437,10 +437,10 @@ assembler.recipeBuilder()
 //Resonant Filter
 assembler.recipeBuilder()
     .inputs(<gregtech:meta_item_1:32102>,<thermaldynamics:filter:3>*4,<ore:ingotEnderium>*2)
-    .outputs(<thermaldynamics:filter:4>*4)  
+    .outputs(<thermaldynamics:filter:4>*4)
     .duration(65)
     .EUt(16)
-    .buildAndRegister();  
+    .buildAndRegister();
 
 //Hardened Retriever
 assembler.recipeBuilder()

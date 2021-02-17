@@ -45,7 +45,7 @@ reactor.recipeBuilder()
 recipes.remove(<randomthings:imbuingstation>);
 recipes.addShaped(<randomthings:imbuingstation>, [
     [<minecraft:bucket>, <minecraft:brewing_stand>, <minecraft:bucket>],
-    [<minecraft:waterlily>, <minecraft:stained_hardened_clay:13>, <minecraft:waterlily>], 
+    [<minecraft:waterlily>, <minecraft:stained_hardened_clay:13>, <minecraft:waterlily>],
     [<minecraft:vine>, <ore:gemEmerald>, <minecraft:vine>]
 ]);
 
@@ -121,7 +121,7 @@ assembler.recipeBuilder()
 recipes.remove(<randomthings:rainbowlamp>);
 recipes.addShaped(<randomthings:rainbowlamp>, [
     [null, <randomthings:luminousblock:14>, null],
-    [null, <minecraft:redstone_lamp>, null], 
+    [null, <minecraft:redstone_lamp>, null],
     [<randomthings:luminousblock:11>, null, <randomthings:luminousblock:13>]
 ]);
 
@@ -135,7 +135,7 @@ bath.recipeBuilder()
     .duration(50)
     .buildAndRegister();
 
-//stable ender pearl 
+//stable ender pearl
 recipes.remove(<randomthings:stableenderpearl>);
 reactor.recipeBuilder()
     .inputs(<minecraft:ender_pearl>)
@@ -230,4 +230,3 @@ recipes.replaceAllOccurences(<ore:blockGlass>,<gtadditions:ga_meta_item2:100>,<r
 
 //gold compass
 recipes.replaceAllOccurences(<minecraft:gold_ingot>,<ore:plateGold>,<randomthings:goldencompass>);
-

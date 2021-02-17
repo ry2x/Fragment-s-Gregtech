@@ -109,7 +109,7 @@ recipes.addShaped(<appliedenergistics2:inscriber>,[
     [<appliedenergistics2:smooth_sky_stone_block>,<ore:craftingPiston>,<appliedenergistics2:smooth_sky_stone_block>]
 ]);
 
-//recipes of wireless point 
+//recipes of wireless point
 recipes.remove(<appliedenergistics2:wireless_access_point>);
 assembler.recipeBuilder()
     .inputs(engineer,<appliedenergistics2:part:16>,<appliedenergistics2:material:41>)
@@ -118,14 +118,14 @@ assembler.recipeBuilder()
     .EUt(512)
     .buildAndRegister();
 
-//recipes of charger 
+//recipes of charger
 recipes.remove(<appliedenergistics2:charger>);
 recipes.addShaped(<appliedenergistics2:charger>,[
     [<gregtech:cable:71>,<appliedenergistics2:smooth_sky_stone_block>,<gregtech:cable:71>],
     [<appliedenergistics2:smooth_sky_stone_block>,<gregtech:machine:501>,<appliedenergistics2:smooth_sky_stone_block>],
     [<gregtech:cable:71>,<appliedenergistics2:smooth_sky_stone_block>,<gregtech:cable:71>]
 ]);
-//recipes of security terminal 
+//recipes of security terminal
 recipes.remove(<appliedenergistics2:security_station>);
 recipes.addShaped(<appliedenergistics2:security_station>,[
     [<ore:ingotGold>,<appliedenergistics2:material:37>,<ore:ingotGold>],
@@ -133,7 +133,7 @@ recipes.addShaped(<appliedenergistics2:security_station>,[
     [<ore:ingotIron>,engineer,<appliedenergistics2:chest>]
 ]);
 
-//certus quartz to ae2 certus crystal 
+//certus quartz to ae2 certus crystal
 autoclave.recipeBuilder()
 	.inputs(<gregtech:meta_item_1:8202>*3)
 	.fluidInputs([<liquid:water>*2100])
@@ -175,7 +175,7 @@ val circuit as IItemStack[IItemStack] = {
 
 for etched,printed  in circuit {
     Inscriber.removeRecipe(etched);
-    circuit_assembler.recipeBuilder()   
+    circuit_assembler.recipeBuilder()
         .inputs(printed,<appliedenergistics2:material:20>)
         .fluidInputs([<liquid:redstone>*288])
         .notConsumable(<appliedenergistics2:material:15>)
@@ -242,7 +242,7 @@ val storageCore as IItemStack[] = [
     <appliedenergistics2:material:54>,
     <appliedenergistics2:material:55>,
     <appliedenergistics2:material:56>,
-    <appliedenergistics2:material:57>, 
+    <appliedenergistics2:material:57>,
     <appliedenergistics2:material:32>,
     <appliedenergistics2:material:33>,
     <appliedenergistics2:material:34>,
@@ -386,7 +386,7 @@ assembler.recipeBuilder()
     .duration(80)
     .EUt(128)
     .buildAndRegister();
-    #ME Interface terminal 
+    #ME Interface terminal
 recipes.remove(<appliedenergistics2:part:480>);
 assembler.recipeBuilder()
     .inputs(logic,<appliedenergistics2:part:440>,conjugation,<ore:itemIlluminatedPanel>)
@@ -488,7 +488,7 @@ recipes.addShaped(<appliedenergistics2:material:42>,[
     [<appliedenergistics2:material:28>,<appliedenergistics2:material:41>,<appliedenergistics2:material:45>],
     [<ore:plateSteel>,<ore:plateStainlessSteel>,<ore:plateSteel>]
 ]);
-//quantum network 
+//quantum network
     #ring
 recipes.remove(<appliedenergistics2:quantum_ring>);
 assembler.recipeBuilder()
@@ -537,7 +537,7 @@ recipes.addShaped(<appliedenergistics2:chest>, [
     [<appliedenergistics2:part:16>,<ore:chest>,<appliedenergistics2:part:16>],
     [<ore:ingotSteel>,<ore:fluixCrystal>,<ore:ingotSteel>]
 ]);
-//ME interface 
+//ME interface
 recipes.remove(<appliedenergistics2:interface>);
 recipes.remove(<appliedenergistics2:part:440>);
 recipes.addShaped(<appliedenergistics2:interface>,[
@@ -568,7 +568,7 @@ recipes.addShaped(<appliedenergistics2:io_port>,[
 recipes.replaceAllOccurences(<appliedenergistics2:material:8>,<overloaded:item_core>,<appliedenergistics2:condenser>);
 //growth accelerator
 recipes.replaceAllOccurences(<appliedenergistics2:fluix_block>,<gregtech:machine:2214>,<appliedenergistics2:quartz_growth_accelerator>);
-//CPU bock 
+//CPU bock
 val unit = <appliedenergistics2:crafting_unit>;
 val cpu as IItemStack[IItemStack] = {
     <appliedenergistics2:crafting_accelerator> : logic, #this is co
@@ -668,7 +668,7 @@ for i in removeDust {
     Centrifuge.removeRecipe(i);
 }
 
-//fix ingot to dust 
+//fix ingot to dust
 recipes.replaceAllOccurences(<gregtech:meta_item_1:10061>,<gregtech:meta_item_1:2061>,<threng:material:1>);
 
 //change recipe of carbonic fluix dust and fluix ingot
@@ -691,7 +691,7 @@ blast_furnace.recipeBuilder()
     .duration(800)
     .EUt(2048)
     .buildAndRegister();
-//circuit 
+//circuit
     #1st circuit
 circuit_assembler.recipeBuilder()
     .inputs(<ore:plateSilicon>,<threng:material:5>)
@@ -710,7 +710,7 @@ circuit_assembler.recipeBuilder()
     .duration(100)
     .EUt(2048)
     .buildAndRegister();
-//logic unit 
+//logic unit
 recipes.remove(<threng:material:4>);
 assembler.recipeBuilder()
     .inputs(<threng:material>*4,<threng:material:1>*2,<appliedenergistics2:quartz_glass>*3,<ore:circuitAdvanced>)
@@ -736,7 +736,7 @@ recipes.addShaped(<threng:machine>,[
 ]);
     #Centrifuge
 recipes.replaceAllOccurences(<appliedenergistics2:molecular_assembler>,<gregtech:machine:152>,<threng:machine:1>);
-    #energy crystal 
+    #energy crystal
 recipes.replaceAllOccurences(<appliedenergistics2:dense_energy_cell>,<ore:HVcap>,<threng:machine:5>);
 //end lazy
 //extra cell

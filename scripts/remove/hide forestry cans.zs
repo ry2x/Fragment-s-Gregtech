@@ -1,7 +1,7 @@
 //import JEI function
 import mods.jei.JEI;
 
-//hide cans 
+//hide cans
 JEI.hide(<forestry:can:*>);
 
 //hide capsule

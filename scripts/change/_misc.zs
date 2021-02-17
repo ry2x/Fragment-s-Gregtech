@@ -17,22 +17,22 @@ for item in loadedMods["chargers"].items {
 
 recipes.addShaped(<chargers:wireless_charger>, [
     [<minecraft:iron_ingot>, <minecraft:ender_eye>, <minecraft:iron_ingot>],
-    [<minecraft:iron_ingot>, <gregtech:machine:501>, <minecraft:iron_ingot>], 
+    [<minecraft:iron_ingot>, <gregtech:machine:501>, <minecraft:iron_ingot>],
     [<minecraft:iron_ingot>, <overloaded:energy_core>, <minecraft:iron_ingot>]
 ]);
 recipes.addShaped(<chargers:charger>, [
     [<minecraft:iron_ingot>, <minecraft:redstone_block>, <minecraft:iron_ingot>],
-    [<minecraft:iron_ingot>, <gregtech:machine:501>, <minecraft:iron_ingot>], 
+    [<minecraft:iron_ingot>, <gregtech:machine:501>, <minecraft:iron_ingot>],
     [<minecraft:iron_ingot>, <minecraft:redstone_block>, <minecraft:iron_ingot>]
 ]);
 recipes.addShaped(<chargers:charger:1>, [
     [<gregtech:meta_item_1:10228>, <minecraft:redstone>, <gregtech:meta_item_1:10228>],
-    [<gregtech:meta_item_1:10228>, <minecraft:redstone_block>, <gregtech:meta_item_1:10228>], 
+    [<gregtech:meta_item_1:10228>, <minecraft:redstone_block>, <gregtech:meta_item_1:10228>],
     [<gregtech:meta_item_1:10228>, <chargers:charger>, <gregtech:meta_item_1:10228>]
 ]);
 recipes.addShaped(<chargers:charger:2>, [
     [<gregtech:meta_item_1:10001>, <minecraft:redstone>, <gregtech:meta_item_1:10001>],
-    [<gregtech:meta_item_1:10001>, <minecraft:redstone_block>, <gregtech:meta_item_1:10001>], 
+    [<gregtech:meta_item_1:10001>, <minecraft:redstone_block>, <gregtech:meta_item_1:10001>],
     [<gregtech:meta_item_1:10001>, <chargers:charger:1>, <gregtech:meta_item_1:10001>]
 ]);
 
@@ -103,83 +103,83 @@ for i in dunk {
 <danknull:dank_null_0>.displayName = "Bronze /dunk/null";
 recipes.addShaped(<danknull:dank_null_0>, [
     [<ore:plateBronze>, <danknull:dank_null_panel_0>, <ore:plateBronze>],
-    [<danknull:dank_null_panel_0>, <ore:plateBronze>, <danknull:dank_null_panel_0>], 
+    [<danknull:dank_null_panel_0>, <ore:plateBronze>, <danknull:dank_null_panel_0>],
     [<ore:plateBronze>, <danknull:dank_null_panel_0>, <ore:plateBronze>]
 ]);
 
 <danknull:dank_null_panel_0>.displayName = "Bronze /dunk/null Panel";
 recipes.addShaped(<danknull:dank_null_panel_0>, [
     [<ore:plateBronze>, <minecraft:obsidian>, <ore:plateBronze>],
-    [<minecraft:obsidian>, <ore:paneGlassRed>, <minecraft:obsidian>], 
+    [<minecraft:obsidian>, <ore:paneGlassRed>, <minecraft:obsidian>],
     [<ore:plateBronze>, <minecraft:obsidian>, <ore:plateBronze>]
 ]);
 
 <danknull:dank_null_1>.displayName = "Steel /dunk/null";
 recipes.addShaped(<danknull:dank_null_1>, [
     [<ore:plateSteel>, <danknull:dank_null_panel_1>, <ore:plateSteel>],
-    [<danknull:dank_null_panel_1>, <ore:plateSteel>, <danknull:dank_null_panel_1>], 
+    [<danknull:dank_null_panel_1>, <ore:plateSteel>, <danknull:dank_null_panel_1>],
     [<ore:plateSteel>, <danknull:dank_null_panel_1>, <ore:plateSteel>]
 ]);
 recipes.addShaped(<danknull:dank_null_1>, [
     [<ore:plateSteel>, <danknull:dank_null_panel_1>, <ore:plateSteel>],
-    [<danknull:dank_null_panel_1>, <danknull:dank_null_0>, <danknull:dank_null_panel_1>], 
+    [<danknull:dank_null_panel_1>, <danknull:dank_null_0>, <danknull:dank_null_panel_1>],
     [<ore:plateSteel>, <danknull:dank_null_panel_1>, <ore:plateSteel>]
 ]);
 
 <danknull:dank_null_panel_1>.displayName = "Steel /dunk/null Panel";
 recipes.addShaped(<danknull:dank_null_panel_1>, [
     [<ore:plateSteel>, <minecraft:obsidian>, <ore:plateSteel>],
-    [<minecraft:obsidian>, <minecraft:stained_glass_pane:11>, <minecraft:obsidian>], 
+    [<minecraft:obsidian>, <minecraft:stained_glass_pane:11>, <minecraft:obsidian>],
     [<ore:plateSteel>, <minecraft:obsidian>, <ore:plateSteel>]
 ]);
 
 <danknull:dank_null_2>.displayName = "Stainless Steel /dunk/null";
 recipes.addShaped(<danknull:dank_null_2>, [
     [<ore:plateStainlessSteel>, <danknull:dank_null_panel_2>, <ore:plateStainlessSteel>],
-    [<danknull:dank_null_panel_2>, <ore:plateStainlessSteel>, <danknull:dank_null_panel_2>], 
+    [<danknull:dank_null_panel_2>, <ore:plateStainlessSteel>, <danknull:dank_null_panel_2>],
     [<ore:plateStainlessSteel>, <danknull:dank_null_panel_2>, <ore:plateStainlessSteel>]
 ]);
 recipes.addShaped(<danknull:dank_null_2>, [
     [<ore:plateStainlessSteel>, <danknull:dank_null_panel_2>, <ore:plateStainlessSteel>],
-    [<danknull:dank_null_panel_2>, <danknull:dank_null_1>, <danknull:dank_null_panel_2>], 
+    [<danknull:dank_null_panel_2>, <danknull:dank_null_1>, <danknull:dank_null_panel_2>],
     [<ore:plateStainlessSteel>, <danknull:dank_null_panel_2>, <ore:plateStainlessSteel>]
 ]);
 
 <danknull:dank_null_panel_2>.displayName = "Stainless Steel /dunk/null Panel";
 recipes.addShaped(<danknull:dank_null_panel_2>, [
     [<ore:plateStainlessSteel>, <minecraft:obsidian>, <ore:plateStainlessSteel>],
-    [<minecraft:obsidian>, <minecraft:stained_glass_pane>, <minecraft:obsidian>], 
+    [<minecraft:obsidian>, <minecraft:stained_glass_pane>, <minecraft:obsidian>],
     [<ore:plateStainlessSteel>, <minecraft:obsidian>, <ore:plateStainlessSteel>]
 ]);
 
 <danknull:dank_null_3>.displayName= "Nichrome /dunk/null";
 recipes.addShaped(<danknull:dank_null_3>, [
     [<ore:plateNichrome>, <danknull:dank_null_panel_3>, <ore:plateNichrome>],
-    [<danknull:dank_null_panel_3>, <ore:plateNichrome>, <danknull:dank_null_panel_3>], 
+    [<danknull:dank_null_panel_3>, <ore:plateNichrome>, <danknull:dank_null_panel_3>],
     [<ore:plateNichrome>, <danknull:dank_null_panel_3>, <ore:plateNichrome>]
 ]);
 recipes.addShaped(<danknull:dank_null_3>, [
     [<ore:plateNichrome>, <danknull:dank_null_panel_3>, <ore:plateNichrome>],
-    [<danknull:dank_null_panel_3>, <danknull:dank_null_2>, <danknull:dank_null_panel_3>], 
+    [<danknull:dank_null_panel_3>, <danknull:dank_null_2>, <danknull:dank_null_panel_3>],
     [<ore:plateNichrome>, <danknull:dank_null_panel_3>, <ore:plateNichrome>]
 ]);
 
 <danknull:dank_null_panel_3>.displayName = "Nichrome /dunk/null Plate";
 recipes.addShaped(<danknull:dank_null_panel_3>, [
     [<ore:plateNichrome>, <minecraft:obsidian>, <ore:plateNichrome>],
-    [<minecraft:obsidian>, <minecraft:stained_glass_pane:4>, <minecraft:obsidian>], 
+    [<minecraft:obsidian>, <minecraft:stained_glass_pane:4>, <minecraft:obsidian>],
     [<ore:plateNichrome>, <minecraft:obsidian>, <ore:plateNichrome>]
 ]);
 
 <danknull:dank_null_4>.displayName = "Tungsten Steel /dunk/null";
 recipes.addShaped(<danknull:dank_null_4>, [
     [<ore:plateTungstenSteel>, <danknull:dank_null_panel_4>, <ore:plateTungstenSteel>],
-    [<danknull:dank_null_panel_4>, <ore:plateTungstenSteel>, <danknull:dank_null_panel_4>], 
+    [<danknull:dank_null_panel_4>, <ore:plateTungstenSteel>, <danknull:dank_null_panel_4>],
     [<ore:plateTungstenSteel>, <danknull:dank_null_panel_4>, <ore:plateTungstenSteel>]
 ]);
 recipes.addShaped(<danknull:dank_null_4>, [
     [<ore:plateTungstenSteel>, <danknull:dank_null_panel_4>, <ore:plateTungstenSteel>],
-    [<danknull:dank_null_panel_4>, <danknull:dank_null_3>, <danknull:dank_null_panel_4>], 
+    [<danknull:dank_null_panel_4>, <danknull:dank_null_3>, <danknull:dank_null_panel_4>],
     [<ore:plateTungstenSteel>, <danknull:dank_null_panel_4>, <ore:plateTungstenSteel>]
 ]);
 
@@ -193,25 +193,25 @@ recipes.addShaped(<danknull:dank_null_panel_4>, [
 <danknull:dank_null_5>.displayName = "Neutronium /dunk/null";
 recipes.addShaped(<danknull:dank_null_5>, [
     [<ore:plateNeutronium>, <danknull:dank_null_panel_5>, <ore:plateNeutronium>],
-    [<danknull:dank_null_panel_5>, <ore:plateNeutronium>, <danknull:dank_null_panel_5>], 
+    [<danknull:dank_null_panel_5>, <ore:plateNeutronium>, <danknull:dank_null_panel_5>],
     [<ore:plateNeutronium>, <danknull:dank_null_panel_5>, <ore:plateNeutronium>]
 ]);
 recipes.addShaped(<danknull:dank_null_5>, [
     [<ore:plateNeutronium>, <danknull:dank_null_panel_5>, <ore:plateNeutronium>],
-    [<danknull:dank_null_panel_5>, <danknull:dank_null_4>, <danknull:dank_null_panel_5>], 
+    [<danknull:dank_null_panel_5>, <danknull:dank_null_4>, <danknull:dank_null_panel_5>],
     [<ore:plateNeutronium>, <danknull:dank_null_panel_5>, <ore:plateNeutronium>]
 ]);
 
 <danknull:dank_null_panel_5>.displayName = "Neutronium /dunk/null Plate";
 recipes.addShaped(<danknull:dank_null_panel_5>, [
     [<ore:plateNeutronium>, <minecraft:obsidian>, <ore:plateNeutronium>],
-    [<minecraft:obsidian>, <minecraft:stained_glass_pane:13>, <minecraft:obsidian>], 
+    [<minecraft:obsidian>, <minecraft:stained_glass_pane:13>, <minecraft:obsidian>],
     [<ore:plateNeutronium>, <minecraft:obsidian>, <ore:plateNeutronium>]
 ]);
 recipes.remove(<danknull:danknull_dock>);
 recipes.addShaped(<danknull:danknull_dock>, [
     [<ore:plateEmerald>, <ore:plateRedAlloy>, <ore:plateEmerald>],
-    [<ore:plateRedAlloy>, <ore:obsidian>, <ore:plateRedAlloy>], 
+    [<ore:plateRedAlloy>, <ore:obsidian>, <ore:plateRedAlloy>],
     [<ore:plateEmerald>, <ore:plateRedAlloy>, <ore:plateEmerald>]
 ]);
 
@@ -268,7 +268,7 @@ recipes.replaceAllOccurences(<ore:ingotGold>,<ore:plateSilver>,<chisel:chisel_hi
 recipes.remove(<mob_grinding_utils:fan>);
 recipes.addShaped(<mob_grinding_utils:fan>, [
     [<ore:blockRedstone>, <ore:rotorSteel>, <ore:blockRedstone>],
-    [<gregtech:meta_item_1:32600>, <gregtech:machine:501>, <gregtech:meta_item_1:32600>], 
+    [<gregtech:meta_item_1:32600>, <gregtech:machine:501>, <gregtech:meta_item_1:32600>],
     [<ore:blockRedstone>, <minecraft:iron_ingot>, <ore:blockRedstone>]
 ]);
 recipes.replaceAllOccurences(<mob_grinding_utils:spikes>,<extrautils2:spike_diamond>,<*>);
@@ -277,17 +277,17 @@ recipes.remove(<mob_grinding_utils:tank>);
 recipes.remove(<mob_grinding_utils:absorption_hopper>);
 recipes.addShaped(<mob_grinding_utils:xp_tap>, [
     [null, <minecraft:obsidian>, null],
-    [<minecraft:iron_ingot>, <gregtech:meta_item_1:32610>, <minecraft:iron_ingot>], 
+    [<minecraft:iron_ingot>, <gregtech:meta_item_1:32610>, <minecraft:iron_ingot>],
     [null, null, <minecraft:iron_ingot>]
 ]);
 recipes.addShaped(<mob_grinding_utils:tank>, [
     [<ore:blockGlassHardened>, <ore:blockGlassHardened>, <ore:blockGlassHardened>],
-    [<ore:blockGlassHardened>, <gregtech:machine:2196>, <ore:blockGlassHardened>], 
+    [<ore:blockGlassHardened>, <gregtech:machine:2196>, <ore:blockGlassHardened>],
     [<ore:blockGlassHardened>, <ore:blockGlassHardened>, <ore:blockGlassHardened>]
 ]);
 recipes.addShaped(<mob_grinding_utils:absorption_hopper>, [
     [<minecraft:hopper>, <minecraft:ender_eye>, <minecraft:hopper>],
-    [<minecraft:hopper>, <gregtech:meta_item_1:32612>, <minecraft:hopper>], 
+    [<minecraft:hopper>, <gregtech:meta_item_1:32612>, <minecraft:hopper>],
     [<minecraft:hopper>, <gregtech:meta_item_1:32632>, <minecraft:hopper>]
 ]);
 
@@ -295,11 +295,11 @@ recipes.addShaped(<mob_grinding_utils:absorption_hopper>, [
 recipes.remove(<lightingwand:wand>);
 recipes.addShaped(<lightingwand:wand>, [
     [null, <appliedenergistics2:quartz_fixture>, <appliedenergistics2:quartz_fixture>],
-    [<minecraft:daylight_detector>, <ore:gemDiamond>, <appliedenergistics2:quartz_fixture>], 
+    [<minecraft:daylight_detector>, <ore:gemDiamond>, <appliedenergistics2:quartz_fixture>],
     [<minecraft:blaze_rod>, <ore:HVbattery>, null]
 ]);
 
-//portal 
+//portal
 furnace.remove(<portalgun:item_dust_ender_pearl>);
 recipes.remove(<portalgun:item_miniature_black_hole>);
 autoclave.recipeBuilder()
@@ -326,7 +326,7 @@ for i in transporter {
 recipes.remove(<extrautils2:wateringcan:1000>);
 recipes.addShaped(<extrautils2:wateringcan:1000>, [
     [<forestry:fertilizer_bio>, <forestry:fertilizer_bio>, <ore:plateEnderium>],
-    [<ore:plateEnderium>, <minecraft:bucket>, <ore:plateEnderium>], 
+    [<ore:plateEnderium>, <minecraft:bucket>, <ore:plateEnderium>],
     [<ore:plateEnderium>, <ore:plateEnderium>, <ore:plateEnderium>]
 ]);
 
@@ -334,7 +334,7 @@ recipes.addShaped(<extrautils2:wateringcan:1000>, [
 recipes.remove(<extrautils2:compoundbow>);
 recipes.addShaped(<extrautils2:compoundbow>, [
     [null, <tconstruct:bow_limb>.withTag({Material: "silver"}).onlyWithTag({Material: "silver"}), <ore:dustDiamond>],
-    [<ore:dustDiamond>, <minecraft:bow>, <gregtech:meta_item_1:32600>], 
+    [<ore:dustDiamond>, <minecraft:bow>, <gregtech:meta_item_1:32600>],
     [null, <tconstruct:bow_limb>.withTag({Material: "silver"}).onlyWithTag({Material: "silver"}), <ore:dustDiamond>]
 ]);
 
@@ -350,7 +350,7 @@ recipes.addShaped(<extrautils2:soundmuffler>, [
 recipes.remove(<extrautils2:trashcanfluid>);
 recipes.addShaped(<extrautils2:trashcanfluid>, [
     [<ore:plateLead>, <ore:plateLead>, <ore:plateLead>],
-    [<ore:plateLead>, craftingToolPlunger, <ore:plateLead>], 
+    [<ore:plateLead>, craftingToolPlunger, <ore:plateLead>],
     [<ore:plateLead>, <ore:plateLead>, <ore:plateLead>]
 ]);
 
@@ -366,7 +366,7 @@ recipes.addShaped(<extrautils2:trashcan>, [
 recipes.remove(<extrautils2:drum:2>);
 recipes.addShaped(<extrautils2:drum:2>, [
     [<ore:plateTungsten>, <minecraft:bucket>, <ore:plateTungsten>],
-    [<ore:plateDiamond>, <gregtech:machine:2198>, <ore:plateDiamond>], 
+    [<ore:plateDiamond>, <gregtech:machine:2198>, <ore:plateDiamond>],
     [<ore:plateTungsten>, <minecraft:bucket>, <ore:plateTungsten>]
 ]);
 
@@ -374,7 +374,7 @@ recipes.addShaped(<extrautils2:drum:2>, [
 recipes.remove(<extrautils2:drum:1>);
 recipes.addShaped(<extrautils2:drum:1>, [
     [<ore:plateIron>, <minecraft:bucket>, <ore:plateIron>],
-    [<ore:plateIron>, <gregtech:machine:2196>, <ore:plateIron>], 
+    [<ore:plateIron>, <gregtech:machine:2196>, <ore:plateIron>],
     [<ore:plateIron>, <minecraft:bucket>, <ore:plateIron>]
 ]);
 
@@ -382,7 +382,7 @@ recipes.addShaped(<extrautils2:drum:1>, [
 recipes.remove(<extrautils2:drum>);
 recipes.addShaped(<extrautils2:drum>, [
     [<ore:stoneSmooth>, <minecraft:bucket>, <ore:stoneSmooth>],
-    [<ore:stoneSmooth>, <minecraft:bucket>, <ore:stoneSmooth>], 
+    [<ore:stoneSmooth>, <minecraft:bucket>, <ore:stoneSmooth>],
     [<ore:stoneSmooth>, <minecraft:bucket>, <ore:stoneSmooth>]
 ]);
 
@@ -390,7 +390,7 @@ recipes.addShaped(<extrautils2:drum>, [
 recipes.remove(<extrautils2:filterfluids>);
 recipes.addShaped(<extrautils2:filterfluids>, [
     [<appliedenergistics2:paint_ball:11>, <forestry:oak_stick>, <appliedenergistics2:paint_ball:11>],
-    [<forestry:oak_stick>, <ore:paneGlass>, <forestry:oak_stick>], 
+    [<forestry:oak_stick>, <ore:paneGlass>, <forestry:oak_stick>],
     [<appliedenergistics2:paint_ball:11>, <forestry:oak_stick>, <appliedenergistics2:paint_ball:11>]
 ]);
 
@@ -398,7 +398,7 @@ recipes.addShaped(<extrautils2:filterfluids>, [
 recipes.remove(<extrautils2:filter>);
 recipes.addShaped(<extrautils2:filter>, [
     [<appliedenergistics2:paint_ball:14>, <forestry:oak_stick>, <appliedenergistics2:paint_ball:14>],
-    [<forestry:oak_stick>, <ore:paneGlass>, <forestry:oak_stick>], 
+    [<forestry:oak_stick>, <ore:paneGlass>, <forestry:oak_stick>],
     [<appliedenergistics2:paint_ball:14>, <forestry:oak_stick>, <appliedenergistics2:paint_ball:14>]
 ]);
 //project red peridot items and draw plate
@@ -414,7 +414,7 @@ recipes.remove(<projectred-exploration:peridot_chestplate>);
 <projectred-exploration:peridot_chestplate>.displayName = "Olivine ChestPlate";
 recipes.addShaped(<projectred-exploration:peridot_chestplate>, [
     [<ore:gemOlivine>, null, <ore:gemOlivine>],
-    [<ore:gemOlivine>, <ore:gemOlivine>, <ore:gemOlivine>], 
+    [<ore:gemOlivine>, <ore:gemOlivine>, <ore:gemOlivine>],
     [<ore:gemOlivine>, <ore:gemOlivine>, <ore:gemOlivine>]
 ]);
 
@@ -422,7 +422,7 @@ recipes.remove(<projectred-exploration:peridot_leggings>);
 <projectred-exploration:peridot_leggings>.displayName = "Olivine Legging";
 recipes.addShaped(<projectred-exploration:peridot_leggings>, [
     [<ore:gemOlivine>, <ore:gemOlivine>, <ore:gemOlivine>],
-    [<ore:gemOlivine>, null, <ore:gemOlivine>], 
+    [<ore:gemOlivine>, null, <ore:gemOlivine>],
     [<ore:gemOlivine>, null, <ore:gemOlivine>]
 ]);
 
@@ -430,7 +430,7 @@ recipes.remove(<projectred-exploration:peridot_boots>);
 <projectred-exploration:peridot_boots>.displayName = "Olivine Boots";
 recipes.addShaped(<projectred-exploration:peridot_boots>, [
     [null, null, null],
-    [<ore:gemOlivine>, null, <ore:gemOlivine>], 
+    [<ore:gemOlivine>, null, <ore:gemOlivine>],
     [<ore:gemOlivine>, null, <ore:gemOlivine>]
 ]);
 
@@ -446,7 +446,7 @@ recipes.addShaped(<projectred-exploration:stone_wall:7>, [
 recipes.remove(<projectred-core:drawplate>);
 recipes.addShaped(<projectred-core:drawplate>, [
     [<ore:plateDiamond>, <ore:plateDiamond>, <ore:plateDiamond>],
-    [<ore:componentRubberHose>, <ore:componentRubberHose>, <ore:componentRubberHose>], 
+    [<ore:componentRubberHose>, <ore:componentRubberHose>, <ore:componentRubberHose>],
     [<ore:plateDiamond>, <ore:plateDiamond>, <ore:plateDiamond>]
 ]);
 //simple ender teleport
@@ -466,7 +466,7 @@ recipes.addShaped(<quarryplus:workbenchplus>,[
     [<ore:HVcap>,<gregtech:machine_casing:3>,<ore:componentHVCapacitor>],
     [<gregtech:machine_casing:3>,<gregtech:machine_casing:3>,<gregtech:machine_casing:3>]
 ]);
-//bonsai 
+//bonsai
 recipes.remove(<bonsaitrees:bonsaipot>);
 recipes.addShaped(<bonsaitrees:bonsaipot>,[
     [null,null,null],
@@ -484,7 +484,7 @@ recipes.addShaped(<betterbuilderswands:wandunbreakable:12>,[
 recipes.remove(<kythsopmoss:overpowered_moss>);
 recipes.addShaped(<kythsopmoss:overpowered_moss>, [
     [<ore:componentSolarPanel>, <ore:slimecrystal>, <ore:componentSolarPanel>],
-    [<ore:slimecrystal>, <tconstruct:materials:19>, <ore:slimecrystal>], 
+    [<ore:slimecrystal>, <tconstruct:materials:19>, <ore:slimecrystal>],
     [<tconstruct:materials:19>, <ore:slimecrystal>, <tconstruct:materials:19>]
 ]);
 //backpack
@@ -492,21 +492,21 @@ recipes.addShaped(<kythsopmoss:overpowered_moss>, [
 recipes.remove(<usefulbackpacks:backpack:2>);
 recipes.addShaped(<usefulbackpacks:backpack:2>, [
     [<ore:leather>, <ore:slimeball>, <ore:leather>],
-    [<danknull:dank_null_panel_4>, <usefulbackpacks:backpack:1>, <danknull:dank_null_panel_4>], 
+    [<danknull:dank_null_panel_4>, <usefulbackpacks:backpack:1>, <danknull:dank_null_panel_4>],
     [<ore:leather>, <danknull:dank_null_panel_4>, <ore:leather>]
 ]);
     #Medium Backpack
 recipes.remove(<usefulbackpacks:backpack:1>);
 recipes.addShaped(<usefulbackpacks:backpack:1>, [
     [<ore:leather>, <ore:plateSteel>, <ore:leather>],
-    [<ore:slimeball>, <usefulbackpacks:backpack>, <ore:slimeball>], 
+    [<ore:slimeball>, <usefulbackpacks:backpack>, <ore:slimeball>],
     [<ore:leather>, <ore:slimeball>, <ore:leather>]
 ]);
     #Small Backpack
 recipes.remove(<usefulbackpacks:backpack>);
 recipes.addShaped(<usefulbackpacks:backpack>, [
     [<ore:leather>, <ore:plateBronze>, <ore:leather>],
-    [<ore:slimeball>, <tconstruct:piggybackpack>, <ore:slimeball>], 
+    [<ore:slimeball>, <tconstruct:piggybackpack>, <ore:slimeball>],
     [<ore:leather>, <ore:slimeball>, <ore:leather>]
 ]);
 
@@ -514,21 +514,21 @@ recipes.addShaped(<usefulbackpacks:backpack>, [
 recipes.remove(<scannable:module_ore_rare>);
 recipes.addShaped(<scannable:module_ore_rare>, [
     [null, null, null],
-    [<ore:ingotCopper>, <scannable:module_blank>, <ore:ingotCopper>], 
+    [<ore:ingotCopper>, <scannable:module_blank>, <ore:ingotCopper>],
     [<ore:ingotTin>, null, <ore:ingotTin>]
 ]);
 
 recipes.remove(<scannable:module_blank>);
 recipes.addShaped(<scannable:module_blank>, [
     [<ore:dyeGreen>, <ore:dyeGreen>, <ore:dyeGreen>],
-    [<ore:dyeGreen>, <ore:ingotTin>, <ore:dyeGreen>], 
+    [<ore:dyeGreen>, <ore:ingotTin>, <ore:dyeGreen>],
     [<ore:dyeGreen>, <ore:plateBronze>, <ore:dyeGreen>]
 ]);
 
 recipes.remove(<scannable:scanner>);
 recipes.addShaped(<scannable:scanner>, [
     [<ore:plateTin>, <ore:dustRedstone>, <ore:plateTin>],
-    [<ore:plateIron>, <ore:dustRedstone>, <ore:plateIron>], 
+    [<ore:plateIron>, <ore:dustRedstone>, <ore:plateIron>],
     [<ore:plateIron>, <ore:plateIron>, <ore:plateIron>]
 ]);
 
@@ -542,7 +542,7 @@ recipes.addShaped(<scannable:scanner>, [
 
 //Add easy chest recipes (ported from enderio)
 val chestFix as IItemStack[IItemStack] = {
-    #Dark Oak 
+    #Dark Oak
     <minecraft:log2:1> : <quark:custom_chest:4>,
     #Acacia
     <minecraft:log2> : <quark:custom_chest:3>,
@@ -606,7 +606,7 @@ val chestFixCrafting as IItemStack[IItemStack] = {
     <chisel:planks-dark-oak:*> : <quark:custom_chest:4>,
     #Acacia
     <minecraft:planks:4> : <quark:custom_chest:3>,
-    <chisel:planks-acacia:*> : <quark:custom_chest:3>,    
+    <chisel:planks-acacia:*> : <quark:custom_chest:3>,
     #Jungle
     <minecraft:planks:3> : <quark:custom_chest:2>,
     <chisel:planks-jungle:*> : <quark:custom_chest:2>,
@@ -643,7 +643,7 @@ val trapFixCrafting as IItemStack[IItemStack] = {
     <chisel:planks-dark-oak:*> : <quark:dark_oak_trapdoor>,
     #Acacia
     <minecraft:planks:4> : <futuremc:acacia_trapdoor>,
-    <chisel:planks-acacia:*> : <futuremc:acacia_trapdoor>,    
+    <chisel:planks-acacia:*> : <futuremc:acacia_trapdoor>,
     #Jungle
     <minecraft:planks:3> : <futuremc:jungle_trapdoor>,
     <chisel:planks-jungle:*> : <futuremc:jungle_trapdoor>,
@@ -684,12 +684,12 @@ assembler.recipeBuilder()
 
 //Add easy stick recipes (ported from enderio)
 recipes.addShaped(<minecraft:stick> * 4, [
-    [<ore:logWood>], 
+    [<ore:logWood>],
     [<ore:logWood>]
 ]);
 recipes.addShaped(<minecraft:stick> * 8, [
     [craftingToolSaw],
-    [<ore:logWood>], 
+    [<ore:logWood>],
     [<ore:logWood>]
 ]);
 
@@ -719,7 +719,7 @@ for i in ironPlate {
 recipes.remove(<quark:marble:1>);
 recipes.addShaped(<quark:marble:1> * 9, [
     [<ore:stoneMarble>, <ore:stoneMarble>, <ore:stoneMarble>],
-    [<ore:stoneMarble>, <ore:stoneMarble>, <ore:stoneMarble>], 
+    [<ore:stoneMarble>, <ore:stoneMarble>, <ore:stoneMarble>],
     [<ore:stoneMarble>, <ore:stoneMarble>, <ore:stoneMarble>]
 ]);
 
@@ -774,11 +774,11 @@ recipes.addShaped(<minecraft:stone_brick_stairs>*8,[
     [<minecraft:stonebrick>,<minecraft:stonebrick>,<minecraft:stonebrick>]
 ]);
 
-//shield 
+//shield
 recipes.remove(<spartanshields:shield_riot_enderio>);
 recipes.addShaped(<spartanshields:shield_riot_enderio>, [
     [<ore:ingotSteelMagnetic>, <gregtech:meta_item_1:32682>, <ore:ingotSteelMagnetic>],
-    [<ore:ingotTungstenSteel>, <ore:HVbattery>, <ore:ingotTungstenSteel>], 
+    [<ore:ingotTungstenSteel>, <ore:HVbattery>, <ore:ingotTungstenSteel>],
     [<ore:ingotTungstenSteel>, <gregtech:meta_item_1:32672>, <ore:ingotTungstenSteel>]
 ]);
 <spartanshields:shield_riot_enderio>.displayName = "Emitter Riot Shiled";
@@ -788,7 +788,7 @@ recipes.addShaped(<spartanshields:shield_riot_enderio>, [
 recipes.remove(<simplemagnets:basicmagnet>);
 recipes.addShaped(<simplemagnets:basicmagnet>, [
     [<ore:ingotIronMagnetic>, <ore:stickLongAluminium>, <ore:blockLapis>],
-    [<ore:ingotIronMagnetic>, <ore:stickLongAluminium>, <ore:enderpearl>], 
+    [<ore:ingotIronMagnetic>, <ore:stickLongAluminium>, <ore:enderpearl>],
     [<ore:ingotIronMagnetic>, <ore:stickLongAluminium>, <ore:blockRedstone>]
 ]);
 recipes.remove(<simplemagnets:advancedmagnet>);
@@ -830,6 +830,6 @@ recipes.addShaped(<sonarcore:stablestone_plain>,[
 
     #name of portal frame
 <sonarcore:stablestoneblackrimmed_lightblue>.displayName = "VoidWorld Portal Frame";
-<sonarcore:stablestoneblackrimmed_plain>.displayName = "Nether From Void Portal Frame"; 
+<sonarcore:stablestoneblackrimmed_plain>.displayName = "Nether From Void Portal Frame";
 <sonarcore:stablestone_plain>.displayName = "Portal Frame Base Block";
 <sonarcore:stablestoneblackrimmed_lightgrey>.displayName = "Portal Frame Block";

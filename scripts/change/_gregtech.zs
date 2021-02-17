@@ -156,7 +156,7 @@ arc.recipeBuilder()
 	.outputs(<ore:ingotSteel>.firstItem)
 	.duration(60)
 	.EUt(24)
-	.buildAndRegister();	
+	.buildAndRegister();
 //aluminium ore in arc furnace
 arc.recipeBuilder()
 	.inputs(<ore:oreAluminium>)
@@ -164,7 +164,7 @@ arc.recipeBuilder()
 	.outputs(<ore:ingotAluminium>.firstItem)
 	.duration(60)
 	.EUt(24)
-	.buildAndRegister();	
+	.buildAndRegister();
 //Backport Sphalerite Electrolysis from 5U modpacks
 electrolyzer.recipeBuilder()
 	.inputs([<ore:dustSphalerite>*2])
@@ -200,7 +200,7 @@ var autoclaveGems as string[] = [
 for key in autoclaveGems {
 	var dust as IItemStack = oreDict["crushedPurified"~key].firstItem;
 	var gem as IItemStack = oreDict["gem"~key].firstItem;
-	
+
 	autoclave.recipeBuilder()
 		.inputs(dust*1)
 		.fluidInputs([<liquid:water>*1000])
@@ -209,7 +209,7 @@ for key in autoclaveGems {
 		.EUt(24)
 		.buildAndRegister();
 }
-//ender perl 
+//ender perl
 autoclave.recipeBuilder()
 	.inputs(<gregtech:meta_item_1:2218>)
 	.fluidInputs([<liquid:water>*1000])
@@ -302,7 +302,7 @@ alloy.recipeBuilder()
     .EUt(16)
     .buildAndRegister();
 
-//concrete to vanilla concrete 
+//concrete to vanilla concrete
 solidifier.findRecipe(8, [<gregtech:meta_item_1:32308>], [<liquid:concrete>*1296]).remove();
 compressor.findRecipe(2, [<gregtech:meta_item_1:2296>*9],[]).remove();
 solidifier.recipeBuilder()
@@ -346,27 +346,27 @@ freezer.recipeBuilder()
 	.EUt(32)
 	.buildAndRegister();
 freezer.recipeBuilder()
-	.inputs(<ore:ingotHotNaquadahEnriched>)	
+	.inputs(<ore:ingotHotNaquadahEnriched>)
 	.fluidInputs([<liquid:cryotheum>*10])
 	.outputs(<ore:ingotNaquadahEnriched>.firstItem)
 	.duration(140)
 	.EUt(32)
 	.buildAndRegister();
 freezer.recipeBuilder()
-	.inputs(<ore:ingotHotNaquadahAlloy>)	
+	.inputs(<ore:ingotHotNaquadahAlloy>)
 	.fluidInputs([<liquid:cryotheum>*10])
 	.outputs(<ore:ingotNaquadahAlloy>.firstItem)
 	.duration(225)
 	.EUt(32)
 	.buildAndRegister();
-freezer.recipeBuilder()	
+freezer.recipeBuilder()
 	.inputs(<ore:ingotHotYttriumBariumCuprate>)
 	.fluidInputs([<liquid:cryotheum>*10])
 	.outputs(<ore:ingotYttriumBariumCuprate>.firstItem)
 	.duration(140)
 	.EUt(32)
 	.buildAndRegister();
-freezer.recipeBuilder()	
+freezer.recipeBuilder()
 	.inputs(<ore:ingotHotOsmiridium>)
 	.fluidInputs([<liquid:cryotheum>*10])
 	.outputs(<ore:ingotOsmiridium>.firstItem)
@@ -374,34 +374,34 @@ freezer.recipeBuilder()
 	.EUt(32)
 	.buildAndRegister();
 freezer.recipeBuilder()
-	.inputs(<ore:ingotHotEnderium>)	
+	.inputs(<ore:ingotHotEnderium>)
 	.fluidInputs([<liquid:cryotheum>*10])
 	.outputs(<ore:ingotEnderium>.firstItem)
 	.duration(140)
 	.EUt(32)
 	.buildAndRegister();
-freezer.recipeBuilder()	
+freezer.recipeBuilder()
 	.inputs(<ore:ingotHotYttrium>)
 	.fluidInputs([<liquid:cryotheum>*10])
 	.outputs(<ore:ingotYttrium>.firstItem)
 	.duration(56)
 	.EUt(32)
 	.buildAndRegister();
-freezer.recipeBuilder()	
+freezer.recipeBuilder()
 	.inputs(<ore:ingotHotVanadiumGallium>)
 	.fluidInputs([<liquid:cryotheum>*10])
 	.outputs(<ore:ingotVanadiumGallium>.firstItem)
 	.duration(140)
 	.EUt(32)
 	.buildAndRegister();
-freezer.recipeBuilder()	
+freezer.recipeBuilder()
 	.inputs(<ore:ingotHotVanadium>)
 	.fluidInputs([<liquid:cryotheum>*10])
 	.outputs(<ore:ingotVanadium>.firstItem)
 	.duration(280)
 	.EUt(68)
 	.buildAndRegister();
-freezer.recipeBuilder()	
+freezer.recipeBuilder()
 	.inputs(<ore:ingotHotUltimet>)
 	.fluidInputs([<liquid:cryotheum>*10])
 	.outputs(<ore:ingotUltimet>.firstItem)
@@ -415,7 +415,7 @@ freezer.recipeBuilder()
 	.duration(93)
 	.EUt(32)
 	.buildAndRegister();
-freezer.recipeBuilder()	
+freezer.recipeBuilder()
 	.inputs(<ore:ingotHotHssg>)
 	.fluidInputs([<liquid:cryotheum>*10])
 	.outputs(<ore:ingotHssg>.firstItem)
@@ -429,21 +429,21 @@ freezer.recipeBuilder()
 	.duration(168)
 	.EUt(32)
 	.buildAndRegister();
-freezer.recipeBuilder()	
+freezer.recipeBuilder()
 	.inputs(<ore:ingotHotOsmium>)
 	.fluidInputs([<liquid:cryotheum>*10])
 	.outputs(<ore:ingotOsmium>.firstItem)
 	.duration(103)
 	.EUt(32)
 	.buildAndRegister();
-freezer.recipeBuilder()	
+freezer.recipeBuilder()
 	.inputs(<ore:ingotHotScandium>)
 	.fluidInputs([<liquid:cryotheum>*10])
 	.outputs(<ore:ingotScandium>.firstItem)
 	.duration(56)
 	.EUt(32)
 	.buildAndRegister();
-freezer.recipeBuilder()	
+freezer.recipeBuilder()
 	.inputs(<ore:ingotHotHsss>)
 	.fluidInputs([<liquid:cryotheum>*10])
 	.outputs(<ore:ingotHsss>.firstItem)
@@ -451,90 +451,90 @@ freezer.recipeBuilder()
 	.EUt(32)
 	.buildAndRegister();
 freezer.recipeBuilder()
-	.inputs(<ore:ingotHotNiobiumTitanium>)	
+	.inputs(<ore:ingotHotNiobiumTitanium>)
 	.fluidInputs([<liquid:cryotheum>*10])
 	.outputs(<ore:ingotNiobiumTitanium>.firstItem)
 	.duration(140)
 	.EUt(32)
 	.buildAndRegister();
 freezer.recipeBuilder()
-	.inputs(<ore:ingotHotNiobiumNitride>)	
+	.inputs(<ore:ingotHotNiobiumNitride>)
 	.fluidInputs([<liquid:cryotheum>*10])
 	.outputs(<ore:ingotNiobiumNitride>.firstItem)
 	.duration(80)
 	.EUt(32)
 	.buildAndRegister();
 freezer.recipeBuilder()
-	.inputs(<ore:ingotHotLutetium>)	
+	.inputs(<ore:ingotHotLutetium>)
 	.fluidInputs([<liquid:cryotheum>*10])
 	.outputs(<ore:ingotLutetium>.firstItem)
 	.duration(60)
 	.EUt(32)
 	.buildAndRegister();
 freezer.recipeBuilder()
-	.inputs(<ore:ingotHotIridium>)	
+	.inputs(<ore:ingotHotIridium>)
 	.fluidInputs([<liquid:cryotheum>*10])
 	.outputs(<ore:ingotIridium>.firstItem)
 	.duration(84)
 	.EUt(32)
 	.buildAndRegister();
 freezer.recipeBuilder()
-	.inputs(<ore:ingotHotKanthal>)	
+	.inputs(<ore:ingotHotKanthal>)
 	.fluidInputs([<liquid:cryotheum>*10])
 	.outputs(<ore:ingotKanthal>.firstItem)
 	.duration(56)
 	.EUt(32)
 	.buildAndRegister();
 freezer.recipeBuilder()
-	.inputs(<ore:ingotHotNaquadah>)	
+	.inputs(<ore:ingotHotNaquadah>)
 	.fluidInputs([<liquid:cryotheum>*10])
 	.outputs(<ore:ingotNaquadah>.firstItem)
 	.duration(168)
 	.EUt(32)
 	.buildAndRegister();
-freezer.recipeBuilder()	
+freezer.recipeBuilder()
 	.inputs(<ore:ingotHotNaquadria>)
 	.fluidInputs([<liquid:cryotheum>*10])
 	.outputs(<ore:ingotNaquadria>.firstItem)
 	.duration(281)
 	.EUt(32)
 	.buildAndRegister();
-freezer.recipeBuilder()	
+freezer.recipeBuilder()
 	.inputs(<ore:ingotHotTungsten>)
 	.fluidInputs([<liquid:cryotheum>*10])
 	.outputs(<ore:ingotTungsten>.firstItem)
 	.duration(93)
 	.EUt(32)
 	.buildAndRegister();
-freezer.recipeBuilder()	
+freezer.recipeBuilder()
 	.inputs(<ore:ingotHotThulium>)
 	.fluidInputs([<liquid:cryotheum>*10])
 	.outputs(<ore:ingotThulium>.firstItem)
 	.duration(56)
 	.EUt(32)
 	.buildAndRegister();
-freezer.recipeBuilder()	
+freezer.recipeBuilder()
 	.inputs(<ore:ingotHotTitanium>)
 	.fluidInputs([<liquid:cryotheum>*10])
 	.outputs(<ore:ingotTitanium>.firstItem)
 	.duration(60)
 	.EUt(32)
 	.buildAndRegister();
-freezer.recipeBuilder()	
+freezer.recipeBuilder()
 	.inputs(<ore:ingotHotNichrome>)
 	.fluidInputs([<liquid:cryotheum>*10])
 	.outputs(<ore:ingotNichrome>.firstItem)
 	.duration(84)
 	.EUt(32)
 	.buildAndRegister();
-freezer.recipeBuilder()	
+freezer.recipeBuilder()
 	.inputs(<ore:ingotHotTungstenCarbide>)
 	.fluidInputs([<liquid:cryotheum>*10])
 	.outputs(<ore:ingotTungstenCarbide>.firstItem)
 	.duration(76)
 	.EUt(32)
 	.buildAndRegister();
-freezer.recipeBuilder()	
+freezer.recipeBuilder()
 	.inputs(<ore:ingotHotNiobium>)
 	.fluidInputs([<liquid:cryotheum>*10])
 	.outputs(<ore:ingotNiobium>.firstItem)
@@ -590,31 +590,31 @@ assembler.recipeBuilder()
 	#TungstenSteel Drum
 recipes.addShaped(<gregtech:machine:2200>, [
 	[<ore:boltTungstenSteel>, <ore:plateTungstenSteel>, <ore:boltTungstenSteel>],
-    [<ore:plateTungstenSteel>, <ore:stickLongTungstenSteel>, <ore:plateTungstenSteel>], 
+    [<ore:plateTungstenSteel>, <ore:stickLongTungstenSteel>, <ore:plateTungstenSteel>],
     [<ore:boltTungstenSteel>, <ore:plateTungstenSteel>, <ore:boltTungstenSteel>]
 ]);
 	#Titanium Drum
 recipes.addShaped(<gregtech:machine:2199>, [
 	[<ore:boltTriniumTitanium>, <ore:plateTitanium>, <ore:boltTriniumTitanium>],
-    [<ore:plateTitanium>, <ore:stickLongTitanium>, <ore:plateTitanium>], 
+    [<ore:plateTitanium>, <ore:stickLongTitanium>, <ore:plateTitanium>],
     [<ore:boltTriniumTitanium>, <ore:plateTitanium>, <ore:boltTriniumTitanium>]
 ]);
 	#Stainless Steel Drum
 recipes.addShaped(<gregtech:machine:2198>, [
 	[<ore:boltStainlessSteel>, <ore:plateStainlessSteel>, <ore:boltStainlessSteel>],
-    [<ore:plateStainlessSteel>, <ore:stickLongStainlessSteel>, <ore:plateStainlessSteel>], 
+    [<ore:plateStainlessSteel>, <ore:stickLongStainlessSteel>, <ore:plateStainlessSteel>],
     [<ore:boltStainlessSteel>, <ore:plateStainlessSteel>, <ore:boltStainlessSteel>]
 ]);
 	#Steel Drum
 recipes.addShaped(<gregtech:machine:2197>, [
 	[<ore:boltSteel>, <ore:plateSteel>, <ore:boltSteel>],
-    [<ore:plateSteel>, <ore:stickLongSteel>, <ore:plateSteel>], 
+    [<ore:plateSteel>, <ore:stickLongSteel>, <ore:plateSteel>],
     [<ore:boltSteel>, <ore:plateSteel>, <ore:boltSteel>]
 ]);
 	#Bronze Drum
 recipes.addShaped(<gregtech:machine:2196>, [
 	[<ore:boltBronze>, <ore:plateBronze>, <ore:boltBronze>],
-    [<ore:plateBronze>, <ore:stickLongBronze>, <ore:plateBronze>], 
+    [<ore:plateBronze>, <ore:stickLongBronze>, <ore:plateBronze>],
     [<ore:boltBronze>, <ore:plateBronze>, <ore:boltBronze>]
 ]);
 	#in assembler
@@ -1016,10 +1016,10 @@ for input, output in CableHex16Fix {
 	#remove fluid glass recipes in fluid extractor
 for extract in fluid_extractor.recipes {
 	if ((extract.fluidOutputs[0] * 0).matches(<liquid:glass> * 0))
-        { 
+        {
 		//	print("Removing extractor recipes: " + extract.inputs[0].matchingItems[0].displayName + " to " + extract.fluidOutputs[0].displayName + ":" + extract.fluidOutputs[0].amount);
 			extract.remove();
-		} 
+		}
 }
 
 	#add fluid glass recipes in fluid extractor
@@ -1042,7 +1042,7 @@ for input,x in glassfix {
 		.buildAndRegister();
 }
 
-	#fix clear tinker glass in solidifier 
+	#fix clear tinker glass in solidifier
 solidifier.findRecipe(4, [<metaitem:shape.mold.block>], [<liquid:glass> * 1000]).remove();
 solidifier.recipeBuilder()
     .fluidInputs([<liquid:glass> * 1000])
@@ -1054,8 +1054,8 @@ solidifier.recipeBuilder()
 
 //change recipes use plutonium244 to uranium
 bath.findRecipe(384, [<minecraft:nether_star>], [<liquid:plutonium> * 1152]).remove();
-bath.findRecipe(384, [<minecraft:ender_eye>], [<liquid:plutonium> * 288]).remove();	
-	
+bath.findRecipe(384, [<minecraft:ender_eye>], [<liquid:plutonium> * 288]).remove();
+
 bath.recipeBuilder()
 	.inputs(<minecraft:nether_star>)
 	.fluidInputs([<liquid:uranium> * 1152])
@@ -1079,4 +1079,3 @@ mixer.recipeBuilder()
 	.duration(240)
 	.EUt(8)
 	.buildAndRegister();
-

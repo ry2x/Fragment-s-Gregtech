@@ -7,13 +7,13 @@ import mods.gregtech.recipe.RecipeMap;
 val forming = RecipeMap.getByName("forming_press");
 val assembler = RecipeMap.getByName("assembler");
 
-//remove and add recipes of overloaded OP items 
+//remove and add recipes of overloaded OP items
 for item in loadedMods["overloaded"].items {
 	recipes.remove(item);
 }
 
 //cores
-    #energy 
+    #energy
 forming.recipeBuilder()
     .inputs(<ore:gemEnderEye>*2,<gtadditions:ga_cell_casing:1>,<ore:plateEnderium>*6,<minecraft:end_rod>*2)
     .outputs(<overloaded:energy_core>)
@@ -45,7 +45,7 @@ for i in node {
     recipes.remove(i);
 }
 
-    #energy 
+    #energy
 assembler.recipeBuilder()
     .inputs(<ore:dyeRed>*4,<overloaded:energy_core>,<ore:plateStainlessSteel>*8)
     .outputs(<cyclicmagic:cable_wireless_energy>)
@@ -126,7 +126,7 @@ recipes.addShapeless(<overloaded:hyper_energy_sender>, [<overloaded:hyper_energy
 recipes.addShapeless(<overloaded:hyper_fluid_receiver>, [<overloaded:hyper_fluid_sender>]);
 recipes.addShapeless(<overloaded:hyper_fluid_sender>, [<overloaded:hyper_fluid_receiver>]);
 
-//tesseract 
+//tesseract
 recipes.remove(<tesseract:tesseract>);
 assembler.recipeBuilder()
     .inputs(<overloaded:energy_core>,<overloaded:fluid_core>,<overloaded:item_core>,<ore:plateEnderium>*4,<gregtech:meta_item_2:19963>*4,<thermalfoundation:glass_alloy:7>*4)
@@ -162,39 +162,39 @@ assembler.recipeBuilder()
 //link card
 recipes.addShaped(<overloaded:linking_card>, [
     [<minecraft:wool:15>, <minecraft:wool:15>, <minecraft:wool:15>],
-    [<minecraft:wool:15>, <ore:blockIron>, <minecraft:wool:15>], 
+    [<minecraft:wool:15>, <ore:blockIron>, <minecraft:wool:15>],
     [<minecraft:wool:15>, <minecraft:wool:15>, <ore:blockIron>]
 ]);
 
 //interface
 recipes.addShaped(<overloaded:player_interface>, [
     [<minecraft:iron_ingot>, <enderio:item_item_conduit>, <minecraft:iron_ingot>],
-    [<minecraft:iron_ingot>, <minecraft:ender_chest>, <minecraft:iron_ingot>], 
+    [<minecraft:iron_ingot>, <minecraft:ender_chest>, <minecraft:iron_ingot>],
     [<enderio:item_item_conduit>, <ore:gemFlawedNetherQuartz>, <enderio:item_item_conduit>]
 ]);
 recipes.addShaped(<overloaded:item_interface>, [
     [<minecraft:iron_ingot>, <enderio:item_item_conduit>, <minecraft:iron_ingot>],
-    [<minecraft:iron_ingot>, <minecraft:chest>, <minecraft:iron_ingot>], 
+    [<minecraft:iron_ingot>, <minecraft:chest>, <minecraft:iron_ingot>],
     [<enderio:item_item_conduit>, <ore:gemFlawedNetherQuartz>, <enderio:item_item_conduit>]
 ]);
 
 //ex
 recipes.addShaped(<overloaded:energy_extractor>, [
     [<minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>],
-    [<minecraft:iron_ingot>, <overloaded:energy_core>, <minecraft:iron_ingot>], 
+    [<minecraft:iron_ingot>, <overloaded:energy_core>, <minecraft:iron_ingot>],
     [<minecraft:iron_ingot>, <minecraft:iron_ingot>, <minecraft:iron_ingot>]
 ]);
 
 //you got some water?
 recipes.addShaped(<overloaded:infinite_water_source>, [
     [<ore:blockGlass>, <gregtech:meta_item_1:32611>, <ore:blockGlass>],
-    [<gregtech:meta_item_1:32611>, <ore:gemDiamond>, <gregtech:meta_item_1:32611>], 
+    [<gregtech:meta_item_1:32611>, <ore:gemDiamond>, <gregtech:meta_item_1:32611>],
     [<ore:blockGlass>, <gregtech:meta_item_1:32611>, <ore:blockGlass>]
 ]);
 
 //Multi-Armor Settings Editor
 recipes.addShaped(<overloaded:settings_editor>, [
     [<gregtech:meta_item_1:12859>, <gregtech:meta_item_1:12859>, <gregtech:meta_item_1:12859>],
-    [<gregtech:meta_item_1:12859>, <overloaded:linking_card>, <gregtech:meta_item_1:12859>], 
+    [<gregtech:meta_item_1:12859>, <overloaded:linking_card>, <gregtech:meta_item_1:12859>],
     [<gregtech:meta_item_1:12859>, <gregtech:meta_item_1:12859>, <gregtech:meta_item_1:12859>]
 ]);

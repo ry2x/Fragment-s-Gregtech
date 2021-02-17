@@ -38,7 +38,7 @@ val fluid = [
     <fluid:biofuel>,
     <fluid:if.protein>,
     <fluid:if.ore_fluid_raw>,
-    <fluid:if.ore_fluid_fermented>, 
+    <fluid:if.ore_fluid_fermented>,
 ] as ILiquidStack[];
 
 for i in fluid {

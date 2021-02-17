@@ -75,7 +75,7 @@ for i in tool {
 //remove silicon
 furnace.remove(<appliedenergistics2:material:5>);
 
-//remove bio 
+//remove bio
 JEI.removeAndHide(<appliedenergistics2:biometric_card>);
 
 //lazy AE2

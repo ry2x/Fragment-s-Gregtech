@@ -19,7 +19,7 @@ for item in metals {
     JEI.removeAndHide(item);
 }
 
-//remove furnace silicons 
+//remove furnace silicons
 val silicons = [
     <projectred-core:resource_item:103>,
     <projectred-core:resource_item:104>,

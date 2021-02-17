@@ -4,7 +4,7 @@ import crafttweaker.item.IItemStack;
 //import JEI function
 import mods.jei.JEI;
 
-//import Forestry Carpenter function 
+//import Forestry Carpenter function
 import mods.forestry.Carpenter.removeRecipe;
 
 //remove recipes of <forestry:crafting_material:3>
@@ -36,10 +36,10 @@ JEI.hide(<forestry:carton>);
 //remove Paneling
 JEI.removeAndHide(<forestry:crafting_material:7>);
 
-//remove silk 
+//remove silk
 JEI.removeAndHide(<forestry:crafting_material:2>);
 
-//bronze pickaxe and shovel 
+//bronze pickaxe and shovel
 JEI.hide(<forestry:broken_bronze_pickaxe>);
 JEI.hide(<forestry:broken_bronze_shovel>);
 JEI.removeAndHide(<forestry:bronze_pickaxe>);
@@ -224,7 +224,7 @@ for item in backpacks {
     JEI.removeAndHide(item);
 }
 
-//remove backpacks that carpenter crafting 
+//remove backpacks that carpenter crafting
 val backpacks2 = [
     <forestry:miner_bag_t2>,
     <forestry:digger_bag_t2>,

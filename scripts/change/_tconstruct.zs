@@ -12,7 +12,7 @@ val arc = RecipeMap.getByName("arc_furnace");
 recipes.remove(<tconstruct:wooden_hopper>);
 recipes.addShaped(<tconstruct:wooden_hopper>, [
     [<ore:plankWood>, craftingToolWrench, <ore:plankWood>],
-    [<ore:plankWood>, <ore:chest>, <ore:plankWood>], 
+    [<ore:plankWood>, <ore:chest>, <ore:plankWood>],
     [null, <ore:plankWood>, null]
 ]);
 
@@ -25,7 +25,7 @@ arc.recipeBuilder()
 	.EUt(24)
 	.buildAndRegister();
 
-//manyullyn in blast furnace 	
+//manyullyn in blast furnace
 blast_furnace.recipeBuilder()
     .inputs(<ore:ingotArdite>,<ore:ingotCobalt>)
     .fluidInputs([<liquid:oxygen>*576])

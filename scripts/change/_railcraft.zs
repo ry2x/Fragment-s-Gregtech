@@ -10,11 +10,11 @@ import mods.gregtech.recipe.RecipeMap;
 val assembler = RecipeMap.getByName("assembler");
 val circuit_assembler = RecipeMap.getByName("circuit_assembler");
 
-//change recipe 
+//change recipe
 
 JEI.removeAndHide(<railcraft:tool_spike_maul_iron>);
 
-val circuit =[ 
+val circuit =[
     <railcraft:circuit:1>,
     <railcraft:circuit:2>,
     <railcraft:circuit:3>,
@@ -82,7 +82,7 @@ recipes.addShaped(<railcraft:tool_signal_tuner>,[
     [<ore:stone>,null,<ore:stone>],
 ]);
 
-//change recipe of steel armor 
+//change recipe of steel armor
 val arm = [
     <railcraft:armor_helmet_steel>,
     <railcraft:armor_chestplate_steel>,

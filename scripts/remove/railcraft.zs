@@ -4,7 +4,7 @@ import crafttweaker.item.IItemStack;
 //import JEI function
 import mods.jei.JEI;
 
-//import Forestry Carpenter function 
+//import Forestry Carpenter function
 import mods.forestry.Carpenter.removeRecipe;
 
 val noNeed = [
