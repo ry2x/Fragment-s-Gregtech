@@ -106,6 +106,7 @@ recipes.replaceAllOccurences(<enderio:item_material:15>,<overloaded:energy_core>
 
 //fix monitor recipes
 recipes.replaceAllOccurences(<enderio:item_alloy_ingot>,<ore:ingotIronMagnetic>,<enderio:block_power_monitor>);
+recipes.replaceAllOccurences(<enderio:item_material:1>,<ore:MVcasing>,<enderio:block_power_monitor>);
 
 //fix gauge recipes
 recipes.replaceAllOccurences(<enderio:item_alloy_ingot>,<ore:ingotIronMagnetic>,<enderio:block_gauge>);
