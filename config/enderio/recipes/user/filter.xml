@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<enderio:recipes xmlns:enderio="http://enderio.com/recipes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://enderio.com/recipes recipes.xsd ">
+    <recipe name="Filter, Basic" required="true">
+        <crafting>
+            <grid>
+                <item name="oredict:ingotIron" />
+                <item name="oredict:paperBlack" />
+                <item name="oredict:ingotIron" />
+
+                <item name="oredict:ingotIron" />
+                <item name="oredict:blockHopper" />
+                <item name="oredict:ingotIron" />
+
+                <item name="oredict:ingotIron" />
+                <item name="oredict:paperBlack" />
+                <item name="oredict:ingotIron" />
+            </grid>
+            <output name="enderio:item_basic_item_filter" />
+        </crafting>
+    </recipe>
+
+    <recipe name="Filter, Enchantment" required="true">
+        <crafting>
+            <shapeless>
+                <item name="enderio:item_basic_item_filter" />
+                <item name="minecraft:enchanted_book" />
+            </shapeless>
+            <output name="enderio:item_enchantment_filter_normal" />
+        </crafting>
+    </recipe>
+
+    <recipe name="Filter, Advanced" required="true">
+        <crafting>
+            <grid>
+                <item name="oredict:dustRedstone" />
+                <item name="oredict:circuitBasic" />
+                <item name="oredict:dustRedstone" />
+
+                <item name="oredict:paperBlack" />
+                <item name="enderio:item_basic_item_filter" />
+                <item name="oredict:paperBlack" />
+
+                <item name="oredict:dustRedstone" />
+                <item name="oredict:circuitBasic" />
+                <item name="oredict:dustRedstone" />
+            </grid>
+            <output name="enderio:item_advanced_item_filter" />
+        </crafting>
+    </recipe>
+
+    <recipe name="Filter, Counting" required="true">
+        <crafting>
+            <grid size="3x1">
+                <item name="projectred-integration:gate:26" />
+                <item name="enderio:item_advanced_item_filter" />
+                <item name="projectred-integration:gate:26" />
+            </grid>
+            <output name="enderio:item_limited_item_filter" />
+        </crafting>
+    </recipe>
+
+    <recipe name="Filter, Mod" required="true">
+        <crafting>
+            <grid>
+                <item name="oredict:ingotIron" />
+                <item name="oredict:paperBlack" />
+                <item name="oredict:ingotIron" />
+
+                <item name="oredict:paperBlack" />
+                <item name="enderio:item_yeta_wrench" />
+                <item name="oredict:paperBlack" />
+
+                <item name="oredict:ingotIron" />
+                <item name="oredict:paperBlack" />
+                <item name="oredict:ingotIron" />
+            </grid>
+            <output name="enderio:item_mod_item_filter" />
+        </crafting>
+    </recipe>
+
+    <recipe name="Filter, Existing" required="true">
+        <crafting>
+            <grid>
+                <item />
+                <item name="dustRedstone" />
+                <item />
+
+                <item name="dustRedstone" />
+                <item name="enderio:item_advanced_item_filter" />
+                <item name="dustRedstone" />
+
+                <item />
+                <item name="projectred-integration:gate:26" />
+                <item />
+            </grid>
+            <output name="enderio:item_existing_item_filter" />
+        </crafting>
+    </recipe>
+
+    <recipe name="Filter, Power" required="true">
+        <crafting>
+            <grid>
+                <item name="oredict:ingotIron" />
+                <item name="oredict:paperBlack" />
+                <item name="oredict:ingotIron" />
+
+                <item name="oredict:paperBlack" />
+                <item name="CONDUIT_PROBE" />
+                <item name="oredict:paperBlack" />
+
+                <item name="oredict:ingotIron" />
+                <item name="oredict:paperBlack" />
+                <item name="oredict:ingotIron" />
+            </grid>
+            <output name="enderio:item_power_item_filter" />
+        </crafting>
+    </recipe>
+
+    <recipe name="Filter, Big" required="true">
+        <crafting>
+            <grid>
+                <item name="enderio:item_basic_item_filter" />
+                <item name="oredict:ingotIron" />
+                <item name="enderio:item_basic_item_filter" />
+
+                <item name="oredict:ingotCobalt" />
+                <item name="oredict:paperBlack" />
+                <item name="oredict:ingotCobalt" />
+
+                <item name="enderio:item_basic_item_filter" />
+                <item name="oredict:ingotIron" />
+                <item name="enderio:item_basic_item_filter" />
+            </grid>
+            <output name="enderio:item_big_item_filter" amount="2" />
+        </crafting>
+    </recipe>
+
+    <recipe name="Filter, Enchantment, Big" required="true">
+        <crafting>
+            <shapeless>
+                <item name="enderio:item_big_item_filter" />
+                <item name="minecraft:enchanted_book" />
+            </shapeless>
+            <output name="enderio:item_enchantment_filter_big" />
+        </crafting>
+    </recipe>
+
+    <recipe name="Filter, Big Advanced" required="true">
+        <crafting>
+            <grid>
+                <item name="enderio:item_advanced_item_filter" />
+                <item name="oredict:ingotIron" />
+                <item name="enderio:item_advanced_item_filter" />
+
+                <item name="oredict:paperBlack" />
+                <item name="minecraft:shulker_shell" />
+                <item name="oredict:paperBlack" />
+
+                <item name="enderio:item_advanced_item_filter" />
+                <item name="oredict:ingotIron" />
+                <item name="enderio:item_advanced_item_filter" />
+            </grid>
+            <output name="enderio:item_big_advanced_item_filter" />
+        </crafting>
+    </recipe>
+
+    <recipe name="Filter, Fluid" required="true">
+        <crafting>
+            <grid>
+                <item name="oredict:ingotIron" />
+                <item name="oredict:paperBlack" />
+                <item name="oredict:ingotIron" />
+
+                <item name="oredict:paperBlack" />
+                <item name="enderio:item_liquid_conduit" />
+                <item name="oredict:paperBlack" />
+
+                <item name="oredict:ingotIron" />
+                <item name="oredict:paperBlack" />
+                <item name="oredict:ingotIron" />
+            </grid>
+            <output name="enderio:item_fluid_filter" />
+        </crafting>
+    </recipe>
+
+    <recipe name="Filter, Redstone Base" required="true">
+        <crafting>
+            <grid>
+                <item name="oredict:ingotRedAlloy" />
+                <item name="oredict:paperBlack" />
+                <item name="oredict:ingotIron" />
+
+                <item name="oredict:ingotRedAlloy" />
+                <item name="oredict:ingotIron" />
+                <item name="oredict:ingotIron" />
+
+                <item name="oredict:ingotRedAlloy" />
+                <item name="oredict:paperBlack" />
+                <item name="oredict:ingotIron" />
+            </grid>
+            <output name="REDSTONE_FILTER_BASE" />
+        </crafting>
+    </recipe>
+
+    <recipe name="Filter, Redstone NOT" required="true">
+        <crafting>
+            <grid size="3x1">
+                <item name="minecraft:redstone_torch" />
+                <item name="REDSTONE_FILTER_BASE" />
+                <item name="oredict:ingotRedAlloy" />
+            </grid>
+            <output name="enderio:item_redstone_not_filter" />
+        </crafting>
+    </recipe>
+    <recipe name="Filter, Redstone OR" required="true">
+        <crafting>
+            <grid size="1x3">
+                <item name="oredict:ingotRedAlloy" />
+                <item name="REDSTONE_FILTER_BASE" />
+                <item name="oredict:ingotRedAlloy" />
+            </grid>
+            <output name="REDSTONE_FILTER_OR" />
+        </crafting>
+    </recipe>
+
+    <recipe name="Filter, Redstone AND" required="true">
+        <crafting>
+            <grid size="1x3">
+                <item name="minecraft:redstone_torch" />
+                <item name="REDSTONE_FILTER_BASE" />
+                <item name="minecraft:redstone_torch" />
+            </grid>
+            <output name="REDSTONE_FILTER_AND" />
+        </crafting>
+    </recipe>
+
+    <recipe name="Filter, Redstone XOR" required="true">
+        <crafting>
+            <grid>
+                <item />
+                <item name="minecraft:redstone_torch" />
+                <item />
+
+                <item name="oredict:ingotRedAlloy" />
+                <item name="REDSTONE_FILTER_BASE" />
+                <item name="oredict:ingotRedAlloy" />
+
+                <item />
+                <item name="minecraft:redstone_torch" />
+                <item />
+            </grid>
+            <output name="REDSTONE_FILTER_XOR" />
+        </crafting>
+    </recipe>
+
+    <recipe name="Filter, Redstone NAND" required="true">
+        <crafting>
+            <shapeless>
+                <item name="minecraft:redstone_torch" />
+                <item name="REDSTONE_FILTER_AND" />
+            </shapeless>
+            <output name="REDSTONE_FILTER_NAND" />
+        </crafting>
+    </recipe>
+
+    <recipe name="Filter, Redstone NAND Uncraft" required="true">
+        <crafting>
+            <shapeless>
+                <item name="minecraft:redstone_torch" />
+                <item name="REDSTONE_FILTER_NAND" />
+            </shapeless>
+            <output name="REDSTONE_FILTER_AND" />
+        </crafting>
+    </recipe>
+
+    <recipe name="Filter, Redstone NOR" required="true">
+        <crafting>
+            <shapeless>
+                <item name="minecraft:redstone_torch" />
+                <item name="REDSTONE_FILTER_OR" />
+            </shapeless>
+            <output name="REDSTONE_FILTER_NOR" />
+        </crafting>
+    </recipe>
+
+    <recipe name="Filter, Redstone NOR Uncraft" required="true">
+        <crafting>
+            <shapeless>
+                <item name="minecraft:redstone_torch" />
+                <item name="REDSTONE_FILTER_NOR" />
+            </shapeless>
+            <output name="REDSTONE_FILTER_OR" />
+        </crafting>
+    </recipe>
+
+    <recipe name="Filter, Redstone XNOR" required="true">
+        <crafting>
+            <shapeless>
+                <item name="minecraft:redstone_torch" />
+                <item name="REDSTONE_FILTER_XOR" />
+            </shapeless>
+            <output name="REDSTONE_FILTER_XNOR" />
+        </crafting>
+    </recipe>
+
+    <recipe name="Filter, Redstone XNOR Uncraft" required="true">
+        <crafting>
+            <shapeless>
+                <item name="minecraft:redstone_torch" />
+                <item name="REDSTONE_FILTER_XNOR" />
+            </shapeless>
+            <output name="REDSTONE_FILTER_XOR" />
+        </crafting>
+    </recipe>
+
+    <recipe name="Filter, Redstone Toggle Latch" required="true">
+        <crafting>
+            <grid size="3x1">
+                <item name="minecraft:lever" />
+                <item name="REDSTONE_FILTER_BASE" />
+                <item name="oredict:ingotRedAlloy" />
+            </grid>
+            <output name="enderio:item_redstone_toggle_filter" />
+        </crafting>
+    </recipe>
+
+    <recipe name="Filter, Redstone Scanner" required="true">
+        <crafting>
+            <grid size="3x1">
+                <item name="minecraft:comparator" />
+                <item name="REDSTONE_FILTER_BASE" />
+                <item name="oredict:ingotRedAlloy" />
+            </grid>
+            <output name="enderio:item_redstone_sensor_filter" />
+        </crafting>
+    </recipe>
+
+    <recipe name="Filter, Redstone Timer" required="true">
+        <crafting>
+            <grid size="3x1">
+                <item name="oredict:ingotRedAlloy" />
+                <item name="REDSTONE_FILTER_BASE" />
+                <item name="minecraft:clock" />
+            </grid>
+            <output name="enderio:item_redstone_timer_filter" />
+        </crafting>
+    </recipe>
+
+    <recipe name="Filter, Redstone Counting" required="true">
+        <crafting>
+            <grid>
+                <item name="oredict:ingotRedAlloy" />
+                <item />
+                <item />
+
+                <item name="oredict:ingotRedAlloy" />
+                <item name="REDSTONE_FILTER_BASE" />
+                <item name="oredict:ingotRedAlloy" />
+
+                <item name="oredict:ingotRedAlloy" />
+                <item />
+                <item />
+            </grid>
+            <output name="enderio:item_redstone_counting_filter" />
+        </crafting>
+    </recipe>
+</enderio:recipes>

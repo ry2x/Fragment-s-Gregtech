@@ -1,29 +1,116 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <enderio:recipes xmlns:enderio="http://enderio.com/recipes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://enderio.com/recipes recipes.xsd ">
-    <recipe name="Tweak: Stick from Wood">
-        <disabled></disabled>
-    </recipe>
-
-    <recipe name="Tweak: Chest from Wood">
-        <disabled></disabled>
-    </recipe>
-
-    <recipe name="Tweak: Wood Hopper">
-        <disabled></disabled>
-    </recipe>
-
-    <recipe name="Self-Resetting Lever, 300 seconds, inverted" required="true">
+    <recipe name="Black Paper" required="true">
         <crafting>
-            <shapeless>
-                <item name="minecraft:lever" />
-                <item name="dustRedstone" />
-                <item name="dustRedstone" />
-                <item name="dustRedstone" />
-                <item name="dustRedstone" />
-                <item name="dustRedstone" />
-                <item name="minecraft:redstone_torch" />
-            </shapeless>
-            <output name="enderio:block_self_resetting_lever300i" />
+            <grid>
+                <item name="oredict:paper" />
+                <item name="oredict:paper" />
+                <item name="oredict:paper" />
+
+                <item name="oredict:paper" />
+                <item name="oredict:dyeBlack" />
+                <item name="oredict:paper" />
+
+                <item name="oredict:paper" />
+                <item name="oredict:paper" />
+                <item name="oredict:paper" />
+            </grid>
+            <output name="paperBlack" amount="8" />
+        </crafting>
+    </recipe>
+
+    <recipe name="Yeta Wrench" required="true">
+        <crafting>
+            <grid>
+                <item name="oredict:plateIron" />
+                <item />
+                <item name="oredict:plateIron" />
+
+                <item name="oredict:plateIron" />
+                <item name="oredict:gearIron" />
+                <item name="oredict:plateIron" />
+
+                <item />
+                <item name="oredict:plateIron" />
+                <item />
+            </grid>
+            <output name="enderio:item_yeta_wrench" />
+        </crafting>
+    </recipe>
+
+    <recipe name="Capacitor 1" required="true">
+        <crafting>
+            <grid>
+                <item />
+                <item name="oredict:stone" />
+                <item />
+
+                <item name="oredict:stone" />
+                <item name="gregtech:meta_item_2:32447" />
+                <item name="oredict:stone" />
+
+                <item name="oredict:stickCopper" />
+                <item name="oredict:LVbattery" />
+                <item name="oredict:stickCopper" />
+            </grid>
+            <output name="enderio:item_basic_capacitor:0" />
+        </crafting>
+    </recipe>
+
+    <recipe name="Capacitor 2" required="true">
+        <crafting>
+            <grid>
+                <item />
+                <item name="oredict:stone" />
+                <item />
+
+                <item name="oredict:stone" />
+                <item name="gregtech:meta_item_2:32447" />
+                <item name="oredict:stone" />
+
+                <item name="oredict:stickSilver" />
+                <item name="oredict:MVbattery" />
+                <item name="oredict:stickSilver" />
+            </grid>
+            <output name="enderio:item_basic_capacitor:1" />
+        </crafting>
+    </recipe>
+
+    <recipe name="Capacitor 3" required="true">
+        <crafting>
+            <grid>
+                <item />
+                <item name="oredict:stone" />
+                <item />
+
+                <item name="oredict:stone" />
+                <item name="gregtech:meta_item_2:32447" />
+                <item name="oredict:stone" />
+
+                <item name="oredict:stickCopper" />
+                <item name="oredict:HVbattery" />
+                <item name="oredict:stickCopper" />
+            </grid>
+            <output name="enderio:item_basic_capacitor:2" />
+        </crafting>
+    </recipe>
+
+    <recipe name="Conduit Probe" required="true">
+        <crafting>
+            <grid>
+                <item name="oredict:ingotIron" />
+                <item />
+                <item name="oredict:ingotIron" />
+
+                <item name="oredict:ingotIron" />
+                <item name="enderio:item_yeta_wrench" />
+                <item name="oredict:ingotIron" />
+
+                <item name="oredict:ingotIron" />
+                <item name="oredict:circuitBasic" />
+                <item name="oredict:ingotIron" />
+            </grid>
+            <output name="CONDUIT_PROBE" />
         </crafting>
     </recipe>
 </enderio:recipes>

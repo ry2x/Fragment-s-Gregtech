@@ -20,43 +20,9 @@ recipes.replaceAllOccurences(<enderio:item_alloy_ingot:3>,<ore:ingotRedAlloy>,<*
 */
 //recipes.removeByRecipeName("crafttweaker:enderio-auto_redstone_alloy_1_ingot_to_9_nuggets-modified");
 
-//change redstone base filter
-recipes.remove(<enderio:item_material:60>);
-recipes.addShaped(<enderio:item_material:60>,[
-    [<ore:ingotRedAlloy>,<ore:paperBlack>,<ore:ingotIron>],
-    [<ore:ingotRedAlloy>,<ore:ingotIron>,<ore:ingotIron>],
-    [<ore:ingotRedAlloy>,<ore:paperBlack>,<ore:ingotIron>]
-]);
-
-//change Yeta wrench
-recipes.remove(<enderio:item_yeta_wrench>);
-recipes.addShaped(<enderio:item_yeta_wrench>,[
-    [<ore:plateIron>,null,<ore:plateIron>],
-    [<ore:plateIron>,<ore:gearIron>,<ore:plateIron>],
-    [null,<ore:plateIron>,null]
-]);
-
 //change capacitor
-recipes.remove(<enderio:item_basic_capacitor>);
-recipes.addShaped(<enderio:item_basic_capacitor>,[
-    [null,<ore:stone>,null],
-    [<ore:stone>,<gregtech:meta_item_2:32447>,<ore:stone>],
-    [<ore:stickCopper>,<ore:LVbattery>,<ore:stickCopper>]
-]);
 <enderio:item_basic_capacitor>.displayName = "LV Capacitor";
-recipes.remove(<enderio:item_basic_capacitor:1>);
-recipes.addShaped(<enderio:item_basic_capacitor:1>,[
-    [null,<ore:stone>,null],
-    [<ore:stone>,<gregtech:meta_item_2:32447>,<ore:stone>],
-    [<ore:stickSilver>,<ore:MVbattery>,<ore:stickSilver>]
-]);
 <enderio:item_basic_capacitor:1>.displayName = "MV Capacitor";
-recipes.remove(<enderio:item_basic_capacitor:2>);
-recipes.addShaped(<enderio:item_basic_capacitor:2>,[
-    [null,<ore:stone>,null],
-    [<ore:stone>,<gregtech:meta_item_2:32447>,<ore:stone>],
-    [<ore:stickCopper>,<ore:HVbattery>,<ore:stickCopper>]
-]);
 <enderio:item_basic_capacitor:2>.displayName = "HV Capacitor";
 
 //change name
@@ -64,22 +30,6 @@ recipes.addShaped(<enderio:item_basic_capacitor:2>,[
 
 //add furnace recipe for conduit binder
 furnace.addRecipe(<enderio:item_material:4>*9,<railcraft:reinforced_concrete:*>,2);
-
-//change conduit prove
-recipes.remove(<enderio:item_conduit_probe>);
-recipes.addShaped(<enderio:item_conduit_probe>,[
-    [<ore:ingotIron>,null,<ore:ingotIron>],
-    [<ore:ingotIron>,<enderio:item_yeta_wrench>,<ore:ingotIron>],
-    [<ore:ingotIron>,<ore:circuitBasic>,<ore:ingotIron>]
-]);
-
-//change (buff) the black paper recipes
-recipes.remove(<enderio:item_material:77>);
-recipes.addShaped(<enderio:item_material:77>*8,[
-    [<ore:paper>,<ore:paper>,<ore:paper>],
-    [<ore:paper>,<ore:dyeBlack>,<ore:paper>],
-    [<ore:paper>,<ore:paper>,<ore:paper>]
-]);
 
 //fix item conduit recipes
 recipes.replaceAllOccurences(<enderio:item_alloy_nugget:5>,<ore:nuggetSolderingAlloy>,<enderio:item_item_conduit>);
@@ -118,52 +68,6 @@ recipes.replaceAllOccurences(<enderio:item_material:75>,<ore:ingotNeutronium>,<e
 <enderio:item_endergy_conduit:9>.displayName = "Stainless Steel Energy Conduit";
 <enderio:item_endergy_conduit:10>.displayName = "Rhodium Energy Conduit";
 <enderio:item_endergy_conduit:11>.displayName = "Neutronium Energy Conduit";
-
-//change recipe of filter
-recipes.remove(<enderio:item_basic_item_filter>);
-recipes.addShaped(<enderio:item_basic_item_filter>,[
-    [<ore:ingotIron>,<ore:paperBlack>,<ore:ingotIron>],
-    [<ore:ingotIron>,<minecraft:hopper>,<ore:ingotIron>],
-    [<ore:ingotIron>,<ore:paperBlack>,<ore:ingotIron>]
-]);
-recipes.remove(<enderio:item_advanced_item_filter>);
-recipes.addShaped(<enderio:item_advanced_item_filter>,[
-    [<ore:dustRedstone>,<ore:circuitBasic>,<ore:dustRedstone>],
-    [<ore:paperBlack>,<enderio:item_basic_item_filter>,<ore:paperBlack>],
-    [<ore:dustRedstone>,<ore:circuitBasic>,<ore:dustRedstone>]
-]);
-recipes.replaceAllOccurences(<minecraft:comparator>,<projectred-integration:gate:26>,<enderio:item_limited_item_filter>);
-recipes.remove(<enderio:item_big_item_filter>*2);
-recipes.addShaped(<enderio:item_big_item_filter>,[
-    [<enderio:item_basic_item_filter>,<ore:ingotIron>,<enderio:item_basic_item_filter>],
-    [<ore:ingotCobalt>,<ore:paperBlack>,<ore:ingotCobalt>],
-    [<enderio:item_basic_item_filter>,<ore:ingotIron>,<enderio:item_basic_item_filter>]
-]);
-recipes.remove(<enderio:item_big_advanced_item_filter>);
-recipes.addShaped(<enderio:item_big_advanced_item_filter>,[
-    [<enderio:item_advanced_item_filter>,<ore:ingotIron>,<enderio:item_advanced_item_filter>],
-    [<ore:paperBlack>,<minecraft:shulker_shell>,<ore:paperBlack>],
-    [<enderio:item_advanced_item_filter>,<ore:ingotIron>,<enderio:item_advanced_item_filter>]
-]);
-recipes.replaceAllOccurences(<minecraft:comparator>,<projectred-integration:gate:26>,<enderio:item_existing_item_filter>);
-recipes.remove(<enderio:item_mod_item_filter>);
-recipes.addShaped(<enderio:item_mod_item_filter>,[
-    [<ore:ingotIron>,<ore:paperBlack>,<ore:ingotIron>],
-    [<ore:paperBlack>,<enderio:item_yeta_wrench>,<ore:paperBlack>],
-    [<ore:ingotIron>,<ore:paperBlack>,<ore:ingotIron>]
-]);
-recipes.remove(<enderio:item_power_item_filter>);
-recipes.addShaped(<enderio:item_power_item_filter>,[
-    [<ore:ingotIron>,<ore:paperBlack>,<ore:ingotIron>],
-    [<ore:paperBlack>,<enderio:item_conduit_probe>,<ore:paperBlack>],
-    [<ore:ingotIron>,<ore:paperBlack>,<ore:ingotIron>]
-]);
-recipes.remove(<enderio:item_fluid_filter>);
-recipes.addShaped(<enderio:item_fluid_filter>,[
-    [<ore:ingotIron>,<ore:paperBlack>,<ore:ingotIron>],
-    [<ore:paperBlack>,<enderio:item_liquid_conduit>,<ore:paperBlack>],
-    [<ore:ingotIron>,<ore:paperBlack>,<ore:ingotIron>]
-]);
 
 //fix stellar fluid conduits
 recipes.replaceAllOccurences(<enderio:item_alloy_endergy_ingot:3>,<gregtech:meta_item_1:10074>,<enderio:item_fluid_conduit>);
