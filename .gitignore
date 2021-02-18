@@ -16,7 +16,7 @@ scripts/change/temp
 
 #Generated Files
 .xsd
-.pdf
+*.pdf
 config/enderio/recipes/examples/
 
 #For development
