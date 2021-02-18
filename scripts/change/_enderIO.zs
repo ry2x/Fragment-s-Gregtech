@@ -9,24 +9,33 @@ import mods.gregtech.recipe.RecipeMap;
 
 val alloy = RecipeMap.getByName("alloy_smelter");
 
-//change name of <enderio:block_holy_fused_glass>
+//Add recipe to alloy fused glass
+alloy.recipeBuilder()
+    .inputs([<ore:blockGlassHardened>*8,<ore:gemFlawedNetherQuartz>*5])
+    .outputs([<enderio:block_holy_fused_glass>*8])
+    .duration(400)
+    .EUt(48)
+    .buildAndRegister();
+
+//Display Name
 <enderio:block_holy_fused_glass>.displayName = "Fuzed Glass";
+<enderio:item_basic_capacitor>.displayName = "LV Capacitor";
+<enderio:item_basic_capacitor:1>.displayName = "MV Capacitor";
+<enderio:item_basic_capacitor:2>.displayName = "HV Capacitor";
+<enderio:item_material:22>.displayName = "Conduit Binder Dust";
+<enderio:item_endergy_conduit:9>.displayName = "Stainless Steel Energy Conduit";
+<enderio:item_endergy_conduit:10>.displayName = "Rhodium Energy Conduit";
+<enderio:item_endergy_conduit:11>.displayName = "Neutronium Energy Conduit";
+<enderio:item_fluid_conduit>.displayName = "Super Fluid Conduit";
 
 //fix all redstone alloy to red alloy
 recipes.replaceAllOccurences(<enderio:item_alloy_ingot:3>,<ore:ingotRedAlloy>,<*>);
+
 /*
 *This is not good for crafttweaker. It shows us yellow warning message.
 *So, I don't remove this. (this is invisible for player bc redstone alloy is gone).
 */
 //recipes.removeByRecipeName("crafttweaker:enderio-auto_redstone_alloy_1_ingot_to_9_nuggets-modified");
-
-//change capacitor
-<enderio:item_basic_capacitor>.displayName = "LV Capacitor";
-<enderio:item_basic_capacitor:1>.displayName = "MV Capacitor";
-<enderio:item_basic_capacitor:2>.displayName = "HV Capacitor";
-
-//change name
-<enderio:item_material:22>.displayName = "Conduit Binder Dust";
 
 //fix flux capacitor recipes
 recipes.replaceAllOccurences(<enderio:item_alloy_ingot:1>,<ore:ingotSilver>,<enderio:block_cap_bank:2>);
@@ -44,25 +53,5 @@ recipes.replaceAllOccurences(<enderio:item_alloy_ingot>,<ore:ingotIronMagnetic>,
 //fix gauge recipes
 recipes.replaceAllOccurences(<enderio:item_alloy_ingot>,<ore:ingotIronMagnetic>,<enderio:block_gauge>);
 
-//Display Name
-<enderio:item_endergy_conduit:9>.displayName = "Stainless Steel Energy Conduit";
-<enderio:item_endergy_conduit:10>.displayName = "Rhodium Energy Conduit";
-<enderio:item_endergy_conduit:11>.displayName = "Neutronium Energy Conduit";
-<enderio:item_fluid_conduit>.displayName = "Super Fluid Conduit";
-
 //fix forestry bee filter
 recipes.replaceAllOccurences(<forestry:propolis>,<forestry:chipsets>,<enderio:item_species_item_filter>);
-
-//change recipe of fuzed glass
-recipes.remove(<enderio:block_holy_fused_glass>);
-alloy.recipeBuilder()
-    .inputs([<ore:blockGlassHardened>*8,<ore:gemFlawedNetherQuartz>*5])
-    .outputs([<enderio:block_holy_fused_glass>*8])
-    .duration(400)
-    .EUt(48)
-    .buildAndRegister();
-recipes.addShaped(<enderio:block_holy_fused_glass>*8,[
-    [<enderio:block_holy_fused_glass:*>,<enderio:block_holy_fused_glass:*>,<enderio:block_holy_fused_glass:*>],
-    [<ore:dyeWhite>,<enderio:block_holy_fused_glass:*>,<enderio:block_holy_fused_glass:*>],
-    [<enderio:block_holy_fused_glass:*>,<enderio:block_holy_fused_glass:*>,<enderio:block_holy_fused_glass:*>]
-]);
