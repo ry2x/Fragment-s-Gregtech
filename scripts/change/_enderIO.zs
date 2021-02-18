@@ -28,9 +28,6 @@ recipes.replaceAllOccurences(<enderio:item_alloy_ingot:3>,<ore:ingotRedAlloy>,<*
 //change name
 <enderio:item_material:22>.displayName = "Conduit Binder Dust";
 
-//add furnace recipe for conduit binder
-furnace.addRecipe(<enderio:item_material:4>*9,<railcraft:reinforced_concrete:*>,2);
-
 //fix flux capacitor recipes
 recipes.replaceAllOccurences(<enderio:item_alloy_ingot:1>,<ore:ingotSilver>,<enderio:block_cap_bank:2>);
 recipes.replaceAllOccurences(<enderio:item_alloy_ingot>,<ore:ingotCopper>,<enderio:block_cap_bank:2>);
