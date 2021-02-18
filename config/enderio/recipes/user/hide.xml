@@ -12,8 +12,6 @@
 
             <!-- Energy Conduit -->
             <item name="enderio:item_endergy_conduit:*,
-            -enderio:item_endergy_conduit:0,
-            -enderio:item_endergy_conduit:1,
             -enderio:item_endergy_conduit:9,
             -enderio:item_endergy_conduit:10,
             -enderio:item_endergy_conduit:11" hide="true" />

@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<enderio:recipes xmlns:enderio="http://enderio.com/recipes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://enderio.com/recipes recipes.xsd ">
+    <recipe name="Conduit, Liquid, Basic" required="true">
+        <crafting>
+            <grid>
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+
+                <item name="oredict:blockGlassHardened" />
+                <item name="oredict:blockGlassHardened" />
+                <item name="oredict:blockGlassHardened" />
+
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+            </grid>
+            <output name="enderio:item_liquid_conduit:0" amount="8"></output>
+        </crafting>
+    </recipe>
+
+    <recipe name="Conduit, Liquid, Advanced" required="true">
+        <crafting>
+            <grid>
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+
+                <item name="oredict:fusedGlass" />
+                <item name="oredict:fusedGlass" />
+                <item name="oredict:fusedGlass" />
+
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+            </grid>
+            <output name="enderio:item_liquid_conduit:1" amount="8"></output>
+        </crafting>
+    </recipe>
+
+    <recipe name="Conduit, Liquid, Advanced (upgrade)" required="true">
+        <crafting>
+            <grid>
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+
+                <item name="oredict:fusedGlass" />
+                <item name="enderio:item_liquid_conduit:0" />
+                <item name="oredict:fusedGlass" />
+
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+            </grid>
+            <output name="enderio:item_liquid_conduit:1" amount="8"></output>
+        </crafting>
+    </recipe>
+
+    <recipe name="Conduit, Liquid, Ender" required="true">
+        <crafting>
+            <grid>
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+
+                <item name="oredict:ingotEnderium" />
+                <item name="FUSED_QUARTZ" />
+                <item name="oredict:ingotEnderium" />
+
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+            </grid>
+            <output name="enderio:item_liquid_conduit:2" amount="8"></output>
+        </crafting>
+    </recipe>
+
+    <recipe name="Conduit, Liquid, Ender (upgrade)" required="true">
+        <crafting>
+            <grid>
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+
+                <item name="oredict:ingotEnderium" />
+                <item name="enderio:item_liquid_conduit:1" />
+                <item name="oredict:ingotEnderium" />
+
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+            </grid>
+            <output name="enderio:item_liquid_conduit:2" amount="8"></output>
+        </crafting>
+    </recipe>
+
+    <recipe name="Conduit, Endergy, Tier 1" required="true">
+        <crafting>
+            <grid>
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+
+                <item name="oredict:ingotCopper" />
+                <item name="oredict:ingotCopper" />
+                <item name="oredict:ingotCopper" />
+
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+            </grid>
+            <output name="enderio:item_power_conduit:0" amount="8"></output>
+        </crafting>
+    </recipe>
+
+    <recipe name="Conduit, Endergy, Tier 2" required="true">
+        <crafting>
+            <grid>
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+
+                <item name="oredict:ingotSilver" />
+                <item name="oredict:ingotSilver" />
+                <item name="oredict:ingotSilver" />
+
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+            </grid>
+            <output name="enderio:item_power_conduit:1" amount="8"></output>
+        </crafting>
+    </recipe>
+
+    <recipe name="Conduit, Endergy, Tier 2 (upgrade)" required="true">
+        <crafting>
+            <grid>
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+
+                <item name="oredict:ingotSilver" />
+                <item name="enderio:item_power_conduit:0" />
+                <item name="oredict:ingotSilver" />
+
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+            </grid>
+            <output name="enderio:item_power_conduit:1" amount="8"></output>
+        </crafting>
+    </recipe>
+
+    <recipe name="Conduit, Endergy, Tier 3" required="true">
+        <crafting>
+            <grid>
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+
+                <item name="oredict:ingotEnderium" />
+                <item name="oredict:ingotEnderium" />
+                <item name="oredict:ingotEnderium" />
+
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+            </grid>
+            <output name="enderio:item_power_conduit:2" amount="8"></output>
+        </crafting>
+    </recipe>
+
+    <recipe name="Conduit, Endergy, Tier 3 (upgrade)" required="true">
+        <crafting>
+            <grid>
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+
+                <item name="oredict:ingotEnderium" />
+                <item name="enderio:item_power_conduit:1" />
+                <item name="oredict:ingotEnderium" />
+
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+            </grid>
+            <output name="enderio:item_power_conduit:2" amount="8"></output>
+        </crafting>
+    </recipe>
+
+    <recipe name="Conduit, Redstone, Insulated" required="true">
+        <crafting>
+            <grid>
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+
+                <item name="oredict:ingotRedAlloy" />
+                <item name="oredict:ingotRedAlloy" />
+                <item name="oredict:ingotRedAlloy" />
+
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+            </grid>
+            <output name="enderio:item_redstone_conduit:0" amount="8"></output>
+        </crafting>
+    </recipe>
+
+    <recipe name="Conduit, Item" required="true">
+        <crafting>
+            <grid>
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+
+                <item name="oredict:nuggetSolderingAlloy" />
+                <item name="oredict:nuggetSolderingAlloy" />
+                <item name="oredict:nuggetSolderingAlloy" />
+
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+            </grid>
+            <output name="enderio:item_item_conduit:0" amount="8"></output>
+        </crafting>
+    </recipe>
+
+    <recipe name="Upgrade, Speed" required="true">
+        <crafting>
+            <grid>
+                <item name="oredict:ingotIron" />
+                <item name="oredict:ingotIron" />
+                <item name="oredict:ingotIron" />
+
+                <item name="oredict:ingotIridium" />
+                <item name="minecraft:piston" />
+                <item name="oredict:ingotIridium" />
+
+                <item name="oredict:ingotIridium" />
+                <item name="minecraft:redstone_torch" />
+                <item name="oredict:ingotIridium" />
+            </grid>
+            <output name="enderio:item_extract_speed_upgrade" />
+        </crafting>
+    </recipe>
+
+    <recipe name="Upgrade, Slowness" required="true">
+        <crafting>
+            <grid>
+                <item name="oredict:ingotIron" />
+                <item name="oredict:ingotIron" />
+                <item name="oredict:ingotIron" />
+
+                <item name="oredict:ingotIridium" />
+                <item name="slimeball" />
+                <item name="oredict:ingotIridium" />
+
+                <item name="oredict:ingotIridium" />
+                <item name="stickWood" />
+                <item name="oredict:ingotIridium" />
+            </grid>
+            <output name="enderio:item_extract_speed_downgrade" />
+        </crafting>
+    </recipe>
+
+    <recipe name="Conduit, Endergy, Crystalline Pink Slime" required="true">
+        <crafting>
+            <grid>
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+
+                <item name="oredict:ingotStainlessSteel" />
+                <item name="oredict:ingotStainlessSteel" />
+                <item name="oredict:ingotStainlessSteel" />
+
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+            </grid>
+            <output name="enderio:item_endergy_conduit:9" amount="8"></output>
+        </crafting>
+    </recipe>
+
+    <recipe name="Conduit, Endergy, Melodic" required="true">
+        <crafting>
+            <grid>
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+
+                <item name="oredict:ingotRhodium" />
+                <item name="oredict:ingotRhodium" />
+                <item name="oredict:ingotRhodium" />
+
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+            </grid>
+            <output name="enderio:item_endergy_conduit:10" amount="8"></output>
+        </crafting>
+    </recipe>
+
+    <recipe name="Conduit, Endergy, Stellar" required="true">
+        <crafting>
+            <grid>
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+
+                <item name="oredict:ingotNeutronium" />
+                <item name="oredict:ingotNeutronium" />
+                <item name="oredict:ingotNeutronium" />
+
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+            </grid>
+            <output name="enderio:item_endergy_conduit:11" amount="8"></output>
+        </crafting>
+    </recipe>
+
+    <recipe name="Conduit, Fluid">
+        <crafting>
+            <grid>
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+
+                <item name="oredict:ingotTungsten" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:ingotTungsten" />
+
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+            </grid>
+            <output name="enderio:item_fluid_conduit" amount="16"></output>
+        </crafting>
+    </recipe>
+
+    <recipe name="Conduit, Fluid (upgrade)">
+        <crafting>
+            <grid>
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+
+                <item name="oredict:ingotTungsten" />
+                <item name="enderio:item_liquid_conduit:2" />
+                <item name="oredict:ingotTungsten" />
+
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+            </grid>
+            <output name="enderio:item_fluid_conduit" amount="16"></output>
+        </crafting>
+    </recipe>
+
+    <recipe name="Conduit, M E, Conduit">
+        <crafting>
+            <grid>
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+
+                <item name="oredict:crystalFluix" />
+                <item name="appliedenergistics2:part:140" />
+                <item name="oredict:crystalFluix" />
+
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+            </grid>
+            <output name="enderio:item_me_conduit:0" amount="4"></output>
+        </crafting>
+    </recipe>
+
+    <recipe name="Conduit, M E, Conduit, ALT">
+        <crafting>
+            <grid>
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+
+                <item />
+                <item name="appliedenergistics2:part:0,
+                +appliedenergistics2:part:1,
+                +appliedenergistics2:part:2,
+                +appliedenergistics2:part:3,
+                +appliedenergistics2:part:4,
+                +appliedenergistics2:part:5,
+                +appliedenergistics2:part:6,
+                +appliedenergistics2:part:7,
+                +appliedenergistics2:part:8,
+                +appliedenergistics2:part:9,
+                +appliedenergistics2:part:10,
+                +appliedenergistics2:part:11,
+                +appliedenergistics2:part:12,
+                +appliedenergistics2:part:13,
+                +appliedenergistics2:part:14,
+                +appliedenergistics2:part:15,
+                +appliedenergistics2:part:16" />
+                <item />
+
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+                <item name="CONDUIT_BINDER" />
+            </grid>
+            <output name="enderio:item_me_conduit:0" amount="4"></output>
+        </crafting>
+    </recipe>
+</enderio:recipes>
