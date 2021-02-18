@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<enderio:recipes xmlns:enderio="http://enderio.com/recipes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://enderio.com/recipes recipes.xsd ">
+    <recipe name="Auto: Coloring holy_fused_glass with white" required="true">
+        <crafting>
+            <shapeless>
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:dyeWhite" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+            </shapeless>
+            <output name="enderio:block_holy_fused_glass:0" amount="8" />
+        </crafting>
+    </recipe>
+
+    <recipe name="Auto: Coloring holy_fused_glass with orange" required="true">
+        <crafting>
+            <shapeless>
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:dyeOrange" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+            </shapeless>
+            <output name="enderio:block_holy_fused_glass:1" amount="8" />
+        </crafting>
+    </recipe>
+
+    <recipe name="Auto: Coloring holy_fused_glass with magenta" required="true">
+        <crafting>
+            <shapeless>
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:dyeMagenta" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+            </shapeless>
+            <output name="enderio:block_holy_fused_glass:2" amount="8" />
+        </crafting>
+    </recipe>
+
+    <recipe name="Auto: Coloring holy_fused_glass with lightBlue" required="true">
+        <crafting>
+            <shapeless>
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:dyeLightBlue" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+            </shapeless>
+            <output name="enderio:block_holy_fused_glass:3" amount="8" />
+        </crafting>
+    </recipe>
+
+    <recipe name="Auto: Coloring holy_fused_glass with yellow" required="true">
+        <crafting>
+            <shapeless>
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:dyeYellow" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+            </shapeless>
+            <output name="enderio:block_holy_fused_glass:4" amount="8" />
+        </crafting>
+    </recipe>
+
+    <recipe name="Auto: Coloring holy_fused_glass with lime" required="true">
+        <crafting>
+            <shapeless>
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:dyeLime" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+            </shapeless>
+            <output name="enderio:block_holy_fused_glass:5" amount="8" />
+        </crafting>
+    </recipe>
+
+    <recipe name="Auto: Coloring holy_fused_glass with pink" required="true">
+        <crafting>
+            <shapeless>
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:dyePink" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+            </shapeless>
+            <output name="enderio:block_holy_fused_glass:6" amount="8" />
+        </crafting>
+    </recipe>
+
+    <recipe name="Auto: Coloring holy_fused_glass with gray" required="true">
+        <crafting>
+            <shapeless>
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:dyeGray" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+            </shapeless>
+            <output name="enderio:block_holy_fused_glass:7" amount="8" />
+        </crafting>
+    </recipe>
+
+    <recipe name="Auto: Coloring holy_fused_glass with silver" required="true">
+        <crafting>
+            <shapeless>
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:dyeLightGray" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+            </shapeless>
+            <output name="enderio:block_holy_fused_glass:8" amount="8" />
+        </crafting>
+    </recipe>
+
+    <recipe name="Auto: Coloring holy_fused_glass with cyan" required="true">
+        <crafting>
+            <shapeless>
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:dyeCyan" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+            </shapeless>
+            <output name="enderio:block_holy_fused_glass:9" amount="8" />
+        </crafting>
+    </recipe>
+
+    <recipe name="Auto: Coloring holy_fused_glass with purple" required="true">
+        <crafting>
+            <shapeless>
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:dyePurple" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+            </shapeless>
+            <output name="enderio:block_holy_fused_glass:10" amount="8" />
+        </crafting>
+    </recipe>
+
+    <recipe name="Auto: Coloring holy_fused_glass with blue" required="true">
+        <crafting>
+            <shapeless>
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:dyeBlue" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+            </shapeless>
+            <output name="enderio:block_holy_fused_glass:11" amount="8" />
+        </crafting>
+    </recipe>
+
+    <recipe name="Auto: Coloring holy_fused_glass with brown" required="true">
+        <crafting>
+            <shapeless>
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:dyeBrown" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+            </shapeless>
+            <output name="enderio:block_holy_fused_glass:12" amount="8" />
+        </crafting>
+    </recipe>
+
+    <recipe name="Auto: Coloring holy_fused_glass with green" required="true">
+        <crafting>
+            <shapeless>
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:dyeGreen" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+            </shapeless>
+            <output name="enderio:block_holy_fused_glass:13" amount="8" />
+        </crafting>
+    </recipe>
+
+    <recipe name="Auto: Coloring holy_fused_glass with red" required="true">
+        <crafting>
+            <shapeless>
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:dyeRed" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+            </shapeless>
+            <output name="enderio:block_holy_fused_glass:14" amount="8" />
+        </crafting>
+    </recipe>
+
+    <recipe name="Auto: Coloring holy_fused_glass with black" required="true">
+        <crafting>
+            <shapeless>
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:dyeBlack" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+                <item name="oredict:holyFusedGlass" />
+            </shapeless>
+            <output name="enderio:block_holy_fused_glass:15" amount="8" />
+        </crafting>
+    </recipe>
+</enderio:recipes>
