@@ -179,7 +179,7 @@ var ingotsDisabled as IItemStack[][IOreDictEntry] = {
         <forestry:ingot_bronze>,
         <thermalfoundation:material:163>
     ],
-    
+
     #ingotTin
     <ore:ingotTin>:[
         <forestry:ingot_tin>,
@@ -200,7 +200,7 @@ var ingotsDisabled as IItemStack[][IOreDictEntry] = {
 
     #ingotAluminum
     <ore:ingotAluminum>:[
-      <thermalfoundation:material:132>  
+      <thermalfoundation:material:132>
     ],
 
     #ingotNickel
@@ -235,7 +235,7 @@ var ingotsDisabled as IItemStack[][IOreDictEntry] = {
 
     #ingotCobalt
     <ore:ingotCobalt>:[
-       <tconstruct:ingots> 
+       <tconstruct:ingots>
     ],
 
     #ingotMithril
@@ -308,7 +308,7 @@ var nuggetsDisabled as IItemStack[][IOreDictEntry] = {
 
     #<ore:nuggetTin>
     <ore:nuggetTin>:[
-       <thermalfoundation:material:193> 
+       <thermalfoundation:material:193>
     ],
 
     #<ore:nuggetSilver>
@@ -539,7 +539,7 @@ var oresDisabled as IItemStack[][IOreDictEntry] = {
     <ore:oreRedstone>:[
         <minecraft:redstone_ore>
     ],
-    
+
 };
 
 for oreDictEntry, items in oresDisabled {
@@ -936,13 +936,13 @@ for oreDictEntry, items in dustsDisabled {
 	oreDictEntry.removeItems(items);
 }
 
-#greg's ender dust adds to <ore:dustEnder> 
+#greg's ender dust adds to <ore:dustEnder>
 <ore:dustEnder>.add(<gregtech:meta_item_1:2218>);
 
 //for gems
 
 var gemsDisabled as IItemStack[][IOreDictEntry] = {
-    
+
     #<ore:gemApatite>
     <ore:gemApatite>:[
         <forestry:apatite>
@@ -973,7 +973,7 @@ for oreDictEntry, items in gemsDisabled {
 }
 
 
-//add greg MV machine casing 
+//add greg MV machine casing
 <ore:MVcasing>.add(<gregtech:machine:502>);
 
 //battery oredict
@@ -984,7 +984,6 @@ for oreDictEntry, items in gemsDisabled {
 //replace silicon
 <ore:itemSilicon>.remove(<enderio:item_material:5>);
 <ore:itemSilicon>.add(<gregtech:meta_item_1:10061>);
-mods.jei.JEI.removeAndHide(<enderio:item_material:5>);
 
 //enderIO replace fuzed glass/quartz with holy fused glass
 <ore:fusedGlass>.add(<enderio:block_holy_fused_glass:*>);
@@ -1102,6 +1101,6 @@ global craftingToolFile as IItemStack = <gregtech:meta_tool:9>;
 global craftingToolScrewdriver as IIngredient = <gregtech:meta_tool:11> | <gregtech:meta_tool:34>;
 global craftingToolMortar as IItemStack = <gregtech:meta_tool:12>;
 global craftingToolKnife as IItemStack = <gregtech:meta_tool:17>;
-global craftingToolWrench as IIngredient = <gregtech:meta_tool:8> | <gregtech:meta_tool:29> | <gregtech:meta_tool:30> | <gregtech:meta_tool:31>; 
+global craftingToolWrench as IIngredient = <gregtech:meta_tool:8> | <gregtech:meta_tool:29> | <gregtech:meta_tool:30> | <gregtech:meta_tool:31>;
 global craftingToolSaw as IIngredient = <gregtech:meta_tool:5> | <gregtech:meta_tool:26> | <gregtech:meta_tool:27> | <gregtech:meta_tool:28>;
 global craftingToolPlunger as IItemStack = <gregtech:meta_tool:37>;

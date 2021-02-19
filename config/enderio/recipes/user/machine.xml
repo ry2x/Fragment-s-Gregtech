@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<enderio:recipes xmlns:enderio="http://enderio.com/recipes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://enderio.com/recipes recipes.xsd ">
+
+    <!-- This file corresponds to add and implement recipes related to machine. -->
+
+    <recipe name="Capacitor Bank, simple" required="true">
+        <crafting>
+            <grid>
+                <item name="oredict:ingotIron" />
+                <item name="CAPACITOR1" />
+                <item name="oredict:ingotIron" />
+
+                <item name="CAPACITOR1" />
+                <item name="oredict:blockRedstone" />
+                <item name="CAPACITOR1" />
+
+                <item name="oredict:ingotIron" />
+                <item name="CAPACITOR1" />
+                <item name="oredict:ingotIron" />
+            </grid>
+            <output name="CAP_BANK_1" />
+        </crafting>
+    </recipe>
+
+    <recipe name="Capacitor Bank, activated" required="true">
+        <crafting>
+            <grid>
+                <item name="oredict:ingotCopper" />
+                <item name="CAPACITOR2" />
+                <item name="oredict:ingotCopper" />
+
+                <item name="CAPACITOR2" />
+                <item name="oredict:blockRedstone" />
+                <item name="CAPACITOR2" />
+
+                <item name="oredict:ingotCopper" />
+                <item name="CAPACITOR2" />
+                <item name="oredict:ingotCopper" />
+            </grid>
+            <output name="CAP_BANK_2" />
+        </crafting>
+    </recipe>
+
+    <recipe name="Capbank Basic2normal" required="true">
+        <crafting upgrade="true">
+            <grid>
+                <item name="oredict:ingotCopper" />
+                <item name="oredict:ingotCopper" />
+                <item name="oredict:ingotCopper" />
+
+                <item name="CAP_BANK_1" />
+                <item name="CAPACITOR2" />
+                <item name="CAP_BANK_1" />
+
+                <item name="oredict:ingotCopper" />
+                <item name="oredict:ingotCopper" />
+                <item name="oredict:ingotCopper" />
+            </grid>
+            <output name="CAP_BANK_2" />
+        </crafting>
+    </recipe>
+
+    <recipe name="Capacitor Bank, vibrant" required="true">
+        <crafting>
+            <grid>
+                <item name="oredict:ingotSilver" />
+                <item name="CAPACITOR3" />
+                <item name="oredict:ingotSilver" />
+
+                <item name="CAPACITOR3" />
+                <item name="overloaded:energy_core" />
+                <item name="CAPACITOR3" />
+
+                <item name="oredict:ingotSilver" />
+                <item name="CAPACITOR3" />
+                <item name="oredict:ingotSilver" />
+            </grid>
+            <output name="CAP_BANK_3" />
+        </crafting>
+    </recipe>
+
+    <recipe name="Capbank Normal2vibrant" required="true">
+        <crafting upgrade="true">
+            <grid>
+                <item name="oredict:ingotSilver" />
+                <item name="CAPACITOR2" />
+                <item name="oredict:ingotSilver" />
+
+                <item name="CAP_BANK_2" />
+                <item name="overloaded:energy_core" />
+                <item name="CAP_BANK_2" />
+
+                <item name="oredict:ingotSilver" />
+                <item name="CAPACITOR2" />
+                <item name="oredict:ingotSilver" />
+            </grid>
+            <output name="CAP_BANK_3" />
+        </crafting>
+    </recipe>
+
+    <recipe name="Energy Monitor" required="true">
+        <crafting>
+            <grid>
+                <item name="oredict:ingotIronMagnetic" />
+                <item name="CONDUIT_PROBE" />
+                <item name="oredict:ingotIronMagnetic" />
+
+                <item name="oredict:ingotIronMagnetic" />
+                <item name="oredict:MVcasing" />
+                <item name="oredict:ingotIronMagnetic" />
+
+                <item name="oredict:ingotIronMagnetic" />
+                <item name="enderio:item_power_conduit:0" />
+                <item name="oredict:ingotIronMagnetic" />
+            </grid>
+            <output name="enderio:block_power_monitor" />
+        </crafting>
+    </recipe>
+
+    <recipe name="Energy Monitor 2" required="true">
+        <crafting>
+            <grid>
+                <item name="minecraft:wool:15" />
+                <item name="minecraft:wool:15" />
+                <item name="minecraft:wool:15" />
+
+                <item name="minecraft:wool:15" />
+                <item name="enderio:block_power_monitor" />
+                <item name="minecraft:wool:15" />
+
+                <item name="oredict:dyeRed" />
+                <item name="oredict:dyeYellow" />
+                <item name="oredict:dyeGreen" />
+            </grid>
+            <output name="enderio:block_advanced_power_monitor" />
+        </crafting>
+    </recipe>
+
+    <recipe name="RF Gauge" required="true">
+        <crafting>
+            <grid>
+                <item name="oredict:ingotIron" />
+                <item />
+                <item name="oredict:ingotIron" />
+
+                <item name="oredict:ingotIronMagnetic" />
+                <item name="CONDUIT_PROBE" />
+                <item name="oredict:ingotIronMagnetic" />
+
+                <item name="oredict:ingotIron" />
+                <item />
+                <item name="oredict:ingotIron" />
+            </grid>
+            <output name="enderio:block_gauge" />
+        </crafting>
+    </recipe>
+</enderio:recipes>
