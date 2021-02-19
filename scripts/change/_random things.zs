@@ -230,3 +230,11 @@ recipes.replaceAllOccurences(<ore:blockGlass>,<gtadditions:ga_meta_item2:100>,<r
 
 //gold compass
 recipes.replaceAllOccurences(<minecraft:gold_ingot>,<ore:plateGold>,<randomthings:goldencompass>);
+
+//sound box
+recipes.remove(<randomthings:soundbox>);
+recipes.addShaped(<randomthings:soundbox>*8,[
+	[<minecraft:noteblock>,<minecraft:noteblock>,<minecraft:noteblock>],
+	[<minecraft:noteblock>,<ore:dyeBlue>,<minecraft:noteblock>],
+	[<minecraft:noteblock>,<minecraft:noteblock>,<minecraft:noteblock>]
+]);
