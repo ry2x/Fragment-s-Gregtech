@@ -40,8 +40,5 @@ recipes.replaceAllOccurences(<enderio:item_alloy_ingot:3>,<ore:ingotRedAlloy>,<*
 */
 //recipes.removeByRecipeName("crafttweaker:enderio-auto_redstone_alloy_1_ingot_to_9_nuggets-modified");
 
-//fix gauge recipes
-recipes.replaceAllOccurences(<enderio:item_alloy_ingot>,<ore:ingotIronMagnetic>,<enderio:block_gauge>);
-
 //fix forestry bee filter
 recipes.replaceAllOccurences(<forestry:propolis>,<forestry:chipsets>,<enderio:item_species_item_filter>);

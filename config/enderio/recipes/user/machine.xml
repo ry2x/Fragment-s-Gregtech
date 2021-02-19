@@ -127,11 +127,30 @@
                 <item name="enderio:block_power_monitor" />
                 <item name="minecraft:wool:15" />
 
-                <item name="dyeRed" />
-                <item name="dyeYellow" />
-                <item name="dyeGreen" />
+                <item name="oredict:dyeRed" />
+                <item name="oredict:dyeYellow" />
+                <item name="oredict:dyeGreen" />
             </grid>
             <output name="enderio:block_advanced_power_monitor" />
+        </crafting>
+    </recipe>
+
+    <recipe name="RF Gauge" required="true">
+        <crafting>
+            <grid>
+                <item name="oredict:ingotIron" />
+                <item />
+                <item name="oredict:ingotIron" />
+
+                <item name="oredict:ingotIronMagnetic" />
+                <item name="CONDUIT_PROBE" />
+                <item name="oredict:ingotIronMagnetic" />
+
+                <item name="oredict:ingotIron" />
+                <item />
+                <item name="oredict:ingotIron" />
+            </grid>
+            <output name="enderio:block_gauge" />
         </crafting>
     </recipe>
 </enderio:recipes>
