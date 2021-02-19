@@ -39,9 +39,6 @@ alloy.recipeBuilder()
 <enderio:item_fluid_conduit>.displayName = "Super Fluid Conduit";
 <enderio:item_material:22>.displayName = "Conduit Binder Dust";
 
-//fix all redstone alloy to red alloy
-recipes.replaceAllOccurences(<enderio:item_alloy_ingot:3>,<ore:ingotRedAlloy>,<*>);
-
 /*
 *This is not good for crafttweaker. It shows us yellow warning message.
 *So, I don't remove this. (this is invisible for player bc redstone alloy is gone).
