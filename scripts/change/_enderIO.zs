@@ -38,9 +38,3 @@ alloy.recipeBuilder()
 <enderio:item_endergy_conduit:11>.displayName = "Neutronium Energy Conduit";
 <enderio:item_fluid_conduit>.displayName = "Super Fluid Conduit";
 <enderio:item_material:22>.displayName = "Conduit Binder Dust";
-
-/*
-*This is not good for crafttweaker. It shows us yellow warning message.
-*So, I don't remove this. (this is invisible for player bc redstone alloy is gone).
-*/
-//recipes.removeByRecipeName("crafttweaker:enderio-auto_redstone_alloy_1_ingot_to_9_nuggets-modified");
