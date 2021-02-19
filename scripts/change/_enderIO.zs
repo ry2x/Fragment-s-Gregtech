@@ -1,8 +1,16 @@
+/*
+* All recipes excluding that need Alloy Smelter from GregTech Community Edition and
+* changing display name for some of the items/blocks are written in xml format.
+* You can see the files in config/enderio/recipes/user/
+*
+* Changing/Adding recipes related to and from EnderIO from this scripts are prohibited
+* unless you have a specific reason to do so.
+* All default recipes are not subscribed by config settings.
+* Please add to applicable file found in config/enderio/recipes/user/
+*/
+
 //import crafttweaker II
 import crafttweaker.item.IItemStack;
-
-//import JEI function
-import mods.jei.JEI;
 
 //import greg
 import mods.gregtech.recipe.RecipeMap;
@@ -17,7 +25,7 @@ alloy.recipeBuilder()
     .EUt(48)
     .buildAndRegister();
 
-//Display Name
+//Tweak Display Name
 <enderio:block_cap_bank:1>.displayName = "Basic Capacitor Block";
 <enderio:block_cap_bank:2>.displayName = "Advanced Capacitor Block";
 <enderio:block_cap_bank:3>.displayName = "Great Capacitor Block";
