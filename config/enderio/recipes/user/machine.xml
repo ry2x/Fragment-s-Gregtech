@@ -42,7 +42,7 @@
     </recipe>
 
     <recipe name="Capbank Basic2normal" required="true">
-        <crafting>
+        <crafting upgrade="true">
             <grid>
                 <item name="oredict:ingotCopper" />
                 <item name="oredict:ingotCopper" />
@@ -80,7 +80,7 @@
     </recipe>
 
     <recipe name="Capbank Normal2vibrant" required="true">
-        <crafting>
+        <crafting upgrade="true">
             <grid>
                 <item name="oredict:ingotSilver" />
                 <item name="CAPACITOR2" />
