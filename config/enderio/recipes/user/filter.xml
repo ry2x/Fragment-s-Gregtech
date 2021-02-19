@@ -364,4 +364,15 @@
             <output name="enderio:item_redstone_counting_filter" />
         </crafting>
     </recipe>
+
+    <recipe name="Filter, Species" required="true">
+        <crafting>
+            <grid size="3x1">
+                <item name="forestry:chipsets" />
+                <item name="enderio:item_advanced_item_filter" />
+                <item name="forestry:chipsets" />
+            </grid>
+            <output name="enderio:item_species_item_filter" />
+        </crafting>
+    </recipe>
 </enderio:recipes>
