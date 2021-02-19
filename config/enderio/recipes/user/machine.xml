@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<enderio:recipes xmlns:enderio="http://enderio.com/recipes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://enderio.com/recipes recipes.xsd ">
+    <recipe name="Capacitor Bank, simple" required="true">
+        <crafting>
+            <grid>
+                <item name="oredict:ingotIron" />
+                <item name="CAPACITOR1" />
+                <item name="oredict:ingotIron" />
+
+                <item name="CAPACITOR1" />
+                <item name="oredict:blockRedstone" />
+                <item name="CAPACITOR1" />
+
+                <item name="oredict:ingotIron" />
+                <item name="CAPACITOR1" />
+                <item name="oredict:ingotIron" />
+            </grid>
+            <output name="CAP_BANK_1" />
+        </crafting>
+    </recipe>
+
+    <recipe name="Capacitor Bank, activated" required="true">
+        <crafting>
+            <grid>
+                <item name="oredict:ingotCopper" />
+                <item name="CAPACITOR2" />
+                <item name="oredict:ingotCopper" />
+
+                <item name="CAPACITOR2" />
+                <item name="oredict:blockRedstone" />
+                <item name="CAPACITOR2" />
+
+                <item name="oredict:ingotCopper" />
+                <item name="CAPACITOR2" />
+                <item name="oredict:ingotCopper" />
+            </grid>
+            <output name="CAP_BANK_2" />
+        </crafting>
+    </recipe>
+
+    <recipe name="CapBank Basic 2 normal" required="true">
+        <crafting>
+            <grid>
+                <item name="oredict:ingotCopper" />
+                <item name="CAPACITOR2" />
+                <item name="oredict:ingotCopper" />
+
+                <item name="CAP_BANK_1" />
+                <item name="CAPACITOR2" />
+                <item name="CAP_BANK_1" />
+
+                <item name="oredict:ingotCopper" />
+                <item name="CAPACITOR2" />
+                <item name="oredict:ingotCopper" />
+            </grid>
+            <output name="CAP_BANK_2" />
+        </crafting>
+    </recipe>
+
+    <recipe name="Capacitor Bank, vibrant" required="true">
+        <crafting>
+            <grid>
+                <item name="oredict:ingotSilver" />
+                <item name="CAPACITOR3" />
+                <item name="oredict:ingotSilver" />
+
+                <item name="oredict:ingotSilver" />
+                <item name="overloaded:energy_core" />
+                <item name="oredict:ingotSilver" />
+
+                <item name="oredict:ingotSilver" />
+                <item name="CAPACITOR3" />
+                <item name="oredict:ingotSilver" />
+            </grid>
+            <output name="CAP_BANK_3" />
+        </crafting>
+    </recipe>
+
+    <recipe name="CapBank Normal 2 vibrant" required="true">
+        <crafting>
+            <grid>
+                <item name="oredict:ingotSilver" />
+                <item name="CAPACITOR2" />
+                <item name="oredict:ingotSilver" />
+
+                <item name="CAPACITOR2" />
+                <item name="overloaded:energy_core" />
+                <item name="CAPACITOR2" />
+
+                <item name="oredict:ingotSilver" />
+                <item name="CAPACITOR2" />
+                <item name="oredict:ingotSilver" />
+            </grid>
+            <output name="CAP_BANK_3" />
+        </crafting>
+    </recipe>
+</enderio:recipes>

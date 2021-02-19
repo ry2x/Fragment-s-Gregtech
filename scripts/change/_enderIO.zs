@@ -18,15 +18,18 @@ alloy.recipeBuilder()
     .buildAndRegister();
 
 //Display Name
+<enderio:block_cap_bank:1>.displayName = "Basic Capacitor Block";
+<enderio:block_cap_bank:2>.displayName = "Advanced Capacitor Block";
+<enderio:block_cap_bank:3>.displayName = "Great Capacitor Block";
 <enderio:block_holy_fused_glass>.displayName = "Fuzed Glass";
 <enderio:item_basic_capacitor>.displayName = "LV Capacitor";
 <enderio:item_basic_capacitor:1>.displayName = "MV Capacitor";
 <enderio:item_basic_capacitor:2>.displayName = "HV Capacitor";
-<enderio:item_material:22>.displayName = "Conduit Binder Dust";
 <enderio:item_endergy_conduit:9>.displayName = "Stainless Steel Energy Conduit";
 <enderio:item_endergy_conduit:10>.displayName = "Rhodium Energy Conduit";
 <enderio:item_endergy_conduit:11>.displayName = "Neutronium Energy Conduit";
 <enderio:item_fluid_conduit>.displayName = "Super Fluid Conduit";
+<enderio:item_material:22>.displayName = "Conduit Binder Dust";
 
 //fix all redstone alloy to red alloy
 recipes.replaceAllOccurences(<enderio:item_alloy_ingot:3>,<ore:ingotRedAlloy>,<*>);
@@ -36,16 +39,6 @@ recipes.replaceAllOccurences(<enderio:item_alloy_ingot:3>,<ore:ingotRedAlloy>,<*
 *So, I don't remove this. (this is invisible for player bc redstone alloy is gone).
 */
 //recipes.removeByRecipeName("crafttweaker:enderio-auto_redstone_alloy_1_ingot_to_9_nuggets-modified");
-
-//fix flux capacitor recipes
-recipes.replaceAllOccurences(<enderio:item_alloy_ingot:1>,<ore:ingotSilver>,<enderio:block_cap_bank:2>);
-recipes.replaceAllOccurences(<enderio:item_alloy_ingot>,<ore:ingotCopper>,<enderio:block_cap_bank:2>);
-recipes.replaceAllOccurences(<enderio:item_alloy_ingot:2>,<ore:ingotEnderium>,<enderio:block_cap_bank:3>);
-recipes.replaceAllOccurences(<enderio:item_alloy_ingot>,<ore:ingotSilver>,<enderio:block_cap_bank:3>);
-recipes.replaceAllOccurences(<enderio:item_material:15>,<overloaded:energy_core>,<enderio:block_cap_bank:3>);
-<enderio:block_cap_bank:1>.displayName = "Basic Capacitor Block";
-<enderio:block_cap_bank:2>.displayName = "Advanced Capacitor Block";
-<enderio:block_cap_bank:3>.displayName = "Great Capacitor Block";
 
 //fix monitor recipes
 recipes.replaceAllOccurences(<enderio:item_alloy_ingot>,<ore:ingotIronMagnetic>,<enderio:block_power_monitor>);
