@@ -5,7 +5,7 @@
 *
 * Changing/Adding recipes related to and from EnderIO from this scripts are prohibited
 * unless you have a specific reason to do so.
-* All default recipes are not subscribed by config settings.
+* All default recipes are not subscribed by config setting.
 * Please add to applicable file found in config/enderio/recipes/user/
 */
 

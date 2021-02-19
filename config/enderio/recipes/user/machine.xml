@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <enderio:recipes xmlns:enderio="http://enderio.com/recipes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://enderio.com/recipes recipes.xsd ">
+
+    <!-- This file corresponds to add and implement recipes related to machine. -->
+
     <recipe name="Capacitor Bank, simple" required="true">
         <crafting>
             <grid>
@@ -95,8 +98,10 @@
         </crafting>
     </recipe>
 
-    <!-- TODO: Industrial Machine Chassis (enderio:item_material:1) is not craftable and hidden from JEI
-        NEED FIXING -->
+    <!-- TODO:
+        Industrial Machine Chassis (enderio:item_material:1) is not craftable and hidden from JEI
+        NEED FIXING
+    -->
     <recipe name="Energy Monitor" required="true">
         <crafting>
             <grid>

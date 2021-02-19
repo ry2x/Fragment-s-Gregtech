@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <enderio:recipes xmlns:enderio="http://enderio.com/recipes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://enderio.com/recipes recipes.xsd ">
+
+    <!--
+        This file corresponds to add default recipes related to lever from EnderIO.
+        However, one of the item (enderio:block_self_resetting_lever300i) uses the same recipes
+        for another item (enderio:block_self_resetting_lever60i) and will also resolve this problem.
+        I have no idea why those would conflicts with default recipes. :thonk:
+    -->
+
     <recipe name="Self-Resetting Lever, 5 seconds" required="true">
         <crafting>
             <shapeless>
@@ -9,6 +17,7 @@
             <output name="enderio:block_self_resetting_lever5" />
         </crafting>
     </recipe>
+
     <recipe name="Self-Resetting Lever, 10 seconds" required="true">
         <crafting>
             <shapeless>
@@ -19,6 +28,7 @@
             <output name="enderio:block_self_resetting_lever10" />
         </crafting>
     </recipe>
+
     <recipe name="Self-Resetting Lever, 10 seconds, upgrade" required="true">
         <crafting>
             <shapeless>
@@ -28,6 +38,7 @@
             <output name="enderio:block_self_resetting_lever10" />
         </crafting>
     </recipe>
+
     <recipe name="Self-Resetting Lever, 30 seconds" required="true">
         <crafting>
             <shapeless>
@@ -39,6 +50,7 @@
             <output name="enderio:block_self_resetting_lever30" />
         </crafting>
     </recipe>
+
     <recipe name="Self-Resetting Lever, 30 seconds, upgrade" required="true">
         <crafting>
             <shapeless>
@@ -48,6 +60,7 @@
             <output name="enderio:block_self_resetting_lever30" />
         </crafting>
     </recipe>
+
     <recipe name="Self-Resetting Lever, 60 seconds" required="true">
         <crafting>
             <shapeless>
@@ -60,6 +73,7 @@
             <output name="enderio:block_self_resetting_lever60" />
         </crafting>
     </recipe>
+
     <recipe name="Self-Resetting Lever, 60 seconds, upgrade" required="true">
         <crafting>
             <shapeless>
@@ -69,6 +83,7 @@
             <output name="enderio:block_self_resetting_lever60" />
         </crafting>
     </recipe>
+
     <recipe name="Self-Resetting Lever, 300 seconds" required="true">
         <crafting>
             <shapeless>
@@ -82,6 +97,7 @@
             <output name="enderio:block_self_resetting_lever300" />
         </crafting>
     </recipe>
+
     <recipe name="Self-Resetting Lever, 300 seconds, upgrade" required="true">
         <crafting>
             <shapeless>
@@ -91,6 +107,7 @@
             <output name="enderio:block_self_resetting_lever300" />
         </crafting>
     </recipe>
+
     <recipe name="Self-Resetting Lever, 5 seconds, inverted" required="true">
         <crafting>
             <shapeless>
@@ -101,6 +118,7 @@
             <output name="enderio:block_self_resetting_lever5i" />
         </crafting>
     </recipe>
+
     <recipe name="Self-Resetting Lever, 5 seconds, crossgrade, inverted" required="true">
         <crafting>
             <shapeless>
@@ -110,8 +128,8 @@
             <output name="enderio:block_self_resetting_lever5i" />
         </crafting>
     </recipe>
-    <recipe name="Self-Resetting Lever, 5 seconds, crossgrade, uninverted" required="
-true">
+
+    <recipe name="Self-Resetting Lever, 5 seconds, crossgrade, uninverted" required="true">
         <crafting>
             <shapeless>
                 <item name="enderio:block_self_resetting_lever5i" />
@@ -120,6 +138,7 @@ true">
             <output name="enderio:block_self_resetting_lever5" />
         </crafting>
     </recipe>
+
     <recipe name="Self-Resetting Lever, 10 seconds, inverted" required="true">
         <crafting>
             <shapeless>
@@ -131,6 +150,7 @@ true">
             <output name="enderio:block_self_resetting_lever10i" />
         </crafting>
     </recipe>
+
     <recipe name="Self-Resetting Lever, 10 seconds, upgrade, inverted" required="true">
         <crafting>
             <shapeless>
@@ -140,6 +160,7 @@ true">
             <output name="enderio:block_self_resetting_lever10i" />
         </crafting>
     </recipe>
+
     <recipe name="Self-Resetting Lever, 10 seconds, crossgrade, inverted" required="true">
         <crafting>
             <shapeless>
@@ -149,6 +170,7 @@ true">
             <output name="enderio:block_self_resetting_lever10i" />
         </crafting>
     </recipe>
+
     <recipe name="Self-Resetting Lever, 10 seconds, crossgrade, uninverted" required="true">
         <crafting>
             <shapeless>
@@ -158,6 +180,7 @@ true">
             <output name="enderio:block_self_resetting_lever10" />
         </crafting>
     </recipe>
+
     <recipe name="Self-Resetting Lever, 30 seconds, inverted" required="true">
         <crafting>
             <shapeless>
@@ -170,6 +193,7 @@ true">
             <output name="enderio:block_self_resetting_lever30i" />
         </crafting>
     </recipe>
+
     <recipe name="Self-Resetting Lever, 30 seconds, upgrade, inverted" required="true">
         <crafting>
             <shapeless>
@@ -179,6 +203,7 @@ true">
             <output name="enderio:block_self_resetting_lever30i" />
         </crafting>
     </recipe>
+
     <recipe name="Self-Resetting Lever, 30 seconds, crossgrade, inverted" required="true">
         <crafting>
             <shapeless>
@@ -188,6 +213,7 @@ true">
             <output name="enderio:block_self_resetting_lever30i" />
         </crafting>
     </recipe>
+
     <recipe name="Self-Resetting Lever, 30 seconds, crossgrade, uninverted" required="true">
         <crafting>
             <shapeless>
@@ -197,6 +223,7 @@ true">
             <output name="enderio:block_self_resetting_lever30" />
         </crafting>
     </recipe>
+
     <recipe name="Self-Resetting Lever, 60 seconds, inverted" required="true">
         <crafting>
             <shapeless>
@@ -210,6 +237,7 @@ true">
             <output name="enderio:block_self_resetting_lever60i" />
         </crafting>
     </recipe>
+
     <recipe name="Self-Resetting Lever, 60 seconds, upgrade, inverted" required="true">
         <crafting>
             <shapeless>
@@ -219,6 +247,7 @@ true">
             <output name="enderio:block_self_resetting_lever60i" />
         </crafting>
     </recipe>
+
     <recipe name="Self-Resetting Lever, 60 seconds, crossgrade, inverted" required="true">
         <crafting>
             <shapeless>
@@ -228,6 +257,7 @@ true">
             <output name="enderio:block_self_resetting_lever60i" />
         </crafting>
     </recipe>
+
     <recipe name="Self-Resetting Lever, 60 seconds, crossgrade, uninverted" required="true">
         <crafting>
             <shapeless>
@@ -237,6 +267,7 @@ true">
             <output name="enderio:block_self_resetting_lever60" />
         </crafting>
     </recipe>
+
     <recipe name="Self-Resetting Lever, 300 seconds, inverted" required="true">
         <crafting>
             <shapeless>
@@ -251,6 +282,7 @@ true">
             <output name="enderio:block_self_resetting_lever300i" />
         </crafting>
     </recipe>
+
     <recipe name="Self-Resetting Lever, 300 seconds, upgrade, inverted" required="true">
         <crafting>
             <shapeless>
@@ -260,6 +292,7 @@ true">
             <output name="enderio:block_self_resetting_lever300i" />
         </crafting>
     </recipe>
+
     <recipe name="Self-Resetting Lever, 300 seconds, crossgrade, inverted" required="true">
         <crafting>
             <shapeless>
@@ -269,6 +302,7 @@ true">
             <output name="enderio:block_self_resetting_lever300i" />
         </crafting>
     </recipe>
+
     <recipe name="Self-Resetting Lever, 300 seconds, crossgrade, uninverted" required="true">
         <crafting>
             <shapeless>
