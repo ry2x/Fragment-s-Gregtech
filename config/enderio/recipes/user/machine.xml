@@ -98,10 +98,6 @@
         </crafting>
     </recipe>
 
-    <!-- TODO:
-        Industrial Machine Chassis (enderio:item_material:1) is not craftable and hidden from JEI
-        NEED FIXING
-    -->
     <recipe name="Energy Monitor" required="true">
         <crafting>
             <grid>
@@ -110,7 +106,7 @@
                 <item name="oredict:ingotIronMagnetic" />
 
                 <item name="oredict:ingotIronMagnetic" />
-                <item name="CHASSIS" />
+                <item name="oredict:MVcasing" />
                 <item name="oredict:ingotIronMagnetic" />
 
                 <item name="oredict:ingotIronMagnetic" />
