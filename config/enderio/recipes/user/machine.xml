@@ -41,11 +41,11 @@
         </crafting>
     </recipe>
 
-    <recipe name="CapBank Basic 2 normal" required="true">
+    <recipe name="Capbank Basic2normal" required="true">
         <crafting>
             <grid>
                 <item name="oredict:ingotCopper" />
-                <item name="CAPACITOR2" />
+                <item name="oredict:ingotCopper" />
                 <item name="oredict:ingotCopper" />
 
                 <item name="CAP_BANK_1" />
@@ -53,7 +53,7 @@
                 <item name="CAP_BANK_1" />
 
                 <item name="oredict:ingotCopper" />
-                <item name="CAPACITOR2" />
+                <item name="oredict:ingotCopper" />
                 <item name="oredict:ingotCopper" />
             </grid>
             <output name="CAP_BANK_2" />
@@ -67,9 +67,9 @@
                 <item name="CAPACITOR3" />
                 <item name="oredict:ingotSilver" />
 
-                <item name="oredict:ingotSilver" />
+                <item name="CAPACITOR3" />
                 <item name="overloaded:energy_core" />
-                <item name="oredict:ingotSilver" />
+                <item name="CAPACITOR3" />
 
                 <item name="oredict:ingotSilver" />
                 <item name="CAPACITOR3" />
@@ -79,16 +79,16 @@
         </crafting>
     </recipe>
 
-    <recipe name="CapBank Normal 2 vibrant" required="true">
+    <recipe name="Capbank Normal2vibrant" required="true">
         <crafting>
             <grid>
                 <item name="oredict:ingotSilver" />
                 <item name="CAPACITOR2" />
                 <item name="oredict:ingotSilver" />
 
-                <item name="CAPACITOR2" />
+                <item name="CAP_BANK_2" />
                 <item name="overloaded:energy_core" />
-                <item name="CAPACITOR2" />
+                <item name="CAP_BANK_2" />
 
                 <item name="oredict:ingotSilver" />
                 <item name="CAPACITOR2" />

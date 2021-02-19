@@ -397,7 +397,7 @@
         </crafting>
     </recipe>
 
-    <recipe name="Conduit, M E, Conduit">
+    <recipe name="Conduit, ME, Conduit">
         <crafting>
             <grid>
                 <item name="CONDUIT_BINDER" />
@@ -416,7 +416,7 @@
         </crafting>
     </recipe>
 
-    <recipe name="Conduit, M E, Conduit, ALT">
+    <recipe name="Conduit, ME, Conduit, alt">
         <crafting>
             <grid>
                 <item name="CONDUIT_BINDER" />
