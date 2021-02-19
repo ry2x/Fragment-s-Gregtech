@@ -94,4 +94,44 @@
             <output name="CAP_BANK_3" />
         </crafting>
     </recipe>
+
+    <!-- TODO: Industrial Machine Chassis (enderio:item_material:1) is not craftable and hidden from JEI
+        NEED FIXING -->
+    <recipe name="Energy Monitor" required="true">
+        <crafting>
+            <grid>
+                <item name="oredict:ingotIronMagnetic" />
+                <item name="CONDUIT_PROBE" />
+                <item name="oredict:ingotIronMagnetic" />
+
+                <item name="oredict:ingotIronMagnetic" />
+                <item name="CHASSIS" />
+                <item name="oredict:ingotIronMagnetic" />
+
+                <item name="oredict:ingotIronMagnetic" />
+                <item name="enderio:item_power_conduit:0" />
+                <item name="oredict:ingotIronMagnetic" />
+            </grid>
+            <output name="enderio:block_power_monitor" />
+        </crafting>
+    </recipe>
+
+    <recipe name="Energy Monitor 2" required="true">
+        <crafting>
+            <grid>
+                <item name="minecraft:wool:15" />
+                <item name="minecraft:wool:15" />
+                <item name="minecraft:wool:15" />
+
+                <item name="minecraft:wool:15" />
+                <item name="enderio:block_power_monitor" />
+                <item name="minecraft:wool:15" />
+
+                <item name="dyeRed" />
+                <item name="dyeYellow" />
+                <item name="dyeGreen" />
+            </grid>
+            <output name="enderio:block_advanced_power_monitor" />
+        </crafting>
+    </recipe>
 </enderio:recipes>
