@@ -215,6 +215,7 @@
             <output name="enderio:item_redstone_not_filter" />
         </crafting>
     </recipe>
+
     <recipe name="Filter, Redstone OR" required="true">
         <crafting>
             <grid size="1x3">
