@@ -359,7 +359,7 @@
         </crafting>
     </recipe>
 
-    <recipe name="Conduit, Fluid">
+    <recipe name="Item, Conduit, Fluid">
         <crafting>
             <grid>
                 <item name="CONDUIT_BINDER" />
@@ -378,7 +378,7 @@
         </crafting>
     </recipe>
 
-    <recipe name="Conduit, Fluid (upgrade)">
+    <recipe name="Item, Conduit, Fluid (upgrade)">
         <crafting>
             <grid>
                 <item name="CONDUIT_BINDER" />
