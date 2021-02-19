@@ -39,6 +39,10 @@ alloy.recipeBuilder()
 <enderio:item_fluid_conduit>.displayName = "Super Fluid Conduit";
 <enderio:item_material:22>.displayName = "Conduit Binder Dust";
 
+//fix monitor recipes
+recipes.replaceAllOccurences(<enderio:item_material:1>,<ore:MVcasing>,<enderio:block_power_monitor>);
+
+
 //fix all redstone alloy to red alloy
 recipes.replaceAllOccurences(<enderio:item_alloy_ingot:3>,<ore:ingotRedAlloy>,<*>);
 

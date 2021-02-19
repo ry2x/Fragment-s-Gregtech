@@ -460,7 +460,7 @@ forming.recipeBuilder()
     #acceleration card a
 recipes.remove(<appliedenergistics2:material:30>);
 forming.recipeBuilder()
-    .inputs(goodCard,<gregtech:machine:2214>)
+    .inputs(goodCard,<gregtech:meta_item_1:32681>)
     .outputs(<appliedenergistics2:material:30>)
     .duration(80)
     .EUt(16)
@@ -508,9 +508,9 @@ assembler.recipeBuilder()
     .buildAndRegister();
 //Singularity
 implosion.recipeBuilder()
-    .inputs(<minecraft:tnt>,<appliedenergistics2:material:47>*2)
+    .inputs(<appliedenergistics2:material:47>*2)
     .outputs(<appliedenergistics2:material:48>*2)
-    .property("explosives",1)
+    .property("explosives",4)
     .duration(20)
     .EUt(30)
     .buildAndRegister();
