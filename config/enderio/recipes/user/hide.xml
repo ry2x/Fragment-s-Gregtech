@@ -28,6 +28,7 @@
             <!-- Item -->
             <item name="enderio:item_broken_spawner:*" hide="true" />
             <item name="enderio:item_cold_fire_igniter:*" hide="true" />
+            <item name="enderio:item_conduit_facade:*" hide="true" />
             <item name="enderio:item_coord_selector" hide="true" />
             <item name="enderio:item_dark_steel_hand" hide="true" />
             <item name="enderio:item_dark_steel_shield" hide="true" />

@@ -3,6 +3,39 @@
 
     <!-- This file corresponds to add and implement recipes related to conduit. -->
 
+    <recipe name="Binder Composite" required="true">
+        <crafting>
+            <grid>
+                <item name="oredict:gravel" />
+                <item name="oredict:itemClay" />
+                <item name="oredict:gravel" />
+
+                <item name="oredict:sand" />
+                <item name="oredict:gravel" />
+                <item name="oredict:sand" />
+
+                <item name="oredict:gravel" />
+                <item name="oredict:itemClay" />
+                <item name="oredict:gravel" />
+            </grid>
+            <output name="BINDER_COMPOSITE" amount="8" />
+        </crafting>
+    </recipe>
+
+    <recipe name="Conduit Binder" required="true">
+        <smelting exp="1.0">
+            <input name="BINDER_COMPOSITE" />
+            <output name="CONDUIT_BINDER" amount="2" />
+        </smelting>
+    </recipe>
+
+    <recipe name="Conduit Binder Custom" required="true">
+        <smelting exp="1.0">
+            <input name="railcraft:reinforced_concrete:*" />
+            <output name="CONDUIT_BINDER" amount="9" />
+        </smelting>
+    </recipe>
+
     <recipe name="Conduit, Liquid, Basic" required="true">
         <crafting>
             <grid>
