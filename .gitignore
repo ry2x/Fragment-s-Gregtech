@@ -1,15 +1,16 @@
 #Client-Side Cache Files
 config/AppliedEnergistics2/items.csv
 config/AppliedEnergistics2/CustomRecipes.cfg
-code/codechicken/
+config/codechicken/
 config/InvTweaks.cfg
+config/InvTweaksRules.txt
 config/ichunutil_keybinds.cfg
 config/jei/bookmarks.ini
 config/jei/worldSettings.*
 config/machinemuse/powersuits-keybinds.cfg
 config/ambientsounds-client.json
 config/ichunutil.cfg
-config/xaero*/
+config/xaero*
 
 #not sync plz
 scripts/recipes.zs
