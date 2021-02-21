@@ -96,8 +96,7 @@ for i in arm {
 
 recipes.addShaped(<railcraft:armor_helmet_steel>,[
     [<ore:plateSteel>,<ore:plateSteel>,<ore:plateSteel>],
-    [<ore:plateSteel>,null,<ore:plateSteel>],
-    [null,null,null]
+    [<ore:plateSteel>,null,<ore:plateSteel>]
 ]);
 recipes.addShaped(<railcraft:armor_chestplate_steel>,[
     [<ore:plateSteel>,null,<ore:plateSteel>],
@@ -110,7 +109,6 @@ recipes.addShaped(<railcraft:armor_leggings_steel>,[
     [<ore:plateSteel>,null,<ore:plateSteel>]
 ]);
 recipes.addShaped(<railcraft:armor_boots_steel>,[
-    [null,null,null],
     [<ore:plateSteel>,null,<ore:plateSteel>],
     [<ore:plateSteel>,null,<ore:plateSteel>]
 ]);

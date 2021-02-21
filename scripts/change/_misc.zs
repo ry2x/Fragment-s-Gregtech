@@ -406,8 +406,7 @@ recipes.remove(<projectred-exploration:peridot_helmet>);
 <projectred-exploration:peridot_helmet>.displayName = "Olivine Helmet";
 recipes.addShaped(<projectred-exploration:peridot_helmet>, [
     [<ore:gemOlivine>, <ore:gemOlivine>, <ore:gemOlivine>],
-    [<ore:gemOlivine>, null, <ore:gemOlivine>],
-    [null, null, null]
+    [<ore:gemOlivine>, null, <ore:gemOlivine>]
 ]);
 
 recipes.remove(<projectred-exploration:peridot_chestplate>);
@@ -429,7 +428,6 @@ recipes.addShaped(<projectred-exploration:peridot_leggings>, [
 recipes.remove(<projectred-exploration:peridot_boots>);
 <projectred-exploration:peridot_boots>.displayName = "Olivine Boots";
 recipes.addShaped(<projectred-exploration:peridot_boots>, [
-    [null, null, null],
     [<ore:gemOlivine>, null, <ore:gemOlivine>],
     [<ore:gemOlivine>, null, <ore:gemOlivine>]
 ]);
@@ -437,7 +435,6 @@ recipes.addShaped(<projectred-exploration:peridot_boots>, [
 recipes.remove(<projectred-exploration:stone_wall:7>);
 <projectred-exploration:stone_wall:7>.displayName = "Olivine Wall";
 recipes.addShaped(<projectred-exploration:stone_wall:7>, [
-    [null,null,null],
     [<ore:blockOlivine>,<ore:blockOlivine>,<ore:blockOlivine>],
     [<ore:blockOlivine>,<ore:blockOlivine>,<ore:blockOlivine>]
 ]);
@@ -469,7 +466,6 @@ recipes.addShaped(<quarryplus:workbenchplus>,[
 //bonsai
 recipes.remove(<bonsaitrees:bonsaipot>);
 recipes.addShaped(<bonsaitrees:bonsaipot>,[
-    [null,null,null],
     [<ore:plateTungstenSteel>,null,<ore:plateTungstenSteel>],
     [<ore:plateTungstenSteel>,<ore:plateTungstenSteel>,<ore:plateTungstenSteel>]
 ]);
@@ -513,7 +509,6 @@ recipes.addShaped(<usefulbackpacks:backpack>, [
 //scannable
 recipes.remove(<scannable:module_ore_rare>);
 recipes.addShaped(<scannable:module_ore_rare>, [
-    [null, null, null],
     [<ore:ingotCopper>, <scannable:module_blank>, <ore:ingotCopper>],
     [<ore:ingotTin>, null, <ore:ingotTin>]
 ]);
@@ -660,7 +655,6 @@ val trapFixCrafting as IItemStack[IItemStack] = {
 
 for input,output in trapFixCrafting {
     recipes.addShaped(output*2,[
-        [null,null,null],
         [input,input,input],
         [input,input,input]
     ]);
@@ -733,7 +727,6 @@ recipes.addShaped(<projectred-exploration:stone:1>*4,[
 //fix marble wall conflict
 recipes.removeByRecipeName("projectred-exploration:blocks/wall/marble_wall");
 recipes.addShaped(<projectred-exploration:stone_wall:0>*16,[
-    [null,null,null],
     [<projectred-exploration:stone>,<projectred-exploration:stone>,<projectred-exploration:stone>],
     [<projectred-exploration:stone>,<projectred-exploration:stone>,<projectred-exploration:stone>]
 ]);
