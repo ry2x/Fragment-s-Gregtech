@@ -3,13 +3,13 @@
         {
             "dim": 100,
             "dimensiontype": {
-                "id":8,
+                "id": 100,
                 "name": "Terra",
                 "worldprovider": "WorldProviderSurfaceJED",
                 "suffix": "_dim100",
                 "keeploaded": true,
                 "require_exact_match": true
-              },
+            },
             "worldinfo_onetime": {
                 "DayTime": 6000,
                 "generatorName": "flat",
@@ -20,10 +20,10 @@
                     "doMobSpawning": "false",
                     "disableNetherPortalCreation": "true"
                 },
-            "jed": {
-                "CanSpawnHostiles": false,
-                "CanSpawnPeacefulMobs": false
-            }
+                "jed": {
+                    "CanSpawnHostiles": false,
+                    "CanSpawnPeacefulMobs": false
+                }
             }
         }
     ]
