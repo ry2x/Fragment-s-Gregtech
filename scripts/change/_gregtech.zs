@@ -209,6 +209,7 @@ for key in autoclaveGems {
 		.EUt(24)
 		.buildAndRegister();
 }
+
 //ender perl
 autoclave.recipeBuilder()
 	.inputs(<gregtech:meta_item_1:2218>)
@@ -225,38 +226,70 @@ solidifier.recipeBuilder()
 	.EUt(16)
 	.buildAndRegister();
 
-//add recipes bronze machine casing to steel
+//add metal casing upgrade recipes
+	#bronze to steel
 assembler.recipeBuilder()
 	.inputs(<gregtech:metal_casing>, <ore:plateSteel>*2)
 	.outputs(<gregtech:metal_casing:4>)
 	.duration(60)
-	.EUt(8)
+	.EUt(16)
 	.buildAndRegister();
+	#steel to titanium
 assembler.recipeBuilder()
-	.inputs(<gregtech:boiler_firebox_casing>, <ore:plateSteel>*2)
-	.outputs(<gregtech:boiler_firebox_casing:1>)
+	.inputs(<gregtech:metal_casing:4>, <ore:plateTitanium>*2)
+	.outputs(<gregtech:metal_casing:6>)
 	.duration(60)
-	.EUt(8)
+	.EUt(16)
 	.buildAndRegister();
+	#titanium to tungstenSteel
 assembler.recipeBuilder()
-	.inputs(<gregtech:boiler_casing>, <ore:plateSteel>*5)
-	.outputs(<gregtech:boiler_casing:1>)
+	.inputs(<gregtech:metal_casing:6>, <ore:plateTungstenSteel>*2)
+	.outputs(<gregtech:metal_casing:7>)
 	.duration(60)
-	.EUt(8)
+	.EUt(16)
 	.buildAndRegister();
+
+//add boiler upgrade recipes
+val boilerUpdate as IOreDictEntry[string[]] = {
+	["0","1"] : <ore:plateSteel>,
+	["1","2"] : <ore:plateTitanium>,
+	["2","3"] : <ore:plateTungstenSteel>
+};
+
+for inputInfo, plate in boilerUpdate {
+	val fireCasing = itemUtils.getItem("gregtech:boiler_firebox_casing",(inputInfo[0]) as int);
+	val boilerCasing = itemUtils.getItem("gregtech:boiler_casing",(inputInfo[0]) as int);
+	val fireCasing2 = itemUtils.getItem("gregtech:boiler_firebox_casing",(inputInfo[1]) as int);
+	val boilerCasing2 = itemUtils.getItem("gregtech:boiler_casing",(inputInfo[1]) as int);
+	#fireCasing
+	assembler.recipeBuilder()
+		.inputs(fireCasing,plate*2)
+		.outputs(fireCasing2)
+		.duration(60)
+		.EUt(16)
+		.buildAndRegister();
+	#boilerCasing
+	assembler.recipeBuilder()
+		.inputs(boilerCasing,plate*5)
+		.outputs(boilerCasing2)
+		.duration(60)
+		.EUt(16)
+		.buildAndRegister();
+}
+
 //Turbine recipes same as boillar
 assembler.recipeBuilder()
 	.inputs(<gregtech:turbine_casing:5>, <ore:plateTitanium>*2)
 	.outputs(<gregtech:turbine_casing:4>)
 	.duration(100)
-	.EUt(8)
+	.EUt(16)
 	.buildAndRegister();
 
 assembler.recipeBuilder()
 	.inputs(<gregtech:turbine_casing:4>, <ore:plateTungstenSteel>*2)
 	.outputs(<gregtech:turbine_casing:6>)
 	.duration(150)
-	.EUt(8)
+	.EUt(16)
 	.buildAndRegister();
 //drums to dusts
 macerator.recipeBuilder()
@@ -294,7 +327,6 @@ macerator.recipeBuilder()
     .EUt(8)
     .buildAndRegister();
 //blue steel in alloy
-
 alloy.recipeBuilder()
     .inputs([<gregtech:meta_item_1:10184>*2,<gregtech:meta_item_1:2128>])
     .outputs([<gregtech:meta_item_1:10233>*2])
@@ -318,10 +350,13 @@ compressor.recipeBuilder()
     .duration(400)
     .EUt(2)
     .buildAndRegister();
+
 //concrete to cement
 recipes.addShapeless(<railcraft:concrete>,[<gregtech:meta_item_1:16196>,<gregtech:meta_item_1:2296>,<gregtech:meta_item_1:16196>]);
+
 //concrete to sherd
 recipes.addShapeless(<tconstruct:soil>*4,[<gregtech:meta_item_1:2296>,<gregtech:meta_item_1:2296>,<gregtech:meta_item_1:2296>,<gregtech:meta_item_1:2296>]);
+
 //resin to rubber
 reactor.recipeBuilder()
 	.inputs(<ore:dustSulfur>)
@@ -330,7 +365,8 @@ reactor.recipeBuilder()
     .duration(400)
     .EUt(20)
     .buildAndRegister();
-#cryotheum helps cool-downing hot ingots
+
+//cryotheum helps cool-downing hot ingots
 freezer.recipeBuilder()
 	.inputs(<ore:ingotHotErbium>)
 	.fluidInputs([<liquid:cryotheum>*10])
@@ -1096,3 +1132,34 @@ fluid_extractor.recipeBuilder()
 	.duration(80)
 	.EUt(32)
 	.buildAndRegister();
+
+//add crate in assembler
+	#only wood
+assembler.recipeBuilder()
+	.inputs(<ore:screwIron>*4,<ore:plankWood>*4)
+	.outputs(<meta_tile_entity:gtadditions:crate.wood>)
+	.property("circuit", 4)
+	.duration(80)
+	.EUt(18)
+	.buildAndRegister();
+	#others
+val crateMaterials as IItemStack[string] = {
+	"Bronze":<meta_tile_entity:gtadditions:crate.bronze>,
+	"Steel":<meta_tile_entity:gtadditions:crate.steel>,
+	"StainlessSteel":<meta_tile_entity:gtadditions:crate.stainless_steel>,
+	"Titanium":<meta_tile_entity:gtadditions:crate.titanium>,
+	"TungstenSteel":<meta_tile_entity:gtadditions:crate.tungstensteel>
+};
+
+for key, meta in crateMaterials {
+	var Mplate = oreDict["plate"~key];
+	var MlongStick = oreDict["stickLong"~key];
+
+	assembler.recipeBuilder()
+		.inputs(Mplate*4,MlongStick*4)
+		.outputs(meta)
+		.property("circuit", 4)
+		.duration(80)
+		.EUt(18)
+		.buildAndRegister();
+}
