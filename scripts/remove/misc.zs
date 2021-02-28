@@ -315,3 +315,16 @@ val sonarcore as IItemStack[] = [
 for i in sonarcore {
     JEI.removeAndHide(i);
 }
+
+//remove useless item from FTBquest
+val uselessFTB as IItemStack[] = [
+	<ftbquests:chest>,
+	<ftbquests:loot_crate_storage>,
+	<ftbquests:loot_crate_opener>,
+	<ftbquests:barrier>,
+	<ftbquests:reward_collector>,
+];
+
+for i in uselessFTB {
+	JEI.removeAndHide(i);
+}
