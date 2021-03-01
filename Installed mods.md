@@ -1,5 +1,29 @@
 # Installed Mods
 
+AdditionalEnchantedMiner-1.12.2-12.4.5-universal.jar
+
+AE-Net-Vis-Tool-1.12.2-1.0.3.0-universal.jar
+
+AkashicTome-1.2-12.jar
+
+AmbientSounds_v3.0.18_mc1.12.2.jar
+
+AnvilFix-1.12.2-1.0.5.jar
+
+AppleSkin-mc1.12-1.0.14.jar
+
+appliedenergistics2-rv6-stable-7.jar
+
+Aroma1997Core-1.12.2-2.0.0.2.b167.jar
+
+AromaBackup-1.12.2-3.0.0.0.b135.jar
+
+AutoRegLib-1.3-32.jar
+
+BetterBuildersWands-1.12.2-0.13.2.271+5997513.jar
+
+BetterFps-1.4.8.jar
+
 BiblioCraft[v2.4.5][MC1.12.2].jar
 
 BNBGamingLib-1.12.2-2.17.6.jar
@@ -62,9 +86,9 @@ EnderIO-conduits-appliedenergistics-1.12.2-5.2.66.jar
 
 EnderIO-endergy-1.12.2-5.2.66.jar
 
-enderiofluxified-1.12.2-1.0.2.jar
-
 EnderIO-integration-forestry-1.12.2-5.2.66.jar
+
+enderiofluxified-1.12.2-1.0.2.jar
 
 EnderStorage-1.12.2-2.4.6.137-universal.jar
 
@@ -259,27 +283,3 @@ WaterMechanicsBackport-1.0.3-1.12.2-NETHERFIX.jar
 Xaeros_Minimap_21.3.0.2_Forge_1.12.jar
 
 XaerosWorldMap_1.12.0.2_Forge_1.12.jar
-
-AdditionalEnchantedMiner-1.12.2-12.4.5-universal.jar
-
-AE-Net-Vis-Tool-1.12.2-1.0.3.0-universal.jar
-
-AkashicTome-1.2-12.jar
-
-AmbientSounds_v3.0.18_mc1.12.2.jar
-
-AnvilFix-1.12.2-1.0.5.jar
-
-AppleSkin-mc1.12-1.0.14.jar
-
-appliedenergistics2-rv6-stable-7.jar
-
-Aroma1997Core-1.12.2-2.0.0.2.b167.jar
-
-AromaBackup-1.12.2-3.0.0.0.b135.jar
-
-AutoRegLib-1.3-32.jar
-
-BetterBuildersWands-1.12.2-0.13.2.271+5997513.jar
-
-BetterFps-1.4.8.jar
