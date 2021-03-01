@@ -132,7 +132,7 @@ gravestone-1.10.3.jar
 
 Gregicality-1.12.2-0.21.3.jar
 
-gregtech-1.12.2-1.11.3.640.jar
+gregtech-1.12.2-1.12.0.662.jar
 
 iChunUtil-1.12.2-7.2.2.jar
 
@@ -232,7 +232,7 @@ ResourceLoader-MC1.12.1-1.5.3.jar
 
 Scannable-MC1.12.2-1.6.3.26.jar
 
-simplemagnets-1.0.13-mc1.12.jar
+simplemagnets-1.1.1-mc1.12.jar
 
 SimpleSmelteryAccelerator-1.0.1.jar
 
@@ -250,13 +250,13 @@ StorageDrawers-1.12.2-5.4.2.jar
 
 StorageDrawersExtras-1.12-3.1.0.jar
 
-supermartijn642configlib-1.0.4-mc1.12.jar
+supermartijn642configlib-1.0.5-mc1.12.jar
 
 TConstruct-1.12.2-2.13.0.183.jar
 
 tesla-core-lib-1.12.2-1.0.17.jar
 
-tesseract-1.0.17-mc1.12.jar
+tesseract-1.0.18-mc1.12.jar
 
 theoneprobe-1.12-1.4.28.jar
 
@@ -280,6 +280,6 @@ volumetricflask-0.18.jar
 
 WaterMechanicsBackport-1.0.3-1.12.2-NETHERFIX.jar
 
-Xaeros_Minimap_21.3.0.2_Forge_1.12.jar
+Xaeros_Minimap_21.4.0.1_Forge_1.12.jar
 
 XaerosWorldMap_1.12.0.2_Forge_1.12.jar
