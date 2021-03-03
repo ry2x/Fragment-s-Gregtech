@@ -1163,3 +1163,14 @@ for key, meta in crateMaterials {
 		.EUt(18)
 		.buildAndRegister();
 }
+
+//fix aluminium dust recipe in EBF It will be removed in next update due to updating gregicality
+blast_furnace.findRecipe(120, [<ore:dustAluminium>.firstItem],null).remove();
+blast_furnace.recipeBuilder()
+	.inputs(<ore:dustAluminium>)
+	.outputs(<ore:ingotAluminium>.firstItem)
+    .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:1}))
+	.property("temperature", 1700)
+	.EUt(120)
+	.duration(884)
+	.buildAndRegister();
