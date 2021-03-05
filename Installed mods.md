@@ -1,12 +1,12 @@
 # Installed Mods
 
-AdditionalEnchantedMiner-1.12.2-12.4.5-universal.jar
+AdditionalEnchantedMiner-1.12.2-12.4.6.jar
 
 AE-Net-Vis-Tool-1.12.2-1.0.3.0-universal.jar
 
 AkashicTome-1.2-12.jar
 
-AmbientSounds_v3.0.18_mc1.12.2.jar
+AmbientSounds_v3.1.5_mc1.12.2.jar
 
 AnvilFix-1.12.2-1.0.5.jar
 
@@ -54,7 +54,7 @@ CosmeticArmorReworked-1.12.2-v5a.jar
 
 CraftTweaker2-1.12-4.1.20.614.jar
 
-CreativeCore_v1.10.45_mc1.12.2.jar
+CreativeCore_v1.10.47_mc1.12.2.jar
 
 CryingObsidian-1.12.2-1.2.1.jar
 
@@ -280,6 +280,6 @@ volumetricflask-0.18.jar
 
 WaterMechanicsBackport-1.0.3-1.12.2-NETHERFIX.jar
 
-Xaeros_Minimap_21.4.0.1_Forge_1.12.jar
+Xaeros_Minimap_21.4.1_Forge_1.12.jar
 
-XaerosWorldMap_1.12.0.2_Forge_1.12.jar
+XaerosWorldMap_1.12.1_Forge_1.12.jar
