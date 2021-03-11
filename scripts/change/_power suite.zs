@@ -221,3 +221,11 @@ assembler.recipeBuilder()
 //Schematic (3x3)
 packer.findRecipe(4,[<minecraft:coal_block>*9,<gtadditions:ga_meta_item:32133>],[]).remove();
 packer.findRecipe(4,[<powersuits:powerarmorcomponent:14>*9,<gtadditions:ga_meta_item:32133>],[]).remove();
+
+//solenoid = coil
+assembler.recipeBuilder()
+	.inputs(<ore:stickLongIronMagnetic>,<ore:wireFineAnnealedCopper>*2)
+	.outputs(<powersuits:powerarmorcomponent:1>)
+	.duration(120)
+	.EUt(16)
+	.buildAndRegister();

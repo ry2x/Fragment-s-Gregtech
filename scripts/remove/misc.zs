@@ -252,7 +252,6 @@ recipes.removeByRecipeName("quark:hopper");
 //remove power suite's useless items
 val powerSuite as IItemStack[] = [
     <powersuits:powerarmorcomponent>,
-    <powersuits:powerarmorcomponent:1>,
     <ore:componentMyofiberGel>.firstItem,
     <powersuits:powerarmorcomponent:14>,
     <powersuits:powerarmorcomponent:17>,
