@@ -401,6 +401,16 @@ recipes.addShaped(<extrautils2:filter>, [
     [<forestry:oak_stick>, <ore:paneGlass>, <forestry:oak_stick>],
     [<appliedenergistics2:paint_ball:14>, <forestry:oak_stick>, <appliedenergistics2:paint_ball:14>]
 ]);
+
+//fix wooden spike
+recipes.remove(<extrautils2:spike_wood>);
+val sowrd = <tconstruct:large_sword_blade>.withTag({Material: "wood"});
+recipes.addShaped(<extrautils2:spike_wood>,[
+	[null,sowrd,null],
+	[sowrd,<ore:plankWood>,sowrd],
+	[<ore:plankWood>,<ore:logWood>,<ore:plankWood>]
+);
+
 //project red peridot items and draw plate
 recipes.remove(<projectred-exploration:peridot_helmet>);
 <projectred-exploration:peridot_helmet>.displayName = "Olivine Helmet";
