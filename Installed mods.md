@@ -136,7 +136,9 @@ gregtech-1.12.2-1.12.0.662.jar
 
 iChunUtil-1.12.2-7.2.2.jar
 
-industrialforegoing-1.12.2-1.12.15.jar
+IFPatcher-1.1.0.jar
+
+industrialforegoing-1.12.2-1.12.13-237.jar
 
 InGameInfoXML-1.12.2-2.8.2.94-universal.jar
 
