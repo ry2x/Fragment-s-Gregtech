@@ -212,6 +212,8 @@ Placebo-1.12.2-1.6.0.jar
 
 PortalGun-1.12.2-7.1.0.jar
 
+portality-1.12.2-1.2.3-15.jar
+
 powerchisels-1.0.0-beta-3.jar
 
 ProjectRed-1.12.2-4.9.4.120-Base.jar
