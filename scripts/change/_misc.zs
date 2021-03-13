@@ -409,7 +409,7 @@ recipes.addShaped(<extrautils2:spike_wood>,[
 	[null,sowrd,null],
 	[sowrd,<ore:plankWood>,sowrd],
 	[<ore:plankWood>,<ore:logWood>,<ore:plankWood>]
-);
+]);
 
 //project red peridot items and draw plate
 recipes.remove(<projectred-exploration:peridot_helmet>);
