@@ -327,3 +327,6 @@ val uselessFTB as IItemStack[] = [
 for i in uselessFTB {
 	JEI.removeAndHide(i);
 }
+
+//remove creative item
+JEI.removeAndHide(<portality:creative_creator>);
