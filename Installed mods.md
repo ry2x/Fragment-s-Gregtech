@@ -132,11 +132,11 @@ gravestone-1.10.3.jar
 
 Gregicality-1.12.2-0.21.3.jar
 
-gregtech-1.12.2-1.12.0.662.jar
+gregtech-1.12.2-1.12.1.669.jar
 
 iChunUtil-1.12.2-7.2.2.jar
 
-IFPatcher-1.1.0.jar
+IFPatcher-1.0.1.jar
 
 industrialforegoing-1.12.2-1.12.13-237.jar
 
