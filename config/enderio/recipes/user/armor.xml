@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<enderio:recipes xmlns:enderio="http://enderio.com/recipes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://enderio.com/recipes recipes.xsd ">
+    
+    <!-- This file will add armor recipes-->
+    <!-- Stellar armor-->
+    <recipe name="Armor, Stellar, Helmet" required="true">
+        <crafting>
+            <grid>
+                <item name="oredict:plateStellarAlloy"/>
+                <item name="oredict:plateStellarAlloy"/>
+                <item name="oredict:plateStellarAlloy"/>
+
+                <item name="oredict:plateStellarAlloy"/>
+                <item name="gregtech:meta_item_1:32606"/>
+                <item name="oredict:plateStellarAlloy"/>
+
+                <item />
+                <item />
+                <item />
+            </grid>
+            <output name="enderio:item_stellar_alloy_helmet"/>
+        </crafting>
+    </recipe>
+
+    <recipe name="Armor, Stellar, Chest" required="true">
+        <crafting>
+            <grid>
+                <item name="oredict:plateStellarAlloy"/>
+                <item name="gregtech:meta_item_1:32606"/>
+                <item name="oredict:plateStellarAlloy"/>
+
+                <item name="oredict:plateStellarAlloy"/>
+                <item name="oredict:plateStellarAlloy"/>
+                <item name="oredict:plateStellarAlloy"/>
+
+                <item name="oredict:plateStellarAlloy"/>
+                <item name="oredict:plateStellarAlloy"/>
+                <item name="oredict:plateStellarAlloy"/>
+            </grid>
+            <output name="enderio:item_stellar_alloy_chestplate"/>
+        </crafting>
+    </recipe>
+
+    <recipe name="Armor, Stellar, Leggings" required="true">
+        <crafting>
+            <grid>
+                <item name="oredict:plateStellarAlloy"/>
+                <item name="oredict:plateStellarAlloy"/>
+                <item name="oredict:plateStellarAlloy"/>
+
+                <item name="oredict:plateStellarAlloy"/>
+                <item />
+                <item name="oredict:plateStellarAlloy"/>
+                
+                <item name="oredict:plateStellarAlloy"/>
+                <item name="gregtech:meta_item_1:32606"/>
+                <item name="oredict:plateStellarAlloy"/>
+            </grid>
+            <output name="enderio:item_stellar_alloy_leggings"/>
+        </crafting>
+    </recipe>
+
+    <recipe name="Armor, Stellar, Boots" required="true">
+        <crafting>
+            <grid>
+                <item />
+                <item />
+                <item />
+                
+                <item name="oredict:plateStellarAlloy"/>
+                <item name="gregtech:meta_item_1:32606"/>
+                <item name="oredict:plateStellarAlloy"/>
+
+                <item name="oredict:plateStellarAlloy"/>
+                <item />
+                <item name="oredict:plateStellarAlloy"/>
+            </grid>
+            <output name="enderio:item_stellar_alloy_boots"/>
+        </crafting>
+    </recipe>
+
+    <!-- dark steel-->
+    <recipe name="Armor, DarkSteel, Helmet" required="true">
+        <crafting>
+            <grid>
+                <item name="oredict:plateDarkSteel"/>
+                <item name="oredict:plateDarkSteel"/>
+                <item name="oredict:plateDarkSteel"/>
+
+                <item name="oredict:plateDarkSteel"/>
+                <item name="gregtech:meta_item_1:32602"/>
+                <item name="oredict:plateDarkSteel"/>
+
+                <item />
+                <item />
+                <item />
+            </grid>
+            <output name="enderio:item_dark_steel_helmet"/>
+        </crafting>
+    </recipe>
+
+    <recipe name="Armor, DarkSteel, Chest" required="true">
+        <crafting>
+            <grid>
+                <item name="oredict:plateDarkSteel"/>
+                <item name="gregtech:meta_item_1:32602"/>
+                <item name="oredict:plateDarkSteel"/>
+                
+                <item name="oredict:plateDarkSteel"/>
+                <item name="oredict:plateDarkSteel"/>
+                <item name="oredict:plateDarkSteel"/>
+                
+                <item name="oredict:plateDarkSteel"/>
+                <item name="oredict:plateDarkSteel"/>
+                <item name="oredict:plateDarkSteel"/>
+            </grid>
+            <output name="enderio:item_dark_steel_chestplate"/>
+        </crafting>
+    </recipe>
+
+    <recipe name="Armor, DarkSteel, Leggings" required="true">
+        <crafting>
+            <grid>
+                <item name="oredict:plateDarkSteel"/>
+                <item name="oredict:plateDarkSteel"/>
+                <item name="oredict:plateDarkSteel"/>
+
+                <item name="oredict:plateDarkSteel"/>
+                <item />
+                <item name="oredict:plateDarkSteel"/>
+
+                <item name="oredict:plateDarkSteel"/>
+                <item name="gregtech:meta_item_1:32602"/>
+                <item name="oredict:plateDarkSteel"/>
+            </grid>
+            <output name="enderio:item_dark_steel_leggings"/>
+        </crafting>
+    </recipe>
+
+    <recipe name="Armor, DarkSteel, Boots" required="true">
+        <crafting>
+            <grid>
+                <item />
+                <item />
+                <item />
+
+                <item name="oredict:plateDarkSteel"/>
+                <item name="gregtech:meta_item_1:32602"/>
+                <item name="oredict:plateDarkSteel"/>
+
+                <item name="oredict:plateDarkSteel"/>
+                <item />
+                <item name="oredict:plateDarkSteel"/>
+            </grid>
+            <output name="enderio:item_dark_steel_boots"/>
+        </crafting>
+    </recipe>
+</enderio:recipes>

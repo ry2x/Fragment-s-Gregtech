@@ -116,4 +116,23 @@
             <output name="CONDUIT_PROBE" />
         </crafting>
     </recipe>
+
+    <recipe name="DarkSteel, Anvil" required="true">
+        <crafting>
+            <grid>
+                <item name="oredict:blockDarkSteel"/>
+                <item name="oredict:blockDarkSteel"/>
+                <item name="oredict:blockDarkSteel"/>
+                
+                <item />
+                <item name="oredict:ingotDarkSteel" />
+                <item />
+
+                <item name="oredict:ingotDarkSteel" />
+                <item name="oredict:ingotDarkSteel" />
+                <item name="oredict:ingotDarkSteel" />
+            </grid>
+            <output name="enderio:block_dark_steel_anvil" /> 
+        </crafting>
+    </recipe>
 </enderio:recipes>

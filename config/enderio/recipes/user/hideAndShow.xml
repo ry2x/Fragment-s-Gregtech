@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<enderio:recipes xmlns:enderio="http://enderio.com/recipes" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://enderio.com/recipes recipes.xsd ">
+
+    <!-- This file corresponds to hide most but not least items/blocks from JEI. -->
+    <!-- Some items are shown in JEI and craftable -->
+    <recipe name="HidefromJEI" required="true">
+        <hiding>
+            <!-- Alloy -->
+            <item name="enderio:item_alloy_ball:*" hide="true" />
+            <item name="enderio:item_alloy_endergy_ball:*" hide="true" />
+            <item name="enderio:item_alloy_endergy_ingot:*" hide="true" />
+            <item name="enderio:item_alloy_endergy_nugget:*" hide="true" />
+            <item name="enderio:item_alloy_ingot:*" hide="true" />
+            <item name="enderio:item_alloy_nugget:*" hide="true" />
+
+            <!-- Energy Conduit -->
+            <item name="enderio:item_endergy_conduit:*,
+            -enderio:item_endergy_conduit:9,
+            -enderio:item_endergy_conduit:10,
+            -enderio:item_endergy_conduit:11" hide="true" />
+
+            <!-- Inventory Charger -->
+            <item name="enderio:item_inventory_charger_simple" hide="true" />
+            <item name="enderio:item_inventory_charger_basic" hide="true" />
+            <item name="enderio:item_inventory_charger" hide="true" />
+            <item name="enderio:item_inventory_charger_vibrant" hide="true" />
+
+            <!-- Item -->
+            <item name="enderio:item_broken_spawner:*" hide="true" />
+            <item name="enderio:item_cold_fire_igniter:*" hide="true" />
+            <item name="enderio:item_conduit_facade:*" hide="true" />
+            <item name="enderio:item_coord_selector" hide="true" />
+            <item name="enderio:item_dark_steel_hand" hide="true" />
+            <item name="enderio:item_dark_steel_shield" hide="true" />
+            <item name="enderio:item_dark_steel_treetap" hide="true" />
+            <item name="enderio:item_end_steel_shield" hide="true" />
+            <item name="enderio:item_ender_food" hide="true" />
+            <item name="enderio:item_magnet" hide="true" />
+            <item name="enderio:item_owl_egg" hide="true" />
+            <item name="enderio:item_rod_of_return:*" hide="true" />
+            <item name="enderio:item_soul_filter_big" hide="true" />
+            <item name="enderio:item_soul_filter_normal" hide="true" />
+            <item name="enderio:item_soul_vial" hide="true" />
+            <item name="enderio:item_staff_of_levity:*" hide="true" />
+            <item name="enderio:item_travel_staff:*" hide="true" />
+            <item name="enderio:item_xp_transfer:*" hide="true" />
+
+            <!-- Item Capacitor -->
+            <item name="enderio:item_capacitor_crystalline" hide="true" />
+            <item name="enderio:item_capacitor_energetic_silver" hide="true" />
+            <item name="enderio:item_capacitor_grainy" hide="true" />
+            <item name="enderio:item_capacitor_melodic" hide="true" />
+            <item name="enderio:item_capacitor_silver" hide="true" />
+            <item name="enderio:item_capacitor_stellar" hide="true" />
+            <item name="enderio:item_capacitor_totemic" hide="true" />
+            <item name="enderio:item_capacitor_vivid" hide="true" />
+
+            <!-- Item material -->
+            <item name="enderio:item_material:*,
+            -enderio:item_material:4,
+            -enderio:item_material:22,
+            -enderio:item_material:60,
+            -enderio:item_material:77" hide="true" />
+
+            <!-- Blocks -->
+            <item name="enderio:block_alloy:*" hide="true" />
+            <item name="enderio:block_alloy_endergy:*" hide="true" />
+            <item name="enderio:block_concussion_charge" hide="true" />
+            <item name="enderio:block_confusion_charge" hide="true" />
+            <item name="enderio:block_dark_iron_bars" hide="true" />
+            <item name="item:enderio:block_dark_steel_door" hide="true" />
+            <item name="enderio:block_dark_steel_ladder" hide="true" />
+            <item name="enderio:block_dark_steel_trapdoor" hide="true" />
+            <item name="enderio:block_dark_paper_anvil:*" hide="true" />
+            <item name="enderio:block_decoration1:*" hide="true" />
+            <item name="enderio:block_decoration2:*" hide="true" />
+            <item name="enderio:block_decoration3:*" hide="true" />
+            <item name="enderio:block_detector_block:*" hide="true" />
+            <item name="enderio:block_detector_block_silent:*" hide="true" />
+            <item name="enderio:block_end_iron_bars" hide="true" />
+            <item name="enderio:block_ender_charge" hide="true" />
+            <item name="enderio:block_enderman_skull:*" hide="true" />
+            <item name="enderio:block_infinity:*" hide="true" />
+            <item name="enderio:block_industrial_insulation" hide="true" />
+            <item name="enderio:block_infinity_fog" hide="true" />
+            <item name="enderio:block_holy_fog" hide="true" />
+            <item name="enderio:block_painted_pressure_plate:*" hide="true" />
+            <item name="enderio:block_reinforced_obsidian" hide="true" />
+
+            <item name="enderio:block_dark_steel_anvil:*" show="true" />
+
+            <!-- Fused Quartz -->
+            <item name="enderio:block_dark_fused_glass:*" hide="true" />
+            <item name="enderio:block_dark_fused_quartz:*" hide="true" />
+            <item name="enderio:block_enlightened_fused_glass:*" hide="true" />
+            <item name="enderio:block_enlightened_fused_quartz:*" hide="true" />
+            <item name="enderio:block_fused_glass:*" hide="true" />
+            <item name="enderio:block_fused_quartz:*" hide="true" />
+
+            <item name="enderio:block_holy_dark_fused_glass:*" hide="true" />
+            <item name="enderio:block_holy_dark_fused_quartz:*" hide="true" />
+            <item name="enderio:block_holy_enlightened_fused_glass:*" hide="true" />
+            <item name="enderio:block_holy_enlightened_fused_quartz:*" hide="true" />
+            <item name="enderio:block_holy_fused_quartz:*" hide="true" />
+
+            <item name="enderio:block_pasture_dark_fused_glass:*" hide="true" />
+            <item name="enderio:block_pasture_dark_fused_quartz:*" hide="true" />
+            <item name="enderio:block_pasture_enlightened_fused_glass:*" hide="true" />
+            <item name="enderio:block_pasture_enlightened_fused_quartz:*" hide="true" />
+            <item name="enderio:block_pasture_fused_glass:*" hide="true" />
+            <item name="enderio:block_pasture_fused_quartz:*" hide="true" />
+
+            <item name="enderio:block_unholy_dark_fused_glass:*" hide="true" />
+            <item name="enderio:block_unholy_dark_fused_quartz:*" hide="true" />
+            <item name="enderio:block_unholy_enlightened_fused_glass:*" hide="true" />
+            <item name="enderio:block_unholy_enlightened_fused_quartz:*" hide="true" />
+            <item name="enderio:block_unholy_fused_glass:*" hide="true" />
+            <item name="enderio:block_unholy_fused_quartz:*" hide="true" />
+
+            <item name="enderio:block_not_holy_fused_quartz:*" hide="true" />
+            <item name="enderio:block_not_holy_fused_glass:*" hide="true" />
+            <item name="enderio:block_not_holy_enlightened_fused_quartz:*" hide="true" />
+            <item name="enderio:block_not_holy_enlightened_fused_glass:*" hide="true" />
+            <item name="enderio:block_not_holy_dark_fused_quartz:*" hide="true" />
+            <item name="enderio:block_not_holy_dark_fused_glass:*" hide="true" />
+
+            <item name="enderio:block_not_pasture_dark_fused_glass:*" hide="true" />
+            <item name="enderio:block_not_pasture_dark_fused_quartz:*" hide="true" />
+            <item name="enderio:block_not_pasture_enlightened_fused_glass:*" hide="true" />
+            <item name="enderio:block_not_pasture_enlightened_fused_quartz:*" hide="true" />
+            <item name="enderio:block_not_pasture_fused_glass:*" hide="true" />
+            <item name="enderio:block_not_pasture_fused_quartz:*" hide="true" />
+
+            <item name="enderio:block_not_unholy_dark_fused_glass:*" hide="true" />
+            <item name="enderio:block_not_unholy_dark_fused_quartz:*" hide="true" />
+            <item name="enderio:block_not_unholy_enlightened_fused_glass:*" hide="true" />
+            <item name="enderio:block_not_unholy_enlightened_fused_quartz:*" hide="true" />
+            <item name="enderio:block_not_unholy_fused_glass:*" hide="true" />
+            <item name="enderio:block_not_unholy_fused_quartz:*" hide="true" />
+
+            <!-- Fluids -->
+            <fluid name="cloud_seed" hide="true" />
+            <fluid name="cloud_seed_concentrated" hide="true" />
+            <fluid name="ender_distillation" hide="true" />
+            <fluid name="fire_water" hide="true" />
+            <fluid name="hootch" hide="true" />
+            <fluid name="liquid_sunshine" hide="true" />
+            <fluid name="nutrient_distillation" hide="true" />
+            <fluid name="rocket_fuel" hide="true" />
+            <fluid name="vapor_of_levity" hide="true" />
+            <fluid name="xpjuice" hide="true" />
+
+            <!-- Tools And Armors -->
+            <item name="enderio:item_dark_steel_sword" hide="true" />
+            <item name="enderio:item_dark_steel_bow" hide="true" />
+            <item name="enderio:item_dark_steel_pickaxe" hide="true" />
+            <item name="enderio:item_dark_steel_axe" hide="true" />
+            <item name="enderio:item_dark_steel_shears" hide="true" />
+            <item name="enderio:item_dark_steel_crook" hide="true" />
+            <item name="enderio:item_end_steel_sword" hide="true" />
+            <item name="enderio:item_end_steel_bow" hide="true" />
+            <item name="enderio:item_end_steel_pickaxe" hide="true" />
+            <item name="enderio:item_end_steel_axe" hide="true" />
+            <item name="enderio:item_end_steel_helmet" hide="true" />
+            <item name="enderio:item_end_steel_chestplate" hide="true" />
+            <item name="enderio:item_end_steel_leggings" hide="true" />
+            <item name="enderio:item_end_steel_boots" hide="true" />
+            <item name="enderio:item_stellar_alloy_sword" hide="true" />
+            <item name="enderio:item_stellar_alloy_pickaxe" hide="true" />
+            <item name="enderio:item_stellar_alloy_axe" hide="true" />
+
+            <item name="enderio:item_dark_steel_helmet" show="true" />
+            <item name="enderio:item_dark_steel_chestplate" show="true" />
+            <item name="enderio:item_dark_steel_leggings" show="true" />
+            <item name="enderio:item_dark_steel_boots" show="true" />
+
+            <item name="enderio:item_stellar_alloy_helmet" show="true" />
+            <item name="enderio:item_stellar_alloy_chestplate" show="true" />
+            <item name="enderio:item_stellar_alloy_leggings" show="true" />
+            <item name="enderio:item_stellar_alloy_boots" show="true" />
+
+            <!-- Upgrade-->
+            <item name="enderio:item_dark_steel_upgrade:*" show="true" />
+        </hiding>
+    </recipe>
+</enderio:recipes>
