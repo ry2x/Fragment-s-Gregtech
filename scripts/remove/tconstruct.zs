@@ -121,3 +121,25 @@ for i in alloying {
 recipes.removeByRecipeName("tconstruct:common/slime/pink/congealed");
 recipes.removeByRecipeName("tconstruct:gadgets/slimeboots/fallback");
 recipes.removeByRecipeName("tconstruct:gadgets/slimesling/fallback");
+
+//remove material alloying
+    #dark steel 
+val DustDarksteel as IItemStack[] = [
+    <gregtech:meta_item_1:502>,
+    <gregtech:meta_item_1:1502>,
+    <gregtech:meta_item_1:2502>
+];
+
+for i in DustDarksteel {
+    mods.tconstruct.Melting.removeRecipe(<liquid:dark_steel>,i);
+}
+    #stellar
+val DustStellar as IItemStack[] = [
+    <gregtech:meta_item_1:501>,
+    <gregtech:meta_item_1:1501>,
+    <gregtech:meta_item_1:2501>
+];
+
+for i in DustStellar {
+    mods.tconstruct.Melting.removeRecipe(<liquid:stellar_alloy>,i);
+}
