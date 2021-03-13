@@ -1,7 +1,7 @@
 {
 	title: "Void to Nether!!",
-	x: -6.0d,
-	y: -0.5d,
+	x: -18.5d,
+	y: 0.0d,
 	description: "Play in nether with white boxs",
 	text: [
 		"Make void to nether portal.",

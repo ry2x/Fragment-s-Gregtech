@@ -6,8 +6,8 @@
 			timeData: {}
 		}
 	},
-	x: -8.0d,
-	y: -3.5d,
+	x: -21.5d,
+	y: -3.0d,
 	description: "It is a OP item...",
 	text: [
 		"Some players request useful tick acceleration item, so I added it.",

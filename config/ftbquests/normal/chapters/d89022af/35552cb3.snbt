@@ -1,0 +1,19 @@
+{
+	x: -4.5d,
+	y: -11.5d,
+	text: [
+		"meking plate in this machine is a good way in steam age "
+	],
+	tasks: [{
+		uid: "ee9289d4",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 13"
+		}]
+	}],
+	rewards: [{
+		uid: "aaa3eeb1",
+		type: "item",
+		item: "gregtech:meta_item_1 1 12095"
+	}]
+}
