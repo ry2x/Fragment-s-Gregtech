@@ -404,10 +404,10 @@ recipes.addShaped(<extrautils2:filter>, [
 
 //fix wooden spike
 recipes.remove(<extrautils2:spike_wood>);
-val sowrd = <tconstruct:large_sword_blade>.withTag({Material: "wood"});
+val sword = <tconstruct:large_sword_blade>.withTag({Material: "wood"});
 recipes.addShaped(<extrautils2:spike_wood>,[
-	[null,sowrd,null],
-	[sowrd,<ore:plankWood>,sowrd],
+	[null,sword,null],
+	[sword,<ore:plankWood>,sword],
 	[<ore:plankWood>,<ore:logWood>,<ore:plankWood>]
 ]);
 
