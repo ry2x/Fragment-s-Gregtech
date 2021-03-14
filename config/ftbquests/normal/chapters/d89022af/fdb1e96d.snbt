@@ -1,0 +1,19 @@
+{
+	title: "need power",
+	x: -7.0d,
+	y: 4.0d,
+	text: [
+		"Thermal dynamic's ducts and gregtech's pipes can't extract itself.",
+		" So, you'll need pump, conveyer, robot arm, servo and other items."
+	],
+	tasks: [{
+		uid: "753b863e",
+		type: "checkmark",
+		icon: "thermaldynamics:servo"
+	}],
+	rewards: [{
+		uid: "a3bfc594",
+		type: "item",
+		item: "thermaldynamics:servo"
+	}]
+}
