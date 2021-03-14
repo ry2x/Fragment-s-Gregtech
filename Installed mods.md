@@ -246,8 +246,6 @@ sonarcore-1.12.2-5.0.19-20.jar
 
 SpartanShields-1.12.2-1.5.4.jar
 
-stellarfluidconduit-1.12.2-1.0.3.jar
-
 stg-1.12.2-1.2.3.jar
 
 StorageDrawers-1.12.2-5.4.2.jar
