@@ -22,25 +22,6 @@
         </crafting>
     </recipe>
 
-    <recipe name="Detector Block" required="true">
-        <crafting>
-            <grid>
-                <item name="itemChassiParts" />
-                <item name="PPP_DARK_STEEL" />
-                <item name="itemChassiParts" />
-
-                <item name="itemChassiParts" />
-                <item name="piston" />
-                <item name="itemChassiParts" />
-
-                <item name="itemChassiParts" />
-                <item name="redstone_block" />
-                <item name="itemChassiParts" />
-            </grid>
-            <output name="enderio:block_detector_block" />
-        </crafting>
-    </recipe>
-
     <recipe name="Black Paper" required="true">
         <crafting>
             <grid>
