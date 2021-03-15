@@ -3,6 +3,44 @@
 
     <!-- This file corresponds to add and implement recipes that would not fit with other files in the same directory. -->
 
+    <recipe name="Exit Rail" required="true">
+        <crafting>
+            <grid>
+                <item name="oredict:ingotIron" />
+                <item name="minecraft:piston" />
+                <item name="oredict:ingotIron" />
+
+                <item name="oredict:ingotIron" />
+                <item name="minecraft:stone_pressure_plate" />
+                <item name="oredict:ingotIron" />
+
+                <item name="oredict:ingotIron" />
+                <item name="oredict:dustRedstone" />
+                <item name="oredict:ingotIron" />
+            </grid>
+            <output name="enderio:block_exit_rail" amount="6" />
+        </crafting>
+    </recipe>
+
+    <recipe name="Detector Block" required="true">
+        <crafting>
+            <grid>
+                <item name="itemChassiParts" />
+                <item name="PPP_DARK_STEEL" />
+                <item name="itemChassiParts" />
+
+                <item name="itemChassiParts" />
+                <item name="piston" />
+                <item name="itemChassiParts" />
+
+                <item name="itemChassiParts" />
+                <item name="redstone_block" />
+                <item name="itemChassiParts" />
+            </grid>
+            <output name="enderio:block_detector_block" />
+        </crafting>
+    </recipe>
+
     <recipe name="Black Paper" required="true">
         <crafting>
             <grid>
