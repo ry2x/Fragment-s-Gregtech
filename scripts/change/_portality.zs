@@ -1,7 +1,6 @@
 //import greg
 import mods.gregtech.recipe.RecipeMap;
 
-
 //import crafttweaker II
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
@@ -43,7 +42,7 @@ assembler.recipeBuilder()
     .buildAndRegister();
 
 //portal input/output
-    #item 
+    #item
 assembler.recipeBuilder()
     .inputs(<gregtech:meta_item_2:32435>*8,<gregtech:meta_item_1:12074>*4,<gregtech:machine:770>)
     .outputs(<portality:module_items>)
