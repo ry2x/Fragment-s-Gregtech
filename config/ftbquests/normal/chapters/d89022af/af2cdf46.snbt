@@ -1,0 +1,26 @@
+{
+	title: "Basic 2",
+	x: -9.5d,
+	y: 14.0d,
+	text: [
+		"Cables are for transfering GTEU.",
+		"",
+		"However, do you know amperage?",
+		"This item can transfer 1A of GTEU, so if you insert over 1A of GTEU to this item, it would burn out."
+	],
+	dependencies: [
+		"fe44c5d3"
+	],
+	tasks: [{
+		uid: "575c379c",
+		type: "item",
+		items: [{
+			item: "gregtech:cable 1 5071"
+		}]
+	}],
+	rewards: [{
+		uid: "e4134cc9",
+		type: "xp_levels",
+		xp_levels: 1
+	}]
+}

@@ -1,0 +1,33 @@
+{
+	title: "ME Molecular Assembler",
+	x: -4.5d,
+	y: 20.5d,
+	description: "You know well!",
+	text: [
+		"AE2's auto craft system is quit nice.",
+		"Place interface and molecular assembler next to each other.",
+		"Then put encorded pattern to interface, it'll work."
+	],
+	dependencies: [
+		"a11c8370"
+	],
+	tasks: [{
+		uid: "71f7b2cc",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:molecular_assembler"
+		}]
+	},
+	{
+		uid: "e25ff767",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:interface"
+		}]
+	}],
+	rewards: [{
+		uid: "39e60077",
+		type: "item",
+		item: "appliedenergistics2:molecular_assembler"
+	}]
+}

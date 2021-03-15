@@ -1,0 +1,22 @@
+{
+	title: "Player Duct",
+	x: -6.5d,
+	y: 2.5d,
+	text: [
+		""
+	],
+	tasks: [{
+		uid: "9ade860a",
+		type: "item",
+		items: [{
+			item: "thermaldynamics:duct_64 1 1"
+		}]
+	},
+	{
+		uid: "d65f05b0",
+		type: "item",
+		items: [{
+			item: "thermaldynamics:duct_64"
+		}]
+	}]
+}

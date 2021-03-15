@@ -1,0 +1,16 @@
+{
+	x: -4.5d,
+	y: -14.0d,
+	tasks: [{
+		uid: "cb518cf4",
+		type: "item",
+		items: [{
+			item: "forestry:wood_pile"
+		}]
+	}],
+	rewards: [{
+		uid: "8765c71a",
+		type: "item",
+		item: "forestry:wood_pile"
+	}]
+}

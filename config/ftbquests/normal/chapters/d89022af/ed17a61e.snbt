@@ -1,6 +1,13 @@
 {
-	x: -1.0d,
-	y: 4.0d,
+	x: 0.5d,
+	y: 9.0d,
+	text: [
+		"Gregtech has a lot of materials and you'll need storage system to controll them.",
+		"In this pack, you can use Drawer, Iron chests and ME network.",
+		"",
+		"",
+		"I don't like RS(refined storage)."
+	],
 	tasks: [{
 		uid: "ada689f1",
 		type: "checkmark",

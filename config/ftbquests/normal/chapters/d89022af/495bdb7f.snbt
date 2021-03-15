@@ -1,0 +1,48 @@
+{
+	x: 0.5d,
+	y: 20.5d,
+	tasks: [{
+		uid: "c16ddb09",
+		type: "checkmark",
+		title: "Protect Yourself",
+		icon: {
+			id: "enderio:item_stellar_alloy_helmet",
+			tag: {
+				enderio.darksteel.upgrade.soundDetector: {
+					level: 0
+				},
+				theoneprobe: 1,
+				enderio.darksteel.upgrade.energyUpgrade: {
+					level: 4,
+					energy: 2500000
+				},
+				enderio.darksteel.upgrade.apiarist_armor_head: {
+					level: 0
+				},
+				enderio.darksteel.upgrade.inv: {
+					level: 2
+				},
+				enderio.darksteel.upgrade.naturalist_eye: {
+					level: 0
+				},
+				enderio.darksteel.upgrade.nightVision: {
+					level: 0
+				},
+				enderio.darksteel.upgrade.padding: {
+					level: 0
+				},
+				enderio.darksteel.upgrade.top: {
+					level: 0
+				},
+				enderio.darksteel.upgrade.anvil: {
+					level: 2
+				}
+			}
+		}
+	}],
+	rewards: [{
+		uid: "e612ec57",
+		type: "xp_levels",
+		xp_levels: 1
+	}]
+}

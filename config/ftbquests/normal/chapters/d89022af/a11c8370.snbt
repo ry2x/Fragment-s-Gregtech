@@ -1,0 +1,22 @@
+{
+	title: "Automation",
+	x: -7.0d,
+	y: 19.5d,
+	description: "Can you be a machine?",
+	text: [
+		"You can make Automation line.",
+		"Gregtech's automation lines are so differrent from other mods.",
+		"",
+		"There're hints for that. "
+	],
+	tasks: [{
+		uid: "097006c0",
+		type: "checkmark",
+		icon: "gregtech:machine 1 825"
+	}],
+	rewards: [{
+		uid: "c600b8d3",
+		type: "item",
+		item: "forestry:honeyed_slice"
+	}]
+}

@@ -1,0 +1,19 @@
+{
+	x: -2.5d,
+	y: 22.5d,
+	dependencies: [
+		"d0b86178"
+	],
+	tasks: [{
+		uid: "270bfa46",
+		type: "item",
+		items: [{
+			item: "threng:big_assembler 1 2"
+		}]
+	}],
+	rewards: [{
+		uid: "cc464e63",
+		type: "item",
+		item: "threng:big_assembler 1 4"
+	}]
+}

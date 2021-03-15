@@ -1,0 +1,43 @@
+{
+	x: 2.5d,
+	y: 19.5d,
+	dependencies: [
+		"495bdb7f"
+	],
+	tasks: [{
+		uid: "d39801b7",
+		type: "item",
+		items: [{
+			item: "enderio:item_stellar_alloy_helmet"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "ccb70503",
+		type: "item",
+		items: [{
+			item: "enderio:item_stellar_alloy_chestplate"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "ec3b8150",
+		type: "item",
+		items: [{
+			item: "enderio:item_stellar_alloy_leggings"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "ea4276b8",
+		type: "item",
+		items: [{
+			item: "enderio:item_stellar_alloy_boots"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

@@ -1,0 +1,27 @@
+{
+	title: "Very good",
+	x: -12.0d,
+	y: 11.5d,
+	text: [
+		"The FLUX network is a very convenient mod.",
+		"Just place the controller, create a CHANNEL, install the inserts and outputs, and you're good to go!",
+		"",
+		"However, you'll be able to craft this item over IV"
+	],
+	dependencies: [
+		"f655cda6"
+	],
+	tasks: [{
+		uid: "83d5a1e0",
+		type: "item",
+		items: [{
+			item: "fluxnetworks:fluxcontroller"
+		}]
+	}],
+	rewards: [{
+		uid: "a9b9eb02",
+		type: "item",
+		item: "fluxnetworks:fluxcore",
+		count: 16
+	}]
+}

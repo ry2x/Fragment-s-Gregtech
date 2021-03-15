@@ -1,0 +1,19 @@
+{
+	x: -4.5d,
+	y: -8.5d,
+	dependencies: [
+		"145839a8"
+	],
+	tasks: [{
+		uid: "4d1f2f83",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 2562"
+		}]
+	}],
+	rewards: [{
+		uid: "b4219826",
+		type: "item",
+		item: "gtadditions:ga_cell_casing"
+	}]
+}
