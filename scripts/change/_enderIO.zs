@@ -60,7 +60,7 @@ val upgrade as IItemStack[IItemStack] = {
     <forestry:apiarist_chest>:<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderiointegrationforestry:apiarist_armor_chest"}),
     <forestry:apiarist_legs>:<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderiointegrationforestry:apiarist_armor_legs"}),
     <forestry:apiarist_boots>:<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderiointegrationforestry:apiarist_armor_feet"}),
-    #dark steel anvil 
+    #dark steel anvil
     <enderio:block_dark_steel_anvil>:<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:anvil"}),
     #elytra
     <minecraft:elytra>:<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:elytra"}),

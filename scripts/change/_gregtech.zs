@@ -1203,7 +1203,7 @@ blast_furnace.recipeBuilder()
 	.duration(3200)
 	.buildAndRegister();
 
-	#stellar alloy 
+	#stellar alloy
 large_mixer.recipeBuilder()
 	.inputs(<gregtech:meta_item_1:2859> * 13,<gregtech:meta_item_1:2307> * 2,<gregtech:meta_item_1:2032> * 5,<gregtech:meta_item_1:2180> * 3,<gregtech:meta_item_1:2001> * 5,<gregtech:meta_item_1:2007> * 10,<gregtech:meta_item_1:2184> * 2)
 	.outputs(<gregtech:meta_item_1:2501> * 40)

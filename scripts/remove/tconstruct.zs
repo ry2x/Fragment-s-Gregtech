@@ -123,7 +123,7 @@ recipes.removeByRecipeName("tconstruct:gadgets/slimeboots/fallback");
 recipes.removeByRecipeName("tconstruct:gadgets/slimesling/fallback");
 
 //remove material alloying
-    #dark steel 
+    #dark steel
 val DustDarksteel as IItemStack[] = [
     <gregtech:meta_item_1:502>,
     <gregtech:meta_item_1:1502>,
