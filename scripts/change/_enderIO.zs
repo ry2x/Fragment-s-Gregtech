@@ -163,3 +163,19 @@ forming.recipeBuilder()
     .duration(60)
     .EUt(48)
     .buildAndRegister();
+
+//dark steel anvil in greg way
+solidifier.recipeBuilder()
+    .fluidInputs([<liquid:dark_steel>*4464])
+    .notConsumable(<gregtech:meta_item_1:32314>)
+    .outputs(<enderio:block_dark_steel_anvil>)
+    .EUt(16)
+    .duration(128)
+    .buildAndRegister();
+alloy.recipeBuilder()
+    .inputs(<gregtech:meta_item_1:10502>*31)
+    .notConsumable(<gregtech:meta_item_1:32314>)
+    .outputs(<enderio:block_dark_steel_anvil>)
+    .EUt(64)
+    .duration(15872)
+    .buildAndRegister();
