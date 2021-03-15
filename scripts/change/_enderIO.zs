@@ -15,12 +15,10 @@ import crafttweaker.item.IItemStack;
 //import greg
 import mods.gregtech.recipe.RecipeMap;
 
-//import lazy AE2
-import mods.threng.Energizer;
-
 val alloy = RecipeMap.getByName("alloy_smelter");
 val assembler = RecipeMap.getByName("assembler");
 val forming = RecipeMap.getByName("forming_press");
+val solidifier = RecipeMap.getByName("fluid_solidifier");
 
 //Add recipe to alloy fused glass
 alloy.recipeBuilder()
