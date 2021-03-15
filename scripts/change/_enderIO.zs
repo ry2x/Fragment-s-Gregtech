@@ -15,12 +15,10 @@ import crafttweaker.item.IItemStack;
 //import greg
 import mods.gregtech.recipe.RecipeMap;
 
-//import lazy AE2
-import mods.threng.Energizer;
-
 val alloy = RecipeMap.getByName("alloy_smelter");
 val assembler = RecipeMap.getByName("assembler");
 val forming = RecipeMap.getByName("forming_press");
+val solidifier = RecipeMap.getByName("fluid_solidifier");
 
 //Add recipe to alloy fused glass
 alloy.recipeBuilder()
@@ -162,4 +160,20 @@ forming.recipeBuilder()
     .outputs(<enderio:item_dark_steel_upgrade:1>.withTag({"enderio:dsu": "enderio:glide"}))
     .duration(60)
     .EUt(48)
+    .buildAndRegister();
+
+//dark steel anvil in greg way
+solidifier.recipeBuilder()
+    .fluidInputs([<liquid:dark_steel>*4464])
+    .notConsumable(<gregtech:meta_item_1:32314>)
+    .outputs(<enderio:block_dark_steel_anvil>)
+    .EUt(16)
+    .duration(128)
+    .buildAndRegister();
+alloy.recipeBuilder()
+    .inputs(<gregtech:meta_item_1:10502>*31)
+    .notConsumable(<gregtech:meta_item_1:32314>)
+    .outputs(<enderio:block_dark_steel_anvil>)
+    .EUt(64)
+    .duration(15872)
     .buildAndRegister();
