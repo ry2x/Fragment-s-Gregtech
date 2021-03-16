@@ -10,15 +10,9 @@ val miscItems = [
     <extrautils2:drum:4>,
     <extrautils2:drum:3>,
     <theoneprobe:probe>,
-    <theoneprobe:creativeprobe>,
     <theoneprobe:diamond_helmet_probe>,
     <theoneprobe:gold_helmet_probe>,
     <theoneprobe:iron_helmet_probe>,
-    <minecraft:mob_spawner>,
-    <minecraft:command_block>,
-    <minecraft:barrier>,
-    <minecraft:repeating_command_block>,
-    <minecraft:chain_command_block>,
     <minecraft:structure_void>,
     <minecraft:structure_block>,
     <minecraft:wooden_sword>,
@@ -52,21 +46,8 @@ val miscItems = [
     <cryingobsidian:crying_obsidian_item>,
     <spartanshields:shield_basic_signalum>,
     <spartanshields:shield_basic_lumium>,
-    <spartanshields:shield_botania_manasteel>,
-    <spartanshields:shield_botania_terrasteel>,
-    <spartanshields:shield_botania_elementium>,
     <spartanshields:shield_basic_constantan>,
     <spartanshields:shield_tower_constantan>,
-    <spartanshields:shield_abyssalcraft_darkstone>,
-    <spartanshields:shield_abyssalcraft_abyssalnite>,
-    <spartanshields:shield_abyssalcraft_coralium>,
-    <spartanshields:shield_abyssalcraft_dreadium>,
-    <spartanshields:shield_abyssalcraft_ethaxium>,
-    <spartanshields:shield_basic_soulforged_steel>,
-    <spartanshields:shield_tc_thaumium>,
-    <spartanshields:shield_tc_void>,
-    <spartanshields:shield_riot_rftools>,
-    <spartanshields:shield_flux_ra>,
     <ironchest:iron_chest:7>
 ] as IItemStack[];
 
@@ -74,38 +55,10 @@ for i in miscItems {
     JEI.removeAndHide(i);
 }
 
-val hide =[
-    <quarryplus:fuel_module_normal>,
-    <quarryplus:placerplus>,
-    <quarryplus:breakerplus>,
-    <quarryplus:plainpipe>,
-    <quarryplus:quarryframe>,
-    <quarryplus:dummyblock>,
-    <quarryplus:solidquarry>,
-    <quarryplus:quarry_pickaxe>,
-    <quarryplus:fuel_module_creative>,
-    <quark:ancient_tome>,
-    <betterbuilderswands:wandstone>,
-    <betterbuilderswands:wandiron>,
-    <betterbuilderswands:wanddiamond>,
-    <quarryplus:spawnercontroller>,
-    <quarryplus:quarryreplacer>,
-    <quarryplus:enchantmoverfrombook>
-] as IItemStack[];
-
-for i in hide {
-    JEI.hide(i);
-}
-
 //remove teslacore
 for item in loadedMods["teslacorelib"].items {
 	recipes.remove(item);
     JEI.hide(item);
-}
-
-//remove micro
-for item in loadedMods["microblockcbe"].items {
-    JEI.removeAndHide(item);
 }
 
 //remove item filter
@@ -324,6 +277,3 @@ val uselessFTB as IItemStack[] = [
 for i in uselessFTB {
 	JEI.removeAndHide(i);
 }
-
-//remove creative item
-JEI.removeAndHide(<portality:creative_creator>);

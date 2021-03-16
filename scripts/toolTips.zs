@@ -13,7 +13,6 @@ for i in translocator {
     JEI.addDescription(i,"Stack Upgrade = GlowStone Dust","","Remain Upgrade = Diamond Dust");
 }
 
-
 //AE2 energy adaptor
 JEI.addDescription(<appliedenergistics2:energy_acceptor>,"This Block is a useless in this mod pack because AE2 blocks accept RF(FE) energy.");
 

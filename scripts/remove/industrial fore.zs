@@ -32,16 +32,4 @@ for item in noNeed {
     JEI.hide(item);
 }
 
-val fluid = [
-    <fluid:latex>,
-    <fluid:biofuel>,
-    <fluid:if.protein>,
-    <fluid:if.ore_fluid_raw>,
-    <fluid:if.ore_fluid_fermented>,
-] as ILiquidStack[];
-
-for i in fluid {
-    JEI.hide(i);
-}
-
 //end

@@ -40,9 +40,6 @@ JEI.removeAndHide(<thermalfoundation:tome_lexicon>);
 //remove tome of knowledge
 JEI.removeAndHide(<thermalfoundation:tome_experience>);
 
-//remove coin
-JEI.hide(<thermalfoundation:coin:*>);
-
 //remove g
 JEI.removeAndHide(<thermalfoundation:fertilizer:*>);
 
