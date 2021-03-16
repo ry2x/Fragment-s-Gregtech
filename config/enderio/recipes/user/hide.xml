@@ -65,7 +65,6 @@
             <!-- Blocks -->
             <item name="enderio:block_alloy:*" hide="true" />
             <item name="enderio:block_alloy_endergy:*" hide="true" />
-            <item name="enderio:block_cap_bank:0" hide="true" />
             <item name="enderio:block_concussion_charge" hide="true" />
             <item name="enderio:block_confusion_charge" hide="true" />
             <item name="enderio:block_dark_iron_bars" hide="true" />
