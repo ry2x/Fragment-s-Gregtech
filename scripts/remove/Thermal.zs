@@ -97,17 +97,6 @@ for item in part {
     JEI.removeAndHide(item);
 }
 
-//remove egg
-val eggDisabled = [
-    <minecraft:spawn_egg>.withTag({EntityTag: {id: "thermalfoundation:blizz"}}),
-    <minecraft:spawn_egg>.withTag({EntityTag: {id: "thermalfoundation:blitz"}}),
-    <minecraft:spawn_egg>.withTag({EntityTag: {id: "thermalfoundation:basalz"}})
-] as IItemStack[];
-
-for i in eggDisabled {
-    JEI.removeAndHide(i);
-}
-
 //remove furnace materials
 furnace.remove(<minecraft:glowstone_dust>, <thermalfoundation:material:894>);
 furnace.remove(<minecraft:ender_pearl>, <thermalfoundation:material:895>);

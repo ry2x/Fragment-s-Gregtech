@@ -81,7 +81,6 @@ val itemDisabled = [
     <tconstruct:materials:12>,
     <tconstruct:materials:13>,
     <tconstruct:materials:50>,
-    <minecraft:spawn_egg>.withTag({EntityTag: {id: "tconstruct:blueslime"}}),
     <tconstruct:wood_rail>,
     <tconstruct:wood_rail_trapdoor>,
     <tconstruct:throwball>,
