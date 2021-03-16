@@ -267,10 +267,8 @@ for i in sonarcore {
 
 //remove useless item from FTBquest
 val uselessFTB as IItemStack[] = [
-	<ftbquests:chest>,
 	<ftbquests:loot_crate_storage>,
 	<ftbquests:loot_crate_opener>,
-	<ftbquests:barrier>,
 	<ftbquests:reward_collector>,
 ];
 
