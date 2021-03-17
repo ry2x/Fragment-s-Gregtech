@@ -1,0 +1,20 @@
+{
+	title: "Fluid Hundling",
+	x: 5.5d,
+	y: 9.0d,
+	text: [
+		"Make bucket!"
+	],
+	tasks: [{
+		uid: "3f7922e4",
+		type: "item",
+		items: [{
+			item: "minecraft:bucket"
+		}]
+	}],
+	rewards: [{
+		uid: "493e9f90",
+		type: "item",
+		item: "minecraft:bucket"
+	}]
+}

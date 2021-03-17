@@ -1,0 +1,14 @@
+{
+	x: -6.5d,
+	y: -3.0d,
+	dependencies: [
+		"8b5192dd"
+	],
+	tasks: [{
+		uid: "d71bc1f5",
+		type: "item",
+		items: [{
+			item: "portality:controller"
+		}]
+	}]
+}

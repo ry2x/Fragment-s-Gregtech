@@ -205,10 +205,6 @@ for item in crate {
     removeRecipe(item);
 }
 
-for item in crate {
-    JEI.hide(item);
-}
-
 //remove backpacks that table crafting
 val backpacks = [
     <forestry:apiarist_bag>,
@@ -236,7 +232,6 @@ val backpacks2 = [
 
 for item in backpacks2 {
     removeRecipe(item);
-    JEI.hide(item);
 }
 
 //end

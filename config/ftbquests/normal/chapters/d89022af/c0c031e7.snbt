@@ -1,0 +1,24 @@
+{
+	x: 2.5d,
+	y: 9.0d,
+	dependencies: [
+		"ed17a61e"
+	],
+	tasks: [{
+		uid: "e411f85e",
+		type: "item",
+		items: [{
+			item: "storagedrawers:controller"
+		}]
+	}],
+	rewards: [{
+		uid: "c288d03f",
+		type: "item",
+		item: {
+			id: "storagedrawers:basicdrawers",
+			tag: {
+				material: "oak"
+			}
+		}
+	}]
+}

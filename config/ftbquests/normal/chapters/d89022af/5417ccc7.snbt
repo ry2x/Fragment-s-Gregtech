@@ -1,0 +1,21 @@
+{
+	x: -6.5d,
+	y: 0.0d,
+	dependencies: [
+		"41e2db9c"
+	],
+	tasks: [{
+		uid: "32ab92fb",
+		type: "item",
+		items: [{
+			item: "lteleporters:teleporter"
+		}]
+	},
+	{
+		uid: "abfb05ea",
+		type: "item",
+		items: [{
+			item: "lteleporters:endercrystal"
+		}]
+	}]
+}

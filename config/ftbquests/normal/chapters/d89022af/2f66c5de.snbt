@@ -1,0 +1,23 @@
+{
+	x: -4.5d,
+	y: 14.0d,
+	text: [
+		"Gregtech filters have some fuctions that you can set."
+	],
+	dependencies: [
+		"701f9636",
+		"679734a9"
+	],
+	tasks: [{
+		uid: "054ebee7",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 32729"
+		}]
+	}],
+	rewards: [{
+		uid: "a8bc0b2e",
+		type: "item",
+		item: "gregtech:meta_item_1 1 32729"
+	}]
+}

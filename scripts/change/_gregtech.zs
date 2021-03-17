@@ -1174,3 +1174,48 @@ blast_furnace.recipeBuilder()
 	.EUt(120)
 	.duration(884)
 	.buildAndRegister();
+
+//dark steel and Stellar
+val removeFurnace as IIngredient[] = [
+	<gregtech:meta_item_1:10502>,
+	<gregtech:meta_item_1:9502>,
+	<gregtech:meta_item_1:10501>,
+	<gregtech:meta_item_1:9501>
+];
+
+for i in removeFurnace {
+	furnace.remove(i);
+}
+
+	#dark steel (in HV)
+mixer.recipeBuilder()
+	.inputs(<ore:dustTungsten>*4,<ore:dustBlackSteel>*5,<ore:dustNetherrack>*3)
+	.outputs(<gregtech:meta_item_1:2502>*12)
+	.EUt(8)
+	.duration(360)
+	.buildAndRegister();
+blast_furnace.recipeBuilder()
+	.inputs(<ore:dustDarkSteel>)
+	.fluidInputs([<liquid:oxygen>*1000])
+	.outputs(<gregtech:meta_item_1:10502>)
+	.property("temperature", 2800)
+	.EUt(490)
+	.duration(3200)
+	.buildAndRegister();
+
+	#stellar alloy
+large_mixer.recipeBuilder()
+	.inputs(<gregtech:meta_item_1:2859> * 13,<gregtech:meta_item_1:2307> * 2,<gregtech:meta_item_1:2032> * 5,<gregtech:meta_item_1:2180> * 3,<gregtech:meta_item_1:2001> * 5,<gregtech:meta_item_1:2007> * 10,<gregtech:meta_item_1:2184> * 2)
+	.outputs(<gregtech:meta_item_1:2501> * 40)
+	.fluidInputs([<liquid:hydrogen>*5000])
+	.EUt(800)
+	.duration(800)
+	.buildAndRegister();
+blast_furnace.recipeBuilder()
+	.inputs(<ore:dustStellarAlloy>)
+	.fluidInputs([<liquid:oxygen>*500])
+	.outputs(<gregtech:meta_item_1:10501>)
+	.property("temperature", 9500)
+	.EUt(8000)
+	.duration(3200)
+	.buildAndRegister();

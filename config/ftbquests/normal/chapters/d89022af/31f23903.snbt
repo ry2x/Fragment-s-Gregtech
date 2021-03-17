@@ -1,0 +1,19 @@
+{
+	x: -9.5d,
+	y: -5.5d,
+	dependencies: [
+		"72f41adb"
+	],
+	tasks: [{
+		uid: "53c84aaf",
+		type: "item",
+		items: [{
+			item: "minecraft:magma"
+		}]
+	}],
+	rewards: [{
+		uid: "e2934c5f",
+		type: "item",
+		item: "minecraft:magma"
+	}]
+}

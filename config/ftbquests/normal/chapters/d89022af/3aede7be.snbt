@@ -1,0 +1,18 @@
+{
+	x: -9.5d,
+	y: 0.0d,
+	tasks: [{
+		uid: "5acf4f7c",
+		type: "item",
+		items: [{
+			item: "enderio:item_liquid_conduit"
+		}],
+		count: 2L
+	}],
+	rewards: [{
+		uid: "269f4def",
+		type: "item",
+		item: "enderio:item_liquid_conduit",
+		count: 2
+	}]
+}

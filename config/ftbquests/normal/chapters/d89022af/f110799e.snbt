@@ -1,0 +1,20 @@
+{
+	icon: "gregtech:machine_casing 1 7",
+	x: 7.5d,
+	y: -4.5d,
+	text: [
+		"Gregtech needs large amout items each age, so you should  make lots of craft materials (motor, circuit, etc)."
+	],
+	size: 2.0d,
+	tasks: [{
+		uid: "c6abcc3c",
+		type: "checkmark",
+		title: "Gregtech Age",
+		icon: "gregtech:machine 2 502"
+	}],
+	rewards: [{
+		uid: "8f3696ee",
+		type: "item",
+		item: "forestry:fruits 1 6"
+	}]
+}

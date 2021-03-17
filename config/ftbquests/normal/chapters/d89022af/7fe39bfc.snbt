@@ -1,0 +1,22 @@
+{
+	x: -18.5d,
+	y: -9.0d,
+	description: "The fist machine",
+	text: [
+		"The fist age is steam age.",
+		"It needs steam and you need to generate steam.",
+		"using this machine, you'll get steam"
+	],
+	tasks: [{
+		uid: "b38cb615",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 1"
+		}]
+	}],
+	rewards: [{
+		uid: "2a6df4ab",
+		type: "item",
+		item: "thermalfoundation:material 1 355"
+	}]
+}

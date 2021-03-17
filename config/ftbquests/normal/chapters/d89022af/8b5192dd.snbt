@@ -1,0 +1,16 @@
+{
+	x: -6.5d,
+	y: -1.5d,
+	dependencies: [
+		"5417ccc7"
+	],
+	tasks: [{
+		uid: "2a427996",
+		type: "item",
+		items: [{
+			item: "portalgun:item_miniature_black_hole"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

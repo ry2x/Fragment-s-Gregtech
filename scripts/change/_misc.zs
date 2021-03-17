@@ -836,3 +836,46 @@ recipes.addShaped(<sonarcore:stablestone_plain>,[
 <sonarcore:stablestoneblackrimmed_plain>.displayName = "Nether From Void Portal Frame";
 <sonarcore:stablestone_plain>.displayName = "Portal Frame Base Block";
 <sonarcore:stablestoneblackrimmed_lightgrey>.displayName = "Portal Frame Block";
+
+//open grider
+for mod in loadedMods["openglider"].items{
+    recipes.remove(mod);
+}
+
+    #grider wing
+assembler.recipeBuilder()
+    .inputs(<ore:woolWhite>*4,<ore:blockWoolRed>*2,<ore:stickIron>*2)
+    .outputs(<openglider:hang_glider_part>)
+    .property("circuit", 1)
+    .duration(512)
+    .EUt(128)
+    .buildAndRegister();
+assembler.recipeBuilder()
+    .inputs(<ore:woolWhite>*4,<ore:blockWoolRed>*2,<ore:stickIron>*2)
+    .outputs(<openglider:hang_glider_part:1>)
+    .property("circuit", 2)
+    .duration(512)
+    .EUt(128)
+    .buildAndRegister();
+    #grider frame
+assembler.recipeBuilder()
+    .inputs(<ore:stickIron>*9)
+    .outputs(<openglider:hang_glider_part:2>)
+    .property("circuit", 2)
+    .duration(120)
+    .EUt(128)
+    .buildAndRegister();
+    #grider
+assembler.recipeBuilder()
+    .inputs(<openglider:hang_glider_part:2>,<openglider:hang_glider_part:1>,<openglider:hang_glider_part>)
+    .outputs(<openglider:hang_glider_basic>)
+    .duration(120)
+    .EUt(64)
+    .buildAndRegister();
+    #hyper grider
+assembler.recipeBuilder()
+    .inputs(<openglider:hang_glider_basic>,<minecraft:elytra>*2,<ore:stickIron>*4)
+    .outputs(<openglider:hang_glider_advanced>)
+    .duration(120)
+    .EUt(64)
+    .buildAndRegister();

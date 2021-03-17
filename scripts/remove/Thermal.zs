@@ -40,9 +40,6 @@ JEI.removeAndHide(<thermalfoundation:tome_lexicon>);
 //remove tome of knowledge
 JEI.removeAndHide(<thermalfoundation:tome_experience>);
 
-//remove coin
-JEI.hide(<thermalfoundation:coin:*>);
-
 //remove g
 JEI.removeAndHide(<thermalfoundation:fertilizer:*>);
 
@@ -95,17 +92,6 @@ val part = [
 
 for item in part {
     JEI.removeAndHide(item);
-}
-
-//remove egg
-val eggDisabled = [
-    <minecraft:spawn_egg>.withTag({EntityTag: {id: "thermalfoundation:blizz"}}),
-    <minecraft:spawn_egg>.withTag({EntityTag: {id: "thermalfoundation:blitz"}}),
-    <minecraft:spawn_egg>.withTag({EntityTag: {id: "thermalfoundation:basalz"}})
-] as IItemStack[];
-
-for i in eggDisabled {
-    JEI.removeAndHide(i);
 }
 
 //remove furnace materials

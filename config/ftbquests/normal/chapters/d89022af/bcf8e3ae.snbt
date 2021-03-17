@@ -1,0 +1,15 @@
+{
+	x: -3.5d,
+	y: -5.5d,
+	dependencies: [
+		"0981b7ba"
+	],
+	tasks: [{
+		uid: "1aeffa45",
+		type: "item",
+		items: [{
+			item: "minecraft:carpet 1 15"
+		}],
+		count: 64L
+	}]
+}

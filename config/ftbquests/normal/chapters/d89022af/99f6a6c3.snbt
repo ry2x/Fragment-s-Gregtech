@@ -1,0 +1,19 @@
+{
+	x: -18.5d,
+	y: -6.5d,
+	text: [
+		"Oh, lava is so hot"
+	],
+	tasks: [{
+		uid: "e4e8e0a9",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 5"
+		}]
+	}],
+	rewards: [{
+		uid: "c3aa6fe8",
+		type: "item",
+		item: "thermalfoundation:material 1 355"
+	}]
+}

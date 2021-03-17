@@ -1,0 +1,39 @@
+{
+	x: 2.5d,
+	y: 23.0d,
+	dependencies: [
+		"495bdb7f"
+	],
+	tasks: [{
+		uid: "742dbf51",
+		type: "item",
+		items: [{
+			item: "gtadditions:ga_armor 1 6"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "db2d169c",
+		type: "item",
+		items: [{
+			item: "gtadditions:ga_armor 1 4"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "52b0e68b",
+		type: "item",
+		items: [{
+			item: "gtadditions:ga_armor 1 5"
+		}],
+		ignore_nbt: 1b
+	},
+	{
+		uid: "8cedadd7",
+		type: "item",
+		items: [{
+			item: "gtadditions:ga_armor 1 7"
+		}],
+		ignore_nbt: 1b
+	}]
+}

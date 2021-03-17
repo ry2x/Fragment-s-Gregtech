@@ -4,7 +4,7 @@ import mods.jei.JEI;
 import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 
-//translocator 
+//translocator
 val translocator as IItemStack[] = [
     <translocators:translocator_part:1>,
     <translocators:translocator_part>
@@ -13,8 +13,7 @@ for i in translocator {
     JEI.addDescription(i,"Stack Upgrade = GlowStone Dust","","Remain Upgrade = Diamond Dust");
 }
 
-
-//AE2 energy adaptor 
+//AE2 energy adaptor
 JEI.addDescription(<appliedenergistics2:energy_acceptor>,"This Block is a useless in this mod pack because AE2 blocks accept RF(FE) energy.");
 
 //AE2 creative dense capacitor
@@ -26,7 +25,7 @@ JEI.addDescription(<railcraft:worldspike>,"All Of RailCraft's ChunkLoaders are r
 //code chicken lib
 <chickenchunks:chunk_loader>.addShiftTooltip("you are clever!");
 
-//lightning lod 
+//lightning rod
 <lightningrods:lightning_rod>.addShiftTooltip("Do u wanna be a...?");
 JEI.addDescription(<lightningrods:lightning_rod>,"It Has Huge Baffa That Is 1MRF=0.25MGTEU.","Wow....Incredible.. ");
 
@@ -61,3 +60,6 @@ val carpets as IItemStack[] = [
 for i in carpets {
     JEI.addDescription(i,"Can You Stand On This??");
 }
+
+//AE2 seed growth accelerator tips
+JEI.addDescription(<appliedenergistics2:quartz_growth_accelerator>,"You can't craft this until LuV stage. Time to AFK!");

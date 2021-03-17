@@ -1,7 +1,7 @@
 {
 	title: "Make the void portal",
-	x: -8.0d,
-	y: -0.5d,
+	x: -21.5d,
+	y: 0.0d,
 	description: "Void Void Vo...",
 	text: [
 		"Make void portal to get in void world.",

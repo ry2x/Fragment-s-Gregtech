@@ -30,4 +30,7 @@ for i in dpcItemsDisabled {
 }
 
 // hide useless pattern
-JEI.hide(<extracells:pattern.fluid:*>);
+val pattern as IItemStack = <extracells:pattern.fluid>;
+for liquid in game.liquids {
+	mods.jei.JEI.hide(pattern.withTag({Fluid: {FluidName: liquid.name, Amount: 1000}}));
+}

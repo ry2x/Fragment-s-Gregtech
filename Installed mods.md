@@ -24,7 +24,7 @@ BetterBuildersWands-1.12.2-0.13.2.271+5997513.jar
 
 BetterFps-1.4.8.jar
 
-BiblioCraft[v2.4.5][MC1.12.2].jar
+BiblioCraft[v2.4.5][mc1.12.2].jar
 
 BNBGamingLib-1.12.2-2.17.6.jar
 
@@ -86,9 +86,9 @@ EnderIO-conduits-appliedenergistics-1.12.2-5.2.66.jar
 
 EnderIO-endergy-1.12.2-5.2.66.jar
 
-EnderIO-integration-forestry-1.12.2-5.2.66.jar
-
 enderiofluxified-1.12.2-1.0.2.jar
+
+EnderIO-integration-forestry-1.12.2-5.2.66.jar
 
 EnderStorage-1.12.2-2.4.6.137-universal.jar
 
@@ -133,6 +133,8 @@ gravestone-1.10.3.jar
 Gregicality-1.12.2-0.21.3.jar
 
 gregtech-1.12.2-1.12.1.669.jar
+
+GregtechEnergistics-1.0.0.3.jar
 
 iChunUtil-1.12.2-7.2.2.jar
 
@@ -200,6 +202,8 @@ Numina-1.12.2-1.0.38.jar
 
 oeintegration-2.3.4.jar
 
+OpenGlider-1.12.1-1.1.0.jar
+
 OreExcavation-1.4.150.jar
 
 Overloaded-1.12.2-0.0.59.jar
@@ -211,6 +215,8 @@ phosphor-forge-mc1.12.2-0.2.7-universal.jar
 Placebo-1.12.2-1.6.0.jar
 
 PortalGun-1.12.2-7.1.0.jar
+
+portality-1.12.2-1.2.3-15.jar
 
 powerchisels-1.0.0-beta-3.jar
 
@@ -234,7 +240,7 @@ ResourceLoader-MC1.12.1-1.5.3.jar
 
 Scannable-MC1.12.2-1.6.3.26.jar
 
-simplemagnets-1.1.1-mc1.12.jar
+simplemagnets-1.1.2-mc1.12.jar
 
 SimpleSmelteryAccelerator-1.0.1.jar
 
@@ -244,8 +250,6 @@ sonarcore-1.12.2-5.0.19-20.jar
 
 SpartanShields-1.12.2-1.5.4.jar
 
-stellarfluidconduit-1.12.2-1.0.3.jar
-
 stg-1.12.2-1.2.3.jar
 
 StorageDrawers-1.12.2-5.4.2.jar
@@ -253,6 +257,8 @@ StorageDrawers-1.12.2-5.4.2.jar
 StorageDrawersExtras-1.12-3.1.0.jar
 
 supermartijn642configlib-1.0.5-mc1.12.jar
+
+supermartijn642corelib-1.0.0-mc1.12.jar
 
 TConstruct-1.12.2-2.13.0.183.jar
 
@@ -285,3 +291,5 @@ WaterMechanicsBackport-1.0.3-1.12.2-NETHERFIX.jar
 Xaeros_Minimap_21.4.1_Forge_1.12.jar
 
 XaerosWorldMap_1.12.1_Forge_1.12.jar
+
+Xtones-1.2.1.jar

@@ -1,0 +1,19 @@
+{
+	x: -12.0d,
+	y: -3.0d,
+	dependencies: [
+		"72f41adb"
+	],
+	tasks: [{
+		uid: "815bdfab",
+		type: "item",
+		items: [{
+			item: "minecraft:soul_sand"
+		}]
+	}],
+	rewards: [{
+		uid: "25540c43",
+		type: "item",
+		item: "minecraft:soul_sand"
+	}]
+}

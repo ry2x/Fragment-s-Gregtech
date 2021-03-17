@@ -1,0 +1,19 @@
+{
+	x: 5.5d,
+	y: -11.5d,
+	text: [
+		"mixing something!"
+	],
+	tasks: [{
+		uid: "2521c827",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 2235"
+		}]
+	}],
+	rewards: [{
+		uid: "d276f979",
+		type: "item",
+		item: "gregtech:meta_item_1 1 12095"
+	}]
+}

@@ -223,6 +223,7 @@ packer.findRecipe(4,[<minecraft:coal_block>*9,<gtadditions:ga_meta_item:32133>],
 packer.findRecipe(4,[<powersuits:powerarmorcomponent:14>*9,<gtadditions:ga_meta_item:32133>],[]).remove();
 
 //solenoid = coil
+recipes.remove(<powersuits:powerarmorcomponent:1>);
 assembler.recipeBuilder()
 	.inputs(<ore:stickLongIronMagnetic>,<ore:wireFineAnnealedCopper>*2)
 	.outputs(<powersuits:powerarmorcomponent:1>)

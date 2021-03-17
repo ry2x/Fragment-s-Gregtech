@@ -3,5 +3,18 @@
 	icon: "ftbquests:book",
 	always_invisible: false,
 	group: 0,
-	default_quest_shape: "rsquare"
+	default_quest_shape: "rsquare",
+	images: [{
+		x: -18.0d,
+		y: -19.0d,
+		width: 12.0d,
+		height: 3.0d,
+		rotation: 0.0d,
+		image: "gregtech:textures/gt_logo_long.png",
+		hover: [
+			"Thank you for gregtech ce dev team! "
+		],
+		click: "",
+		dev: false
+	}]
 }

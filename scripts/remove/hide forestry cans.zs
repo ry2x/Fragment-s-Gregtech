@@ -1,11 +1,7 @@
-//import JEI function
-import mods.jei.JEI;
+import crafttweaker.item.IItemStack;
 
-//hide cans
-JEI.hide(<forestry:can:*>);
-
-//hide capsule
-JEI.hide(<forestry:capsule:*>);
-
-//hide reinforced capsule
-JEI.hide(<forestry:refractory:*>);
+for can in [<forestry:can:1>, <forestry:capsule:1>, <forestry:refractory:1>] as IItemStack[] {
+	for liquid in game.liquids {
+		mods.jei.JEI.hide(can.withTag({Fluid: {FluidName: liquid.name, Amount: 1000}}));
+	}
+}

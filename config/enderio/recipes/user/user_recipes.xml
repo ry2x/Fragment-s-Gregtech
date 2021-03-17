@@ -3,6 +3,25 @@
 
     <!-- This file corresponds to add and implement recipes that would not fit with other files in the same directory. -->
 
+    <recipe name="Exit Rail" required="true">
+        <crafting>
+            <grid>
+                <item name="oredict:ingotIron" />
+                <item name="minecraft:piston" />
+                <item name="oredict:ingotIron" />
+
+                <item name="oredict:ingotIron" />
+                <item name="minecraft:stone_pressure_plate" />
+                <item name="oredict:ingotIron" />
+
+                <item name="oredict:ingotIron" />
+                <item name="oredict:dustRedstone" />
+                <item name="oredict:ingotIron" />
+            </grid>
+            <output name="enderio:block_exit_rail" amount="6" />
+        </crafting>
+    </recipe>
+
     <recipe name="Black Paper" required="true">
         <crafting>
             <grid>
@@ -114,6 +133,25 @@
                 <item name="oredict:ingotIron" />
             </grid>
             <output name="CONDUIT_PROBE" />
+        </crafting>
+    </recipe>
+
+    <recipe name="DarkSteel, Anvil" required="true">
+        <crafting>
+            <grid>
+                <item name="oredict:blockDarkSteel" />
+                <item name="oredict:blockDarkSteel" />
+                <item name="oredict:blockDarkSteel" />
+
+                <item />
+                <item name="oredict:ingotDarkSteel" />
+                <item />
+
+                <item name="oredict:ingotDarkSteel" />
+                <item name="oredict:ingotDarkSteel" />
+                <item name="oredict:ingotDarkSteel" />
+            </grid>
+            <output name="enderio:block_dark_steel_anvil" />
         </crafting>
     </recipe>
 </enderio:recipes>

@@ -13,10 +13,8 @@ config/ichunutil.cfg
 config/xaero*
 
 #not sync plz
+read me.txt
 scripts/recipes.zs
-scripts/read me.txt
-scripts/remove/read me.txt
-scripts/change/read me.txt
 scripts/change/temp
 
 #Generated Files

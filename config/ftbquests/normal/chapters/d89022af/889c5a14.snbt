@@ -1,0 +1,22 @@
+{
+	x: -4.5d,
+	y: 15.5d,
+	text: [
+		"Thermal Dynamics filter can apply to their duct(fluid and item)."
+	],
+	dependencies: [
+		"701f9636"
+	],
+	tasks: [{
+		uid: "28b3fdb0",
+		type: "item",
+		items: [{
+			item: "thermaldynamics:filter"
+		}]
+	}],
+	rewards: [{
+		uid: "b74526eb",
+		type: "item",
+		item: "thermaldynamics:filter"
+	}]
+}
