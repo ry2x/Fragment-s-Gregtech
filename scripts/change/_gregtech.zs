@@ -1220,7 +1220,7 @@ blast_furnace.recipeBuilder()
 	.duration(3200)
 	.buildAndRegister();
 
-//fix nitinol 60 
+//fix nitinol 60
 mixer.recipeBuilder()
 	.inputs(<ore:dustTitanium>*3,<ore:dustNickel>*2)
 	.outputs(<ore:dustNitinolA>.firstItem*5)
@@ -1234,13 +1234,13 @@ blast_furnace.recipeBuilder()
 	.EUt(120)
 	.duration(2018)
 	.buildAndRegister();
-vacuum_freezer.recipeBuilder()
+freezer.recipeBuilder()
 	.inputs(<ore:ingotHotNitinolA>)
 	.outputs(<ore:ingotNitinolA>.firstItem)
 	.EUt(120)
 	.duration(122)
 	.buildAndRegister();
-vacuum_freezer.recipeBuilder()
+freezer.recipeBuilder()
 	.inputs(<ore:ingotHotNitinolA>)
 	.outputs(<ore:ingotNitinolA>.firstItem)
 	.fluidInputs([<liquid:cryotheum>*10])
