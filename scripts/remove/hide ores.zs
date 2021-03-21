@@ -1,3 +1,4 @@
+//hide ores
 var RemovalOres as string[] = [
     "almandine",
     "aluminium",
@@ -155,5 +156,13 @@ for ores in RemovalOres {
     for num in 1 to 14 {
         var HidingOres = itemUtils.getItem("gregtech:ore_"~ores ~"_0",(num) as int);
         mods.jei.JEI.hide(HidingOres);
+    }
+    for num1 in 0 to 14 {
+        var HidingPureOres = itemUtils.getItem("gregtech:pure_ore_" ~ores ~"_0",(num1) as int);
+        var HidingPoorOres = itemUtils.getItem("gregtech:poor_ore_" ~ores ~"_0",(num1) as int);
+        var HidingRichOres = itemUtils.getItem("gregtech:rich_ore_" ~ores ~"_0",(num1) as int);
+        mods.jei.JEI.hide(HidingPureOres);
+        mods.jei.JEI.hide(HidingPoorOres);
+        mods.jei.JEI.hide(HidingRichOres);
     }
 }
