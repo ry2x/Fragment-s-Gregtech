@@ -130,9 +130,9 @@ future-mc-1.12.2-0.2.6.1.jar
 
 gravestone-1.10.3.jar
 
-Gregicality-1.12.2-0.21.3.jar
+Gregicality-1.12.2-0.21.5.1.jar
 
-gregtech-1.12.2-1.12.1.669.jar
+gregtech-1.12.2-1.13.0.681.jar
 
 GregtechEnergistics-1.0.0.3.jar
 
@@ -288,8 +288,8 @@ volumetricflask-0.18.jar
 
 WaterMechanicsBackport-1.0.3-1.12.2-NETHERFIX.jar
 
-Xaeros_Minimap_21.4.1_Forge_1.12.jar
+Xaeros_Minimap_21.4.4_Forge_1.12.jar
 
-XaerosWorldMap_1.12.1_Forge_1.12.jar
+XaerosWorldMap_1.13.1_Forge_1.12.jar
 
-Xtones-1.2.1.jar
+Xtones-1.2.2.jar
