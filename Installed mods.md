@@ -132,7 +132,7 @@ gravestone-1.10.3.jar
 
 Gregicality-1.12.2-0.21.5.1.jar
 
-gregtech-1.12.2-1.12.1.669.jar
+gregtech-1.12.2-1.12.1.681.jar
 
 GregtechEnergistics-1.0.0.3.jar
 
