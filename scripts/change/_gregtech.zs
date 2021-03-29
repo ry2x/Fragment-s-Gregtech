@@ -1208,3 +1208,6 @@ freezer.recipeBuilder()
 	.EUt(32)
 	.duration(60)
 	.buildAndRegister();
+
+//remove normal aluminium recipe
+blast_furnace.findRecipe(120, [<ore:dustAluminium>.firstItem],null).remove();
