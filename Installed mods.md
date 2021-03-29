@@ -132,7 +132,7 @@ gravestone-1.10.3.jar
 
 Gregicality-1.12.2-0.21.5.1.jar
 
-gregtech-1.12.2-1.13.0.681.jar
+gregtech-1.12.2-1.12.1.669.jar
 
 GregtechEnergistics-1.0.0.3.jar
 
@@ -166,7 +166,7 @@ JustEnoughEnergistics-1.12.2-1.0.8.jar
 
 kythsopmoss-0.2.jar
 
-lazy-ae2-1.12.2-1.1.25.jar
+lazy-ae2-1.12.2-1.1.26.jar
 
 libnine-1.12.2-1.2.0.jar
 
