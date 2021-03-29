@@ -465,14 +465,7 @@ autoclave.recipeBuilder()
     .duration(200)
     .EUt(240)
     .buildAndRegister();
-//quarry plus
-    #work bench
-recipes.remove(<quarryplus:workbenchplus>);
-recipes.addShaped(<quarryplus:workbenchplus>,[
-    [<gregtech:machine_casing:3>,<gregtech:machine_casing:3>,<gregtech:machine_casing:3>],
-    [<ore:HVcap>,<gregtech:machine_casing:3>,<ore:componentHVCapacitor>],
-    [<gregtech:machine_casing:3>,<gregtech:machine_casing:3>,<gregtech:machine_casing:3>]
-]);
+
 //bonsai
 recipes.remove(<bonsaitrees:bonsaipot>);
 recipes.addShaped(<bonsaitrees:bonsaipot>,[
@@ -879,3 +872,121 @@ assembler.recipeBuilder()
     .duration(120)
     .EUt(64)
     .buildAndRegister();
+
+//quarry plus
+	#mining well
+assembler.recipeBuilder()
+	.inputs(<gregtech:machine:503>,<gtadditions:ga_pump_casing:2>*2,<industrialforegoing:fluid_pump>,<ore:toolHeadDrillDiamond>,<ore:HVcap>)
+	.outputs(<quarryplus:miningwellplus>)
+	.property("circuit", 4)
+	.EUt(512)
+	.duration(200)
+	.buildAndRegister();
+	#advanced pump
+assembler.recipeBuilder()
+	.inputs(<gregtech:machine:503>,<gtadditions:ga_pump_casing:2>*4,<industrialforegoing:fluid_pump>*2,<ore:HVcap>)
+	.outputs(<quarryplus:standalonepump>)
+	.property("circuit", 3)
+	.EUt(512)
+	.duration(200)
+	.buildAndRegister();
+	#ex pump
+assembler.recipeBuilder()
+	.inputs(<gregtech:machine:503>,<gtadditions:ga_pump_casing:2>*2,<industrialforegoing:fluid_pump>,<ore:HVcap>,<mob_grinding_utils:absorption_hopper>)
+	.outputs(<quarryplus:exppump>)
+	.fluidInputs([<liquid:xpjuice>*1000])
+	.property("circuit", 5)
+	.EUt(512)
+	.duration(200)
+	.buildAndRegister();
+	#pump plus
+assembler.recipeBuilder()
+	.inputs(<quarryplus:standalonepump>,<ore:pipeLargeStainlessSteel>*2)
+	.outputs(<quarryplus:pumpplus>)
+	.EUt(512)
+	.duration(200)
+	.buildAndRegister();
+	#quarry plus old
+assembler.recipeBuilder()
+	.inputs(<gregtech:machine:503>,<ore:toolHeadDrillDiamond>,<gregtech:meta_item_1:32722>*2,<ore:gearTungsten>*4,<ore:stickLongTungsten>*8,<gtadditions:ga_motor_casing:2>,<gtadditions:ga_piston_casing:2>)
+	.outputs(<quarryplus:quarryplus>)
+	.property("circuit", 1)
+	.EUt(512)
+	.duration(200)
+	.buildAndRegister();
+recipes.addShapeless(<quarryplus:quarryplus>, [<quarryplus:quarry>]);
+	#quarry plus new
+assembler.recipeBuilder()
+	.inputs(<gregtech:machine:503>,<ore:toolHeadDrillDiamond>,<gregtech:meta_item_1:32722>*2,<ore:gearTungsten>*4,<ore:stickLongTungsten>*8,<gtadditions:ga_motor_casing:2>,<gtadditions:ga_piston_casing:2>)
+	.outputs(<quarryplus:quarry>)
+	.property("circuit", 2)
+	.EUt(512)
+	.duration(200)
+	.buildAndRegister();
+recipes.addShapeless(<quarryplus:quarry>, [<quarryplus:quarryplus>]);
+	#filler
+assembler.recipeBuilder()
+	.inputs(<ore:stickLongTungsten>*2,<ore:gearTungsten>*2,<gtadditions:ga_motor_casing:2>,<gregtech:machine:503>,<betterbuilderswands:wandunbreakable:12>)
+	.outputs(<quarryplus:filler>)
+	.property("circuit", 6)
+	.EUt(512)
+	.duration(200)
+	.buildAndRegister();
+	#enchance mover
+recipes.addShaped(<quarryplus:enchantmover>,[
+	[<ore:plateDiamond>,<ore:blockRedstone>,<ore:plateDiamond>],
+	[<industrialforegoing:enchantment_aplicator>,<industrialforegoing:enchantment_extractor>,<industrialforegoing:enchantment_refiner>],
+	[<minecraft:obsidian>,<minecraft:obsidian>,<minecraft:obsidian>]
+]);
+	#torch module
+assembler.recipeBuilder()
+	.inputs(<minecraft:torch>*64,<minecraft:torch>*64,<minecraft:daylight_detector>,<projectred-integration:gate:15>*8)
+	.outputs(<quarryplus:torch_module>)
+	.EUt(512)
+	.duration(200)
+	.buildAndRegister();
+	#lists
+var paper as IItemStack = <minecraft:paper>;
+recipes.addShaped(<quarryplus:template>.withTag({HideFlags: 1}), [
+	[paper,paper,paper],
+	[paper,<ore:dyeBlue>,paper],
+	[paper,paper,paper]
+]);
+recipes.addShaped(<quarryplus:tool:1>.withTag({HideFlags: 1}), [
+	[paper,paper,paper],
+	[paper,<ore:dyeRed>,paper],
+	[paper,paper,paper]
+]);
+	#fluid selector
+assembler.recipeBuilder()
+	.inputs(<gregtech:meta_item_1:32628>,<thermaldynamics:filter>,<minecraft:bucket>,<minecraft:wool:11>,<minecraft:wool:14>,<minecraft:wool:15>,<minecraft:wool:5>)
+	.outputs(<quarryplus:tool:2>)
+	.EUt(512)
+	.duration(200)
+	.buildAndRegister();
+	#status
+assembler.recipeBuilder()
+	.inputs(<enderio:item_conduit_probe>,<minecraft:wool:5>,<minecraft:wool:4>,<minecraft:wool:14>)
+	.outputs(<quarryplus:tool>)
+	.EUt(512)
+	.duration(200)
+	.buildAndRegister();
+	#Ysetter
+recipes.addShapeless(<quarryplus:tool:3>, [<quarryplus:tool>,<chisel:offsettool>]);
+	#marker
+recipes.addShapeless(<quarryplus:markerplus>, [<cyclicmagic:card_location>]);
+	#mirror
+assembler.recipeBuilder()
+	.inputs(<overloaded:player_interface>*8,<quarryplus:magicmirror>,<lteleporters:endercrystal>*4,<lteleporters:teleporter>*4)
+	.outputs(<quarryplus:magicmirror:2>)
+	.EUt(512)
+	.duration(500)
+	.buildAndRegister();
+assembler.recipeBuilder()
+	.inputs(<quarryplus:magicmirror:2>,<portality:module_interdimensional>,<lteleporters:endercrystal>*2)
+	.outputs(<quarryplus:magicmirror:1>)
+	.EUt(512)
+	.duration(800)
+	.buildAndRegister();
+//future MC's soul
+recipes.addShapeless(<futuremc:soul_fire_torch>*4, [<minecraft:soul_sand>,<minecraft:stick>]);

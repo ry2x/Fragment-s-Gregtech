@@ -176,7 +176,6 @@ electrolyzer.recipeBuilder()
 	.buildAndRegister();
 
 //Import Zeolite Electrolysis from 5U modpack
-electrolyzer.findRecipe(60, [<ore:dustZeolite>.firstItem*141],[]).remove();
 electrolyzer.recipeBuilder()
 	.inputs([<ore:dustZeolite>*32])
 	.outputs([<ore:dustSodium>.firstItem, <ore:dustCalcium>.firstItem*2,<ore:dustSilicon>.firstItem*15, <ore:dustAluminium>.firstItem*2])
@@ -1108,14 +1107,6 @@ bath.recipeBuilder()
     .EUt(384)
     .buildAndRegister();
 
-//add recipe Yttrium barium cuprate dust
-mixer.recipeBuilder()
-	.inputs(<ore:dustCopper>*3,<ore:dustBarium>*2,<ore:dustYttrium>)
-	.outputs(<ore:dustYttriumBariumCuprate>.firstItem*6)
-	.duration(240)
-	.EUt(8)
-	.buildAndRegister();
-
 //add diamond gem in implosion
 implosion.recipeBuilder()
     .inputs(<ore:dustDiamond>*4)
@@ -1164,17 +1155,6 @@ for key, meta in crateMaterials {
 		.buildAndRegister();
 }
 
-//fix aluminium dust recipe in EBF It will be removed in next update due to updating gregicality
-blast_furnace.findRecipe(120, [<ore:dustAluminium>.firstItem],null).remove();
-blast_furnace.recipeBuilder()
-	.inputs(<ore:dustAluminium>)
-	.outputs(<ore:ingotAluminium>.firstItem)
-    .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:1}))
-	.property("temperature", 1700)
-	.EUt(120)
-	.duration(884)
-	.buildAndRegister();
-
 //dark steel and Stellar
 val removeFurnace as IIngredient[] = [
 	<gregtech:meta_item_1:10502>,
@@ -1221,25 +1201,6 @@ blast_furnace.recipeBuilder()
 	.buildAndRegister();
 
 //fix nitinol 60
-mixer.recipeBuilder()
-	.inputs(<ore:dustTitanium>*3,<ore:dustNickel>*2)
-	.outputs(<ore:dustNitinolA>.firstItem*5)
-	.EUt(40)
-	.duration(260)
-	.buildAndRegister();
-blast_furnace.recipeBuilder()
-	.inputs(<ore:dustNitinolA>)
-	.outputs(<ore:ingotHotNitinolA>.firstItem)
-	.property("temperature", 1941)
-	.EUt(120)
-	.duration(2018)
-	.buildAndRegister();
-freezer.recipeBuilder()
-	.inputs(<ore:ingotHotNitinolA>)
-	.outputs(<ore:ingotNitinolA>.firstItem)
-	.EUt(120)
-	.duration(122)
-	.buildAndRegister();
 freezer.recipeBuilder()
 	.inputs(<ore:ingotHotNitinolA>)
 	.outputs(<ore:ingotNitinolA>.firstItem)
