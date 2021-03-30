@@ -1,237 +1,93 @@
 //import crafttweaker II
 import crafttweaker.item.IItemStack;
 
+//import forestry
+import mods.forestry.Carpenter.removeRecipe;
+
 //import JEI function
 import mods.jei.JEI;
 
-//import Forestry Carpenter function
-import mods.forestry.Carpenter.removeRecipe;
+//remove crate
+val crate as IItemStack[] = [
+    <forestry:kit_pickaxe>,
+    <forestry:kit_shovel>    
+];
 
-//remove recipes of <forestry:crafting_material:3>
-removeRecipe(<forestry:crafting_material:3>);
+for i in crate {
+    removeRecipe(i);
+    JEI.removeAndHide(i);
+}
 
-//remove pipette
-JEI.removeAndHide(<forestry:pipette>);
+removeRecipe(<forestry:carton>, <liquid:water>);
+JEI.removeAndHide(<forestry:carton>);
 
-//remove hardend machine
-removeRecipe(<forestry:hardened_machine>);
-JEI.hide(<forestry:hardened_machine>);
+//remove pulsating mesh
+JEI.removeAndHide(<forestry:crafting_material:1>);
 
-//remove wrench
-JEI.removeAndHide(<forestry:wrench>);
-
-//hide plusating dust
-JEI.hide(<forestry:crafting_material:0>);
-
-//hide plusting plate
-JEI.hide(<forestry:crafting_material:1>);
-
-//remove endereye from plusting plate
-removeRecipe(<minecraft:ender_pearl>);
-
-//remove carton
-removeRecipe(<forestry:carton>);
-JEI.hide(<forestry:carton>);
-
-//remove Paneling
-JEI.removeAndHide(<forestry:crafting_material:7>);
-
-//remove silk
-JEI.removeAndHide(<forestry:crafting_material:2>);
-
-//bronze pickaxe and shovel
-JEI.hide(<forestry:broken_bronze_pickaxe>);
-JEI.hide(<forestry:broken_bronze_shovel>);
-JEI.removeAndHide(<forestry:bronze_pickaxe>);
-JEI.removeAndHide(<forestry:bronze_shovel>);
-recipes.remove(<forestry:kit_pickaxe>);
-recipes.remove(<forestry:kit_shovel>);
-removeRecipe(<forestry:kit_pickaxe>);
-removeRecipe(<forestry:kit_shovel>);
-JEI.hide(<forestry:kit_pickaxe>);
-JEI.hide(<forestry:kit_shovel>);
-
-//remove Iodine capsule
-removeRecipe(<forestry:iodine_capsule>);
-JEI.hide(<forestry:iodine_capsule>);
-
-//remove rainmaker's stopper
+//remove item that make rainmaker not working 
+removeRecipe(<forestry:crafting_material:4>, <liquid:water>);
 JEI.removeAndHide(<forestry:crafting_material:4>);
 
-//remove ffarm
-recipes.remove(<forestry:ffarm:*>);
-JEI.hide(<forestry:ffarm:*>);
+//remove camouflaged panel
+JEI.removeAndHide(<forestry:crafting_material:7>);
 
-//remove stamp
-JEI.removeAndHide(<forestry:stamps:*>);
+//remove forestry wood pulp and paper
+removeRecipe(<forestry:wood_pulp>, <liquid:water>);
+removeRecipe(<minecraft:paper>, <liquid:water>);
+JEI.removeAndHide(<forestry:wood_pulp>);
 
-//remove letter
-JEI.removeAndHide(<forestry:letters>);
+//remove item that make rainmaker working 
+removeRecipe(<forestry:iodine_capsule>,<liquid:water>);
+JEI.removeAndHide(<forestry:iodine_capsule>);
 
-//remove catalogue
-JEI.removeAndHide(<forestry:catalogue>);
-
-//remove mailbox
-JEI.removeAndHide(<forestry:mailbox>);
-
-//remove trade station
-JEI.removeAndHide(<forestry:trade_station>);
-
-//hide stamp collector
-JEI.hide(<forestry:stamp_collector>);
-
-//hide imprinter
-JEI.hide(<forestry:imprinter>);
-
-//hide Proven Frame
-JEI.hide(<forestry:frame_proven>);
-
-//remove crate
-removeRecipe(<forestry:crate>);
-JEI.hide(<forestry:crate>);
-
-//remove rain maker
-recipes.remove(<forestry:rainmaker>);
-JEI.hide(<forestry:rainmaker>);
-
-//remove raintank
-JEI.removeAndHide(<forestry:raintank>);
-
-//remove genetic
-JEI.removeAndHide(<forestry:genetic_filter>);
-
-//hide deprecated
-val dpc = [
-    <forestry:greenhouse:*>,
-    <forestry:climatiser:*>,
-    <forestry:greenhouse:3>,
-    <forestry:greenhouse:4>,
-    <forestry:greenhouse:5>,
-    <forestry:climatiser:1>,
-    <forestry:climatiser:2>,
-    <forestry:climatiser:3>,
-    <forestry:climatiser:4>,
-    <forestry:greenhouse.window>,
-    <forestry:greenhouse.window_up>
-] as IItemStack[];
-
-for item in dpc {
-    JEI.hide(item);
-}
-
-//remove crates
-val crate = [
-    <forestry:crated.forestry.peat.0>,
-    <forestry:crated.forestry.apatite.0>,
-    <forestry:crated.forestry.fertilizer_compound.0>,
-    <forestry:crated.forestry.mulch.0>,
-    <forestry:crated.forestry.phosphor.0>,
-    <forestry:crated.forestry.ash.0>,
-    <forestry:crated.ingottin>,
-    <forestry:crated.ingotcopper>,
-    <forestry:crated.ingotbronze>,
-    <forestry:crated.forestry.humus.0>,
-    <forestry:crated.forestry.bog_earth.0>,
-    <forestry:crated.cropwheat>,
-    <forestry:crated.minecraft.cookie.0>,
-    <forestry:crated.dustredstone>,
-    <forestry:crated.minecraft.dye.4>,
-    <forestry:crated.sugarcane>,
-    <forestry:crated.minecraft.clay_ball.0>,
-    <forestry:crated.dustglowstone>,
-    <forestry:crated.minecraft.apple.0>,
-    <forestry:crated.minecraft.nether_wart.0>,
-    <forestry:crated.minecraft.coal.1>,
-    <forestry:crated.minecraft.coal.0>,
-    <forestry:crated.minecraft.wheat_seeds.0>,
-    <forestry:crated.croppotato>,
-    <forestry:crated.cropcarrot>,
-    <forestry:crated.minecraft.log.0>,
-    <forestry:crated.minecraft.log.1>,
-    <forestry:crated.minecraft.log.2>,
-    <forestry:crated.minecraft.log.3>,
-    <forestry:crated.minecraft.log2.0>,
-    <forestry:crated.minecraft.log2.1>,
-    <forestry:crated.cobblestone>,
-    <forestry:crated.dirt>,
-    <forestry:crated.minecraft.dirt.2>,
-    <forestry:crated.stone>,
-    <forestry:crated.stonegranite>,
-    <forestry:crated.stonediorite>,
-    <forestry:crated.stoneandesite>,
-    <forestry:crated.blockprismarine>,
-    <forestry:crated.blockprismarinebrick>,
-    <forestry:crated.blockprismarinedark>,
-    <forestry:crated.minecraft.brick_block.0>,
-    <forestry:crated.blockcactus>,
-    <forestry:crated.minecraft.sand.0>,
-    <forestry:crated.minecraft.sand.1>,
-    <forestry:crated.obsidian>,
-    <forestry:crated.netherrack>,
-    <forestry:crated.minecraft.soul_sand.0>,
-    <forestry:crated.minecraft.sandstone.0>,
-    <forestry:crated.minecraft.nether_brick.0>,
-    <forestry:crated.minecraft.mycelium.0>,
-    <forestry:crated.gravel>,
-    <forestry:crated.minecraft.sapling.0>,
-    <forestry:crated.minecraft.sapling.1>,
-    <forestry:crated.minecraft.sapling.2>,
-    <forestry:crated.minecraft.sapling.3>,
-    <forestry:crated.minecraft.sapling.4>,
-    <forestry:crated.minecraft.sapling.5>,
-    <forestry:crated.forestry.beeswax.0>,
-    <forestry:crated.forestry.pollen.0>,
-    <forestry:crated.forestry.pollen.1>,
-    <forestry:crated.forestry.propolis.0>,
-    <forestry:crated.forestry.honeydew.0>,
-    <forestry:crated.forestry.royal_jelly.0>,
-    <forestry:crated.forestry.bee_combs.0>,
-    <forestry:crated.forestry.bee_combs.1>,
-    <forestry:crated.forestry.bee_combs.2>,
-    <forestry:crated.forestry.bee_combs.3>,
-    <forestry:crated.forestry.bee_combs.4>,
-    <forestry:crated.forestry.bee_combs.5>,
-    <forestry:crated.forestry.bee_combs.6>,
-    <forestry:crated.forestry.bee_combs.7>,
-    <forestry:crated.forestry.bee_combs.8>,
-    <forestry:crated.forestry.bee_combs.10>,
-    <forestry:crated.forestry.bee_combs.14>,
-    <forestry:crated.forestry.bee_combs.15>,
-    <forestry:crated.forestry.bee_combs.16>,
-    <forestry:crated.forestry.refractory_wax.0>
-] as IItemStack[];
-
-for item in crate {
-    removeRecipe(item);
-}
-
-//remove backpacks that table crafting
-val backpacks = [
-    <forestry:apiarist_bag>,
+//remove bags
+val craftingBag as IItemStack[] = [
     <forestry:miner_bag>,
     <forestry:digger_bag>,
     <forestry:forester_bag>,
     <forestry:hunter_bag>,
     <forestry:adventurer_bag>,
-    <forestry:builder_bag>
-] as IItemStack[];
+    <forestry:builder_bag>,
+];
 
-for item in backpacks {
-    JEI.removeAndHide(item);
+for i in craftingBag {
+    JEI.removeAndHide(i);
 }
 
-//remove backpacks that carpenter crafting
-val backpacks2 = [
+val carpentBag as IItemStack[] = [
     <forestry:miner_bag_t2>,
     <forestry:digger_bag_t2>,
     <forestry:forester_bag_t2>,
     <forestry:hunter_bag_t2>,
     <forestry:adventurer_bag_t2>,
-    <forestry:builder_bag_t2>
-] as IItemStack[];
+    <forestry:builder_bag_t2>,
+];
 
-for item in backpacks2 {
-    removeRecipe(item);
+for i in carpentBag {
+    removeRecipe(i, <liquid:water>);
+    JEI.removeAndHide(i);
 }
 
-//end
+//remove tools
+val tools as IItemStack[] = [
+    <forestry:bronze_shovel>,
+    <forestry:bronze_pickaxe>,
+    <forestry:broken_bronze_shovel>,
+    <forestry:broken_bronze_pickaxe>,
+    <forestry:wrench>
+];
+
+for i in tools {
+    JEI.removeAndHide(i);
+}
+
+//remove centrifuge 
+JEI.removeAndHide(<forestry:centrifuge>);
+JEI.hideCategory(forestry.centrifuge);
+
+//hide 
+for can in [<forestry:can:1>, <forestry:capsule:1>, <forestry:refractory:1>] as IItemStack[] {
+	for liquid in game.liquids {
+		mods.jei.JEI.hide(can.withTag({Fluid: {FluidName: liquid.name, Amount: 1000}}));
+	}
+}

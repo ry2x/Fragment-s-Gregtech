@@ -539,34 +539,115 @@ recipes.addShaped(<scannable:scanner>, [
 */
 
 //Add easy chest recipes (ported from enderio)
-val chestFix as IItemStack[IItemStack] = {
+val chestFix as IItemStack[IItemStack[]] = {
     #Dark Oak
-    <minecraft:log2:1> : <quark:custom_chest:4>,
+    [
+        <minecraft:log2:1>,
+        <forestry:logs.vanilla.fireproof.1:1>
+    ] : <quark:custom_chest:4>,
     #Acacia
-    <minecraft:log2> : <quark:custom_chest:3>,
+    [
+        <minecraft:log2>,
+        <forestry:logs.vanilla.fireproof.1>
+    ] : <quark:custom_chest:3>,
     #Jungle
-    <minecraft:log:3> : <quark:custom_chest:2>,
+    [
+        <minecraft:log:3>,
+        <forestry:logs.vanilla.fireproof.0:3>
+    ] : <quark:custom_chest:2>,
     #Birch
-    <minecraft:log:2> : <quark:custom_chest:1>,
+    [
+        <minecraft:log:2>,
+        <forestry:logs.vanilla.fireproof.0:2>
+    ] : <quark:custom_chest:1>,
     #Spruce
-    <minecraft:log:1> : <quark:custom_chest>,
+    [
+        <minecraft:log:1>,
+        <forestry:logs.vanilla.fireproof.0:1>
+    ] : <quark:custom_chest>,
     #Oak
-    <minecraft:log> : <minecraft:chest>
+    [
+        <minecraft:log>,
+        <forestry:logs.vanilla.fireproof.0>
+    ] : <minecraft:chest>,
+    #others to oak chest
+    [
+        <forestry:logs.fireproof.6:3>,
+        <forestry:logs.fireproof.7>,
+        <forestry:logs.fireproof.6:2>,
+        <forestry:logs.fireproof.6:1>,
+        <forestry:logs.fireproof.6>,
+        <forestry:logs.fireproof.2:3>,
+        <forestry:logs.fireproof.3>,
+        <forestry:logs.fireproof.3:1>,
+        <forestry:logs.fireproof.3:2>,
+        <forestry:logs.fireproof.3:3>,
+        <forestry:logs.fireproof.4>,
+        <forestry:logs.fireproof.4:1>,
+        <forestry:logs.fireproof.4:2>,
+        <forestry:logs.fireproof.4:3>,
+        <forestry:logs.fireproof.5>,
+        <forestry:logs.fireproof.5:1>,
+        <forestry:logs.fireproof.5:2>,
+        <forestry:logs.fireproof.5:3>,
+        <forestry:logs.fireproof.2:2>,
+        <forestry:logs.fireproof.2:1>,
+        <forestry:logs.fireproof.2>,
+        <forestry:logs.fireproof.1:3>,
+        <forestry:logs.fireproof.1:2>,
+        <forestry:logs.fireproof.1:1>,
+        <forestry:logs.fireproof.1>,
+        <forestry:logs.fireproof.0:3>,
+        <forestry:logs.fireproof.0:2>,
+        <forestry:logs.fireproof.0:1>,
+        <forestry:logs.fireproof.0>,
+        <forestry:logs.7>,
+        <forestry:logs.6:3>,
+        <forestry:logs.3:2>,
+        <forestry:logs.3:3>,
+        <forestry:logs.4>,
+        <forestry:logs.4:1>,
+        <forestry:logs.4:2>,
+        <forestry:logs.4:3>,
+        <forestry:logs.5>,
+        <forestry:logs.5:1>,
+        <forestry:logs.5:2>,
+        <forestry:logs.5:3>,
+        <forestry:logs.6>,
+        <forestry:logs.6:1>,
+        <forestry:logs.6:2>,
+        <forestry:logs.3:1>,
+        <forestry:logs.3>,
+        <forestry:logs.2:3>,
+        <forestry:logs.2:2>,
+        <forestry:logs.2:1>,
+        <forestry:logs.2>,
+        <forestry:logs.1:3>,
+        <forestry:logs.1:2>,
+        <forestry:logs.1:1>,
+        <forestry:logs.1>,
+        <forestry:logs.0:3>,
+        <forestry:logs.0:2>,
+        <forestry:logs.0:1>,
+        <forestry:logs.0>,
+    ] : <minecraft:chest>,
 };
 
-for i,o in chestFix {
-    recipes.addShaped(o * 2, [
-    [i,i, i],
-    [i, null, i],
-    [i, i, i]
-    ]);
-    assembler.recipeBuilder()
-        .inputs(i * 8)
-        .notConsumable(<metaitem:circuit.integrated>.withTag({ Configuration: 9 }))
-        .outputs(o*2)
-        .duration(1600)
-        .EUt(5)
-        .buildAndRegister();
+for k,o in chestFix {
+    for i in k {
+        recipes.addShaped(o * 2, [
+        [i,i, i],
+        [i, null, i],
+        [i, i, i]
+        ]);
+        assembler.recipeBuilder()
+            .inputs(i * 8)
+            .notConsumable(<metaitem:circuit.integrated>.withTag({ Configuration: 9 }))
+            .outputs(o*2)
+            .duration(1600)
+            .EUt(5)
+            .buildAndRegister();
+    }
 }
 
 /*
@@ -598,40 +679,122 @@ for name in ChestTrapFixRemove {
 }
 
     #chest
-val chestFixCrafting as IItemStack[IItemStack] = {
+val chestFixCrafting as IItemStack[IItemStack[]] = {
     #Dark Oak
-    <minecraft:planks:5> : <quark:custom_chest:4>,
-    <chisel:planks-dark-oak:*> : <quark:custom_chest:4>,
+    [
+        <minecraft:planks:5>,
+        <chisel:planks-dark-oak:*>,
+        <forestry:planks.vanilla.fireproof.0:5>
+    ] : <quark:custom_chest:4>,
     #Acacia
-    <minecraft:planks:4> : <quark:custom_chest:3>,
-    <chisel:planks-acacia:*> : <quark:custom_chest:3>,
+    [
+        <minecraft:planks:4>,
+        <chisel:planks-acacia:*>,
+        <forestry:planks.vanilla.fireproof.0:4>
+    ]: <quark:custom_chest:3>,
     #Jungle
-    <minecraft:planks:3> : <quark:custom_chest:2>,
-    <chisel:planks-jungle:*> : <quark:custom_chest:2>,
+    [
+        <minecraft:planks:3>,
+        <chisel:planks-jungle:*>,
+        <forestry:planks.vanilla.fireproof.0:3>
+    ] : <quark:custom_chest:2>,
     #Birch
-    <minecraft:planks:2> : <quark:custom_chest:1>,
-    <chisel:planks-birch:*> : <quark:custom_chest:1>,
+    [
+        <minecraft:planks:2>,
+        <chisel:planks-birch:*>,
+        <forestry:planks.vanilla.fireproof.0:2>
+    ] : <quark:custom_chest:1>,
     #Spruce
-    <minecraft:planks:1> : <quark:custom_chest>,
-    <chisel:planks-spruce:*> : <quark:custom_chest>,
+    [
+        <minecraft:planks:1>,
+        <chisel:planks-spruce:*>,
+        <forestry:planks.vanilla.fireproof.0:1>
+    ] : <quark:custom_chest>,
     #Oak
-    <minecraft:planks> : <minecraft:chest>,
-    <chisel:planks-oak:*> : <minecraft:chest>
+    [
+        <minecraft:planks>,
+        <chisel:planks-oak:*>,
+        <forestry:planks.vanilla.fireproof.0>
+    ] : <minecraft:chest>,
+    #others to oak chest
+    [
+        <forestry:planks.fireproof.1:12>,
+        <forestry:planks.fireproof.1:11>,
+        <forestry:planks.fireproof.1:10>,
+        <forestry:planks.fireproof.1:9>,
+        <forestry:planks.fireproof.1:8>,
+        <forestry:planks.fireproof.1:7>,
+        <forestry:planks.fireproof.1:6>,
+        <forestry:planks.fireproof.1:5>,
+        <forestry:planks.fireproof.1:4>,
+        <forestry:planks.fireproof.1:3>,
+        <forestry:planks.fireproof.1:2>,
+        <forestry:planks.fireproof.1:1>,
+        <forestry:planks.fireproof.1>,
+        <forestry:planks.fireproof.0:15>,
+        <forestry:planks.fireproof.0:14>,
+        <forestry:planks.fireproof.0:13>,
+        <forestry:planks.fireproof.0:12>,
+        <forestry:planks.1:12>,
+        <forestry:planks.fireproof.0>,
+        <forestry:planks.fireproof.0:1>,
+        <forestry:planks.fireproof.0:2>,
+        <forestry:planks.fireproof.0:3>,
+        <forestry:planks.fireproof.0:4>,
+        <forestry:planks.fireproof.0:5>,
+        <forestry:planks.fireproof.0:6>,
+        <forestry:planks.fireproof.0:7>,
+        <forestry:planks.fireproof.0:8>,
+        <forestry:planks.fireproof.0:9>,
+        <forestry:planks.fireproof.0:10>,
+        <forestry:planks.fireproof.0:11>,
+        <forestry:planks.1:11>,
+        <forestry:planks.1:10>,
+        <forestry:planks.1:9>,
+        <forestry:planks.1:8>,
+        <forestry:planks.1:7>,
+        <forestry:planks.1:6>,
+        <forestry:planks.1:5>,
+        <forestry:planks.1:4>,
+        <forestry:planks.1:3>,
+        <forestry:planks.1:2>,
+        <forestry:planks.1:2>,
+        <forestry:planks.1:1>,
+        <forestry:planks.1>,
+        <forestry:planks.0:15>,
+        <forestry:planks.0:2>,
+        <forestry:planks.0:3>,
+        <forestry:planks.0:4>,
+        <forestry:planks.0:5>,
+        <forestry:planks.0:6>,
+        <forestry:planks.0:7>,
+        <forestry:planks.0:8>,
+        <forestry:planks.0:9>,
+        <forestry:planks.0:10>,
+        <forestry:planks.0:11>,
+        <forestry:planks.0:12>,
+        <forestry:planks.0:14>,
+        <forestry:planks.0:13>,
+        <forestry:planks.0>,
+        <forestry:planks.0:1>,
+    ] : <minecraft:chest>
 };
 
-for input,output in chestFixCrafting{
-    recipes.addShaped(output,[
-        [input,input,input],
-        [input,null,input],
-        [input,input,input]
-    ]);
-    assembler.recipeBuilder()
-        .inputs(input * 8)
-        .notConsumable(<metaitem:circuit.integrated>.withTag({ Configuration: 8 }))
-        .outputs(output)
-        .duration(800)
-        .EUt(4)
-        .buildAndRegister();
+for k,output in chestFixCrafting{
+    for input in k {
+        recipes.addShaped(output,[
+            [input,input,input],
+            [input,null,input],
+            [input,input,input]
+        ]);
+        assembler.recipeBuilder()
+            .inputs(input * 8)
+            .notConsumable(<metaitem:circuit.integrated>.withTag({ Configuration: 8 }))
+            .outputs(output)
+            .duration(800)
+            .EUt(4)
+            .buildAndRegister();
+    }
 }
 
     #trap door

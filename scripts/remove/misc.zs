@@ -275,3 +275,6 @@ val uselessFTB as IItemStack[] = [
 for i in uselessFTB {
 	JEI.removeAndHide(i);
 }
+
+//remove stone rod due to conflict
+JEI.removeAndHide(<microblockcbe:stone_rod>);
