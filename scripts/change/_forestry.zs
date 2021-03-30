@@ -36,7 +36,7 @@ recipes.addShaped(<forestry:portable_alyzer>,[
 
 //add recipe flexible casing
 assembler.recipeBuilder()
-    .inputs(<ore:slimeball>)
+    .inputs(<ore:slimeball>*8)
     .outputs(<forestry:flexible_casing>)
     .duration(180)
     .EUt(16)
@@ -48,7 +48,6 @@ removeRecipe(<forestry:chipsets:1>);
 removeRecipe(<forestry:chipsets:2>);
 removeRecipe(<forestry:chipsets:3>);
 
-//add recipe basic chip set and upgrade recipes
 assembler.recipeBuilder()
     .inputs(<ore:ingotTin>,<ore:dustRedstone>*6,<gregtech:meta_item_2:32447>)
     .fluidInputs(<liquid:water>*1000)
