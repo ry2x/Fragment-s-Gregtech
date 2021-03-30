@@ -10,5 +10,17 @@
 		items: [{
 			item: "portality:controller"
 		}]
+	}],
+	rewards: [{
+		uid: "eb96aa5c",
+		type: "item",
+		item: "portality:module_interdimensional",
+		count: 2
+	},
+	{
+		uid: "28a84a0f",
+		type: "item",
+		item: "portality:frame",
+		count: 5
 	}]
 }

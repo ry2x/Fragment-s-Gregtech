@@ -1,7 +1,7 @@
 {
 	icon: "gregtech:machine_casing 1 7",
-	x: 7.5d,
-	y: -4.5d,
+	x: 8.0d,
+	y: -13.0d,
 	text: [
 		"Gregtech needs large amout items each age, so you should  make lots of craft materials (motor, circuit, etc)."
 	],

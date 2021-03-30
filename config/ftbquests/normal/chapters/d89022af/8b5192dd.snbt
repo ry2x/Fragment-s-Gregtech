@@ -12,5 +12,15 @@
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "0c454a1f",
+		type: "item",
+		item: "portalgun:item_miniature_black_hole"
+	},
+	{
+		uid: "ec11c9f6",
+		type: "item",
+		item: "portalgun:item_miniature_black_hole"
 	}]
 }

@@ -1,0 +1,16 @@
+{
+	x: 2.0d,
+	y: -13.0d,
+	tasks: [{
+		uid: "9d591dc0",
+		type: "item",
+		items: [{
+			item: "threng:material 1 6"
+		}]
+	}],
+	rewards: [{
+		uid: "41897c1e",
+		type: "item",
+		item: "threng:material 1 6"
+	}]
+}

@@ -10,5 +10,29 @@
 		items: [{
 			item: "gregtech:machine 1 2504"
 		}]
+	}],
+	rewards: [{
+		uid: "affec9ef",
+		type: "item",
+		item: "gregtech:cable 1 4966",
+		count: 8
+	},
+	{
+		uid: "4b1a284f",
+		type: "item",
+		item: "gregtech:meta_item_1 1 12235",
+		count: 6
+	},
+	{
+		uid: "6d2fc1c8",
+		type: "item",
+		item: "gtadditions:ga_meta_item 1 32227",
+		count: 6
+	},
+	{
+		uid: "1b9ea446",
+		type: "item",
+		item: "gregtech:meta_item_1 1 13047",
+		count: 4
 	}]
 }
