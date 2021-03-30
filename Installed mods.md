@@ -52,7 +52,7 @@ Controlling-3.0.10.jar
 
 CosmeticArmorReworked-1.12.2-v5a.jar
 
-CraftTweaker2-1.12-4.1.20.614.jar
+CraftTweaker2-1.12-4.1.20.631.jar
 
 CreativeCore_v1.10.47_mc1.12.2.jar
 
