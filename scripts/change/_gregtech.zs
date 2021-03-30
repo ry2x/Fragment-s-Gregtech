@@ -1200,7 +1200,7 @@ blast_furnace.recipeBuilder()
 	.duration(3200)
 	.buildAndRegister();
 
-//fix nitinol 60
+//add freezing  nitinol 60
 freezer.recipeBuilder()
 	.inputs(<ore:ingotHotNitinolA>)
 	.outputs(<ore:ingotNitinolA>.firstItem)
