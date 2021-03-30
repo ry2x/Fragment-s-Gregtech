@@ -17,5 +17,17 @@
 		items: [{
 			item: "lteleporters:endercrystal"
 		}]
+	}],
+	rewards: [{
+		uid: "6689a653",
+		type: "item",
+		item: "lteleporters:endercrystal",
+		count: 3
+	},
+	{
+		uid: "7e6899c3",
+		type: "item",
+		item: "lteleporters:teleporter",
+		count: 3
 	}]
 }

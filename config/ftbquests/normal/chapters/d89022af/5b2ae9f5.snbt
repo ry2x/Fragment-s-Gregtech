@@ -11,5 +11,17 @@
 			item: "gtadditions:ga_armor 1 14"
 		}],
 		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "a52177c9",
+		type: "item",
+		item: "gtadditions:ga_meta_item 1 32305",
+		count: 2
+	},
+	{
+		uid: "4577ab59",
+		type: "item",
+		item: "gregtech:meta_item_2 1 32506",
+		count: 5
 	}]
 }

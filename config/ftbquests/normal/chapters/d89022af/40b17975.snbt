@@ -7,5 +7,10 @@
 		items: [{
 			item: "quarryplus:magicmirror"
 		}]
+	}],
+	rewards: [{
+		uid: "6d08b05e",
+		type: "item",
+		item: "quarryplus:magicmirror"
 	}]
 }

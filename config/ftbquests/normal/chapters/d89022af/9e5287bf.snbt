@@ -7,5 +7,11 @@
 		items: [{
 			item: "gregtech:machine 1 2239"
 		}]
+	}],
+	rewards: [{
+		uid: "54e1a183",
+		type: "item",
+		item: "gtadditions:ga_meta_item 1 32221",
+		count: 3
 	}]
 }

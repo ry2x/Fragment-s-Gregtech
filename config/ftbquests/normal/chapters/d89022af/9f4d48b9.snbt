@@ -39,5 +39,17 @@
 		}],
 		ignore_damage: true,
 		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "2e22b2e4",
+		type: "item",
+		item: "gregtech:meta_item_1 1 12502",
+		count: 5
+	},
+	{
+		uid: "bf2db177",
+		type: "item",
+		item: "enderio:item_dark_steel_upgrade",
+		count: 2
 	}]
 }
