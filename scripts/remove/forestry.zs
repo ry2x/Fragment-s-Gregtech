@@ -10,7 +10,7 @@ import mods.jei.JEI;
 //remove crate
 val crate as IItemStack[] = [
     <forestry:kit_pickaxe>,
-    <forestry:kit_shovel>    
+    <forestry:kit_shovel>
 ];
 
 for i in crate {
@@ -24,7 +24,7 @@ JEI.removeAndHide(<forestry:carton>);
 //remove pulsating mesh
 JEI.removeAndHide(<forestry:crafting_material:1>);
 
-//remove item that make rainmaker not working 
+//remove item that make rainmaker not working
 removeRecipe(<forestry:crafting_material:4>, <liquid:water>);
 JEI.removeAndHide(<forestry:crafting_material:4>);
 
@@ -36,7 +36,7 @@ removeRecipe(<forestry:wood_pulp>, <liquid:water>);
 removeRecipe(<minecraft:paper>, <liquid:water>);
 JEI.removeAndHide(<forestry:wood_pulp>);
 
-//remove item that make rainmaker working 
+//remove item that make rainmaker working
 removeRecipe(<forestry:iodine_capsule>,<liquid:water>);
 JEI.removeAndHide(<forestry:iodine_capsule>);
 
@@ -81,11 +81,11 @@ for i in tools {
     JEI.removeAndHide(i);
 }
 
-//remove centrifuge 
+//remove centrifuge
 JEI.removeAndHide(<forestry:centrifuge>);
-JEI.hideCategory(forestry.centrifuge);
+JEI.hideCategory("forestry.centrifuge");
 
-//hide 
+//hide
 for can in [<forestry:can:1>, <forestry:capsule:1>, <forestry:refractory:1>] as IItemStack[] {
 	for liquid in game.liquids {
 		mods.jei.JEI.hide(can.withTag({Fluid: {FluidName: liquid.name, Amount: 1000}}));
