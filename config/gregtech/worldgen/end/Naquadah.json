@@ -17,11 +17,11 @@
       "values": [
         {
           "weight": 90,
-          "value": "ore:naquadric_compound"
+          "value": "ore:naquadah"
         },
         {
           "weight": 10,
-          "value": "ore:enriched_naquadric_compound"
+          "value": "ore:enriched_naquadah"
         }
       ]
     }
