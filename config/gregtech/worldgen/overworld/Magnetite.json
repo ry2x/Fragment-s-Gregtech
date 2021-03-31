@@ -27,7 +27,7 @@
         },
 		{
           "weight": 10,
-          "value": "ore:precious_metal"
+          "value": "ore:gold"
         }
       ]
     }
