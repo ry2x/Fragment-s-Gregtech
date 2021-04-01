@@ -234,6 +234,8 @@ railcraft-12.0.0.jar
 
 RandomThings-MC1.12.2-4.2.7.4.jar
 
+reauth-3.6.0.jar
+
 RedstoneFlux-1.12-2.1.1.1-universal.jar
 
 ResourceLoader-MC1.12.1-1.5.3.jar
