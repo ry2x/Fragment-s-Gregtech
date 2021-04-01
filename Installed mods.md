@@ -288,7 +288,7 @@ volumetricflask-0.18.jar
 
 WaterMechanicsBackport-1.0.3-1.12.2-NETHERFIX.jar
 
-Xaeros_Minimap_21.4.4_Forge_1.12.jar
+Xaeros_Minimap_21.4.5_Forge_1.12.jar
 
 XaerosWorldMap_1.13.1_Forge_1.12.jar
 
