@@ -1,0 +1,25 @@
+{
+	x: -18.5d,
+	y: -12.5d,
+	dependencies: [
+		"8c5cb182"
+	],
+	tasks: [{
+		uid: "bcc00725",
+		type: "item",
+		items: [{
+			item: "scannable:module_blank"
+		}]
+	}],
+	rewards: [{
+		uid: "5518cee1",
+		type: "item",
+		item: "scannable:module_blank"
+	},
+	{
+		uid: "25b2a671",
+		type: "item",
+		item: "gregtech:meta_item_1 1 10071",
+		count: 8
+	}]
+}

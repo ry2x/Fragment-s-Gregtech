@@ -1,0 +1,29 @@
+{
+	title: "GregTech Vein System",
+	x: -15.5d,
+	y: -17.5d,
+	shape: "diamond",
+	description: "Vain Vein?",
+	text: [
+		"In this pack, you can find only gregtech ores.",
+		"Gregtech generates ores as veins.",
+		"The veins has surface materials, so you can find vein under the ground around them."
+	],
+	size: 1.5d,
+	tasks: [{
+		uid: "bf19140e",
+		type: "checkmark",
+		icon: {
+			id: "gtadditions:ga_meta_item2",
+			tag: {
+				Charge: 72000L
+			},
+			Damage: 103s
+		}
+	}],
+	rewards: [{
+		uid: "566b17fe",
+		type: "item",
+		item: "scannable:module_blank"
+	}]
+}

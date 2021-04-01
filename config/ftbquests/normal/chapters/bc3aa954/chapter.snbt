@@ -1,0 +1,7 @@
+{
+	title: "Vein",
+	icon: "gregtech:ore_osmium_0",
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: "circle"
+}
