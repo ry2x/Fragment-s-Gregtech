@@ -290,41 +290,7 @@ assembler.recipeBuilder()
 	.duration(150)
 	.EUt(16)
 	.buildAndRegister();
-//drums to dusts
-macerator.recipeBuilder()
-    .inputs(<gregtech:machine:2196>)
-	.outputs(<ore:dustBronze>.firstItem*6)
-    .duration(30)
-    .EUt(8)
-    .buildAndRegister();
 
-macerator.recipeBuilder()
-    .inputs(<gregtech:machine:2198>)
-	.outputs(<ore:dustStainlessSteel>.firstItem*6)
-    .duration(30)
-    .EUt(8)
-    .buildAndRegister();
-
-macerator.recipeBuilder()
-    .inputs(<gregtech:machine:2197>)
-	.outputs(<ore:dustSteel>.firstItem*6)
-    .duration(30)
-    .EUt(8)
-    .buildAndRegister();
-
-macerator.recipeBuilder()
-    .inputs(<gregtech:machine:2199>)
-	.outputs(<ore:dustTitanium>.firstItem*6)
-    .duration(30)
-    .EUt(8)
-    .buildAndRegister();
-
-macerator.recipeBuilder()
-    .inputs(<gregtech:machine:2200>)
-	.outputs(<ore:dustTungstenSteel>.firstItem*6)
-    .duration(30)
-    .EUt(8)
-    .buildAndRegister();
 //blue steel in alloy
 alloy.recipeBuilder()
     .inputs([<gregtech:meta_item_1:10184>*2,<gregtech:meta_item_1:2128>])
@@ -366,216 +332,51 @@ reactor.recipeBuilder()
     .buildAndRegister();
 
 //cryotheum helps cool-downing hot ingots
-freezer.recipeBuilder()
-	.inputs(<ore:ingotHotErbium>)
-	.fluidInputs([<liquid:cryotheum>*10])
-	.outputs(<ore:ingotErbium>.firstItem)
-	.duration(56)
-	.EUt(32)
-	.buildAndRegister();
-freezer.recipeBuilder()
-	.inputs(<ore:ingotHotBlackBronze>)
-	.fluidInputs([<liquid:cryotheum>*10])
-	.outputs(<ore:ingotBlackBronze>.firstItem)
-	.duration(62)
-	.EUt(32)
-	.buildAndRegister();
-freezer.recipeBuilder()
-	.inputs(<ore:ingotHotNaquadahEnriched>)
-	.fluidInputs([<liquid:cryotheum>*10])
-	.outputs(<ore:ingotNaquadahEnriched>.firstItem)
-	.duration(140)
-	.EUt(32)
-	.buildAndRegister();
-freezer.recipeBuilder()
-	.inputs(<ore:ingotHotNaquadahAlloy>)
-	.fluidInputs([<liquid:cryotheum>*10])
-	.outputs(<ore:ingotNaquadahAlloy>.firstItem)
-	.duration(225)
-	.EUt(32)
-	.buildAndRegister();
-freezer.recipeBuilder()
-	.inputs(<ore:ingotHotYttriumBariumCuprate>)
-	.fluidInputs([<liquid:cryotheum>*10])
-	.outputs(<ore:ingotYttriumBariumCuprate>.firstItem)
-	.duration(140)
-	.EUt(32)
-	.buildAndRegister();
-freezer.recipeBuilder()
-	.inputs(<ore:ingotHotOsmiridium>)
-	.fluidInputs([<liquid:cryotheum>*10])
-	.outputs(<ore:ingotOsmiridium>.firstItem)
-	.duration(78)
-	.EUt(32)
-	.buildAndRegister();
-freezer.recipeBuilder()
-	.inputs(<ore:ingotHotEnderium>)
-	.fluidInputs([<liquid:cryotheum>*10])
-	.outputs(<ore:ingotEnderium>.firstItem)
-	.duration(140)
-	.EUt(32)
-	.buildAndRegister();
-freezer.recipeBuilder()
-	.inputs(<ore:ingotHotYttrium>)
-	.fluidInputs([<liquid:cryotheum>*10])
-	.outputs(<ore:ingotYttrium>.firstItem)
-	.duration(56)
-	.EUt(32)
-	.buildAndRegister();
-freezer.recipeBuilder()
-	.inputs(<ore:ingotHotVanadiumGallium>)
-	.fluidInputs([<liquid:cryotheum>*10])
-	.outputs(<ore:ingotVanadiumGallium>.firstItem)
-	.duration(140)
-	.EUt(32)
-	.buildAndRegister();
-freezer.recipeBuilder()
-	.inputs(<ore:ingotHotVanadium>)
-	.fluidInputs([<liquid:cryotheum>*10])
-	.outputs(<ore:ingotVanadium>.firstItem)
-	.duration(280)
-	.EUt(68)
-	.buildAndRegister();
-freezer.recipeBuilder()
-	.inputs(<ore:ingotHotUltimet>)
-	.fluidInputs([<liquid:cryotheum>*10])
-	.outputs(<ore:ingotUltimet>.firstItem)
-	.duration(84)
-	.EUt(32)
-	.buildAndRegister();
-freezer.recipeBuilder()
-	.inputs(<ore:ingotHotTungstenSteel>)
-	.fluidInputs([<liquid:cryotheum>*10])
-	.outputs(<ore:ingotTungstenSteel>.firstItem)
-	.duration(93)
-	.EUt(32)
-	.buildAndRegister();
-freezer.recipeBuilder()
-	.inputs(<ore:ingotHotHssg>)
-	.fluidInputs([<liquid:cryotheum>*10])
-	.outputs(<ore:ingotHssg>.firstItem)
-	.duration(140)
-	.EUt(32)
-	.buildAndRegister();
-freezer.recipeBuilder()
-	.inputs(<ore:ingotHotHsse>)
-	.fluidInputs([<liquid:cryotheum>*10])
-	.outputs(<ore:ingotHsse>.firstItem)
-	.duration(168)
-	.EUt(32)
-	.buildAndRegister();
-freezer.recipeBuilder()
-	.inputs(<ore:ingotHotOsmium>)
-	.fluidInputs([<liquid:cryotheum>*10])
-	.outputs(<ore:ingotOsmium>.firstItem)
-	.duration(103)
-	.EUt(32)
-	.buildAndRegister();
-freezer.recipeBuilder()
-	.inputs(<ore:ingotHotScandium>)
-	.fluidInputs([<liquid:cryotheum>*10])
-	.outputs(<ore:ingotScandium>.firstItem)
-	.duration(56)
-	.EUt(32)
-	.buildAndRegister();
-freezer.recipeBuilder()
-	.inputs(<ore:ingotHotHsss>)
-	.fluidInputs([<liquid:cryotheum>*10])
-	.outputs(<ore:ingotHsss>.firstItem)
-	.duration(168)
-	.EUt(32)
-	.buildAndRegister();
-freezer.recipeBuilder()
-	.inputs(<ore:ingotHotNiobiumTitanium>)
-	.fluidInputs([<liquid:cryotheum>*10])
-	.outputs(<ore:ingotNiobiumTitanium>.firstItem)
-	.duration(140)
-	.EUt(32)
-	.buildAndRegister();
-freezer.recipeBuilder()
-	.inputs(<ore:ingotHotNiobiumNitride>)
-	.fluidInputs([<liquid:cryotheum>*10])
-	.outputs(<ore:ingotNiobiumNitride>.firstItem)
-	.duration(80)
-	.EUt(32)
-	.buildAndRegister();
-freezer.recipeBuilder()
-	.inputs(<ore:ingotHotLutetium>)
-	.fluidInputs([<liquid:cryotheum>*10])
-	.outputs(<ore:ingotLutetium>.firstItem)
-	.duration(60)
-	.EUt(32)
-	.buildAndRegister();
-freezer.recipeBuilder()
-	.inputs(<ore:ingotHotIridium>)
-	.fluidInputs([<liquid:cryotheum>*10])
-	.outputs(<ore:ingotIridium>.firstItem)
-	.duration(84)
-	.EUt(32)
-	.buildAndRegister();
-freezer.recipeBuilder()
-	.inputs(<ore:ingotHotKanthal>)
-	.fluidInputs([<liquid:cryotheum>*10])
-	.outputs(<ore:ingotKanthal>.firstItem)
-	.duration(56)
-	.EUt(32)
-	.buildAndRegister();
-freezer.recipeBuilder()
-	.inputs(<ore:ingotHotNaquadah>)
-	.fluidInputs([<liquid:cryotheum>*10])
-	.outputs(<ore:ingotNaquadah>.firstItem)
-	.duration(168)
-	.EUt(32)
-	.buildAndRegister();
-freezer.recipeBuilder()
-	.inputs(<ore:ingotHotNaquadria>)
-	.fluidInputs([<liquid:cryotheum>*10])
-	.outputs(<ore:ingotNaquadria>.firstItem)
-	.duration(281)
-	.EUt(32)
-	.buildAndRegister();
-freezer.recipeBuilder()
-	.inputs(<ore:ingotHotTungsten>)
-	.fluidInputs([<liquid:cryotheum>*10])
-	.outputs(<ore:ingotTungsten>.firstItem)
-	.duration(93)
-	.EUt(32)
-	.buildAndRegister();
-freezer.recipeBuilder()
-	.inputs(<ore:ingotHotThulium>)
-	.fluidInputs([<liquid:cryotheum>*10])
-	.outputs(<ore:ingotThulium>.firstItem)
-	.duration(56)
-	.EUt(32)
-	.buildAndRegister();
-freezer.recipeBuilder()
-	.inputs(<ore:ingotHotTitanium>)
-	.fluidInputs([<liquid:cryotheum>*10])
-	.outputs(<ore:ingotTitanium>.firstItem)
-	.duration(60)
-	.EUt(32)
-	.buildAndRegister();
-freezer.recipeBuilder()
-	.inputs(<ore:ingotHotNichrome>)
-	.fluidInputs([<liquid:cryotheum>*10])
-	.outputs(<ore:ingotNichrome>.firstItem)
-	.duration(84)
-	.EUt(32)
-	.buildAndRegister();
-freezer.recipeBuilder()
-	.inputs(<ore:ingotHotTungstenCarbide>)
-	.fluidInputs([<liquid:cryotheum>*10])
-	.outputs(<ore:ingotTungstenCarbide>.firstItem)
-	.duration(76)
-	.EUt(32)
-	.buildAndRegister();
-freezer.recipeBuilder()
-	.inputs(<ore:ingotHotNiobium>)
-	.fluidInputs([<liquid:cryotheum>*10])
-	.outputs(<ore:ingotNiobium>.firstItem)
-	.duration(85)
-	.EUt(32)
-	.buildAndRegister();
+val FreezerHot as IData[string] = {
+    Erbium : 56,
+    BlackBronze : 62,
+    NaquadahEnriched :140,
+    NaquadahAlloy : 225,
+    YttriumBariumCuprate : 140,
+    Osmiridium : 78,
+    Enderium : 140,
+    Yttrium : 56,
+    VanadiumGallium : 140,
+    Vanadium : 280,
+    Ultimet : 84,
+    TungstenSteel : 93,
+    Hssg : 140,
+    Hsse : 168,
+    Osmium : 103,
+    Scandium : 56,
+    Hsss : 168,
+    NiobiumTitanium : 140,
+    NiobiumNitride : 80,
+    Lutetium : 60,
+    Iridium : 84,
+    Kanthal : 56,
+    Naquadah : 168,
+    Naquadria : 281,
+    Tungsten : 93,
+    Thulium : 56,
+    Titanium : 60,
+    Nichrome : 84,
+    TungstenCarbide : 76,
+    Niobium : 85,
+	NitinolA : 60
+};
+for MetalName, Time in FreezerHot {
+    var HotIngot as IOreDictEntry = oreDict["ingotHot"~MetalName];
+    var ColdIngot as IItemStack = oreDict["ingot"~MetalName].firstItem;
+    freezer.recipeBuilder()
+        .inputs(HotIngot)
+        .fluidInputs([<liquid:cryotheum>*10])
+        .outputs(ColdIngot)
+        .duration(Time)
+        .EUt(32)
+        .buildAndRegister();
+}
+
 //add end game content
 assembler.recipeBuilder()
 	.inputs(<gregtech:meta_item_2:32479>*4,<gregtech:meta_item_2:32435>*4,<gregtech:meta_item_2:32213>,<gregtech:meta_item_2:32213>,<ore:circuitExtreme>*4,<gtadditions:ga_armor:15>,<gtadditions:ga_armor:4>)
@@ -621,68 +422,42 @@ assembler.recipeBuilder()
 	.duration(6000)
 	.EUt(640000)
 	.buildAndRegister();
+
 //drum recipes fix
-	#TungstenSteel Drum
-recipes.addShaped(<gregtech:machine:2200>, [
-	[<ore:boltTungstenSteel>, <ore:plateTungstenSteel>, <ore:boltTungstenSteel>],
-    [<ore:plateTungstenSteel>, <ore:stickLongTungstenSteel>, <ore:plateTungstenSteel>],
-    [<ore:boltTungstenSteel>, <ore:plateTungstenSteel>, <ore:boltTungstenSteel>]
-]);
-	#Titanium Drum
-recipes.addShaped(<gregtech:machine:2199>, [
-	[<ore:boltTriniumTitanium>, <ore:plateTitanium>, <ore:boltTriniumTitanium>],
-    [<ore:plateTitanium>, <ore:stickLongTitanium>, <ore:plateTitanium>],
-    [<ore:boltTriniumTitanium>, <ore:plateTitanium>, <ore:boltTriniumTitanium>]
-]);
-	#Stainless Steel Drum
-recipes.addShaped(<gregtech:machine:2198>, [
-	[<ore:boltStainlessSteel>, <ore:plateStainlessSteel>, <ore:boltStainlessSteel>],
-    [<ore:plateStainlessSteel>, <ore:stickLongStainlessSteel>, <ore:plateStainlessSteel>],
-    [<ore:boltStainlessSteel>, <ore:plateStainlessSteel>, <ore:boltStainlessSteel>]
-]);
-	#Steel Drum
-recipes.addShaped(<gregtech:machine:2197>, [
-	[<ore:boltSteel>, <ore:plateSteel>, <ore:boltSteel>],
-    [<ore:plateSteel>, <ore:stickLongSteel>, <ore:plateSteel>],
-    [<ore:boltSteel>, <ore:plateSteel>, <ore:boltSteel>]
-]);
-	#Bronze Drum
-recipes.addShaped(<gregtech:machine:2196>, [
-	[<ore:boltBronze>, <ore:plateBronze>, <ore:boltBronze>],
-    [<ore:plateBronze>, <ore:stickLongBronze>, <ore:plateBronze>],
-    [<ore:boltBronze>, <ore:plateBronze>, <ore:boltBronze>]
-]);
-	#in assembler
-assembler.recipeBuilder()
-	.inputs(<ore:stickLongTungstenSteel>*2, <ore:plateTungstenSteel>*4)
-	.outputs(<gregtech:machine:2200>)
-	.duration(80)
-	.EUt(18)
-	.buildAndRegister();
-assembler.recipeBuilder()
-	.inputs(<ore:stickLongTitanium>*2, <ore:plateTitanium>*4)
-	.outputs(<gregtech:machine:2199>)
-	.duration(80)
-	.EUt(18)
-	.buildAndRegister();
-assembler.recipeBuilder()
-	.inputs(<ore:stickLongStainlessSteel>*2, <ore:plateStainlessSteel>*4)
-	.outputs(<gregtech:machine:2198>)
-	.duration(80)
-	.EUt(18)
-	.buildAndRegister();
-assembler.recipeBuilder()
-	.inputs(<ore:stickLongSteel>*2, <ore:plateSteel>*4)
-	.outputs(<gregtech:machine:2197>)
-	.duration(80)
-	.EUt(18)
-	.buildAndRegister();
-assembler.recipeBuilder()
-	.inputs(<ore:stickLongBronze>*2, <ore:plateBronze>*4)
-	.outputs(<gregtech:machine:2196>)
-	.duration(80)
-	.EUt(18)
-	.buildAndRegister();
+val DrumFix as IItemStack[string] = {
+    TungstenSteel : <gregtech:machine:2200>,
+    TriniumTitanium : <gregtech:machine:2199>,
+    StainlessSteel : <gregtech:machine:2198>,
+    Steel : <gregtech:machine:2197>,
+    Bronze : <gregtech:machine:2196>
+};
+for key, drum in DrumFix {
+    var drumDust as IOreDictEntry = oreDict["dust"~key];
+    var bolt as IOreDictEntry = oreDict["bolt"~key];
+    var plate as IOreDictEntry = oreDict["plate"~key];
+    var longStick as IOreDictEntry = oreDict["stickLong"~key];
+        #macerate
+    macerator.recipeBuilder()
+		.inputs(drum)
+		.outputs(drumDust.firstItem*6)
+		.duration(30)
+		.EUt(8)
+		.buildAndRegister();
+        #drum crafting
+    recipes.addShaped(drum,[
+        [bolt,plate,bolt],
+        [plate,longStick,plate],
+        [bolt,plate,bolt]
+    ]);
+        #assembler
+    assembler.recipeBuilder()
+        .inputs(longStick*2, plate*4)
+        .outputs(drum)
+        .duration(80)
+        .EUt(18)
+        .buildAndRegister();
+}
+
 //fix compressed recipes
 	#ruby
 compressor.findRecipe(2,[<projectred-core:resource_item:200>*9],null).remove();
@@ -809,239 +584,107 @@ compressor.recipeBuilder()
 //cable from rubber foil and wire
 	#rubber foil IItemStack
 val rubber as IItemStack = <ore:foilRubber>.firstItem;
-	#1x cable
-val CableSingleFix as IOreDictEntry[IOreDictEntry] = {
-    <ore:wireGtSingleAnnealedCopper> : <ore:cableGtSingleAnnealedCopper>,
-    <ore:wireGtSingleCopper> : <ore:cableGtSingleCopper>,
-    <ore:wireGtSingleCupronickel> : <ore:cableGtSingleCupronickel>,
-    <ore:wireGtSingleIron> : <ore:cableGtSingleIron>,
-    <ore:wireGtSingleMvSuperconductor> : <ore:cableGtSingleMvSuperconductor>,
-    <ore:wireGtSingleMvSuperconductorBase> : <ore:cableGtSingleMvSuperconductorBase>,
-    <ore:wireGtSingleNickel> : <ore:cableGtSingleNickel>,
-    <ore:wireGtSingleElectrum> : <ore:cableGtSingleElectrum>,
-    <ore:wireGtSingleGold> : <ore:cableGtSingleGold>,
-    <ore:wireGtSingleHvSuperconductor> : <ore:cableGtSingleHvSuperconductor>,
-    <ore:wireGtSingleHvSuperconductorBase> : <ore:cableGtSingleHvSuperconductorBase>,
-    <ore:wireGtSingleKanthal> : <ore:cableGtSingleKanthal>,
-    <ore:wireGtSingleSilver> : <ore:cableGtSingleSilver>,
-};
+val cableFix as string[] = [
+    "AnnealedCopper",
+    "Copper",
+    "Cupronickel",
+    "Iron",
+    "MvSuperconductor",
+    "MvSuperconductorBase",
+    "Nickel",
+    "Electrum",
+    "Gold",
+    "HvSuperconductor",
+    "HvSuperconductorBase",
+    "Kanthal",
+    "Silver"
+];
 
-for input, output in CableSingleFix {
-	assembler.recipeBuilder()
-		.inputs(input.firstItem,rubber)
+for key in cableFix {
+    #single
+    var SingleWire as IOreDictEntry = oreDict["wireGtSingle"~key];
+    var SingleCable as IOreDictEntry = oreDict["cableGtSingle"~key];
+    #double
+    var DoubleWire as IOreDictEntry = oreDict["wireGtDouble"~key];
+    var DoubleCable as IOreDictEntry = oreDict["cableGtDouble"~key];
+   #Quadruple
+    var QuadrupleWire as IOreDictEntry = oreDict["wireGtQuadruple"~key];
+    var QuadrupleCable as IOreDictEntry = oreDict["cableGtQuadruple"~key];
+    #Octal
+    var OctalWire as IOreDictEntry = oreDict["wireGtOctal"~key];
+    var OctalCable as IOreDictEntry = oreDict["cableGtOctal"~key];
+    #Hex
+    var HexWire as IOreDictEntry = oreDict["wireGtHex"~key];
+    var HexCable as IOreDictEntry = oreDict["cableGtHex"~key];
+    #single to single
+    assembler.recipeBuilder()
+		.inputs(SingleWire.firstItem,rubber)
 		.property("circuit", 24)
-		.outputs(output.firstItem)
+		.outputs(SingleCable.firstItem)
 		.duration(150)
 		.EUt(8)
 		.buildAndRegister();
-}
-
-	#2x cable
-val CableDoubleFix as IOreDictEntry[IOreDictEntry] = {
-    <ore:wireGtDoubleAnnealedCopper> : <ore:cableGtDoubleAnnealedCopper>,
-    <ore:wireGtDoubleCopper> : <ore:cableGtDoubleCopper>,
-    <ore:wireGtDoubleCupronickel> : <ore:cableGtDoubleCupronickel>,
-    <ore:wireGtDoubleIron> : <ore:cableGtDoubleIron>,
-    <ore:wireGtDoubleMvSuperconductor> : <ore:cableGtDoubleMvSuperconductor>,
-    <ore:wireGtDoubleMvSuperconductorBase> : <ore:cableGtDoubleMvSuperconductorBase>,
-    <ore:wireGtDoubleNickel> : <ore:cableGtDoubleNickel>,
-    <ore:wireGtDoubleElectrum> : <ore:cableGtDoubleElectrum>,
-    <ore:wireGtDoubleGold> : <ore:cableGtDoubleGold>,
-    <ore:wireGtDoubleHvSuperconductor> : <ore:cableGtDoubleHvSuperconductor>,
-    <ore:wireGtDoubleHvSuperconductorBase> : <ore:cableGtDoubleHvSuperconductorBase>,
-    <ore:wireGtDoubleKanthal> : <ore:cableGtDoubleKanthal>,
-    <ore:wireGtDoubleSilver> : <ore:cableGtDoubleSilver>,
-};
-
-for input, output in CableDoubleFix {
-	assembler.recipeBuilder()
-		.inputs(input.firstItem,rubber*2)
+    #double to double
+    assembler.recipeBuilder()
+		.inputs(DoubleWire.firstItem,rubber*2)
 		.property("circuit", 24)
-		.outputs(output.firstItem)
+		.outputs(DoubleCable.firstItem)
 		.duration(150)
 		.EUt(8)
 		.buildAndRegister();
-}
-
-val CableDouble2Fix as IOreDictEntry[IOreDictEntry] = {
-    <ore:wireGtSingleAnnealedCopper> : <ore:cableGtDoubleAnnealedCopper>,
-    <ore:wireGtSingleCopper> : <ore:cableGtDoubleCopper>,
-    <ore:wireGtSingleCupronickel> : <ore:cableGtDoubleCupronickel>,
-    <ore:wireGtSingleIron> : <ore:cableGtDoubleIron>,
-    <ore:wireGtSingleMvSuperconductor> : <ore:cableGtDoubleMvSuperconductor>,
-    <ore:wireGtSingleMvSuperconductorBase> : <ore:cableGtDoubleMvSuperconductorBase>,
-    <ore:wireGtSingleNickel> : <ore:cableGtDoubleNickel>,
-    <ore:wireGtSingleElectrum> : <ore:cableGtDoubleElectrum>,
-    <ore:wireGtSingleGold> : <ore:cableGtDoubleGold>,
-    <ore:wireGtSingleHvSuperconductor> : <ore:cableGtDoubleHvSuperconductor>,
-    <ore:wireGtSingleHvSuperconductorBase> : <ore:cableGtDoubleHvSuperconductorBase>,
-    <ore:wireGtSingleKanthal> : <ore:cableGtDoubleKanthal>,
-    <ore:wireGtSingleSilver> : <ore:cableGtDoubleSilver>,
-};
-
-for input, output in CableDouble2Fix {
-	assembler.recipeBuilder()
-		.inputs(input.firstItem*2,rubber*2)
+    #single to double
+    assembler.recipeBuilder()
+		.inputs(SingleWire.firstItem*2,rubber*2)
 		.property("circuit", 25)
-		.outputs(output.firstItem)
+		.outputs(DoubleCable.firstItem)
 		.duration(150)
 		.EUt(8)
 		.buildAndRegister();
-}
-
-	#4x cable
-val CableQuadrupleFix as IOreDictEntry[IOreDictEntry] = {
-    <ore:wireGtQuadrupleAnnealedCopper> : <ore:cableGtQuadrupleAnnealedCopper>,
-    <ore:wireGtQuadrupleCopper> : <ore:cableGtQuadrupleCopper>,
-    <ore:wireGtQuadrupleCupronickel> : <ore:cableGtQuadrupleCupronickel>,
-    <ore:wireGtQuadrupleIron> : <ore:cableGtQuadrupleIron>,
-    <ore:wireGtQuadrupleMvSuperconductor> : <ore:cableGtQuadrupleMvSuperconductor>,
-    <ore:wireGtQuadrupleMvSuperconductorBase> : <ore:cableGtQuadrupleMvSuperconductorBase>,
-    <ore:wireGtQuadrupleNickel> : <ore:cableGtQuadrupleNickel>,
-    <ore:wireGtQuadrupleElectrum> : <ore:cableGtQuadrupleElectrum>,
-    <ore:wireGtQuadrupleGold> : <ore:cableGtQuadrupleGold>,
-    <ore:wireGtQuadrupleHvSuperconductor> : <ore:cableGtQuadrupleHvSuperconductor>,
-    <ore:wireGtQuadrupleHvSuperconductorBase> : <ore:cableGtQuadrupleHvSuperconductorBase>,
-    <ore:wireGtQuadrupleKanthal> : <ore:cableGtQuadrupleKanthal>,
-    <ore:wireGtQuadrupleSilver> : <ore:cableGtQuadrupleSilver>,
-};
-
-for input, output in CableQuadrupleFix {
-	assembler.recipeBuilder()
-		.inputs(input.firstItem,rubber*4)
+    #4 to 4
+    assembler.recipeBuilder()
+		.inputs(QuadrupleWire.firstItem,rubber*4)
 		.property("circuit", 24)
-		.outputs(output.firstItem)
+		.outputs(QuadrupleCable.firstItem)
 		.duration(150)
 		.EUt(8)
 		.buildAndRegister();
-}
-
-val CableQuadruple4Fix as IOreDictEntry[IOreDictEntry] = {
-	<ore:wireGtSingleAnnealedCopper> : <ore:cableGtQuadrupleAnnealedCopper>,
-	<ore:wireGtSingleCopper> : <ore:cableGtQuadrupleCopper>,
-	<ore:wireGtSingleCupronickel> : <ore:cableGtQuadrupleCupronickel>,
-	<ore:wireGtSingleIron> : <ore:cableGtQuadrupleIron>,
-	<ore:wireGtSingleMvSuperconductor> : <ore:cableGtQuadrupleMvSuperconductor>,
-	<ore:wireGtSingleMvSuperconductorBase> : <ore:cableGtQuadrupleMvSuperconductorBase>,
-	<ore:wireGtSingleNickel> : <ore:cableGtQuadrupleNickel>,
-	<ore:wireGtSingleElectrum> : <ore:cableGtQuadrupleElectrum>,
-	<ore:wireGtSingleGold> : <ore:cableGtQuadrupleGold>,
-	<ore:wireGtSingleHvSuperconductor> : <ore:cableGtQuadrupleHvSuperconductor>,
-	<ore:wireGtSingleHvSuperconductorBase> : <ore:cableGtQuadrupleHvSuperconductorBase>,
-	<ore:wireGtSingleKanthal> : <ore:cableGtQuadrupleKanthal>,
-	<ore:wireGtSingleSilver> : <ore:cableGtQuadrupleSilver>,
-};
-
-for input, output in CableQuadruple4Fix {
+    #1 to 4
 	assembler.recipeBuilder()
-		.inputs(input.firstItem*4,rubber*4)
-		.property("circuit", 25)
-		.outputs(output.firstItem)
+		.inputs(SingleWire.firstItem*4,rubber*4)
+		.property("circuit", 26)
+		.outputs(QuadrupleCable.firstItem)
 		.duration(150)
 		.EUt(8)
 		.buildAndRegister();
-}
-
-	#8x cable
-val CableOctalFix as IOreDictEntry[IOreDictEntry] = {
-    <ore:wireGtOctalAnnealedCopper> : <ore:cableGtOctalAnnealedCopper>,
-    <ore:wireGtOctalCopper> : <ore:cableGtOctalCopper>,
-    <ore:wireGtOctalCupronickel> : <ore:cableGtOctalCupronickel>,
-    <ore:wireGtOctalIron> : <ore:cableGtOctalIron>,
-    <ore:wireGtOctalMvSuperconductor> : <ore:cableGtOctalMvSuperconductor>,
-    <ore:wireGtOctalMvSuperconductorBase> : <ore:cableGtOctalMvSuperconductorBase>,
-    <ore:wireGtOctalNickel> : <ore:cableGtOctalNickel>,
-    <ore:wireGtOctalElectrum> : <ore:cableGtOctalElectrum>,
-    <ore:wireGtOctalGold> : <ore:cableGtOctalGold>,
-    <ore:wireGtOctalHvSuperconductor> : <ore:cableGtOctalHvSuperconductor>,
-    <ore:wireGtOctalHvSuperconductorBase> : <ore:cableGtOctalHvSuperconductorBase>,
-    <ore:wireGtOctalKanthal> : <ore:cableGtOctalKanthal>,
-    <ore:wireGtOctalSilver> : <ore:cableGtOctalSilver>,
-};
-
-for input, output in CableOctalFix {
-	assembler.recipeBuilder()
-		.inputs(input.firstItem,rubber*8)
+    #8 to 8
+    assembler.recipeBuilder()
+		.inputs(OctalWire.firstItem,rubber*8)
 		.property("circuit", 24)
-		.outputs(output.firstItem)
+		.outputs(OctalCable.firstItem)
 		.duration(150)
 		.EUt(8)
 		.buildAndRegister();
-}
-val CableOctal8Fix as IOreDictEntry[IOreDictEntry] ={
-	<ore:wireGtSingleAnnealedCopper> : <ore:cableGtOctalAnnealedCopper>,
-	<ore:wireGtSingleCopper> : <ore:cableGtOctalCopper>,
-	<ore:wireGtSingleCupronickel> : <ore:cableGtOctalCupronickel>,
-	<ore:wireGtSingleIron> : <ore:cableGtOctalIron>,
-	<ore:wireGtSingleMvSuperconductor> : <ore:cableGtOctalMvSuperconductor>,
-	<ore:wireGtSingleMvSuperconductorBase> : <ore:cableGtOctalMvSuperconductorBase>,
-	<ore:wireGtSingleNickel> : <ore:cableGtOctalNickel>,
-	<ore:wireGtSingleElectrum> : <ore:cableGtOctalElectrum>,
-	<ore:wireGtSingleGold> : <ore:cableGtOctalGold>,
-	<ore:wireGtSingleHvSuperconductor> : <ore:cableGtOctalHvSuperconductor>,
-	<ore:wireGtSingleHvSuperconductorBase> : <ore:cableGtOctalHvSuperconductorBase>,
-	<ore:wireGtSingleKanthal> : <ore:cableGtOctalKanthal>,
-	<ore:wireGtSingleSilver> : <ore:cableGtOctalSilver>,
-};
-
-for input, output in CableOctal8Fix {
+    #1 to 8
 	assembler.recipeBuilder()
-		.inputs(input.firstItem*8,rubber*8)
-		.property("circuit", 25)
-		.outputs(output.firstItem)
+		.inputs(SingleWire.firstItem*8,rubber*8)
+		.property("circuit", 27)
+		.outputs(OctalCable.firstItem)
 		.duration(150)
 		.EUt(8)
 		.buildAndRegister();
-}
-
-	#x16 cable
-val CableHexFix as IOreDictEntry[IOreDictEntry] = {
-    <ore:wireGtHexAnnealedCopper> : <ore:cableGtHexAnnealedCopper>,
-    <ore:wireGtHexCopper> : <ore:cableGtHexCopper>,
-    <ore:wireGtHexCupronickel> : <ore:cableGtHexCupronickel>,
-    <ore:wireGtHexIron> : <ore:cableGtHexIron>,
-    <ore:wireGtHexMvSuperconductor> : <ore:cableGtHexMvSuperconductor>,
-    <ore:wireGtHexMvSuperconductorBase> : <ore:cableGtHexMvSuperconductorBase>,
-    <ore:wireGtHexNickel> : <ore:cableGtHexNickel>,
-    <ore:wireGtHexElectrum> : <ore:cableGtHexElectrum>,
-    <ore:wireGtHexGold> : <ore:cableGtHexGold>,
-    <ore:wireGtHexHvSuperconductor> : <ore:cableGtHexHvSuperconductor>,
-    <ore:wireGtHexHvSuperconductorBase> : <ore:cableGtHexHvSuperconductorBase>,
-    <ore:wireGtHexKanthal> : <ore:cableGtHexKanthal>,
-    <ore:wireGtHexSilver> : <ore:cableGtHexSilver>,
-};
-
-for input, output in CableHexFix {
-	assembler.recipeBuilder()
-		.inputs(input.firstItem,rubber*16)
+    #16 to 16
+    assembler.recipeBuilder()
+		.inputs(HexWire.firstItem,rubber*16)
 		.property("circuit", 24)
-		.outputs(output.firstItem)
+		.outputs(HexCable.firstItem)
 		.duration(150)
 		.EUt(8)
 		.buildAndRegister();
-}
-
-val CableHex16Fix as IOreDictEntry[IOreDictEntry] = {
-	<ore:wireGtSingleAnnealedCopper> : <ore:cableGtHexAnnealedCopper>,
-	<ore:wireGtSingleCopper> : <ore:cableGtHexCopper>,
-	<ore:wireGtSingleCupronickel> : <ore:cableGtHexCupronickel>,
-	<ore:wireGtSingleIron> : <ore:cableGtHexIron>,
-	<ore:wireGtSingleMvSuperconductor> : <ore:cableGtHexMvSuperconductor>,
-	<ore:wireGtSingleMvSuperconductorBase> : <ore:cableGtHexMvSuperconductorBase>,
-	<ore:wireGtSingleNickel> : <ore:cableGtHexNickel>,
-	<ore:wireGtSingleElectrum> : <ore:cableGtHexElectrum>,
-	<ore:wireGtSingleGold> : <ore:cableGtHexGold>,
-	<ore:wireGtSingleHvSuperconductor> : <ore:cableGtHexHvSuperconductor>,
-	<ore:wireGtSingleHvSuperconductorBase> : <ore:cableGtHexHvSuperconductorBase>,
-	<ore:wireGtSingleKanthal> : <ore:cableGtHexKanthal>,
-	<ore:wireGtSingleSilver> : <ore:cableGtHexSilver>,
-};
-
-for input, output in CableHex16Fix {
-	assembler.recipeBuilder()
-		.inputs(input.firstItem*16,rubber*16)
-		.property("circuit", 25)
-		.outputs(output.firstItem)
+    #1 to 16
+    	assembler.recipeBuilder()
+		.inputs(SingleWire.firstItem*16,rubber*16)
+		.property("circuit", 28)
+		.outputs(HexCable.firstItem)
 		.duration(150)
 		.EUt(8)
 		.buildAndRegister();
@@ -1198,15 +841,6 @@ blast_furnace.recipeBuilder()
 	.property("temperature", 9500)
 	.EUt(8000)
 	.duration(3200)
-	.buildAndRegister();
-
-//add freezing  nitinol 60
-freezer.recipeBuilder()
-	.inputs(<ore:ingotHotNitinolA>)
-	.outputs(<ore:ingotNitinolA>.firstItem)
-	.fluidInputs([<liquid:cryotheum>*10])
-	.EUt(32)
-	.duration(60)
 	.buildAndRegister();
 
 //remove normal aluminium recipe

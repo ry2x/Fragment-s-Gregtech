@@ -1,0 +1,22 @@
+{
+	x: -17.5d,
+	y: -10.5d,
+	dependencies: [
+		"8c5cb182"
+	],
+	tasks: [{
+		uid: "355ada24",
+		type: "item",
+		items: [{
+			item: "scannable:module_range"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "e5beefb8",
+		type: "item",
+		item: "minecraft:ender_pearl",
+		count: 5
+	}]
+}
