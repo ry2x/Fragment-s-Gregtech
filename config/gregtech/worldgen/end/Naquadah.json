@@ -5,7 +5,7 @@
   "min_height": 30,
   "dimension_filter": ["name:the_end"],
   "surface_stone_material": "naquadah",
-  
+
   "generator": {
     "type": "ellipsoid",
     "radius": [25, 25]
@@ -21,7 +21,7 @@
         },
         {
           "weight": 10,
-          "value": "ore:enriched_naquadah"
+          "value": "ore:naquadah_enriched"
         }
       ]
     }
