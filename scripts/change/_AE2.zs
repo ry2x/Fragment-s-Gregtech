@@ -857,7 +857,7 @@ forming.recipeBuilder()
     .buildAndRegister();
     #4092k
 forming.recipeBuilder()
-    .inputs(<extracells:storage.component:9>*4,<ore:plateRhodiumPlatedPalladium>,logic,engineer,<ore:dustFluix>*2)
+    .inputs(<extracells:storage.component:9>*4,<ore:plateOsmium>,logic,engineer,<ore:dustFluix>*2)
     .outputs(<extracells:storage.component:10>)
     .duration(2048)
     .EUt(8192)
@@ -879,13 +879,13 @@ forming.recipeBuilder()
     .buildAndRegister();
     #4092k
 forming.recipeBuilder()
-    .inputs(<extracells:storage.component:1>*4,<ore:plateRhodiumPlatedPalladium>,logic,engineer,<ore:dustFluix>*2)
+    .inputs(<extracells:storage.component:1>*4,<ore:plateOsmium>,logic,engineer,<ore:dustFluix>*2)
     .outputs(<extracells:storage.component:2>)
     .duration(2048)
     .EUt(8192)
     .buildAndRegister();
 forming.recipeBuilder()
-    .inputs(<extracells:storage.component:2>*4,<ore:plateOsmium>,logic,engineer,<ore:dustFluix>*2)
+    .inputs(<extracells:storage.component:2>*4,<ore:plateNaquadahAlloy>,logic,engineer,<ore:dustFluix>*2)
     .outputs(<extracells:storage.component:3>)
     .duration(2048)
     .EUt(32768)

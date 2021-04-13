@@ -76,8 +76,36 @@ val large_forge_hammer as RecipeMap = GARecipeMaps.LARGE_FORGE_HAMMER_RECIPES;
 val large_centrifuge as RecipeMap = GARecipeMaps.LARGE_CENTRIFUGE_RECIPES;
 
 
-//remove chest from gregtech
-val chest =[
+//remove recipes
+val removeRecipes as string[] = [
+	#Gregtech Chest
+	"gregtech:bronze_chest",
+	"gregtech:steel_chest",
+	"gregtech:stainless_steel_chest",
+	"gregtech:titanium_chest",
+	"gregtech:tungsten_steel_chest",
+	#Gregtech Tank, use drum instead
+	"gregtech:wooden_tank",
+	"gregtech:steel_tank",
+	"gregtech:stainless_steel_tank",
+	"gregtech:titanium_tank",
+	"gregtech:tungsten_steel_tank",
+	#Gregtech LV Thermal Centrifuge
+	"gtadditions:ga_gregtech.machine.thermal_centrifuge.lv",
+	#Gregtech LV laser Engraver
+	"gtadditions:ga_gregtech.machine.laser_engraver.lv",
+	#Gregicality integrated circuit recipe
+	"gtadditions:basic_to_configurable_circuit",
+	#Gregicality Primitive Blast Furnace recipes
+    "gtadditions:block_decompress_clay",
+];
+
+for name in removeRecipes {
+	recipes.removeByRecipeName(name);
+}
+
+val removeFromJEI as IItemStack[] = [
+	#gregtech chest
     <gregtech:machine:802>,
     <gregtech:machine:803>,
     <gregtech:machine:804>,
@@ -85,45 +113,30 @@ val chest =[
     <gregtech:machine:806>,
     <gregtech:machine:807>,
     <gregtech:machine:808>,
-] as IItemStack[];
-
-for i in chest {
-    JEI.removeAndHide(i);
-}
-//remove tank form gregtech use drum
-val tank = [
+	#Gregtech Tank
     <gregtech:machine:811>,
     <gregtech:machine:812>,
     <gregtech:machine:813>,
     <gregtech:machine:814>,
     <gregtech:machine:815>,
     <gregtech:machine:816>,
-] as IItemStack[];
+	#Gregtech LV Thermal Centrifuge
+	<gregtech:machine:460>,
+	#Gregtech LV laser Engraver
+	<gregtech:machine:430>
+];
 
-for i in tank {
-    JEI.removeAndHide(i);
+for item in removeFromJEI {
+	JEI.hide(item);
 }
 
-//Remove LV Thermal Centrifuge
-mods.jei.JEI.removeAndHide(<gregtech:machine:460>);
-
-//remove basic laser engraver
-mods.jei.JEI.removeAndHide(<gregtech:machine:430>);
-
-//remove Primitive Blast Furnace RTA recipe
-recipes.removeByRecipeName("gtadditions:block_decompress_clay");
-recipes.removeByRecipeName("gtadditions:basic_to_configurable_circuit");
-
 //add recipe to ender pearl liquid
-recipes.remove(<minecraft:ender_pearl>);
-
 fluid_extractor.recipeBuilder()
     .inputs([<minecraft:ender_pearl>])
     .fluidOutputs([<liquid:ender>*250])
     .duration(200)
     .EUt(16)
     .buildAndRegister();
-
 
 //fixing <ore:dustTungsten> recipes due to no existing recipes
 electrolyzer.recipeBuilder()
@@ -142,6 +155,7 @@ electrolyzer.recipeBuilder()
     .duration(3000)
     .EUt(512)
     .buildAndRegister();
+
 //lath bucket
 lathe.recipeBuilder()
 	.inputs(<ore:blockIron>)
@@ -149,6 +163,7 @@ lathe.recipeBuilder()
 	.duration(60)
 	.EUt(18)
 	.buildAndRegister();
+
 //Steel in arc furnace
 arc.recipeBuilder()
 	.inputs(<ore:ingotWroughtIron>)
@@ -157,6 +172,7 @@ arc.recipeBuilder()
 	.duration(60)
 	.EUt(24)
 	.buildAndRegister();
+
 //aluminium ore in arc furnace
 arc.recipeBuilder()
 	.inputs(<ore:oreAluminium>)
@@ -165,6 +181,7 @@ arc.recipeBuilder()
 	.duration(60)
 	.EUt(24)
 	.buildAndRegister();
+
 //Backport Sphalerite Electrolysis from 5U modpacks
 electrolyzer.recipeBuilder()
 	.inputs([<ore:dustSphalerite>*2])
@@ -256,10 +273,10 @@ val boilerUpdate as IOreDictEntry[string[]] = {
 };
 
 for inputInfo, plate in boilerUpdate {
-	val fireCasing = itemUtils.getItem("gregtech:boiler_firebox_casing",(inputInfo[0]) as int);
-	val boilerCasing = itemUtils.getItem("gregtech:boiler_casing",(inputInfo[0]) as int);
-	val fireCasing2 = itemUtils.getItem("gregtech:boiler_firebox_casing",(inputInfo[1]) as int);
-	val boilerCasing2 = itemUtils.getItem("gregtech:boiler_casing",(inputInfo[1]) as int);
+	var fireCasing = itemUtils.getItem("gregtech:boiler_firebox_casing",(inputInfo[0]) as int);
+	var boilerCasing = itemUtils.getItem("gregtech:boiler_casing",(inputInfo[0]) as int);
+	var fireCasing2 = itemUtils.getItem("gregtech:boiler_firebox_casing",(inputInfo[1]) as int);
+	var boilerCasing2 = itemUtils.getItem("gregtech:boiler_casing",(inputInfo[1]) as int);
 	#fireCasing
 	assembler.recipeBuilder()
 		.inputs(fireCasing,plate*2)
@@ -316,12 +333,6 @@ compressor.recipeBuilder()
     .EUt(2)
     .buildAndRegister();
 
-//concrete to cement
-recipes.addShapeless(<railcraft:concrete>,[<gregtech:meta_item_1:16196>,<gregtech:meta_item_1:2296>,<gregtech:meta_item_1:16196>]);
-
-//concrete to sherd
-recipes.addShapeless(<tconstruct:soil>*4,[<gregtech:meta_item_1:2296>,<gregtech:meta_item_1:2296>,<gregtech:meta_item_1:2296>,<gregtech:meta_item_1:2296>]);
-
 //resin to rubber
 reactor.recipeBuilder()
 	.inputs(<ore:dustSulfur>)
@@ -363,8 +374,10 @@ val FreezerHot as IData[string] = {
     Nichrome : 84,
     TungstenCarbide : 76,
     Niobium : 85,
-	NitinolA : 60
+	NitinolA : 60,
+
 };
+
 for MetalName, Time in FreezerHot {
     var HotIngot as IOreDictEntry = oreDict["ingotHot"~MetalName];
     var ColdIngot as IItemStack = oreDict["ingot"~MetalName].firstItem;
@@ -845,3 +858,61 @@ blast_furnace.recipeBuilder()
 
 //remove normal aluminium recipe
 blast_furnace.findRecipe(120, [<ore:dustAluminium>.firstItem],null).remove();
+
+//change recipes 
+val FixLuVCompo as IItemStack[] = [
+	<gregtech:machine_casing:6>,
+	<gregtech:machine:506>,
+	<gregtech:machine:2253>,
+	<gregtech:machine:2041>,
+	<gregtech:machine:2033>,
+	<gregtech:machine:2149>,
+	<gtadditions:ga_meta_item2:102>
+];
+
+for i in FixLuVCompo {
+	recipes.replaceAllOccurences(<gregtech:meta_item_1:12859>,<ore:plateChrome>,i);
+}
+
+	#prospector
+recipes.replaceAllOccurences(<gregtech:meta_item_2:8859>,<gregtech:meta_item_2:8016>,<gtadditions:ga_meta_item2:102>);
+
+	#rocket engine
+recipes.replaceAllOccurences(<gregtech:meta_item_1:13859>,<gregtech:meta_item_1:13016>,<gregtech:machine:2238>);
+
+	#machines in assembler
+		#machine casing
+assembler.findRecipe(16, [<metaitem:circuit.integrated>.withTag({Configuration:8}),<gregtech:meta_item_1:12859>*8],[]).remove();
+assembler.recipeBuilder()
+	.inputs(<ore:plateChrome>*8)
+	.outputs(<gregtech:machine_casing:6>)
+	.property("circuit", 8)
+	.EUt(16)
+	.duration(50)
+	.buildAndRegister();
+		#crucible
+assembler.findRecipe(8400, [<gregtech:meta_item_1:12859>*4,<gregtech:meta_item_1:32606>],[]).remove();
+assembler.recipeBuilder()
+	.inputs(<ore:plateChrome>*4,<gregtech:meta_item_1:32606>)
+	.outputs(<gtadditions:ga_meta_item:32440>)
+	.EUt(8400)
+	.duration(240)
+	.buildAndRegister();
+		#vanadium battery 
+assembler.findRecipe(30720, [<gregtech:meta_item_1:12859>*4,<gregtech:cable:5135>*8],[]).remove();
+assembler.recipeBuilder()
+	.inputs(<gregtech:cable:5135>*8,<ore:plateChrome>*4)
+	.outputs(<gtadditions:ga_meta_item:32417>)
+	.EUt(30720)
+	.duration(150)
+	.buildAndRegister();
+
+#rare earth buff
+large_centrifuge.findRecipe(480, [],[<liquid:rare_earth_chlorides_solution>*1000,<liquid:di_ethylhexyl_phosphoric_acid>*1000]).remove();
+large_centrifuge.recipeBuilder()
+	.fluidInputs(<liquid:rare_earth_chlorides_solution>*1000,<liquid:phosphoric_acid>*1000)
+	.fluidOutputs(<liquid:er_lu_oxides_solution>*500,<liquid:tb_ho_oxides_solution>*500,<liquid:sm_gd_oxides_solution>*500,<liquid:la_nd_oxides_solution>*500)
+	.EUt(400)
+	.duration(1000)
+	.buildAndRegister();
+	
