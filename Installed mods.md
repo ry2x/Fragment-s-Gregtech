@@ -52,7 +52,7 @@ Controlling-3.0.10.jar
 
 CosmeticArmorReworked-1.12.2-v5a.jar
 
-CraftTweaker2-1.12-4.1.20.631.jar
+CraftTweaker2-1.12-4.1.20.634.jar
 
 CreativeCore_v1.10.47_mc1.12.2.jar
 
@@ -132,13 +132,13 @@ gravestone-1.10.3.jar
 
 Gregicality-1.12.2-0.21.5.1.jar
 
-gregtech-1.12.2-1.12.1.681.jar
+gregtech-1.12.2-1.14.0.689.jar
 
 GregtechEnergistics-1.0.0.3.jar
 
 iChunUtil-1.12.2-7.2.2.jar
 
-IFPatcher-1.0.1.jar
+IFPatcher-1.2.0.jar
 
 industrialforegoing-1.12.2-1.12.13-237.jar
 
@@ -260,7 +260,7 @@ StorageDrawersExtras-1.12-3.1.0.jar
 
 supermartijn642configlib-1.0.5-mc1.12.jar
 
-supermartijn642corelib-1.0.0-mc1.12.jar
+supermartijn642corelib-1.0.1a-mc1.12.jar
 
 TConstruct-1.12.2-2.13.0.183.jar
 
@@ -290,7 +290,7 @@ volumetricflask-0.18.jar
 
 WaterMechanicsBackport-1.0.3-1.12.2-NETHERFIX.jar
 
-Xaeros_Minimap_21.4.5_Forge_1.12.jar
+Xaeros_Minimap_21.5.0_Forge_1.12.jar
 
 XaerosWorldMap_1.13.1_Forge_1.12.jar
 
