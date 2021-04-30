@@ -52,9 +52,9 @@ Controlling-3.0.10.jar
 
 CosmeticArmorReworked-1.12.2-v5a.jar
 
-CraftTweaker2-1.12-4.1.20.634.jar
+CraftTweaker2-1.12-4.1.20.644.jar
 
-CreativeCore_v1.10.47_mc1.12.2.jar
+CreativeCore_v1.10.57_mc1.12.2.jar
 
 CryingObsidian-1.12.2-1.2.1.jar
 
@@ -62,7 +62,7 @@ CTM-MC1.12.2-1.0.2.31.jar
 
 CustomMainMenu-MC1.12.2-2.0.9.1.jar
 
-Cyclic-1.12.2-1.20.8.jar
+Cyclic-1.12.2-1.20.9.jar
 
 DankNull-1.12.2-1.7.101.jar
 
@@ -138,7 +138,7 @@ GregtechEnergistics-1.0.0.3.jar
 
 iChunUtil-1.12.2-7.2.2.jar
 
-IFPatcher-1.2.0.jar
+IFPatcher-1.3.0.jar
 
 industrialforegoing-1.12.2-1.12.13-237.jar
 
@@ -290,8 +290,8 @@ volumetricflask-0.18.jar
 
 WaterMechanicsBackport-1.0.3-1.12.2-NETHERFIX.jar
 
-Xaeros_Minimap_21.5.0_Forge_1.12.jar
+Xaeros_Minimap_21.7.0_Forge_1.12.jar
 
-XaerosWorldMap_1.13.1_Forge_1.12.jar
+XaerosWorldMap_1.13.3_Forge_1.12.jar
 
 Xtones-1.2.2.jar
