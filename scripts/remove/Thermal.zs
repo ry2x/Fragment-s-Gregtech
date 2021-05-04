@@ -61,7 +61,7 @@ val part = [
     <thermalfoundation:material:768>,
     <thermalfoundation:material:769>,
     <thermalfoundation:material:770>,
-    <thermalfoundation:material:771>,
+	<thermalfoundation:material:771>,
     <thermalfoundation:material:772>,
     <thermalfoundation:material:800>,
     <thermalfoundation:material:801>,

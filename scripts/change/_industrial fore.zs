@@ -1,5 +1,6 @@
 //import crafttweaker II
 import crafttweaker.item.IItemStack;
+import crafttweaker.oredict.IOreDictEntry;
 
 //change recipe of machines//
 print("start indus");
@@ -224,68 +225,29 @@ recipes.addShaped(<industrialforegoing:conveyor>,[
 
 //change upgrades
 recipes.remove(<industrialforegoing:range_addon:*>);
-    #Range Addon
-recipes.addShaped(<industrialforegoing:range_addon:11>, [
-    [<gregtech:meta_item_1:12993>, <ore:plateSterlingSilver>, <gregtech:meta_item_1:12993>],
-    [<gregtech:meta_item_1:12993>, <ore:paneGlass>, <gregtech:meta_item_1:12993>],
-    [<gregtech:meta_item_1:12993>, <ore:plateSterlingSilver>, <gregtech:meta_item_1:12993>]
-]);
-recipes.addShaped(<industrialforegoing:range_addon:10>, [
-    [<gregtech:meta_item_1:12207>, <ore:plateSterlingSilver>, <gregtech:meta_item_1:12207>],
-    [<gregtech:meta_item_1:12207>, <ore:paneGlass>, <gregtech:meta_item_1:12207>],
-    [<gregtech:meta_item_1:12207>, <ore:plateSterlingSilver>, <gregtech:meta_item_1:12207>]
-]);
-recipes.addShaped(<industrialforegoing:range_addon:9>, [
-    [<gregtech:meta_item_1:12859>, <ore:plateSterlingSilver>, <gregtech:meta_item_1:12859>],
-    [<gregtech:meta_item_1:12859>, <ore:paneGlass>, <gregtech:meta_item_1:12859>],
-    [<gregtech:meta_item_1:12859>, <ore:plateSterlingSilver>, <gregtech:meta_item_1:12859>]
-]);
-recipes.addShaped(<industrialforegoing:range_addon:8>, [
-    [<gregtech:meta_item_1:12302>, <ore:plateSterlingSilver>, <gregtech:meta_item_1:12302>],
-    [<gregtech:meta_item_1:12302>, <ore:paneGlass>, <gregtech:meta_item_1:12302>],
-    [<gregtech:meta_item_1:12302>, <ore:plateSterlingSilver>, <gregtech:meta_item_1:12302>]
-]);
-recipes.addShaped(<industrialforegoing:range_addon:7>, [
-    [<gregtech:meta_item_1:12235>, <ore:plateSterlingSilver>, <gregtech:meta_item_1:12235>],
-    [<gregtech:meta_item_1:12235>, <ore:paneGlass>, <gregtech:meta_item_1:12235>],
-    [<gregtech:meta_item_1:12235>, <ore:plateSterlingSilver>, <gregtech:meta_item_1:12235>]
-]);
-recipes.addShaped(<industrialforegoing:range_addon:6>, [
-    [<gregtech:meta_item_1:12133>, <ore:plateSterlingSilver>, <gregtech:meta_item_1:12133>],
-    [<gregtech:meta_item_1:12133>, <ore:paneGlass>, <gregtech:meta_item_1:12133>],
-    [<gregtech:meta_item_1:12133>, <ore:plateSterlingSilver>, <gregtech:meta_item_1:12133>]
-]);
-recipes.addShaped(<industrialforegoing:range_addon:5>, [
-    [<ore:plateStainlessSteel>, <ore:plateSterlingSilver>, <ore:plateStainlessSteel>],
-    [<ore:plateStainlessSteel>, <ore:paneGlass>, <ore:plateStainlessSteel>],
-    [<ore:plateStainlessSteel>, <ore:plateSterlingSilver>, <ore:plateStainlessSteel>]
-]);
-recipes.addShaped(<industrialforegoing:range_addon:4>, [
-    [<gregtech:meta_item_1:13183>, <ore:plateSterlingSilver>, <gregtech:meta_item_1:13183>],
-    [<gregtech:meta_item_1:13183>, <ore:paneGlass>, <gregtech:meta_item_1:13183>],
-    [<gregtech:meta_item_1:13183>, <ore:plateSterlingSilver>, <gregtech:meta_item_1:13183>]
-]);
-recipes.addShaped(<industrialforegoing:range_addon:3>, [
-    [<ore:plateAluminium>, <ore:plateSterlingSilver>, <ore:plateAluminium>],
-    [<ore:plateAluminium>, <ore:paneGlass>, <ore:plateAluminium>],
-    [<ore:plateAluminium>, <ore:plateSterlingSilver>, <ore:plateAluminium>]
-]);
-recipes.addShaped(<industrialforegoing:range_addon:2>, [
-    [<ore:plateVanadiumSteel>, <ore:plateSterlingSilver>, <ore:plateVanadiumSteel>],
-    [<ore:plateVanadiumSteel>, <ore:paneGlass>, <ore:plateVanadiumSteel>],
-    [<ore:plateVanadiumSteel>, <ore:plateSterlingSilver>, <ore:plateVanadiumSteel>]
-]);
-recipes.addShaped(<industrialforegoing:range_addon:1>, [
-    [<ore:plateBronze>, <ore:plateSterlingSilver>, <ore:plateBronze>],
-    [<ore:plateBronze>, <ore:paneGlass>, <ore:plateBronze>],
-    [<ore:plateBronze>, <ore:plateSterlingSilver>, <ore:plateBronze>]
-]);
-recipes.addShaped(<industrialforegoing:range_addon>, [
-    [<ore:plateAnnealedCopper>, <ore:plateSterlingSilver>, <ore:plateAnnealedCopper>],
-    [<ore:plateAnnealedCopper>, <ore:paneGlass>, <ore:plateAnnealedCopper>],
-    [<ore:plateAnnealedCopper>, <ore:plateSterlingSilver>, <ore:plateAnnealedCopper>]
-]);
+	#Range addon
+val upgrades as IItemStack[IOreDictEntry] = {
+	<ore:plateCopper> : <industrialforegoing:range_addon>,
+	<ore:plateBronze> : <industrialforegoing:range_addon:1>,
+	<ore:plateSteel> : <industrialforegoing:range_addon:2>,
+	<ore:plateAluminium> : <industrialforegoing:range_addon:3>,
+	<ore:plateChrome> : <industrialforegoing:range_addon:4>,
+	<ore:plateStainlessSteel> : <industrialforegoing:range_addon:5>,
+	<ore:plateNichrome> : <industrialforegoing:range_addon:6>,
+	<ore:plateTungsten> : <industrialforegoing:range_addon:7>,
+	<ore:plateTitanium> : <industrialforegoing:range_addon:8>,
+	<ore:plateTungstenSteel> : <industrialforegoing:range_addon:9>,
+	<ore:plateStellarAlloy> : <industrialforegoing:range_addon:10>,
+	<ore:plateNeutronium> : <industrialforegoing:range_addon:11>,
+};
 
+for plate, addon in upgrades {
+	recipes.addShaped(addon, [
+		[plate,<ore:plateSterlingSilver>,plate],
+		[plate,<ore:paneGlass>,plate],
+		[plate,<ore:plateSterlingSilver>,plate]
+	]);
+}
 //other filters
 for i in loadedMods["industrialforegoing"].items {
     recipes.replaceAllOccurences(<industrialforegoing:plastic>,<ore:plateSterlingSilver>,i);

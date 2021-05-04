@@ -60,6 +60,3 @@ val carpets as IItemStack[] = [
 for i in carpets {
     JEI.addDescription(i,"Can You Stand On This??");
 }
-
-//AE2 seed growth accelerator tips
-JEI.addDescription(<appliedenergistics2:quartz_growth_accelerator>,"You can't craft this until LuV stage. Time to AFK!");
