@@ -465,6 +465,7 @@ for key, drum in DrumFix {
         #assembler
     assembler.recipeBuilder()
         .inputs(longStick*2, plate*4)
+		.property("circuit", 4)
         .outputs(drum)
         .duration(80)
         .EUt(18)
@@ -804,6 +805,7 @@ for key, meta in crateMaterials {
 
 	assembler.recipeBuilder()
 		.inputs(Mplate*4,MlongStick*4)
+		.property("circuit", 3)
 		.outputs(meta)
 		.property("circuit", 4)
 		.duration(80)
@@ -842,7 +844,7 @@ blast_furnace.recipeBuilder()
 	#stellar alloy
 large_mixer.recipeBuilder()
 	.inputs(<gregtech:meta_item_1:2859> * 13,<gregtech:meta_item_1:2307> * 2,<gregtech:meta_item_1:2032> * 5,<gregtech:meta_item_1:2180> * 3,<gregtech:meta_item_1:2001> * 5,<gregtech:meta_item_1:2007> * 10,<gregtech:meta_item_1:2184> * 2)
-	.outputs(<gregtech:meta_item_1:2501> * 40)
+	.outputs(<gregtech:meta_item_1:2501> * 45)
 	.fluidInputs([<liquid:hydrogen>*5000])
 	.EUt(800)
 	.duration(800)
@@ -859,7 +861,7 @@ blast_furnace.recipeBuilder()
 //remove normal aluminium recipe
 blast_furnace.findRecipe(120, [<ore:dustAluminium>.firstItem],null).remove();
 
-//change recipes 
+//change recipes
 val FixLuVCompo as IItemStack[] = [
 	<gregtech:machine_casing:6>,
 	<gregtech:machine:506>,
@@ -898,7 +900,7 @@ assembler.recipeBuilder()
 	.EUt(8400)
 	.duration(240)
 	.buildAndRegister();
-		#vanadium battery 
+		#vanadium battery
 assembler.findRecipe(30720, [<gregtech:meta_item_1:12859>*4,<gregtech:cable:5135>*8],[]).remove();
 assembler.recipeBuilder()
 	.inputs(<gregtech:cable:5135>*8,<ore:plateChrome>*4)
@@ -915,4 +917,3 @@ large_centrifuge.recipeBuilder()
 	.EUt(400)
 	.duration(1000)
 	.buildAndRegister();
-	
