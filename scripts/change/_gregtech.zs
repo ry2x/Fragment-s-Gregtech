@@ -917,3 +917,25 @@ large_centrifuge.recipeBuilder()
 	.EUt(400)
 	.duration(1000)
 	.buildAndRegister();
+	
+#ethanol
+chemical_reactor.recipeBuilder()
+	.fluidInputs(<liquid:water>*1000,<liquid:ethylene>*1000)
+	.fluidOutputs(<liquid:ethanol>*1000)
+	.EUt(32)
+	.duration(100)
+	.buildAndRegister();
+
+#methanol
+chemical_reactor.recipeBuilder()
+	.fluidInputs(<liquid:carbon_monoxide>*1000,<liquid:hydrogen>*2000)
+	.fluidOutputs(<liquid:methanol>*1000)
+	.EUt(32)
+	.duration(100)
+	.buildAndRegister();
+chemical_reactor.recipeBuilder()
+	.fluidInputs(<liquid:carbon_dioxide>*1000,<liquid:hydrogen>*3000)
+	.fluidOutputs(<liquid:methanol>*1000,<liquid:water>*1000)
+	.EUt(64)
+	.duration(100)
+	.buildAndRegister();
