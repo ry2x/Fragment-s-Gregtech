@@ -4,9 +4,9 @@
 	y: 20.5d,
 	description: "You know well!",
 	text: [
-		"AE2's auto craft system is quit nice.",
+		"AE2's auto crafting system is quite nice.",
 		"Place interface and molecular assembler next to each other.",
-		"Then put encorded pattern to interface, it'll work."
+		"Then put encoded pattern to interface and it'll work."
 	],
 	dependencies: [
 		"a11c8370"

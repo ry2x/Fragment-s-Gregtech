@@ -1,12 +1,12 @@
 {
 	x: -21.5d,
 	y: -3.0d,
-	description: "Wanna set respawn point to Void?",
+	description: "Wanna set respawn point in Void?",
 	text: [
 		"You can't sleep in void dimension, because it's always daytime!",
-		"So, you need alternative way to set your respawn point to void.",
+		"So, you need an alternative way to set your respawn point to void.",
 		"That's a Crying obsidian.",
-		"place block and click this!"
+		"Place this and click it!"
 	],
 	tasks: [{
 		uid: "3899eae7",

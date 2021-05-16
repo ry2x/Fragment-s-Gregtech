@@ -3,7 +3,7 @@
 	x: -4.5d,
 	y: 18.5d,
 	text: [
-		"This is AE2 addon  to craft and use fluid in the procces.",
+		"This is AE2 addon to craft and use fluid in the proccess.",
 		"",
 		"FC(fluid crafter)? I don't know."
 	],

@@ -3,7 +3,7 @@
 	x: 8.0d,
 	y: -13.0d,
 	text: [
-		"Gregtech needs large amout items each age, so you should  make lots of craft materials (motor, circuit, etc)."
+		"Gregtech needs a large amount of items for each age, so you should make a lot of craft materials (motor, circuit, etc)."
 	],
 	size: 2.0d,
 	tasks: [{

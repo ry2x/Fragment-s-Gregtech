@@ -5,7 +5,7 @@
 	shape: "diamond",
 	description: "Vain Vein?",
 	text: [
-		"In this pack, you can find only gregtech ores.",
+		"In this pack, you can only find gregtech's ores.",
 		"Gregtech generates ores as veins.",
 		"The veins has surface materials, so you can find vein under the ground around them."
 	],

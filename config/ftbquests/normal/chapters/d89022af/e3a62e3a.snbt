@@ -4,15 +4,15 @@
 	y: -15.5d,
 	description: "JEI is so useful, but I prefer NEI",
 	text: [
-		"JEI (just enough items) is a recipe check mod.",
-		"Gregtech ( and other industrial mods too) has many recipes and machines, and you can't remenber all of them, so you should use this.",
+		"JEI (Just Enough Items) is a recipe check mod.",
+		"Gregtech (and any other industrial mods too) has many recipes and machines, and you can't remember all of them, so you should use this.",
 		"",
-		"Open inventry screen and you'll see the JEI.",
-		"in the default, press U on the item, you can see recipes that use it.",
+		"Open inventory screen and you'll see the JEI.",
+		"By default, pressing U on an item will display recipes that use it.",
 		"And if you press R, you can see recipes that create it.",
 		"",
 		"Tips",
-		"Backspace key is allowed you to back recipe."
+		"Backspace key allows you to back recipe."
 	],
 	size: 3.0d,
 	tasks: [{

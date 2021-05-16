@@ -6,7 +6,7 @@
 		"Thermal dynamic's ducts and gregtech's pipes can't extract itself.",
 		" So, you'll need pump, conveyer, robot arm, servo and other items.",
 		"They extract or import item or fluid.",
-		"Yes, you can apply filter to them."
+		"Yes, you can apply filters to them."
 	],
 	tasks: [{
 		uid: "753b863e",

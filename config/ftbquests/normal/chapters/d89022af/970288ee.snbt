@@ -2,8 +2,8 @@
 	x: -9.5d,
 	y: -11.5d,
 	text: [
-		"It macerate something.",
-		"essential of ore processing!"
+		"It macerates something.",
+		"essential for ore processing!"
 	],
 	tasks: [{
 		uid: "3383be79",

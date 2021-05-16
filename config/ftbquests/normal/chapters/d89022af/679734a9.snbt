@@ -4,7 +4,7 @@
 	y: 9.0d,
 	text: [
 		"Some gregtech items can be applyed as cover to gregtech machines and containers.",
-		"Right click gregtech machines with them. "
+		"Right click gregtech machines with them."
 	],
 	tasks: [{
 		uid: "68f46753",

@@ -3,7 +3,7 @@
 	x: -9.5d,
 	y: 14.0d,
 	text: [
-		"Cables are for transfering GTEU.",
+		"Cables are for transferring GTEU.",
 		"",
 		"However, do you know amperage?",
 		"This item can transfer 1A of GTEU, so if you insert over 1A of GTEU to this item, it would burn out."

@@ -2,7 +2,7 @@
 	x: -7.0d,
 	y: 15.5d,
 	text: [
-		"Do you know that filters can be used in automation line?"
+		"Do you know that filter can be used in automation line?"
 	],
 	dependencies: [
 		"a11c8370"
