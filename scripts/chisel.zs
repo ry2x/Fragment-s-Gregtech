@@ -32,3 +32,7 @@ val portal as IItemStack[]=[
 for i in portal {
     mods.chisel.Carving.addVariation("portal_frame", i);
 }
+
+//add clear/stable glass to glass group
+mods.chisel.Carving.addVariation("glass",<sonarcore:stableglass>);
+mods.chisel.Carving.addVariation("glass",<tconstruct:clear_glass:*>);
