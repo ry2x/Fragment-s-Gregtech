@@ -594,6 +594,14 @@ compressor.recipeBuilder()
 	.duration(400)
 	.EUt(2)
 	.buildAndRegister();
+	#nether star block
+compressor.findRecipe(2,[<minecraft:nether_star>*9],null).remove();
+compressor.recipeBuilder()
+	.inputs(<minecraft:nether_star>*9)
+	.outputs(<gregtech:compressed_15>)
+	.duration(400)
+	.EUt(2)
+	.buildAndRegister();
 
 //cable from rubber foil and wire
 	#rubber foil IItemStack
@@ -917,25 +925,35 @@ large_centrifuge.recipeBuilder()
 	.EUt(400)
 	.duration(1000)
 	.buildAndRegister();
-	
+
 #ethanol
-chemical_reactor.recipeBuilder()
+reactor.recipeBuilder()
 	.fluidInputs(<liquid:water>*1000,<liquid:ethylene>*1000)
-	.fluidOutputs(<liquid:ethanol>*1000)
+	.fluidOutputs(<liquid:bio.ethanol>*1000)
 	.EUt(32)
 	.duration(100)
 	.buildAndRegister();
 
 #methanol
-chemical_reactor.recipeBuilder()
+reactor.recipeBuilder()
 	.fluidInputs(<liquid:carbon_monoxide>*1000,<liquid:hydrogen>*2000)
 	.fluidOutputs(<liquid:methanol>*1000)
 	.EUt(32)
 	.duration(100)
 	.buildAndRegister();
-chemical_reactor.recipeBuilder()
+reactor.recipeBuilder()
 	.fluidInputs(<liquid:carbon_dioxide>*1000,<liquid:hydrogen>*3000)
 	.fluidOutputs(<liquid:methanol>*1000,<liquid:water>*1000)
 	.EUt(64)
 	.duration(100)
+	.buildAndRegister();
+
+#rh miss fix
+reactor.recipeBuilder()
+	.inputs(<ore:dustPalladiumSalt>)
+	.fluidInputs(<liquid:aqua_regia>*1000)
+	.fluidOutputs(<liquid:platinum_concentrate>*1000)
+	.outputs(<ore:dustPlatinumResidue>.firstItem)
+	.EUt(64)
+	.duration(2400)
 	.buildAndRegister();
