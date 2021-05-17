@@ -3,7 +3,7 @@
 	y: 26.0d,
 	text: [
 		"ZPM means Zero Point Module.",
-		"Do you know it? ",
+		"Did you know it? ",
 		"You know? nice:)"
 	],
 	dependencies: [

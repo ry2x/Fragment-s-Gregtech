@@ -3,8 +3,8 @@
 	x: -9.5d,
 	y: 11.5d,
 	text: [
-		"Wires is just wires.",
-		"They are parts of other crafting materials, aren't for energy transfer."
+		"Wires are just wires.",
+		"They are parts of other crafting materials, and aren't for transfering energy."
 	],
 	dependencies: [
 		"f655cda6"

@@ -12,7 +12,7 @@
 		rotation: 0.0d,
 		image: "gregtech:textures/gt_logo_long.png",
 		hover: [
-			"Thank you for gregtech ce dev team! "
+			"Thank you to the GregTech CE dev team!"
 		],
 		click: "",
 		dev: false

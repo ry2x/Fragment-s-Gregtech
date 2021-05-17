@@ -2,7 +2,7 @@
 	x: -12.0d,
 	y: -11.5d,
 	text: [
-		"It can extract someting from someting. "
+		"It can extract something from something. "
 	],
 	tasks: [{
 		uid: "839795b7",

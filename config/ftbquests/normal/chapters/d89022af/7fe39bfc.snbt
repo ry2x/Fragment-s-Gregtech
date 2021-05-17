@@ -1,10 +1,10 @@
 {
 	x: -18.5d,
 	y: -9.0d,
-	description: "The fist machine",
+	description: "The first machine",
 	text: [
 		"The fist age is steam age.",
-		"It needs steam and you need to generate steam.",
+		"It needs steam and you need to produce steam.",
 		"using this machine, you'll get steam"
 	],
 	tasks: [{

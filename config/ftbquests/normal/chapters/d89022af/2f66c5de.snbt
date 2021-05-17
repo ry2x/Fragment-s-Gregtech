@@ -2,7 +2,7 @@
 	x: -4.5d,
 	y: 14.0d,
 	text: [
-		"Gregtech filters have some fuctions that you can set."
+		"Gregtech's filters have some functions that you can set."
 	],
 	dependencies: [
 		"701f9636",

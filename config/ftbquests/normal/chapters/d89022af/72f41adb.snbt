@@ -3,10 +3,10 @@
 	x: -9.5d,
 	y: -3.0d,
 	text: [
-		"You can use thermal dynamics, enderIO, translocator, flux network, AE2 (applied energistics 2), railcraft and gregtech.",
+		"You can use thermal dynamics, enderIO, translocator, Flux Network, AE2 (Applied Energistics 2), railcraft and gregtech.",
 		"Yes, vanilla way is good. ",
 		"",
-		"In this pack, you can use magma block and soul sand for water elevater and other like later MC versions."
+		"In this pack, you can use magma block and soul sand for water elevator and other like later MC versions."
 	],
 	tasks: [{
 		uid: "19ef38d8",

@@ -2,7 +2,7 @@
 	x: -4.5d,
 	y: 15.5d,
 	text: [
-		"Thermal Dynamics filter can apply to their duct(fluid and item)."
+		"Thermal Dynamic's filter can apply to their duct(fluid and item)."
 	],
 	dependencies: [
 		"701f9636"

@@ -2,7 +2,7 @@
 	x: -4.5d,
 	y: -11.5d,
 	text: [
-		"meking plate in this machine is a good way in steam age "
+		"Making plate in this machine is a good way in steam age."
 	],
 	tasks: [{
 		uid: "ee9289d4",

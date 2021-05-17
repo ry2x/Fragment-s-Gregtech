@@ -2,13 +2,13 @@
 	title: "Smelting",
 	x: -21.5d,
 	y: -9.0d,
-	description: "Tinker has nice mod",
+	description: "Tinker is a nice mod",
 	text: [
-		"I recommend to build smeltery.",
-		"If you don't know how to build, google it. wiki will help you!",
+		"I recommend building a smeltery.",
+		"If you don't know how to build, google it. Wiki will help you!",
 		"",
-		"However, in Fragment's Gregtech, recipes for metal block in basin are removed. ",
-		"Metal block is craftable in compressor and other gregtech's machines."
+		"However, in Fragment's Gregtech, recipes for metal block in basin are removed.",
+		"Metal blocks are craftable in compressor and other gregtech's machines."
 	],
 	tasks: [{
 		uid: "12a3abb4",
