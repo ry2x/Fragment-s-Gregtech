@@ -2,7 +2,7 @@
 	x: -9.5d,
 	y: -5.5d,
 	text: [
-		"Go to under the sea"
+		"Go under the sea"
 	],
 	dependencies: [
 		"72f41adb"

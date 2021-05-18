@@ -3,7 +3,7 @@
 	y: -9.0d,
 	description: "The first machine",
 	text: [
-		"The fist age is steam age.",
+		"The first age is steam age.",
 		"It needs steam and you need to produce steam.",
 		"using this machine, you'll get steam"
 	],

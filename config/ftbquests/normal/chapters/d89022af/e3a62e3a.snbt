@@ -1,11 +1,11 @@
 {
-	title: "Should Check this Fist",
+	title: "Should Check This First",
 	x: -18.5d,
 	y: -15.5d,
 	description: "JEI is so useful, but I prefer NEI",
 	text: [
 		"JEI (Just Enough Items) is a recipe check mod.",
-		"Gregtech (and any other industrial mods too) has many recipes and machines, and you can't remember all of them, so you should use this.",
+		"GregTech (and any other industrial mods too) has many recipes and machines, and you can't remember all of them, so you should use this.",
 		"",
 		"Open inventory screen and you'll see the JEI.",
 		"By default, pressing U on an item will display recipes that use it.",

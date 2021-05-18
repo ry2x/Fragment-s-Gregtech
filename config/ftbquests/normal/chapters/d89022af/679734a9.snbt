@@ -3,8 +3,8 @@
 	x: -1.5d,
 	y: 9.0d,
 	text: [
-		"Some gregtech items can be applyed as cover to gregtech machines and containers.",
-		"Right click gregtech machines with them."
+		"Some GregTech items can be applyed as cover to GregTech machines and containers.",
+		"Right click GregTech machines with them."
 	],
 	tasks: [{
 		uid: "68f46753",

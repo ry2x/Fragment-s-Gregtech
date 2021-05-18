@@ -7,8 +7,8 @@
 		"I recommend building a smeltery.",
 		"If you don't know how to build, google it. Wiki will help you!",
 		"",
-		"However, in Fragment's Gregtech, recipes for metal block in basin are removed.",
-		"Metal blocks are craftable in compressor and other gregtech's machines."
+		"However, in Fragment's GregTech, recipes for metal block in basin are removed.",
+		"Metal blocks are craftable in compressor and other GregTech's machines."
 	],
 	tasks: [{
 		uid: "12a3abb4",

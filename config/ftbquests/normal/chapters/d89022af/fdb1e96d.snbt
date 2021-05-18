@@ -3,7 +3,7 @@
 	x: -7.0d,
 	y: 9.0d,
 	text: [
-		"Thermal dynamic's ducts and gregtech's pipes can't extract itself.",
+		"Thermal dynamic's ducts and GregTech's pipes can't extract itself.",
 		" So, you'll need pump, conveyer, robot arm, servo and other items.",
 		"They extract or import item or fluid.",
 		"Yes, you can apply filters to them."

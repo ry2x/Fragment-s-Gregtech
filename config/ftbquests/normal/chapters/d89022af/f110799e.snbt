@@ -3,13 +3,13 @@
 	x: 8.0d,
 	y: -13.0d,
 	text: [
-		"Gregtech needs a large amount of items for each age, so you should make a lot of craft materials (motor, circuit, etc)."
+		"GregTech needs a large amount of items for each age, so you should make a lot of craft materials (motor, circuit, etc)."
 	],
 	size: 2.0d,
 	tasks: [{
 		uid: "c6abcc3c",
 		type: "checkmark",
-		title: "Gregtech Age",
+		title: "GregTech Age",
 		icon: "gregtech:machine 2 502"
 	}],
 	rewards: [{

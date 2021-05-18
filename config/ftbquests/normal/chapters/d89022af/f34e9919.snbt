@@ -4,7 +4,7 @@
 	y: 0.0d,
 	description: "Play in nether with white boxs",
 	text: [
-		"Make void to nether portal.",
+		"Make nether portal in the Void.",
 		"In the void, you can't make obsidian nether portal.",
 		"You need this block!"
 	],
