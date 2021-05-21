@@ -1,6 +1,6 @@
 # Installed Mods
 
-AdditionalEnchantedMiner-1.12.2-12.4.6.jar
+AdditionalEnchantedMiner-1.12.2-12.4.7.jar
 
 AE-Net-Vis-Tool-1.12.2-1.0.3.0-universal.jar
 
@@ -52,9 +52,9 @@ Controlling-3.0.10.jar
 
 CosmeticArmorReworked-1.12.2-v5a.jar
 
-CraftTweaker2-1.12-4.1.20.644.jar
+CraftTweaker2-1.12-4.1.20.646.jar
 
-CreativeCore_v1.10.57_mc1.12.2.jar
+CreativeCore_v1.10.59_mc1.12.2.jar
 
 CryingObsidian-1.12.2-1.2.1.jar
 
@@ -104,7 +104,7 @@ FastLeafDecay-v14.jar
 
 FastWorkbench-1.12.2-1.7.3.jar
 
-fluiddrawers-1.12.2-1.0.5.jar
+fluiddrawers-1.12.2-1.0.6.jar
 
 FluxNetworks-1.12.2-4.1.1.34.jar
 
@@ -132,13 +132,13 @@ gravestone-1.10.3.jar
 
 Gregicality-1.12.2-0.21.5.1.jar
 
-gregtech-1.12.2-1.14.0.689.jar
+gregtech-1.12.2-1.15.0.721.jar
 
 GregtechEnergistics-1.0.0.3.jar
 
 iChunUtil-1.12.2-7.2.2.jar
 
-IFPatcher-1.3.0.jar
+IFPatcher-1.4.0.jar
 
 industrialforegoing-1.12.2-1.12.13-237.jar
 
@@ -180,7 +180,7 @@ Mantle-1.12-1.3.3.55.jar
 
 MobGrindingUtils-0.3.13.jar
 
-modtweaker-4.0.18.jar
+modtweaker-4.0.19.jar
 
 ModularPowersuits-1.12.2-1.0.46.jar
 
@@ -192,7 +192,7 @@ MouseTweaks-2.10-mc1.12.2.jar
 
 MrTJPCore-1.12.2-2.1.4.43-universal.jar
 
-MTLib-3.0.6.jar
+MTLib-3.0.7.jar
 
 Neat 1.4-17.jar
 
@@ -258,9 +258,9 @@ StorageDrawers-1.12.2-5.4.2.jar
 
 StorageDrawersExtras-1.12-3.1.0.jar
 
-supermartijn642configlib-1.0.5-mc1.12.jar
+supermartijn642configlib-1.0.6-mc1.12.jar
 
-supermartijn642corelib-1.0.1a-mc1.12.jar
+supermartijn642corelib-1.0.3-mc1.12.jar
 
 TConstruct-1.12.2-2.13.0.183.jar
 
@@ -290,8 +290,8 @@ volumetricflask-0.18.jar
 
 WaterMechanicsBackport-1.0.3-1.12.2-NETHERFIX.jar
 
-Xaeros_Minimap_21.7.0_Forge_1.12.jar
+Xaeros_Minimap_21.8.2_Forge_1.12.jar
 
-XaerosWorldMap_1.13.3_Forge_1.12.jar
+XaerosWorldMap_1.14.0_Forge_1.12.jar
 
 Xtones-1.2.2.jar
