@@ -54,7 +54,7 @@ CosmeticArmorReworked-1.12.2-v5a.jar
 
 CraftTweaker2-1.12-4.1.20.646.jar
 
-CreativeCore_v1.10.59_mc1.12.2.jar
+CreativeCore_v1.10.60_mc1.12.2.jar
 
 CryingObsidian-1.12.2-1.2.1.jar
 
@@ -108,7 +108,7 @@ fluiddrawers-1.12.2-1.0.6.jar
 
 FluxNetworks-1.12.2-4.1.1.34.jar
 
-foamfix-0.10.11-1.12.2.jar
+foamfix-0.10.12a-1.12.2.jar
 
 forestry_1.12.2-5.8.2.422.jar
 
