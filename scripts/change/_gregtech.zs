@@ -775,15 +775,6 @@ assembler.recipeBuilder()
 	.duration(240)
 	.buildAndRegister();
 
-#rare earth buff
-large_centrifuge.findRecipe(480, [],[<liquid:rare_earth_chlorides_solution>*1000,<liquid:di_ethylhexyl_phosphoric_acid>*1000]).remove();
-large_centrifuge.recipeBuilder()
-	.fluidInputs(<liquid:rare_earth_chlorides_solution>*1000,<liquid:phosphoric_acid>*500,<liquid:propene>*500)
-	.fluidOutputs(<liquid:er_lu_oxides_solution>*500,<liquid:tb_ho_oxides_solution>*500,<liquid:sm_gd_oxides_solution>*500,<liquid:la_nd_oxides_solution>*500)
-	.EUt(400)
-	.duration(1000)
-	.buildAndRegister();
-
 #ethanol
 reactor.recipeBuilder()
 	.fluidInputs(<liquid:water>*1000,<liquid:ethylene>*1000)
