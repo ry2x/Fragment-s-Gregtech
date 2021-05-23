@@ -472,137 +472,6 @@ for key, drum in DrumFix {
         .buildAndRegister();
 }
 
-//fix compressed recipes
-	#ruby
-compressor.findRecipe(2,[<projectred-core:resource_item:200>*9],null).remove();
-compressor.recipeBuilder()
-	.inputs(<ore:gemRuby>*9)
-	.outputs(<ore:blockRuby>.firstItem)
-	.duration(400)
-	.EUt(2)
-	.buildAndRegister();
-hammer.findRecipe(24,[<projectred-exploration:stone:5>],null).remove();
-hammer.recipeBuilder()
-	.inputs(<ore:blockRuby>)
-	.outputs(<ore:gemRuby>.firstItem*9)
-	.duration(100)
-	.EUt(24)
-	.buildAndRegister();
-large_forge_hammer.recipeBuilder()
-	.inputs(<ore:blockRuby>)
-	.fluidInputs([<liquid:lubricant>*2])
-	.outputs(<ore:gemRuby>.firstItem*9)
-	.duration(100)
-	.EUt(24)
-	.buildAndRegister();
-	#sapphire
-compressor.findRecipe(2,[<projectred-core:resource_item:201>*9],null).remove();
-compressor.recipeBuilder()
-	.inputs(<ore:gemSapphire>*9)
-	.outputs(<ore:blockSapphire>.firstItem)
-	.duration(400)
-	.EUt(2)
-	.buildAndRegister();
-hammer.findRecipe(24,[<projectred-exploration:stone:6>],null).remove();
-hammer.recipeBuilder()
-	.inputs(<ore:blockSapphire>)
-	.outputs(<ore:gemSapphire>.firstItem*9)
-	.duration(100)
-	.EUt(24)
-	.buildAndRegister();
-large_forge_hammer.recipeBuilder()
-	.inputs(<ore:blockSapphire>)
-	.fluidInputs([<liquid:lubricant>*2])
-	.outputs(<ore:gemSapphire>.firstItem*9)
-	.duration(100)
-	.EUt(24)
-	.buildAndRegister();
-	#cobalt
-compressor.findRecipe(2,[<tconstruct:ingots>*9],null).remove();
-compressor.recipeBuilder()
-	.inputs(<ore:ingotCobalt>*9)
-	.outputs(<gregtech:compressed_0:14>)
-	.duration(400)
-	.EUt(2)
-	.buildAndRegister();
-	#copper
-compressor.findRecipe(2,[<thermalfoundation:material:128>*9],null).remove();
-compressor.recipeBuilder()
-	.inputs(<ore:ingotCopper>*9)
-	.outputs(<gregtech:compressed_0:15>)
-	.duration(400)
-	.EUt(2)
-	.buildAndRegister();
-	#bronze
-compressor.findRecipe(2,[<thermalfoundation:material:163>*9],null).remove();
-compressor.recipeBuilder()
-	.inputs(<ore:ingotBronze>*9)
-	.outputs(<gregtech:compressed_4:10>)
-	.duration(400)
-	.EUt(2)
-	.buildAndRegister();
-	#lead
-compressor.recipeBuilder()
-	.inputs(<ore:ingotLead>*9)
-	.outputs(<gregtech:compressed_1:9>)
-	.duration(400)
-	.EUt(2)
-	.buildAndRegister();
-	#silver
-compressor.findRecipe(2,[<thermalfoundation:material:130>*9],null).remove();
-compressor.recipeBuilder()
-	.inputs(<ore:ingotSilver>*9)
-	.outputs(<gregtech:compressed_3>)
-	.duration(400)
-	.EUt(2)
-	.buildAndRegister();
-	#electrum
-compressor.findRecipe(2,[<thermalfoundation:material:161>*9],null).remove();
-compressor.recipeBuilder()
-	.inputs(<ore:ingotElectrum>*9)
-	.outputs(<gregtech:compressed_5:7>)
-	.duration(400)
-	.EUt(2)
-	.buildAndRegister();
-	#steel
-compressor.recipeBuilder()
-	.inputs(<ore:ingotSteel>*9)
-	.outputs(<gregtech:compressed_8:4>)
-	.duration(400)
-	.EUt(2)
-	.buildAndRegister();
-	#Tin
-compressor.findRecipe(2,[<thermalfoundation:material:129>*9],null).remove();
-compressor.recipeBuilder()
-	.inputs(<ore:ingotTin>*9)
-	.outputs(<gregtech:compressed_3:9>)
-	.duration(400)
-	.EUt(2)
-	.buildAndRegister();
-	#nickel
-compressor.findRecipe(2,[<thermalfoundation:material:133>*9],null).remove();
-compressor.recipeBuilder()
-	.inputs(<ore:ingotNickel>*9)
-	.outputs(<gregtech:compressed_2:1>)
-	.duration(400)
-	.EUt(2)
-	.buildAndRegister();
-	#Aluminium
-compressor.recipeBuilder()
-	.inputs(<ore:ingotAluminium>*9)
-	.outputs(<gregtech:compressed_0>)
-	.duration(400)
-	.EUt(2)
-	.buildAndRegister();
-	#nether star block
-compressor.findRecipe(2,[<minecraft:nether_star>*9],null).remove();
-compressor.recipeBuilder()
-	.inputs(<minecraft:nether_star>*9)
-	.outputs(<gregtech:compressed_15>)
-	.duration(400)
-	.EUt(2)
-	.buildAndRegister();
-
 //cable from rubber foil and wire
 	#rubber foil IItemStack
 val rubber as IItemStack = <ore:foilRubber>.firstItem;
@@ -866,9 +735,6 @@ blast_furnace.recipeBuilder()
 	.duration(3200)
 	.buildAndRegister();
 
-//remove normal aluminium recipe
-blast_furnace.findRecipe(120, [<ore:dustAluminium>.firstItem],null).remove();
-
 //change recipes
 val FixLuVCompo as IItemStack[] = [
 	<gregtech:machine_casing:6>,
@@ -908,23 +774,6 @@ assembler.recipeBuilder()
 	.EUt(8400)
 	.duration(240)
 	.buildAndRegister();
-		#vanadium battery
-assembler.findRecipe(30720, [<gregtech:meta_item_1:12859>*4,<gregtech:cable:5135>*8],[]).remove();
-assembler.recipeBuilder()
-	.inputs(<gregtech:cable:5135>*8,<ore:plateChrome>*4)
-	.outputs(<gtadditions:ga_meta_item:32417>)
-	.EUt(30720)
-	.duration(150)
-	.buildAndRegister();
-
-#rare earth buff
-large_centrifuge.findRecipe(480, [],[<liquid:rare_earth_chlorides_solution>*1000,<liquid:di_ethylhexyl_phosphoric_acid>*1000]).remove();
-large_centrifuge.recipeBuilder()
-	.fluidInputs(<liquid:rare_earth_chlorides_solution>*1000,<liquid:phosphoric_acid>*1000)
-	.fluidOutputs(<liquid:er_lu_oxides_solution>*500,<liquid:tb_ho_oxides_solution>*500,<liquid:sm_gd_oxides_solution>*500,<liquid:la_nd_oxides_solution>*500)
-	.EUt(400)
-	.duration(1000)
-	.buildAndRegister();
 
 #ethanol
 reactor.recipeBuilder()
@@ -951,9 +800,88 @@ reactor.recipeBuilder()
 #rh miss fix
 reactor.recipeBuilder()
 	.inputs(<ore:dustPalladiumSalt>)
-	.fluidInputs(<liquid:aqua_regia>*1000)
-	.fluidOutputs(<liquid:platinum_concentrate>*1000)
+	.fluidInputs(<liquid:aqua_regia>*250)
+	.fluidOutputs(<liquid:platinum_concentrate>*250)
 	.outputs(<ore:dustPlatinumResidue>.firstItem)
 	.EUt(64)
 	.duration(2400)
 	.buildAndRegister();
+
+#bread
+//fix compressor recipes
+furnace.addRecipe(<minecraft:bread>, <gregtech:meta_item_1:2345>, 1);
+
+#buff lapotron crystal
+val CrystalMaterials as string[] = [
+	"Lapis",
+	"Lazurite",
+	"Sodalite"
+];
+
+for key in CrystalMaterials {
+	var Cplate as IOreDictEntry = oreDict["plate"~key];
+	var Cstick as IOreDictEntry = oreDict["stick"~key];
+	var Cflowl as IOreDictEntry = oreDict["gemFlawed"~key];
+	recipes.addShaped(<gregtech:meta_item_2:32213>,[
+		[Cplate,<gregtech:meta_item_2:32452>],
+		[Cflowl,Cstick]
+	]);
+}
+
+#metals and gems
+val CompressorFixRemoval as IItemStack[] = [
+	<thermalfoundation:material:129>,
+	<thermalfoundation:material:160>,
+	<thermalfoundation:material:130>,
+	<thermalfoundation:material:134>,
+	<thermalfoundation:material:133>,
+	<thermalfoundation:material:131>,
+	<thermalfoundation:material:135>,
+	<thermalfoundation:material:128>,
+	<thermalfoundation:material:132>,
+	<thermalfoundation:material:167>,
+	<thermalfoundation:material:163>,
+	<thermalfoundation:material:162>,
+	<thermalfoundation:material:161>,
+	<tconstruct:ingots>,
+	#gems
+	<projectred-core:resource_item:201>,
+	<projectred-core:resource_item:200>,
+	#nether star
+	<minecraft:nether_star>
+];
+
+for item in CompressorFixRemoval {
+	compressor.findRecipe(2,[item*9],null).remove();
+}
+
+val CompressorFixAdding as IItemStack[IItemStack] = {
+	<gregtech:meta_item_1:10071> : <gregtech:meta_block_compressed_4:7>,
+	<gregtech:meta_item_1:10184> : <gregtech:meta_block_compressed_11:8>,
+	<gregtech:meta_item_1:10062> : <gregtech:meta_block_compressed_3:14>,
+	<gregtech:meta_item_1:10051> : <gregtech:meta_block_compressed_3:3>,
+	<gregtech:meta_item_1:10044> : <gregtech:meta_block_compressed_2:12>,
+	<gregtech:meta_item_1:10035> : <gregtech:meta_block_compressed_2:3>,
+	<gregtech:meta_item_1:10032> : <gregtech:meta_block_compressed_2>,
+	<gregtech:meta_item_1:10018> : <gregtech:meta_block_compressed_1:2>,
+	<gregtech:meta_item_1:10001> : <gregtech:meta_block_compressed_0:1>,
+	<gregtech:meta_item_1:10017> : <gregtech:meta_block_compressed_1:1>,
+	<gregtech:meta_item_1:10963> : <gregtech:meta_block_compressed_60:3>,
+	<gregtech:meta_item_1:10095> : <gregtech:meta_block_compressed_5:15>,
+	<gregtech:meta_item_1:10126> : <gregtech:meta_block_compressed_7:14>,
+	<gregtech:meta_item_1:10112> : <gregtech:meta_block_compressed_7>,
+	#gems
+	<gregtech:meta_item_1:8157> : <gregtech:meta_block_compressed_9:13>,
+	<gregtech:meta_item_1:8154> : <gregtech:meta_block_compressed_9:10>,
+	#nether star
+	<minecraft:nether_star> : <gregtech:meta_block_compressed_20:11>
+};
+
+for input,output in CompressorFixAdding {
+	compressor.recipeBuilder()
+		.inputs(input*9)
+		.outputs(output)
+		.EUt(2)
+		.duration(400)
+		.buildAndRegister();
+}

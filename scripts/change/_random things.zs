@@ -13,6 +13,7 @@ val bath = RecipeMap.getByName("chemical_bath");
 val forming = RecipeMap.getByName("forming_press");
 val blast_furnace = RecipeMap.getByName("blast_furnace");
 val mixer = mods.gregtech.recipe.RecipeMap.getByName("mixer");
+val freezer = RecipeMap.getByName("vacuum_freezer");
 
 //blue glass
 recipes.remove(<randomthings:lapisglass>);
@@ -132,6 +133,16 @@ bath.recipeBuilder()
     .fluidInputs([<liquid:lubricant>*144])
     .outputs(<randomthings:superlubricentstone>)
     .EUt(16)
+    .duration(50)
+    .buildAndRegister();
+
+//super lub ice
+recipes.removeByRecipeName("randomthings:superlubricentice");
+freezer.recipeBuilder()
+    .inputs(<minecraft:ice>)
+    .fluidInputs(<liquid:lubricant>*144)
+    .outputs(<randomthings:superlubricentice>)
+    .EUt(64)
     .duration(50)
     .buildAndRegister();
 
