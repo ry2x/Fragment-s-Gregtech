@@ -130,7 +130,7 @@ future-mc-1.12.2-0.2.6.1.jar
 
 gravestone-1.10.3.jar
 
-Gregicality-1.12.2-0.21.5.1.jar
+Gregicality-1.12.2-0.22.3.2.jar
 
 gregtech-1.12.2-1.15.0.721.jar
 
