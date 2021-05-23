@@ -1009,7 +1009,7 @@ for oreDictEntry, items in gemsDisabled {
 <ore:fluixCrystal>.add(<appliedenergistics2:material:12>);
 
 //add aluminium to aluminum
-<ore:blockAluminum>.add(<gregtech:compressed_0>);
+<ore:blockAluminum>.add(<gregtech:meta_block_compressed_0:1>);
 
 //tconstruct cobalt adds to cobalt
 <ore:oreCobalt>.add(<tconstruct:ore>);

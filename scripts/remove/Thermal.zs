@@ -61,7 +61,6 @@ val part = [
     <thermalfoundation:material:768>,
     <thermalfoundation:material:769>,
     <thermalfoundation:material:770>,
-	<thermalfoundation:material:771>,
     <thermalfoundation:material:772>,
     <thermalfoundation:material:800>,
     <thermalfoundation:material:801>,
@@ -94,6 +93,7 @@ for item in part {
     JEI.removeAndHide(item);
 }
 
+recipes.remove(<thermalfoundation:material:771>);
 //remove furnace materials
 furnace.remove(<minecraft:glowstone_dust>, <thermalfoundation:material:894>);
 furnace.remove(<minecraft:ender_pearl>, <thermalfoundation:material:895>);
