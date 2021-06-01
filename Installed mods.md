@@ -54,7 +54,7 @@ CosmeticArmorReworked-1.12.2-v5a.jar
 
 CraftTweaker2-1.12-4.1.20.646.jar
 
-CreativeCore_v1.10.60_mc1.12.2.jar
+CreativeCore_v1.10.61_mc1.12.2.jar
 
 CryingObsidian-1.12.2-1.2.1.jar
 
@@ -78,17 +78,17 @@ EnchantingTable-1.12-1.1.3.jar
 
 EnderCore-1.12.2-0.5.76.jar
 
-EnderIO-base-1.12.2-5.2.66.jar
+EnderIO-base-1.12.2-5.3.70.jar
 
-EnderIO-conduits-1.12.2-5.2.66.jar
+EnderIO-conduits-1.12.2-5.3.70.jar
 
-EnderIO-conduits-appliedenergistics-1.12.2-5.2.66.jar
+EnderIO-conduits-appliedenergistics-1.12.2-5.3.70.jar
 
-EnderIO-endergy-1.12.2-5.2.66.jar
+EnderIO-endergy-1.12.2-5.3.70.jar
 
 enderiofluxified-1.12.2-1.0.2.jar
 
-EnderIO-integration-forestry-1.12.2-5.2.66.jar
+EnderIO-integration-forestry-1.12.2-5.3.70.jar
 
 EnderStorage-1.12.2-2.4.6.137-universal.jar
 
@@ -108,7 +108,7 @@ fluiddrawers-1.12.2-1.0.6.jar
 
 FluxNetworks-1.12.2-4.1.1.34.jar
 
-foamfix-0.10.12a-1.12.2.jar
+foamfix-0.10.14-1.12.2.jar
 
 forestry_1.12.2-5.8.2.422.jar
 
@@ -130,7 +130,7 @@ future-mc-1.12.2-0.2.6.1.jar
 
 gravestone-1.10.3.jar
 
-Gregicality-1.12.2-0.22.3.2.jar
+Gregicality-1.12.2-0.22.4.1.jar
 
 gregtech-1.12.2-1.15.0.721.jar
 
@@ -150,7 +150,7 @@ ironchest-1.12.2-7.0.72.847.jar
 
 ItemFilters-1.0.4.2.jar
 
-itlt-1.12.2-1.0.3.jar
+itlt-1.12.x-1.0.4.jar
 
 jei_1.12.2-4.16.1.302.jar
 
@@ -260,13 +260,13 @@ StorageDrawersExtras-1.12-3.1.0.jar
 
 supermartijn642configlib-1.0.6-mc1.12.jar
 
-supermartijn642corelib-1.0.3-mc1.12.jar
+supermartijn642corelib-1.0.4-mc1.12.jar
 
 TConstruct-1.12.2-2.13.0.183.jar
 
 tesla-core-lib-1.12.2-1.0.17.jar
 
-tesseract-1.0.18-mc1.12.jar
+tesseract-1.0.19-mc1.12.jar
 
 theoneprobe-1.12-1.4.28.jar
 
@@ -290,8 +290,8 @@ volumetricflask-0.18.jar
 
 WaterMechanicsBackport-1.0.3-1.12.2-NETHERFIX.jar
 
-Xaeros_Minimap_21.8.2_Forge_1.12.jar
+Xaeros_Minimap_21.9.0.1_Forge_1.12.jar
 
-XaerosWorldMap_1.14.0_Forge_1.12.jar
+XaerosWorldMap_1.14.1_Forge_1.12.jar
 
 Xtones-1.2.2.jar
