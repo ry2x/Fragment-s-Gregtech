@@ -735,7 +735,7 @@ blast_furnace.recipeBuilder()
 	.duration(3200)
 	.buildAndRegister();
 
-//change recipes
+//change and fix recipes
 val FixLuVCompo as IItemStack[] = [
 	<gregtech:machine_casing:6>,
 	<gregtech:machine:506>,
@@ -775,7 +775,7 @@ assembler.recipeBuilder()
 	.duration(240)
 	.buildAndRegister();
 
-#ethanol
+	#ethanol
 reactor.recipeBuilder()
 	.fluidInputs(<liquid:water>*1000,<liquid:ethylene>*1000)
 	.fluidOutputs(<liquid:bio.ethanol>*1000)
@@ -783,7 +783,7 @@ reactor.recipeBuilder()
 	.duration(100)
 	.buildAndRegister();
 
-#methanol
+	#methanol
 reactor.recipeBuilder()
 	.fluidInputs(<liquid:carbon_monoxide>*1000,<liquid:hydrogen>*2000)
 	.fluidOutputs(<liquid:methanol>*1000)
@@ -797,7 +797,7 @@ reactor.recipeBuilder()
 	.duration(100)
 	.buildAndRegister();
 
-#rh miss fix
+	#rh miss fix
 reactor.recipeBuilder()
 	.inputs(<ore:dustPalladiumSalt>)
 	.fluidInputs(<liquid:aqua_regia>*250)
@@ -807,11 +807,21 @@ reactor.recipeBuilder()
 	.duration(2400)
 	.buildAndRegister();
 
-#bread
+	#spray can
+assembler.findRecipe(8,[<minecraft:redstone>,<gregtech:meta_item_1:12071>*2],[]).remove();
+assembler.recipeBuilder()
+	.inputs(<ore:dustRedstone>,<ore:plateTin>*2)
+	.property("circuit", 1)
+	.outputs(<gregtech:meta_item_1:32402>)
+	.EUt(8)
+	.duration(200)
+	.buildAndRegister();
+
+	#bread
 //fix compressor recipes
 furnace.addRecipe(<minecraft:bread>, <gregtech:meta_item_1:2345>, 1);
 
-#buff lapotron crystal
+	#buff lapotron crystal
 val CrystalMaterials as string[] = [
 	"Lapis",
 	"Lazurite",
@@ -828,7 +838,7 @@ for key in CrystalMaterials {
 	]);
 }
 
-#metals and gems
+	#metals and gems
 val CompressorFixRemoval as IItemStack[] = [
 	<thermalfoundation:material:129>,
 	<thermalfoundation:material:160>,
@@ -885,3 +895,5 @@ for input,output in CompressorFixAdding {
 		.duration(400)
 		.buildAndRegister();
 }
+
+#some recipes are broken in Gregicality-1.12.2-0.22.3.2, but it'll be fixed in next release.
