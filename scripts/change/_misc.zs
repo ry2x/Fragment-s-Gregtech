@@ -63,12 +63,6 @@ recipes.remove(<cyclicmagic:tool_elevate>);
 //Pattern Replicator
 recipes.replaceAllOccurences(<minecraft:ice>,<quarryplus:filler>,<cyclicmagic:builder_pattern>);
 
-//Wireless Transmitter
-recipes.replaceAllOccurences(<minecraft:repeater>,<projectred-integration:gate:21>,<cyclicmagic:wireless_transmitter>);
-
-//Wireless Receiver
-recipes.replaceAllOccurences(<ore:craftingRedstoneTorch>,<projectred-integration:gate:18>,<cyclicmagic:wireless_receiver>);
-
 //Sprinkler
 recipes.remove(<cyclicmagic:sprinkler>);
 recipes.addShaped(<cyclicmagic:sprinkler>,[
