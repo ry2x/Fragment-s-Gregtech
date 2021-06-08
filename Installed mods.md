@@ -1,6 +1,6 @@
 # Installed Mods
 
-AdditionalEnchantedMiner-1.12.2-12.4.7.jar
+AdditionalEnchantedMiner-1.12.2-12.4.9.jar
 
 AE-Net-Vis-Tool-1.12.2-1.0.3.0-universal.jar
 
@@ -52,7 +52,7 @@ Controlling-3.0.10.jar
 
 CosmeticArmorReworked-1.12.2-v5a.jar
 
-CraftTweaker2-1.12-4.1.20.646.jar
+CraftTweaker2-1.12-4.1.20.647.jar
 
 CreativeCore_v1.10.61_mc1.12.2.jar
 
@@ -130,9 +130,9 @@ future-mc-1.12.2-0.2.6.1.jar
 
 gravestone-1.10.3.jar
 
-Gregicality-1.12.2-0.22.4.1.jar
+Gregicality-1.12.2-0.22.5.jar
 
-gregtech-1.12.2-1.15.0.721.jar
+gregtech-1.12.2-1.15.1.735.jar
 
 GregtechEnergistics-1.0.0.3.jar
 
@@ -260,13 +260,13 @@ StorageDrawersExtras-1.12-3.1.0.jar
 
 supermartijn642configlib-1.0.6-mc1.12.jar
 
-supermartijn642corelib-1.0.4-mc1.12.jar
+supermartijn642corelib-1.0.5-mc1.12.jar
 
 TConstruct-1.12.2-2.13.0.183.jar
 
 tesla-core-lib-1.12.2-1.0.17.jar
 
-tesseract-1.0.19-mc1.12.jar
+tesseract-1.0.20-mc1.12.jar
 
 theoneprobe-1.12-1.4.28.jar
 
@@ -290,7 +290,7 @@ volumetricflask-0.18.jar
 
 WaterMechanicsBackport-1.0.3-1.12.2-NETHERFIX.jar
 
-Xaeros_Minimap_21.9.0.1_Forge_1.12.jar
+Xaeros_Minimap_21.10.0.2_Forge_1.12.jar
 
 XaerosWorldMap_1.14.1_Forge_1.12.jar
 
