@@ -70,8 +70,6 @@ diethopper-1.1.jar
 
 DimensionalControl-1.12.2-2.13.0.jar
 
-Discord-1.12.2-1.0.12.jar
-
 ElevatorMod-1.12.2-1.3.14.jar
 
 EnchantingTable-1.12-1.1.3.jar
@@ -241,6 +239,8 @@ RedstoneFlux-1.12-2.1.1.1-universal.jar
 ResourceLoader-MC1.12.1-1.5.3.jar
 
 Scannable-MC1.12.2-1.6.3.26.jar
+
+simple-rpc-1.12.2-2.2-all.jar
 
 simplemagnets-1.1.2-mc1.12.jar
 
