@@ -895,5 +895,3 @@ for input,output in CompressorFixAdding {
 		.duration(400)
 		.buildAndRegister();
 }
-
-#some recipes are broken in Gregicality-1.12.2-0.22.3.2, but it'll be fixed in next release.
