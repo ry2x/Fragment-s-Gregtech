@@ -31,6 +31,7 @@ val macerate = RecipeMap.getByName("macerator");
 val implosion = RecipeMap.getByName("implosion_compressor");
 val mixer = RecipeMap.getByName("mixer");
 val blast_furnace = RecipeMap.getByName("blast_furnace");
+val compressor = RecipeMap.getByName("compressor");
 
 //val
 val basicCard as IItemStack = <appliedenergistics2:material:25>;
@@ -919,3 +920,12 @@ for extraCPUBlock,extraCPUCore in extraCpu {
 //start visual
 recipes.replaceAllOccurences(<appliedenergistics2:entropy_manipulator>,<ore:pearlFluix>,<aenetvistool:net_visualizer>);
 //end visual
+//start wireless
+recipes.removeByRecipeName("ae2wtlib:booster_card_new").remove();
+compressor.recipeBuilder()
+	.inputs(<appliedenergistics2:material:42>*32)
+	.outputs(<ae2wtlib:infinity_booster_card>)
+	.EUt(32700)
+	.duration(300)
+	.buildAndRegister();
+//end
