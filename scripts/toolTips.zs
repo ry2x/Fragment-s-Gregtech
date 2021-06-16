@@ -60,3 +60,8 @@ val carpets as IItemStack[] = [
 for i in carpets {
     JEI.addDescription(i,"Can You Stand On This??");
 }
+
+//practical logi
+#entity radar
+mods.jei.JEI.addDescription(<practicallogistics2:entitytransceiver>,"It's disabled due to be broken.");
+mods.jei.JEI.addDescription(<practicallogistics2:entitynode>,"It's disabled due to be broken.");

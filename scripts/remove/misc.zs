@@ -278,3 +278,8 @@ for i in uselessFTB {
 
 //remove stone rod due to conflict
 JEI.removeAndHide(<microblockcbe:stone_rod>);
+
+//practical logi
+JEI.removeAndHide(<practicallogistics2:hammer>);
+recipes.removeByRecipeName("practicallogistics2:item.entitytransceiver114");
+recipes.removeByRecipeName("practicallogistics2:tile.entitynode108");
