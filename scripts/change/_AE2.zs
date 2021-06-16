@@ -921,7 +921,7 @@ for extraCPUBlock,extraCPUCore in extraCpu {
 recipes.replaceAllOccurences(<appliedenergistics2:entropy_manipulator>,<ore:pearlFluix>,<aenetvistool:net_visualizer>);
 //end visual
 //start wireless
-recipes.removeByRecipeName("ae2wtlib:booster_card_new").remove();
+recipes.removeByRecipeName("ae2wtlib:booster_card_new");
 compressor.recipeBuilder()
 	.inputs(<appliedenergistics2:material:42>*32)
 	.outputs(<ae2wtlib:infinity_booster_card>)

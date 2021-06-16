@@ -11,7 +11,7 @@ val fluid_extractor = RecipeMap.getByName("fluid_extractor");
 val metal_bender = RecipeMap.getByName("metal_bender");
 
 #<bhc:relic_apple>
-recipes.removeByRecipeName("bhc:relic_apple").remove();
+recipes.removeByRecipeName("bhc:relic_apple");
 fluid_extractor.recipeBuilder()
 	.inputs(<ore:gemEmerald>)
 	.fluidOutputs(<liquid:emerald>*222)
@@ -20,7 +20,7 @@ fluid_extractor.recipeBuilder()
 	.buildAndRegister();
 
 #canister
-recipes.removeByRecipeName("bhc:canister").remove();
+recipes.removeByRecipeName("bhc:canister");
 metal_bender.recipeBuilder()
 	.inputs(<ore:plateIron>*4)
 	.property("circuit", 4)
