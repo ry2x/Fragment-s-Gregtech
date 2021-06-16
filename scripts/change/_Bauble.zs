@@ -15,7 +15,7 @@ recipes.removeByRecipeName("bhc:relic_apple");
 fluid_extractor.recipeBuilder()
 	.inputs(<ore:gemEmerald>)
 	.fluidOutputs(<liquid:emerald>*222)
-	.Eut(32)
+	.EUt(32)
 	.duration(160)
 	.buildAndRegister();
 
@@ -25,6 +25,6 @@ metal_bender.recipeBuilder()
 	.inputs(<ore:plateIron>*4)
 	.property("circuit", 4)
 	.outputs(<bhc:canister>)
-	.Eut(64)
+	.EUt(64)
 	.duration(500)
 	.buildAndRegister();
