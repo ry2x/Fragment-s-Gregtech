@@ -183,10 +183,10 @@ val circuit as IItemStack[][IItemStack] = {
 for etched,printed  in circuit {
     Inscriber.removeRecipe(etched);
     circuit_assembler.recipeBuilder()
-        .inputs(printed,<appliedenergistics2:material:20>)
+        .inputs(printed[0],<appliedenergistics2:material:20>)
         .fluidInputs([<liquid:redstone>*288])
-        .notConsumable(etched[1])
-        .outputs(etched[0])
+        .notConsumable(printed[1])
+        .outputs(etched)
         .duration(400)
         .EUt(128)
         .buildAndRegister();
