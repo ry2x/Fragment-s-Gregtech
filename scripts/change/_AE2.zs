@@ -168,10 +168,16 @@ Inscriber.addRecipe(<appliedenergistics2:material:18>,<ore:plateRoseGold>,true,<
 Inscriber.addRecipe(<appliedenergistics2:material:20>,<ore:plateSilicon>,true,<appliedenergistics2:material:19>);
 
 //etching circuit with circuit_assembler//
-val circuit as IItemStack[IItemStack] = {
-    logic as IItemStack : <appliedenergistics2:material:18>,
-    engineer as IItemStack : <appliedenergistics2:material:17>,
-    calculate as IItemStack : <appliedenergistics2:material:16>,
+val circuit as IItemStack[][IItemStack] = {
+    logic as IItemStack : [
+		<appliedenergistics2:material:18>,<appliedenergistics2:material:15>
+	],
+    engineer as IItemStack : [
+		<appliedenergistics2:material:17>,<appliedenergistics2:material:14>
+	],
+    calculate as IItemStack : [
+		<appliedenergistics2:material:16>,<appliedenergistics2:material:13>
+	]
 };
 
 for etched,printed  in circuit {
@@ -179,8 +185,8 @@ for etched,printed  in circuit {
     circuit_assembler.recipeBuilder()
         .inputs(printed,<appliedenergistics2:material:20>)
         .fluidInputs([<liquid:redstone>*288])
-        .notConsumable(<appliedenergistics2:material:15>)
-        .outputs(etched)
+        .notConsumable(etched[1])
+        .outputs(etched[0])
         .duration(400)
         .EUt(128)
         .buildAndRegister();
