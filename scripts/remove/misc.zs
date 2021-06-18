@@ -55,12 +55,6 @@ for i in miscItems {
     JEI.removeAndHide(i);
 }
 
-//remove teslacore
-for item in loadedMods["teslacorelib"].items {
-	recipes.remove(item);
-    JEI.hide(item);
-}
-
 //remove item filter
 for i in loadedMods["itemfilters"].items {
     JEI.removeAndHide(i);
