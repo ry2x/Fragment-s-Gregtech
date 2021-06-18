@@ -146,8 +146,8 @@ recipes.addShaped(<practicallogistics2:clock>,[
 ]);
 
 //transceiver
-recipes.removeByRecipeName("practicallogistics2:item.signallingplate111");
-recipes.addShaped(<practicallogistics2:signallingplate>,[
+recipes.removeByRecipeName("practicallogistics2:item.transceiver111");
+recipes.addShaped(<practicallogistics2:transceiver>,[
 	[<ore:dustFluix>,plate,<ore:dustRedstone>],
 	[<practicallogistics2:wirelessplate>,<practicallogistics2:node>,<practicallogistics2:wirelessplate>],
 	[<ore:dustFluix>,plate,<ore:dustRedstone>]
@@ -156,3 +156,11 @@ recipes.addShaped(<practicallogistics2:signallingplate>,[
 //guide
 recipes.removeByRecipeName("practicallogistics2:item.plguide86");
 recipes.addShapeless(<practicallogistics2:plguide>,[<minecraft:book>,<ore:gemSapphire>]);
+
+//operator
+recipes.removeByRecipeName("practicallogistics2:item.operator112");
+recipes.addShaped(<practicallogistics2:operator>,[
+	[null,null,plate],
+	[null,<ore:rodStone>,null],
+	[plate,null,null]
+]);
