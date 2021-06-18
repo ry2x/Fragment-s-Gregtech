@@ -35,38 +35,6 @@ forming.recipeBuilder()
     .EUt(1024)
     .buildAndRegister();
 
-//transfer node
-val node as IItemStack[] = [
-    <cyclicmagic:cable_wireless>,
-    <cyclicmagic:cable_wireless_energy>,
-    <cyclicmagic:cable_wireless_fluid>,
-];
-for i in node {
-    recipes.remove(i);
-}
-
-    #energy
-assembler.recipeBuilder()
-    .inputs(<ore:dyeRed>*4,<overloaded:energy_core>,<ore:plateStainlessSteel>*8)
-    .outputs(<cyclicmagic:cable_wireless_energy>)
-    .duration(120)
-    .EUt(512)
-    .buildAndRegister();
-    #item
-assembler.recipeBuilder()
-    .inputs(<ore:dyePurple>*4,<overloaded:item_core>,<ore:plateStainlessSteel>*8)
-    .outputs(<cyclicmagic:cable_wireless>)
-    .duration(120)
-    .EUt(512)
-    .buildAndRegister();
-    #fluid
-assembler.recipeBuilder()
-    .inputs(<ore:dyeBlue>*4,<overloaded:fluid_core>,<ore:plateStainlessSteel>*8)
-    .outputs(<cyclicmagic:cable_wireless_fluid>)
-    .duration(120)
-    .EUt(512)
-    .buildAndRegister();
-
 //hyper sender
     //receiver
     #energy
@@ -93,6 +61,7 @@ assembler.recipeBuilder()
     .duration(240)
     .EUt(520)
     .buildAndRegister();
+
     //sender
     #energy
 assembler.recipeBuilder()
@@ -125,16 +94,6 @@ recipes.addShapeless(<overloaded:hyper_energy_receiver>, [<overloaded:hyper_ener
 recipes.addShapeless(<overloaded:hyper_energy_sender>, [<overloaded:hyper_energy_receiver>]);
 recipes.addShapeless(<overloaded:hyper_fluid_receiver>, [<overloaded:hyper_fluid_sender>]);
 recipes.addShapeless(<overloaded:hyper_fluid_sender>, [<overloaded:hyper_fluid_receiver>]);
-
-//tesseract
-recipes.remove(<tesseract:tesseract>);
-assembler.recipeBuilder()
-    .inputs(<overloaded:energy_core>,<overloaded:fluid_core>,<overloaded:item_core>,<ore:plateEnderium>*4,<gregtech:meta_item_2:19963>*4,<thermalfoundation:glass_alloy:7>*4)
-    .fluidInputs([<liquid:enderium>*800])
-    .outputs(<tesseract:tesseract>)
-    .duration(500)
-    .EUt(512)
-    .buildAndRegister();
 
 //infinity capacitor blocks
     #tank

@@ -36,44 +36,6 @@ recipes.addShaped(<chargers:charger:2>, [
     [<gregtech:meta_item_1:10001>, <chargers:charger:1>, <gregtech:meta_item_1:10001>]
 ]);
 
-//change recipes of @cyclic wireless things in the _overloaded.zs
-recipes.replaceAllOccurences(<ore:blockEmerald>,<ore:blockStainlessSteel>,<cyclicmagic:heart_food>);
-recipes.replaceAllOccurences(<ore:gemDiamond>,<ore:blockStainlessSteel>,<cyclicmagic:heart_food>);
-recipes.replaceAllOccurences(<ore:gemDiamond>,<ore:blockStainlessSteel>,<cyclicmagic:crafting_food>);
-recipes.replaceAllOccurences(<ore:gemEmerald>,<ore:blockStainlessSteel>,<cyclicmagic:crafting_food>);
-
-//Precise Dropper
-recipes.remove(<cyclicmagic:dropper_exact>);
-recipes.addShaped(<cyclicmagic:dropper_exact>,[
-    [<ore:ingotGold>,<ore:ingotGold>,<ore:ingotGold>],
-    [<minecraft:dropper>,<gregtech:machine:501>,<projectred-integration:gate:17>],
-    [<ore:ingotGold>,<ore:ingotGold>,<ore:ingotGold>]
-]);
-
-//Target Dummy Spawner
-recipes.remove(<cyclicmagic:robot_spawner>);
-recipes.addShaped(<cyclicmagic:robot_spawner>,[
-    [<ore:blockEmerald>,<minecraft:rotten_flesh>,<minecraft:spider_eye>],
-    [null,<ore:gemEnderPearl>,<minecraft:rotten_flesh>],
-    [<ore:dyePurple>,null,<ore:blockEmerald>]
-]);
-
-recipes.remove(<cyclicmagic:tool_elevate>);
-
-//Pattern Replicator
-recipes.replaceAllOccurences(<minecraft:ice>,<quarryplus:filler>,<cyclicmagic:builder_pattern>);
-
-//Sprinkler
-recipes.remove(<cyclicmagic:sprinkler>);
-recipes.addShaped(<cyclicmagic:sprinkler>,[
-    [<minecraft:iron_ingot>,<minecraft:iron_ingot>,<minecraft:iron_ingot>],
-    [<gregtech:meta_item_1:32601>,<forestry:fertilizer_bio>,<gregtech:meta_item_1:32601>],
-    [<minecraft:iron_ingot>,<minecraft:iron_ingot>,<minecraft:iron_ingot>]
-]);
-
-// /Sleeping Mat
-recipes.replaceAllOccurences(<minecraft:wool:14>,<minecraft:bed:14>,<cyclicmagic:sleeping_mat>);
-
 //change recipe of dunk null is very sillar to simple storage
 val dunk as IItemStack[] = [
     <danknull:dank_null_panel_0>,
@@ -1154,3 +1116,13 @@ recipes.removeByRecipeName("akashictome:tome");
 recipes.removeByRecipeName("akashictome:tome_1");
 val akasicBook as IItemStack = <akashictome:tome>.withTag({"akashictome:data": {industrialforegoing: {id: "industrialforegoing:book_manual", Count: 1 as byte, tag: {"akashictome:definedMod": "industrialforegoing"}, Damage: 0 as short}, tconstruct: {id: "tconstruct:book", Count: 1 as byte, tag: {"akashictome:definedMod": "tconstruct"}, Damage: 0 as short}, ftbquests: {id: "ftbquests:book", Count: 1 as byte, tag: {"akashictome:definedMod": "ftbquests"}, Damage: 0 as short}, practicallogistics2: {id: "practicallogistics2:plguide", Count: 1 as byte, tag: {"akashictome:definedMod": "practicallogistics2"}, Damage: 0 as short}, actuallyadditions: {id: "actuallyadditions:item_booklet", Count: 1 as byte, tag: {"akashictome:definedMod": "actuallyadditions"}, Damage: 0 as short}, valkyrielib: {id: "valkyrielib:guide", Count: 1 as byte, tag: {"akashictome:definedMod": "valkyrielib"}, Damage: 0 as short}, deepmoblearning: {id: "patchouli:guide_book", Count: 1 as byte, tag: {"akashictome:definedMod": "deepmoblearning", "patchouli:book": "deepmoblearning:book"}, Damage: 0 as short}, forestry: {id: "forestry:book_forester", Count: 1 as byte, tag: {"akashictome:definedMod": "forestry"}, Damage: 0 as short}}});
 recipes.addShapeless(akasicBook,[<minecraft:book>,<ore:stick>]);
+
+//tesseract
+recipes.remove(<tesseract:tesseract>);
+assembler.recipeBuilder()
+    .inputs(<overloaded:energy_core>,<overloaded:fluid_core>,<overloaded:item_core>,<ore:plateEnderium>*4,<gregtech:meta_item_2:19963>*4,<thermalfoundation:glass_alloy:7>*4)
+    .fluidInputs([<liquid:enderium>*800])
+    .outputs(<tesseract:tesseract>)
+    .duration(500)
+    .EUt(512)
+    .buildAndRegister();
