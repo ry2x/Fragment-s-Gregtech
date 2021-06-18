@@ -43,7 +43,7 @@ blast_furnace.recipeBuilder()
 	#compressor
 compressor.findRecipe(2, [<tconstruct:ingots:1>*9],[]).remove();
 compressor.recipeBuilder()
-	.inputs(<ore;ingotArdite>*9)
+	.inputs(<ore:ingotArdite>*9)
 	.outputs(<tconstruct:metal:1>)
 	.EUt(2)
 	.duration(160)
@@ -51,7 +51,7 @@ compressor.recipeBuilder()
 	#packer
 packer.findRecipe(4, [<tconstruct:ingots:1>*9,<gtadditions:ga_meta_item:32133>],[]).remove();
 packer.recipeBuilder()
-	.inputs(<ore;ingotArdite>*9)
+	.inputs(<ore:ingotArdite>*9)
 	.notConsumable(<gtadditions:ga_meta_item:32133>)
 	.outputs(<tconstruct:metal:1>)
 	.EUt(4)

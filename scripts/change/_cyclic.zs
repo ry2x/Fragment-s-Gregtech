@@ -153,7 +153,7 @@ recipes.addShaped(<cyclicmagic:block_screen>,[
 
 //fan
 recipes.removeByRecipeName("cyclicmagic:tile.fan_1");
-recipes.addShaped(<cyclicmagic:fan>[
+recipes.addShaped(<cyclicmagic:fan>,[
 	[<ore:nuggetIron>,<ore:nuggetIron>,<ore:nuggetIron>],
 	[<ore:nuggetIron>,<mob_grinding_utils:fan>,<ore:nuggetIron>],
 	[<ore:nuggetIron>,<ore:nuggetIron>,<ore:nuggetIron>]
