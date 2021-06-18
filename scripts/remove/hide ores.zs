@@ -7,6 +7,7 @@ var RemovalOres as string[] = [
     "andradite",
     "apatite",
     "asbestos",
+	"ardite",
     "banded_iron",
     "barite",
     "bastnasite",

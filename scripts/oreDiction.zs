@@ -276,7 +276,12 @@ var ingotsDisabled as IItemStack[][IOreDictEntry] = {
     #<ore:itemSilicon>
     <ore:itemSilicon>:[
         <appliedenergistics2:material:5>
-    ]
+    ],
+
+	#<ore:ingotArdite>
+	<ore:ingotArdite>:[
+		<tconstruct:ingots:1>
+	]
 
 };
 
@@ -395,7 +400,12 @@ var nuggetsDisabled as IItemStack[][IOreDictEntry] = {
     #<ore:nuggetDiamond>
     <ore:nuggetDiamond>:[
         <translocators:diamond_nugget>
-    ]
+    ],
+
+	#<ore:nuggetArdite>
+	<ore:nuggetArdite>:[
+		<tconstruct:nuggets:1>
+	]
 };
 
 for oreDictEntry, items in nuggetsDisabled {
