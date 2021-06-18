@@ -5,8 +5,13 @@ import crafttweaker.oredict.IOreDictEntry;
 
 //import greg
 import mods.gregtech.recipe.RecipeMap;
+import mods.gtadditions.recipe.GARecipeMaps;
+import mods.gtadditions.recipe.LargeRecipeMap;
 
 val assembler = RecipeMap.getByName("assembler");
+val blast_alloy as RecipeMap = GARecipeMaps.BLAST_ALLOY_RECIPES;
+val solidifier = RecipeMap.getByName("fluid_solidifier");
+val alloy = RecipeMap.getByName("alloy_smelter");
 
 //transfer node
 val node as IItemStack[] = [
@@ -78,3 +83,78 @@ recipes.addShaped(<cyclicmagic:sprinkler>,[
 //Sleeping Mat
 recipes.replaceAllOccurences(<minecraft:wool:14>,<minecraft:bed:14>,<cyclicmagic:sleeping_mat>);
 
+//crystallized obsidian
+#fluid
+blast_alloy.recipeBuilder()
+	.inputs(<ore:dustObsidian>*5,<ore:gemEmerald>*4,<ore:nuggetIron>*3)
+	.property("circuit", 1)
+	.fluidOutputs(<liquid:crystal>*900)
+	.EUt(2048)
+	.duration(5000)
+	.buildAndRegister();
+#solid
+solidifier.recipeBuilder()
+	.fluidInputs(<liquid:crystal>*200)
+	.notConsumable(<gregtech:meta_item_1:32307>)
+	.outputs(<cyclicmagic:crystallized_obsidian>)
+	.EUt(128)
+	.duration(20)
+	.buildAndRegister();
+
+//swords
+val weak as IItemStack = <minecraft:lingering_potion>.withTag({Potion: "minecraft:weakness"});
+val slow as IItemStack = <minecraft:lingering_potion>.withTag({Potion: "minecraft:slowness"});
+val swords as IItemStack[IItemStack] = {
+	weak as IItemStack : <cyclicmagic:sword_weakness>,
+	slow as IItemStack : <cyclicmagic:sword_slowness>,
+	<gregtech:meta_item_1:32724> : <cyclicmagic:sword_ender>
+};
+
+for i,o in swords {
+	alloy.recipeBuilder()
+		.inputs(i, <cyclicmagic:crystal_sword>)
+		.outputs(o)
+		.EUt(8120)
+		.duration(5000)
+		.buildAndRegister();
+}
+
+//item collector
+recipes.removeByRecipeName("cyclicmagic:tile.block_vacuum_1");
+recipes.addShaped(<cyclicmagic:block_vacuum>,[
+	[<ore:woolWhite>,<ore:blockLapis>,<ore:woolWhite>],
+	[<ore:stoneCobble>,<mob_grinding_utils:absorption_hopper>,<ore:stoneCobble>],
+	[<ore:stoneCobble>,<ore:dustRedstone>,<ore:stoneCobble>]
+]);
+
+//uncrafting
+recipes.removeByRecipeName("cyclicmagic:tile.uncrafting_block_1");
+recipes.addShaped(<cyclicmagic:uncrafting_block>,[
+	[<ore:blockDiamond>,<ore:obsidian>,<ore:blockDiamond>],
+	[<ore:stoneCobble>,<gregtech:machine:4204>,<ore:stoneCobble>],
+	[<ore:stoneCobble>,<ore:dustRedstone>,<ore:stoneCobble>]
+]);
+
+//automated user
+recipes.removeByRecipeName("cyclicmagic:tile.block_user_1");
+recipes.addShaped(<cyclicmagic:block_user>,[
+	[<ore:blockGold>,<ore:obsidian>,<ore:blockGold>],
+	[<ore:stoneCobble>,<ore:MVcasing>,<ore:stoneCobble>],
+	[<ore:stoneCobble>,<ore:dustRedstone>,<ore:stoneCobble>]
+]);
+
+//screen
+recipes.removeByRecipeName("cyclicmagic:tile.block_screen_1");
+recipes.addShaped(<cyclicmagic:block_screen>,[
+	[<ore:nuggetIron>,<gtadditions:ga_meta_item:32129>,<ore:nuggetIron>],
+	[<ore:nuggetIron>,<ore:nuggetIron>,<ore:nuggetIron>],
+	[<ore:barsIron>,<minecraft:repeater>,<ore:barsIron>]
+]);
+
+//fan
+recipes.removeByRecipeName("cyclicmagic:tile.fan_1");
+recipes.addShaped(<cyclicmagic:fan>[
+	[<ore:nuggetIron>,<ore:nuggetIron>,<ore:nuggetIron>],
+	[<ore:nuggetIron>,<mob_grinding_utils:fan>,<ore:nuggetIron>],
+	[<ore:nuggetIron>,<ore:nuggetIron>,<ore:nuggetIron>]
+]);
