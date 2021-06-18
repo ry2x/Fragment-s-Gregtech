@@ -283,3 +283,6 @@ JEI.removeAndHide(<microblockcbe:stone_rod>);
 JEI.removeAndHide(<practicallogistics2:hammer>);
 recipes.removeByRecipeName("practicallogistics2:item.entitytransceiver114");
 recipes.removeByRecipeName("practicallogistics2:tile.entitynode108");
+
+//TOP
+JEI.removeAndHide(<theoneprobe:probe_goggles>);
