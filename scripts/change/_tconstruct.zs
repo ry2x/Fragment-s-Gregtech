@@ -67,3 +67,5 @@ unpacker.recipeBuilder()
 	.EUt(4)
 	.duration(100)
 	.buildAndRegister();
+#removal ingot from ore
+furnace.remove(<gregtech:meta_item_1:10506>);
