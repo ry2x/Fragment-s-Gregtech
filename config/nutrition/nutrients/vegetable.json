@@ -1119,7 +1119,23 @@
 			"xlfoodmod:tomato",
 			"xlfoodmod:tomato_soup",
 			"xlfoodmod:tortilla",
-			"xlfoodmod:vegetable_soup"
+			"xlfoodmod:vegetable_soup",
+            "gregtechfoodoption:gtfo_meta_item",
+            "gregtechfoodoption:gtfo_meta_item:42",
+            "gregtechfoodoption:gtfo_meta_item:41",
+            "gregtechfoodoption:gtfo_meta_item:40",
+            "gregtechfoodoption:gtfo_meta_item:39",
+            "gregtechfoodoption:gtfo_meta_item:38",
+            "gregtechfoodoption:gtfo_meta_item:37",
+            "gregtechfoodoption:gtfo_meta_item:57",
+            "gregtechfoodoption:gtfo_meta_item:56",
+            "gregtechfoodoption:gtfo_meta_item:51",
+            "gregtechfoodoption:gtfo_meta_item:14",
+            "gregtechfoodoption:gtfo_meta_item:54",
+            "gregtechfoodoption:gtfo_meta_item:22",
+            "gregtechfoodoption:gtfo_meta_item:18",
+            "gregtechfoodoption:gtfo_meta_item:17",
+            "gregtechfoodoption:gtfo_meta_item:16"
 		]
 	}
 }

@@ -750,7 +750,12 @@
 			"xlfoodmod:strawberry_pie",
 			"xlfoodmod:taco",
 			"xlfoodmod:taco_salad",
-			"xlfoodmod:vegetable_soup"
+			"xlfoodmod:vegetable_soup",
+            "gregtechfoodoption:gtfo_meta_item:54",
+            "gregtechfoodoption:gtfo_meta_item:22",
+            "gregtechfoodoption:gtfo_meta_item:18",
+            "gregtechfoodoption:gtfo_meta_item:17",
+            "gregtechfoodoption:gtfo_meta_item:14"
 		]
 	}
 }
