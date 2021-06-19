@@ -1,6 +1,12 @@
 # Installed Mods
 
+ActuallyAdditions-1.12.2-r152.jar
+
+ActuallyBaubles-1.12-1.1.jar
+
 AdditionalEnchantedMiner-1.12.2-12.4.9.jar
+
+AE2WTLib-1.12.2-1.0.34.jar
 
 AE-Net-Vis-Tool-1.12.2-1.0.3.0-universal.jar
 
@@ -9,6 +15,8 @@ AkashicTome-1.2-12.jar
 AmbientSounds_v3.1.5_mc1.12.2.jar
 
 AnvilFix-1.12.2-1.0.5.jar
+
+Apotheosis-1.12.2-1.12.5.jar
 
 AppleSkin-mc1.12-1.0.14.jar
 
@@ -20,11 +28,19 @@ AromaBackup-1.12.2-3.0.0.0.b135.jar
 
 AutoRegLib-1.3-32.jar
 
+Avaritia-1.12.2-3.3.0.37-universal.jar
+
+Baubles-1.12-1.5.2.jar
+
+baubley-heart-canisters-1.12.2-1.2.3.jar
+
 BetterBuildersWands-1.12.2-0.13.2.271+5997513.jar
 
 BetterFps-1.4.8.jar
 
 BiblioCraft[v2.4.5][mc1.12.2].jar
+
+biggerpacketsplz-since1.8-1.2.jar
 
 BNBGamingLib-1.12.2-2.17.6.jar
 
@@ -42,6 +58,8 @@ ChickenChunks-1.12.2-2.4.2.74-universal.jar
 
 Chisel-MC1.12.2-1.0.2.45.jar
 
+ClientTweaks_1.12.2-3.1.11.jar
+
 CodeChickenLib-1.12.2-3.2.3.358-universal.jar
 
 CoFHCore-1.12.2-4.6.6.1-universal.jar
@@ -52,7 +70,9 @@ Controlling-3.0.10.jar
 
 CosmeticArmorReworked-1.12.2-v5a.jar
 
-CraftTweaker2-1.12-4.1.20.647.jar
+CraftingTweaks_1.12.2-8.1.9.jar
+
+CraftTweaker2-1.12-4.1.20.652.jar
 
 CreativeCore_v1.10.61_mc1.12.2.jar
 
@@ -65,6 +85,8 @@ CustomMainMenu-MC1.12.2-2.0.9.1.jar
 Cyclic-1.12.2-1.20.9.jar
 
 DankNull-1.12.2-1.7.101.jar
+
+deepmoblearning-1.12.2-2.5.4-universal.jar
 
 diethopper-1.1.jar
 
@@ -90,11 +112,15 @@ EnderIO-integration-forestry-1.12.2-5.3.70.jar
 
 EnderStorage-1.12.2-2.4.6.137-universal.jar
 
+environmentaltech-1.12.2-2.0.20.1.jar
+
 ExtraCells-1.12.2-2.6.5.jar
 
 extracpus-1.12.2-1.1.0.jar
 
 extrautils2-1.12-1.9.9.jar
+
+FarmingForBlockheads_1.12.2-3.1.28.jar
 
 FastFurnace-1.12.2-1.3.1.jar
 
@@ -129,6 +155,8 @@ future-mc-1.12.2-0.2.6.1.jar
 gravestone-1.10.3.jar
 
 Gregicality-1.12.2-0.22.5.jar
+
+GregTech Food Option-1.12.2-0.9.1.jar
 
 gregtech-1.12.2-1.15.1.735.jar
 
@@ -176,6 +204,8 @@ LunatriusCore-1.12.2-1.2.0.42-universal.jar
 
 Mantle-1.12-1.3.3.55.jar
 
+MCMultiPart-2.5.3.jar
+
 MobGrindingUtils-0.3.13.jar
 
 modtweaker-4.0.19.jar
@@ -198,6 +228,8 @@ noRecipeBook_v1.2.2formc1.12.2.jar
 
 Numina-1.12.2-1.0.38.jar
 
+Nutrition-1.12.2-4.7.0.jar
+
 oeintegration-2.3.4.jar
 
 OpenGlider-1.12.1-1.1.0.jar
@@ -208,15 +240,21 @@ Overloaded-1.12.2-0.0.59.jar
 
 p455w0rdslib-1.12.2-2.3.161.jar
 
+Patchouli-1.0-23.6.jar
+
 phosphor-forge-mc1.12.2-0.2.7-universal.jar
 
 Placebo-1.12.2-1.6.0.jar
+
+platforms-1.12.0-1.4.6.jar
 
 PortalGun-1.12.2-7.1.0.jar
 
 portality-1.12.2-1.2.3-15.jar
 
 powerchisels-1.0.0-beta-3.jar
+
+practicallogistics2-1.12.2-3.0.8-11.jar
 
 ProjectRed-1.12.2-4.9.4.120-Base.jar
 
@@ -226,9 +264,13 @@ ProjectRed-1.12.2-4.9.4.120-lighting.jar
 
 ProjectRed-1.12.2-4.9.4.120-world.jar
 
+Psi-r1.1-78.2.jar
+
 Quark-r1.6-179.jar
 
 railcraft-12.0.0.jar
+
+randompatches-1.12.2-1.22.1.10.jar
 
 RandomThings-MC1.12.2-4.2.7.4.jar
 
@@ -240,13 +282,17 @@ ResourceLoader-MC1.12.1-1.5.3.jar
 
 Scannable-MC1.12.2-1.6.3.26.jar
 
-simple-rpc-1.12.2-2.2-all.jar
+shetiphiancore-1.12.0-3.5.9.jar
 
 simplemagnets-1.1.2-mc1.12.jar
+
+simple-rpc-1.12.2-2.2-all.jar
 
 SimpleSmelteryAccelerator-1.0.1.jar
 
 simpleteleporters-1.12.2-3.0.2.jar
+
+SmoothFont-mc1.12.2-2.1.2.jar
 
 sonarcore-1.12.2-5.0.19-20.jar
 
@@ -258,15 +304,15 @@ StorageDrawers-1.12.2-5.4.2.jar
 
 StorageDrawersExtras-1.12-3.1.0.jar
 
-supermartijn642configlib-1.0.6-mc1.12.jar
+supermartijn642configlib-1.0.7-mc1.12.jar
 
-supermartijn642corelib-1.0.5-mc1.12.jar
+supermartijn642corelib-1.0.8-mc1.12.jar
 
 TConstruct-1.12.2-2.13.0.183.jar
 
 tesla-core-lib-1.12.2-1.0.17.jar
 
-tesseract-1.0.20-mc1.12.jar
+tesseract-1.0.21-mc1.12.jar
 
 theoneprobe-1.12-1.4.28.jar
 
@@ -278,6 +324,8 @@ TinkerToolLeveling-1.12.2-1.1.0.jar
 
 Toast Control-1.12.2-1.8.1.jar
 
+ToolBelt-1.12.2-1.9.13.jar
+
 topaddons-1.12.2-1.13.0.jar
 
 Translocators-1.12.2-2.5.2.81-universal.jar
@@ -286,9 +334,15 @@ u_team_core-1.12.2-2.2.5.147.jar
 
 useful_backpacks-1.12.2-1.5.4.85.jar
 
+valkyrielib-1.12.2-2.0.20.1.jar
+
 volumetricflask-0.18.jar
 
 WaterMechanicsBackport-1.0.3-1.12.2-NETHERFIX.jar
+
+WirelessCraftingTerminal-1.12.2-3.12.97.jar
+
+WirelessFluidTerminal-1.12.2-1.0.4.jar
 
 Xaeros_Minimap_21.10.0.2_Forge_1.12.jar
 
