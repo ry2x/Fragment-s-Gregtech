@@ -407,33 +407,33 @@ assembler.recipeBuilder()
 	.inputs(<gtadditions:ga_armor:6>,<gtadditions:ga_meta_item2:7>*2,<gregtech:meta_item_1:12745>*8,<gregtech:meta_item_1:32697>,<ore:circuitSuperconductor>*4,<gregtech:meta_item_1:32677>*2)
 	.outputs(<overloaded:multi_helmet>)
 	.duration(6000)
-	.EUt(540000)
+	.EUt(13700)
 	.buildAndRegister();
 assembler.recipeBuilder()
 	.inputs(<gtadditions:ga_armor:13>,<gtadditions:ga_meta_item2:7>*2,<gregtech:meta_item_1:12745>*8,<gregtech:meta_item_1:32687>,<ore:circuitSuperconductor>*4,<gregtech:meta_item_1:32677>*2)
 	.outputs(<overloaded:multi_chestplate>)
 	.duration(6000)
-	.EUt(540000)
+	.EUt(13700)
 	.buildAndRegister();
 assembler.recipeBuilder()
 	.inputs(<gtadditions:ga_armor:5>,<gtadditions:ga_meta_item2:7>*2,<gregtech:meta_item_1:12745>*8,<gregtech:meta_item_1:32608>,<ore:circuitSuperconductor>*4,<gregtech:meta_item_1:32677>*2)
 	.outputs(<overloaded:multi_leggings>)
 	.duration(6000)
-	.EUt(540000)
+	.EUt(13700)
 	.buildAndRegister();
 assembler.recipeBuilder()
 	.inputs(<gtadditions:ga_armor:7>,<gtadditions:ga_meta_item2:7>*2,<gregtech:meta_item_1:12745>*8,<gregtech:meta_item_1:32647>,<ore:circuitSuperconductor>*4,<gregtech:meta_item_1:32677>*2)
 	.outputs(<overloaded:multi_boots>)
 	.duration(6000)
-	.EUt(540000)
+	.EUt(13700)
 	.buildAndRegister();
 	#railguns
 assembler.recipeBuilder()
-	.inputs(<gtadditions:ga_meta_item:32372>*3,<gtadditions:ga_meta_item:32378>*5,<gtadditions:ga_meta_item:32354>*6,<ore:circuitInfinite>*6,<gtadditions:ga_meta_item2:2>*2,<ore:ingotDoubleUhvSuperconductorBase>*2)
+	.inputs(<overloaded:energy_core>,<ore:circuitSuperconductor>,<ore:wireGtDoubleZpmSuperconductor>*8,<ore:plateDarkSteel>*8,<ore:pipeMediumNaquadah>*3)
 	.fluidInputs([<liquid:cryotheum>*8000])
 	.outputs(<overloaded:railgun>)
 	.duration(6000)
-	.EUt(640000)
+	.EUt(13700)
 	.buildAndRegister();
 
 //drum recipes fix
