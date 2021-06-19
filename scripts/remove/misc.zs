@@ -280,3 +280,6 @@ recipes.removeByRecipeName("practicallogistics2:tile.entitynode108");
 
 //TOP
 JEI.removeAndHide(<theoneprobe:probe_goggles>);
+
+//avaritia
+JEI.removeAndHide(<avaritia:matter_cluster>);
