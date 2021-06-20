@@ -31,6 +31,7 @@ assembler.recipeBuilder()
 	.inputs(<ore:plateDiamond>*8,<ore:gemFlawedDiamond>,<ore:stickDiamond>*7)
 	.outputs(<avaritia:resource>)
 	.EUt(8000)
+	.duration(500)
 	.buildAndRegister();
 
 //crystal matrix
@@ -54,7 +55,9 @@ mods.avaritia.ExtremeCrafting.addShaped("re_neutron_collector",<avaritia:neutron
 	<minecraft:daylight_detector>,null,null,
 	<minecraft:daylight_detector>,<ore:blockIron>],
 
-	[<ore:blockIron>,null,null,null,null,null,null,null,<ore:blockIron>],
+	[<ore:blockIron>,<avaritia:resource:1>,<avaritia:resource:1>,
+	<avaritia:resource:1>,<avaritia:resource:1>,<avaritia:resource:1>,
+	<avaritia:resource:1>,<avaritia:resource:1>,<ore:blockIron>],
 
 	[<ore:blockIron>,null,null,null,<ore:blockTritanium>,null,null,null,<ore:blockIron>],
 
@@ -63,9 +66,9 @@ mods.avaritia.ExtremeCrafting.addShaped("re_neutron_collector",<avaritia:neutron
 	<gregtech:meta_item_1:32696>,<avaritia:resource:1>,<ore:blockIron>],
 
 	[<ore:blockIron>,null,null,null,<ore:blockTritanium>,null,null,null,<ore:blockIron>],
-	[<ore:blockIron>,null,<ore:blockIron>,
-	<ore:blockIron>,null,<ore:blockIron>,
-	<ore:blockIron>,null,<ore:blockIron>],
+	[<ore:blockIron>,<avaritia:resource:1>,<ore:blockIron>,
+	<ore:blockIron>,<avaritia:resource:1>,<ore:blockIron>,
+	<ore:blockIron>,<avaritia:resource:1>,<ore:blockIron>],
 
 	[<ore:blockIron>,null,<ore:blockIron>,
 	<ore:blockIron>,null,<ore:blockIron>,
@@ -77,7 +80,7 @@ mods.avaritia.ExtremeCrafting.addShaped("re_neutron_collector",<avaritia:neutron
 ]);
 
 //record fragment
-recipes.removeByRecipeName("avaritia:record_fragment");
+recipes.removeByRecipeName("avaritia:items/record_fragment");
 macerator.recipeBuilder()
 	.inputs(<ore:record>)
 	.outputs(<avaritia:resource:7>*8)
@@ -111,14 +114,4 @@ compressor.recipeBuilder()
 //ultimate stew
 mods.avaritia.ExtremeCrafting.remove(<avaritia:ultimate_stew>);
 mods.avaritia.ExtremeCrafting.addShapeless("re_ultimate_strew",<avaritia:ultimate_stew>*4, [
-	<avaritia:resource:2>, <minecraft:carrot>, <minecraft:wheat_seeds>,
-	<minecraft:wheat>, <minecraft:bread>, <minecraft:porkchop>,
-	<minecraft:golden_apple>, <minecraft:golden_apple:1>, <minecraft:egg>,
-	<minecraft:dye:3>, <minecraft:cooked_fish>, <minecraft:cooked_fish:1>,
-	<minecraft:pumpkin_pie>, <minecraft:chorus_fruit>, <minecraft:beetroot>,
-	<minecraft:golden_carrot>, <minecraft:fish>, <minecraft:fish:1>, <minecraft:fish:2>,
-	<minecraft:potato>, <minecraft:mutton>, <minecraft:rabbit>, <minecraft:poisonous_potato>,
-	<minecraft:fish:3>, <minecraft:pumpkin_seeds>, <minecraft:melon_seeds>,
-	<actuallyadditions:item_food:5>, <gregtechfoodoption:gtfo_meta_item:14>, <gregtechfoodoption:gtfo_meta_item:5>,
-	<gregtechfoodoption:gtfo_meta_item:19>, <gregtechfoodoption:gtfo_meta_item:22>
 ]);
