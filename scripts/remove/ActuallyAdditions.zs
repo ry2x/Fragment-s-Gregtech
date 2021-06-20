@@ -40,7 +40,8 @@ val removal as IItemStack[] = [
 	<actuallyadditions:item_drill:*>,
 	<actuallyadditions:block_compost>,
 	<actuallyadditions:item_misc:22>,
-	<actuallyadditions:item_misc:21>
+	<actuallyadditions:item_misc:21>,
+	<actuallyadditions:item_chest_to_crate_upgrade>
 ];
 
 for i in removal {
