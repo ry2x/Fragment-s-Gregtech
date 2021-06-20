@@ -228,8 +228,6 @@ noRecipeBook_v1.2.2formc1.12.2.jar
 
 Numina-1.12.2-1.0.38.jar
 
-Nutrition-1.12.2-4.7.0.jar
-
 oeintegration-2.3.4.jar
 
 OpenGlider-1.12.1-1.1.0.jar
