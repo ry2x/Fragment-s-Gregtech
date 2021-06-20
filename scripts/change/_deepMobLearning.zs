@@ -5,6 +5,7 @@ import mods.gregtech.recipe.RecipeMap;
 import crafttweaker.item.IItemStack;
 
 val assembler = RecipeMap.getByName("assembler");
+val forming = RecipeMap.getByName("forming_press");
 
 //scoot machine casing
 recipes.removeByRecipeName("deepmoblearning:recipe2_machine_casing");
@@ -73,3 +74,12 @@ recipes.addShaped(<deepmoblearning:glitch_infused_boots>,[
 	[glitch,infinity,glitch],
 	[glitch,null,glitch]
 ]);
+
+//card
+recipes.removeByRecipeName("deepmoblearning:date_model/data_model_blank");
+forming.recipeBuilder()
+	.inputs(<ore:circuitBasic>,<practicallogistics2:stoneplate>,<ore:plateTin>)
+	.outputs(<deepmoblearning:data_model_blank>)
+	.EUt(128)
+	.duration(500)
+	.buildAndRegister();
