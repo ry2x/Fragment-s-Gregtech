@@ -127,3 +127,44 @@ mods.avaritia.ExtremeCrafting.addShapeless("re_ultimate_strew",<avaritia:ultimat
 	<gregtechfoodoption:gtfo_meta_item:17>, <gregtechfoodoption:gtfo_meta_item:18>, <gregtechfoodoption:gtfo_meta_item:30>,
 	<gregtechfoodoption:gtfo_meta_item:22>, <gregtechfoodoption:gtfo_meta_item:16>, <minecraft:cake>
 ]);
+
+//neutron compressor
+mods.avaritia.ExtremeCrafting.remove(<avaritia:neutronium_compressor>);
+mods.avaritia.ExtremeCrafting.addShaped("re_neutron_compressor",<avaritia:neutronium_compressor>, [
+	[<avaritia:resource:1>,<ore:blockIron>,<ore:blockIron>,
+	<gregtech:meta_item_1:32750>,<gregtech:meta_item_1:32750>,<gregtech:meta_item_1:32750>,
+	<ore:blockIron>,<ore:blockIron>,<avaritia:resource:1>],
+
+	[<ore:blockIron>,<ore:blockIron>,<ore:blockIron>,
+	<ore:blockIron>,<ore:ingotCosmicNeutronium>,<ore:blockIron>,
+	<ore:blockIron>,<ore:blockIron>,<ore:blockIron>],
+
+	[<avaritia:resource:1>,<ore:blockIron>,<ore:blockIron>,
+	<ore:blockIron>,<ore:blockIron>,<ore:blockIron>,
+	<ore:blockIron>,<ore:blockIron>,<avaritia:resource:1>],
+
+	[<avaritia:resource:1>,<ore:blockIron>,<ore:blockIron>,
+	<ore:ingotCosmicNeutronium>,<ore:ingotCosmicNeutronium>,<ore:ingotCosmicNeutronium>,
+	<ore:blockIron>,<ore:blockIron>,<avaritia:resource:1>],
+
+	[<ore:blockIron>,<ore:blockCosmicNeutronium>,<ore:blockIron>,
+	<ore:blockCosmicNeutronium>,<ore:blockNeutronium>,<ore:blockCosmicNeutronium>,
+	<ore:blockIron>,<ore:blockCosmicNeutronium>,<ore:blockIron>],
+
+	[<avaritia:resource:1>,<ore:blockIron>,<ore:blockIron>,
+	<ore:ingotCosmicNeutronium>,<ore:ingotCosmicNeutronium>,<ore:ingotCosmicNeutronium>,
+	<ore:blockIron>,<ore:blockIron>,<avaritia:resource:1>],
+
+	[<avaritia:resource:1>,<ore:blockIron>,<ore:blockIron>,
+	<ore:blockIron>,<ore:blockCrystalMatrix>,<ore:blockIron>,
+	<ore:blockIron>,<ore:blockIron>,<avaritia:resource:1>],
+
+	[<ore:blockIron>,<ore:blockIron>,<ore:blockIron>,
+	<ore:blockIron>,<gregtech:machine:2070>,<ore:blockIron>,
+	<ore:blockIron>,<ore:blockIron>,<ore:blockIron>],
+
+	[<avaritia:resource:1>,<ore:blockIron>,<ore:blockIron>,
+	<ore:blockCrystalMatrix>,<ore:blockCrystalMatrix>,<ore:blockCrystalMatrix>,
+	<ore:blockIron>,<ore:blockIron>,<avaritia:resource:1>]
+]);
+
