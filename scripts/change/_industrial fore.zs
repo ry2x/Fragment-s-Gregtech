@@ -254,3 +254,47 @@ for i in loadedMods["industrialforegoing"].items {
     recipes.replaceAllOccurences(<industrialforegoing:pink_slime_ingot>,<ore:ingotTungstenSteel>,i);
 }
 print("end indus");
+
+//------start tesla------//
+//base addon
+recipes.removeByRecipeName("teslacorelib:base_addon_item");
+recipes.addShaped(<teslacorelib:base_addon>,[
+	[<ore:plateSterlingSilver>,<ore:plateSterlingSilver>,<ore:plateSterlingSilver>],
+	[<ore:plateSterlingSilver>,<ore:paneGlassCyan>,<ore:plateSterlingSilver>],
+	[<ore:plateSterlingSilver>,<ore:plateSterlingSilver>,<ore:plateSterlingSilver>]
+]);
+
+//energy update
+	#1
+recipes.removeByRecipeName("teslacorelib:energy_upgrade_tier1");
+recipes.addShaped(<teslacorelib:energy_tier1>,[
+	[<ore:LVcap>,<ore:LVcap>,<ore:LVcap>],
+	[<ore:LVcap>,<teslacorelib:base_addon>,<ore:LVcap>],
+	[<ore:LVcap>,<ore:LVcap>,<ore:LVcap>]
+]);
+
+	#2
+recipes.removeByRecipeName("teslacorelib:energy_upgrade_tier2_2");
+recipes.addShaped(<teslacorelib:energy_tier2>,[
+	[<ore:MVcap>,<ore:MVcap>,<ore:MVcap>],
+	[<ore:MVcap>,<teslacorelib:base_addon>,<ore:MVcap>],
+	[<ore:MVcap>,<ore:MVcap>,<ore:MVcap>]
+]);
+
+//speed upgrade
+	#1
+recipes.removeByRecipeName("teslacorelib:speed_upgrade_tier1");
+recipes.addShaped(<teslacorelib:speed_tier1>,[
+	[<ore:gearStainlessSteel>,<ore:plateStainlessSteel>,<ore:gearStainlessSteel>],
+	[<ore:gearStainlessSteel>,<teslacorelib:base_addon>,<ore:gearStainlessSteel>],
+	[<ore:gearStainlessSteel>,<gregtech:meta_item_1:32670>,<ore:gearStainlessSteel>]
+]);
+
+	#2
+recipes.removeByRecipeName("teslacorelib:speed_upgrade_tier2_2");
+recipes.addShaped(<teslacorelib:speed_tier1>,[
+	[<ore:gearDiamond>,<ore:plateDiamond>,<ore:gearDiamond>],
+	[<ore:gearDiamond>,<teslacorelib:base_addon>,<ore:gearDiamond>],
+	[<ore:gearDiamond>,<gregtech:meta_item_1:32671>,<ore:gearDiamond>]
+]);
+
