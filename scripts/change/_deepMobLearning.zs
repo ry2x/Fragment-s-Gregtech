@@ -27,7 +27,7 @@ assembler.recipeBuilder()
 
 //loot fabricator
 recipes.removeByRecipeName("deepmoblearning:extraction_chamber/extraction_chamber");
-recipes.addShaped(extraction_chamber,[
+recipes.addShaped(<deepmoblearning:extraction_chamber>,[
 	[<ore:circuitElite>,<gregtech:meta_item_1:32674>,<ore:circuitElite>],
 	[<ore:wireGtOctalIvSuperconductor>,<deepmoblearning:machine_casing>,<ore:wireGtOctalIvSuperconductor>],
 	[<ore:circuitElite>,<gregtech:meta_item_1:32674>,<ore:circuitElite>]
