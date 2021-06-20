@@ -114,4 +114,16 @@ compressor.recipeBuilder()
 //ultimate stew
 mods.avaritia.ExtremeCrafting.remove(<avaritia:ultimate_stew>);
 mods.avaritia.ExtremeCrafting.addShapeless("re_ultimate_strew",<avaritia:ultimate_stew>*4, [
+	<minecraft:mushroom_stew>, <minecraft:wheat_seeds>, <minecraft:wheat>,
+	<minecraft:bread>, <minecraft:apple>, <minecraft:golden_apple>,
+	<minecraft:golden_apple:1>, <bhc:relic_apple>, <minecraft:milk_bucket>,
+	<minecraft:egg>, <minecraft:beetroot_soup>, <minecraft:cooked_fish>,
+	<minecraft:cooked_fish:1>, <minecraft:melon>, <minecraft:chorus_fruit>,
+	<minecraft:beetroot>, <minecraft:carrot>, <minecraft:golden_carrot>,
+	<minecraft:fish>, <minecraft:fish:1>, <minecraft:fish:2>,
+	<minecraft:potato>, <minecraft:rotten_flesh>, <minecraft:fish:3>,
+	<minecraft:sugar>, <minecraft:pumpkin_seeds>, <minecraft:melon_seeds>,
+	<minecraft:nether_wart>, <gregtechfoodoption:gtfo_meta_item:19>, <gregtechfoodoption:gtfo_meta_item:35>,
+	<gregtechfoodoption:gtfo_meta_item:17>, <gregtechfoodoption:gtfo_meta_item:18>, <gregtechfoodoption:gtfo_meta_item:30>,
+	<gregtechfoodoption:gtfo_meta_item:22>, <gregtechfoodoption:gtfo_meta_item:16>, <minecraft:cake>
 ]);
