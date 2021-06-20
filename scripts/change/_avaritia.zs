@@ -51,8 +51,8 @@ mods.avaritia.ExtremeCrafting.addShaped("re_neutron_collector",<avaritia:neutron
 	<minecraft:daylight_detector>,<minecraft:daylight_detector>,<minecraft:daylight_detector>,
 	<minecraft:daylight_detector>,<minecraft:daylight_detector>,<ore:blockIron>],
 
-	[<ore:blockIron>,<minecraft:daylight_detector>,null,null,
-	<minecraft:daylight_detector>,null,null,
+	[<ore:blockIron>,<minecraft:daylight_detector>,<gregtech:meta_item_1:32676>,<gregtech:meta_item_1:32676>,
+	<minecraft:daylight_detector>,<gregtech:meta_item_1:32696>,<gregtech:meta_item_1:32696>,
 	<minecraft:daylight_detector>,<ore:blockIron>],
 
 	[<ore:blockIron>,<avaritia:resource:1>,<avaritia:resource:1>,
