@@ -212,7 +212,7 @@ assembler.recipeBuilder()
 	.EUt(512)
 	.buildAndRegister();
 assembler.recipeBuilder()
-	.inputs(<ore:woolLightBlue>*2,<ore:wireGtSingleHssg>*4,<ore:plateIron>*2,<gregtech:meta_item_1:32605>,<ore:dustDiamond>*2)
+	.inputs(<ore:woolLightBlue>*2,<ore:wireGtSingleHssg>*4,<ore:plateIron>*2,<gtadditions:ga_meta_item2:7>,<ore:dustDiamond>*2)
 	.outputs(<ore:componentEVCapacitor>.firstItem*1)
 	.duration(200)
 	.EUt(524288)
