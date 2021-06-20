@@ -40,7 +40,7 @@ assembler.recipeBuilder()
 	.outputs(<deepmoblearning:deep_learner>)
 	.EUt(4000)
 	.duration(500)
-	.buildAndRegister()
+	.buildAndRegister();
 
 //armor
 val glitch as IItemStack = <deepmoblearning:glitch_infused_ingot>;
