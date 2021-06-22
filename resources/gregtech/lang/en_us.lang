@@ -1,6 +1,6 @@
 material.stellar_alloy=Stellar
 material.dark_steel=Dark Steel
 material.psi_metal=Psimetal
-material.ebony=Ebony
-material.ivory=Ivory
-material.ardite=Ardite
+material.ebony=Ebony Psimetal
+material.ivory=Ivory Psimetal
+material.ardite=Ardite Psimetal
