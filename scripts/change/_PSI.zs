@@ -1,3 +1,8 @@
+/*
+don't use oredict of PSI
+getting oredict by oredict[] is OK, but calling <ore:*> directly is bad way
+*/
+
 //import crafttweaker II
 import crafttweaker.item.IItemStack;
 import crafttweaker.liquid.ILiquidStack;
@@ -35,7 +40,7 @@ for i in ingotsAlloy {
 	var psi as IItemStack = oreDict["ingot"~i~"Psi"].firstItem;
 	var substance = oreDict["substance"~i];
 	alloy.recipeBuilder()
-		.inputs(substance,<ore:ingotPsi>)
+		.inputs(substance,<psi:material:1>)
 		.outputs(psi)
 		.EUt(500)
 		.duration(120)
@@ -112,19 +117,17 @@ val liquid as ILiquidStack[] = [
 ];
 
 for i in liquid {
-		#1
 	assembler.recipeBuilder()
-		.inputs(<ore:circuitBasic>,<ore:dustPsi>,<ore:ingotIron>*4)
-		.outputs(<psi:cad_core>)
-		.notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:5}))
+		.inputs(<ore:ingotIron>*4,<ore:circuitBasic>,<psi:material>)
+		.notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 1}))
 		.fluidInputs(i)
+		.outputs(<psi:cad_core>)
 		.EUt(128)
 		.duration(300)
 		.buildAndRegister();
 
-		#2
 	assembler.recipeBuilder()
-		.inputs(<ore:circuitBasic>,<ore:dustPsi>,<ore:ingotPsi>*4)
+		.inputs(<ore:circuitBasic>,<psi:material>,<psi:material:1>*4)
 		.outputs(<psi:cad_core:1>)
 		.notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:5}))
 		.fluidInputs(i)
@@ -132,9 +135,8 @@ for i in liquid {
 		.duration(300)
 		.buildAndRegister();
 
-		#3
 	assembler.recipeBuilder()
-		.inputs(<ore:circuitGood>,<ore:gemPsi>,<ore:ingotPsi>*4)
+		.inputs(<ore:circuitGood>,<psi:material:2>,<psi:material:1>*4)
 		.outputs(<psi:cad_core:2>)
 		.notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:5}))
 		.fluidInputs(i)
@@ -142,9 +144,8 @@ for i in liquid {
 		.duration(300)
 		.buildAndRegister();
 
-		#4
 	assembler.recipeBuilder()
-		.inputs(<ore:circuitGood>,<randomthings:ingredient:5>,<ore:gemPsi>*2,<ore:ingotPsi>*2)
+		.inputs(<ore:circuitGood>,<randomthings:ingredient:5>,<psi:material:2>*2,<psi:material:1>*2)
 		.outputs(<psi:cad_core:3>)
 		.notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:5}))
 		.fluidInputs(i)
@@ -152,9 +153,8 @@ for i in liquid {
 		.duration(300)
 		.buildAndRegister();
 
-		#5
 	assembler.recipeBuilder()
-		.inputs(<ore:circuitGood>,<gtadditions:ga_meta_item:32018>,<ore:gemPsi>*2,<ore:ingotPsi>*2)
+		.inputs(<ore:circuitGood>,<gtadditions:ga_meta_item:32018>,<psi:material:2>*2,<psi:material:1>*2)
 		.outputs(<psi:cad_core:4>)
 		.notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:5}))
 		.fluidInputs(i)
