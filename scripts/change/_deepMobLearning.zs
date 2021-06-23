@@ -61,7 +61,7 @@ recipes.addShaped(<deepmoblearning:glitch_infused_chestplate>,[
 ]);
 
 	#leggins
-recipes.removeByRecipeName("deepmoblearning:armor_tools/recipe4_leggins");
+recipes.removeByRecipeName("deepmoblearning:armor_tools/recipe4_leggings");
 recipes.addShaped(<deepmoblearning:glitch_infused_leggings>,[
 	[glitch,glitch,glitch],
 	[glitch,null,glitch],
