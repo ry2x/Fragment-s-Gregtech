@@ -11,8 +11,8 @@ import mods.jei.JEI;
 //import greg
 import mods.gregtech.recipe.RecipeMap;
 
-val alloy = RecipeMap.getByName("alloy_smelter");
-val assembler = RecipeMap.getByName("assembler");
+val alloy = RecipeMap.getByName("alloy_smelter");
+val assembler = RecipeMap.getByName("assembler");
 
 //ingots
 	#removal
@@ -115,7 +115,7 @@ assembler.recipeBuilder()
 	.buildAndRegister();
 
 	#2
-assembler.recipeBuilder
+assembler.recipeBuilder()
 	.inputs(<ore:circuitBasic>,<ore:dustPsi>,<ore:ingotPsi>*4)
 	.outputs(<psi:cad_core:1>)
 	.property("circuit", 5)
@@ -124,7 +124,7 @@ assembler.recipeBuilder
 	.buildAndRegister();
 
 	#3
-assembler.recipeBuilder
+assembler.recipeBuilder()
 	.inputs(<ore:circuitGood>,<ore:gemPsi>,<ore:ingotPsi>*4)
 	.outputs(<psi:cad_core:2>)
 	.property("circuit", 5)
@@ -133,8 +133,8 @@ assembler.recipeBuilder
 	.buildAndRegister();
 
 	#4
-assembler.recipeBuilder
-	.inputs(<ore:circuitGood>,<randomthings:ingredient:5>,<ore:gemPsi>*2,<ore:ingotPsi>*)
+assembler.recipeBuilder()
+	.inputs(<ore:circuitGood>,<randomthings:ingredient:5>,<ore:gemPsi>*2,<ore:ingotPsi>*2)
 	.outputs(<psi:cad_core:3>)
 	.property("circuit", 5)
 	.EUt(500)
@@ -142,8 +142,8 @@ assembler.recipeBuilder
 	.buildAndRegister();
 
 	#5
-assembler.recipeBuilder
-	.inputs(<ore:circuitGood>,<gtadditions:ga_meta_item:32018>,<ore:gemPsi>*2,<ore:ingotPsi>*)
+assembler.recipeBuilder()
+	.inputs(<ore:circuitGood>,<gtadditions:ga_meta_item:32018>,<ore:gemPsi>*2,<ore:ingotPsi>*2)
 	.outputs(<psi:cad_core:4>)
 	.property("circuit", 5)
 	.EUt(8000)
