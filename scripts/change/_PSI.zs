@@ -11,8 +11,8 @@ import mods.jei.JEI;
 //import greg
 import mods.gregtech.recipe.RecipeMap;
 
-val alloy = RecipeMap.getByName("alloy_smelter");
-val assembler = RecipeMap.getByName("assembler");
+val alloy = RecipeMap.getByName("alloy_smelter");
+val assembler = RecipeMap.getByName("assembler");
 
 //ingots
 	#removal
