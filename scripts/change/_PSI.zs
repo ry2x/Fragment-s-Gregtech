@@ -105,47 +105,60 @@ for n in core {
 }
 
 	#assembly
-	#1
-assembler.recipeBuilder()
-	.inputs(<ore:circuitBasic>,<ore:dustPsi>,<ore:ingotIron>*4)
-	.outputs(<psi:cad_core>)
-	.property("circuit", 5)
-	.EUt(128)
-	.duration(300)
-	.buildAndRegister();
+val liquid as ILiquidStack[] = [
+	<liquid:soldering_alloy>*72,
+	<liquid:tin>*144,
+	<liquid:lead>*288
+];
 
-	#2
-assembler.recipeBuilder()
-	.inputs(<ore:circuitBasic>,<ore:dustPsi>,<ore:ingotPsi>*4)
-	.outputs(<psi:cad_core:1>)
-	.property("circuit", 5)
-	.EUt(128)
-	.duration(300)
-	.buildAndRegister();
+for i in liquid {
+		#1
+	assembler.recipeBuilder()
+		.inputs(<ore:circuitBasic>,<ore:dustPsi>,<ore:ingotIron>*4)
+		.outputs(<psi:cad_core>)
+		.notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:5}))
+		.fluidInputs(i)
+		.EUt(128)
+		.duration(300)
+		.buildAndRegister();
 
-	#3
-assembler.recipeBuilder()
-	.inputs(<ore:circuitGood>,<ore:gemPsi>,<ore:ingotPsi>*4)
-	.outputs(<psi:cad_core:2>)
-	.property("circuit", 5)
-	.EUt(128)
-	.duration(300)
-	.buildAndRegister();
+		#2
+	assembler.recipeBuilder()
+		.inputs(<ore:circuitBasic>,<ore:dustPsi>,<ore:ingotPsi>*4)
+		.outputs(<psi:cad_core:1>)
+		.notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:5}))
+		.fluidInputs(i)
+		.EUt(128)
+		.duration(300)
+		.buildAndRegister();
 
-	#4
-assembler.recipeBuilder()
-	.inputs(<ore:circuitGood>,<randomthings:ingredient:5>,<ore:gemPsi>*2,<ore:ingotPsi>*2)
-	.outputs(<psi:cad_core:3>)
-	.property("circuit", 5)
-	.EUt(500)
-	.duration(300)
-	.buildAndRegister();
+		#3
+	assembler.recipeBuilder()
+		.inputs(<ore:circuitGood>,<ore:gemPsi>,<ore:ingotPsi>*4)
+		.outputs(<psi:cad_core:2>)
+		.notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:5}))
+		.fluidInputs(i)
+		.EUt(128)
+		.duration(300)
+		.buildAndRegister();
 
-	#5
-assembler.recipeBuilder()
-	.inputs(<ore:circuitGood>,<gtadditions:ga_meta_item:32018>,<ore:gemPsi>*2,<ore:ingotPsi>*2)
-	.outputs(<psi:cad_core:4>)
-	.property("circuit", 5)
-	.EUt(8000)
-	.duration(200)
-	.buildAndRegister();
+		#4
+	assembler.recipeBuilder()
+		.inputs(<ore:circuitGood>,<randomthings:ingredient:5>,<ore:gemPsi>*2,<ore:ingotPsi>*2)
+		.outputs(<psi:cad_core:3>)
+		.notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:5}))
+		.fluidInputs(i)
+		.EUt(500)
+		.duration(300)
+		.buildAndRegister();
+
+		#5
+	assembler.recipeBuilder()
+		.inputs(<ore:circuitGood>,<gtadditions:ga_meta_item:32018>,<ore:gemPsi>*2,<ore:ingotPsi>*2)
+		.outputs(<psi:cad_core:4>)
+		.notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:5}))
+		.fluidInputs(i)
+		.EUt(8000)
+		.duration(200)
+		.buildAndRegister();
+}
