@@ -34,6 +34,10 @@
   ],
   "custom entries": {
     "__comment": "You can define additional items to be sold by the Market here. Defaults can be overridden. Prefix with ! to blacklist instead.",
-    "examplemod:example_item": "2*minecraft:emerald"
+    "examplemod:example_item": "2*minecraft:emerald",
+    "actuallyadditions:item_coffee_seed" : "2*minecraft:emerald",
+    "actuallyadditions:item_flax_seed" : "2*minecraft:emerald",
+    "actuallyadditions:item_canola_seed" : "2*minecraft:emerald",
+    "actuallyadditions:item_rice_seed" : "2*minecraft:emerald"
   }
 }
