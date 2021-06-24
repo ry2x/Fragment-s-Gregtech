@@ -283,6 +283,3 @@ JEI.removeAndHide(<theoneprobe:probe_goggles>);
 
 //avaritia
 JEI.removeAndHide(<avaritia:matter_cluster>);
-
-//PSI
-JEI.removeAndHide(<psi:cad>.withTag({componentCORE: {id: "psi:cad_core", Count: 1 as byte, Damage: 3 as short}, componentASSEMBLY: {id: "psi:cad_assembly", Count: 1 as byte, Damage: 5 as short}, componentSOCKET: {id: "psi:cad_socket", Count: 1 as byte, Damage: 3 as short}, componentBATTERY: {id: "psi:cad_battery", Count: 1 as byte, Damage: 2 as short}}));
