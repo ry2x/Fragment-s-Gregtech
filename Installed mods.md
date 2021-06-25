@@ -112,8 +112,6 @@ EnderIO-integration-forestry-1.12.2-5.3.70.jar
 
 EnderStorage-1.12.2-2.4.6.137-universal.jar
 
-environmentaltech-1.12.2-2.0.20.1.jar
-
 ExtraCells-1.12.2-2.6.5.jar
 
 extracpus-1.12.2-1.1.0.jar
