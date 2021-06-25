@@ -45,5 +45,5 @@ val removal as IItemStack[] = [
 ];
 
 for i in removal {
-	mods.jei.JEI.hide(i);
+	mods.jei.JEI.removeAndHide(i);
 }
