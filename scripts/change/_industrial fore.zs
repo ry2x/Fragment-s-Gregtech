@@ -275,6 +275,7 @@ recipes.addShaped(<teslacorelib:energy_tier1>,[
 
 	#2
 recipes.removeByRecipeName("teslacorelib:energy_upgrade_tier_2_2");
+recipes.removeByRecipeName("teslacorelib:energy_upgrade_tier_2_1");
 recipes.addShaped(<teslacorelib:energy_tier2>,[
 	[<ore:MVcap>,<ore:MVcap>,<ore:MVcap>],
 	[<ore:MVcap>,<teslacorelib:base_addon>,<ore:MVcap>],
@@ -292,7 +293,8 @@ recipes.addShaped(<teslacorelib:speed_tier1>,[
 
 	#2
 recipes.removeByRecipeName("teslacorelib:speed_upgrade_tier_2_2");
-recipes.addShaped(<teslacorelib:speed_tier1>,[
+recipes.removeByRecipeName("teslacorelib:speed_upgrade_tier_2_1");
+recipes.addShaped(<teslacorelib:speed_tier2>,[
 	[<ore:gearDiamond>,<ore:plateDiamond>,<ore:gearDiamond>],
 	[<ore:gearDiamond>,<teslacorelib:base_addon>,<ore:gearDiamond>],
 	[<ore:gearDiamond>,<gregtech:meta_item_1:32671>,<ore:gearDiamond>]
