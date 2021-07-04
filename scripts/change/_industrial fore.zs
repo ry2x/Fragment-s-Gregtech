@@ -266,7 +266,7 @@ recipes.addShaped(<teslacorelib:base_addon>,[
 
 //energy update
 	#1
-recipes.removeByRecipeName("teslacorelib:energy_upgrade_tier1");
+recipes.removeByRecipeName("teslacorelib:energy_upgrade_tier_1");
 recipes.addShaped(<teslacorelib:energy_tier1>,[
 	[<ore:LVcap>,<ore:LVcap>,<ore:LVcap>],
 	[<ore:LVcap>,<teslacorelib:base_addon>,<ore:LVcap>],
@@ -274,7 +274,7 @@ recipes.addShaped(<teslacorelib:energy_tier1>,[
 ]);
 
 	#2
-recipes.removeByRecipeName("teslacorelib:energy_upgrade_tier2_2");
+recipes.removeByRecipeName("teslacorelib:energy_upgrade_tier_2_2");
 recipes.addShaped(<teslacorelib:energy_tier2>,[
 	[<ore:MVcap>,<ore:MVcap>,<ore:MVcap>],
 	[<ore:MVcap>,<teslacorelib:base_addon>,<ore:MVcap>],
@@ -283,7 +283,7 @@ recipes.addShaped(<teslacorelib:energy_tier2>,[
 
 //speed upgrade
 	#1
-recipes.removeByRecipeName("teslacorelib:speed_upgrade_tier1");
+recipes.removeByRecipeName("teslacorelib:speed_upgrade_tier_1");
 recipes.addShaped(<teslacorelib:speed_tier1>,[
 	[<ore:gearStainlessSteel>,<ore:plateStainlessSteel>,<ore:gearStainlessSteel>],
 	[<ore:gearStainlessSteel>,<teslacorelib:base_addon>,<ore:gearStainlessSteel>],
@@ -291,7 +291,7 @@ recipes.addShaped(<teslacorelib:speed_tier1>,[
 ]);
 
 	#2
-recipes.removeByRecipeName("teslacorelib:speed_upgrade_tier2_2");
+recipes.removeByRecipeName("teslacorelib:speed_upgrade_tier_2_2");
 recipes.addShaped(<teslacorelib:speed_tier1>,[
 	[<ore:gearDiamond>,<ore:plateDiamond>,<ore:gearDiamond>],
 	[<ore:gearDiamond>,<teslacorelib:base_addon>,<ore:gearDiamond>],
