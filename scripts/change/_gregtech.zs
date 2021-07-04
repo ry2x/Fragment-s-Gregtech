@@ -466,7 +466,7 @@ for key, drum in DrumFix {
         #assembler
     assembler.recipeBuilder()
         .inputs(longStick*2, plate*4)
-		.property("circuit", 4)
+		.circuit(4)
         .outputs(drum)
         .duration(80)
         .EUt(18)
@@ -511,7 +511,7 @@ for key in cableFix {
     #single to single
     assembler.recipeBuilder()
 		.inputs(SingleWire.firstItem,rubber)
-		.property("circuit", 24)
+		.circuit(24)
 		.outputs(SingleCable.firstItem)
 		.duration(150)
 		.EUt(8)
@@ -519,7 +519,7 @@ for key in cableFix {
     #double to double
     assembler.recipeBuilder()
 		.inputs(DoubleWire.firstItem,rubber*2)
-		.property("circuit", 24)
+		.circuit(24)
 		.outputs(DoubleCable.firstItem)
 		.duration(150)
 		.EUt(8)
@@ -527,7 +527,7 @@ for key in cableFix {
     #single to double
     assembler.recipeBuilder()
 		.inputs(SingleWire.firstItem*2,rubber*2)
-		.property("circuit", 25)
+		.circuit(25)
 		.outputs(DoubleCable.firstItem)
 		.duration(150)
 		.EUt(8)
@@ -535,7 +535,7 @@ for key in cableFix {
     #4 to 4
     assembler.recipeBuilder()
 		.inputs(QuadrupleWire.firstItem,rubber*4)
-		.property("circuit", 24)
+		.circuit(24)
 		.outputs(QuadrupleCable.firstItem)
 		.duration(150)
 		.EUt(8)
@@ -543,7 +543,7 @@ for key in cableFix {
     #1 to 4
 	assembler.recipeBuilder()
 		.inputs(SingleWire.firstItem*4,rubber*4)
-		.property("circuit", 26)
+		.circuit(26)
 		.outputs(QuadrupleCable.firstItem)
 		.duration(150)
 		.EUt(8)
@@ -551,7 +551,7 @@ for key in cableFix {
     #8 to 8
     assembler.recipeBuilder()
 		.inputs(OctalWire.firstItem,rubber*8)
-		.property("circuit", 24)
+		.circuit(24)
 		.outputs(OctalCable.firstItem)
 		.duration(150)
 		.EUt(8)
@@ -559,7 +559,7 @@ for key in cableFix {
     #1 to 8
 	assembler.recipeBuilder()
 		.inputs(SingleWire.firstItem*8,rubber*8)
-		.property("circuit", 27)
+		.circuit(27)
 		.outputs(OctalCable.firstItem)
 		.duration(150)
 		.EUt(8)
@@ -567,7 +567,7 @@ for key in cableFix {
     #16 to 16
     assembler.recipeBuilder()
 		.inputs(HexWire.firstItem,rubber*16)
-		.property("circuit", 24)
+		.circuit(24)
 		.outputs(HexCable.firstItem)
 		.duration(150)
 		.EUt(8)
@@ -575,7 +575,7 @@ for key in cableFix {
     #1 to 16
     	assembler.recipeBuilder()
 		.inputs(SingleWire.firstItem*16,rubber*16)
-		.property("circuit", 28)
+		.circuit(28)
 		.outputs(HexCable.firstItem)
 		.duration(150)
 		.EUt(8)
@@ -664,7 +664,7 @@ fluid_extractor.recipeBuilder()
 assembler.recipeBuilder()
 	.inputs(<ore:screwIron>*4,<ore:plankWood>*4)
 	.outputs(<meta_tile_entity:gtadditions:crate.wood>)
-	.property("circuit", 4)
+	.circuit(4)
 	.duration(80)
 	.EUt(18)
 	.buildAndRegister();
@@ -683,9 +683,8 @@ for key, meta in crateMaterials {
 
 	assembler.recipeBuilder()
 		.inputs(Mplate*4,MlongStick*4)
-		.property("circuit", 3)
 		.outputs(meta)
-		.property("circuit", 4)
+		.circuit(4)
 		.duration(80)
 		.EUt(18)
 		.buildAndRegister();
@@ -763,7 +762,7 @@ assembler.findRecipe(16, [<metaitem:circuit.integrated>.withTag({Configuration:8
 assembler.recipeBuilder()
 	.inputs(<ore:plateChrome>*8)
 	.outputs(<gregtech:machine_casing:6>)
-	.property("circuit", 8)
+	.circuit(8)
 	.EUt(16)
 	.duration(50)
 	.buildAndRegister();
@@ -812,7 +811,7 @@ reactor.recipeBuilder()
 assembler.findRecipe(8,[<minecraft:redstone>,<gregtech:meta_item_1:12071>*2],[]).remove();
 assembler.recipeBuilder()
 	.inputs(<ore:dustRedstone>,<ore:plateTin>*2)
-	.property("circuit", 1)
+	.circuit(1)
 	.outputs(<gregtech:meta_item_1:32402>)
 	.EUt(8)
 	.duration(200)

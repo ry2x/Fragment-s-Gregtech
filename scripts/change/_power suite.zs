@@ -20,7 +20,7 @@ val freezer = RecipeMap.getByName("vacuum_freezer");
 //make liquid nitrogen from nitrogen
 freezer.recipeBuilder()
     .fluidInputs([<liquid:nitrogen>*696])
-    .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:3}))
+    .circuit(3)
     .fluidOutputs([<liquid:liquid_nitrogen>*1])
     .duration(240)
     .EUt(64)

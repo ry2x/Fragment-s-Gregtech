@@ -69,7 +69,7 @@ for l,q in liquid {
 	recipes.removeByRecipeName("practicallogistics2:tile.displayscreen91");
 	assembler.recipeBuilder()
 		.inputs(<gtadditions:ga_meta_item:32579>,plate,<practicallogistics2:datacable>)
-		.property("circuit", 1)
+		.circuit(1)
 		.fluidInputs([l*q])
 		.outputs(<practicallogistics2:displayscreen>)
 		.EUt(128)
@@ -80,7 +80,7 @@ for l,q in liquid {
 	recipes.removeByRecipeName("practicallogistics2:tile.holographicdisplay93");
 	assembler.recipeBuilder()
 		.inputs(<ore:circuitBasic>,<practicallogistics2:displayscreen>,<practicallogistics2:signallingplate>,plate)
-		.property("circuit", 1)
+		.circuit(1)
 		.fluidInputs([l*q])
 		.outputs(<practicallogistics2:holographicdisplay>)
 		.EUt(512)

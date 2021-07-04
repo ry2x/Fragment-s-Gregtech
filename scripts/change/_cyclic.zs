@@ -87,7 +87,7 @@ recipes.replaceAllOccurences(<minecraft:wool:14>,<minecraft:bed:14>,<cyclicmagic
 #fluid
 blast_alloy.recipeBuilder()
 	.inputs(<ore:dustObsidian>*5,<ore:gemEmerald>*4,<ore:nuggetIron>*3)
-	.notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:1}))
+	.circuit(1)
 	.fluidOutputs(<liquid:crystal>*900)
 	.EUt(2048)
 	.duration(5000)
