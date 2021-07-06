@@ -10,6 +10,7 @@ import mods.gtadditions.recipe.LargeRecipeMap;
 
 val assembler = RecipeMap.getByName("assembler");
 val forming = RecipeMap.getByName("forming_press");
+val autoclave = RecipeMap.getByName("autoclave");
 
 //removal
 #"actuallyadditions:recipes"
@@ -23,6 +24,10 @@ val removal as string[] = [
 	"actuallyadditions:recipes88",
 	#iron casing
 	"actuallyadditions:recipes120",
+	#empowerer
+	"actuallyadditions:recipes83",
+	#ender casing
+	"actuallyadditions:recipes121",
 ];
 
 for name in removal {
@@ -52,7 +57,7 @@ assembler.recipeBuilder()
 
 //display stand
 forming.recipeBuilder()
-	.inputs(<actuallyadditions:block_crystal>,<actuallyadditions:block_testifi_bucks_green_wall>*3,<actuallyadditions:block_testifi_bucks_white_wall>*3)
+	.inputs(<ore:MVcasing>,<actuallyadditions:block_crystal>,<actuallyadditions:block_testifi_bucks_green_wall>*3,<actuallyadditions:block_testifi_bucks_white_wall>*3)
 	.outputs(<actuallyadditions:block_display_stand>)
 	.EUt(512)
 	.duration(120)
@@ -70,4 +75,44 @@ assembler.recipeBuilder()
 	.EUt(48)
 	.duration(200)
 	.buildAndRegister();
-	
+
+//empowered enroi first recipe
+recipes.addShaped(<actuallyadditions:block_crystal_empowered:5>,[
+	[<gregtech:meta_item_2:32213>,<gregtech:meta_item_1:32682>,<gregtech:meta_item_2:32213>],
+	[<gregtech:meta_item_1:32673>,<actuallyadditions:block_crystal:5>,<gregtech:meta_item_1:32673>],
+	[<appliedenergistics2:material:47>,<appliedenergistics2:material:1>,<appliedenergistics2:material:47>]
+]);
+
+//empowerer
+assembler.recipeBuilder()
+	.inputs(<actuallyadditions:block_crystal_empowered:5>*3,<actuallyadditions:battery_bauble>,<actuallyadditions:block_display_stand>,<ore:circuitExtreme>*2)
+	.outputs(<actuallyadditions:block_empowerer>)
+	.EUt(2048)
+	.duration(200)
+	.buildAndRegister();
+
+//ender casing
+recipes.addShaped(<actuallyadditions:block_misc:8>,[
+	[<actuallyadditions:block_crystal_empowered:2>,<actuallyadditions:block_misc:6>,<actuallyadditions:block_crystal_empowered:2>],
+	[<ore:gemQuartzBlack>,craftingToolWrench,<ore:gemQuartzBlack>],
+	[<actuallyadditions:block_crystal_empowered:2>,<actuallyadditions:block_misc:6>,<actuallyadditions:block_crystal_empowered:2>]
+]);
+
+assembler.recipeBuilder()
+	.inputs(<actuallyadditions:block_crystal_empowered:2>*4,<actuallyadditions:block_misc:6>*2,<ore:gemQuartzBlack>*2)
+	.outputs(<actuallyadditions:block_misc:8>)
+	.EUt(48)
+	.duration(200)
+	.buildAndRegister()
+
+//dark quartz
+furnace.remove(<actuallyadditions:item_misc:5>);
+autoclave.recipeBuilder()
+	.inputs(<ore:gemQuartz>)
+	.fluidInputs(<liquid:carbon>*144)
+	.outputs(<actuallyadditions:item_misc:5>)
+	.EUt(200)
+	.duration(600)
+	.buildAndRegister();
+
+
