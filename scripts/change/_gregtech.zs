@@ -654,7 +654,7 @@ implosion.recipeBuilder()
 //add molten obsidian in greg
 fluid_extractor.recipeBuilder()
 	.inputs(<ore:obsidian>)
-	.fluidOutputs([<liquid:obsidian>*288])
+	.fluidOutputs([<liquid:obsidian>*1000])
 	.duration(80)
 	.EUt(32)
 	.buildAndRegister();
