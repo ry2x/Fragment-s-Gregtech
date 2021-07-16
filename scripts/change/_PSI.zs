@@ -217,7 +217,7 @@ for item, number in socketA {
 
 //battery
 	#forming
-val battery as int[IItemStack[]] ={
+val battery as IData[IItemStack[]] ={
 	[<psi:cad_battery>,<gregtech:cable:87>*3,<psi:material>*3,<enderio:item_basic_capacitor>] : 128,
 	[<psi:cad_battery:1>,<gregtech:cable:87>*3,<psi:material:3>*3,<enderio:item_basic_capacitor:1>] : 512,
 	[<psi:cad_battery:2>,<gregtech:cable:87>*3,<psi:material:3>*3,<enderio:item_basic_capacitor:2>] : 2048,
@@ -225,13 +225,13 @@ val battery as int[IItemStack[]] ={
 
 for item, voltage in battery {
 	for l in liquid {
-		forming.recipeBuilder()
+		assembler.recipeBuilder()
 			.inputs(item[1],item[2],item[3])
 			.fluidInputs(l)
 			.circuit(7)
 			.outputs(item[0])
 			.duration(600)
-			.EUt(voltage)
+			.EUt(voltage as int)
 			.buildAndRegister();
 	}
 }
