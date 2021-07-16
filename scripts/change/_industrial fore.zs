@@ -184,6 +184,33 @@ recipes.addShaped(<industrialforegoing:froster>,[
     [<ore:plateSterlingSilver>,<ore:gearGold>,<ore:plateSterlingSilver>]
 ]);
 
+//wither
+recipes.addShaped(<industrialforegoing:wither_builder>,[
+	[<minecraft:skull:1>,<minecraft:skull:1>,<minecraft:skull:1>],
+	[<ore:plateSterlingSilver>,<ore:MVcasing>,<ore:plateSterlingSilver>],
+	[<ore:gearGold>,<ore:craftingPiston>,<ore:gearGold>]
+]);
+
+//black hole units
+val storage as IItemStack[IItemStack] = {
+	<gregtech:machine:1013> : <industrialforegoing:black_hole_unit>,
+	<gregtech:machine:1013> : <industrialforegoing:black_hole_tank>
+};
+
+for i,o in storage {
+	recipes.addShaped(o,[
+		[<ore:circuitMaster>,<gregtech:meta_item_1:32675>,<ore:circuitMaster>],
+		[<ore:plateChrome>,i,<ore:plateChrome>],
+		[<ore:circuitMaster>,<ore:plateChrome>,<ore:circuitMaster>]
+	]);
+}
+#controller
+recipes.addShaped(<industrialforegoing:black_hole_controller_reworked>,[
+	[<ore:plateSterlingSilver>,<ore:plateSterlingSilver>,<ore:plateSterlingSilver>],
+	[<appliedenergistics2:interface>,<ore:MVcasing>,<appliedenergistics2:fluid_interface>],
+	[<ore:gearGold>,<ore:ingotCosmicNeutronium>,<ore:gearGold>]
+]);
+
 //change misc//
 
 //Mob Imprisonment Tool
@@ -293,7 +320,7 @@ recipes.addShaped(<teslacorelib:speed_tier1>,[
 
 	#2
 recipes.removeByRecipeName("teslacorelib:speed_upgrade_tier_2_2");
-recipes.removeByRecipeName("teslacorelib:speed_upgrade_tier_2_1");
+recipes.removeByRecipeName("teslacorelib:speed_upgrade_tier_2 _1");
 recipes.addShaped(<teslacorelib:speed_tier2>,[
 	[<ore:gearDiamond>,<ore:plateDiamond>,<ore:gearDiamond>],
 	[<ore:gearDiamond>,<teslacorelib:base_addon>,<ore:gearDiamond>],
