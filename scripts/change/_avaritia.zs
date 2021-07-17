@@ -18,12 +18,15 @@ import crafttweaker.oredict.IOreDictEntry;
 
 //import greg
 import mods.gregtech.recipe.RecipeMap;
+import mods.gtadditions.recipe.GARecipeMaps;
+import mods.gtadditions.recipe.LargeRecipeMap;
 
 val assembler = RecipeMap.getByName("assembler");
 val implosion = RecipeMap.getByName("implosion_compressor");
 val macerator = RecipeMap.getByName("macerator");
 val compressor = RecipeMap.getByName("compressor");
 val packer = RecipeMap.getByName("packer");
+val assembly_line as RecipeMap = GARecipeMaps.ASSEMBLY_LINE_RECIPES;
 
 //diamond lattice
 recipes.removeByRecipeName("avaritia:items/resource/diamond_lattice");
@@ -92,7 +95,7 @@ macerator.recipeBuilder()
 compressor.findRecipe(2, [<avaritia:resource:2>*9],[]).remove();
 packer.findRecipe(4, [<avaritia:resource:2>*9,<gtadditions:ga_meta_item:32133>],[]).remove();
 implosion.recipeBuilder()
-	.inputs(<avaritia:resource:2>*18)
+	.inputs(<avaritia:resource:2>*12)
 	.outputs(<avaritia:resource:3>)
 	.property("explosives", 9)
 	.EUt(64)
@@ -113,8 +116,19 @@ compressor.recipeBuilder()
 
 //ultimate stew
 mods.avaritia.ExtremeCrafting.remove(<avaritia:ultimate_stew>);
-// mods.avaritia.ExtremeCrafting.addShapeless("re_ultimate_strew",<avaritia:ultimate_stew>*4, [
-// ]);
+assembly_line.recipeBuilder()
+	.inputs(<gtadditions:ga_meta_item:32018>,
+			<deepmoblearning:glitch_heart>,
+			<cyclicmagic:crafting_food>,
+			<minecraft:cake>,
+			<actuallyadditions:item_food:8>,
+			<harvestcraft:carrotcakeitem>,
+			<harvestcraft:cheesecakeitem>,
+			<harvestcraft:cherrycheesecakeitem>)
+	.outputs(<avaritia:ultimate_stew>)
+	.EUt(8192)
+	.duration(1000)
+	.buildAndRegister();
 
 //neutron compressor
 mods.avaritia.ExtremeCrafting.remove(<avaritia:neutronium_compressor>);
