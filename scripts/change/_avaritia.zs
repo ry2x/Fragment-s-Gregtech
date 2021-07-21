@@ -27,6 +27,7 @@ val macerator = RecipeMap.getByName("macerator");
 val compressor = RecipeMap.getByName("compressor");
 val packer = RecipeMap.getByName("packer");
 val assembly_line as RecipeMap = GARecipeMaps.ASSEMBLY_LINE_RECIPES;
+val engraver = RecipeMap.getByName("laser_engraver");
 
 //diamond lattice
 recipes.removeByRecipeName("avaritia:items/resource/diamond_lattice");
@@ -103,6 +104,19 @@ implosion.recipeBuilder()
 	.buildAndRegister();
 
 //neutron ingot
+engraver.recipeBuilder()
+	.inputs(<avaritia:resource:4>)
+	.outputs(<gregtech:meta_item_1:10671>)
+	.EUt(32)
+	.duration(10)
+	.buildAndRegister();
+engraver.recipeBuilder()
+	.inputs(<gregtech:meta_item_1:10671>)
+	.outputs(<avaritia:resource:4>)
+	.EUt(32)
+	.duration(10)
+	.buildAndRegister();
+
 recipes.addShapeless(<avaritia:resource:4>,[<gregtech:meta_item_1:10671>]);
 recipes.addShapeless(<gregtech:meta_item_1:10671>,[<avaritia:resource:4>]);
 
@@ -113,18 +127,51 @@ compressor.recipeBuilder()
 	.EUt(12000)
 	.duration(1000)
 	.buildAndRegister();
+//cosmic food
+mods.avaritia.ExtremeCrafting.remove(<avaritia:cosmic_meatballs>);
+assembly_line.recipeBuilder()
+	.inputs(<minecraft:rabbit>,
+			<gregtech:meta_item_1:2996>,
+			<minecraft:spider_eye>,
+			<minecraft:rabbit_foot>,
+			<minecraft:dragon_egg>,
+			<minecraft:dragon_breath>,
+			<gtadditions:ga_meta_item:32018>,
+			<deepmoblearning:glitch_heart>,
+			<minecraft:fish>,
+			<minecraft:fish:2>,
+			<minecraft:fish:1>,
+			<minecraft:fish:3>,
+			<minecraft:porkchop>,
+			<minecraft:beef>,
+			<minecraft:chicken>,
+			<minecraft:mutton>)
+	.fluidInputs(<liquid:sterilized_growth_medium>*288)
+	.outputs(<avaritia:cosmic_meatballs>)
+	.EUt(4200)
+	.duration(500)
+	.buildAndRegister();
 
 //ultimate stew
 mods.avaritia.ExtremeCrafting.remove(<avaritia:ultimate_stew>);
 assembly_line.recipeBuilder()
 	.inputs(<gtadditions:ga_meta_item:32018>,
 			<deepmoblearning:glitch_heart>,
-			<cyclicmagic:crafting_food>,
 			<minecraft:cake>,
 			<actuallyadditions:item_food:8>,
 			<harvestcraft:carrotcakeitem>,
 			<harvestcraft:cheesecakeitem>,
+			<harvestcraft:redvelvetcakeitem>,
+			<harvestcraft:pumpkincheesecakeitem>,
+			<harvestcraft:pancakesitem>,
+			<harvestcraft:maplesyruppancakesitem>,
+			<harvestcraft:holidaycakeitem>,
+			<harvestcraft:pineappleupsidedowncakeitem>,
+			<harvestcraft:blueberrypancakesitem>,
+			<harvestcraft:lemondrizzlecakeitem>,
+			<harvestcraft:chocolatesprinklecakeitem>,
 			<harvestcraft:cherrycheesecakeitem>)
+	.fluidInputs(<liquid:sterilized_growth_medium>*288)
 	.outputs(<avaritia:ultimate_stew>)
 	.EUt(8192)
 	.duration(1000)
