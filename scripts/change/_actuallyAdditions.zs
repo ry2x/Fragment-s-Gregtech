@@ -18,6 +18,7 @@ val assembler = RecipeMap.getByName("assembler");
 val forming = RecipeMap.getByName("forming_press");
 val autoclave = RecipeMap.getByName("autoclave");
 val saw = RecipeMap.getByName("cutting_saw");
+val mixer = RecipeMap.getByName("mixer");
 
 //removal
 #"actuallyadditions:recipes"
@@ -53,7 +54,9 @@ val removal as string[] = [
 	"actuallyadditions:double_battery",
 	"actuallyadditions:triple_battery",
 	"actuallyadditions:quadruple_battery",
-	"actuallyadditions:quintuple_battery"
+	"actuallyadditions:quintuple_battery",
+	#cheese
+	"actuallyadditions:recipes230",
 ];
 
 for name in removal {
@@ -244,3 +247,13 @@ for voltage, item in battery{
 			.buildAndRegister();
 	}
 }
+
+//cheese
+mixer.recipeBuilder()
+	.inputs(<minecraft:egg>)
+	.fluidInputs(<liquid:milk>*1000)
+	.circuit(1)
+	.outputs(<actuallyadditions:item_food>)
+	.EUt(64)
+	.duration(500)
+	.buildAndRegister();
