@@ -107,12 +107,14 @@ implosion.recipeBuilder()
 engraver.recipeBuilder()
 	.inputs(<avaritia:resource:4>)
 	.outputs(<gregtech:meta_item_1:10671>)
+	.notConsumable(<ore:craftingLensWhite>)
 	.EUt(32)
 	.duration(10)
 	.buildAndRegister();
 engraver.recipeBuilder()
 	.inputs(<gregtech:meta_item_1:10671>)
 	.outputs(<avaritia:resource:4>)
+	.notConsumable(<ore:craftingLensWhite>)
 	.EUt(32)
 	.duration(10)
 	.buildAndRegister();
@@ -122,11 +124,12 @@ recipes.addShapeless(<gregtech:meta_item_1:10671>,[<avaritia:resource:4>]);
 
 //to gregtech's neutron
 compressor.recipeBuilder()
-	.inputs(<avaritia:block_resource>*9)
+	.inputs(<avaritia:block_resource>*2)
 	.outputs(<gregtech:meta_item_1:9993>)
 	.EUt(12000)
 	.duration(1000)
 	.buildAndRegister();
+
 //cosmic food
 mods.avaritia.ExtremeCrafting.remove(<avaritia:cosmic_meatballs>);
 assembly_line.recipeBuilder()
@@ -185,7 +188,7 @@ mods.avaritia.ExtremeCrafting.addShaped("re_neutron_compressor",<avaritia:neutro
 	<ore:blockIron>,<ore:blockIron>,<avaritia:resource:1>],
 
 	[<ore:blockIron>,<ore:blockIron>,<ore:blockIron>,
-	<ore:blockIron>,<ore:ingotCosmicNeutronium>,<ore:blockIron>,
+	<ore:blockIron>,<gregtech:machine:2070>,<ore:blockIron>,
 	<ore:blockIron>,<ore:blockIron>,<ore:blockIron>],
 
 	[<avaritia:resource:1>,<ore:blockIron>,<ore:blockIron>,
