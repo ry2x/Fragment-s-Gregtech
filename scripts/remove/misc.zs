@@ -216,7 +216,7 @@ val miscItems = [
 	//practical logi
 	<practicallogistics2:hammer>,
 	//deep mob
-	<deepmoblearning:data_model_wither>
+	<deepmoblearning:data_model_wither>,
 	//avaritia
 	<avaritia:matter_cluster>,
 	//farming
