@@ -55,6 +55,7 @@ val solidifier = RecipeMap.getByName("fluid_solidifier");
 val steam_turbine as RecipeMap = RecipeMap.getByName("steam_turbine");
 val thermal_sep = RecipeMap.getByName("thermal_centrifuge");
 val unpacker = RecipeMap.getByName("unpacker");
+val uu = RecipeMap.getByName("uuamplifier");
 
 //Gregicality
 val cluster_mill as RecipeMap = GARecipeMaps.CLUSTER_MILL_RECIPES;
@@ -75,7 +76,7 @@ val large_chemical_reactor as RecipeMap = GARecipeMaps.LARGE_CHEMICAL_RECIPES;
 val large_mixer as RecipeMap = GARecipeMaps.LARGE_MIXER_RECIPES;
 val large_forge_hammer as RecipeMap = GARecipeMaps.LARGE_FORGE_HAMMER_RECIPES;
 val large_centrifuge as RecipeMap = GARecipeMaps.LARGE_CENTRIFUGE_RECIPES;
-
+val bio_reactor as RecipeMap = GARecipeMaps.BIO_REACTOR_RECIPES;
 
 //remove recipes
 val removeRecipes as string[] = [
@@ -129,6 +130,25 @@ val removeFromJEI as IItemStack[] = [
 
 for item in removeFromJEI {
 	JEI.hide(item);
+}
+
+//remove gregtech flour
+val flour as IItemStack[] = [
+	<gregtech:meta_item_1:2345>,
+	<gregtech:meta_item_1:1345>,
+	<gregtech:meta_item_1:345>
+];
+
+for i in flour {
+	JEI.removeAndHide(i);
+}
+
+val flourMaterial as IItemStack[] = [
+	<minecraft:wheat>,
+	<minecraft:hay_block>
+];
+for i in flourMaterial{
+	macerator.findRecipe(8,[i],null).remove();
 }
 
 //add recipe to ender pearl liquid
@@ -817,10 +837,6 @@ assembler.recipeBuilder()
 	.duration(200)
 	.buildAndRegister();
 
-	#bread
-//fix compressor recipes
-furnace.addRecipe(<minecraft:bread>, <gregtech:meta_item_1:2345>, 1);
-
 	#buff lapotron crystal
 val CrystalMaterials as string[] = [
 	"Lapis",
@@ -895,3 +911,85 @@ for input,output in CompressorFixAdding {
 		.duration(400)
 		.buildAndRegister();
 }
+
+//end
+#ribbon
+assembly_line.recipeBuilder()
+	.inputs(<gtadditions:ga_meta_item:32018>,
+			<avaritia:resource:5>,
+			<avaritia:endest_pearl>,
+			<minecraft:dragon_egg>,
+			<gregtech:meta_block_compressed_62:1>,
+			<quark:quilted_wool:2>,
+			<gregtech:meta_block_compressed_3:4>,
+			<gregtech:meta_block_compressed_31:5>,
+			<deepmoblearning:infused_ingot_block>,
+			<portalgun:item_miniature_black_hole>,
+			<extracells:storage.component:3>,
+			<extracells:storage.component:10>,
+			<minecraft:end_crystal>)
+	.outputs(<contenttweaker:ribbon>)
+	.fluidInputs(<liquid:crystal>*1000,<liquid:soldering_alloy>*72,<liquid:linoleic_acid>*1000)
+	.EUt(131072)
+	.duration(10000)
+	.buildAndRegister();
+
+	#to memories
+bio_reactor.recipeBuilder()
+	.inputs(<actuallyadditions:item_crystal_empowered:3>)
+	.fluidInputs(<liquid:animal_cells>*7)
+	.notConsumable(<contenttweaker:ribbon>)
+	.outputs(<contenttweaker:memories>)
+	.EUt(8192)
+	.duration(1000)
+	.buildAndRegister();
+
+#memories to some
+	#memories to purematter
+uu.recipeBuilder()
+	.inputs(<contenttweaker:memories>)
+	.fluidOutputs(<liquid:pure_matter>*250)
+	.EUt(2048)
+	.duration(200)
+	.buildAndRegister();
+	#to exp
+fluid_extractor.recipeBuilder()
+	.inputs(<contenttweaker:memories>)
+	.fluidInputs(<liquid:xpjuice>*1000)
+	.EUt(8192)
+	.duration(200)
+	.buildAndRegister();
+
+#purematter to some
+	#pure matter to matters
+large_centrifuge.recipeBuilder()
+	.fluidInputs(<liquid:pure_matter>*200)
+	.fluidOutputs(<liquid:fermionic_uu_matter>*100,<liquid:bosonic_uu_matter>*100)
+	.EUt(2048)
+	.duration(500)
+	.buildAndRegister();
+	#to cosmic neutronium
+solidifier.recipeBuilder()
+	.fluidInputs(<liquid:pure_matter>*144)
+	.notConsumable(<gregtech:meta_item_1:32306>)
+	.outputs(<avaritia:resource:4>)
+	.EUt(512)
+	.duration(100)
+	.buildAndRegister();
+	#to infinity ctaryst
+autoclave.recipeBuilder()
+	.fluidInputs(<liquid:pure_matter>*100)
+	.inputs(<ore:nuggetCosmicNeutronium>)
+	.outputs(<avaritia:resource:5>)
+	.EUt(512)
+	.duration(200)
+	.buildAndRegister();
+	#to crystal matrix
+solidifier.recipeBuilder()
+	.inputs(<ore:dustTinyDiamond>)
+	.fluidInputs(<liquid:pure_matter>*144)
+	.outputs(<avaritia:resource:1>)
+	.EUt(2048)
+	.duration(400)
+	.buildAndRegister();
+
