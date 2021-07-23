@@ -63,8 +63,8 @@ for i in carpets {
 
 //practical logi
 #entity radar
-JEI.addDescription(<practicallogistics2:entitytransceiver>,"It's disabled due to be broken.");
-JEI.addDescription(<practicallogistics2:entitynode>,"It's disabled due to be broken.");
+JEI.addDescription(<practicallogistics2:entitytransceiver>,"It's disabled.");
+JEI.addDescription(<practicallogistics2:entitynode>,"It's disabled.");
 
 //exu2
 JEI.addDescription(<extrautils2:drum>,"It has 16B capacity!");
