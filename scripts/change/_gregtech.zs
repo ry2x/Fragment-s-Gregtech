@@ -923,6 +923,7 @@ assembly_line.recipeBuilder()
 			<quark:quilted_wool:2>,
 			<gregtech:meta_block_compressed_3:4>,
 			<gregtech:meta_block_compressed_31:5>,
+			<gregtech:meta_block_compressed_46>,
 			<deepmoblearning:infused_ingot_block>,
 			<portalgun:item_miniature_black_hole>,
 			<extracells:storage.component:3>,
