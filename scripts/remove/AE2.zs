@@ -72,6 +72,9 @@ for i in tool {
     JEI.removeAndHide(i);
 }
 
+//remove bread
+furnace.remove(<minecraft:bread>);
+
 //remove silicon
 furnace.remove(<appliedenergistics2:material:5>);
 
