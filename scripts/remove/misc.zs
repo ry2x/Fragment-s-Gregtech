@@ -227,7 +227,17 @@ val miscItems = [
 	<farmingforblockheads:fertilized_farmland_stable>,
 	<farmingforblockheads:fertilizer>,
 	<farmingforblockheads:fertilizer:2>,
-	<farmingforblockheads:fertilizer:1>
+	<farmingforblockheads:fertilizer:1>,
+	//pam
+	<harvestcraft:hardenedleatheritem>,
+	<harvestcraft:hardenedleatherhelmitem>,
+	<harvestcraft:hardenedleatherchestitem>,
+	<harvestcraft:hardenedleatherleggingsitem>,
+	<harvestcraft:hardenedleatherbootsitem>,
+	<harvestcraft:market>,
+	<harvestcraft:grinder>,
+	<harvestcraft:apiary>,
+	<harvestcraft:beehive>
 ] as IItemStack[];
 
 for i in miscItems {

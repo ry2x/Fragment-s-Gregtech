@@ -11,3 +11,7 @@ var ribbon = VanillaFactory.createItem("ribbon");
 var memories = VanillaFactory.createItem("memories");
     memories.maxStackSize = 64;
     memories.register();
+
+var cup = VanillaFactory.createItem("cup");
+	cup.maxStackSize = 64;
+	cup.register();

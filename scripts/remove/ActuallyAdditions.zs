@@ -60,7 +60,9 @@ val removal as IItemStack[] = [
 	<actuallyadditions:block_phantom_placer>,
 	<actuallyadditions:item_crafter_on_a_stick>,
 	<actuallyadditions:item_bag>,
-	<actuallyadditions:item_misc:4>
+	<actuallyadditions:item_misc:4>,
+	<actuallyadditions:item_rice_seed>,
+	<actuallyadditions:item_food:16>
 ];
 
 for i in removal {
