@@ -57,6 +57,10 @@ val removal as string[] = [
 	"actuallyadditions:quintuple_battery",
 	#cheese
 	"actuallyadditions:recipes230",
+	#rice dough
+	"actuallyadditions:recipes217",
+	#chocolate
+	"actuallyadditions:recipes235",
 ];
 
 for name in removal {
@@ -256,4 +260,27 @@ mixer.recipeBuilder()
 	.outputs(<actuallyadditions:item_food>)
 	.EUt(64)
 	.duration(500)
+	.buildAndRegister();
+
+//food
+#dough
+recipes.remove(<actuallyadditions:item_misc:4>);
+recipes.addShapeless(<actuallyadditions:item_misc:4>,[<harvestcraft:doughitem>,<harvestcraft:doughitem>]);
+
+#rice dough
+mixer.recipeBuilder()
+	.inputs(<harvestcraft:riceitem>)
+	.fluidInputs(<liquid:salt_water>*125)
+	.outputs(<actuallyadditions:item_misc:9>)
+	.EUt(8)
+	.duration(100)
+	.buildAndRegister();
+
+#chocolate
+mixer.recipeBuilder()
+	.inputs(<minecraft:dye:3>*6)
+	.fluidInputs(<liquid:milk>*1000)
+	.outputs(<actuallyadditions:item_food:9>)
+	.EUt(8)
+	.duration(100)
 	.buildAndRegister();

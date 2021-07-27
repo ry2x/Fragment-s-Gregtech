@@ -16,6 +16,7 @@ import crafttweaker.block.IBlockProperties;
 import crafttweaker.block.IBlock;
 
 val fluid_canner = RecipeMap.getByName("fluid_canner");
+val hammer = RecipeMap.getByName("forge_hammer");
 val macerator = RecipeMap.getByName("macerator");
 val mixer = RecipeMap.getByName("mixer");
 
@@ -37,7 +38,7 @@ for i in freshRemoval{
 	recipes.removeByRecipeName(i);
 }
 
-water as ILiquidStack[IItemStack] = {
+val water as ILiquidStack[IItemStack] = {
 	<harvestcraft:freshmilkitem>:<liquid:milk>,
 	<harvestcraft:freshwateritem>:<liquid:water>
 };
@@ -75,18 +76,16 @@ val flourMaterial as IItemStack[] = [
 ];
 
 for i in flourMaterial{
-	macerate.recipeBuilder()
+	macerator.recipeBuilder()
 		.inputs(i)
 		.outputs(<harvestcraft:flouritem>)
-		.chancedOutput(<harvestcraft:flouritem>,600)
 		.EUt(8)
 		.duration(100)
 		.buildAndRegister();
 }
-macerate.recipeBuilder()
+macerator.recipeBuilder()
 	.inputs(<ore:cropChestnut>)
 	.outputs(<harvestcraft:flouritem>)
-	.chancedOutput(<harvestcraft:flouritem>,600)
 	.EUt(8)
 	.duration(100)
 	.buildAndRegister();
@@ -148,6 +147,60 @@ recipes.addShaped(<harvestcraft:mixingbowlitem>,[
 ]);
 	#jucer
 recipes.addShaped(<harvestcraft:juiceritem>,[
-	[craftingToolHardHammer],
+	[null,craftingToolHardHammer,null],
 	[<ore:plateIron>,<ore:screwIron>,<ore:plateIron>]
 ]);
+
+#ground
+val groundMaterials as IOreDictEntry[][IItemStack] = {
+	<harvestcraft:groundduckitem> : [<ore:listAllfishraw>,<ore:listAllfishcooked>],
+	<harvestcraft:groundbeefitem> : [<ore:listAllbeefraw>,<ore:listAllbeefcooked>],
+	<harvestcraft:groundchickenitem> : [<ore:listAllchickenraw>,<ore:listAllchickencooked>],
+	<harvestcraft:groundduckitem> : [<ore:listAllduckraw>,<ore:listAllduckcooked>],
+	<harvestcraft:groundmuttonitem> : [<ore:listAllmuttonraw>,<ore:listAllmuttoncooked>],
+	<harvestcraft:groundporkitem> : [<ore:listAllporkcooked>,<ore:listAllporkraw>],
+	<harvestcraft:groundrabbititem> : [<ore:listAllrabbitraw>,<ore:listAllrabbitcooked>],
+	<harvestcraft:groundturkeyitem> : [<ore:foodTurkeyraw>,<ore:listAllturkeycooked>],
+	<harvestcraft:groundvenisonitem> : [<ore:listAllvenisonraw>,<ore:listAllvenisoncooked>],
+	<harvestcraft:blackpepperitem> : [<ore:cropPeppercorn>],
+	<harvestcraft:groundcinnamonitem> : [<ore:cropCinnamon>],
+	<harvestcraft:groundnutmegitem> : [<ore:cropNutmeg>]
+};
+
+for o,i in groundMaterials {
+	hammer.recipeBuilder()
+		.inputs(i)
+		.outputs(o)
+		.EUt(16)
+		.duration(30)
+		.buildAndRegister();
+}
+
+#shipping bin
+recipes.removeByRecipeName("harvestcraft:shippingbin");
+recipes.addShapeless(<harvestcraft:shippingbin>,[<farmingforblockheads:market>]);
+
+#well
+recipes.removeByRecipeName("harvestcraft:well");
+recipes.addShaped(<harvestcraft:well>,[
+	[<ore:bricksStone>,<minecraft:cauldron>,<ore:bricksStone>],
+	[<ore:bricksStone>,<minecraft:bucket>,<ore:bricksStone>],
+	[<ore:bricksStone>,<ore:bricksStone>,<ore:bricksStone>]
+]);
+
+#ground trap
+recipes.removeByRecipeName("harvestcraft:groundtrap");
+recipes.addShaped(<harvestcraft:groundtrap>,[
+	[<minecraft:dirt>,<ore:stickLongWood>,<minecraft:dirt>],
+	[<ore:stickLongWood>,<tconstruct:wooden_hopper>,<ore:stickLongWood>],
+	[<minecraft:dirt>,<ore:stickLongWood>,<minecraft:dirt>]
+]);
+
+#water trap
+recipes.removeByRecipeName("harvestcraft:watertrap");
+recipes.addShaped(<harvestcraft:watertrap>,[
+	[<ore:plankWood>,<ore:stickLongWood>,<ore:plankWood>],
+	[<ore:stickLongWood>,<gregtech:machine:820>,<ore:stickLongWood>],
+	[<ore:plankWood>,<ore:stickLongWood>,<ore:plankWood>]
+]);
+
