@@ -405,6 +405,11 @@ var nuggetsDisabled as IItemStack[][IOreDictEntry] = {
 	#<ore:nuggetArdite>
 	<ore:nuggetArdite>:[
 		<tconstruct:nuggets:1>
+	],
+
+	#<ore:nuggetCosmicNeutronium>
+	<ore:nuggetCosmicNeutronium>:[
+		<ore:nuggetCosmicNeutronium>
 	]
 };
 
