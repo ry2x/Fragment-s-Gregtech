@@ -237,7 +237,9 @@ val miscItems = [
 	<harvestcraft:market>,
 	<harvestcraft:grinder>,
 	<harvestcraft:apiary>,
-	<harvestcraft:beehive>
+	<harvestcraft:beehive>,
+	//base
+	<base:wrench>
 ] as IItemStack[];
 
 for i in miscItems {
