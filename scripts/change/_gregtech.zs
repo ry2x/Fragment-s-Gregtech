@@ -953,13 +953,6 @@ uu.recipeBuilder()
 	.EUt(2048)
 	.duration(200)
 	.buildAndRegister();
-	#to exp
-fluid_extractor.recipeBuilder()
-	.inputs(<contenttweaker:memories>)
-	.fluidInputs(<liquid:xpjuice>*1000)
-	.EUt(8192)
-	.duration(200)
-	.buildAndRegister();
 
 #purematter to some
 	#pure matter to matters
@@ -993,4 +986,12 @@ solidifier.recipeBuilder()
 	.EUt(2048)
 	.duration(400)
 	.buildAndRegister();
-
+	#to exp
+recipes.remove(<minecraft:experience_bottle>);
+fluid_canner.recipeBuilder()
+	.inputs(<minecraft:glass_bottle>)
+	.fluidInputs(<liquid:pure_matter>*1)
+	.outputs(<minecraft:experience_bottle>)
+	.EUt(64)
+	.duration(200)
+	.buildAndRegister();
