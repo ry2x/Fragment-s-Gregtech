@@ -918,6 +918,7 @@ assembly_line.recipeBuilder()
 	.inputs(<gtadditions:ga_meta_item:32018>,
 			<avaritia:resource:5>,
 			<avaritia:endest_pearl>,
+			<avaritia:resource:6>,
 			<minecraft:dragon_egg>,
 			<gregtech:meta_block_compressed_62:1>,
 			<quark:quilted_wool:2>,
