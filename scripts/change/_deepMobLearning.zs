@@ -83,3 +83,13 @@ forming.recipeBuilder()
 	.EUt(128)
 	.duration(500)
 	.buildAndRegister();
+
+//key
+recipes.removeByRecipeName("deepmoblearning:recipe_5_trial_key");
+assembler.recipeBuilder()
+	.inputs(<avaritia:resource:3>*2,<ore:gemDiamond>*2,<gregtech:meta_item_1:32724>)
+	.fluidInputs(<liquid:sludge>*1000)
+	.outputs(<deepmoblearning:trial_key>)
+	.EUt(8192)
+	.duration(120)
+	.buildAndRegister();
