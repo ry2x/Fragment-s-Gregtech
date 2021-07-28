@@ -206,3 +206,10 @@ recipes.addShaped(<harvestcraft:watertrap>,[
 	[<ore:plankWood>,<ore:stickLongWood>,<ore:plankWood>]
 ]);
 
+//jar
+assembler.recipeBuilder()
+	.inputs(<ore:plateWood>*3,<ore:wireFineIron>*2)
+	.outputs(<contenttweaker:cup>)
+	.EUt(8)
+	.duration(20)
+	.buildAndRegister();

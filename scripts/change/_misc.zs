@@ -915,6 +915,9 @@ assembler.recipeBuilder()
     .EUt(512)
     .buildAndRegister();
 
+recipes.addShapeless(<simplemagnets:basic_demagnetization_coil>,[<randomthings:itemcollector>]);
+recipes.addShapeless(<simplemagnets:advanced_demagnetization_coil>,[<randomthings:advanceditemcollector>]);
+
 //excavation
 recipes.remove(<oeintegration:excavatemodifier>);
 forming.recipeBuilder()
