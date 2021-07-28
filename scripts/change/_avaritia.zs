@@ -1,14 +1,6 @@
 /*
-Provide some useful functions of avaritia
-mods.avaritia.ExtremeCrafting.addShapeless("name",output, ingredients);
-
-mods.avaritia.ExtremeCrafting.addShaped("name",output, ingredients);
-
-mods.avaritia.ExtremeCrafting.remove(output);
-
-mods.avaritia.Compressor.add(output, amount, input); //(amount is an int)
-
-mods.avaritia.Compressor.add(output, amount, input, false); //(if you want the recipe to use the scaling system)
+useful function here
+https://gist.github.com/Dream-Master/48cdedacd0e78151e6851d5b24e667ee
 */
 
 //import crafttweaker II
@@ -220,3 +212,37 @@ mods.avaritia.ExtremeCrafting.addShaped("re_neutron_compressor",<avaritia:neutro
 	<ore:blockIron>,<ore:blockIron>,<avaritia:resource:1>]
 ]);
 
+//neutron fix
+recipes.removeByRecipeName("avaritia:items/resources/neutronium_nugget");
+
+//infinity fix
+mods.avaritia.ExtremeCrafting.remove(<avaritia:resource:5>);
+assembly_line.recipeBuilder()
+	.inputs(<avaritia:singularity>,
+			<avaritia:singularity:3>,
+			<avaritia:singularity:4>,
+			<avaritia:singularity:5>,
+			<avaritia:singularity:6>,
+			<avaritia:ultimate_stew>,
+			<avaritia:cosmic_meatballs>,
+			<avaritia:endest_pearl>,
+			<avaritia:extreme_crafting_table>)
+	.fluidInputs(<liquid:osmium>*125,<liquid:americium>*1000)
+	.outputs()
+	.EUt()
+	.duration()
+	.buildAndRegister();
+
+//singularity
+mods.avaritia.Compressor.remove(<Avaritia:Singularity:*>);
+val singularityAdd as IItemStack[IOreDictEntry[]] = {
+	<ore:blockIron> : <avaritia:singularity:3>,
+	<ore:blockRedstone> : <avaritia:singularity:4>,
+	<ore:blockQuartz> : <avaritia:singularity:5>,
+	<ore:blockCopper> : <avaritia:singularity:6>,
+	<ore:blockTin> : <avaritia:singularity>
+};
+
+for i,o in singularityAdd {
+	mods.avaritia.Compressor.add(o, 1000,i );
+}

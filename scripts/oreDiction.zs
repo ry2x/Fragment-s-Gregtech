@@ -405,11 +405,6 @@ var nuggetsDisabled as IItemStack[][IOreDictEntry] = {
 	#<ore:nuggetArdite>
 	<ore:nuggetArdite>:[
 		<tconstruct:nuggets:1>
-	],
-
-	#<ore:nuggetCosmicNeutronium>
-	<ore:nuggetCosmicNeutronium>:[
-		<avaritia:resource:3>
 	]
 };
 
@@ -419,6 +414,9 @@ for oreDictEntry, items in nuggetsDisabled {
 	}
 	oreDictEntry.removeItems(items);
 }
+
+//remove avaritia neutronium from  cosmic neutronium
+<ore:nuggetCosmicNeutronium>.removeItems([<avaritia:resource:3>]);
 
 //for ore
 
