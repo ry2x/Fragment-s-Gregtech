@@ -226,7 +226,8 @@ assembly_line.recipeBuilder()
 			<avaritia:ultimate_stew>,
 			<avaritia:cosmic_meatballs>,
 			<avaritia:endest_pearl>,
-			<avaritia:extreme_crafting_table>)
+			<avaritia:extreme_crafting_table>,
+			<avaritia:resource:7>)
 	.fluidInputs(<liquid:osmium>*125,<liquid:americium>*1000)
 	.outputs()
 	.EUt()
