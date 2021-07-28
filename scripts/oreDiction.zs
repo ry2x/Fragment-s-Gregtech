@@ -409,7 +409,7 @@ var nuggetsDisabled as IItemStack[][IOreDictEntry] = {
 
 	#<ore:nuggetCosmicNeutronium>
 	<ore:nuggetCosmicNeutronium>:[
-		<ore:nuggetCosmicNeutronium>
+		<avaritia:resource:3>
 	]
 };
 
