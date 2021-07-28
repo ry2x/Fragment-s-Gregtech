@@ -167,13 +167,15 @@ val groundMaterials as IOreDictEntry[][IItemStack] = {
 	<harvestcraft:groundnutmegitem> : [<ore:cropNutmeg>]
 };
 
-for o,i in groundMaterials {
-	hammer.recipeBuilder()
-		.inputs(i)
-		.outputs(o)
-		.EUt(16)
-		.duration(30)
-		.buildAndRegister();
+for o,items in groundMaterials {
+	for i in items{
+		hammer.recipeBuilder()
+			.inputs(i)
+			.outputs(o)
+			.EUt(16)
+			.duration(30)
+			.buildAndRegister();
+	}
 }
 
 #shipping bin
