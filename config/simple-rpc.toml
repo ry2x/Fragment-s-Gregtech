@@ -1,0 +1,176 @@
+
+#General Config Section
+[general]
+	#The Client ID of the Discord App to use
+	clientID = 792309366576381954
+	#Enable/Disable the mod
+	enabled = true
+	#Enable/Disable debugging mode. WARNING: MAY CAUSE LOG SPAM!
+	debugging = false
+	#Enable/Disable the in game config screen
+	configScreen = true
+	#Display the Icon and Pack Name in place of LargeImage from compatible launchers. DOES NOT WORK WITH CUSTOM APPS! ONLY THE DEFAULT ONE!
+	launcherIntegration = false
+	#Enable/Disabled in-game notifications about new releases
+	updater = false
+	#Internal Version Number. NO TOUCHY!
+	version = 9
+
+#The Game Loading event
+[init]
+	#Enable/Disable the Game Loading Event
+	enabled = true
+	#The first line of text under the app name
+	description = "Minecraft is Loading"
+	#The second line of text under the app name
+	state = "Game Starting..."
+	#The Asset ID of the image to display as the large image
+	largeImageKey = "back"
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "%mcver% with forge!"
+	#The Asset ID of the image to display as the small image
+	smallImageKey = "wrench"
+	#The text that gets displayed when the small image is hovered
+	smallImageText = "%mods% mods installed"
+	#The buttons to display on Discord
+	buttons = []
+
+#The Main Menu event
+[main_menu]
+	#Enable/Disable the Main Menu Event
+	enabled = true
+	#The first line of text under the app name
+	description = "%player% is currently lazy"
+	#The seconds line of text under the app name
+	state = "Chilling in the menu"
+	#The Asset ID of the image to display as the large image
+	largeImageKey = "yukitukineko"
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "%mcver% with %mods% mods!"
+	#The Asset ID of the image to display as the small image
+	smallImageKey = "wrench"
+	#The text that gets displayed when the small image is hovered
+	smallImageText = "I'm remembering Fragment's note.... "
+	#The buttons to display on Discord
+	buttons = []
+
+#The Server List event
+[server_list]
+	#Enable/Disable the Server List Event
+	enabled = true
+	#The first line of text under the app name
+	description = "%player% is looking for a server"
+	#The second line of text under the app name
+	state = "Searching for servers"
+	#The Asset ID of the image to display as the large image
+	largeImageKey = "yukitukineko"
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "%mcver% with %mods% mods!"
+	#The Asset ID of the image to display as the small image
+	smallImageKey = "wrench"
+	#The text that gets displayed when the small image is hovered
+	smallImageText = "I'm remembering Fragment's note.... "
+	#The buttons to display on Discord
+	buttons = []
+
+#The Join Game Event
+[join_game]
+	#Enable/Disable the Join Game Event
+	enabled = true
+	#The first line of text under the app name
+	description = "%player% is joining a game"
+	#The second line of text under the app name
+	state = "Joining Game"
+	#The Asset ID of the image to display as the large image
+	largeImageKey = "yukitukineko"
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "%mcver% with %mods% mods!"
+	#The Asset ID of the image to display as the small image
+	smallImageKey = "wrench"
+	#The text that gets displayed when the small image is hovered
+	smallImageText = "I'm remembering Fragment's note.... "
+	#The buttons to display on Discord
+	buttons = []
+
+#The Single Player Event
+[single_player]
+	#Enable/Disable the Single Player Event
+	enabled = true
+	#The first line of text under the app name
+	description = "Currently In %world%"
+	#The second line of text under the app name
+	state = "Playing %difficulty% Mode"
+	#The Asset ID of the image to display as the large image
+	largeImageKey = "yukitukineko"
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "%mcver% with %mods% mods!"
+	#The Asset ID of the image to display as the small image
+	smallImageKey = "wrench"
+	#The text that gets displayed when the small image is hovered
+	smallImageText = "I'm remembering Fragment's note.... "
+	#The buttons to display on Discord
+	buttons = []
+
+#The Multi Player Event
+[multi_player]
+	#Enable/Disable the Multi Player Event
+	enabled = true
+	#The first line of text under the app name
+	description = "Playing on %servername% with %players% players"
+	#The second line of text under the app name
+	state = "Playing online"
+	#The Asset ID of the image to display as the large image
+	largeImageKey = "yukitukineko"
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "%mcver% with %mods% mods!"
+	#The Asset ID of the image to display as the small image
+	smallImageKey = "wrench"
+	#The text that gets displayed when the small image is hovered
+	smallImageText = "I'm remembering Fragment's note.... "
+	#The buttons to display on Discord
+	buttons = []
+
+#Fallback event for disabled events
+[generic]
+	#The first line of text under the app name
+	description = "Playing Minecraft"
+	#The second line of text under the app name
+	state = "Do you know what I am doing?"
+	#The Asset ID of the image to display as the large image
+	largeImageKey = "yukitukineko"
+	#The text that gets displayed when the large image is hovered
+	largeImageText = "%mcver% with %mods% mods!"
+	#The Asset ID of the image to display as the small image
+	smallImageKey = "wrench"
+	#The text that gets displayed when the small image is hovered
+	smallImageText = "I'm remembering Fragment's note.... "
+	#The buttons to display on Discord
+	buttons = []
+
+#World/Dimension Image Overrides
+[world_images]
+	#Enabled/Disable custom images for Worlds/Biomes
+	enabled = false
+
+	#The Worlds/Biomes to override
+	[[world_images.worlds]]
+		worldname = "overworld"
+		largeImageKey = "overworld"
+		largeImageText = "In the Overworld"
+		smallImageKey = "wrench"
+		smallImageText = "I'm remembering Fragment's note.... "
+
+	[[world_images.worlds]]
+		worldname = "the_nether"
+		largeImageKey = "nether"
+		largeImageText = "In the Nether"
+		smallImageKey = "wrench"
+		smallImageText = "I'm remembering Fragment's note.... "
+
+	[[world_images.worlds]]
+		worldname = "the_end"
+		largeImageKey = "end"
+		largeImageText = "In the End"
+		smallImageKey = "wrench"
+		smallImageText = "I'm remembering Fragment's note.... "
+

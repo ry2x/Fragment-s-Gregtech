@@ -154,4 +154,35 @@
             <output name="enderio:block_dark_steel_anvil" />
         </crafting>
     </recipe>
+
+    <recipe name="Dark Iron Bars" required="true">
+        <crafting>
+            <grid size="3x2">
+                <item name="oredict:ingotDarkSteel" /><item name="oredict:ingotDarkSteel" /><item name="oredict:ingotDarkSteel" />
+                <item name="oredict:ingotDarkSteel" /><item name="oredict:ingotDarkSteel" /><item name="oredict:ingotDarkSteel" />
+            </grid>
+            <output name="enderio:block_dark_iron_bars" amount="16"/>
+        </crafting>
+    </recipe>
+
+
+    <recipe name="Reinforced Obsidian" required="true">
+        <crafting>
+            <grid>
+                <item name="oredict:dustFluix"/>
+                <item name="enderio:block_dark_iron_bars"/>
+                <item name="oredict:dustFluix"/>
+
+                <item name="enderio:block_dark_iron_bars"/>
+                <item name="oredict:obsidian"/>
+                <item name="enderio:block_dark_iron_bars"/>
+
+                <item name="oredict:dustFluix"/>
+                <item name="enderio:block_dark_iron_bars"/>
+                <item name="oredict:dustFluix"/>
+            </grid>
+            <output name="enderio:block_reinforced_obsidian"/>
+        </crafting>
+    </recipe>
+
 </enderio:recipes>

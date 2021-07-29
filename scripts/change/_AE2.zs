@@ -31,6 +31,7 @@ val macerate = RecipeMap.getByName("macerator");
 val implosion = RecipeMap.getByName("implosion_compressor");
 val mixer = RecipeMap.getByName("mixer");
 val blast_furnace = RecipeMap.getByName("blast_furnace");
+val compressor = RecipeMap.getByName("compressor");
 
 //val
 val basicCard as IItemStack = <appliedenergistics2:material:25>;
@@ -167,18 +168,24 @@ Inscriber.addRecipe(<appliedenergistics2:material:18>,<ore:plateRoseGold>,true,<
 Inscriber.addRecipe(<appliedenergistics2:material:20>,<ore:plateSilicon>,true,<appliedenergistics2:material:19>);
 
 //etching circuit with circuit_assembler//
-val circuit as IItemStack[IItemStack] = {
-    logic as IItemStack : <appliedenergistics2:material:18>,
-    engineer as IItemStack : <appliedenergistics2:material:17>,
-    calculate as IItemStack : <appliedenergistics2:material:16>,
+val circuit as IItemStack[][IItemStack] = {
+    logic as IItemStack : [
+		<appliedenergistics2:material:18>,<appliedenergistics2:material:15>
+	],
+    engineer as IItemStack : [
+		<appliedenergistics2:material:17>,<appliedenergistics2:material:14>
+	],
+    calculate as IItemStack : [
+		<appliedenergistics2:material:16>,<appliedenergistics2:material:13>
+	]
 };
 
 for etched,printed  in circuit {
     Inscriber.removeRecipe(etched);
     circuit_assembler.recipeBuilder()
-        .inputs(printed,<appliedenergistics2:material:20>)
+        .inputs(printed[0],<appliedenergistics2:material:20>)
         .fluidInputs([<liquid:redstone>*288])
-        .notConsumable(<appliedenergistics2:material:15>)
+        .notConsumable(printed[1])
         .outputs(etched)
         .duration(400)
         .EUt(128)
@@ -226,7 +233,7 @@ for storage, storageCores in AE2Storages {
         .buildAndRegister();
     unpacker.recipeBuilder()
         .inputs(storage.withTag({}))
-        .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:2}))
+        .circuit(2)
         .outputs(storageCores,SHousing)
         .duration(40)
         .EUt(32)
@@ -398,7 +405,7 @@ assembler.recipeBuilder()
 recipes.remove(<appliedenergistics2:part:420>);
 assembler.recipeBuilder()
     .inputs(<ore:itemIlluminatedPanel>,formation,conjugation)
-    .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:3}))
+    .circuit(3)
     .outputs(<appliedenergistics2:part:420>)
     .duration(80)
     .EUt(24)
@@ -588,7 +595,7 @@ for craftingCPU,CPUCore in cpu {
         .buildAndRegister();
     unpacker.recipeBuilder()
         .inputs(craftingCPU)
-        .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:2}))
+        .circuit(2)
         .outputs(CPUCore,unit)
         .duration(40)
         .EUt(32)
@@ -649,7 +656,7 @@ for outputInfo, i in flasks {
 
 assembler.recipeBuilder()
 	.inputs(<minecraft:glass_bottle>)
-	.notConsumable(<metaitem:circuit.integrated>.withTag({Configuration: outputInfo[1]}))
+    .circuit(outputInfo[1])
     .outputs(i.withTag({}))
 	.fluidInputs([<liquid:glass> * outputInfo[0]])
     .duration(20 * outputInfo[1])
@@ -769,7 +776,7 @@ for Number,Housing in ExtraHousing {
     recipes.remove(Housing);
     assembler.recipeBuilder()
         .inputs(<ore:ingotTungsten>*6,<ore:wireGtSingleAnnealedCopper>*2,<appliedenergistics2:quartz_glass>*2)
-        .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:Number as int}))
+        .circuit(Number as int)
         .outputs(Housing)
         .duration(400)
         .EUt(512)
@@ -798,7 +805,7 @@ for extraItemStorage,extraItemCore in ItemExtraStorage {
         .buildAndRegister();
     unpacker.recipeBuilder()
         .inputs(extraItemStorage)
-        .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:2}))
+        .circuit(2)
         .outputs(extraItemCore,IHousing)
         .duration(40)
         .EUt(32)
@@ -821,7 +828,7 @@ for extraFluidStorage,extraFluidCore in FluidExtraStorage {
         .buildAndRegister();
     unpacker.recipeBuilder()
         .inputs(extraFluidStorage)
-        .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:2}))
+        .circuit(2)
         .outputs(extraFluidCore,FHousing)
         .duration(40)
         .EUt(32)
@@ -909,7 +916,7 @@ for extraCPUBlock,extraCPUCore in extraCpu {
         .buildAndRegister();
     unpacker.recipeBuilder()
         .inputs(extraCPUBlock)
-        .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:2}))
+        .circuit(2)
         .outputs(extraCPUCore,unit)
         .duration(40)
         .EUt(32)
@@ -919,3 +926,12 @@ for extraCPUBlock,extraCPUCore in extraCpu {
 //start visual
 recipes.replaceAllOccurences(<appliedenergistics2:entropy_manipulator>,<ore:pearlFluix>,<aenetvistool:net_visualizer>);
 //end visual
+//start wireless
+recipes.removeByRecipeName("ae2wtlib:booster_card_new");
+compressor.recipeBuilder()
+	.inputs(<appliedenergistics2:material:42>*32)
+	.outputs(<ae2wtlib:infinity_booster_card>)
+	.EUt(32700)
+	.duration(300)
+	.buildAndRegister();
+//end

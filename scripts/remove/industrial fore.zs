@@ -32,4 +32,7 @@ for item in noNeed {
     JEI.hide(item);
 }
 
-//end
+//end indus
+//start tesla core
+recipes.removeByRecipeName("teslacorelib:wrench");
+recipes.removeByRecipeName("teslacorelib:machine_case");

@@ -2,6 +2,8 @@
 import mods.gregtech.recipe.RecipeMap;
 import mods.gtadditions.recipe.GARecipeMaps;
 import mods.gtadditions.recipe.LargeRecipeMap;
+import mods.gregtech.recipe.FuelRecipe;
+import mods.gregtech.recipe.RecipeMaps;
 
 //import JEI function
 import mods.jei.JEI;
@@ -17,44 +19,46 @@ import crafttweaker.block.IBlockDefinition;
 import crafttweaker.block.IBlockProperties;
 import crafttweaker.block.IBlock;
 
-val blast_furnace = RecipeMap.getByName("blast_furnace");
-val hammer = RecipeMap.getByName("forge_hammer");
-val compressor = RecipeMap.getByName("compressor");
-val macerator = RecipeMap.getByName("macerator");
-val assembler = RecipeMap.getByName("assembler");
 val alloy = RecipeMap.getByName("alloy_smelter");
-val extractor = RecipeMap.getByName("extractor");
-val lathe = RecipeMap.getByName("lathe");
+val arc = RecipeMap.getByName("arc_furnace");
+val assembler = RecipeMap.getByName("assembler");
+val attractor = RecipeMap.getByName("attractor");
+val autoclave = RecipeMap.getByName("autoclave");
+val bath = RecipeMap.getByName("chemical_bath");
+val blast_furnace = RecipeMap.getByName("blast_furnace");
 val canner = RecipeMap.getByName("canner");
+val centrifuge = RecipeMap.getByName("centrifuge");
+val circuit_assembler = RecipeMap.getByName("circuit_assembler");
+val compressor = RecipeMap.getByName("compressor");
+val diesel_generator as RecipeMap = RecipeMap.getByName("diesel_generator");
+val electrolyzer = RecipeMap.getByName("electrolyzer");
+val engraver = RecipeMap.getByName("laser_engraver");
+val extractor = RecipeMap.getByName("extractor");
+val extruder = RecipeMap.getByName("extruder");
 val fluid_canner = RecipeMap.getByName("fluid_canner");
 val fluid_extractor = RecipeMap.getByName("fluid_extractor");
-val freezer = RecipeMap.getByName("vacuum_freezer");
-val mixer = RecipeMap.getByName("mixer");
-val thermal_sep = RecipeMap.getByName("thermal_centrifuge");
-val sifter = RecipeMap.getByName("sifter");
-val autoclave = RecipeMap.getByName("autoclave");
-val reactor = RecipeMap.getByName("chemical_reactor");
-val solidifier = RecipeMap.getByName("fluid_solidifier");
-val saw = RecipeMap.getByName("cutting_saw");
 val forming = RecipeMap.getByName("forming_press");
-val electrolyzer = RecipeMap.getByName("electrolyzer");
-val circuit_assembler = RecipeMap.getByName("circuit_assembler");
-val implosion = RecipeMap.getByName("implosion_compressor");
-val engraver = RecipeMap.getByName("laser_engraver");
-val attractor = RecipeMap.getByName("attractor");
-val packer = RecipeMap.getByName("packer");
-val unpacker = RecipeMap.getByName("unpacker");
-val arc = RecipeMap.getByName("arc_furnace");
-val plasma_arc = RecipeMap.getByName("plasma_arc_furnace");
-val bath = RecipeMap.getByName("chemical_bath");
-val mill = RecipeMap.getByName("wiremill");
-val centrifuge = RecipeMap.getByName("centrifuge");
-val metal_bender = RecipeMap.getByName("metal_bender");
-val extruder = RecipeMap.getByName("extruder");
+val freezer = RecipeMap.getByName("vacuum_freezer");
 val gas_turbine as RecipeMap = RecipeMap.getByName("gas_turbine");
-val steam_turbine as RecipeMap = RecipeMap.getByName("steam_turbine");
-val diesel_generator as RecipeMap = RecipeMap.getByName("diesel_generator");
+val hammer = RecipeMap.getByName("forge_hammer");
+val implosion = RecipeMap.getByName("implosion_compressor");
+val lathe = RecipeMap.getByName("lathe");
+val macerator = RecipeMap.getByName("macerator");
+val metal_bender = RecipeMap.getByName("metal_bender");
+val mill = RecipeMap.getByName("wiremill");
+val mixer = RecipeMap.getByName("mixer");
+val packer = RecipeMap.getByName("packer");
+val plasma_arc = RecipeMap.getByName("plasma_arc_furnace");
 val plasma_generator as RecipeMap = RecipeMap.getByName("plasma_generator");
+val reactor = RecipeMap.getByName("chemical_reactor");
+val saw = RecipeMap.getByName("cutting_saw");
+val sifter = RecipeMap.getByName("sifter");
+val solidifier = RecipeMap.getByName("fluid_solidifier");
+val steam_turbine as RecipeMap = RecipeMap.getByName("steam_turbine");
+val thermal_sep = RecipeMap.getByName("thermal_centrifuge");
+val unpacker = RecipeMap.getByName("unpacker");
+val uu = RecipeMap.getByName("uuamplifier");
+
 //Gregicality
 val cluster_mill as RecipeMap = GARecipeMaps.CLUSTER_MILL_RECIPES;
 val assembly_line as RecipeMap = GARecipeMaps.ASSEMBLY_LINE_RECIPES;
@@ -69,12 +73,23 @@ val simple_ore_washer as RecipeMap = GARecipeMaps.SIMPLE_ORE_WASHER_RECIPES;
 val nuclear_reactor as RecipeMap = GARecipeMaps.NUCLEAR_REACTOR_RECIPES;
 val nuclear_breeder as RecipeMap = GARecipeMaps.NUCLEAR_BREEDER_RECIPES;
 val decay_chamber as RecipeMap = GARecipeMaps.DECAY_CHAMBERS_RECIPES;
+
 // Large
 val large_chemical_reactor as RecipeMap = GARecipeMaps.LARGE_CHEMICAL_RECIPES;
 val large_mixer as RecipeMap = GARecipeMaps.LARGE_MIXER_RECIPES;
 val large_forge_hammer as RecipeMap = GARecipeMaps.LARGE_FORGE_HAMMER_RECIPES;
 val large_centrifuge as RecipeMap = GARecipeMaps.LARGE_CENTRIFUGE_RECIPES;
+val bio_reactor as RecipeMap = GARecipeMaps.BIO_REACTOR_RECIPES;
 
+//fuel map
+var Recanola = FuelRecipe.create(<liquid:refinedcanolaoil>*25, 45, 32);
+RecipeMaps.DIESEL_GENERATOR_FUELS.addRecipe(Recanola);
+
+var Coil = FuelRecipe.create(<liquid:crystaloil>*2, 5, 64);
+RecipeMaps.DIESEL_GENERATOR_FUELS.addRecipe(Coil);
+
+var Eoil = FuelRecipe.create(<liquid:empoweredoil>*1, 120, 128);
+RecipeMaps.DIESEL_GENERATOR_FUELS.addRecipe(Eoil);
 
 //remove recipes
 val removeRecipes as string[] = [
@@ -128,6 +143,25 @@ val removeFromJEI as IItemStack[] = [
 
 for item in removeFromJEI {
 	JEI.hide(item);
+}
+
+//remove gregtech flour
+val flour as IItemStack[] = [
+	<gregtech:meta_item_1:2345>,
+	<gregtech:meta_item_1:1345>,
+	<gregtech:meta_item_1:345>
+];
+
+for i in flour {
+	JEI.removeAndHide(i);
+}
+
+val flourMaterial as IItemStack[] = [
+	<minecraft:wheat>,
+	<minecraft:hay_block>
+];
+for i in flourMaterial{
+	macerator.findRecipe(8,[i],null).remove();
 }
 
 //add recipe to ender pearl liquid
@@ -407,33 +441,33 @@ assembler.recipeBuilder()
 	.inputs(<gtadditions:ga_armor:6>,<gtadditions:ga_meta_item2:7>*2,<gregtech:meta_item_1:12745>*8,<gregtech:meta_item_1:32697>,<ore:circuitSuperconductor>*4,<gregtech:meta_item_1:32677>*2)
 	.outputs(<overloaded:multi_helmet>)
 	.duration(6000)
-	.EUt(540000)
+	.EUt(13700)
 	.buildAndRegister();
 assembler.recipeBuilder()
 	.inputs(<gtadditions:ga_armor:13>,<gtadditions:ga_meta_item2:7>*2,<gregtech:meta_item_1:12745>*8,<gregtech:meta_item_1:32687>,<ore:circuitSuperconductor>*4,<gregtech:meta_item_1:32677>*2)
 	.outputs(<overloaded:multi_chestplate>)
 	.duration(6000)
-	.EUt(540000)
+	.EUt(13700)
 	.buildAndRegister();
 assembler.recipeBuilder()
 	.inputs(<gtadditions:ga_armor:5>,<gtadditions:ga_meta_item2:7>*2,<gregtech:meta_item_1:12745>*8,<gregtech:meta_item_1:32608>,<ore:circuitSuperconductor>*4,<gregtech:meta_item_1:32677>*2)
 	.outputs(<overloaded:multi_leggings>)
 	.duration(6000)
-	.EUt(540000)
+	.EUt(13700)
 	.buildAndRegister();
 assembler.recipeBuilder()
 	.inputs(<gtadditions:ga_armor:7>,<gtadditions:ga_meta_item2:7>*2,<gregtech:meta_item_1:12745>*8,<gregtech:meta_item_1:32647>,<ore:circuitSuperconductor>*4,<gregtech:meta_item_1:32677>*2)
 	.outputs(<overloaded:multi_boots>)
 	.duration(6000)
-	.EUt(540000)
+	.EUt(13700)
 	.buildAndRegister();
 	#railguns
 assembler.recipeBuilder()
-	.inputs(<gtadditions:ga_meta_item:32372>*3,<gtadditions:ga_meta_item:32378>*5,<gtadditions:ga_meta_item:32354>*6,<ore:circuitInfinite>*6,<gtadditions:ga_meta_item2:2>*2,<ore:ingotDoubleUhvSuperconductorBase>*2)
+	.inputs(<overloaded:energy_core>,<ore:circuitSuperconductor>,<ore:wireGtDoubleZpmSuperconductor>*8,<ore:plateDarkSteel>*8,<ore:pipeMediumNaquadah>*3)
 	.fluidInputs([<liquid:cryotheum>*8000])
 	.outputs(<overloaded:railgun>)
 	.duration(6000)
-	.EUt(640000)
+	.EUt(13700)
 	.buildAndRegister();
 
 //drum recipes fix
@@ -465,7 +499,7 @@ for key, drum in DrumFix {
         #assembler
     assembler.recipeBuilder()
         .inputs(longStick*2, plate*4)
-		.property("circuit", 4)
+		.circuit(4)
         .outputs(drum)
         .duration(80)
         .EUt(18)
@@ -510,7 +544,7 @@ for key in cableFix {
     #single to single
     assembler.recipeBuilder()
 		.inputs(SingleWire.firstItem,rubber)
-		.property("circuit", 24)
+		.circuit(24)
 		.outputs(SingleCable.firstItem)
 		.duration(150)
 		.EUt(8)
@@ -518,7 +552,7 @@ for key in cableFix {
     #double to double
     assembler.recipeBuilder()
 		.inputs(DoubleWire.firstItem,rubber*2)
-		.property("circuit", 24)
+		.circuit(24)
 		.outputs(DoubleCable.firstItem)
 		.duration(150)
 		.EUt(8)
@@ -526,7 +560,7 @@ for key in cableFix {
     #single to double
     assembler.recipeBuilder()
 		.inputs(SingleWire.firstItem*2,rubber*2)
-		.property("circuit", 25)
+		.circuit(25)
 		.outputs(DoubleCable.firstItem)
 		.duration(150)
 		.EUt(8)
@@ -534,7 +568,7 @@ for key in cableFix {
     #4 to 4
     assembler.recipeBuilder()
 		.inputs(QuadrupleWire.firstItem,rubber*4)
-		.property("circuit", 24)
+		.circuit(24)
 		.outputs(QuadrupleCable.firstItem)
 		.duration(150)
 		.EUt(8)
@@ -542,7 +576,7 @@ for key in cableFix {
     #1 to 4
 	assembler.recipeBuilder()
 		.inputs(SingleWire.firstItem*4,rubber*4)
-		.property("circuit", 26)
+		.circuit(26)
 		.outputs(QuadrupleCable.firstItem)
 		.duration(150)
 		.EUt(8)
@@ -550,7 +584,7 @@ for key in cableFix {
     #8 to 8
     assembler.recipeBuilder()
 		.inputs(OctalWire.firstItem,rubber*8)
-		.property("circuit", 24)
+		.circuit(24)
 		.outputs(OctalCable.firstItem)
 		.duration(150)
 		.EUt(8)
@@ -558,7 +592,7 @@ for key in cableFix {
     #1 to 8
 	assembler.recipeBuilder()
 		.inputs(SingleWire.firstItem*8,rubber*8)
-		.property("circuit", 27)
+		.circuit(27)
 		.outputs(OctalCable.firstItem)
 		.duration(150)
 		.EUt(8)
@@ -566,7 +600,7 @@ for key in cableFix {
     #16 to 16
     assembler.recipeBuilder()
 		.inputs(HexWire.firstItem,rubber*16)
-		.property("circuit", 24)
+		.circuit(24)
 		.outputs(HexCable.firstItem)
 		.duration(150)
 		.EUt(8)
@@ -574,7 +608,7 @@ for key in cableFix {
     #1 to 16
     	assembler.recipeBuilder()
 		.inputs(SingleWire.firstItem*16,rubber*16)
-		.property("circuit", 28)
+		.circuit(28)
 		.outputs(HexCable.firstItem)
 		.duration(150)
 		.EUt(8)
@@ -653,7 +687,7 @@ implosion.recipeBuilder()
 //add molten obsidian in greg
 fluid_extractor.recipeBuilder()
 	.inputs(<ore:obsidian>)
-	.fluidOutputs([<liquid:obsidian>*288])
+	.fluidOutputs([<liquid:obsidian>*1000])
 	.duration(80)
 	.EUt(32)
 	.buildAndRegister();
@@ -663,7 +697,7 @@ fluid_extractor.recipeBuilder()
 assembler.recipeBuilder()
 	.inputs(<ore:screwIron>*4,<ore:plankWood>*4)
 	.outputs(<meta_tile_entity:gtadditions:crate.wood>)
-	.property("circuit", 4)
+	.circuit(4)
 	.duration(80)
 	.EUt(18)
 	.buildAndRegister();
@@ -682,9 +716,8 @@ for key, meta in crateMaterials {
 
 	assembler.recipeBuilder()
 		.inputs(Mplate*4,MlongStick*4)
-		.property("circuit", 3)
 		.outputs(meta)
-		.property("circuit", 4)
+		.circuit(4)
 		.duration(80)
 		.EUt(18)
 		.buildAndRegister();
@@ -762,7 +795,7 @@ assembler.findRecipe(16, [<metaitem:circuit.integrated>.withTag({Configuration:8
 assembler.recipeBuilder()
 	.inputs(<ore:plateChrome>*8)
 	.outputs(<gregtech:machine_casing:6>)
-	.property("circuit", 8)
+	.circuit(8)
 	.EUt(16)
 	.duration(50)
 	.buildAndRegister();
@@ -811,15 +844,11 @@ reactor.recipeBuilder()
 assembler.findRecipe(8,[<minecraft:redstone>,<gregtech:meta_item_1:12071>*2],[]).remove();
 assembler.recipeBuilder()
 	.inputs(<ore:dustRedstone>,<ore:plateTin>*2)
-	.property("circuit", 1)
+	.circuit(1)
 	.outputs(<gregtech:meta_item_1:32402>)
 	.EUt(8)
 	.duration(200)
 	.buildAndRegister();
-
-	#bread
-//fix compressor recipes
-furnace.addRecipe(<minecraft:bread>, <gregtech:meta_item_1:2345>, 1);
 
 	#buff lapotron crystal
 val CrystalMaterials as string[] = [
@@ -896,4 +925,114 @@ for input,output in CompressorFixAdding {
 		.buildAndRegister();
 }
 
-#some recipes are broken in Gregicality-1.12.2-0.22.3.2, but it'll be fixed in next release.
+//end
+#ribbon
+assembly_line.recipeBuilder()
+	.inputs(<gtadditions:ga_meta_item:32018>,
+			<avaritia:resource:5>,
+			<avaritia:endest_pearl>,
+			<avaritia:resource:6>,
+			<minecraft:dragon_egg>,
+			<gregtech:meta_block_compressed_62:1>,
+			<quark:quilted_wool:2>,
+			<gregtech:meta_block_compressed_3:4>,
+			<gregtech:meta_block_compressed_31:5>,
+			<gregtech:meta_block_compressed_46>,
+			<deepmoblearning:infused_ingot_block>,
+			<portalgun:item_miniature_black_hole>,
+			<extracells:storage.component:3>,
+			<extracells:storage.component:10>,
+			<minecraft:end_crystal>)
+	.outputs(<contenttweaker:ribbon>)
+	.fluidInputs(<liquid:crystal>*1000,<liquid:soldering_alloy>*72,<liquid:linoleic_acid>*1000)
+	.EUt(131072)
+	.duration(10000)
+	.buildAndRegister();
+
+	#to memories
+bio_reactor.recipeBuilder()
+	.inputs(<actuallyadditions:item_crystal_empowered:3>)
+	.fluidInputs(<liquid:animal_cells>*7)
+	.notConsumable(<contenttweaker:ribbon>)
+	.outputs(<contenttweaker:memories>)
+	.EUt(8192)
+	.duration(1000)
+	.buildAndRegister();
+
+#memories to some
+	#memories to purematter
+uu.recipeBuilder()
+	.inputs(<contenttweaker:memories>)
+	.fluidOutputs(<liquid:pure_matter>*250)
+	.EUt(2048)
+	.duration(200)
+	.buildAndRegister();
+
+#purematter to some
+	#pure matter to matters
+large_centrifuge.recipeBuilder()
+	.fluidInputs(<liquid:pure_matter>*200)
+	.fluidOutputs(<liquid:fermionic_uu_matter>*100,<liquid:bosonic_uu_matter>*100)
+	.EUt(2048)
+	.duration(500)
+	.buildAndRegister();
+	#to cosmic neutronium
+solidifier.recipeBuilder()
+	.fluidInputs(<liquid:pure_matter>*144)
+	.notConsumable(<gregtech:meta_item_1:32306>)
+	.outputs(<avaritia:resource:4>)
+	.EUt(512)
+	.duration(100)
+	.buildAndRegister();
+	#to infinity ctaryst
+autoclave.recipeBuilder()
+	.fluidInputs(<liquid:pure_matter>*100)
+	.inputs(<ore:nuggetCosmicNeutronium>)
+	.outputs(<avaritia:resource:5>)
+	.EUt(512)
+	.duration(200)
+	.buildAndRegister();
+	#to crystal matrix
+solidifier.recipeBuilder()
+	.inputs(<ore:dustTinyDiamond>)
+	.fluidInputs(<liquid:pure_matter>*144)
+	.outputs(<avaritia:resource:1>)
+	.EUt(2048)
+	.duration(400)
+	.buildAndRegister();
+	#to exp
+recipes.remove(<minecraft:experience_bottle>);
+fluid_canner.recipeBuilder()
+	.inputs(<minecraft:glass_bottle>)
+	.fluidInputs(<liquid:pure_matter>*1)
+	.outputs(<minecraft:experience_bottle>)
+	.EUt(64)
+	.duration(200)
+	.buildAndRegister();
+
+//fuel
+	#canola to recanola
+reactor.recipeBuilder()
+	.fluidInputs(<liquid:canolaoil>*1000)
+	.notConsumable(<ore:dustSiliconDioxide>)
+	.fluidOutputs(<liquid:refinedcanolaoil>*400,<liquid:seed.oil>*600)
+	.EUt(128)
+	.duration(500)
+	.buildAndRegister();
+	#oil to Coil
+reactor.recipeBuilder()
+	.fluidInputs(<liquid:fuel>*500)
+	.inputs(<ore:gemObsidian>*4)
+	.fluidOutputs(<liquid:crystaloil>*500)
+	.EUt(2048)
+	.duration(200)
+	.buildAndRegister();
+	#Coil to empowerd
+reactor.recipeBuilder()
+	.fluidInputs(<liquid:crystaloil>*500)
+	.inputs(<actuallyadditions:item_crystal_empowered:3>*3)
+	.notConsumable(<actuallyadditions:item_crystal_empowered:4>)
+	.fluidOutputs(<liquid:empoweredoil>*750)
+	.EUt(8192)
+	.duration(500)
+	.buildAndRegister();

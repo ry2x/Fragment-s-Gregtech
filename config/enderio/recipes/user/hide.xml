@@ -67,7 +67,6 @@
             <item name="enderio:block_alloy_endergy:*" hide="true" />
             <item name="enderio:block_concussion_charge" hide="true" />
             <item name="enderio:block_confusion_charge" hide="true" />
-            <item name="enderio:block_dark_iron_bars" hide="true" />
             <item name="enderio:block_dark_steel_anvil:*,
             -enderio:block_dark_steel_anvil:0" hide="true" />
             <item name="item:enderio:block_dark_steel_door" hide="true" />
@@ -87,7 +86,7 @@
             <item name="enderio:block_infinity_fog" hide="true" />
             <item name="enderio:block_holy_fog" hide="true" />
             <item name="enderio:block_painted_pressure_plate:*" hide="true" />
-            <item name="enderio:block_reinforced_obsidian" hide="true" />
+
 
             <!-- Fused Quartz -->
             <item name="enderio:block_dark_fused_glass:*" hide="true" />

@@ -36,44 +36,6 @@ recipes.addShaped(<chargers:charger:2>, [
     [<gregtech:meta_item_1:10001>, <chargers:charger:1>, <gregtech:meta_item_1:10001>]
 ]);
 
-//change recipes of @cyclic wireless things in the _overloaded.zs
-recipes.replaceAllOccurences(<ore:blockEmerald>,<ore:blockStainlessSteel>,<cyclicmagic:heart_food>);
-recipes.replaceAllOccurences(<ore:gemDiamond>,<ore:blockStainlessSteel>,<cyclicmagic:heart_food>);
-recipes.replaceAllOccurences(<ore:gemDiamond>,<ore:blockStainlessSteel>,<cyclicmagic:crafting_food>);
-recipes.replaceAllOccurences(<ore:gemEmerald>,<ore:blockStainlessSteel>,<cyclicmagic:crafting_food>);
-
-//Precise Dropper
-recipes.remove(<cyclicmagic:dropper_exact>);
-recipes.addShaped(<cyclicmagic:dropper_exact>,[
-    [<ore:ingotGold>,<ore:ingotGold>,<ore:ingotGold>],
-    [<minecraft:dropper>,<gregtech:machine:501>,<projectred-integration:gate:17>],
-    [<ore:ingotGold>,<ore:ingotGold>,<ore:ingotGold>]
-]);
-
-//Target Dummy Spawner
-recipes.remove(<cyclicmagic:robot_spawner>);
-recipes.addShaped(<cyclicmagic:robot_spawner>,[
-    [<ore:blockEmerald>,<minecraft:rotten_flesh>,<minecraft:spider_eye>],
-    [null,<ore:gemEnderPearl>,<minecraft:rotten_flesh>],
-    [<ore:dyePurple>,null,<ore:blockEmerald>]
-]);
-
-recipes.remove(<cyclicmagic:tool_elevate>);
-
-//Pattern Replicator
-recipes.replaceAllOccurences(<minecraft:ice>,<quarryplus:filler>,<cyclicmagic:builder_pattern>);
-
-//Sprinkler
-recipes.remove(<cyclicmagic:sprinkler>);
-recipes.addShaped(<cyclicmagic:sprinkler>,[
-    [<minecraft:iron_ingot>,<minecraft:iron_ingot>,<minecraft:iron_ingot>],
-    [<gregtech:meta_item_1:32601>,<forestry:fertilizer_bio>,<gregtech:meta_item_1:32601>],
-    [<minecraft:iron_ingot>,<minecraft:iron_ingot>,<minecraft:iron_ingot>]
-]);
-
-// /Sleeping Mat
-recipes.replaceAllOccurences(<minecraft:wool:14>,<minecraft:bed:14>,<cyclicmagic:sleeping_mat>);
-
 //change recipe of dunk null is very sillar to simple storage
 val dunk as IItemStack[] = [
     <danknull:dank_null_panel_0>,
@@ -953,6 +915,9 @@ assembler.recipeBuilder()
     .EUt(512)
     .buildAndRegister();
 
+recipes.addShapeless(<simplemagnets:basic_demagnetization_coil>,[<randomthings:itemcollector>]);
+recipes.addShapeless(<simplemagnets:advanced_demagnetization_coil>,[<randomthings:advanceditemcollector>]);
+
 //excavation
 recipes.remove(<oeintegration:excavatemodifier>);
 forming.recipeBuilder()
@@ -996,14 +961,14 @@ for mod in loadedMods["openglider"].items{
 assembler.recipeBuilder()
     .inputs(<ore:woolWhite>*4,<ore:blockWoolRed>*2,<ore:stickIron>*2)
     .outputs(<openglider:hang_glider_part>)
-    .property("circuit", 1)
+	.circuit(1)
     .duration(512)
     .EUt(128)
     .buildAndRegister();
 assembler.recipeBuilder()
     .inputs(<ore:woolWhite>*4,<ore:blockWoolRed>*2,<ore:stickIron>*2)
     .outputs(<openglider:hang_glider_part:1>)
-    .property("circuit", 2)
+    .circuit(2)
     .duration(512)
     .EUt(128)
     .buildAndRegister();
@@ -1011,7 +976,7 @@ assembler.recipeBuilder()
 assembler.recipeBuilder()
     .inputs(<ore:stickIron>*9)
     .outputs(<openglider:hang_glider_part:2>)
-    .property("circuit", 2)
+    .circuit(2)
     .duration(120)
     .EUt(128)
     .buildAndRegister();
@@ -1035,7 +1000,7 @@ assembler.recipeBuilder()
 assembler.recipeBuilder()
 	.inputs(<gregtech:machine:503>,<gtadditions:ga_pump_casing:2>*2,<industrialforegoing:fluid_pump>,<ore:toolHeadDrillDiamond>,<ore:HVcap>)
 	.outputs(<quarryplus:miningwellplus>)
-	.property("circuit", 4)
+	.circuit(4)
 	.EUt(512)
 	.duration(200)
 	.buildAndRegister();
@@ -1043,7 +1008,7 @@ assembler.recipeBuilder()
 assembler.recipeBuilder()
 	.inputs(<gregtech:machine:503>,<gtadditions:ga_pump_casing:2>*4,<industrialforegoing:fluid_pump>*2,<ore:HVcap>)
 	.outputs(<quarryplus:standalonepump>)
-	.property("circuit", 3)
+	.circuit(3)
 	.EUt(512)
 	.duration(200)
 	.buildAndRegister();
@@ -1052,7 +1017,7 @@ assembler.recipeBuilder()
 	.inputs(<gregtech:machine:503>,<gtadditions:ga_pump_casing:2>*2,<industrialforegoing:fluid_pump>,<ore:HVcap>,<mob_grinding_utils:absorption_hopper>)
 	.outputs(<quarryplus:exppump>)
 	.fluidInputs([<liquid:xpjuice>*1000])
-	.property("circuit", 5)
+	.circuit(5)
 	.EUt(512)
 	.duration(200)
 	.buildAndRegister();
@@ -1067,7 +1032,7 @@ assembler.recipeBuilder()
 assembler.recipeBuilder()
 	.inputs(<gregtech:machine:503>,<ore:toolHeadDrillDiamond>,<gregtech:meta_item_1:32722>*2,<ore:gearTungsten>*4,<ore:stickLongTungsten>*8,<gtadditions:ga_motor_casing:2>,<gtadditions:ga_piston_casing:2>)
 	.outputs(<quarryplus:quarryplus>)
-	.property("circuit", 1)
+	.circuit(1)
 	.EUt(512)
 	.duration(200)
 	.buildAndRegister();
@@ -1076,7 +1041,7 @@ recipes.addShapeless(<quarryplus:quarryplus>, [<quarryplus:quarry>]);
 assembler.recipeBuilder()
 	.inputs(<gregtech:machine:503>,<ore:toolHeadDrillDiamond>,<gregtech:meta_item_1:32722>*2,<ore:gearTungsten>*4,<ore:stickLongTungsten>*8,<gtadditions:ga_motor_casing:2>,<gtadditions:ga_piston_casing:2>)
 	.outputs(<quarryplus:quarry>)
-	.property("circuit", 2)
+	.circuit(2)
 	.EUt(512)
 	.duration(200)
 	.buildAndRegister();
@@ -1085,7 +1050,7 @@ recipes.addShapeless(<quarryplus:quarry>, [<quarryplus:quarryplus>]);
 assembler.recipeBuilder()
 	.inputs(<ore:stickLongTungsten>*2,<ore:gearTungsten>*2,<gtadditions:ga_motor_casing:2>,<gregtech:machine:503>,<betterbuilderswands:wandunbreakable:12>)
 	.outputs(<quarryplus:filler>)
-	.property("circuit", 6)
+	.circuit(6)
 	.EUt(512)
 	.duration(200)
 	.buildAndRegister();
@@ -1145,5 +1110,22 @@ assembler.recipeBuilder()
 	.EUt(512)
 	.duration(800)
 	.buildAndRegister();
+
 //future MC's soul
 recipes.addShapeless(<futuremc:soul_fire_torch>*4, [<minecraft:soul_sand>,<minecraft:stick>]);
+
+//akasic tome will be akasic record
+recipes.removeByRecipeName("akashictome:tome");
+recipes.removeByRecipeName("akashictome:tome_1");
+val akasicBook as IItemStack = <akashictome:tome>.withTag({"akashictome:data": {industrialforegoing: {id: "industrialforegoing:book_manual", Count: 1 as byte, tag: {"akashictome:definedMod": "industrialforegoing"}, Damage: 0 as short}, tconstruct: {id: "tconstruct:book", Count: 1 as byte, tag: {"akashictome:definedMod": "tconstruct"}, Damage: 0 as short}, ftbquests: {id: "ftbquests:book", Count: 1 as byte, tag: {"akashictome:definedMod": "ftbquests"}, Damage: 0 as short}, practicallogistics2: {id: "practicallogistics2:plguide", Count: 1 as byte, tag: {"akashictome:definedMod": "practicallogistics2"}, Damage: 0 as short}, actuallyadditions: {id: "actuallyadditions:item_booklet", Count: 1 as byte, tag: {"akashictome:definedMod": "actuallyadditions"}, Damage: 0 as short}, deepmoblearning: {id: "patchouli:guide_book", Count: 1 as byte, tag: {"akashictome:definedMod": "deepmoblearning", "patchouli:book": "deepmoblearning:book"}, Damage: 0 as short}, forestry: {id: "forestry:book_forester", Count: 1 as byte, tag: {"akashictome:definedMod": "forestry"}, Damage: 0 as short}}});
+recipes.addShapeless(akasicBook,[<minecraft:book>,<minecraft:stick>]);
+
+//tesseract
+recipes.remove(<tesseract:tesseract>);
+assembler.recipeBuilder()
+    .inputs(<overloaded:energy_core>,<overloaded:fluid_core>,<overloaded:item_core>,<ore:plateEnderium>*4,<gregtech:meta_item_2:19963>*4,<thermalfoundation:glass_alloy:7>*4)
+    .fluidInputs([<liquid:enderium>*800])
+    .outputs(<tesseract:tesseract>)
+    .duration(500)
+    .EUt(512)
+    .buildAndRegister();

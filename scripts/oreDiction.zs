@@ -276,7 +276,12 @@ var ingotsDisabled as IItemStack[][IOreDictEntry] = {
     #<ore:itemSilicon>
     <ore:itemSilicon>:[
         <appliedenergistics2:material:5>
-    ]
+    ],
+
+	#<ore:ingotArdite>
+	<ore:ingotArdite>:[
+		<tconstruct:ingots:1>
+	]
 
 };
 
@@ -395,7 +400,12 @@ var nuggetsDisabled as IItemStack[][IOreDictEntry] = {
     #<ore:nuggetDiamond>
     <ore:nuggetDiamond>:[
         <translocators:diamond_nugget>
-    ]
+    ],
+
+	#<ore:nuggetArdite>
+	<ore:nuggetArdite>:[
+		<tconstruct:nuggets:1>
+	]
 };
 
 for oreDictEntry, items in nuggetsDisabled {
@@ -405,7 +415,10 @@ for oreDictEntry, items in nuggetsDisabled {
 	oreDictEntry.removeItems(items);
 }
 
-//for plate
+//remove avaritia neutronium from  cosmic neutronium
+<ore:nuggetCosmicNeutronium>.removeItems([<avaritia:resource:3>]);
+
+//for ore
 
 var oresDisabled as IItemStack[][IOreDictEntry] = {
 
@@ -480,7 +493,7 @@ var oresDisabled as IItemStack[][IOreDictEntry] = {
         <thermalfoundation:ore_fluid:2>
     ],
 
-    #<ore:oreClathrateOilShale>]
+    #<ore:oreClathrateOilShale>
     <ore:oreClathrateOilShale>:[
         <thermalfoundation:ore_fluid:1>
     ],
@@ -497,7 +510,8 @@ var oresDisabled as IItemStack[][IOreDictEntry] = {
 
     #<ore:oreSapphire>
     <ore:oreSapphire>:[
-        <projectred-exploration:ore:1>
+        <projectred-exploration:ore:1>,
+		<practicallogistics2:sapphireore>
     ],
 
     #<ore:orePeridot>
@@ -539,6 +553,11 @@ var oresDisabled as IItemStack[][IOreDictEntry] = {
     <ore:oreRedstone>:[
         <minecraft:redstone_ore>
     ],
+
+	#<ore:oreQuartzBlack>
+	<ore:oreQuartzBlack>:[
+		<actuallyadditions:block_misc:3>
+	]
 
 };
 
@@ -797,13 +816,15 @@ var dustsDisabled as IItemStack[][IOreDictEntry] = {
     #dustIron
     <ore:dustIron>:[
         <thermalfoundation:material>,
-        <appliedenergistics2:material:49>
+        <appliedenergistics2:material:49>,
+		<actuallyadditions:item_dust>
     ],
 
     #<ore:dustGold>
     <ore:dustGold>:[
         <thermalfoundation:material:1>,
-        <appliedenergistics2:material:51>
+        <appliedenergistics2:material:51>,
+		<actuallyadditions:item_dust:1>
     ],
 
     #<ore:dustTin>
@@ -924,8 +945,39 @@ var dustsDisabled as IItemStack[][IOreDictEntry] = {
 
     #<ore:dustCoal>
     <ore:dustCoal>:[
-        <threng:material:3>
-    ]
+        <threng:material:3>,
+		<actuallyadditions:item_dust:6>
+    ],
+
+	#<ore:dustSapphire>
+	<ore:dustSapphire>:[
+		<practicallogistics2:sapphiredust>
+	],
+
+	#<ore:dustDiamond>
+	<ore:dustDiamond>:[
+		<actuallyadditions:item_dust:2>
+	],
+
+	#<ore:dustEmerald>
+	<ore:dustEmerald>:[
+		<actuallyadditions:item_dust:3>
+	],
+
+	#<ore:dustLapis>
+	<ore:dustLapis>:[
+		<actuallyadditions:item_dust:4>
+	],
+
+	#<ore:dustNetherQuartz>
+	<ore:dustNetherQuartz>:[
+		<actuallyadditions:item_dust:5>
+	],
+
+	#<ore:dustQuartz>
+	<ore:dustQuartz>:[
+		<actuallyadditions:item_dust:5>
+	]
 
 };
 
@@ -955,7 +1007,8 @@ var gemsDisabled as IItemStack[][IOreDictEntry] = {
 
     #<ore:gemSapphire>
     <ore:gemSapphire>:[
-        <projectred-core:resource_item:201>
+        <projectred-core:resource_item:201>,
+		<practicallogistics2:sapphire>
     ],
 
     #<ore:gemPeridot>

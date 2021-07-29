@@ -249,3 +249,21 @@ recipes.addShaped(<randomthings:soundbox>*8,[
 	[<minecraft:noteblock>,<ore:dyeBlue>,<minecraft:noteblock>],
 	[<minecraft:noteblock>,<minecraft:noteblock>,<minecraft:noteblock>]
 ]);
+
+//water walking
+bath.recipeBuilder()
+	.inputs(<minecraft:iron_boots>)
+	.fluidInputs(<liquid:distilled_water>*1500)
+	.outputs(<randomthings:waterwalkingboots>)
+	.EUt(128)
+	.duration(500)
+	.buildAndRegister();
+
+//lava charm
+bath.recipeBuilder()
+	.inputs(<actuallyadditions:potion_ring_advanced_bauble:6>)
+	.fluidInputs(<liquid:blaze>*1500)
+	.outputs(<randomthings:lavacharm>.withTag({charge: 200}))
+	.EUt(256)
+	.duration(500)
+	.buildAndRegister();

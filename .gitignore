@@ -2,8 +2,9 @@
 config/AppliedEnergistics2/items.csv
 config/AppliedEnergistics2/CustomRecipes.cfg
 config/codechicken/
-config/InvTweaks.cfg
-config/InvTweaksRules.txt
+config/fpsreducer/
+config/InvTweaks/
+config/smoothfont/
 config/ichunutil_keybinds.cfg
 config/jei/bookmarks.ini
 config/jei/worldSettings.*
@@ -11,6 +12,8 @@ config/machinemuse/powersuits-keybinds.cfg
 config/ambientsounds-client.json
 config/ichunutil.cfg
 config/xaero*
+config/betterfps.json
+config/clienttweaks.cfg
 
 #not sync plz
 read me.txt

@@ -4,6 +4,8 @@ import crafttweaker.oredict.IOreDictEntry;
 
 //import crafttweaker II
 import crafttweaker.item.IItemStack;
+import crafttweaker.liquid.ILiquidStack;
+import crafttweaker.item.IIngredient;
 
 val alloy = RecipeMap.getByName("alloy_smelter");
 val assembler = RecipeMap.getByName("assembler");
@@ -48,89 +50,52 @@ for i in fluidDuct {
     recipes.remove(i);
 }
 
-//fluid duct opacity=0
-assembler.recipeBuilder()
-    .inputs([<ore:blockGlassHardened>*2,<ore:ingotCopper>*3])
-    .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:2}))
-    .outputs([<thermaldynamics:duct_16>*2])
-    .duration(50)
-    .EUt(16)
-    .buildAndRegister();
-assembler.recipeBuilder()
-    .inputs([<ore:blockGlassHardened>*2,<ore:ingotInvar>*3])
-    .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:2}))
-    .outputs([<thermaldynamics:duct_16:2>*2])
-    .duration(50)
-    .EUt(16)
-    .buildAndRegister();
-assembler.recipeBuilder()
-    .inputs([<ore:blockGlassHardened>*5,<ore:ingotBronze>*5,<thermaldynamics:duct_16:2>])
-    .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:2}))
-    .outputs([<thermaldynamics:duct_16:6>])
-    .duration(50)
-    .EUt(16)
-    .buildAndRegister();
+//fluid duct opacity=0 and 1, item duct opacity=0 and 1
+	#remove item ducts
+recipes.remove(<thermaldynamics:duct_32>);
 
-//fluid duct opacity=1
-assembler.recipeBuilder()
-    .inputs([<ore:ingotLead>*2,<ore:ingotCopper>*3])
-    .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:2}))
-    .outputs([<thermaldynamics:duct_16:1>*2])
-    .duration(50)
-    .EUt(16)
-    .buildAndRegister();
-assembler.recipeBuilder()
-    .inputs([<ore:ingotLead>*2,<ore:ingotInvar>*3])
-    .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:2}))
-    .outputs([<thermaldynamics:duct_16:3>*2])
-    .duration(50)
-    .EUt(16)
-    .buildAndRegister();
-assembler.recipeBuilder()
-    .inputs([<ore:ingotLead>*5,<ore:ingotBronze>*5,<thermaldynamics:duct_16:3>])
-    .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:2}))
-    .outputs([<thermaldynamics:duct_16:7>])
-    .duration(50)
-    .EUt(16)
-    .buildAndRegister();
+val basicDuct as IItemStack[IIngredient[]] = {
+	#fluid
+		#0
+	[<ore:blockGlassHardened>*2,<ore:ingotCopper>*3] : <thermaldynamics:duct_16>*2,
+	[<ore:blockGlassHardened>*2,<ore:ingotInvar>*3] : <thermaldynamics:duct_16:2>*2,
+	[<ore:blockGlassHardened>*5,<ore:ingotBronze>*5,<thermaldynamics:duct_16:2>*5] : <thermaldynamics:duct_16:6>*5,
+		#1
+	[<ore:ingotLead>*2,<ore:ingotCopper>*3] : <thermaldynamics:duct_16:1>*2,
+	[<ore:ingotLead>*2,<ore:ingotInvar>*3] : <thermaldynamics:duct_16:3>*2,
+	[<ore:ingotLead>*5,<ore:ingotBronze>*5,<thermaldynamics:duct_16:3>*5] : <thermaldynamics:duct_16:7>*5,
+	#item
+		#0
+	[<ore:blockGlassHardened>*2,<ore:ingotTin>*3] : <thermaldynamics:duct_32>*2,
+		#1
+	[<ore:ingotLead>*2,<ore:ingotTin>*3] : <thermaldynamics:duct_32:1>*2
 
-//add item duct recipe in assembler//
-val itemDuct = [
-    <thermaldynamics:duct_32>
-] as IItemStack[];
+};
 
-for i in itemDuct {
-    recipes.remove(i);
+for input, output in basicDuct {
+	assembler.recipeBuilder()
+		.inputs(input)
+		.circuit(2)
+		.outputs(output)
+		.duration(50)
+		.EUt(16)
+		.buildAndRegister();
 }
 
-//item duct opacity=0
-assembler.recipeBuilder()
-    .inputs([<ore:blockGlassHardened>*2,<ore:ingotTin>*3])
-    .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:2}))
-    .outputs([<thermaldynamics:duct_32>*2])
-    .duration(50)
-    .EUt(16)
-    .buildAndRegister();
+	#item duct opacity=0
 assembler.recipeBuilder()
     .inputs([<thermaldynamics:duct_32>*6])
-    .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:2}))
+    .circuit(2)
     .fluidInputs([<liquid:glowstone>*288])
     .outputs([<thermaldynamics:duct_32:2>*6])
     .duration(50)
     .EUt(16)
     .buildAndRegister();
 
-//item duct opacity=1
-assembler.recipeBuilder()
-    .inputs([<ore:ingotLead>*2,<ore:ingotTin>*3])
-    .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:2}))
-    .outputs([<thermaldynamics:duct_32:1>*2])
-    .duration(50)
-    .EUt(16)
-    .buildAndRegister();
+	#item duct opacity=1
 assembler.recipeBuilder()
     .inputs([<thermaldynamics:duct_32:1>*6])
-    .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:2}))
+    .circuit(2)
     .fluidInputs([<liquid:glowstone>*288])
     .outputs([<thermaldynamics:duct_32:3>*6])
     .duration(50)
@@ -150,7 +115,7 @@ for i in DuctMaking {
 		#Vacuum
 	assembler.recipeBuilder()
 		.inputs([i*4])
-		.notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:3}))
+		.circuit(3)
 		.fluidInputs([<liquid:soldering_alloy>*288])
 		.outputs([i.withTag({DenseType: 2 as byte})*4])
 		.duration(50)
@@ -159,7 +124,7 @@ for i in DuctMaking {
 		#dense
 	assembler.recipeBuilder()
 		.inputs([i*4])
-		.notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:3}))
+		.circuit(3)
 		.fluidInputs([<liquid:redstone>*288])
 		.outputs([i.withTag({DenseType: 1 as byte})*4])
 		.duration(50)
@@ -176,7 +141,7 @@ for input,output in DuctUpdating {
 		#Vacuum
 	assembler.recipeBuilder()
 		.inputs([input.withTag({DenseType: 2 as byte})*6])
-		.notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:2}))
+		.circuit(2)
 		.fluidInputs([<liquid:glowstone>*288])
 		.outputs([output.withTag({DenseType: 2 as byte})*6])
 		.duration(50)
@@ -185,7 +150,7 @@ for input,output in DuctUpdating {
 		#dense
 	assembler.recipeBuilder()
 		.inputs([input.withTag({DenseType: 1 as byte})*6])
-		.notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:2}))
+		.circuit(2)
 		.fluidInputs([<liquid:glowstone>*288])
 		.outputs([output.withTag({DenseType: 1 as byte})*6])
 		.duration(50)
@@ -212,7 +177,7 @@ for i in playerDuct {
 //Viaduct (Untreated)
 assembler.recipeBuilder()
     .inputs([<ore:blockGlassHardened>*4,<ore:ingotBronze>*5])
-    .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:2}))
+    .circuit(2)
     .outputs([<thermaldynamics:duct_64:3>*4])
     .duration(50)
     .EUt(16)
@@ -221,7 +186,7 @@ assembler.recipeBuilder()
 //Viaduct
 assembler.recipeBuilder()
     .inputs([<thermaldynamics:duct_64:3>*9])
-    .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:2}))
+    .circuit(2)
     .fluidInputs([<liquid:cryotheum>*288])
     .outputs([<thermaldynamics:duct_64>*9])
     .duration(50)
@@ -231,7 +196,7 @@ assembler.recipeBuilder()
 //Long Range Linking Viaduct
 assembler.recipeBuilder()
     .inputs([<thermaldynamics:duct_64>*9])
-    .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:2}))
+    .circuit(2)
     .fluidInputs([<liquid:ender>*1000])
     .outputs([<thermaldynamics:duct_64:2>*9])
     .duration(100)
@@ -241,38 +206,33 @@ assembler.recipeBuilder()
 //Long Range Viaduct
 assembler.recipeBuilder()
     .inputs([<ore:blockGlassHardened>*4,<ore:ingotLead>*5])
-    .notConsumable(<metaitem:circuit.integrated>.withTag({Configuration:2}))
+    .circuit(2)
     .outputs([<thermaldynamics:duct_64:1>*4])
     .duration(75)
     .EUt(16)
     .buildAndRegister();
 
-//Thermal rod 2x recipe in mill//
-//Blizz (Powder)
-macerator.recipeBuilder()
-    .inputs([<thermalfoundation:material:2048>])
-    .outputs([<thermalfoundation:material:2049>*4])
-    .duration(60)
-    .EUt(16)
-    .buildAndRegister();
+//Thermal rod 2x recipe in mill
+val powders as IItemStack[IItemStack] = {
+	#Blizz (Powder)
+	<thermalfoundation:material:2048> : <thermalfoundation:material:2049>,
+	#Blitz (Powder)
+	<thermalfoundation:material:2050> : <thermalfoundation:material:2051>,
+	#Basalz (Powder)
+	<thermalfoundation:material:2052> : <thermalfoundation:material:2053>
+};
 
-//Blitz (Powder)
-macerator.recipeBuilder()
-    .inputs([<thermalfoundation:material:2050>])
-    .outputs([<thermalfoundation:material:2051>*4])
-    .duration(60)
-    .EUt(16)
-    .buildAndRegister();
+for input, output in powders {
+	macerator.recipeBuilder()
+		.inputs(input)
+		.outputs(output*4)
+		.duration(60)
+		.EUt(16)
+		.buildAndRegister();
 
-//Basalz (Powder)
-macerator.recipeBuilder()
-    .inputs([<thermalfoundation:material:2052>])
-    .outputs([<thermalfoundation:material:2053>*4])
-    .duration(60)
-    .EUt(16)
-    .buildAndRegister();
+}
 
-//set fuel parameters for useless powder//
+//set fuel parameters for useless powder
 val fuel = [
     <thermalfoundation:material:1026>,
     <thermalfoundation:material:1027>
@@ -300,6 +260,7 @@ val servos = [
 for i in servos {
     recipes.remove(i);
 }
+
 //Servo
 assembler.recipeBuilder()
     .inputs(<ore:ingotIron>*3,<ore:dustRedstone>*2,<gregtech:meta_item_1:32610>)
@@ -528,8 +489,6 @@ assembler.recipeBuilder()
     .duration(30)
     .EUt(16)
     .buildAndRegister();
-//
-
 //change Crescent Hammer recipe
 recipes.remove(<thermalfoundation:wrench>);
 recipes.addShaped(<thermalfoundation:wrench>,[
