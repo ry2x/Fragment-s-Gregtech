@@ -15,6 +15,7 @@ import crafttweaker.block.IBlockDefinition;
 import crafttweaker.block.IBlockProperties;
 import crafttweaker.block.IBlock;
 
+val assembler = RecipeMap.getByName("assembler");
 val fluid_canner = RecipeMap.getByName("fluid_canner");
 val hammer = RecipeMap.getByName("forge_hammer");
 val macerator = RecipeMap.getByName("macerator");
@@ -153,7 +154,7 @@ recipes.addShaped(<harvestcraft:juiceritem>,[
 
 #ground
 val groundMaterials as IOreDictEntry[][IItemStack] = {
-	<harvestcraft:groundduckitem> : [<ore:listAllfishraw>,<ore:listAllfishcooked>],
+	<harvestcraft:groundfishitem> : [<ore:listAllfishraw>,<ore:listAllfishcooked>],
 	<harvestcraft:groundbeefitem> : [<ore:listAllbeefraw>,<ore:listAllbeefcooked>],
 	<harvestcraft:groundchickenitem> : [<ore:listAllchickenraw>,<ore:listAllchickencooked>],
 	<harvestcraft:groundduckitem> : [<ore:listAllduckraw>,<ore:listAllduckcooked>],
