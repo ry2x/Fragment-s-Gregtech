@@ -2,6 +2,8 @@
 import mods.gregtech.recipe.RecipeMap;
 import mods.gtadditions.recipe.GARecipeMaps;
 import mods.gtadditions.recipe.LargeRecipeMap;
+import mods.gregtech.recipe.FuelRecipe;
+import mods.gregtech.recipe.RecipeMaps;
 
 //import JEI function
 import mods.jei.JEI;
@@ -71,12 +73,23 @@ val simple_ore_washer as RecipeMap = GARecipeMaps.SIMPLE_ORE_WASHER_RECIPES;
 val nuclear_reactor as RecipeMap = GARecipeMaps.NUCLEAR_REACTOR_RECIPES;
 val nuclear_breeder as RecipeMap = GARecipeMaps.NUCLEAR_BREEDER_RECIPES;
 val decay_chamber as RecipeMap = GARecipeMaps.DECAY_CHAMBERS_RECIPES;
+
 // Large
 val large_chemical_reactor as RecipeMap = GARecipeMaps.LARGE_CHEMICAL_RECIPES;
 val large_mixer as RecipeMap = GARecipeMaps.LARGE_MIXER_RECIPES;
 val large_forge_hammer as RecipeMap = GARecipeMaps.LARGE_FORGE_HAMMER_RECIPES;
 val large_centrifuge as RecipeMap = GARecipeMaps.LARGE_CENTRIFUGE_RECIPES;
 val bio_reactor as RecipeMap = GARecipeMaps.BIO_REACTOR_RECIPES;
+
+//fuel map
+var Recanola = FuelRecipe.create(<liquid:refinedcanolaoil>*25, 45, 32);
+RecipeMaps.DIESEL_GENERATOR_FUELS.addRecipe(Recanola);
+
+var Coil = FuelRecipe.create(<liquid:crystaloil>*2, 5, 64);
+RecipeMaps.DIESEL_GENERATOR_FUELS.addRecipe(Coil);
+
+var Eoil = FuelRecipe.create(<liquid:empoweredoil>*1, 120, 128);
+RecipeMaps.DIESEL_GENERATOR_FUELS.addRecipe(Eoil);
 
 //remove recipes
 val removeRecipes as string[] = [
@@ -995,4 +1008,31 @@ fluid_canner.recipeBuilder()
 	.outputs(<minecraft:experience_bottle>)
 	.EUt(64)
 	.duration(200)
+	.buildAndRegister();
+
+//fuel
+	#canola to recanola
+reactor.recipeBuilder()
+	.fluidInputs(<liquid:canolaoil>*1000)
+	.notConsumable(<ore:dustSiliconDioxide>)
+	.fluidOutputs(<liquid:refinedcanolaoil>*400,<liquid:seed.oil>*600)
+	.EUt(128)
+	.duration(500)
+	.buildAndRegister();
+	#oil to Coil
+reactor.recipeBuilder()
+	.fluidInputs(<liquid:fuel>*500)
+	.inputs(<ore:gemObsidian>*4)
+	.fluidOutputs(<liquid:crystaloil>*500)
+	.EUt(2048)
+	.duration(200)
+	.buildAndRegister();
+	#Coil to empowerd
+reactor.recipeBuilder()
+	.fluidInputs(<liquid:crystaloil>*500)
+	.inputs(<actuallyadditions:item_crystal_empowered:3>*3)
+	.notConsumable(<actuallyadditions:item_crystal_empowered:4>)
+	.fluidOutputs(<liquid:empoweredoil>*750)
+	.EUt(8192)
+	.duration(500)
 	.buildAndRegister();
