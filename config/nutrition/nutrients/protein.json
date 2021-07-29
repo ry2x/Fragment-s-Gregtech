@@ -57,6 +57,8 @@
 			"portionMeat"
 		],
 		"items": [
+            "avaritia:cosmic_meatballs",
+            "avaritia:ultimate_stew",
 			"abyssalcraft:beefp",
 			"abyssalcraft:chickenp",
 			"abyssalcraft:eggp",

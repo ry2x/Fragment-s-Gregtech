@@ -34,6 +34,7 @@
 			"listAllgrain"
 		],
 		"items": [
+            "avaritia:ultimate_stew",
 			"actuallyadditions:item_canola_seed",
 			"actuallyadditions:item_coffee",
 			"actuallyadditions:item_food:6",
