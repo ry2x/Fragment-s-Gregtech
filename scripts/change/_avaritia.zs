@@ -1,6 +1,10 @@
 /*
-useful function here
-https://gist.github.com/Dream-Master/48cdedacd0e78151e6851d5b24e667ee
+Provide some useful functions of avaritia
+mods.avaritia.ExtremeCrafting.addShapeless("name",output, ingredients);
+mods.avaritia.ExtremeCrafting.addShaped("name",output, ingredients);
+mods.avaritia.ExtremeCrafting.remove(output);
+mods.avaritia.Compressor.add(str, output, amount, input); //(amount is an int)
+mods.avaritia.Compressor.add(str, output, amount, input, false); //(if you want the recipe to use the scaling system)
 */
 
 //import crafttweaker II
@@ -228,22 +232,28 @@ assembly_line.recipeBuilder()
 			<avaritia:endest_pearl>,
 			<avaritia:extreme_crafting_table>,
 			<avaritia:resource:7>)
-	.fluidInputs(<liquid:osmium>*125,<liquid:americium>*1000)
-	.outputs()
-	.EUt()
-	.duration()
+	.fluidInputs([<liquid:osmium>*125,<liquid:americium>*1000])
+	.outputs(<avaritia:resource:5>)
+	.EUt(8192)
+	.duration(500)
 	.buildAndRegister();
 
 //singularity
-mods.avaritia.Compressor.remove(<Avaritia:Singularity:*>);
-val singularityAdd as IItemStack[IOreDictEntry[]] = {
-	<ore:blockIron> : <avaritia:singularity:3>,
-	<ore:blockRedstone> : <avaritia:singularity:4>,
-	<ore:blockQuartz> : <avaritia:singularity:5>,
-	<ore:blockCopper> : <avaritia:singularity:6>,
-	<ore:blockTin> : <avaritia:singularity>
+for i in 0 to 15{
+	var singularity as IItemStack = itemUtils.getItem("avaritia:singularity",i);
+	mods.avaritia.Compressor.remove(singularity);
+}
+
+val singularityAdd as string[IItemStack] = {
+	<avaritia:singularity:3> : "Iron",
+	<avaritia:singularity:4> : "Redstone",
+	<avaritia:singularity:5> : "Quartz",
+	<avaritia:singularity:6> : "Copper",
+	<avaritia:singularity> : "Tin"
 };
 
-for i,o in singularityAdd {
-	mods.avaritia.Compressor.add(o, 1000,i );
+for item,str in singularityAdd{
+	var block = oreDict["block"~str];
+	mods.avaritia.Compressor.add(str,item,1000,block,true);
 }
+
