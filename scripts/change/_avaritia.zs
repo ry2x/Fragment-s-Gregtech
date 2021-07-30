@@ -217,7 +217,7 @@ mods.avaritia.ExtremeCrafting.addShaped("re_neutron_compressor",<avaritia:neutro
 ]);
 
 //neutron fix
-recipes.removeByRecipeName("avaritia:items/resources/neutronium_nugget");
+recipes.removeByRecipeName("avaritia:items/resources/neutron_nugget");
 
 //infinity fix
 mods.avaritia.ExtremeCrafting.remove(<avaritia:resource:5>);
