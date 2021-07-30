@@ -151,6 +151,13 @@ var RemovalOres as string[] = [
     "prasiolite",
     "pyrolusite",
     "redstone",
+	"gallite",
+	"barytocalcite",
+	"celestine",
+	"arsenopyrite",
+	"fluoroapatite",
+	"witherite",
+	"bowieite",
 ];
 
 for ores in RemovalOres {
