@@ -1,25 +1,5 @@
 # Installed Mods
 
-Translocators-1.12.2-2.5.2.81-universal
-
-u_team_core-1.12.2-2.2.5.147
-
-useful_backpacks-1.12.2-1.5.4.85
-
-volumetricflask-0.18
-
-WaterMechanicsBackport-1.0.3-1.12.2-NETHERFIX
-
-WirelessCraftingTerminal-1.12.2-3.12.97
-
-WirelessFluidTerminal-1.12.2-1.0.4
-
-Xaeros_Minimap_21.14.0_Forge_1.12
-
-XaerosWorldMap_1.15.0_Forge_1.12
-
-Xtones-1.2.2
-
 aafluxified-1.12.2-1.0.0
 
 ActuallyAdditions-1.12.2-r152
@@ -373,3 +353,23 @@ Toast Control-1.12.2-1.8.1
 ToolBelt-1.12.2-1.9.13
 
 topaddons-1.12.2-1.13.0
+
+Translocators-1.12.2-2.5.2.81-universal
+
+u_team_core-1.12.2-2.2.5.147
+
+useful_backpacks-1.12.2-1.5.4.85
+
+volumetricflask-0.18
+
+WaterMechanicsBackport-1.0.3-1.12.2-NETHERFIX
+
+WirelessCraftingTerminal-1.12.2-3.12.97
+
+WirelessFluidTerminal-1.12.2-1.0.4
+
+Xaeros_Minimap_21.14.0_Forge_1.12
+
+XaerosWorldMap_1.15.0_Forge_1.12
+
+Xtones-1.2.2
