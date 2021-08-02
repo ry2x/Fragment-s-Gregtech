@@ -354,6 +354,6 @@ recipes.addShaped(<psi:psimetal_exosuit_boots>,[
 //assembler
 recipes.addShaped(<psi:cad_assembler>,[
 	[<ore:circuitAdvanced>,<gregtech:meta_item_1:32652>,<ore:circuitAdvanced>],
-	[<gregtech:meta_item_1:32632>,<psi:psi_decorative:3>,<gregtech:meta_item_1:32632>],
+	[<gregtech:meta_item_1:32632>,<deepmoblearning:machine_casing>,<gregtech:meta_item_1:32632>],
 	[<ore:circuitAdvanced>,<gregtech:meta_item_1:32652>,<ore:circuitAdvanced>]
 ]);
