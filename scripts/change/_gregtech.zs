@@ -138,7 +138,11 @@ val removeFromJEI as IItemStack[] = [
 	#Gregtech LV Thermal Centrifuge
 	<gregtech:machine:460>,
 	#Gregtech LV laser Engraver
-	<gregtech:machine:430>
+	<gregtech:machine:430>,
+	#Gregtech amplifire
+	<gregtech:machine:80>,
+	<gregtech:machine:81>,
+	<gregtech:machine:82>
 ];
 
 for item in removeFromJEI {
@@ -171,6 +175,13 @@ fluid_extractor.recipeBuilder()
     .duration(200)
     .EUt(16)
     .buildAndRegister();
+
+//add recipe matter amplifabricater EV
+recipes.addShaped(<gregtech:machine:83>,[
+	[<ore:circuitExtreme>,<gregtech:meta_item_1:32673>,<ore:circuitExtreme>],
+	[<ore:cableGtSingleEvSuperconductor>,<gregtech:machine:504>,<ore:cableGtSingleEvSuperconductor>],
+	[<ore:circuitExtreme>,<gregtech:meta_item_1:32673>,<ore:circuitExtreme>]
+]);
 
 //fixing <ore:dustTungsten> recipes due to no existing recipes
 electrolyzer.recipeBuilder()
