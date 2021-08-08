@@ -1117,7 +1117,7 @@ recipes.addShapeless(<futuremc:soul_fire_torch>*4, [<minecraft:soul_sand>,<minec
 //akasic tome will be akasic record
 recipes.removeByRecipeName("akashictome:tome");
 recipes.removeByRecipeName("akashictome:tome_1");
-val akasicBook as IItemStack = <akashictome:tome>.withTag({"akashictome:data": {industrialforegoing: {id: "industrialforegoing:book_manual", Count: 1 as byte, tag: {"akashictome:definedMod": "industrialforegoing"}, Damage: 0 as short}, tconstruct: {id: "tconstruct:book", Count: 1 as byte, tag: {"akashictome:definedMod": "tconstruct"}, Damage: 0 as short}, ftbquests: {id: "ftbquests:book", Count: 1 as byte, tag: {"akashictome:definedMod": "ftbquests"}, Damage: 0 as short}, practicallogistics2: {id: "practicallogistics2:plguide", Count: 1 as byte, tag: {"akashictome:definedMod": "practicallogistics2"}, Damage: 0 as short}, actuallyadditions: {id: "actuallyadditions:item_booklet", Count: 1 as byte, tag: {"akashictome:definedMod": "actuallyadditions"}, Damage: 0 as short}, deepmoblearning: {id: "patchouli:guide_book", Count: 1 as byte, tag: {"akashictome:definedMod": "deepmoblearning", "patchouli:book": "deepmoblearning:book"}, Damage: 0 as short}, forestry: {id: "forestry:book_forester", Count: 1 as byte, tag: {"akashictome:definedMod": "forestry"}, Damage: 0 as short}}});
+val akasicBook as IItemStack = <akashictome:tome>.withTag({"akashictome:is_morphing": 1 as byte, "akashictome:data": {industrialforegoing: {id: "industrialforegoing:book_manual", Count: 1 as byte, tag: {"akashictome:definedMod": "industrialforegoing"}, Damage: 0 as short}, tconstruct: {id: "tconstruct:book", Count: 1 as byte, tag: {"akashictome:definedMod": "tconstruct"}, Damage: 0 as short}, ftbquests: {id: "ftbquests:book", Count: 1 as byte, tag: {"akashictome:definedMod": "ftbquests"}, Damage: 0 as short}, practicallogistics2: {id: "practicallogistics2:plguide", Count: 1 as byte, tag: {"akashictome:definedMod": "practicallogistics2"}, Damage: 0 as short}, actuallyadditions: {id: "actuallyadditions:item_booklet", Count: 1 as byte, tag: {"akashictome:definedMod": "actuallyadditions"}, Damage: 0 as short}, cookingforblockheads1: {id: "cookingforblockheads:recipe_book", Count: 1 as byte, tag: {"akashictome:definedMod": "cookingforblockheads1"}, Damage: 0 as short}, deepmoblearning: {id: "patchouli:guide_book", Count: 1 as byte, tag: {"akashictome:definedMod": "deepmoblearning", "patchouli:book": "deepmoblearning:book"}, Damage: 0 as short}, forestry: {id: "forestry:book_forester", Count: 1 as byte, tag: {"akashictome:definedMod": "forestry"}, Damage: 0 as short}, cookingforblockheads2: {id: "cookingforblockheads:recipe_book", Count: 1 as byte, tag: {"akashictome:definedMod": "cookingforblockheads2"}, Damage: 2 as short}, cookingforblockheads: {id: "cookingforblockheads:recipe_book", Count: 1 as byte, tag: {"akashictome:displayName": "Cooking for Blockheads I", "akashictome:definedMod": "cookingforblockheads", "akashictome:is_morphing": 1 as byte, display: {Name: "Akashic Tome (Cooking for Blockheads I)"}}, Damage: 1 as short}}});
 recipes.addShapeless(akasicBook,[<minecraft:book>,<minecraft:stick>]);
 
 //tesseract
@@ -1129,3 +1129,13 @@ assembler.recipeBuilder()
     .duration(500)
     .EUt(512)
     .buildAndRegister();
+
+//slash blade
+var blade as IItemStack = <tconstruct:sword_blade>.withTag({Material: "wood"});
+var guard as IItemStack = <tconstruct:wide_guard>.withTag({Material: "wood"});
+var rod as IItemStack = <tconstruct:tool_rod>.withTag({Material: "wood"});
+recipes.addShaped(<minecraft:wooden_sword>,[
+	[blade],
+	[guard],
+	[rod]
+]);

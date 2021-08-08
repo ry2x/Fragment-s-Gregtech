@@ -1020,6 +1020,24 @@ fluid_canner.recipeBuilder()
 	.EUt(64)
 	.duration(200)
 	.buildAndRegister();
+#creative item
+assembly_line.recipeBuilder()
+	.inputs(
+			<ore:blockInfinity>*64,
+			<ore:blockNeutronium>*64,
+			<gregtech:meta_block_compressed_41:15>*64,
+			<avaritia:block_resource>*64,
+			<deepmoblearning:infused_ingot_block>*64,
+			<ore:circuitUltimate>*32,
+			<gregtech:machine:1023>*32,
+			<gregtech:machine:1013>*32,
+			<storagedrawers:upgrade_template>
+			)
+	.fluidInputs(<liquid:pure_matter>*32000)
+	.outputs(<storagedrawers:upgrade_creative:1>)
+	.EUt(131072)
+	.duration(12000)
+	.buildAndRegister();
 
 //fuel
 	#canola to recanola

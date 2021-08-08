@@ -69,7 +69,6 @@ val miscItems = [
 	//vanilla
     <minecraft:structure_void>,
     <minecraft:structure_block>,
-    <minecraft:wooden_sword>,
     <minecraft:wooden_shovel>,
     <minecraft:wooden_pickaxe>,
     <minecraft:wooden_axe>,
@@ -246,6 +245,7 @@ for i in miscItems {
     JEI.removeAndHide(i);
 }
 
+recipes.remove(<minecraft:wooden_sword>);
 //remove item filter
 for i in loadedMods["itemfilters"].items {
     JEI.removeAndHide(i);
