@@ -265,19 +265,19 @@ forming.recipeBuilder()
     .EUt(128)
     .buildAndRegister();
 forming.recipeBuilder()
-    .inputs(<ore:plateAluminium>,<appliedenergistics2:material:35>*4,engineer,<ore:dustRedstone>*4)
+    .inputs(<ore:plateAluminium>,<appliedenergistics2:material:35>*3,engineer,<ore:dustRedstone>*4)
     .outputs(<appliedenergistics2:material:36>)
     .duration(600)
     .EUt(128)
     .buildAndRegister();
 forming.recipeBuilder()
-    .inputs(<ore:plateStainlessSteel>,<appliedenergistics2:material:36>*4,engineer,<ore:dustDiamond>*4)
+    .inputs(<ore:plateStainlessSteel>,<appliedenergistics2:material:36>*3,engineer,<ore:dustDiamond>*4)
     .outputs(<appliedenergistics2:material:37>)
     .duration(600)
     .EUt(512)
     .buildAndRegister();
 forming.recipeBuilder()
-    .inputs(<ore:plateTungstenSteel>,<appliedenergistics2:material:37>*4,engineer,<ore:dustChromite>*4)
+    .inputs(<ore:plateTungstenSteel>,<appliedenergistics2:material:37>*3,engineer,<ore:dustChromite>*4)
     .outputs(<appliedenergistics2:material:38>)
     .duration(2400)
     .EUt(2048)
@@ -290,19 +290,19 @@ forming.recipeBuilder()
     .EUt(128)
     .buildAndRegister();
 forming.recipeBuilder()
-    .inputs(<ore:plateAluminium>,<appliedenergistics2:material:54>*4,engineer,<ore:dustLapis>*4)
+    .inputs(<ore:plateAluminium>,<appliedenergistics2:material:54>*3,engineer,<ore:dustLapis>*4)
     .outputs(<appliedenergistics2:material:55>)
     .duration(600)
     .EUt(128)
     .buildAndRegister();
 forming.recipeBuilder()
-    .inputs(<ore:plateStainlessSteel>,<appliedenergistics2:material:55>*4,engineer,<ore:dustDiamond>*4)
+    .inputs(<ore:plateStainlessSteel>,<appliedenergistics2:material:55>*3,engineer,<ore:dustDiamond>*4)
     .outputs(<appliedenergistics2:material:56>)
     .duration(600)
     .EUt(512)
     .buildAndRegister();
 forming.recipeBuilder()
-    .inputs(<ore:plateTungstenSteel>,<appliedenergistics2:material:56>*4,engineer,<ore:dustChromite>*4)
+    .inputs(<ore:plateTungstenSteel>,<appliedenergistics2:material:56>*3,engineer,<ore:dustChromite>*4)
     .outputs(<appliedenergistics2:material:57>)
     .duration(2400)
     .EUt(2048)
@@ -315,13 +315,13 @@ forming.recipeBuilder()
     .EUt(128)
     .buildAndRegister();
 forming.recipeBuilder()
-    .inputs(<ore:plateStainlessSteel>,<ore:pearlFluix>*2,engineer,<appliedenergistics2:material:32>*4)
+    .inputs(<ore:plateStainlessSteel>,<ore:pearlFluix>*2,engineer,<appliedenergistics2:material:32>*3)
     .outputs(<appliedenergistics2:material:33>)
     .duration(600)
     .EUt(512)
     .buildAndRegister();
 forming.recipeBuilder()
-    .inputs(<ore:plateRhodium>,<ore:pearlFluix>*2,engineer,<appliedenergistics2:material:33>*4)
+    .inputs(<ore:plateRhodium>,<ore:pearlFluix>*2,engineer,<appliedenergistics2:material:33>*3)
     .outputs(<appliedenergistics2:material:34>)
     .duration(600)
     .EUt(2048)
@@ -575,7 +575,7 @@ recipes.addShaped(<appliedenergistics2:io_port>,[
 recipes.replaceAllOccurences(<appliedenergistics2:material:8>,<overloaded:item_core>,<appliedenergistics2:condenser>);
 //growth accelerator
 recipes.replaceAllOccurences(<appliedenergistics2:fluix_block>,<gregtech:machine:2214>,<appliedenergistics2:quartz_growth_accelerator>);
-//CPU bock
+//CPU block
 val unit = <appliedenergistics2:crafting_unit>;
 val cpu as IItemStack[IItemStack] = {
     <appliedenergistics2:crafting_accelerator> : logic, #this is co
@@ -850,21 +850,21 @@ for i in extraCore {
     //fluid core
     #256k
 forming.recipeBuilder()
-    .inputs(<appliedenergistics2:material:57>*4,<ore:plateHssg>,logic,engineer,<ore:dustFluix>*2)
+    .inputs(<appliedenergistics2:material:57>*3,<ore:plateHssg>,logic,engineer,<ore:dustFluix>*2)
     .outputs(<extracells:storage.component:8>)
     .duration(2400)
     .EUt(2048)
     .buildAndRegister();
     #1024k
 forming.recipeBuilder()
-    .inputs(<extracells:storage.component:8>*4,<ore:plateHssg>,logic,engineer,<ore:dustFluix>*2)
+    .inputs(<extracells:storage.component:8>*3,<ore:plateHssg>,logic,engineer,<ore:dustFluix>*2)
     .outputs(<extracells:storage.component:9>)
     .duration(2048)
     .EUt(8192)
     .buildAndRegister();
     #4092k
 forming.recipeBuilder()
-    .inputs(<extracells:storage.component:9>*4,<ore:plateOsmium>,logic,engineer,<ore:dustFluix>*2)
+    .inputs(<extracells:storage.component:9>*3,<ore:plateOsmium>,logic,engineer,<ore:dustFluix>*2)
     .outputs(<extracells:storage.component:10>)
     .duration(2048)
     .EUt(8192)
@@ -872,27 +872,27 @@ forming.recipeBuilder()
     //item core
     #256k
 forming.recipeBuilder()
-    .inputs(<appliedenergistics2:material:38>*4,<ore:plateHssg>,logic,engineer,<ore:dustFluix>*2)
+    .inputs(<appliedenergistics2:material:38>*3,<ore:plateHssg>,logic,engineer,<ore:dustFluix>*2)
     .outputs(<extracells:storage.component>)
     .duration(2400)
     .EUt(2048)
     .buildAndRegister();
     #1024k
 forming.recipeBuilder()
-    .inputs(<extracells:storage.component>*4,<ore:plateHssg>,logic,engineer,<ore:dustFluix>*2)
+    .inputs(<extracells:storage.component>*3,<ore:plateHssg>,logic,engineer,<ore:dustFluix>*2)
     .outputs(<extracells:storage.component:1>)
     .duration(2048)
     .EUt(8192)
     .buildAndRegister();
     #4092k
 forming.recipeBuilder()
-    .inputs(<extracells:storage.component:1>*4,<ore:plateOsmium>,logic,engineer,<ore:dustFluix>*2)
+    .inputs(<extracells:storage.component:1>*3,<ore:plateOsmium>,logic,engineer,<ore:dustFluix>*2)
     .outputs(<extracells:storage.component:2>)
     .duration(2048)
     .EUt(8192)
     .buildAndRegister();
 forming.recipeBuilder()
-    .inputs(<extracells:storage.component:2>*4,<ore:plateNaquadahAlloy>,logic,engineer,<ore:dustFluix>*2)
+    .inputs(<extracells:storage.component:2>*3,<ore:plateNaquadahAlloy>,logic,engineer,<ore:dustFluix>*2)
     .outputs(<extracells:storage.component:3>)
     .duration(2048)
     .EUt(32768)

@@ -936,6 +936,26 @@ for input,output in CompressorFixAdding {
 		.buildAndRegister();
 }
 
+//dence iron plate
+var iron as int[IItemStack] = [
+	4 : <minecraft:iron_ingot>,
+	9 : <gregtech:meta_item_1:12033>
+];
+
+var circuit as IItemStack = <gregtech:meta_item_1:32766>.withTag({Configuration: 9});
+for s,i in iron{
+	var duration as int = s*28;
+	metal_bender.findRecipe(96,[i*9,circuit],null).remove();
+	metal_bender.recipeBuilder()
+		.inputs(iron)
+		.circuit(9)
+		.outputs(<gregtech:meta_item_1:13033>)
+		.EUt(32)
+		.duration(duration)
+		.buildAndRegister();
+}
+
+
 //end
 #ribbon
 assembly_line.recipeBuilder()
@@ -975,7 +995,7 @@ bio_reactor.recipeBuilder()
 uu.recipeBuilder()
 	.inputs(<contenttweaker:memories>)
 	.fluidOutputs(<liquid:pure_matter>*250)
-	.EUt(2048)
+	.EUt(512)
 	.duration(200)
 	.buildAndRegister();
 
@@ -984,7 +1004,7 @@ uu.recipeBuilder()
 large_centrifuge.recipeBuilder()
 	.fluidInputs(<liquid:pure_matter>*200)
 	.fluidOutputs(<liquid:fermionic_uu_matter>*100,<liquid:bosonic_uu_matter>*100)
-	.EUt(2048)
+	.EUt(512)
 	.duration(500)
 	.buildAndRegister();
 	#to cosmic neutronium
@@ -1000,6 +1020,14 @@ autoclave.recipeBuilder()
 	.fluidInputs(<liquid:pure_matter>*100)
 	.inputs(<ore:nuggetCosmicNeutronium>)
 	.outputs(<avaritia:resource:5>)
+	.EUt(512)
+	.duration(200)
+	.buildAndRegister();
+	#to infinity ingot
+autoclave.recipeBuilder()
+	.fluidInputs(<liquid:pure_matter>*100)
+	.inputs(<avaritia:resource:5>)
+	.outputs(<avaritia:resource:6>)
 	.EUt(512)
 	.duration(200)
 	.buildAndRegister();

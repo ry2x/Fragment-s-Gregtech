@@ -36,3 +36,8 @@ for i in portal {
 //add clear/stable glass to glass group
 mods.chisel.Carving.addVariation("glass",<sonarcore:stableglass>);
 mods.chisel.Carving.addVariation("glass",<tconstruct:clear_glass:*>);
+
+//ardite
+mods.chisel.Carving.addGroup("ardite_block");
+mods.chisel.Carving.addVariation("ardite_block", <gregtech:meta_block_compressed_31:10>);
+mods.chisel.Carving.addVariation("ardite_block", <tconstruct:metal:1>);

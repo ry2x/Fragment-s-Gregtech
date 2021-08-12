@@ -76,7 +76,7 @@ recipes.addShaped(<deepmoblearning:glitch_infused_boots>,[
 ]);
 
 //card
-recipes.removeByRecipeName("deepmoblearning:date_model/data_model_blank");
+recipes.removeByRecipeName("deepmoblearning:data_model/data_model_blank");
 forming.recipeBuilder()
 	.inputs(<ore:circuitBasic>,<practicallogistics2:stoneplate>,<ore:plateTin>)
 	.outputs(<deepmoblearning:data_model_blank>)
