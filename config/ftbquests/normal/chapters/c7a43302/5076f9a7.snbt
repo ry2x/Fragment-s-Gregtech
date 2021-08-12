@@ -1,0 +1,18 @@
+{
+	x: -3.5d,
+	y: 26.5d,
+	tasks: [{
+		uid: "05a1c6e2",
+		type: "item",
+		items: [{
+			item: "forestry:apiarist_bag"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "362bcd42",
+		type: "random",
+		table: 1
+	}]
+}

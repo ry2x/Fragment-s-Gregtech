@@ -1,0 +1,23 @@
+{
+	x: 30.5d,
+	y: 20.5d,
+	tasks: [{
+		uid: "984d3dff",
+		type: "item",
+		items: [{
+			item: "thermaldynamics:duct_64"
+		}]
+	},
+	{
+		uid: "b75152f4",
+		type: "item",
+		items: [{
+			item: "thermaldynamics:duct_64 1 1"
+		}]
+	}],
+	rewards: [{
+		uid: "d3e3b465",
+		type: "random",
+		table: 1
+	}]
+}

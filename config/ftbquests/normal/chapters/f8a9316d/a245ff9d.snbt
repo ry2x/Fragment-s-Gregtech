@@ -1,0 +1,15 @@
+{
+	x: -14.5d,
+	y: 7.5d,
+	shape: "hexagon",
+	tasks: [{
+		uid: "b2f8ec82",
+		type: "dimension",
+		dim: -1
+	}],
+	rewards: [{
+		uid: "c7dd7316",
+		type: "item",
+		item: "harvestcraft:crayfishsaladitem"
+	}]
+}

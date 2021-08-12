@@ -1,0 +1,23 @@
+{
+	x: -14.0d,
+	y: 6.5d,
+	tasks: [{
+		uid: "ebfa55f4",
+		type: "item",
+		items: [{
+			item: "psi:psimetal_pickaxe"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "7a805697",
+		type: "random",
+		table: 2
+	},
+	{
+		uid: "c4b34740",
+		type: "choice",
+		table: 6
+	}]
+}

@@ -1,0 +1,19 @@
+{
+	x: -9.0d,
+	y: 40.5d,
+	dependencies: [
+		"1a736913"
+	],
+	tasks: [{
+		uid: "f9943f6a",
+		type: "item",
+		items: [{
+			item: "enderio:item_power_conduit 1 2"
+		}]
+	}],
+	rewards: [{
+		uid: "a8ee9d3c",
+		type: "random",
+		table: 1
+	}]
+}

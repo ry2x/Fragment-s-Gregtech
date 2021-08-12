@@ -1,0 +1,11 @@
+{
+	x: 16.5d,
+	y: -1.5d,
+	shape: "gear",
+	tasks: [{
+		uid: "01dde139",
+		type: "checkmark",
+		title: "AE2",
+		icon: "chisel:futura 1 2"
+	}]
+}

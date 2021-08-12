@@ -1,0 +1,88 @@
+{
+	title: "Juice",
+	loot_size: 1,
+	use_title: true,
+	rewards: [{
+		item: "harvestcraft:applejuiceitem"
+	},
+	{
+		item: "harvestcraft:melonjuiceitem"
+	},
+	{
+		item: "harvestcraft:carrotjuiceitem"
+	},
+	{
+		item: "harvestcraft:strawberryjuiceitem"
+	},
+	{
+		item: "harvestcraft:strawberryjuiceitem"
+	},
+	{
+		item: "harvestcraft:grapejuiceitem"
+	},
+	{
+		item: "harvestcraft:blueberryjuiceitem"
+	},
+	{
+		item: "harvestcraft:cherryjuiceitem"
+	},
+	{
+		item: "harvestcraft:papayajuiceitem"
+	},
+	{
+		item: "harvestcraft:starfruitjuiceitem"
+	},
+	{
+		item: "harvestcraft:orangejuiceitem"
+	},
+	{
+		item: "harvestcraft:peachjuiceitem"
+	},
+	{
+		item: "harvestcraft:grapefruitjuiceitem",
+		count: 2
+	},
+	{
+		item: "harvestcraft:limejuiceitem",
+		count: 2
+	},
+	{
+		item: "harvestcraft:mangojuiceitem"
+	},
+	{
+		item: "harvestcraft:pomegranatejuiceitem",
+		count: 2
+	},
+	{
+		item: "harvestcraft:blackberryjuiceitem"
+	},
+	{
+		item: "harvestcraft:raspberryjuiceitem"
+	},
+	{
+		item: "harvestcraft:kiwijuiceitem"
+	},
+	{
+		item: "harvestcraft:cranberryjuiceitem"
+	},
+	{
+		item: "harvestcraft:cactusfruitjuiceitem",
+		count: 2
+	},
+	{
+		item: "harvestcraft:plumjuiceitem"
+	},
+	{
+		item: "harvestcraft:pearjuiceitem",
+		count: 2
+	},
+	{
+		item: "harvestcraft:apricotjuiceitem"
+	},
+	{
+		item: "harvestcraft:figjuiceitem"
+	},
+	{
+		item: "harvestcraft:persimmonjuiceitem"
+	}]
+}

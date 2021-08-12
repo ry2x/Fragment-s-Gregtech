@@ -1,0 +1,19 @@
+{
+	x: -11.5d,
+	y: -3.5d,
+	dependencies: [
+		"11845263"
+	],
+	tasks: [{
+		uid: "521a9047",
+		type: "item",
+		items: [{
+			item: "gregtech:cable 1 5001"
+		}]
+	}],
+	rewards: [{
+		uid: "b96eaad7",
+		type: "random",
+		table: 0
+	}]
+}

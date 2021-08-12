@@ -1,0 +1,16 @@
+{
+	x: -4.5d,
+	y: 38.5d,
+	tasks: [{
+		uid: "b66eaac2",
+		type: "item",
+		items: [{
+			item: "overloaded:hyper_energy_receiver"
+		}]
+	}],
+	rewards: [{
+		uid: "745d3232",
+		type: "random",
+		table: 1
+	}]
+}

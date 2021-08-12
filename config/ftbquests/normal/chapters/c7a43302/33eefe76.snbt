@@ -1,0 +1,16 @@
+{
+	x: 35.5d,
+	y: 11.0d,
+	tasks: [{
+		uid: "6d04fe7d",
+		type: "item",
+		items: [{
+			item: "extrautils2:trashcanfluid"
+		}]
+	}],
+	rewards: [{
+		uid: "a959693f",
+		type: "random",
+		table: 1
+	}]
+}

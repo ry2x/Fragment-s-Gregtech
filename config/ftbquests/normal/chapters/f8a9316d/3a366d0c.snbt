@@ -1,0 +1,35 @@
+{
+	title: "Get the Time in  a bottle!",
+	icon: {
+		id: "randomthings:timeinabottle",
+		tag: {
+			timeData: {
+				storedTime: 1260
+			}
+		}
+	},
+	x: -5.5d,
+	y: -2.5d,
+	description: "Time to slee..",
+	text: [
+		"Do you  feel Gregtech waste your time yoo much?",
+		"After LV, Gregtech force too many work to reach next Age, so this bottle will help you."
+	],
+	tasks: [{
+		uid: "e1d01a4d",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 100"
+		}]
+	}],
+	rewards: [{
+		uid: "8c34d25b",
+		type: "item",
+		item: {
+			id: "randomthings:timeinabottle",
+			tag: {
+				timeData: {}
+			}
+		}
+	}]
+}

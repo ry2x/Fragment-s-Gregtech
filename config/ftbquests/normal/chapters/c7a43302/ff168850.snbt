@@ -1,0 +1,16 @@
+{
+	x: 30.5d,
+	y: 29.0d,
+	tasks: [{
+		uid: "b8cce8cc",
+		type: "item",
+		items: [{
+			item: "overloaded:player_interface"
+		}]
+	}],
+	rewards: [{
+		uid: "366780dd",
+		type: "random",
+		table: 1
+	}]
+}

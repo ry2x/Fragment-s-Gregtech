@@ -1,0 +1,116 @@
+{
+	title: "Yogrut",
+	loot_size: 1,
+	use_title: true,
+	rewards: [{
+		item: "harvestcraft:pineappleyogurtitem"
+	},
+	{
+		item: "harvestcraft:papayayogurtitem"
+	},
+	{
+		item: "harvestcraft:starfruityogurtitem"
+	},
+	{
+		item: "harvestcraft:starfruityogurtitem"
+	},
+	{
+		item: "harvestcraft:plumyogurtitem"
+	},
+	{
+		item: "harvestcraft:bananayogurtitem"
+	},
+	{
+		item: "harvestcraft:blackberryyogurtitem",
+		count: 3
+	},
+	{
+		item: "harvestcraft:coconutyogurtitem"
+	},
+	{
+		item: "harvestcraft:orangeyogurtitem"
+	},
+	{
+		item: "harvestcraft:peachyogurtitem"
+	},
+	{
+		item: "harvestcraft:limeyogurtitem"
+	},
+	{
+		item: "harvestcraft:mangoyogurtitem"
+	},
+	{
+		item: "harvestcraft:mangoyogurtitem"
+	},
+	{
+		item: "harvestcraft:pomegranateyogurtitem"
+	},
+	{
+		item: "harvestcraft:plainyogurtitem"
+	},
+	{
+		item: "harvestcraft:plainyogurtitem"
+	},
+	{
+		item: "harvestcraft:kiwiyogurtitem"
+	},
+	{
+		item: "harvestcraft:melonyogurtitem"
+	},
+	{
+		item: "harvestcraft:raspberryyogurtitem"
+	},
+	{
+		item: "harvestcraft:pumpkinyogurtitem"
+	},
+	{
+		item: "harvestcraft:chocolateyogurtitem"
+	},
+	{
+		item: "harvestcraft:grapeyogurtitem"
+	},
+	{
+		item: "harvestcraft:strawberryyogurtitem"
+	},
+	{
+		item: "harvestcraft:cherryyogurtitem",
+		count: 2
+	},
+	{
+		item: "harvestcraft:lemonyogurtitem"
+	},
+	{
+		item: "harvestcraft:cherryyogurtitem",
+		count: 2
+	},
+	{
+		item: "harvestcraft:lemonyogurtitem"
+	},
+	{
+		item: "harvestcraft:vanillayogurtitem"
+	},
+	{
+		item: "harvestcraft:blueberryyogurtitem"
+	},
+	{
+		item: "harvestcraft:appleyogurtitem"
+	},
+	{
+		item: "harvestcraft:apricotyogurtitem"
+	},
+	{
+		item: "harvestcraft:figyogurtitem"
+	},
+	{
+		item: "harvestcraft:grapefruityogurtitem"
+	},
+	{
+		item: "harvestcraft:persimmonyogurtitem"
+	},
+	{
+		item: "harvestcraft:gooseberryyogurtitem"
+	},
+	{
+		item: "harvestcraft:cranberryyogurtitem"
+	}]
+}

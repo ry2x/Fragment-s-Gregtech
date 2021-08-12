@@ -1,0 +1,20 @@
+{
+	title: "Dinner",
+	loot_size: 1,
+	use_title: true,
+	rewards: [{
+		item: "harvestcraft:fishdinneritem"
+	},
+	{
+		item: "harvestcraft:chickendinneritem"
+	},
+	{
+		item: "harvestcraft:spaghettidinneritem"
+	},
+	{
+		item: "harvestcraft:thankfuldinneritem"
+	},
+	{
+		item: "harvestcraft:koreandinneritem"
+	}]
+}

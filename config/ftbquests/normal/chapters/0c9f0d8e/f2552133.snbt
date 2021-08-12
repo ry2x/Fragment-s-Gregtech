@@ -1,0 +1,17 @@
+{
+	title: "First, make bronze",
+	x: -6.0d,
+	y: -2.0d,
+	shape: "gear",
+	description: "Steam age by bronze",
+	text: [
+		"Bronze is a important material in Steam Age.",
+		"It'll be some steam machine.",
+		"Make Bronze First!"
+	],
+	tasks: [{
+		uid: "c26a765c",
+		type: "checkmark",
+		icon: "chisel:blockbronze"
+	}]
+}

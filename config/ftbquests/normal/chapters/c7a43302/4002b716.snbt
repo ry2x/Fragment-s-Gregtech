@@ -1,0 +1,16 @@
+{
+	x: -3.5d,
+	y: 15.5d,
+	tasks: [{
+		uid: "5d1f3ff9",
+		type: "item",
+		items: [{
+			item: "minecraft:ender_chest"
+		}]
+	}],
+	rewards: [{
+		uid: "2c7d0f98",
+		type: "random",
+		table: 1
+	}]
+}

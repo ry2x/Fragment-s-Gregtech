@@ -1,0 +1,13 @@
+{
+	title: "Storages, Transportation",
+	icon: {
+		id: "storagedrawersextra:extra_drawers",
+		tag: {
+			material: "forestry:lime"
+		},
+		Damage: 1s
+	},
+	always_invisible: false,
+	group: 0,
+	default_quest_shape: "rsquare"
+}

@@ -1,0 +1,27 @@
+{
+	x: -6.5d,
+	y: -3.0d,
+	tasks: [{
+		uid: "d6846bf7",
+		type: "item",
+		items: [{
+			item: "cyclicmagic:crystallized_obsidian"
+		}]
+	}],
+	rewards: [{
+		uid: "18131d28",
+		type: "random",
+		table: 2
+	},
+	{
+		uid: "67577a3a",
+		type: "item",
+		item: {
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "crystal",
+				Amount: 1000
+			}
+		}
+	}]
+}

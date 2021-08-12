@@ -1,0 +1,26 @@
+{
+	x: -18.0d,
+	y: -1.5d,
+	dependencies: [
+		"b3e7b4b2"
+	],
+	tasks: [{
+		uid: "4356edfe",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "craftingToolScrewdriver",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any craftingToolScrewdriver"
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	}]
+}

@@ -1,0 +1,16 @@
+{
+	x: -3.5d,
+	y: 5.5d,
+	tasks: [{
+		uid: "3081c2f3",
+		type: "item",
+		items: [{
+			item: "cyclicmagic:dice"
+		}]
+	}],
+	rewards: [{
+		uid: "6b7a6a17",
+		type: "random",
+		table: 2
+	}]
+}

@@ -1,0 +1,16 @@
+{
+	x: -5.5d,
+	y: 1.5d,
+	shape: "gear",
+	tasks: [{
+		uid: "368b874a",
+		type: "checkmark",
+		title: "Storage Drawers",
+		icon: {
+			id: "storagedrawersextra:extra_drawers",
+			tag: {
+				material: "forestry:sequoia"
+			}
+		}
+	}]
+}

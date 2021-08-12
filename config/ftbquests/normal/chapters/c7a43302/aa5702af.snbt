@@ -1,0 +1,27 @@
+{
+	x: -5.5d,
+	y: 11.0d,
+	tasks: [{
+		uid: "e59c1cea",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "chestWood",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any chestWood"
+				}
+			}
+		}]
+	}],
+	rewards: [{
+		uid: "ed8167c4",
+		type: "random",
+		table: 1
+	}]
+}

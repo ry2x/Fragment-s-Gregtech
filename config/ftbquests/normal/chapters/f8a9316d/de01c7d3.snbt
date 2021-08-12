@@ -1,0 +1,23 @@
+{
+	icon: {
+		id: "extracells:pattern.fluid",
+		tag: {
+			Fluid: {
+				FluidName: "bromobutane",
+				Amount: 1000
+			}
+		}
+	},
+	x: -11.0d,
+	y: -0.5d,
+	shape: "hexagon",
+	description: "Other kind of quests",
+	dependencies: [
+		"522fd5c9"
+	],
+	tasks: [{
+		uid: "4dae0daf",
+		type: "checkmark",
+		title: "Other quests"
+	}]
+}

@@ -1,0 +1,16 @@
+{
+	title: "LV",
+	loot_size: 1,
+	rewards: [{
+		item: "gregtech:meta_item_2 1 32488"
+	},
+	{
+		item: "gregtech:meta_item_2 1 32487"
+	},
+	{
+		item: "gtadditions:ga_meta_item 1 32221"
+	},
+	{
+		item: "gtadditions:ga_meta_item 1 32203"
+	}]
+}

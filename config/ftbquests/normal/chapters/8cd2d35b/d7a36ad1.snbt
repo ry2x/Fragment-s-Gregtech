@@ -1,0 +1,24 @@
+{
+	x: -9.0d,
+	y: -14.5d,
+	dependencies: [
+		"badbdc15"
+	],
+	tasks: [{
+		uid: "cd41582a",
+		type: "item",
+		items: [{
+			item: "deepmoblearning:simulation_chamber"
+		}]
+	}],
+	rewards: [{
+		uid: "8368f6fe",
+		type: "random",
+		table: 4
+	},
+	{
+		uid: "2da13462",
+		type: "item",
+		item: "deepmoblearning:polymer_clay"
+	}]
+}

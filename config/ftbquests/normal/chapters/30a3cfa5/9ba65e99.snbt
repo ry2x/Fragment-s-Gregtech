@@ -1,0 +1,15 @@
+{
+	x: -3.0d,
+	y: -1.0d,
+	dependencies: [
+		"30a9adf8"
+	],
+	tasks: [{
+		uid: "3162c085",
+		type: "item",
+		items: [{
+			item: "gtadditions:ga_armor 1 4"
+		}],
+		ignore_nbt: 1b
+	}]
+}

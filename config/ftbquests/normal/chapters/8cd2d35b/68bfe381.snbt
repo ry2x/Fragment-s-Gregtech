@@ -1,0 +1,21 @@
+{
+	x: -16.5d,
+	y: -14.5d,
+	tasks: [{
+		uid: "46129b10",
+		type: "item",
+		items: [{
+			item: "deepmoblearning:soot_covered_redstone"
+		}]
+	}],
+	rewards: [{
+		uid: "0eecafb3",
+		type: "random",
+		table: 4
+	},
+	{
+		uid: "30be1fe0",
+		type: "item",
+		item: "deepmoblearning:soot_covered_redstone"
+	}]
+}

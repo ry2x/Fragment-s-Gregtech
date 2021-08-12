@@ -1,0 +1,26 @@
+{
+	x: -20.5d,
+	y: -4.0d,
+	dependencies: [
+		"b3e7b4b2"
+	],
+	tasks: [{
+		uid: "d220453d",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "craftingToolMortar",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any craftingToolMortar"
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	}]
+}

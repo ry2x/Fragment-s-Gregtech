@@ -1,0 +1,16 @@
+{
+	x: 35.5d,
+	y: 18.0d,
+	tasks: [{
+		uid: "5997582f",
+		type: "item",
+		items: [{
+			item: "translocators:translocator_part 1 1"
+		}]
+	}],
+	rewards: [{
+		uid: "2cb18cea",
+		type: "random",
+		table: 1
+	}]
+}

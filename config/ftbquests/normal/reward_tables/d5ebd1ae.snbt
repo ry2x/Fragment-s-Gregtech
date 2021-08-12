@@ -1,0 +1,114 @@
+{
+	title: "Cakes",
+	icon: "minecraft:cake",
+	loot_size: 1,
+	use_title: true,
+	rewards: [{
+		item: "minecraft:cake"
+	},
+	{
+		item: "actuallyadditions:item_food 1 8"
+	},
+	{
+		item: "harvestcraft:carrotcakeitem"
+	},
+	{
+		item: "harvestcraft:cheesecakeitem"
+	},
+	{
+		item: "harvestcraft:cherrycheesecakeitem"
+	},
+	{
+		item: "harvestcraft:chocolatesprinklecakeitem"
+	},
+	{
+		item: "harvestcraft:holidaycakeitem"
+	},
+	{
+		item: "harvestcraft:carrotcupcakeitem"
+	},
+	{
+		item: "harvestcraft:chocolatecupcakeitem"
+	},
+	{
+		item: "harvestcraft:vanillacupcakeitem"
+	},
+	{
+		item: "harvestcraft:baconpancakesitem"
+	},
+	{
+		item: "harvestcraft:lemondrizzlecakeitem"
+	},
+	{
+		item: "harvestcraft:maplesyruppancakesitem"
+	},
+	{
+		item: "harvestcraft:blueberrypancakesitem"
+	},
+	{
+		item: "harvestcraft:pancakesitem"
+	},
+	{
+		item: "harvestcraft:potatocakesitem"
+	},
+	{
+		item: "harvestcraft:ricecakeitem"
+	},
+	{
+		item: "harvestcraft:redvelvetcakeitem"
+	},
+	{
+		item: "harvestcraft:pumpkincheesecakeitem"
+	},
+	{
+		item: "harvestcraft:pineappleupsidedowncakeitem"
+	},
+	{
+		item: "harvestcraft:redvelvetcupcakeitem"
+	},
+	{
+		item: "harvestcraft:redvelvetcupcakeitem"
+	},
+	{
+		item: "harvestcraft:chilicupcakeitem"
+	},
+	{
+		item: "harvestcraft:chilicupcakeitem"
+	},
+	{
+		item: "harvestcraft:peanutbuttercupcakeitem"
+	},
+	{
+		item: "harvestcraft:lemoncupcakeitem"
+	},
+	{
+		item: "harvestcraft:strawberrycupcakeitem"
+	},
+	{
+		item: "harvestcraft:mintcupcakeitem"
+	},
+	{
+		item: "harvestcraft:coffeecupcakeitem"
+	},
+	{
+		item: "harvestcraft:coffeecupcakeitem"
+	},
+	{
+		item: "harvestcraft:coffeecupcakeitem"
+	},
+	{
+		item: "harvestcraft:sprinklescupcakeitem"
+	},
+	{
+		item: "harvestcraft:caramelcupcakeitem"
+	},
+	{
+		item: "harvestcraft:mochicakeitem"
+	},
+	{
+		item: "harvestcraft:rivermudcakeitem"
+	},
+	{
+		item: "harvestcraft:fruitcakeitem"
+	}]
+}

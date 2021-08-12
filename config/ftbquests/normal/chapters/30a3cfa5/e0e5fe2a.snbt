@@ -1,0 +1,25 @@
+{
+	title: "Scanner",
+	x: -15.5d,
+	y: -6.5d,
+	text: [
+		"Scan veins!"
+	],
+	dependencies: [
+		"5d443bdd"
+	],
+	tasks: [{
+		uid: "e1138d77",
+		type: "item",
+		items: [{
+			item: "scannable:scanner"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "406e6a60",
+		type: "item",
+		item: "scannable:module_blank"
+	}]
+}

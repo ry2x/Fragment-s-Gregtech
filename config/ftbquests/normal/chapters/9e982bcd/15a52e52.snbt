@@ -1,0 +1,20 @@
+{
+	x: -20.5d,
+	y: -17.5d,
+	shape: "gear",
+	text: [
+		"これはGT5Uの説明サイトですが、この電圧システムは変わっていないので参考にはなると思います。"
+	],
+	can_repeat: true,
+	tasks: [{
+		uid: "e6e910fd",
+		type: "checkmark",
+		title: "日本人向け 電圧説明サイト"
+	}],
+	rewards: [{
+		uid: "2ca0e483",
+		type: "command",
+		auto: "enabled",
+		command: "/say https://ch.nicovideo.jp/yukieiji_blog/blomaga/ar1763797"
+	}]
+}

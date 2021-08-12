@@ -1,0 +1,19 @@
+{
+	x: -4.5d,
+	y: 34.0d,
+	dependencies: [
+		"8876754a"
+	],
+	tasks: [{
+		uid: "9740938d",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:block_laser_relay_advanced"
+		}]
+	}],
+	rewards: [{
+		uid: "3dd3abf5",
+		type: "random",
+		table: 1
+	}]
+}

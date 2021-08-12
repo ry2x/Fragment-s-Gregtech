@@ -1,0 +1,26 @@
+{
+	x: -3.0d,
+	y: 1.0d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"b58aa826",
+		"95e1ce6c"
+	],
+	tasks: [{
+		uid: "f8e79448",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:block_crystal_empowered"
+		}]
+	}],
+	rewards: [{
+		uid: "1a9b06fa",
+		type: "random",
+		table: 3
+	},
+	{
+		uid: "2d856ae4",
+		type: "item",
+		item: "actuallyadditions:item_crystal_empowered"
+	}]
+}

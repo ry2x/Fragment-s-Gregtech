@@ -1,0 +1,32 @@
+{
+	x: -12.0d,
+	y: -6.5d,
+	tasks: [{
+		uid: "85aaab0e",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "HVbattery",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any HVbattery"
+				}
+			}
+		}]
+	}],
+	rewards: [{
+		uid: "8f494355",
+		type: "random",
+		table: 0
+	},
+	{
+		uid: "aef32f4b",
+		type: "random",
+		table: 9
+	}]
+}

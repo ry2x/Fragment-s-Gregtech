@@ -1,0 +1,19 @@
+{
+	x: 7.0d,
+	y: 34.0d,
+	dependencies: [
+		"e9cc3483"
+	],
+	tasks: [{
+		uid: "79314747",
+		type: "item",
+		items: [{
+			item: "portality:module_interdimensional"
+		}]
+	}],
+	rewards: [{
+		uid: "e3735944",
+		type: "random",
+		table: 1
+	}]
+}

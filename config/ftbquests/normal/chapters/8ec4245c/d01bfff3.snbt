@@ -1,0 +1,20 @@
+{
+	x: 9.0d,
+	y: -1.5d,
+	tasks: [{
+		uid: "9cddb6ed",
+		type: "item",
+		items: [{
+			id: "actuallyadditions:item_filling_wand",
+			tag: {
+				Energy: 0
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "5713ca50",
+		type: "random",
+		table: 3
+	}]
+}

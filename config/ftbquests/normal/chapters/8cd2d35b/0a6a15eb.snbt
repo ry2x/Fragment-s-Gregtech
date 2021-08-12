@@ -1,0 +1,24 @@
+{
+	x: -9.0d,
+	y: -25.0d,
+	dependencies: [
+		"4343dfb2"
+	],
+	tasks: [{
+		uid: "e01b8179",
+		type: "item",
+		items: [{
+			item: "deepmoblearning:glitch_infused_ingot"
+		}]
+	}],
+	rewards: [{
+		uid: "d8861a15",
+		type: "random",
+		table: 4
+	},
+	{
+		uid: "0bce3709",
+		type: "item",
+		item: "deepmoblearning:glitch_infused_ingot"
+	}]
+}

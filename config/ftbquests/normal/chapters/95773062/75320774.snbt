@@ -1,0 +1,36 @@
+{
+	x: -11.0d,
+	y: -1.0d,
+	dependencies: [
+		"1d8bf9a2"
+	],
+	tasks: [{
+		uid: "6b79c210",
+		type: "item",
+		items: [{
+			item: "cyclicmagic:sword_weakness"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "829758b7",
+		type: "random",
+		table: 4
+	},
+	{
+		uid: "0d78482a",
+		type: "random",
+		table: 3
+	},
+	{
+		uid: "d8da2332",
+		type: "random",
+		table: 2
+	},
+	{
+		uid: "c11135fe",
+		type: "item",
+		item: "cyclicmagic:crystallized_obsidian"
+	}]
+}

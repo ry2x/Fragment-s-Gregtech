@@ -1,0 +1,21 @@
+{
+	x: 6.5d,
+	y: 11.0d,
+	dependencies: [
+		"263d5968",
+		"d28bacd9"
+	],
+	dependency_requirement: "one_completed",
+	tasks: [{
+		uid: "1b51d026",
+		type: "item",
+		items: [{
+			item: "ironchest:iron_chest 1 6"
+		}]
+	}],
+	rewards: [{
+		uid: "e4de3d95",
+		type: "random",
+		table: 1
+	}]
+}

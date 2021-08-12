@@ -1,0 +1,20 @@
+{
+	x: 12.5d,
+	y: -9.0d,
+	tasks: [{
+		uid: "c861ac9c",
+		type: "item",
+		items: [{
+			id: "actuallyadditions:item_battery",
+			tag: {
+				Energy: 0
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "fde23154",
+		type: "random",
+		table: 3
+	}]
+}

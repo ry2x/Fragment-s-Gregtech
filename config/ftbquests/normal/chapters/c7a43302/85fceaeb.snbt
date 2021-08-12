@@ -1,0 +1,16 @@
+{
+	x: 10.0d,
+	y: 41.5d,
+	tasks: [{
+		uid: "027efcca",
+		type: "item",
+		items: [{
+			item: "portality:module_fluids"
+		}]
+	}],
+	rewards: [{
+		uid: "e601ca3a",
+		type: "random",
+		table: 1
+	}]
+}

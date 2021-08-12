@@ -1,0 +1,27 @@
+{
+	title: "Make The Gate",
+	x: -8.0d,
+	y: 4.0d,
+	description: "You can now acces the void",
+	text: [
+		"Make the gate with those blocks like nether gate.",
+		"Then click the gate block with  steel and flint."
+	],
+	dependencies: [
+		"c4088e8f"
+	],
+	hide: true,
+	tasks: [{
+		uid: "822a6106",
+		type: "item",
+		items: [{
+			item: "sonarcore:stablestoneblackrimmed_lightblue"
+		}],
+		count: 10L
+	}],
+	rewards: [{
+		uid: "29ec9140",
+		type: "item",
+		item: "actuallyadditions:item_food 1 3"
+	}]
+}

@@ -1,0 +1,18 @@
+{
+	x: 9.0d,
+	y: 1.0d,
+	tasks: [{
+		uid: "37fd6726",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:item_spawner_changer"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "a4a10737",
+		type: "random",
+		table: 3
+	}]
+}

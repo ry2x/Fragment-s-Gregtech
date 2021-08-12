@@ -1,0 +1,20 @@
+{
+	x: -20.5d,
+	y: -15.5d,
+	shape: "gear",
+	text: [
+		"This site has infomation about voltage system in GT"
+	],
+	can_repeat: true,
+	tasks: [{
+		uid: "648ac118",
+		type: "checkmark",
+		title: "About voltage"
+	}],
+	rewards: [{
+		uid: "9384fa8a",
+		type: "command",
+		auto: "enabled",
+		command: "/say https://gregtech-community-edition.fandom.com/wiki/Electricity"
+	}]
+}

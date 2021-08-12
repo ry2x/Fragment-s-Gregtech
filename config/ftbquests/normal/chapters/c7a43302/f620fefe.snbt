@@ -1,0 +1,19 @@
+{
+	x: 23.0d,
+	y: 11.0d,
+	dependencies: [
+		"61f0d1da"
+	],
+	tasks: [{
+		uid: "3889dc49",
+		type: "item",
+		items: [{
+			item: "forestry:capsule"
+		}]
+	}],
+	rewards: [{
+		uid: "9bd8454f",
+		type: "random",
+		table: 1
+	}]
+}

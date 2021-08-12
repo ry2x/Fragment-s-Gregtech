@@ -1,0 +1,24 @@
+{
+	x: -3.5d,
+	y: 1.0d,
+	dependencies: [
+		"bdb4c585"
+	],
+	tasks: [{
+		uid: "5a2495f8",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 13"
+		}]
+	}],
+	rewards: [{
+		uid: "36948c7d",
+		type: "random",
+		table: 0
+	},
+	{
+		uid: "4702f1be",
+		type: "item",
+		item: "chisel:blockbronze"
+	}]
+}

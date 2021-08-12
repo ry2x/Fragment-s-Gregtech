@@ -1,0 +1,7 @@
+{
+	title: "Cyclic",
+	icon: "cyclicmagic:crystallized_obsidian",
+	always_invisible: false,
+	group: -123129491,
+	default_quest_shape: "rsquare"
+}

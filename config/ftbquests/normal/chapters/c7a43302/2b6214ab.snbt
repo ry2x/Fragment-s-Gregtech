@@ -1,0 +1,16 @@
+{
+	x: 33.0d,
+	y: 18.0d,
+	tasks: [{
+		uid: "45898adc",
+		type: "item",
+		items: [{
+			item: "enderio:item_liquid_conduit 1 2"
+		}]
+	}],
+	rewards: [{
+		uid: "aeaf204e",
+		type: "random",
+		table: 1
+	}]
+}

@@ -1,0 +1,20 @@
+{
+	x: 2.0d,
+	y: -6.0d,
+	dependencies: [
+		"54d0bbe0",
+		"c9c50367"
+	],
+	tasks: [{
+		uid: "bde4f645",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:block_empowerer"
+		}]
+	}],
+	rewards: [{
+		uid: "9eb8de23",
+		type: "random",
+		table: 3
+	}]
+}

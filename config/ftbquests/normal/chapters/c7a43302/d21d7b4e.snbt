@@ -1,0 +1,16 @@
+{
+	x: 30.5d,
+	y: 32.5d,
+	tasks: [{
+		uid: "f7086f6a",
+		type: "item",
+		items: [{
+			item: "tesseract:tesseract"
+		}]
+	}],
+	rewards: [{
+		uid: "0917f6b3",
+		type: "random",
+		table: 1
+	}]
+}

@@ -1,0 +1,36 @@
+{
+	title: "Void world gate",
+	x: -11.0d,
+	y: 4.0d,
+	description: "Make the gate block!",
+	text: [
+		"The gate block is needed to make gate!",
+		"You need LV age tech to make chisel."
+	],
+	dependencies: [
+		"483f28d9"
+	],
+	hide: true,
+	tasks: [{
+		uid: "f2970532",
+		type: "item",
+		items: [{
+			item: "chisel:chisel_iron"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "4dd89a72",
+		type: "item",
+		items: [{
+			item: "sonarcore:stablestone_plain"
+		}],
+		count: 10L
+	}],
+	rewards: [{
+		uid: "390bdcb7",
+		type: "item",
+		item: "harvestcraft:greenbeancasseroleitem"
+	}]
+}

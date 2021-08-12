@@ -1,0 +1,19 @@
+{
+	x: 12.5d,
+	y: 1.0d,
+	dependencies: [
+		"c89953c2"
+	],
+	tasks: [{
+		uid: "45c6473c",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:fluid_interface"
+		}]
+	}],
+	rewards: [{
+		uid: "755af831",
+		type: "random",
+		table: 1
+	}]
+}

@@ -1,0 +1,25 @@
+{
+	x: -20.0d,
+	y: 4.0d,
+	dependencies: [
+		"c1b1cb8d"
+	],
+	tasks: [{
+		uid: "273ad50e",
+		type: "item",
+		items: [{
+			item: "psi:cad_battery 1 2"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "82ae7f57",
+		type: "random",
+		table: 2
+	},
+	{
+		uid: "421c03ed",
+		type: "choice",
+		table: 6
+	}]
+}

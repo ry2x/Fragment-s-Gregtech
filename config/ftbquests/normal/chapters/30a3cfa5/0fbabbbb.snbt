@@ -1,0 +1,17 @@
+{
+	x: 2.0d,
+	y: 1.5d,
+	dependencies: [
+		"24ddf544"
+	],
+	tasks: [{
+		uid: "3db9592b",
+		type: "item",
+		items: [{
+			id: "overloaded:multi_leggings",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

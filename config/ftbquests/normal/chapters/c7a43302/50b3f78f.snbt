@@ -1,0 +1,19 @@
+{
+	x: -2.0d,
+	y: 4.0d,
+	dependencies: [
+		"9b0674e3"
+	],
+	tasks: [{
+		uid: "60c25112",
+		type: "item",
+		items: [{
+			item: "fluiddrawers:tank"
+		}]
+	}],
+	rewards: [{
+		uid: "4cdba3c6",
+		type: "random",
+		table: 1
+	}]
+}

@@ -1,0 +1,14 @@
+{
+	icon: "minecraft:dirt",
+	x: -14.5d,
+	y: -2.5d,
+	shape: "gear",
+	description: "There are some Tips for u",
+	size: 3.0d,
+	tasks: [{
+		uid: "e911aa2f",
+		type: "checkmark",
+		title: "Check these First",
+		icon: "minecraft:skull 1 5"
+	}]
+}

@@ -1,0 +1,11 @@
+{
+	x: -9.0d,
+	y: 34.0d,
+	shape: "gear",
+	tasks: [{
+		uid: "6fb57c2b",
+		type: "checkmark",
+		title: "Energy Tras!!!!",
+		icon: "gregtech:ga_cable 1 9723"
+	}]
+}

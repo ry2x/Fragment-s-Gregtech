@@ -1,0 +1,27 @@
+{
+	x: 18.5d,
+	y: -1.5d,
+	dependencies: [
+		"c89953c2"
+	],
+	tasks: [{
+		uid: "133fa67b",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:quantum_ring"
+		}],
+		count: 8L
+	},
+	{
+		uid: "9a354594",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:quantum_link"
+		}]
+	}],
+	rewards: [{
+		uid: "bd7b5948",
+		type: "random",
+		table: 1
+	}]
+}

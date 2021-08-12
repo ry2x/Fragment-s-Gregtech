@@ -1,0 +1,26 @@
+{
+	x: -3.0d,
+	y: -3.0d,
+	dependencies: [
+		"2ec991c3"
+	],
+	tasks: [{
+		uid: "1c4fa118",
+		type: "item",
+		items: [{
+			item: "cyclicmagic:purple_chestplate"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "9bbdf966",
+		type: "random",
+		table: 2
+	},
+	{
+		uid: "d1240467",
+		type: "item",
+		item: "cyclicmagic:crystallized_obsidian"
+	}]
+}

@@ -1,0 +1,14 @@
+{
+	x: -11.0d,
+	y: -2.5d,
+	description: "Round square is item quest",
+	dependencies: [
+		"522fd5c9"
+	],
+	tasks: [{
+		uid: "170e48ff",
+		type: "checkmark",
+		title: "Item Quest",
+		icon: "minecraft:chest"
+	}]
+}

@@ -1,0 +1,21 @@
+{
+	x: -5.0d,
+	y: 5.5d,
+	tasks: [{
+		uid: "cd809484",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 507"
+		}]
+	}],
+	rewards: [{
+		uid: "6d44526b",
+		type: "random",
+		table: 0
+	},
+	{
+		uid: "6152bb8d",
+		type: "random",
+		table: 13
+	}]
+}

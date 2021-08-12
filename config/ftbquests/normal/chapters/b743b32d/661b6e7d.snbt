@@ -1,0 +1,19 @@
+{
+	x: -10.0d,
+	y: -8.5d,
+	dependencies: [
+		"e1ed70d4"
+	],
+	tasks: [{
+		uid: "31648243",
+		type: "item",
+		items: [{
+			item: "gtadditions:ga_cell_casing 1 4"
+		}]
+	}],
+	rewards: [{
+		uid: "bd07d049",
+		type: "random",
+		table: 2
+	}]
+}

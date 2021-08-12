@@ -1,0 +1,19 @@
+{
+	title: "HV",
+	loot_size: 1,
+	rewards: [{
+		item: "gregtech:meta_item_2 1 32492"
+	},
+	{
+		item: "gregtech:meta_item_2 1 32491"
+	},
+	{
+		item: "gtadditions:ga_meta_item 1 32205"
+	},
+	{
+		item: "gtadditions:ga_meta_item 1 32223"
+	},
+	{
+		item: "gtadditions:ga_meta_item 1 32202"
+	}]
+}

@@ -1,0 +1,19 @@
+{
+	x: -1.5d,
+	y: 24.5d,
+	dependencies: [
+		"820db492"
+	],
+	tasks: [{
+		uid: "82808ed6",
+		type: "item",
+		items: [{
+			item: "toolbelt:pouch"
+		}]
+	}],
+	rewards: [{
+		uid: "59354e47",
+		type: "random",
+		table: 1
+	}]
+}

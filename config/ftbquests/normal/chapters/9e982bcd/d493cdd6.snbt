@@ -1,0 +1,82 @@
+{
+	x: -2.0d,
+	y: 11.0d,
+	dependencies: [
+		"fda3761c"
+	],
+	tasks: [{
+		uid: "b24d81cc",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 32657"
+		}]
+	},
+	{
+		uid: "ca9c18ee",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 32647"
+		}]
+	},
+	{
+		uid: "777cd16a",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 32637"
+		}]
+	},
+	{
+		uid: "792e3e8c",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 32617"
+		}]
+	},
+	{
+		uid: "c4a24f88",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 32608"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "289a2e45",
+		type: "random",
+		table: 0
+	},
+	{
+		uid: "3a66abea",
+		type: "item",
+		item: "gregtech:meta_item_1 1 10312",
+		count: 64
+	},
+	{
+		uid: "52e0d37d",
+		type: "item",
+		item: "gregtech:meta_item_1 1 10311",
+		count: 64
+	},
+	{
+		uid: "441e8d22",
+		type: "item",
+		item: {
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "duranium",
+				Amount: 1000
+			}
+		}
+	},
+	{
+		uid: "dbb2c78a",
+		type: "item",
+		item: {
+			id: "forge:bucketfilled",
+			tag: {
+				FluidName: "tritanium",
+				Amount: 1000
+			}
+		}
+	}]
+}

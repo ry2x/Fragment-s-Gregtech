@@ -1,0 +1,17 @@
+{
+	x: 2.0d,
+	y: -1.0d,
+	dependencies: [
+		"80e17cb9"
+	],
+	tasks: [{
+		uid: "c5da5157",
+		type: "item",
+		items: [{
+			id: "overloaded:multi_chestplate",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

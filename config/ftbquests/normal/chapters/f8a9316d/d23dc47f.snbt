@@ -1,0 +1,15 @@
+{
+	x: -11.0d,
+	y: -4.5d,
+	shape: "gear",
+	description: "Gear quest is check quest",
+	dependencies: [
+		"522fd5c9"
+	],
+	tasks: [{
+		uid: "cd523ab4",
+		type: "checkmark",
+		title: "Check Quest",
+		icon: "ftbquests:book"
+	}]
+}

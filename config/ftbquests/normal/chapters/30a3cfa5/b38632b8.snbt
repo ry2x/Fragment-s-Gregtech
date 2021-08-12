@@ -1,0 +1,17 @@
+{
+	x: -15.5d,
+	y: -10.0d,
+	shape: "gear",
+	text: [
+		"Cover is added by gregtech.",
+		"It can be right-clicked with on any side of the machine except the export side. ",
+		"The cover can be removed with a Crowbar. ",
+		"There are some covers, solar panel, conveyer, robot arm ...."
+	],
+	tasks: [{
+		uid: "2f64a8ad",
+		type: "checkmark",
+		title: "Cover",
+		icon: "gregtech:meta_item_1 1 32730"
+	}]
+}

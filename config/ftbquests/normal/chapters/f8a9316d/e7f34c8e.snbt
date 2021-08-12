@@ -1,0 +1,20 @@
+{
+	x: -1.0d,
+	y: 4.0d,
+	description: "Here is coming from KSP????",
+	text: [
+		""
+	],
+	tasks: [{
+		uid: "6f54b6c4",
+		type: "item",
+		items: [{
+			item: "farmingforblockheads:market"
+		}]
+	}],
+	rewards: [{
+		uid: "19229f1a",
+		type: "item",
+		item: "actuallyadditions:item_coffee_seed"
+	}]
+}

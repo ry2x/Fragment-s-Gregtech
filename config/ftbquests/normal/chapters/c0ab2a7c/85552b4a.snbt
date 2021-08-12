@@ -1,0 +1,25 @@
+{
+	x: -1.5d,
+	y: -3.0d,
+	dependencies: [
+		"45b035be",
+		"5690ca9a"
+	],
+	tasks: [{
+		uid: "1de20d02",
+		type: "item",
+		items: [{
+			item: "avaritia:neutronium_compressor"
+		}]
+	}],
+	rewards: [{
+		uid: "04af8e4a",
+		type: "choice",
+		table: 5
+	},
+	{
+		uid: "05ea52c5",
+		type: "item",
+		item: "avaritia:resource 1 4"
+	}]
+}

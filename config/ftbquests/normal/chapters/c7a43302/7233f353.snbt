@@ -1,0 +1,26 @@
+{
+	x: 5.0d,
+	y: 22.5d,
+	tasks: [{
+		uid: "9d639ce7",
+		type: "item",
+		items: [{
+			id: "portalgun:item_portalgun",
+			tag: {
+				lastFired: 0b,
+				width: 1,
+				channelName: "Chell",
+				grabStrength: 4,
+				uuid: "Global",
+				username: "Global",
+				height: 2
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "f0365039",
+		type: "random",
+		table: 1
+	}]
+}

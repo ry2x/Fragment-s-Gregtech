@@ -1,0 +1,27 @@
+{
+	x: 1.5d,
+	y: 1.0d,
+	text: [
+		"Make steel!"
+	],
+	tasks: [{
+		uid: "6fa2b1e0",
+		type: "item",
+		items: [{
+			item: "gregtech:machine 1 510"
+		}]
+	},
+	{
+		uid: "11e51609",
+		type: "item",
+		items: [{
+			item: "gregtech:metal_casing 1 1"
+		}],
+		count: 32L
+	}],
+	rewards: [{
+		uid: "3610ba64",
+		type: "random",
+		table: 0
+	}]
+}

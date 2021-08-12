@@ -1,0 +1,16 @@
+{
+	x: 12.5d,
+	y: -13.0d,
+	tasks: [{
+		uid: "eac80298",
+		type: "item",
+		items: [{
+			item: "gtadditions:ga_heating_coil 1 4"
+		}]
+	}],
+	rewards: [{
+		uid: "12b0ae6c",
+		type: "random",
+		table: 2
+	}]
+}

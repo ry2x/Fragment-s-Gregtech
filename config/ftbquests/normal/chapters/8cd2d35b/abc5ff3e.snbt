@@ -1,0 +1,26 @@
+{
+	x: -1.5d,
+	y: -17.0d,
+	dependencies: [
+		"e685f9ae"
+	],
+	tasks: [{
+		uid: "8637fec8",
+		type: "item",
+		items: [{
+			item: "deepmoblearning:data_model_dragon"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "e7403415",
+		type: "random",
+		table: 4
+	},
+	{
+		uid: "8109f90b",
+		type: "item",
+		item: "deepmoblearning:pristine_matter_dragon"
+	}]
+}

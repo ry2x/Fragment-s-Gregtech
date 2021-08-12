@@ -1,0 +1,19 @@
+{
+	x: -9.0d,
+	y: -22.5d,
+	dependencies: [
+		"6c73b59a"
+	],
+	tasks: [{
+		uid: "ecad3906",
+		type: "item",
+		items: [{
+			item: "deepmoblearning:glitch_fragment"
+		}]
+	}],
+	rewards: [{
+		uid: "c0cac3e4",
+		type: "random",
+		table: 4
+	}]
+}

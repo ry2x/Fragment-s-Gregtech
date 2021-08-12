@@ -1,0 +1,16 @@
+{
+	x: -17.5d,
+	y: -13.0d,
+	tasks: [{
+		uid: "67642104",
+		type: "item",
+		items: [{
+			item: "gregtech:wire_coil"
+		}]
+	}],
+	rewards: [{
+		uid: "98a71ca8",
+		type: "random",
+		table: 2
+	}]
+}

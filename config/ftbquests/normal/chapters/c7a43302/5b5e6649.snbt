@@ -1,0 +1,20 @@
+{
+	icon: "chisel:futura 1 2",
+	x: 16.5d,
+	y: 1.0d,
+	dependencies: [
+		"c89953c2"
+	],
+	tasks: [{
+		uid: "52260509",
+		type: "item",
+		items: [{
+			item: "appliedenergistics2:controller"
+		}]
+	}],
+	rewards: [{
+		uid: "a5670d5e",
+		type: "random",
+		table: 1
+	}]
+}

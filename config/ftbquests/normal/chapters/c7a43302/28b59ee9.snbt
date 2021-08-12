@@ -1,0 +1,24 @@
+{
+	x: 14.5d,
+	y: 24.0d,
+	dependencies: [
+		"8545ae2e"
+	],
+	tasks: [{
+		uid: "5d938cec",
+		type: "item",
+		items: [{
+			item: "extracells:storage.component 1 10"
+		}]
+	}],
+	rewards: [{
+		uid: "3d6fbe72",
+		type: "random",
+		table: 1
+	},
+	{
+		uid: "bd418861",
+		type: "item",
+		item: "extracells:storage.component 1 10"
+	}]
+}

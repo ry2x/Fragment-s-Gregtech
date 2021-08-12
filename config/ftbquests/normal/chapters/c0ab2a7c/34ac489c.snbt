@@ -1,0 +1,51 @@
+{
+	title: "Thank You For Playing!",
+	x: 0.0d,
+	y: 12.5d,
+	text: [
+		""
+	],
+	hide_dependency_lines: true,
+	dependencies: [
+		"0c5d4df8"
+	],
+	hide: true,
+	size: 5.0d,
+	tasks: [{
+		uid: "9c266322",
+		type: "item",
+		items: [{
+			item: "storagedrawers:upgrade_creative 1 1"
+		}]
+	}],
+	rewards: [{
+		uid: "b4837c32",
+		type: "item",
+		item: "storagedrawers:upgrade_creative 1 1"
+	},
+	{
+		uid: "440f1635",
+		type: "choice",
+		table: 5
+	},
+	{
+		uid: "6adb174d",
+		type: "random",
+		table: 2
+	},
+	{
+		uid: "bf6c8d7b",
+		type: "random",
+		table: 0
+	},
+	{
+		uid: "8e5f5e61",
+		type: "random",
+		table: 1
+	},
+	{
+		uid: "36d50fc5",
+		type: "random",
+		table: 3
+	}]
+}

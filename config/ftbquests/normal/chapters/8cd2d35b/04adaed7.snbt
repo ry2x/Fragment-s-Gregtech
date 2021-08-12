@@ -1,0 +1,24 @@
+{
+	x: -9.0d,
+	y: -12.0d,
+	dependencies: [
+		"badbdc15"
+	],
+	tasks: [{
+		uid: "15a8977d",
+		type: "item",
+		items: [{
+			item: "deepmoblearning:extraction_chamber"
+		}]
+	}],
+	rewards: [{
+		uid: "2fc57637",
+		type: "random",
+		table: 4
+	},
+	{
+		uid: "9e1783c7",
+		type: "item",
+		item: "deepmoblearning:soot_covered_redstone"
+	}]
+}

@@ -1,0 +1,16 @@
+{
+	x: 28.0d,
+	y: 0.5d,
+	tasks: [{
+		uid: "4a196855",
+		type: "item",
+		items: [{
+			item: "overloaded:infinite_tank"
+		}]
+	}],
+	rewards: [{
+		uid: "34431088",
+		type: "random",
+		table: 1
+	}]
+}

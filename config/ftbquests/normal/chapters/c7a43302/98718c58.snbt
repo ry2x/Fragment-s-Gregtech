@@ -1,0 +1,16 @@
+{
+	x: 33.0d,
+	y: 26.0d,
+	tasks: [{
+		uid: "de1d6cdd",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:block_phantom_liquiface"
+		}]
+	}],
+	rewards: [{
+		uid: "e5ed543f",
+		type: "random",
+		table: 1
+	}]
+}

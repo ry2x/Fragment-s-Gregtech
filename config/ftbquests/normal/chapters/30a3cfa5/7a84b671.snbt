@@ -1,0 +1,17 @@
+{
+	x: 2.0d,
+	y: 4.0d,
+	dependencies: [
+		"83880209"
+	],
+	tasks: [{
+		uid: "c546aedb",
+		type: "item",
+		items: [{
+			id: "overloaded:multi_boots",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

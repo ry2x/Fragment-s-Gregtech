@@ -1,0 +1,16 @@
+{
+	x: 28.0d,
+	y: 26.0d,
+	tasks: [{
+		uid: "e8bde8d8",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:block_item_viewer"
+		}]
+	}],
+	rewards: [{
+		uid: "17019704",
+		type: "random",
+		table: 1
+	}]
+}

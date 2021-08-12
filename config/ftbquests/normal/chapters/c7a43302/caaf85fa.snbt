@@ -1,0 +1,16 @@
+{
+	x: -9.5d,
+	y: 16.5d,
+	tasks: [{
+		uid: "d929fe70",
+		type: "item",
+		items: [{
+			item: "forestry:butterfly_chest"
+		}]
+	}],
+	rewards: [{
+		uid: "19d9ad3c",
+		type: "random",
+		table: 1
+	}]
+}

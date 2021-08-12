@@ -1,0 +1,16 @@
+{
+	x: 38.0d,
+	y: 18.0d,
+	tasks: [{
+		uid: "e5b432d9",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:block_laser_relay_fluids"
+		}]
+	}],
+	rewards: [{
+		uid: "43d55275",
+		type: "random",
+		table: 1
+	}]
+}

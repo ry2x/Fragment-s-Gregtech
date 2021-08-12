@@ -1,0 +1,24 @@
+{
+	x: 0.5d,
+	y: -5.0d,
+	dependencies: [
+		"85552b4a"
+	],
+	tasks: [{
+		uid: "7cac347b",
+		type: "item",
+		items: [{
+			item: "avaritia:singularity 1 5"
+		}]
+	}],
+	rewards: [{
+		uid: "401cb8a2",
+		type: "choice",
+		table: 5
+	},
+	{
+		uid: "bbc54f24",
+		type: "item",
+		item: "avaritia:singularity 1 5"
+	}]
+}

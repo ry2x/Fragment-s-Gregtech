@@ -1,0 +1,25 @@
+{
+	x: -9.0d,
+	y: -2.5d,
+	description: "I know everything that only I know",
+	text: [
+		""
+	],
+	dependencies: [
+		"db2ed799"
+	],
+	tasks: [{
+		uid: "91baa085",
+		type: "item",
+		items: [{
+			item: "akashictome:tome"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "47b575f6",
+		type: "item",
+		item: "minecraft:golden_apple"
+	}]
+}

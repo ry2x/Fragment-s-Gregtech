@@ -1,0 +1,19 @@
+{
+	x: -6.5d,
+	y: 9.0d,
+	dependencies: [
+		"aa5702af"
+	],
+	tasks: [{
+		uid: "5c32b0b0",
+		type: "item",
+		items: [{
+			item: "minecraft:hopper"
+		}]
+	}],
+	rewards: [{
+		uid: "29daf0d2",
+		type: "random",
+		table: 1
+	}]
+}

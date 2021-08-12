@@ -1,0 +1,62 @@
+{
+	title: "Breads",
+	loot_size: 1,
+	use_title: true,
+	rewards: [{
+		item: "harvestcraft:pumpkinbreaditem"
+	},
+	{
+		item: "harvestcraft:cornbreaditem"
+	},
+	{
+		item: "harvestcraft:gingerbreaditem"
+	},
+	{
+		item: "harvestcraft:garlicbreaditem"
+	},
+	{
+		item: "harvestcraft:zucchinibreaditem"
+	},
+	{
+		item: "harvestcraft:walnutraisinbreaditem"
+	},
+	{
+		item: "harvestcraft:banananutbreaditem"
+	},
+	{
+		item: "harvestcraft:sausageinbreaditem"
+	},
+	{
+		item: "harvestcraft:datenutbreaditem"
+	},
+	{
+		item: "harvestcraft:lavendershortbreaditem"
+	},
+	{
+		item: "harvestcraft:fairybreaditem"
+	},
+	{
+		item: "harvestcraft:honeybreaditem"
+	},
+	{
+		item: "harvestcraft:festivalbreaditem"
+	},
+	{
+		item: "harvestcraft:fruitcreamfestivalbreaditem"
+	},
+	{
+		item: "harvestcraft:vanillaconchasbreaditem"
+	},
+	{
+		item: "harvestcraft:cinnamonbreaditem"
+	},
+	{
+		item: "actuallyadditions:item_food 1 15"
+	},
+	{
+		item: "actuallyadditions:item_food 1 17"
+	},
+	{
+		item: "minecraft:bread"
+	}]
+}

@@ -1,0 +1,10 @@
+{
+	x: -18.0d,
+	y: -4.0d,
+	shape: "gear",
+	tasks: [{
+		uid: "911336e8",
+		type: "checkmark",
+		title: "GT basic tools"
+	}]
+}

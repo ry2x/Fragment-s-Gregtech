@@ -1,0 +1,19 @@
+{
+	x: 2.5d,
+	y: 1.5d,
+	dependencies: [
+		"0ccf5b73"
+	],
+	tasks: [{
+		uid: "a216351e",
+		type: "item",
+		items: [{
+			item: "storagedrawers:controllerslave"
+		}]
+	}],
+	rewards: [{
+		uid: "795d9e94",
+		type: "random",
+		table: 1
+	}]
+}

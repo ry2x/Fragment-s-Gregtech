@@ -1,0 +1,25 @@
+{
+	x: -11.5d,
+	y: -4.5d,
+	dependencies: [
+		"83071948"
+	],
+	tasks: [{
+		uid: "576bfc1d",
+		type: "item",
+		items: [{
+			item: "psi:cad_assembly 1 4"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "fee331be",
+		type: "random",
+		table: 2
+	},
+	{
+		uid: "33b67372",
+		type: "choice",
+		table: 6
+	}]
+}

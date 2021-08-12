@@ -1,0 +1,19 @@
+{
+	x: -13.5d,
+	y: 34.0d,
+	dependencies: [
+		"deb81a08"
+	],
+	tasks: [{
+		uid: "0d089433",
+		type: "item",
+		items: [{
+			item: "enderio:block_cap_bank 1 2"
+		}]
+	}],
+	rewards: [{
+		uid: "1a66f981",
+		type: "random",
+		table: 1
+	}]
+}

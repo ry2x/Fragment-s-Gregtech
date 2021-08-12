@@ -1,0 +1,18 @@
+{
+	x: 25.5d,
+	y: 0.5d,
+	tasks: [{
+		uid: "7c1db9da",
+		type: "item",
+		items: [{
+			item: "industrialforegoing:black_hole_tank"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "6f66f465",
+		type: "random",
+		table: 1
+	}]
+}

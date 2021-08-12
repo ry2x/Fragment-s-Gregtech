@@ -1,0 +1,19 @@
+{
+	x: -5.0d,
+	y: 4.0d,
+	shape: "hexagon",
+	dependencies: [
+		"882591c6"
+	],
+	hide: true,
+	tasks: [{
+		uid: "ece77b4c",
+		type: "dimension",
+		dim: 100
+	}],
+	rewards: [{
+		uid: "7d47c3ac",
+		type: "item",
+		item: "harvestcraft:bbqpotatochipsitem"
+	}]
+}

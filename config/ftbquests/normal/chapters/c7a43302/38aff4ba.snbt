@@ -1,0 +1,16 @@
+{
+	x: 28.0d,
+	y: 29.0d,
+	tasks: [{
+		uid: "167d1d1e",
+		type: "item",
+		items: [{
+			item: "cyclicmagic:cable_wireless_fluid"
+		}]
+	}],
+	rewards: [{
+		uid: "afc5c9fa",
+		type: "random",
+		table: 1
+	}]
+}

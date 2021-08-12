@@ -1,0 +1,26 @@
+{
+	x: -11.0d,
+	y: -5.0d,
+	dependencies: [
+		"1d8bf9a2"
+	],
+	tasks: [{
+		uid: "3db69f2d",
+		type: "item",
+		items: [{
+			item: "cyclicmagic:sword_slowness"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "14135f99",
+		type: "random",
+		table: 2
+	},
+	{
+		uid: "b18ecf39",
+		type: "item",
+		item: "cyclicmagic:crystallized_obsidian"
+	}]
+}

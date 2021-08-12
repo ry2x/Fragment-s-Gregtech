@@ -1,0 +1,16 @@
+{
+	x: -7.5d,
+	y: 6.5d,
+	tasks: [{
+		uid: "c6c9a6a9",
+		type: "item",
+		items: [{
+			item: "cyclicmagic:block_library"
+		}]
+	}],
+	rewards: [{
+		uid: "98b0e10a",
+		type: "random",
+		table: 1
+	}]
+}

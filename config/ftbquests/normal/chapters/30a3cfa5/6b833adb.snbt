@@ -1,0 +1,26 @@
+{
+	x: -15.5d,
+	y: -4.0d,
+	dependencies: [
+		"b3e7b4b2"
+	],
+	tasks: [{
+		uid: "9a1dfe55",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "craftingToolWrench",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any craftingToolWrench"
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	}]
+}

@@ -1,0 +1,19 @@
+{
+	x: -4.0d,
+	y: -12.0d,
+	dependencies: [
+		"d7a36ad1"
+	],
+	tasks: [{
+		uid: "7e6fd7ae",
+		type: "item",
+		items: [{
+			item: "deepmoblearning:living_matter_hellish"
+		}]
+	}],
+	rewards: [{
+		uid: "9009da67",
+		type: "random",
+		table: 4
+	}]
+}

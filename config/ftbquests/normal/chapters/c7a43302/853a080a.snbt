@@ -1,0 +1,16 @@
+{
+	x: 35.5d,
+	y: 26.0d,
+	tasks: [{
+		uid: "120c759d",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:block_phantom_energyface"
+		}]
+	}],
+	rewards: [{
+		uid: "0e576159",
+		type: "random",
+		table: 1
+	}]
+}

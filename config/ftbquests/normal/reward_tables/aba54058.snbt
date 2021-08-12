@@ -1,0 +1,19 @@
+{
+	title: "IV",
+	loot_size: 1,
+	rewards: [{
+		item: "gtadditions:ga_meta_item 1 32225"
+	},
+	{
+		item: "gtadditions:ga_meta_item 1 32216"
+	},
+	{
+		item: "gtadditions:ga_meta_item 1 32213"
+	},
+	{
+		item: "gtadditions:ga_meta_item 1 32211"
+	},
+	{
+		item: "gtadditions:ga_meta_item 1 32208"
+	}]
+}

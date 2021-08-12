@@ -1,0 +1,66 @@
+{
+	x: -5.0d,
+	y: 8.0d,
+	dependencies: [
+		"6fe8ffb9"
+	],
+	tasks: [{
+		uid: "68b9bb26",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 32656"
+		}]
+	},
+	{
+		uid: "40b321bb",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 32646"
+		}]
+	},
+	{
+		uid: "ee58369e",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 32636"
+		}]
+	},
+	{
+		uid: "a433beda",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 32616"
+		}]
+	},
+	{
+		uid: "68513efc",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 32607"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "d4d73b14",
+		type: "random",
+		table: 0
+	},
+	{
+		uid: "da2aeb7f",
+		type: "item",
+		item: "gregtech:meta_item_1 1 14042",
+		count: 64
+	},
+	{
+		uid: "37e62b80",
+		type: "item",
+		item: "gregtech:meta_item_1 1 10302",
+		count: 32
+	},
+	{
+		uid: "5c2ccb67",
+		type: "item",
+		item: "gregtech:meta_item_1 1 10303",
+		count: 32
+	}]
+}

@@ -1,0 +1,66 @@
+{
+	x: -11.0d,
+	y: 2.0d,
+	dependencies: [
+		"4b09ce50"
+	],
+	tasks: [{
+		uid: "ab85ff23",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 32654"
+		}]
+	},
+	{
+		uid: "c7e416d9",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 32644"
+		}]
+	},
+	{
+		uid: "b5042f02",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 32634"
+		}]
+	},
+	{
+		uid: "e71595aa",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 32614"
+		}]
+	},
+	{
+		uid: "ed3a5b58",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 32604"
+		}],
+		count: 64L
+	}],
+	rewards: [{
+		uid: "73f8f618",
+		type: "random",
+		table: 0
+	},
+	{
+		uid: "8337381e",
+		type: "item",
+		item: "gregtech:cable 1 4018",
+		count: 16
+	},
+	{
+		uid: "4dc73d9b",
+		type: "item",
+		item: "gregtech:meta_item_1 1 14042",
+		count: 32
+	},
+	{
+		uid: "85783249",
+		type: "item",
+		item: "gregtech:meta_item_1 1 14235",
+		count: 64
+	}]
+}

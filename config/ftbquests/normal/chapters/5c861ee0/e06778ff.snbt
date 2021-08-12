@@ -1,0 +1,23 @@
+{
+	x: -14.0d,
+	y: 4.0d,
+	tasks: [{
+		uid: "6194ec06",
+		type: "item",
+		items: [{
+			item: "psi:psimetal_shovel"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "7969f95e",
+		type: "random",
+		table: 2
+	},
+	{
+		uid: "74fe4291",
+		type: "choice",
+		table: 6
+	}]
+}

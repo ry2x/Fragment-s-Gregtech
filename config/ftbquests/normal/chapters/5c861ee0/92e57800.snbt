@@ -1,0 +1,54 @@
+{
+	x: -14.0d,
+	y: -1.0d,
+	description: "俺にとってはかえって好都合だ。",
+	text: [
+		""
+	],
+	tasks: [{
+		uid: "7bd05567",
+		type: "item",
+		items: [{
+			item: "psi:psimetal_exosuit_helmet"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "ee6776b1",
+		type: "item",
+		items: [{
+			item: "psi:psimetal_exosuit_chestplate"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "2327608d",
+		type: "item",
+		items: [{
+			item: "psi:psimetal_exosuit_leggings"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	},
+	{
+		uid: "e208d738",
+		type: "item",
+		items: [{
+			item: "psi:psimetal_exosuit_boots"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "2efd0ff6",
+		type: "random",
+		table: 2
+	},
+	{
+		uid: "f3433996",
+		type: "choice",
+		table: 6
+	}]
+}

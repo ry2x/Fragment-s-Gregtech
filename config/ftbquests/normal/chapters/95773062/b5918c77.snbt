@@ -1,0 +1,16 @@
+{
+	x: -0.5d,
+	y: 5.5d,
+	tasks: [{
+		uid: "94458cb1",
+		type: "item",
+		items: [{
+			item: "cyclicmagic:builder_pattern"
+		}]
+	}],
+	rewards: [{
+		uid: "f109b65c",
+		type: "random",
+		table: 2
+	}]
+}

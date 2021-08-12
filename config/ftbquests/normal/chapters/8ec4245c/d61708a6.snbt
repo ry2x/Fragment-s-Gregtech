@@ -1,0 +1,16 @@
+{
+	x: -3.0d,
+	y: -3.5d,
+	tasks: [{
+		uid: "ac35d3f9",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:block_atomic_reconstructor"
+		}]
+	}],
+	rewards: [{
+		uid: "38ae4f22",
+		type: "random",
+		table: 3
+	}]
+}

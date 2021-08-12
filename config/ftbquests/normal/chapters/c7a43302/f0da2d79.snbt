@@ -1,0 +1,19 @@
+{
+	x: -5.5d,
+	y: 22.5d,
+	shape: "gear",
+	tasks: [{
+		uid: "1e7d9615",
+		type: "checkmark",
+		title: "BackPack",
+		icon: {
+			id: "usefulbackpacks:backpack",
+			tag: {
+				display: {
+					color: 3949738
+				}
+			},
+			Damage: 2s
+		}
+	}]
+}

@@ -1,0 +1,16 @@
+{
+	x: 25.5d,
+	y: 14.0d,
+	tasks: [{
+		uid: "d18d79f7",
+		type: "item",
+		items: [{
+			item: "mob_grinding_utils:tank"
+		}]
+	}],
+	rewards: [{
+		uid: "02d19320",
+		type: "random",
+		table: 1
+	}]
+}

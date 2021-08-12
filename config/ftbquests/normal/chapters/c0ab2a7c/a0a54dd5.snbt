@@ -1,0 +1,24 @@
+{
+	x: -4.5d,
+	y: -5.0d,
+	dependencies: [
+		"45b035be"
+	],
+	tasks: [{
+		uid: "99907fdd",
+		type: "item",
+		items: [{
+			item: "avaritia:endest_pearl"
+		}]
+	}],
+	rewards: [{
+		uid: "94bdbd79",
+		type: "choice",
+		table: 5
+	},
+	{
+		uid: "ad59ff85",
+		type: "item",
+		item: "avaritia:endest_pearl"
+	}]
+}

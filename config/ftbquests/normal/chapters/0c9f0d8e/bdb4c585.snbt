@@ -1,0 +1,13 @@
+{
+	x: -6.0d,
+	y: 2.5d,
+	shape: "gear",
+	dependencies: [
+		"f63daa42"
+	],
+	tasks: [{
+		uid: "ee2e1acc",
+		type: "checkmark",
+		title: "Make mahines help you"
+	}]
+}

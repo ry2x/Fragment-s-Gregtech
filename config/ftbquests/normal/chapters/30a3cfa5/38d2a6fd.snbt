@@ -1,0 +1,26 @@
+{
+	title: "Ore vein module",
+	x: -13.0d,
+	y: -6.5d,
+	text: [
+		"Scan with this module, you'll find vein!",
+		"And it can find all ores"
+	],
+	dependencies: [
+		"e0e5fe2a"
+	],
+	tasks: [{
+		uid: "01309e69",
+		type: "item",
+		items: [{
+			item: "scannable:module_ore_rare"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "388afe51",
+		type: "item",
+		item: "harvestcraft:pizzaitem"
+	}]
+}

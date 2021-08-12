@@ -1,0 +1,26 @@
+{
+	title: "Nether Gate from Void",
+	x: -5.0d,
+	y: 7.5d,
+	text: [
+		"You can acces nether from Void"
+	],
+	dependencies: [
+		"a245ff9d",
+		"04f13804"
+	],
+	hide: true,
+	tasks: [{
+		uid: "8a8330c8",
+		type: "item",
+		items: [{
+			item: "sonarcore:stablestoneblackrimmed_plain"
+		}],
+		count: 10L
+	}],
+	rewards: [{
+		uid: "614a400c",
+		type: "item",
+		item: "harvestcraft:strawberryjellysandwichitem"
+	}]
+}

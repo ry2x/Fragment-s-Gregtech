@@ -1,0 +1,16 @@
+{
+	x: -5.5d,
+	y: 16.5d,
+	tasks: [{
+		uid: "6664dcb4",
+		type: "item",
+		items: [{
+			item: "forestry:bee_chest"
+		}]
+	}],
+	rewards: [{
+		uid: "d9047cb0",
+		type: "random",
+		table: 1
+	}]
+}

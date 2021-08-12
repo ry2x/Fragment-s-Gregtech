@@ -1,0 +1,16 @@
+{
+	x: -20.0d,
+	y: -8.5d,
+	tasks: [{
+		uid: "2b9fe22e",
+		type: "item",
+		items: [{
+			item: "gtadditions:ga_cell_casing"
+		}]
+	}],
+	rewards: [{
+		uid: "b24f8ead",
+		type: "random",
+		table: 2
+	}]
+}

@@ -1,0 +1,26 @@
+{
+	x: -11.5d,
+	y: -17.0d,
+	dependencies: [
+		"80bf7fb2"
+	],
+	tasks: [{
+		uid: "ed9df55f",
+		type: "item",
+		items: [{
+			item: "deepmoblearning:trial_key"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "33de05d1",
+		type: "random",
+		table: 4
+	},
+	{
+		uid: "fc373b84",
+		type: "item",
+		item: "deepmoblearning:soot_covered_redstone"
+	}]
+}

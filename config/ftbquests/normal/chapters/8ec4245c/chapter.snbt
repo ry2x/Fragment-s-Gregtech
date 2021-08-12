@@ -1,0 +1,7 @@
+{
+	title: "Actually Additions",
+	icon: "actuallyadditions:block_atomic_reconstructor",
+	always_invisible: false,
+	group: -123129491,
+	default_quest_shape: "rsquare"
+}

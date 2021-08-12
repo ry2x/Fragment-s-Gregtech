@@ -1,8 +1,8 @@
 {
 	title: "Circuit",
-	icon: "gregtech:meta_item_2 1 32487",
+	icon: "gtadditions:ga_meta_item 1 32212",
 	disable_toast: true,
 	always_invisible: false,
-	group: 0,
-	default_quest_shape: "gear"
+	group: 816041893,
+	default_quest_shape: "rsquare"
 }

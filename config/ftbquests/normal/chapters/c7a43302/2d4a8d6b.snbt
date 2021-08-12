@@ -1,0 +1,19 @@
+{
+	x: 40.5d,
+	y: 20.5d,
+	dependencies: [
+		"ea69a148"
+	],
+	tasks: [{
+		uid: "89ad6292",
+		type: "item",
+		items: [{
+			item: "actuallyadditions:block_laser_relay_item_whitelist"
+		}]
+	}],
+	rewards: [{
+		uid: "2106b339",
+		type: "random",
+		table: 1
+	}]
+}

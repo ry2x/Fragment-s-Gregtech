@@ -1,0 +1,22 @@
+{
+	x: -22.5d,
+	y: -1.0d,
+	tasks: [{
+		uid: "5e2d3dfe",
+		type: "item",
+		items: [{
+			item: "psi:cad_socket"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "b60505d7",
+		type: "random",
+		table: 2
+	},
+	{
+		uid: "1d691a98",
+		type: "choice",
+		table: 6
+	}]
+}

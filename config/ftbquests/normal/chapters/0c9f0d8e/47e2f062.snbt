@@ -1,0 +1,36 @@
+{
+	x: -3.5d,
+	y: -2.0d,
+	text: [
+		"Get material for bronze"
+	],
+	dependencies: [
+		"f2552133"
+	],
+	tasks: [{
+		uid: "e0b59050",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 2018"
+		}],
+		count: 3L
+	},
+	{
+		uid: "3441ad53",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 2071"
+		}]
+	}],
+	rewards: [{
+		uid: "ffe330a5",
+		type: "item",
+		item: "gregtech:meta_item_1 1 2071"
+	},
+	{
+		uid: "8544227d",
+		type: "item",
+		item: "gregtech:meta_item_1 1 2018",
+		count: 3
+	}]
+}

@@ -1,0 +1,23 @@
+{
+	x: 12.5d,
+	y: -4.0d,
+	dependencies: [
+		"e4e90b29"
+	],
+	tasks: [{
+		uid: "084e4988",
+		type: "item",
+		items: [{
+			id: "actuallyadditions:item_battery_triple",
+			tag: {
+				Energy: 0
+			}
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "1443f83c",
+		type: "random",
+		table: 3
+	}]
+}

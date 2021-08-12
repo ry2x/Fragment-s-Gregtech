@@ -1,0 +1,16 @@
+{
+	x: 25.5d,
+	y: 18.0d,
+	tasks: [{
+		uid: "e56dbe2b",
+		type: "item",
+		items: [{
+			item: "enderio:item_item_conduit"
+		}]
+	}],
+	rewards: [{
+		uid: "b1a6c8e8",
+		type: "random",
+		table: 1
+	}]
+}

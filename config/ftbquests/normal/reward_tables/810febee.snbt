@@ -1,0 +1,19 @@
+{
+	title: "UV",
+	loot_size: 1,
+	rewards: [{
+		item: "gregtech:meta_item_2 1 32500"
+	},
+	{
+		item: "gtadditions:ga_meta_item 1 32501"
+	},
+	{
+		item: "gtadditions:ga_meta_item 1 32402"
+	},
+	{
+		item: "gtadditions:ga_meta_item 1 32228"
+	},
+	{
+		item: "gtadditions:ga_meta_item 1 32215"
+	}]
+}

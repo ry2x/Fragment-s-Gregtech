@@ -1,0 +1,38 @@
+{
+	title: "PSI",
+	icon: {
+		ForgeCaps: {
+			Parent: {
+				Memory: [],
+				Battery: 400,
+				Time: 0
+			}
+		},
+		id: "psi:cad",
+		tag: {
+			componentCORE: {
+				id: "psi:cad_core",
+				Count: 1b,
+				Damage: 3s
+			},
+			componentASSEMBLY: {
+				id: "psi:cad_assembly",
+				Count: 1b,
+				Damage: 4s
+			},
+			componentSOCKET: {
+				id: "psi:cad_socket",
+				Count: 1b,
+				Damage: 3s
+			},
+			componentBATTERY: {
+				id: "psi:cad_battery",
+				Count: 1b,
+				Damage: 2s
+			}
+		}
+	},
+	always_invisible: false,
+	group: -123129491,
+	default_quest_shape: "rsquare"
+}

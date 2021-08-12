@@ -1,0 +1,11 @@
+{
+	x: 4.5d,
+	y: 39.0d,
+	shape: "gear",
+	tasks: [{
+		uid: "75e62adf",
+		type: "checkmark",
+		title: "Portality",
+		icon: "portality:frame"
+	}]
+}

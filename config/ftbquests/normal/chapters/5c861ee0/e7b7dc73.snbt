@@ -1,0 +1,24 @@
+{
+	x: -16.5d,
+	y: -8.5d,
+	dependencies: [
+		"8b0fce9b"
+	],
+	tasks: [{
+		uid: "6bdf2b44",
+		type: "item",
+		items: [{
+			item: "psi:material 1 2"
+		}]
+	}],
+	rewards: [{
+		uid: "609026a6",
+		type: "random",
+		table: 2
+	},
+	{
+		uid: "f58ca9f8",
+		type: "choice",
+		table: 6
+	}]
+}

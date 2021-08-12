@@ -1,0 +1,16 @@
+{
+	x: -12.5d,
+	y: 5.5d,
+	tasks: [{
+		uid: "4449d1f6",
+		type: "item",
+		items: [{
+			item: "cyclicmagic:crafting_food"
+		}]
+	}],
+	rewards: [{
+		uid: "5b6dfa0d",
+		type: "random",
+		table: 2
+	}]
+}

@@ -1,0 +1,47 @@
+{
+	title: "PSI",
+	x: -27.0d,
+	y: -8.5d,
+	shape: "gear",
+	description: "自分は唯の、二科生です",
+	text: [
+		"Press C and follow the PSI's quest."
+	],
+	tasks: [{
+		uid: "3861b495",
+		type: "checkmark",
+		title: "PSI",
+		icon: {
+			ForgeCaps: {
+				Parent: {
+					Memory: [],
+					Battery: 400,
+					Time: 0
+				}
+			},
+			id: "psi:cad",
+			tag: {
+				componentCORE: {
+					id: "psi:cad_core",
+					Count: 1b,
+					Damage: 3s
+				},
+				componentASSEMBLY: {
+					id: "psi:cad_assembly",
+					Count: 1b,
+					Damage: 4s
+				},
+				componentSOCKET: {
+					id: "psi:cad_socket",
+					Count: 1b,
+					Damage: 3s
+				},
+				componentBATTERY: {
+					id: "psi:cad_battery",
+					Count: 1b,
+					Damage: 2s
+				}
+			}
+		}
+	}]
+}

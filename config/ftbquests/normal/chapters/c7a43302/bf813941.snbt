@@ -1,0 +1,16 @@
+{
+	x: -3.5d,
+	y: 17.5d,
+	tasks: [{
+		uid: "d15cd0b6",
+		type: "item",
+		items: [{
+			item: "enderstorage:ender_storage"
+		}]
+	}],
+	rewards: [{
+		uid: "38fa68b1",
+		type: "random",
+		table: 1
+	}]
+}

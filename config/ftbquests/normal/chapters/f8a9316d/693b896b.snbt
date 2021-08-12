@@ -1,0 +1,42 @@
+{
+	title: "JEI",
+	icon: {
+		id: "minecraft:enchanted_book",
+		tag: {
+			StoredEnchantments: [{
+				lvl: 3s,
+				id: 16s
+			}]
+		}
+	},
+	x: -9.0d,
+	y: -4.5d,
+	shape: "gear",
+	description: "JEI is a very useful mod",
+	text: [
+		"Gregtech has many item chains, so you need to check these when you want to make something.",
+		"You should know how to use it.",
+		"",
+		"-Press R on the item",
+		" you can check the recipes that create it",
+		"-Press U on the item",
+		" you can check the recipes that uses it",
+		"-Press BackSpace on the recipe page",
+		" you can go back previous recipe page",
+		"",
+		"JEI is so useful!  "
+	],
+	dependencies: [
+		"d23dc47f"
+	],
+	tasks: [{
+		uid: "bec33757",
+		type: "checkmark",
+		title: "JEI"
+	}],
+	rewards: [{
+		uid: "8fae11d2",
+		type: "item",
+		item: "minecraft:apple"
+	}]
+}

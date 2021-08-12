@@ -1,0 +1,16 @@
+{
+	x: -3.5d,
+	y: 20.5d,
+	tasks: [{
+		uid: "8877ce64",
+		type: "item",
+		items: [{
+			item: "tconstruct:piggybackpack"
+		}]
+	}],
+	rewards: [{
+		uid: "965423a0",
+		type: "random",
+		table: 1
+	}]
+}

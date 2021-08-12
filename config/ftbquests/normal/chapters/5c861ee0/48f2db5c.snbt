@@ -1,0 +1,24 @@
+{
+	x: -23.0d,
+	y: -8.5d,
+	dependencies: [
+		"a5eb1e5f"
+	],
+	tasks: [{
+		uid: "7cab5426",
+		type: "item",
+		items: [{
+			item: "psi:cad_assembler"
+		}]
+	}],
+	rewards: [{
+		uid: "06dc4ae6",
+		type: "random",
+		table: 2
+	},
+	{
+		uid: "04c0b5ed",
+		type: "choice",
+		table: 6
+	}]
+}

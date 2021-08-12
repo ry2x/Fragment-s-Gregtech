@@ -1,0 +1,16 @@
+{
+	x: -7.5d,
+	y: 16.5d,
+	tasks: [{
+		uid: "e6b4c1b9",
+		type: "item",
+		items: [{
+			item: "forestry:tree_chest"
+		}]
+	}],
+	rewards: [{
+		uid: "737204e3",
+		type: "random",
+		table: 1
+	}]
+}

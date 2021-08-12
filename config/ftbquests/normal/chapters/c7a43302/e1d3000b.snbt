@@ -1,0 +1,12 @@
+{
+	x: -5.5d,
+	y: -1.5d,
+	shape: "gear",
+	dependency_requirement: "one_completed",
+	tasks: [{
+		uid: "4225349b",
+		type: "checkmark",
+		title: "Gregtech Buffer",
+		icon: "gregtech:machine 1 3230"
+	}]
+}

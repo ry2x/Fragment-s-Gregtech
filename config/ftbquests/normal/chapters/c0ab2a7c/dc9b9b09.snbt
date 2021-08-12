@@ -1,0 +1,41 @@
+{
+	x: 1.5d,
+	y: -9.5d,
+	dependencies: [
+		"a0a54dd5",
+		"d2d9d699",
+		"c3e1a213",
+		"6b1e991b",
+		"0f23c975",
+		"8d18116e",
+		"9a83c15e",
+		"345049cd"
+	],
+	tasks: [{
+		uid: "fd2ab390",
+		type: "item",
+		items: [{
+			item: "avaritia:resource 1 5"
+		}]
+	}],
+	rewards: [{
+		uid: "f5dc42d3",
+		type: "choice",
+		table: 5
+	},
+	{
+		uid: "90dfb532",
+		type: "item",
+		item: "avaritia:singularity 1 12"
+	},
+	{
+		uid: "554e2f0a",
+		type: "item",
+		item: "avaritia:resource 1 5"
+	},
+	{
+		uid: "e58329fb",
+		type: "item",
+		item: "avaritia:resource 1 7"
+	}]
+}

@@ -1,0 +1,18 @@
+{
+	title: "Steam Age",
+	icon: "gregtech:machine 1 7",
+	x: -6.0d,
+	y: -5.0d,
+	shape: "gear",
+	text: [
+		"Steam Age is the first age of the gregtech.",
+		"Make bronze, iron and steel!",
+		"",
+		"This age is for reaching LV age!"
+	],
+	size: 3.0d,
+	tasks: [{
+		uid: "4261b7ab",
+		type: "checkmark"
+	}]
+}

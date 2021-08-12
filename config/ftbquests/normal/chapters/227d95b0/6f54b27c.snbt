@@ -13,5 +13,16 @@
 		type: "item",
 		item: "gtadditions:ga_meta_item 1 32218",
 		count: 64
+	},
+	{
+		uid: "c43b42df",
+		type: "item",
+		item: "gtadditions:ga_meta_item 1 32339",
+		count: 64
+	},
+	{
+		uid: "62372b57",
+		type: "item",
+		item: "overloaded:creative_generator"
 	}]
 }

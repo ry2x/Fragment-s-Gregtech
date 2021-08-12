@@ -1,0 +1,17 @@
+{
+	x: 2.0d,
+	y: -3.5d,
+	dependencies: [
+		"603b5e79"
+	],
+	tasks: [{
+		uid: "5178af72",
+		type: "item",
+		items: [{
+			id: "overloaded:multi_helmet",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}]
+}

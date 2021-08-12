@@ -1,0 +1,11 @@
+{
+	x: -20.0d,
+	y: -13.0d,
+	shape: "gear",
+	tasks: [{
+		uid: "e05ca41e",
+		type: "checkmark",
+		title: "Coils",
+		icon: "thermalfoundation:material 1 514"
+	}]
+}

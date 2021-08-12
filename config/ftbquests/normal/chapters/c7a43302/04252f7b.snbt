@@ -1,0 +1,16 @@
+{
+	x: 28.0d,
+	y: 34.0d,
+	tasks: [{
+		uid: "6b3c5974",
+		type: "item",
+		items: [{
+			item: "overloaded:hyper_fluid_sender"
+		}]
+	}],
+	rewards: [{
+		uid: "16955f3d",
+		type: "random",
+		table: 1
+	}]
+}

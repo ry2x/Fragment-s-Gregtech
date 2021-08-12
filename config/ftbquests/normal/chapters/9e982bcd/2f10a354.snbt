@@ -1,0 +1,27 @@
+{
+	title: "What is GTEU",
+	x: -23.0d,
+	y: -15.5d,
+	shape: "gear",
+	text: [
+		"Gregtech own its energy system like RF(redstone flux).",
+		"That is called GTEU(EU).",
+		"GTEU and EU(from IC2) are not same.",
+		"EU from IC2 use forge energy system, so it's same as RF, but GTEU is not.",
+		"GTEU use its own system, so Gregtech machines can't use RF, only can  use GTEU!"
+	],
+	tasks: [{
+		uid: "f38c16a8",
+		type: "checkmark",
+		title: "GTEU",
+		icon: {
+			id: "extracells:pattern.fluid",
+			tag: {
+				Fluid: {
+					FluidName: "battery_alloy",
+					Amount: 1000
+				}
+			}
+		}
+	}]
+}

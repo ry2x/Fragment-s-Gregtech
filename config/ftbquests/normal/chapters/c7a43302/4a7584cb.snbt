@@ -1,0 +1,16 @@
+{
+	x: 30.5d,
+	y: 0.5d,
+	tasks: [{
+		uid: "a6b36f15",
+		type: "item",
+		items: [{
+			item: "overloaded:infinite_barrel"
+		}]
+	}],
+	rewards: [{
+		uid: "d34e24c7",
+		type: "random",
+		table: 1
+	}]
+}

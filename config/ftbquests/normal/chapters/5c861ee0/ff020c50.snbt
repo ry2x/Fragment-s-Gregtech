@@ -1,0 +1,23 @@
+{
+	x: -14.0d,
+	y: 9.0d,
+	tasks: [{
+		uid: "b5524480",
+		type: "item",
+		items: [{
+			item: "psi:psimetal_axe"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "01927de7",
+		type: "random",
+		table: 2
+	},
+	{
+		uid: "793c74c1",
+		type: "choice",
+		table: 6
+	}]
+}

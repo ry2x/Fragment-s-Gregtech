@@ -1,0 +1,17 @@
+{
+	x: -0.5d,
+	y: 0.0d,
+	dependencies: [
+		"7981b845",
+		"9ba65e99"
+	],
+	dependency_requirement: "one_completed",
+	tasks: [{
+		uid: "e1b9cf2e",
+		type: "item",
+		items: [{
+			item: "gtadditions:ga_armor 1 13"
+		}],
+		ignore_nbt: 1b
+	}]
+}

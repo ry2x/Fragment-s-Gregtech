@@ -1,0 +1,19 @@
+{
+	x: -9.0d,
+	y: 31.5d,
+	dependencies: [
+		"2e4271f3"
+	],
+	tasks: [{
+		uid: "893f0e2d",
+		type: "item",
+		items: [{
+			item: "overloaded:infinite_capacitor"
+		}]
+	}],
+	rewards: [{
+		uid: "745f6271",
+		type: "random",
+		table: 1
+	}]
+}

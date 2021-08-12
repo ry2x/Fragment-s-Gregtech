@@ -1,0 +1,19 @@
+{
+	x: -3.5d,
+	y: 24.5d,
+	tasks: [{
+		uid: "6aea6e2d",
+		type: "item",
+		items: [{
+			id: "toolbelt:belt",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "b0267444",
+		type: "random",
+		table: 1
+	}]
+}

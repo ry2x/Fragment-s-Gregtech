@@ -1,0 +1,24 @@
+{
+	x: 7.0d,
+	y: 39.0d,
+	dependencies: [
+		"4d945cb5"
+	],
+	tasks: [{
+		uid: "c8ae8995",
+		type: "item",
+		items: [{
+			item: "portality:controller"
+		}]
+	}],
+	rewards: [{
+		uid: "5658e2a1",
+		type: "random",
+		table: 1
+	},
+	{
+		uid: "8e22c46d",
+		type: "random",
+		table: 12
+	}]
+}

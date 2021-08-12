@@ -1,0 +1,22 @@
+{
+	x: -7.5d,
+	y: 14.0d,
+	dependencies: [
+		"aa5702af"
+	],
+	tasks: [{
+		uid: "32ce4732",
+		type: "item",
+		items: [{
+			id: "chesttransporter:chesttransporter_silver",
+			tag: {}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "18780de8",
+		type: "random",
+		table: 1
+	}]
+}

@@ -1,0 +1,18 @@
+{
+	x: 9.5d,
+	y: 6.0d,
+	dependencies: [
+		"0c5d4df8"
+	],
+	tasks: [{
+		uid: "2cc22d85",
+		type: "fluid",
+		fluid: "pure_matter",
+		amount: 5000
+	}],
+	rewards: [{
+		uid: "054d304f",
+		type: "choice",
+		table: 5
+	}]
+}

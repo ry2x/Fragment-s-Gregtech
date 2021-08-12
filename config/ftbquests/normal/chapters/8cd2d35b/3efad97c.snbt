@@ -1,0 +1,19 @@
+{
+	x: -4.0d,
+	y: -9.5d,
+	dependencies: [
+		"d7a36ad1"
+	],
+	tasks: [{
+		uid: "f25ad03c",
+		type: "item",
+		items: [{
+			item: "deepmoblearning:living_matter_extraterrestrial"
+		}]
+	}],
+	rewards: [{
+		uid: "d2d90c1c",
+		type: "random",
+		table: 4
+	}]
+}

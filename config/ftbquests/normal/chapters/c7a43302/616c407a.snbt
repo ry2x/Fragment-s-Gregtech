@@ -1,0 +1,19 @@
+{
+	x: 14.5d,
+	y: 18.0d,
+	dependencies: [
+		"5392aadf"
+	],
+	tasks: [{
+		uid: "a1021aa0",
+		type: "item",
+		items: [{
+			item: "extracells:storage.casing 1 1"
+		}]
+	}],
+	rewards: [{
+		uid: "81502fa8",
+		type: "random",
+		table: 1
+	}]
+}

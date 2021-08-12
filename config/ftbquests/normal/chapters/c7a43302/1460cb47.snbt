@@ -1,0 +1,16 @@
+{
+	x: -4.5d,
+	y: 40.5d,
+	tasks: [{
+		uid: "38aef49b",
+		type: "item",
+		items: [{
+			item: "overloaded:energy_extractor"
+		}]
+	}],
+	rewards: [{
+		uid: "496ab36f",
+		type: "random",
+		table: 1
+	}]
+}

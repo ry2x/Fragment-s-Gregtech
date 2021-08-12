@@ -1,0 +1,18 @@
+{
+	x: 13.0d,
+	y: -11.5d,
+	tasks: [{
+		uid: "2395139d",
+		type: "item",
+		items: [{
+			item: "avaritia:infinity_shovel"
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "01c37abf",
+		type: "choice",
+		table: 5
+	}]
+}

@@ -1,0 +1,17 @@
+{
+	x: -3.5d,
+	y: 22.5d,
+	tasks: [{
+		uid: "2a7c67c9",
+		type: "item",
+		items: [{
+			item: "usefulbackpacks:backpack"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "29a66f42",
+		type: "random",
+		table: 1
+	}]
+}

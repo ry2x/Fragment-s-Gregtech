@@ -1,0 +1,16 @@
+{
+	x: 25.5d,
+	y: 8.5d,
+	tasks: [{
+		uid: "e036c7c8",
+		type: "item",
+		items: [{
+			item: "minecraft:bucket"
+		}]
+	}],
+	rewards: [{
+		uid: "be8d69d8",
+		type: "random",
+		table: 1
+	}]
+}

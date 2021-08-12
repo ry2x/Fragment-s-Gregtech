@@ -1,0 +1,57 @@
+{
+	title: "Burgers",
+	icon: "harvestcraft:hamburgeritem",
+	loot_size: 1,
+	use_title: true,
+	rewards: [{
+		item: "harvestcraft:hamburgeritem"
+	},
+	{
+		item: "harvestcraft:cheeseburgeritem"
+	},
+	{
+		item: "harvestcraft:onionhamburgeritem"
+	},
+	{
+		item: "harvestcraft:baconcheeseburgeritem"
+	},
+	{
+		item: "harvestcraft:deluxecheeseburgeritem"
+	},
+	{
+		item: "harvestcraft:deluxecheeseburgeritem"
+	},
+	{
+		item: "harvestcraft:coleslawburgeritem"
+	},
+	{
+		item: "harvestcraft:coleslawburgeritem"
+	},
+	{
+		item: "harvestcraft:baconmushroomburgeritem"
+	},
+	{
+		item: "harvestcraft:beetburgeritem"
+	},
+	{
+		item: "harvestcraft:gourmetporkburgeritem"
+	},
+	{
+		item: "harvestcraft:gourmetmuttonburgeritem"
+	},
+	{
+		item: "harvestcraft:gourmetmuttonburgeritem"
+	},
+	{
+		item: "harvestcraft:paradiseburgeritem"
+	},
+	{
+		item: "harvestcraft:paradiseburgeritem"
+	},
+	{
+		item: "harvestcraft:gourmetbeefburgeritem"
+	},
+	{
+		item: "harvestcraft:gourmetvenisonburgeritem"
+	}]
+}

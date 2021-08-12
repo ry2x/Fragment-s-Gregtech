@@ -1,0 +1,24 @@
+{
+	x: -4.5d,
+	y: -11.0d,
+	dependencies: [
+		"244c2029"
+	],
+	tasks: [{
+		uid: "a108cbe1",
+		type: "item",
+		items: [{
+			item: "avaritia:ultimate_stew"
+		}]
+	}],
+	rewards: [{
+		uid: "430a8b4b",
+		type: "choice",
+		table: 5
+	},
+	{
+		uid: "54cf3b64",
+		type: "item",
+		item: "avaritia:ultimate_stew"
+	}]
+}

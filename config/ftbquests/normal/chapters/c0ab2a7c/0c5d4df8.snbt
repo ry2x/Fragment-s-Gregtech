@@ -1,0 +1,23 @@
+{
+	x: 6.0d,
+	y: 6.0d,
+	hide_dependency_lines: true,
+	dependencies: [
+		"785f4eae",
+		"335488fe"
+	],
+	hide: true,
+	size: 3.0d,
+	tasks: [{
+		uid: "94e2603d",
+		type: "item",
+		items: [{
+			item: "contenttweaker:memories"
+		}]
+	}],
+	rewards: [{
+		uid: "a433df08",
+		type: "choice",
+		table: 5
+	}]
+}

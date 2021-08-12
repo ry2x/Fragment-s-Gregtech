@@ -1,0 +1,7 @@
+{
+	title: "Electric Ages",
+	icon: "gregtech:machine 1 502",
+	always_invisible: false,
+	group: 816041893,
+	default_quest_shape: "rsquare"
+}

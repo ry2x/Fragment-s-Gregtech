@@ -1,0 +1,24 @@
+{
+	x: 0.5d,
+	y: -17.0d,
+	shape: "hexagon",
+	dependencies: [
+		"abc5ff3e"
+	],
+	tasks: [{
+		uid: "22a1a92a",
+		type: "kill",
+		entity: "minecraft:ender_dragon",
+		value: 1L
+	}],
+	rewards: [{
+		uid: "f5adc01c",
+		type: "random",
+		table: 4
+	},
+	{
+		uid: "0ac7ad3d",
+		type: "item",
+		item: "deepmoblearning:pristine_matter_dragon"
+	}]
+}

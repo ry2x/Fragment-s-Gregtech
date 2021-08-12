@@ -1,0 +1,20 @@
+{
+	x: -10.5d,
+	y: -6.5d,
+	dependencies: [
+		"38d2a6fd"
+	],
+	tasks: [{
+		uid: "3599ca3a",
+		type: "item",
+		items: [{
+			item: "gtadditions:ga_meta_item2 1 100"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "61134abc",
+		type: "item",
+		item: "harvestcraft:bbqchickenpizzaitem"
+	}]
+}

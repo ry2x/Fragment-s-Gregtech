@@ -1,0 +1,16 @@
+{
+	x: -6.5d,
+	y: 36.5d,
+	tasks: [{
+		uid: "dcb5339b",
+		type: "item",
+		items: [{
+			item: "cyclicmagic:cable_wireless_energy"
+		}]
+	}],
+	rewards: [{
+		uid: "5b3f7179",
+		type: "random",
+		table: 1
+	}]
+}

@@ -1,0 +1,16 @@
+{
+	x: 28.0d,
+	y: 14.0d,
+	tasks: [{
+		uid: "65a28008",
+		type: "item",
+		items: [{
+			item: "mob_grinding_utils:absorption_hopper"
+		}]
+	}],
+	rewards: [{
+		uid: "879236ee",
+		type: "random",
+		table: 1
+	}]
+}

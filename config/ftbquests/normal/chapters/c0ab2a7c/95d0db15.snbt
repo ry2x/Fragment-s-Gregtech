@@ -1,0 +1,24 @@
+{
+	x: 11.0d,
+	y: -9.5d,
+	tasks: [{
+		uid: "60bd3cf1",
+		type: "item",
+		items: [{
+			id: "avaritia:infinity_pickaxe",
+			tag: {
+				ench: [{
+					lvl: 10s,
+					id: 35s
+				}]
+			}
+		}],
+		ignore_damage: true,
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "7a22c2cc",
+		type: "choice",
+		table: 5
+	}]
+}

@@ -1,0 +1,23 @@
+{
+	x: -18.0d,
+	y: 4.0d,
+	tasks: [{
+		uid: "5853b92a",
+		type: "item",
+		items: [{
+			ForgeCaps: {
+				Parent: {
+					data: "craftingToolJackHammer",
+					id: "ore"
+				}
+			},
+			id: "itemfilters:filter",
+			tag: {
+				display: {
+					Name: "Any craftingToolJackHammer"
+				}
+			}
+		}],
+		ignore_nbt: 1b
+	}]
+}

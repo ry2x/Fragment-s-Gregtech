@@ -1,0 +1,25 @@
+{
+	x: -25.0d,
+	y: 4.0d,
+	dependencies: [
+		"5e3736fe"
+	],
+	tasks: [{
+		uid: "b084abc9",
+		type: "item",
+		items: [{
+			item: "psi:cad_core 1 2"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "c267752b",
+		type: "random",
+		table: 2
+	},
+	{
+		uid: "9490528a",
+		type: "choice",
+		table: 6
+	}]
+}

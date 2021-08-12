@@ -1,0 +1,20 @@
+{
+	title: "Make bronze plate for machine",
+	x: -6.0d,
+	y: 5.0d,
+	text: [
+		""
+	],
+	tasks: [{
+		uid: "40070b10",
+		type: "item",
+		items: [{
+			item: "gregtech:meta_item_1 1 12095"
+		}]
+	}],
+	rewards: [{
+		uid: "19afea1f",
+		type: "xp_levels",
+		xp_levels: 1
+	}]
+}

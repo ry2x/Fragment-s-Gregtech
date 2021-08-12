@@ -1,0 +1,25 @@
+{
+	x: -4.5d,
+	y: -3.0d,
+	dependencies: [
+		"ddacc4f2"
+	],
+	tasks: [{
+		uid: "64e64e28",
+		type: "item",
+		items: [{
+			item: "avaritia:extreme_crafting_table"
+		}]
+	}],
+	rewards: [{
+		uid: "1b70e675",
+		type: "choice",
+		table: 5
+	},
+	{
+		uid: "8d714b3d",
+		type: "item",
+		item: "avaritia:resource 1 1",
+		count: 2
+	}]
+}

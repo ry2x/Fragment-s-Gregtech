@@ -1,0 +1,19 @@
+{
+	title: "EV",
+	loot_size: 1,
+	rewards: [{
+		item: "gtadditions:ga_meta_item 1 32209"
+	},
+	{
+		item: "gtadditions:ga_meta_item 1 32206"
+	},
+	{
+		item: "gtadditions:ga_meta_item 1 32224"
+	},
+	{
+		item: "gregtech:meta_item_2 1 32493"
+	},
+	{
+		item: "gregtech:meta_item_2 1 32494"
+	}]
+}

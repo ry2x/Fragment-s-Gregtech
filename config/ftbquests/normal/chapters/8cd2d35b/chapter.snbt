@@ -1,0 +1,7 @@
+{
+	title: "DeepMob Learning",
+	icon: "deepmoblearning:simulation_chamber",
+	always_invisible: false,
+	group: -123129491,
+	default_quest_shape: "rsquare"
+}

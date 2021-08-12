@@ -1,0 +1,21 @@
+{
+	x: 0.5d,
+	y: 22.5d,
+	dependencies: [
+		"f7ef6381"
+	],
+	dependency_requirement: "one_completed",
+	tasks: [{
+		uid: "d4e001b3",
+		type: "item",
+		items: [{
+			item: "usefulbackpacks:backpack 1 2"
+		}],
+		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "86d922f7",
+		type: "random",
+		table: 1
+	}]
+}

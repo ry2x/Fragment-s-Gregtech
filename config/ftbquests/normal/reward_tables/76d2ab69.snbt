@@ -1,0 +1,19 @@
+{
+	title: "ZPM",
+	loot_size: 1,
+	rewards: [{
+		item: "gregtech:meta_item_2 1 32499"
+	},
+	{
+		item: "gtadditions:ga_meta_item 1 32401"
+	},
+	{
+		item: "gtadditions:ga_meta_item 1 32227"
+	},
+	{
+		item: "gtadditions:ga_meta_item 1 32218"
+	},
+	{
+		item: "gtadditions:ga_meta_item 1 32214"
+	}]
+}

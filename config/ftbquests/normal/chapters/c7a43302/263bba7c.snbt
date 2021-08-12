@@ -1,0 +1,19 @@
+{
+	x: 23.0d,
+	y: 12.5d,
+	dependencies: [
+		"61f0d1da"
+	],
+	tasks: [{
+		uid: "1a3e99d8",
+		type: "item",
+		items: [{
+			item: "forestry:refractory"
+		}]
+	}],
+	rewards: [{
+		uid: "9cf42f61",
+		type: "random",
+		table: 1
+	}]
+}

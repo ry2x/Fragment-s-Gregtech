@@ -1,0 +1,29 @@
+{
+	title: "Gregicality",
+	icon: "gregtech:machine 1 3237",
+	x: -14.0d,
+	y: -14.0d,
+	shape: "gear",
+	description: "GregicAdditions",
+	text: [
+		"Gregtech community edition, GTCE had a addon called GregicAddition, but GA is outdated now.",
+		"This pack has \"Gregicality\" which is a fork of GA. ",
+		"It adds many new things, multiblock machines, new ages....  and it makes GTCE difficult!",
+		"",
+		"",
+		"THE PLAYER WHO THINKS TF AND GREGTECH ARE SO EASY WILL BE SATISFIED."
+	],
+	dependencies: [
+		"0de2bc3c"
+	],
+	size: 3.0d,
+	tasks: [{
+		uid: "26449ef7",
+		type: "checkmark"
+	}],
+	rewards: [{
+		uid: "4f18f3a9",
+		type: "item",
+		item: "harvestcraft:tomatosoupitem"
+	}]
+}
