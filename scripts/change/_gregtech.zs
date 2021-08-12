@@ -937,17 +937,17 @@ for input,output in CompressorFixAdding {
 }
 
 //dence iron plate
-var iron as int[IItemStack] = [
+var iron as IItemStack[int] = {
 	4 : <minecraft:iron_ingot>,
 	9 : <gregtech:meta_item_1:12033>
-];
+};
 
 var circuit as IItemStack = <gregtech:meta_item_1:32766>.withTag({Configuration: 9});
 for s,i in iron{
 	var duration as int = s*28;
 	metal_bender.findRecipe(96,[i*9,circuit],null).remove();
 	metal_bender.recipeBuilder()
-		.inputs(iron)
+		.inputs(i)
 		.circuit(9)
 		.outputs(<gregtech:meta_item_1:13033>)
 		.EUt(32)
