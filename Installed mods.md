@@ -54,7 +54,7 @@ BNBGamingLib-1.12.2-2.17.6
 
 bonsaitrees-1.1.4-b170
 
-BrandonsCore-1.12.2-2.4.19.214-universal
+BrandonsCore-1.12.2-2.4.20.162-universal
 
 BuildingGadgets-2.8.4
 
@@ -332,7 +332,7 @@ StorageDrawersExtras-1.12-3.1.0
 
 supermartijn642configlib-1.0.8-mc1.12
 
-supermartijn642corelib-1.0.10a-mc1.12
+supermartijn642corelib-1.0.11-mc1.12
 
 TConstruct-1.12.2-2.13.0.183
 
@@ -368,8 +368,8 @@ WirelessCraftingTerminal-1.12.2-3.12.97
 
 WirelessFluidTerminal-1.12.2-1.0.4
 
-Xaeros_Minimap_21.14.0_Forge_1.12
+Xaeros_Minimap_21.14.1_Forge_1.12
 
-XaerosWorldMap_1.15.0_Forge_1.12
+XaerosWorldMap_1.16.0_Forge_1.12
 
 Xtones-1.2.2
