@@ -12,5 +12,10 @@
 		uid: "d10f2df6",
 		type: "random",
 		table: 2
+	},
+	{
+		uid: "fec921b0",
+		type: "random",
+		table: 9
 	}]
 }

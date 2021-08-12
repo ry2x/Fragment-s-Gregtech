@@ -13,5 +13,10 @@
 		type: "checkmark",
 		title: "Cover",
 		icon: "gregtech:meta_item_1 1 32730"
+	}],
+	rewards: [{
+		uid: "218da22f",
+		type: "xp",
+		xp: 1
 	}]
 }

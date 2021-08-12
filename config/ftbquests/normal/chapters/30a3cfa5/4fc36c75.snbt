@@ -8,5 +8,10 @@
 			item: "gtadditions:ga_armor 1 16"
 		}],
 		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "3629c0be",
+		type: "random",
+		table: 8
 	}]
 }

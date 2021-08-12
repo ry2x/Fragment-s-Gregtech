@@ -15,5 +15,19 @@
 		uid: "471dae27",
 		type: "random",
 		table: 2
+	},
+	{
+		uid: "02effe92",
+		type: "item",
+		item: {
+			id: "forestry:can",
+			tag: {
+				Fluid: {
+					FluidName: "radon",
+					Amount: 1000
+				}
+			},
+			Damage: 1s
+		}
 	}]
 }

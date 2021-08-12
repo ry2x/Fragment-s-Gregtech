@@ -1,6 +1,10 @@
 {
 	x: -18.0d,
 	y: 1.5d,
+	description: "竜神の剣をくらえ！",
+	text: [
+		""
+	],
 	tasks: [{
 		uid: "216fe976",
 		type: "item",
@@ -8,5 +12,10 @@
 			item: "gregtech:meta_item_2 1 32577"
 		}],
 		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "b8bb7ae9",
+		type: "random",
+		table: 10
 	}]
 }

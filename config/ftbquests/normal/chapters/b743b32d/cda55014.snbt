@@ -15,5 +15,11 @@
 		uid: "faef58a6",
 		type: "random",
 		table: 2
+	},
+	{
+		uid: "cbc706b0",
+		type: "item",
+		item: "gtadditions:ga_meta_item 1 17052",
+		count: 2
 	}]
 }

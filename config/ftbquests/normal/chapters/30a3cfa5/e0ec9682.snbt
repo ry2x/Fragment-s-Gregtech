@@ -22,5 +22,10 @@
 			}
 		}],
 		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "80260f7b",
+		type: "random",
+		table: 3
 	}]
 }

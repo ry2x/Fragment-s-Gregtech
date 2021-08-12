@@ -15,5 +15,10 @@
 		uid: "fa307985",
 		type: "random",
 		table: 2
+	},
+	{
+		uid: "995dd310",
+		type: "random",
+		table: 8
 	}]
 }

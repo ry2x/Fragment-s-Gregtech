@@ -12,5 +12,19 @@
 		uid: "8cae1601",
 		type: "random",
 		table: 2
+	},
+	{
+		uid: "5cd4ca81",
+		type: "item",
+		item: {
+			id: "gregtech:meta_item_1",
+			tag: {
+				Fluid: {
+					FluidName: "rocket_fuel_b",
+					Amount: 256000
+				}
+			},
+			Damage: 32406s
+		}
 	}]
 }

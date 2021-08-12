@@ -12,5 +12,19 @@
 		uid: "b5786a88",
 		type: "random",
 		table: 2
+	},
+	{
+		uid: "b626d5c4",
+		type: "item",
+		item: {
+			id: "extrautils2:drum",
+			tag: {
+				Fluid: {
+					FluidName: "plasma.neon",
+					Amount: 4096000
+				}
+			},
+			Damage: 2s
+		}
 	}]
 }

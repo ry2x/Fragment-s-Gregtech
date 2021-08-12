@@ -22,5 +22,10 @@
 			}
 		}],
 		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "dc742d30",
+		type: "random",
+		table: 3
 	}]
 }

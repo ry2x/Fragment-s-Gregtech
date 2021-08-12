@@ -15,5 +15,11 @@
 		uid: "a5f76523",
 		type: "random",
 		table: 2
+	},
+	{
+		uid: "8711e0bb",
+		type: "item",
+		item: "gtadditions:ga_meta_item 1 17052",
+		count: 2
 	}]
 }

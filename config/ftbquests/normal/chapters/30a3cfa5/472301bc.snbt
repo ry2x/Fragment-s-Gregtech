@@ -32,5 +32,10 @@
 		type: "checkmark",
 		title: "Ages",
 		icon: "thermalfoundation:material 1 25"
+	}],
+	rewards: [{
+		uid: "06aabce9",
+		type: "xp_levels",
+		xp_levels: 1
 	}]
 }

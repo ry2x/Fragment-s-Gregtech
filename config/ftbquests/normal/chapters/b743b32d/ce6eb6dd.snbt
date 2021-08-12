@@ -15,5 +15,11 @@
 		uid: "50c847cd",
 		type: "random",
 		table: 2
+	},
+	{
+		uid: "b94e7dff",
+		type: "item",
+		item: "gtadditions:ga_fusion_casing",
+		count: 79
 	}]
 }

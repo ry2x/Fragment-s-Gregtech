@@ -12,5 +12,19 @@
 		uid: "1be2cd6f",
 		type: "random",
 		table: 2
+	},
+	{
+		uid: "78c6073f",
+		type: "item",
+		item: {
+			id: "gregtech:machine",
+			tag: {
+				Fluid: {
+					FluidName: "heavy_e_naquadah_fuel",
+					Amount: 256000
+				}
+			},
+			Damage: 2200s
+		}
 	}]
 }

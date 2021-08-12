@@ -12,5 +12,10 @@
 		uid: "899e5060",
 		type: "random",
 		table: 2
+	},
+	{
+		uid: "c4404904",
+		type: "random",
+		table: 9
 	}]
 }

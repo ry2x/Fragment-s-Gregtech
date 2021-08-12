@@ -12,5 +12,10 @@
 			item: "gtadditions:ga_armor 1 14"
 		}],
 		ignore_nbt: 1b
+	}],
+	rewards: [{
+		uid: "cfecdc1a",
+		type: "random",
+		table: 9
 	}]
 }
