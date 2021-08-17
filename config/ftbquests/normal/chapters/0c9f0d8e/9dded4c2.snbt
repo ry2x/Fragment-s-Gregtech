@@ -5,7 +5,7 @@
 	y: -5.0d,
 	shape: "gear",
 	text: [
-		"Steam Age is the first age of the gregtech.",
+		"Steam Age is the first age of GregTech.",
 		"Make bronze, iron and steel!",
 		"",
 		"This age is for reaching LV age!"

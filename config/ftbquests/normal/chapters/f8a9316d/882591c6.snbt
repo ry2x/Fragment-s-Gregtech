@@ -2,10 +2,10 @@
 	title: "Make The Gate",
 	x: -8.0d,
 	y: 4.0d,
-	description: "You can now acces the void",
+	description: "You can now access the void",
 	text: [
-		"Make the gate with those blocks like nether gate.",
-		"Then click the gate block with  steel and flint."
+		"Make the gate with those blocks like a nether gate.",
+		"Then click the gate block with steel and flint."
 	],
 	dependencies: [
 		"c4088e8f"

@@ -1,22 +1,22 @@
 {
-	title: "Gregtech",
+	title: "GregTech",
 	icon: "gregtech:machine 1 433",
 	x: -18.0d,
 	y: -14.0d,
 	shape: "gear",
 	description: "Greg.....",
 	text: [
-		"GregTech is a known industrial mod in minecraft mod community.",
-		"This mod pack has \"Gregtech community edition\".",
-		"It is fully rewrite of Gregtech 5U(on MC1.7), and contains many improves.",
+		"GregTech is a known industrial mod in the Minecraft mod community.",
+		"This mod pack has \"GregTech Community Edition\".",
+		"It is a full rewrite of GregTech 5U(on MC1.7), and contains many improvements.",
 		"",
-		"It is not easy like Mekanism, but if you had played GT5U and TF at same time, I think that you'll say \"it's easy\".",
+		"It is not easy like Mekanism, but if you had played GT5U and TF at the same time, I think that you'll say \"it's easy\".",
 		"Check the next quest."
 	],
 	size: 3.0d,
 	tasks: [{
 		uid: "ac2409bf",
 		type: "checkmark",
-		title: "Gregtech"
+		title: "GregTech"
 	}]
 }
