@@ -240,12 +240,12 @@ for item, voltage in battery {
 	#forming
 val arrow = <tconstruct:arrow_head>.withTag({Material: "iron"});
 val bullet as IData[IItemStack[]] = {
-	[<psi:spell_bullet>,<psi:material:3>,<psi:material:3>,<psi:material>] : 10,
-	[<psi:spell_bullet:2>,<psi:material>,<psi:material:3>*2,arrow] : 12,
-	[<psi:spell_bullet:6>,<psi:material>,<psi:material:3>*2,<deepmoblearning:soot_covered_redstone>] : 14,
-	[<psi:spell_bullet:8>,<psi:material>,<psi:material:3>*2,<minecraft:gunpowder>] : 11,
-	[<psi:spell_bullet:10>,<psi:material>,<psi:material:3>*2,<gregtech:meta_item_1:2112>] : 12,
-	[<psi:spell_bullet:12>,<psi:material>,<psi:material:3>*2,<minecraft:stone_pressure_plate>] : 11
+	[<psi:spell_bullet>,<ore:plateDarkSteel>.firstItem,<ore:ingotSteel>.firstItem,<psi:material>] : 10,
+	[<psi:spell_bullet:2>,<psi:material>,<ore:plateDarkSteel>.firstItem*2,arrow] : 12,
+	[<psi:spell_bullet:6>,<psi:material>,<ore:plateDarkSteel>.firstItem*2,<deepmoblearning:soot_covered_redstone>] : 14,
+	[<psi:spell_bullet:8>,<psi:material>,<ore:plateDarkSteel>.firstItem*2,<minecraft:gunpowder>] : 11,
+	[<psi:spell_bullet:10>,<psi:material>,<ore:plateDarkSteel>.firstItem*2,<gregtech:meta_item_1:2112>] : 12,
+	[<psi:spell_bullet:12>,<psi:material>,<ore:plateDarkSteel>.firstItem*2,<minecraft:stone_pressure_plate>] : 11
 };
 
 for item, multi in bullet {
@@ -259,7 +259,7 @@ for item, multi in bullet {
 }
 
 forming.recipeBuilder()
-	.inputs(<psi:spell_bullet:4>,<psi:material>,<psi:material:3>*2,<ore:slimeball>)
+	.inputs(<psi:spell_bullet:4>,<psi:material>,<ore:plateDarkSteel>.firstItem*2,<ore:slimeball>)
 	.outputs(<psi:spell_bullet:4>)
 	.circuit(12)
 	.EUt(2400)
