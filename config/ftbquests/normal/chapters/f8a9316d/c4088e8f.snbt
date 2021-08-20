@@ -4,7 +4,7 @@
 	y: 4.0d,
 	description: "Make the gate block!",
 	text: [
-		"The gate block is needed to make gate!",
+		"The gate block is needed to make the gate!",
 		"You need LV age tech to make chisel."
 	],
 	dependencies: [

@@ -3,10 +3,10 @@
 	y: -10.0d,
 	shape: "gear",
 	text: [
-		"Gregtech has Age system.",
+		"GregTech has an Age system.",
 		"There are so many Ages you can get.",
 		"These are Ages and their voltage of GTEU.",
-		"Steam -0",
+		"Steam - 0",
 		"ULV - Ultra Low Voltage - 8",
 		"LV - Low Voltage - 32",
 		"MV - Medium Voltage - 128",
@@ -23,7 +23,7 @@
 		"UXV - Extended Mega Ultimate Voltage - 536870912",
 		"MAX - Maximum Voltage - 2147483647",
 		"",
-		"Now, we can reach MAX Age, but so many contents taht are on UHV~ are not working now.",
+		"Now, we can reach MAX Age, but so many contents that are on UHV~ are not working now.",
 		"This mod pack adds contents to ~UV.",
 		" "
 	],

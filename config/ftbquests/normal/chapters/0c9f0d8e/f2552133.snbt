@@ -5,7 +5,7 @@
 	shape: "gear",
 	description: "Steam age by bronze",
 	text: [
-		"Bronze is a important material in Steam Age.",
+		"Bronze is an important material in the Steam Age.",
 		"It'll be some steam machine.",
 		"Make Bronze First!"
 	],

@@ -3,7 +3,7 @@
 	y: -15.5d,
 	shape: "gear",
 	text: [
-		"This site has infomation about voltage system in GT"
+		"This site has information about voltage system in GT"
 	],
 	can_repeat: true,
 	tasks: [{

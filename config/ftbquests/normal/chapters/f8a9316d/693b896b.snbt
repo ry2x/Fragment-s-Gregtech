@@ -14,7 +14,7 @@
 	shape: "gear",
 	description: "JEI is a very useful mod",
 	text: [
-		"Gregtech has many item chains, so you need to check these when you want to make something.",
+		"GregTech has many item chains, so you need to check these when you want to make something.",
 		"You should know how to use it.",
 		"",
 		"-Press R on the item",
@@ -22,7 +22,7 @@
 		"-Press U on the item",
 		" you can check the recipes that uses it",
 		"-Press BackSpace on the recipe page",
-		" you can go back previous recipe page",
+		" you can go back to previous recipe page",
 		"",
 		"JEI is so useful!  "
 	],
