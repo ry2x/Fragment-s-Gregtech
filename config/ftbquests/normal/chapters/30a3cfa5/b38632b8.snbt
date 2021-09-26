@@ -3,10 +3,10 @@
 	y: -10.0d,
 	shape: "gear",
 	text: [
-		"Cover is added by gregtech.",
-		"It can be right-clicked with on any side of the machine except the export side. ",
-		"The cover can be removed with a Crowbar. ",
-		"There are some covers, solar panel, conveyer, robot arm ...."
+		"Cover is added by GregTech.",
+		"It can be right-clicked on any side of the machine except the export side.",
+		"The cover can be removed with a Crowbar.",
+		"There are some covers, solar panels, conveyors, robot arms ...."
 	],
 	tasks: [{
 		uid: "2f64a8ad",

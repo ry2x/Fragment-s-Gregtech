@@ -5,7 +5,7 @@
 	shape: "gear",
 	description: "自分は唯の、二科生です",
 	text: [
-		"Press C and follow the PSI's quest."
+		"Press C and follow the PSI's tutorial."
 	],
 	tasks: [{
 		uid: "3861b495",

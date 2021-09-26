@@ -6,7 +6,7 @@
 	tasks: [{
 		uid: "4225349b",
 		type: "checkmark",
-		title: "Gregtech Buffer",
+		title: "GregTech Buffer",
 		icon: "gregtech:machine 1 3230"
 	}]
 }

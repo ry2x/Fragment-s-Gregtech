@@ -1,16 +1,16 @@
 {
-	title: "Gregtech Ore system",
+	title: "GregTech Ore system",
 	x: -18.0d,
 	y: -6.5d,
 	shape: "gear",
 	description: "Vein",
 	text: [
 		"In this mod pack, you can't find ore like vanilla, but you can find ore vein by gregtech.",
-		"Gregtech has ore vein system. ",
+		"GregTech has an ore vein system.",
 		"The veins are generated under the ground with surface materials.",
 		"You can find some metal materials on the ground, they are surface material.",
-		"Under the them, there are vein.",
-		"If you want info about vein, search $ore at JEI and press R on the ore."
+		"Under them, there are veins.",
+		"If you want info about vein, search $ore with JEI and press R on the ore."
 	],
 	tasks: [{
 		uid: "4d954359",

@@ -5,12 +5,12 @@
 	shape: "gear",
 	description: "wanna?",
 	text: [
-		"This modpack has void dimension.",
-		"There is so safe because no enemy can spawn and no cycle of weather and time.",
+		"This modpack has a void dimension.",
+		"It is so safe because no enemy can spawn and no cycle of weather and time.",
 		"",
-		"You can acces the void when you get in LV age!",
+		"You can access the void when you get in LV age!",
 		"",
-		"IF YOU WANT TO GO VOID DIMENSION, CHECK THIS QUEST! "
+		"IF YOU WANT TO GO INTO VOID DIMENSION, CHECK THIS QUEST! "
 	],
 	tasks: [{
 		uid: "7efc7b10",
