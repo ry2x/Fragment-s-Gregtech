@@ -24,6 +24,7 @@ val compressor = RecipeMap.getByName("compressor");
 val packer = RecipeMap.getByName("packer");
 val assembly_line as RecipeMap = GARecipeMaps.ASSEMBLY_LINE_RECIPES;
 val engraver = RecipeMap.getByName("laser_engraver");
+val Electric_implosion as RecipeMap = GARecipeMaps.ELECTRIC_IMPLOSION_RECIPES;
 
 //diamond lattice
 recipes.removeByRecipeName("avaritia:items/resource/diamond_lattice");
@@ -42,6 +43,12 @@ implosion.recipeBuilder()
 	.property("explosives", 4)
 	.EUt(64)
 	.duration(50)
+	.buildAndRegister();
+Electric_implosion.recipeBuilder()
+	.inputs(<avaritia:resource>*4,<ore:netherStar>*2)
+	.outputs(<avaritia:resource:1>)
+	.EUt(131000)
+	.duration(25)
 	.buildAndRegister();
 
 //neutron collector
