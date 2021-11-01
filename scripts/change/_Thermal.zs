@@ -489,6 +489,7 @@ assembler.recipeBuilder()
     .duration(30)
     .EUt(16)
     .buildAndRegister();
+
 //change Crescent Hammer recipe
 recipes.remove(<thermalfoundation:wrench>);
 recipes.addShaped(<thermalfoundation:wrench>,[

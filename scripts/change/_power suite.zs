@@ -30,33 +30,41 @@ freezer.recipeBuilder()
 recipes.remove(<forge:bucketfilled>.withTag({FluidName: "liquid_nitrogen", Amount: 1000}));
 
 //change recipes of armor
+val al = <ore:plateAluminium> as IOreDictEntry;
+val motor = <gregtech:meta_item_1:32500> as IItemStack;
+val finewire = <ore:wireFineAnnealedCopper> as IOreDictEntry;
+val magnetic = <ore:ingotIronMagnetic> as IOreDictEntry;
+	#head
 recipes.remove(<powersuits:powerarmor_head>);
 recipes.addShaped(<powersuits:powerarmor_head>, [
-    [<ore:plateAluminium>, <ore:plateAluminium>, <ore:plateAluminium>],
-    [<ore:plateAluminium>, <gregtech:meta_item_1:32500>, <ore:plateAluminium>],
-    [<ore:wireFineAnnealedCopper>, <ore:ingotIronMagnetic>, <ore:wireFineAnnealedCopper>]
+    [al, al, al],
+    [al, motor, al],
+    [finewire, magnetic, finewire]
 ]);
+	#armor
 recipes.remove(<powersuits:powerarmor_torso>);
 recipes.addShaped(<powersuits:powerarmor_torso>, [
-    [<ore:plateAluminium>, <gregtech:meta_item_1:32500>, <ore:plateAluminium>],
-    [<ore:wireFineAnnealedCopper>, <ore:plateAluminium>, <ore:wireFineAnnealedCopper>],
-    [<ore:plateAluminium>, <ore:ingotIronMagnetic>, <ore:plateAluminium>]
+    [al, motor, al],
+    [finewire, al, finewire],
+    [al, magnetic, al]
 ]);
+	#leg
 recipes.remove(<powersuits:powerarmor_legs>);
 recipes.addShaped(<powersuits:powerarmor_legs>, [
-    [<ore:plateAluminium>, <gregtech:meta_item_1:32500>, <ore:plateAluminium>],
-    [<ore:plateAluminium>, <ore:ingotIronMagnetic>, <ore:plateAluminium>],
-    [<ore:plateAluminium>, <ore:wireFineAnnealedCopper>, <ore:plateAluminium>]
+    [al, motor, al],
+    [al, magnetic, al],
+    [al, finewire, al]
 ]);
+	#feet
 recipes.remove(<powersuits:powerarmor_feet>);
 recipes.addShaped(<powersuits:powerarmor_feet>, [
-    [<ore:wireFineAnnealedCopper>, <ore:wireFineAnnealedCopper>, <ore:wireFineAnnealedCopper>],
-    [<ore:plateAluminium>, <ore:ingotIronMagnetic>, <ore:plateAluminium>],
-    [<ore:plateAluminium>, <gregtech:meta_item_1:32500>, <ore:plateAluminium>]
+    [finewire, finewire, finewire],
+    [al, magnetic, al],
+    [al, motor, al]
 ]);
 
 /*
-* change material recipes; sorry its so difficult to read
+* Thank you eve0415
 */
 
 //Servo Motor
@@ -78,9 +86,9 @@ recipes.addShaped(<powersuits:powerarmorcomponent:3>, [
 //Ion Thruster
 recipes.remove(<powersuits:powerarmorcomponent:4>);
 recipes.addShaped(<powersuits:powerarmorcomponent:4>, [
-    [<ore:wireGtSingleAnnealedCopper>, <gtadditions:ga_meta_item:32304>, <ore:ingotIronMagnetic>],
-    [<ore:wireGtSingleAnnealedCopper>, <ore:dustSodium>, <ore:ingotIronMagnetic>],
-    [<ore:wireGtSingleAnnealedCopper>, <gtadditions:ga_meta_item:32304>, <ore:ingotIronMagnetic>]
+    [<ore:wireGtSingleAnnealedCopper>, <gtadditions:ga_meta_item:32304>, magnetic],
+    [<ore:wireGtSingleAnnealedCopper>, <ore:dustSodium>, magnetic],
+    [<ore:wireGtSingleAnnealedCopper>, <gtadditions:ga_meta_item:32304>, magnetic]
 ]);
 
 //Iron Plating
@@ -187,7 +195,7 @@ recipes.addShaped(<powersuits:tinkertable>, [
 //Power Fist
 recipes.remove(<powersuits:power_fist>);
 assembler.recipeBuilder()
-	.inputs(<ore:plateAluminium>*2,<ore:wireFineAnnealedCopper>,<gregtech:meta_item_1:32500>,<ore:ingotIronMagnetic>*2)
+	.inputs(al*2,finewire,motor,magnetic*2)
 	.outputs(<powersuits:power_fist>)
 	.duration(200)
 	.EUt(512)
@@ -221,7 +229,7 @@ assembler.recipeBuilder()
 //solenoid = coil
 recipes.remove(<powersuits:powerarmorcomponent:1>);
 assembler.recipeBuilder()
-	.inputs(<ore:stickLongIronMagnetic>,<ore:wireFineAnnealedCopper>*2)
+	.inputs(<ore:stickLongIronMagnetic>,finewire*2)
 	.outputs(<powersuits:powerarmorcomponent:1>)
 	.duration(120)
 	.EUt(16)
