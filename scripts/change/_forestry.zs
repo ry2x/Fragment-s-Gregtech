@@ -28,7 +28,7 @@ macerator.recipeBuilder()
 
 //change recipe of Portable analyzer
 removeRecipe(<forestry:portable_alyzer>);
-recipes.addShaped(<forestry:portable_alyzer>,[
+recipes.addShaped("forestry_portal_analyzer",<forestry:portable_alyzer>,[
     [<ore:plateTin>,<ore:paneGlass>,<ore:plateTin>],
     [<ore:plateTin>,<ore:paneGlass>,<ore:plateTin>],
     [<ore:ingotRedAlloy>,<ore:circuitBasic>,<ore:ingotRedAlloy>]
@@ -106,7 +106,7 @@ assembler.recipeBuilder()
 
 //change recipe of workbench
 recipes.remove(<forestry:worktable>);
-recipes.addShaped(<forestry:worktable>,[
+recipes.addShaped("forestry_work_table",<forestry:worktable>,[
     [<ore:ingotBronze>,<ore:craftingBook>,<ore:ingotBronze>],
     [<ore:ingotBronze>,<minecraft:crafting_table>,<ore:ingotBronze>],
     [<ore:ingotBronze>,<minecraft:chest>,<ore:ingotBronze>]
@@ -114,7 +114,7 @@ recipes.addShaped(<forestry:worktable>,[
 
 //change recipe of habit screen
 removeRecipe(<forestry:habitat_screen>);
-recipes.addShaped(<forestry:habitat_screen>,[
+recipes.addShaped("forestry_habit_tablet",<forestry:habitat_screen>,[
     [<ore:ingotBronze>,<ore:paneGlass>,<ore:ingotBronze>],
     [<ore:ingotBronze>,<ore:paneGlass>,<ore:ingotBronze>],
     [<ore:gearBronze>,<ore:circuitBasic>,<ore:gearBronze>],
@@ -137,7 +137,7 @@ addRecipe(<forestry:crafting_material:3>,[
 ], 60, <liquid:water> * 500);
 
 //buff fertilizer
-recipes.addShaped(<forestry:fertilizer_compound>*9, [
+recipes.addShaped("forestry_fertilizer",<forestry:fertilizer_compound>*9, [
     [<forestry:fertilizer_bio>, <forestry:fertilizer_bio>, <forestry:fertilizer_bio>],
     [<forestry:fertilizer_bio>, <minecraft:dye:15>, <forestry:fertilizer_bio>],
     [<forestry:fertilizer_bio>, <forestry:fertilizer_bio>, <forestry:fertilizer_bio>]
