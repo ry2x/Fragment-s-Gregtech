@@ -8,6 +8,7 @@ import crafttweaker.liquid.ILiquidStack;
 
 val reactor = RecipeMap.getByName("chemical_reactor");
 val large_chemical_reactor as RecipeMap = GARecipeMaps.LARGE_CHEMICAL_RECIPES;
+val autoclave = RecipeMap.getByName("autoclave");
 
 //Air or oxygen + isoprene = raw rubber pulp  0
 reactor.findRecipe(30,[],[<liquid:oxygen>*2000,<liquid:isoprene>*144]).remove();
@@ -45,3 +46,16 @@ reactor.recipeBuilder()
 	.EUt(480)
 	.duration(100)
 	.buildAndRegister();
+
+//nether star chain
+autoclave.findRecipe(122880,[<gregtech:meta_item_1:32726>],[<liquid:adamantium>*288]).remove();
+autoclave.recipeBuilder()
+	.inputs(<gregtech:meta_item_1:32726>)
+	.fluidInputs(<liquid:uranium>*288)
+	.outputs(<gtadditions:ga_meta_item:32343>)
+	.EUt(122880)
+	.duration(480)
+	.buildAndRegister();
+
+//Bad steel = Good Steel
+recipes.addShapeless("Good_Steel",<ore:ingotSteel>.firstItem,[<flammpfeil.slashblade:proudsoul:4097>]);
