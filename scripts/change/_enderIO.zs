@@ -19,6 +19,7 @@ val alloy = RecipeMap.getByName("alloy_smelter");
 val assembler = RecipeMap.getByName("assembler");
 val forming = RecipeMap.getByName("forming_press");
 val solidifier = RecipeMap.getByName("fluid_solidifier");
+val mixer = RecipeMap.getByName("mixer");
 
 //Add recipe to alloy fused glass
 alloy.recipeBuilder()
@@ -177,3 +178,12 @@ alloy.recipeBuilder()
     .EUt(64)
     .duration(15872)
     .buildAndRegister();
+
+//nano particle P.M.2.5
+val potion as IItemStack = <minecraft:splash_potion>.withTag({Potion: "minecraft:thick"});
+mixer.recipeBuilder()
+	.inputs(<randomthings:ingredient:5>*3,potion)
+	.outputs(<enderio:block_holier_fog>)
+	.EUt(512)
+	.duration(20)
+	.buildAndRegister();
