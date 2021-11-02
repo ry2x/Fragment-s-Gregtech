@@ -240,7 +240,7 @@ for item, voltage in battery {
 	#forming
 val arrow = <tconstruct:arrow_head>.withTag({Material: "iron"});
 val bullet as IData[IItemStack[]] = {
-	[<psi:spell_bullet>,<ore:plateDarkSteel>.firstItem,<gregtech:meta_item_1:10184>,<psi:material>] : 10,
+	[<psi:spell_bullet>,<psi:material>*2,<ore:plateDarkSteel>.firstItem,<ore:plateDarkSteel>.firstItem] : 10,
 	[<psi:spell_bullet:2>,<psi:material>,<ore:plateDarkSteel>.firstItem*2,arrow] : 12,
 	[<psi:spell_bullet:6>,<psi:material>,<ore:plateDarkSteel>.firstItem*2,<deepmoblearning:soot_covered_redstone>] : 14,
 	[<psi:spell_bullet:8>,<psi:material>,<ore:plateDarkSteel>.firstItem*2,<minecraft:gunpowder>] : 11,
