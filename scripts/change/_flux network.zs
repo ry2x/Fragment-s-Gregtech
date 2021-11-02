@@ -12,7 +12,7 @@ val assembler = RecipeMap.getByName("assembler");
     #basic
 recipes.remove(<fluxnetworks:fluxstorage>);
 recipes.addShapeless(<enderio:block_cap_bank:1>, [<fluxnetworks:fluxstorage>]);
-recipes.addShaped(<fluxnetworks:fluxstorage>, [
+recipes.addShaped("flux_storage",<fluxnetworks:fluxstorage>, [
     [<fluxnetworks:fluxblock>, <fluxnetworks:fluxblock>, <fluxnetworks:fluxblock>],
     [<ore:paneGlass>, <enderio:block_cap_bank:1>, <ore:paneGlass>],
     [<fluxnetworks:fluxblock>, <fluxnetworks:fluxblock>, <fluxnetworks:fluxblock>]
@@ -20,7 +20,7 @@ recipes.addShaped(<fluxnetworks:fluxstorage>, [
     #advanced
 recipes.remove(<fluxnetworks:herculeanfluxstorage>);
 recipes.addShapeless(<enderio:block_cap_bank:2>, [<fluxnetworks:herculeanfluxstorage>]);
-recipes.addShaped(<fluxnetworks:herculeanfluxstorage>, [
+recipes.addShaped("flux_storage_adv",<fluxnetworks:herculeanfluxstorage>, [
     [<fluxnetworks:fluxblock>, <fluxnetworks:fluxblock>, <fluxnetworks:fluxblock>],
     [<ore:paneGlass>, <enderio:block_cap_bank:2>, <ore:paneGlass>],
     [<fluxnetworks:fluxblock>, <fluxnetworks:fluxblock>, <fluxnetworks:fluxblock>]
@@ -37,7 +37,7 @@ assembler.recipeBuilder()
     //use lazy ae2 flux dust instead of flux
     #Flux Core
 recipes.remove(<fluxnetworks:fluxcore>);
-recipes.addShaped(<fluxnetworks:fluxcore>, [
+recipes.addShaped("flux_core",<fluxnetworks:fluxcore>, [
     [<threng:material:1>, <ore:wireGtSingleTitanium>, <threng:material:1>],
     [<ore:wireGtSingleTitanium>, <ore:circuitElite>, <ore:wireGtSingleTitanium>],
     [<threng:material:1>, <ore:wireGtSingleTitanium>, <threng:material:1>]
@@ -50,7 +50,7 @@ assembler.recipeBuilder()
     .buildAndRegister();
     #Flux Configurator
 recipes.remove(<fluxnetworks:fluxconfigurator>);
-recipes.addShaped(<fluxnetworks:fluxconfigurator>, [
+recipes.addShaped("flux_configurator",<fluxnetworks:fluxconfigurator>, [
     [null, <threng:material:1>, <fluxnetworks:fluxcore>],
     [null, <tconstruct:tool_rod>.withTag({Material: "obsidian"}).onlyWithTag({Material: "obsidian"}), <threng:material:1>],
     [<tconstruct:tool_rod>.withTag({Material: "obsidian"}).onlyWithTag({Material: "obsidian"}), null, null]

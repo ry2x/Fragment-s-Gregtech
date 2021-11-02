@@ -13,7 +13,7 @@ val unpacker = RecipeMap.getByName("unpacker");
 
 //fix hopper
 recipes.remove(<tconstruct:wooden_hopper>);
-recipes.addShaped(<tconstruct:wooden_hopper>, [
+recipes.addShaped("wooden_hopper",<tconstruct:wooden_hopper>, [
     [<ore:plankWood>, craftingToolWrench, <ore:plankWood>],
     [<ore:plankWood>, <ore:chest>, <ore:plankWood>],
     [null, <ore:plankWood>, null]

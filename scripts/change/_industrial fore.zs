@@ -253,28 +253,31 @@ recipes.addShaped(<industrialforegoing:conveyor>,[
 //change upgrades
 recipes.remove(<industrialforegoing:range_addon:*>);
 	#Range addon
-val upgrades as IItemStack[IOreDictEntry] = {
-	<ore:plateCopper> : <industrialforegoing:range_addon>,
-	<ore:plateBronze> : <industrialforegoing:range_addon:1>,
-	<ore:plateSteel> : <industrialforegoing:range_addon:2>,
-	<ore:plateAluminium> : <industrialforegoing:range_addon:3>,
-	<ore:plateChrome> : <industrialforegoing:range_addon:4>,
-	<ore:plateStainlessSteel> : <industrialforegoing:range_addon:5>,
-	<ore:plateNichrome> : <industrialforegoing:range_addon:6>,
-	<ore:plateTungsten> : <industrialforegoing:range_addon:7>,
-	<ore:plateTitanium> : <industrialforegoing:range_addon:8>,
-	<ore:plateTungstenSteel> : <industrialforegoing:range_addon:9>,
-	<ore:plateStellarAlloy> : <industrialforegoing:range_addon:10>,
-	<ore:plateNeutronium> : <industrialforegoing:range_addon:11>,
+val upgrades as IItemStack[string] = {
+	"Copper" : <industrialforegoing:range_addon>,
+	"Bronze" : <industrialforegoing:range_addon:1>,
+	"Steel" : <industrialforegoing:range_addon:2>,
+	"Aluminium" : <industrialforegoing:range_addon:3>,
+	"Chrome" : <industrialforegoing:range_addon:4>,
+	"StainlessSteel" : <industrialforegoing:range_addon:5>,
+	"Nichrome" : <industrialforegoing:range_addon:6>,
+	"Tungsten" : <industrialforegoing:range_addon:7>,
+	"Titanium" : <industrialforegoing:range_addon:8>,
+	"TungstenSteel" : <industrialforegoing:range_addon:9>,
+	"StellarAlloy" : <industrialforegoing:range_addon:10>,
+	"Neutronium" : <industrialforegoing:range_addon:11>,
 };
 
-for plate, addon in upgrades {
-	recipes.addShaped(addon, [
+for str, addon in upgrades {
+    var plate = oreDict["block"~str];
+    var name = "IF_upgrade_"~str;
+	recipes.addShaped(name,addon, [
 		[plate,<ore:plateSterlingSilver>,plate],
 		[plate,<ore:paneGlass>,plate],
 		[plate,<ore:plateSterlingSilver>,plate]
 	]);
 }
+
 //other filters
 for i in loadedMods["industrialforegoing"].items {
     recipes.replaceAllOccurences(<industrialforegoing:plastic>,<ore:plateSterlingSilver>,i);
