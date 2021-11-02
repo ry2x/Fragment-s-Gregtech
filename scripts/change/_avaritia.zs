@@ -25,11 +25,12 @@ val packer = RecipeMap.getByName("packer");
 val assembly_line as RecipeMap = GARecipeMaps.ASSEMBLY_LINE_RECIPES;
 val engraver = RecipeMap.getByName("laser_engraver");
 val Electric_implosion as RecipeMap = GARecipeMaps.ELECTRIC_IMPLOSION_RECIPES;
+val centrifuge = RecipeMap.getByName("centrifuge");
 
 //diamond lattice
 recipes.removeByRecipeName("avaritia:items/resource/diamond_lattice");
 assembler.recipeBuilder()
-	.inputs(<ore:plateDiamond>*8,<ore:gemFlawedDiamond>,<ore:stickDiamond>*7)
+	.inputs(<ore:plateDiamond>*4,<ore:stickDiamond>*4)
 	.outputs(<avaritia:resource>)
 	.EUt(8000)
 	.duration(500)
@@ -105,6 +106,12 @@ implosion.recipeBuilder()
 	.EUt(64)
 	.duration(50)
 	.buildAndRegister();
+Electric_implosion.recipeBuilder()
+	.inputs(<avaritia:resource:2>*12)
+	.outputs(<avaritia:resource:3>)
+	.EUt(131000)
+	.duration(25)
+	.buildAndRegister();
 
 //neutron ingot
 engraver.recipeBuilder()
@@ -122,16 +129,15 @@ engraver.recipeBuilder()
 	.duration(10)
 	.buildAndRegister();
 
-recipes.addShapeless(<avaritia:resource:4>,[<gregtech:meta_item_1:10671>]);
-recipes.addShapeless(<gregtech:meta_item_1:10671>,[<avaritia:resource:4>]);
+recipes.addShapeless("Gregtech_to_Avaritia_cosmic_neutron",<avaritia:resource:4>,[<gregtech:meta_item_1:10671>,craftingToolHardHammer]);
+recipes.addShapeless("Avaritia_to_Gregtech_cosmic_neutron",<gregtech:meta_item_1:10671>,[<avaritia:resource:4>,craftingToolHardHammer]);
 
-//to gregtech's neutron
-compressor.recipeBuilder()
-	.inputs(<avaritia:block_resource>*2)
-	.outputs(<gregtech:meta_item_1:9993>)
-	.EUt(12000)
-	.duration(1000)
-	.buildAndRegister();
+//neutron block
+recipes.addShaped("avaritia_neutron_compress",<avaritia:block_resource>,[
+	[<avaritia:resource:4>,<avaritia:resource:4>,<avaritia:resource:4>],
+	[<avaritia:resource:4>,<avaritia:resource:4>,<avaritia:resource:4>],
+	[<avaritia:resource:4>,<avaritia:resource:4>,<avaritia:resource:4>]
+]);
 
 //cosmic food
 mods.avaritia.ExtremeCrafting.remove(<avaritia:cosmic_meatballs>);
@@ -264,3 +270,10 @@ for item,str in singularityAdd{
 	mods.avaritia.Compressor.add(str,item,1000,block,true);
 }
 
+#flux singularity to all singularity
+centrifuge.recipeBuilder()
+	.inputs(<avaritia:singularity:12>)
+	.outputs(<avaritia:singularity>,<avaritia:singularity:3>,<avaritia:singularity:4>,<avaritia:singularity:5>,<avaritia:singularity:6>)
+	.duration(500)
+	.EUt(8192)
+	.buildAndRegister();

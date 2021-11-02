@@ -70,3 +70,6 @@ JEI.addDescription(<practicallogistics2:entitynode>,"It's disabled.");
 JEI.addDescription(<extrautils2:drum>,"It has 16B capacity!");
 JEI.addDescription(<extrautils2:drum:1>,"It has 256B capacity!");
 JEI.addDescription(<extrautils2:drum:2>,"It has 4096B capacity!");
+
+//electric implosion
+JEI.addDescription(<gregtech:machine:4211>,"You can use this for crystal matrix and neutron! It's available from ZPM!");

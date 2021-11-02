@@ -220,7 +220,9 @@ var ingotsDisabled as IItemStack[][IOreDictEntry] = {
 
     #ingotSteel
     <ore:ingotSteel>:[
-        <thermalfoundation:material:160>
+        <thermalfoundation:material:160>,
+		<flammpfeil.slashblade:proudsoul:4097>.withTag({"SB.SEffect": {}}),
+		<flammpfeil.slashblade:proudsoul:4097>
     ],
 
     #ingotInvar
@@ -414,9 +416,6 @@ for oreDictEntry, items in nuggetsDisabled {
 	}
 	oreDictEntry.removeItems(items);
 }
-
-//remove avaritia neutronium from  cosmic neutronium
-<ore:nuggetCosmicNeutronium>.removeItems([<avaritia:resource:3>]);
 
 //for ore
 
@@ -1146,6 +1145,11 @@ val sonarcore as IItemStack[] = [
 ];
 
 <ore:sonarStableStone>.removeItems(sonarcore);
+
+//cosmic neutron
+<ore:blockCosmicNeutronium>.remove(<avaritia:block_resource>);
+<ore:ingotCosmicNeutronium>.remove(<avaritia:resource:4>);
+<ore:nuggetCosmicNeutronium>.removeItems([<avaritia:resource:3>]);
 
 //global tools
 global craftingToolHardHammer as IItemStack = <gregtech:meta_tool:6>;

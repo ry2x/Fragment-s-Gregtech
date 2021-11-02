@@ -898,11 +898,14 @@ val CompressorFixRemoval as IItemStack[] = [
 	<projectred-core:resource_item:201>,
 	<projectred-core:resource_item:200>,
 	#nether star
-	<minecraft:nether_star>
+	<minecraft:nether_star>,
+	#neutron
+	<avaritia:resource:4>
 ];
 
 for item in CompressorFixRemoval {
 	compressor.findRecipe(2,[item*9],null).remove();
+	packer.findRecipe(4,[item*9,<gtadditions:ga_meta_item:32133>],[]).remove();
 }
 
 val CompressorFixAdding as IItemStack[IItemStack] = {
@@ -924,7 +927,10 @@ val CompressorFixAdding as IItemStack[IItemStack] = {
 	<gregtech:meta_item_1:8157> : <gregtech:meta_block_compressed_9:13>,
 	<gregtech:meta_item_1:8154> : <gregtech:meta_block_compressed_9:10>,
 	#nether star
-	<minecraft:nether_star> : <gregtech:meta_block_compressed_20:11>
+	<minecraft:nether_star> : <gregtech:meta_block_compressed_20:11>,
+	#avaritia neutron
+	<gregtech:meta_item_1:10671> : <gregtech:meta_block_compressed_41:15>,
+	<avaritia:resource:4> : <avaritia:block_resource>
 };
 
 for input,output in CompressorFixAdding {
@@ -933,6 +939,13 @@ for input,output in CompressorFixAdding {
 		.outputs(output)
 		.EUt(2)
 		.duration(400)
+		.buildAndRegister();
+	packer.recipeBuilder()
+		.inputs(input*9)
+		.outputs(output)
+		.notConsumable(<gtadditions:ga_meta_item:32133>)
+		.EUt(4)
+		.duration(100)
 		.buildAndRegister();
 }
 
@@ -1037,6 +1050,14 @@ solidifier.recipeBuilder()
 	.fluidInputs(<liquid:pure_matter>*144)
 	.outputs(<avaritia:resource:1>)
 	.EUt(2048)
+	.duration(400)
+	.buildAndRegister();
+	#to flux singularity
+solidifier.recipeBuilder()
+	.inputs(<appliedenergistics2:material:47>)
+	.fluidInputs(<liquid:pure_matter>*1000)
+	.outputs(<avaritia:singularity:12>)
+	.EUt(128000)
 	.duration(400)
 	.buildAndRegister();
 	#to exp
