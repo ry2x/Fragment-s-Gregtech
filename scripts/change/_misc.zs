@@ -921,9 +921,9 @@ recipes.addShapeless(<simplemagnets:advanced_demagnetization_coil>,[<randomthing
 //excavation
 recipes.remove(<oeintegration:excavatemodifier>);
 forming.recipeBuilder()
-    .inputs(<ore:ingotManyullyn>*2,<ore:blockSlime>,<ore:ingotNaquadah>*4)
+    .inputs(<ore:ingotManyullyn>*25,<ore:blockSlime>*12,<ore:ingotNaquadah>*64)
     .notConsumable(<gregtech:meta_item_1:32307>)
-    .outputs(<oeintegration:excavatemodifier>*2)
+    .outputs(<oeintegration:excavatemodifier>*25)
     .duration(60)
     .EUt(8192)
     .buildAndRegister();
