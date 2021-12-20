@@ -948,6 +948,13 @@ for input,output in CompressorFixAdding {
 		.duration(100)
 		.buildAndRegister();
 }
+	#neutronium from cosmic neutronium
+compressor.recipeBuilder()
+	.inputs(<gregtech:meta_block_compressed_41:15>*9)
+	.outputs(<ore:ingotNeutronium>.firstItem)
+	.EUt(2)
+	.duration(400)
+	.buildAndRegister();
 
 //dence iron plate
 var iron as IItemStack[int] = {
