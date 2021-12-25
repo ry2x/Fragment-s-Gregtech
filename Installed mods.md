@@ -172,6 +172,8 @@ gravestone-1.10.3
 
 Gregicality-1.12.2-0.22.7
 
+GregPatcher-1.00
+
 gregtech-1.12.2-1.17.0.764
 
 iChunUtil-1.12.2-7.2.2
