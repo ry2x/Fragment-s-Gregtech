@@ -12,36 +12,24 @@ val autoclave = RecipeMap.getByName("autoclave");
 val blast_furnace = RecipeMap.getByName("blast_furnace");
 
 //Air or oxygen + isoprene = raw rubber pulp  0
-reactor.findRecipe(30,[],[<liquid:oxygen>*2000,<liquid:isoprene>*144]).remove();
-large_chemical_reactor.findRecipe(30,[],[<liquid:oxygen>*2000,<liquid:isoprene>*144]).remove();
-large_chemical_reactor.recipeBuilder()
-	.fluidInputs(<liquid:oxygen>*2000,<liquid:isoprene>*144)
-	.notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 0}))
-	.outputs(<gregtech:meta_item_1:2153>*3)
-	.EUt(30)
-	.duration(160)
-	.buildAndRegister();
+var finputs as ILiquidStack[] = [<liquid:oxygen>*2000,<liquid:isoprene>*144];
+reactor.findRecipe(30,[],[finputs]).remove();
+large_chemical_reactor.findRecipe(30,[],[finputs]).remove();
 reactor.recipeBuilder()
-	.fluidInputs(<liquid:oxygen>*2000,<liquid:isoprene>*144)
+	.fluidInputs(finputs)
 	.notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 0}))
 	.outputs(<gregtech:meta_item_1:2153>*3)
 	.EUt(30)
 	.duration(160)
 	.buildAndRegister();
+
 //oxygen + isoprene + beta pinene = citral 1
-reactor.findRecipe(480,[<gtadditions:ga_dust:25>*26],[<liquid:oxygen>*2000,<liquid:isoprene>*2000]).remove();
-large_chemical_reactor.findRecipe(480,[<gtadditions:ga_dust:25>*26],[<liquid:oxygen>*2000,<liquid:isoprene>*2000]).remove();
-large_chemical_reactor.recipeBuilder()
-	.inputs(<gtadditions:ga_dust:25>*26)
-	.fluidInputs(<liquid:oxygen>*2000,<liquid:isoprene>*2000)
-	.notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 1}))
-	.fluidOutputs(<liquid:citral>*2000)
-	.EUt(480)
-	.duration(100)
-	.buildAndRegister();
+var finputs as ILiquidStack[] = [<liquid:oxygen>*2000,<liquid:isoprene>*2000];
+reactor.findRecipe(480,[<gtadditions:ga_dust:25>*26],[finputs]).remove();
+large_chemical_reactor.findRecipe(480,[<gtadditions:ga_dust:25>*26],[finputs]).remove();
 reactor.recipeBuilder()
 	.inputs(<gtadditions:ga_dust:25>*26)
-	.fluidInputs(<liquid:oxygen>*2000,<liquid:isoprene>*2000)
+	.fluidInputs(finputs)
 	.notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 1}))
 	.fluidOutputs(<liquid:citral>*2000)
 	.EUt(480)
@@ -74,10 +62,11 @@ reactor.recipeBuilder()
 	.buildAndRegister();
 
 //Methyl Acetate
-reactor.findRecipe(30,[],[<liquid:methanol>*1000,<liquid:acetic_acid>*1000]).remove();
-large_chemical_reactor.findRecipe(30,[],[<liquid:methanol>*1000,<liquid:acetic_acid>*1000]).remove();
+var finputs as ILiquidStack[] = [<liquid:methanol>*1000,<liquid:acetic_acid>*1000];
+reactor.findRecipe(30,[],[finputs]).remove();
+large_chemical_reactor.findRecipe(30,[],[finputs]).remove();
 reactor.recipeBuilder()
-	.fluidInputs(<liquid:methanol>*1000,<liquid:acetic_acid>*1000)
+	.fluidInputs(finputs)
 	.notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 1}))
 	.fluidOutputs(<liquid:water>*1000,<liquid:methyl_acetate>*1000)
 	.EUt(30)
@@ -96,10 +85,11 @@ blast_furnace.recipeBuilder()
 	.buildAndRegister();
 
 //acetic acid
-reactor.findRecipe(30,[],[<liquid:methanol>*1000,<liquid:carbon_monoxide>*1000]).remove();
-large_chemical_reactor.findRecipe(30,[],[<liquid:methanol>*1000,<liquid:carbon_monoxide>*1000]).remove();
+var finputs as ILiquidStack[] = [<liquid:methanol>*1000,<liquid:carbon_monoxide>*1000];
+reactor.findRecipe(30,[],[finputs]).remove();
+large_chemical_reactor.findRecipe(30,[],[finputs]).remove();
 reactor.recipeBuilder()
-	.fluidInputs(<liquid:methanol>*1000,<liquid:carbon_monoxide>*1000)
+	.fluidInputs(finputs)
 	.notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 1}))
 	.fluidOutputs(<liquid:acetic_acid>)
 	.EUt(30)
@@ -118,3 +108,27 @@ reactor.recipeBuilder()
 	.EUt(120)
 	.duration(110)
 	.buildAndRegister();
+
+//Lithium thiine diselenide fix
+var finputs as ILiquidStack[] = [<liquid:butyl_lithium>*2000,<liquid:bromodihydrothiine>*1000];
+reactor.findRecipe(30720,[<gregtech:meta_item_1:2759>*2],[finputs]).remove();
+large_chemical_reactor.findRecipe(30720,[<gregtech:meta_item_1:2759>*2],[finputs]).remove();
+reactor.recipeBuilder()
+	.inputs(<gregtech:meta_item_1:2759>*2)
+	.fluidInputs(finputs)
+	.fluidOutputs(<liquid:bromobutane>*2000,<liquid:lithiumthiinediselenide>*2016)
+	.EUt(30720)
+	.duration(290)
+	.buildAndRegister();
+
+// C2F4 + 2C4H4S2Li2Se2 -> C10H8S4Se4 + 4LiF
+blast_furnace.findRecipe(120,[<gtadditions:ga_dust:230>],[<liquid:lithiumthiinediselenide>*2000]).remove();
+blast_furnace.recipeBuilder()
+	.inputs(<gregtech:meta_item_1:10145>*7)
+	.fluidInputs(<liquid:lithiumthiinediselenide>*392)
+	.notConsumable(<gtadditions:ga_dust:230>)
+	.outputs(<gregtech:meta_item_1:2774>*8,<gtadditions:ga_dust:253>*26)
+	.EUt(120)
+	.duration(7920)
+	.buildAndRegister();
+
