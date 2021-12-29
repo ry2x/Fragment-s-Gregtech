@@ -1,0 +1,13 @@
+        "refresh":
+        {
+            "text" : "",
+            "posX" : -154,
+            "posY" : 170,
+            "width" : 20,
+            "height" : 20,
+            "texture" : "custommainmenu:textures/gui/buttons.png",
+            "action" :
+            {
+                "type" : "refresh"
+            }
+        }
