@@ -12,9 +12,9 @@ val autoclave = RecipeMap.getByName("autoclave");
 val blast_furnace = RecipeMap.getByName("blast_furnace");
 
 //Air or oxygen + isoprene = raw rubber pulp  0
-var finputs as ILiquidStack[] = [<liquid:oxygen>*2000,<liquid:isoprene>*144];
-reactor.findRecipe(30,[],[finputs]).remove();
-large_chemical_reactor.findRecipe(30,[],[finputs]).remove();
+val finputs as ILiquidStack[] = [<liquid:oxygen>*2000,<liquid:isoprene>*144];
+reactor.findRecipe(30,[],[finputs[0],finputs[1]]).remove();
+large_chemical_reactor.findRecipe(30,[],[finputs[0],finputs[1]]).remove();
 reactor.recipeBuilder()
 	.fluidInputs(finputs)
 	.notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 0}))
@@ -24,9 +24,9 @@ reactor.recipeBuilder()
 	.buildAndRegister();
 
 //oxygen + isoprene + beta pinene = citral 1
-var finputs as ILiquidStack[] = [<liquid:oxygen>*2000,<liquid:isoprene>*2000];
-reactor.findRecipe(480,[<gtadditions:ga_dust:25>*26],[finputs]).remove();
-large_chemical_reactor.findRecipe(480,[<gtadditions:ga_dust:25>*26],[finputs]).remove();
+val finputs1 as ILiquidStack[] = [<liquid:oxygen>*2000,<liquid:isoprene>*2000];
+reactor.findRecipe(480,[<gtadditions:ga_dust:25>*26],[finputs1[0],finputs1[1]]).remove();
+large_chemical_reactor.findRecipe(480,[<gtadditions:ga_dust:25>*26],[finputs1[0],finputs1[1]]).remove();
 reactor.recipeBuilder()
 	.inputs(<gtadditions:ga_dust:25>*26)
 	.fluidInputs(finputs)
@@ -62,9 +62,9 @@ reactor.recipeBuilder()
 	.buildAndRegister();
 
 //Methyl Acetate
-var finputs as ILiquidStack[] = [<liquid:methanol>*1000,<liquid:acetic_acid>*1000];
-reactor.findRecipe(30,[],[finputs]).remove();
-large_chemical_reactor.findRecipe(30,[],[finputs]).remove();
+val finputs2 as ILiquidStack[] = [<liquid:methanol>*1000,<liquid:acetic_acid>*1000];
+reactor.findRecipe(30,[],[finputs2[0],finputs2[1]]).remove();
+large_chemical_reactor.findRecipe(30,[],[finputs2[0],finputs2[1]]).remove();
 reactor.recipeBuilder()
 	.fluidInputs(finputs)
 	.notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 1}))
@@ -85,9 +85,9 @@ blast_furnace.recipeBuilder()
 	.buildAndRegister();
 
 //acetic acid
-var finputs as ILiquidStack[] = [<liquid:methanol>*1000,<liquid:carbon_monoxide>*1000];
-reactor.findRecipe(30,[],[finputs]).remove();
-large_chemical_reactor.findRecipe(30,[],[finputs]).remove();
+val finputs3 as ILiquidStack[] = [<liquid:methanol>*1000,<liquid:carbon_monoxide>*1000];
+reactor.findRecipe(30,[],[finputs3[0],finputs3[1]]).remove();
+large_chemical_reactor.findRecipe(30,[],[finputs3[0],finputs3[1]]).remove();
 reactor.recipeBuilder()
 	.fluidInputs(finputs)
 	.notConsumable(<gregtech:meta_item_1:32766>.withTag({Configuration: 1}))
@@ -110,9 +110,9 @@ reactor.recipeBuilder()
 	.buildAndRegister();
 
 //Lithium thiine diselenide fix
-var finputs as ILiquidStack[] = [<liquid:butyl_lithium>*2000,<liquid:bromodihydrothiine>*1000];
-reactor.findRecipe(30720,[<gregtech:meta_item_1:2759>*2],[finputs]).remove();
-large_chemical_reactor.findRecipe(30720,[<gregtech:meta_item_1:2759>*2],[finputs]).remove();
+val finputs4 as ILiquidStack[] = [<liquid:butyl_lithium>*2000,<liquid:bromodihydrothiine>*1000];
+reactor.findRecipe(30720,[<gregtech:meta_item_1:2759>*2],[finputs4[0],finputs[1]]).remove();
+large_chemical_reactor.findRecipe(30720,[<gregtech:meta_item_1:2759>*2],[finputs4[0],finputs[1]]).remove();
 reactor.recipeBuilder()
 	.inputs(<gregtech:meta_item_1:2759>*2)
 	.fluidInputs(finputs)
