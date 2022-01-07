@@ -112,7 +112,7 @@ reactor.recipeBuilder()
 //Lithium thiine diselenide fix
 val finputs4 as ILiquidStack[] = [<liquid:butyl_lithium>*2000,<liquid:bromodihydrothiine>*1000];
 reactor.findRecipe(30720,[<gregtech:meta_item_1:2759>*2],[finputs4[0],finputs4[1]]).remove();
-large_chemical_reactor.findRecipe(30720,[<gregtech:meta_item_1:2759>*2],[finputs4[0],finputs[1]]).remove();
+large_chemical_reactor.findRecipe(30720,[<gregtech:meta_item_1:2759>*2],[finputs4[0],finputs4[1]]).remove();
 reactor.recipeBuilder()
 	.inputs(<gregtech:meta_item_1:2759>*2)
 	.fluidInputs(finputs)
