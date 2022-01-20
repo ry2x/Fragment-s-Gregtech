@@ -14,6 +14,7 @@ config/ichunutil.cfg
 config/xaero*
 config/betterfps.json
 config/clienttweaks.cfg
+Fragment's Gregtech.code-workspace
 
 #not sync plz
 read me.txt
@@ -27,3 +28,4 @@ config/enderio/recipes/examples/
 #For development
 .vscode
 .zsrc
+
